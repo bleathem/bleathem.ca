@@ -29,9 +29,9 @@ layout: base
 -for post in site.posts
   .post.row
     .row
-      .span3
-        %h1
+      .span6
+        %span
           %a{:href=>post.url}= post.title
       .span3
-        %h2
+        %span
           = post.date.strftime( '%d %B %Y' )

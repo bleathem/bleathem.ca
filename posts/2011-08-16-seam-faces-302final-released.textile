@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Seam Faces 3.0.2.Final released"
+---
+
+
+
+(cross posted from :<a href="http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released">http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released</a>)
+
+
+
+Great news,&nbsp;<a href="http://seamframework.org/Seam3/FacesModuleHome">Seam Faces</a>&nbsp;3.0.2.Final has been&nbsp;<a href="https://repository.jboss.org/nexus/content/groups/public/org/jboss/seam/faces/seam-faces/3.0.2.Final/">released</a>! It is available for download via the&nbsp;<a _jive_internal="true" href="http://community.jboss.org/docs/DOC-15170">JBoss Nexus repository</a>. Primarily a bug fix release, Seam Faces 3.0.2.Final resolves some compatibility issues with MyFaces, thanks to contributions from&nbsp;<a _jive_internal="true" href="http://community.jboss.org/people/chkal">Christian Kaltepoth</a>. Additionally,&nbsp;<a _jive_internal="true" href="http://community.jboss.org/people/spinner">José Freitas</a>&nbsp;has contributed some fixes to issues with the UIInputContainer. A full list of the bugs fixed is available&nbsp;<a href="https://issues.jboss.org/browse/SEAMFACES/fixforversion/12316287">here</a>.
+
+
+
+I'm very excited about the community involvement in this release, and with more community members coming forward with features they'd like to see implemented/improved. If you have you're own itches you'd like to scratch, feel free to comment in the&nbsp;<a href="http://seamframework.org/Community/Forums">forums</a>, file an issue in&nbsp;<a href="https://issues.jboss.org/browse/SEAMFACES">JIRA</a>, or drop in on&nbsp;<a href="http://seamframework.org/Community/SeamCommunity#H-IRC">IRC</a>. Then it's stratight to the source to fork the project on&nbsp;<a href="https://github.com/seam/faces">github</a>! You're pull requests are very much appreciated!
+
+
+
+Cheers,
+
+Brian Leathem
+

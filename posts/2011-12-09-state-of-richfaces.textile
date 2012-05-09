@@ -1,0 +1,68 @@
+---
+layout: post
+title: "State of the RichFaces"
+---
+
+
+
+With a RichFaces <a href="https://issues.jboss.org/browse/RF/fixforversion/12318600">4.1.0.Final</a> release on the horizon, now is a good time to talk about the future of the project. Let me start by announcing that I will be taking over from <a href="http://in.relation.to/Bloggers/ChangingOfTheGuardWithRichFaces41">Jay Balunas</a> as lead of the <a href="http://www.jboss.org/richfaces/">RichFaces project</a>. Jay has been a long-time shepherd of RichFaces from within <a href="http://www.jboss.org/">JBoss</a>, and has had a direct hand in making the project such a great success. Jay has been a terrific mentor and while he is stepping down as the project lead, he will continue to stay involved, sharing his insight and experience with the Richfaces team. He will just no longer get the final word ;)
+
+
+
+Moving forward, I would like to see the project continue to focus on the key strengths that have made RichFaces such a great project to be involved with: innovation, open standards, community, and quality.
+
+
+
+**Innovation**
+
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://3.bp.blogspot.com/-vjtDzI_LeHM/TuJB-MjPiLI/AAAAAAAAAN8/ivQ4ggJY6zc/s1600/showcase.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="202" src="http://3.bp.blogspot.com/-vjtDzI_LeHM/TuJB-MjPiLI/AAAAAAAAAN8/ivQ4ggJY6zc/s400/showcase.png" width="400" /></a></div>
+RichFaces has long been the place to come for JSF innovation. Never content to simply provide a JSF component set, the RichFaces project (together with other JBoss projects) has always aimed to provide developers with a complete JSF framework for developing applications. Some of these innovations include:
+
+<ul>
+<li>Pioneering JSF ajax support</li>
+<li><a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=clientValidation&skin=blueSky">Client side validation</a></li>
+<li>Ajax <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push&skin=blueSky">Push component</a> - leveraging websockets where available</li>
+<li>The <a href="http://community.jboss.org/wiki/RichFacesCDKHowTos">CDK</a> (Component Development Kit) - in RF 4 the CDK builds on top of the <a href="http://andyschwartz.wordpress.com/2009/07/31/whats-new-in-jsf-2/#composite-components">JSF 2 composite components</a> feature</li>
+<li>Support for <a href="http://community.jboss.org/wiki/GettingStartedWithMobileRichFaces">mobile</a> browsers in our base component set</li>
+<li>Resource <a href="http://docs.jboss.org/richfaces/latest_4_1_X/Developer_Guide/en-US/html/chap-Developer_Guide-Advanced_features.html#sect-Developer_Guide-Advanced_features-Resource_loading_strategies">packaging and minification</a></li>
+<li>Advanced <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=queue&skin=blueSky">queuing</a></li>
+<li>Sophisticated tooling support (together with <a href="http://www.jboss.org/tools">JBoss tools</a>)</li>
+</ul>
+<div>
+**Open Standards**</div>
+Richfaces has played a significant role in improving the <a href="http://javaserverfaces-spec-public.java.net/">JSF specification</a> with contributions to JSF 2.0, particularly in the area of ajax integration. RichFaces also aims to improve the standards story by integrating JSF with other Java EE standards in some of the same innovations mentioned above:
+
+<ul>
+<li>Client side validation brings <a href="http://jcp.org/en/jsr/detail?id=303">Bean Validation</a> into the client environment</li>
+<li>The push component couples JMS messaging with our JSF component set</li>
+<li>The push component also leverages <a href="http://jcp.org/en/jsr/summary?id=299">CDI</a>, providing building on the standardized Java EE programming model</li>
+</ul>
+**Community**
+
+RichFaces is also very much a community oriented project. Both our development and planning efforts are done out in the open, with an open door to anyone who wants to help out. Some of the ways we actively work to facilitate community interaction include:
+
+<ul>
+<li>A <a href="http://www.jboss.org/index.html?module=bb&op=viewforum&f=261">user forum</a> with an incredible amount of traffic</li>
+<li>Weekly <a href="http://community.jboss.org/en/richfaces/dev/teammtgs">team meetings</a> held openly in IRC</li>
+<li>A <a href="http://www.jboss.org/index.html?module=bb&op=viewforum&f=262">developer forum</a> - where new ideas for the framework are worked out</li>
+<li>Active use of social media (<a href="http://twitter.com/#!/richfaces">twitter</a>, <a href="https://plus.google.com/u/0/115573055688754345457">Google+</a>)</li>
+<li><a href="https://github.com/richfaces">Github</a> hosting - facilitating community contributions</li>
+</ul>
+**Quality**
+
+RichFaces is a very well tested project, with a dedicated QE team that continually writes new tests for the framework, and ensures that existing tests continue to pass in their automated runs. Look forward to some upcoming blog posts, where we will expand on our testing strategy, and speak to the industry leading role JBoss is taking with projects like <a href="http://www.jboss.org/arquillian">Arquillian</a>, <a href="http://www.jboss.org/jsfunit">JSFUnit</a>, and how we build on that with RichFaces. This all comes together in a robust, <a href="http://www.jboss.com/">enterprise-ready platform</a> on which you can develop and deploy your applications.
+
+
+
+**Moving Forward**
+
+Moving forward we plan to keep up this pace of innovation with our 4.Next efforts. The <a href="http://showcase.richfaces.org/">existing component set</a> is crucial to the project, and will continue to see new improvements and additions - but we need a new vehicle to deliver new components faster and more effectively. We would like to be able to better leverage the mountain of work done in other OSS projects in the javascript component space, and facilitate contributions from prospective contributors looking to implement their own “critical components”. To this end, we are proposing the addition of another component set in the RichFaces project.
+
+
+
+This new component sub-project will leverage existing javascript code where possible, either directly, or by composing them into new components. Where use cases require, we will continue to develop new components, contributing back to upstream javascript projects wherever possible. This idea is currently at a proposal stage, with a proof-of-principle demonstrated my recent <a href="http://blog.bleathem.ca/search/label/CDK">CDK blog series</a>. Join us in the developer forums, as we <a href="http://community.jboss.org/thread/175973">work out the details</a> of how to build this next-generation component set.
+
+
+
+Thanks to all of you for your interest and contributions to the project, feel free to ping me in the <a href="http://community.jboss.org/en/richfaces/dev?view=discussions">forums</a>, IRC (in #richfaces), <a href="http://twitter.com/#!/brianleathem">twitter</a> or anywhere for that matter should you want to discuss how you can contribute to the project, and help shape it into what you need it to be!

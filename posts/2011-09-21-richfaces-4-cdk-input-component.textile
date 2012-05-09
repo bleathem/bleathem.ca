@@ -1,0 +1,89 @@
+---
+layout: post
+title: "RichFaces 4 CDK | Input Component"
+---
+
+With our <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">last component</a>, we saw how we
+could output some simple text with a custom JSF component created
+with the RichFaces CDK.  Let's increment the complexity, and see how
+we can create a component that accepts input. Again, the goal here is to highlight how the important features fit together, and to leverage as much of the plumbing work as possible from the RichFaces CDK.
+
+
+
+If you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples" style="color: #5588aa; text-decoration: none;">github</a>.
+
+
+
+**<u>The Component Class</u>**
+
+
+
+In a similar approach to our Hello World component, we'll start with the component class for our Input component:
+
+
+
+
+<div style="text-align: center;">
+**AbstractInput.java**</div>
+<pre class="code brush:java">package ca.bleathem.richfaces.input.component;
+
+import org.richfaces.cdk.annotations.*;
+
+@JsfComponent(
+        type = "ca.bleathem.richfaces.input.Input",
+        family = "ca.bleathem.input",
+        renderer = @JsfRenderer(type = "ca.bleathem.input"),
+        tag = @Tag(name="input"))
+abstract public class AbstractInput extends javax.faces.component.UIInput {
+
+}
+</pre>
+
+
+This looks pretty similar to the component class for the Hello World component, with an appropriate changing or type, family, renderer and tag. One significant change to take note of is the base class for the component. Notice how we are extending the <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/javax/faces/component/UIInput.html">__UIInput__</a> class. This allows us to leverage the value holding and state saving that has already been built into this component. No matter what kind of UI you want to build for your component, you will almost always want to store a single value (we'll discuss select many components in another post). So extending UIInput is generally a good idea.
+
+
+
+**<u>The Renderer</u>**
+
+
+
+The corresponding renderer template for our input component is:
+
+
+
+<div style="text-align: center;">
+**input.template.xml**</div>
+<pre class="code brush:java"><?xml version="1.0" encoding="UTF-8"?>
+
+<cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
+    xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core" xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite"
+    xmlns:javaee="http://java.sun.com/xml/ns/javaee">
+
+    <cc:interface>
+        <cdk:class>ca.bleathem.richfaces.input.renderkit.InputRenderer</cdk:class>
+        <cdk:superclass>org.richfaces.renderkit.InputRendererBase</cdk:superclass>
+        <cdk:renderer-type>ca.bleathem.input</cdk:renderer-type>
+    </cc:interface>
+
+    <cc:implementation>
+        <input type="text" name="\#{clientId}" value="\#{getInputValue(facesContext, component)}" />
+    </cc:implementation>
+
+</cdk:root>
+</pre>
+
+
+Again, this looks pretty similar to the template for the Hello World component. The key difference being the Renderer __superclass__, and the html markup in the __cc:implementation__. By extending the RichFaces <a href="http://docs.jboss.org/richfaces/latest_4_0_X/javadoc/richfaces-components-ui/org/richfaces/renderkit/InputRendererBase.html" style="font-style: italic;">InputRendererBase</a> class, we save ourselves from having to write the logic to decode and invoke the validators for our component. Again, this is something we will want to do for many of the components we write.
+
+
+
+The html markup is also rather simple. By giving the input element the name of our component ID, we are indicating which form component should be decoded when the component is processed. When authoring a component with a complex UI, you will often make this input element a __hidden__ input type, to store and submit your value while not interfering with your UI. We'll see more of this in later entries of this CDK series.
+
+
+
+I'll also add that the __**package-info.java**__ file described in the Hello World entry is still required, if you don't already have one included in your jar.
+
+
+
+And that's our input component - again done as simply as possible. The next entry will wrap an existing jQuery UI component, showing how the CDK is an effective means to leverage the work others have already put in to authoring complex javascript components.

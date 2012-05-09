@@ -1,0 +1,23 @@
+---
+layout: post
+title: "CDI does events too!"
+---
+
+CDI is the new programming model introduced with Java EE 6.  An acronym for Contexts and Dependency Injection, CDI advertises well two of the programming paradigms it aims to solve.  But there is another, often overlooked sibling: Event handling.  While I'd heard it mentioned in the context of CDI, I'd never really paid much attention - I was probably too busy trying to wrap my head around Conversations, and how CDI provides Dependency Injection.  And me being me, once I learn something cool, I have to tell everyone who will isten all about it!
+
+
+
+Adam Bien does a fantastic job introducing CDI events in his <a href="http://www.adam-bien.com/roller/abien/entry/java_ee_6_observer_with">blog entry</a>.  There are only three really noteworthy lines of code that I will repeat here: 
+
+<ol><li>@Inject Event<helloevent> events; </helloevent></li>
+<li><helloevent> events.fire(new HelloEvent(...)); </helloevent></li>
+<li><helloevent> public void listenToHello(@Observes HelloEvent helloEvent){ ... }</helloevent></li>
+</ol><helloevent>These three lines are all that's required to produce and observe the event.  Anyone who's programmed with Swing knows the benefit of decoupling concerns with action events and action listeners.&nbsp; This is the same thing, only far more elegantly implemented.</helloevent>
+
+
+
+<helloevent>One of distinguishing points for me is the POJO nature of the events.&nbsp; With nothing to extend or implement, they can be as simple or as complex as necessary.&nbsp; All without the loss of (compile-time) type safety, due to the generic implementation.</helloevent>
+
+
+
+<helloevent>Well done guys, CDI just got that much better for me! </helloevent>

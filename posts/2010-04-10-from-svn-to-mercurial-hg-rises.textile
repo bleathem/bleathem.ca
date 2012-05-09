@@ -1,0 +1,46 @@
+---
+layout: post
+title: "From svn to mercurial, the hg rises!"
+---
+
+I've been toying with the idea of moving from svn to a distributed version control system (dvcs) for a long time.  I held back, hoping the mercurial (hg) vs. git "war" would declare a winner, but as major projects started adopting the two dvcs's, it became apparent to me that neither tool was going to disappear anytime soon.  This notion was cemented for me when I read a forum post saying <pre>hg = git >> svn</pre>That settled it.  I had to pick one, and move forward.  I chose mercurial, not because it stood out above git, but it seemed to be more widely adopted in the communities I was interested in.  Joel Spolsky's <a href="http://hginit.com">mercurial primer</a> settled it for me.  Mercurial was on it's way in.  I had identified identified some key obstacles I needed to overcome to replace my subversion infrastructure with a new mercurial one.  I had to figure out: <ol><li><a href="#install">How to install hg in CENTOS 5</a> </li>
+<li><a href="#import">How to import the revision history from svn into hg</a> </li>
+<li><a href="#ldap">How to get LDAP authentication to work with hg</a> </li>
+<li><a href="#hudson">How to integrate hg with hudson (our continuous integration server)</a> </li>
+<li><a href="#maven">How to get the maven release plugin to work with hg</a> </li>
+</ol>These were all things I'd achieved with subversion, so they set the bar I had to achieve with any subversion replacement.  Each of these steps turned out to be pretty easy overall.  I ended up completing the process with a single days work (or two half-days...)  h2. <a name="install">1) Install mercurial in CENTOS 5</a>
+
+I hunted around for a while looking for an RPM, but found nothing recent.  On a twitter recommendation, I tried <a href="http://mercurial.selenic.com/wiki/UnixInstall">installing from source</a>.  Turned out to be pretty easy.  The install ended up putting mercurial in my /usr/local/lib64 directory, which is not one of the default places python looks for it's modules.  I had to do set the PYTHONPATH environment variable pointing to this directory to get things to work.  h2. <a name="import">2) svn import into hg</a>
+
+Turns out mercurial has this functionality built in with the bundled <a href="http://mercurial.selenic.com/wiki/ConvertExtension#Converting_from_Subversion">Convert Extension</a>.  One has to enable this extension in a <a href="http://www.selenic.com/mercurial/hgrc.5.html">mercurial configuration file</a>, then it's pretty simple to point the "hg convert" command at your subersion repo.  Done and done!  h2. <a name="ldap">3) LDAP integration</a>
+
+I'd achieved svn LDAP integration using apache, so I was quite happy to see hg did the same thing.  I <a href="http://mercurial.selenic.com/wiki/PublishingRepositories#multiple">set up the hgwebdir.cgi</a> script to serve my newly imported hg repositories, hi-jacking the LDAP authentication from my svn setup.  Worked like a charm.  p. Update, here's the apache config for authentication: 
+
+<pre class="code brush: bash"># cat /etc/httpd/conf.d/hg.conf
+ScriptAlias /hg "/var/www/hg/hgwebdir.cgi"
+
+<location /hg>
+        Order deny,allow
+        Deny from all
+        Allow from 10.0.0.1
+        AuthType Basic
+        AuthBasicProvider ldap
+        AuthName "LDAP password"
+        AuthLDAPURL "ldaps://ldap.domain.com/ou=users,dc=domain,dc=ccom?uid?sub?(&(uniqueidentifier=*)(objectclass=eperson))"
+        AuthLDAPGroupAttribute ibm-allmembers
+        require ldap-group cn=mis,ou=web,ou=Groups,dc=domain,dc=com
+        Satisfy Any
+</Location>
+</pre>Note: the group terms are specific to the IBM Tivoli LDAP server.  h2. <a name="hudson">4) hg integration with Hudson</a>
+
+This one seemed simple enough, given that there is a mercurial <a href="http://wiki.hudson-ci.org/display/HUDSON/Mercurial+Plugin">plugin for hudson</a>.  It was simple enough to install, but took a bit of effort to get going.  I had to go into the hudson configuration, and define a mercurial "instance" pointing to a wrapper that set the PYTHONPATH environment variable, then delegated the argument to mercurial itself.  Again, I think this is due to the /usr/local/lib64 path the mercurial installer chose.  Maybe this could be done more cleanly, but it's working now. p.  Another hiccup with the hudson configuration, was that there was no place to put a username and password, as one did with the svn/hudson config.  I worked around this by adding the IP of my hudson server to the "allow from" section of my apache config file.  Thus hudson could pull from my hg repos without authenticating. p. A few hurdles with this one, but nothing severe. p. Update (in answer to a comment):
+
+My hg warpper looks like: 
+
+<pre class="code brush: bash"># cat /usr/local/bin/hg_pythonpath_wrapper
+#!/bin/sh
+export PYTHONPATH=/usr/local/lib64/python2.4/site-packages
+/usr/local/bin/hg "$@"
+</pre>p. To get hudson to use this wrapper, goto: Manage Hudson -> Configure System Scroll down to the mercurial section, click the "Add Mercurial" plugin, and point the executable to the above wrapper.   h2. <a name="maven">5) The maven release plugin</a>
+
+I use the maven release plugin to perform my releases.  I initially tried to get maven to push/pull from the "central" hg repository I had setup, but ran into similar authentication issues as I did with hudson.  I read some advice on <a href="http://www.chrissearle.org/blog/technical/using_maven2_scm_and_release_plugins_with_mercurialhg">using the maven release plugin with mercurial</a>, and realized I was still thinking in terms of subversion.  Of course it makes more sense to do the release against a local hg repo, and only push the change-sets if the release worked.  Oh I love mercurial!  And that's it.  One day later, and I've converted our multi-module subversion repository into several mercurial directories served by apache with LDAP authentication.  Our hudson continuous integration polls the "primary" mercurial repository, and maven tags releases against my local repo.  I was told correctly, one you ditch subversion and go with mercurial, you'll never go back.

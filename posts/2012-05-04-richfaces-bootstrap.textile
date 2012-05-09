@@ -1,0 +1,5 @@
+---
+layout: post
+title: "RichFaces Bootstrap"
+---
+RichFaces Bootstrap

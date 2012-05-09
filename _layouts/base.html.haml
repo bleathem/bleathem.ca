@@ -2,7 +2,7 @@
 %html
   %head
     %meta{ :charset=>'utf-8' }
-    %title An awesome site 
+    %title Java EE - Experiences of a Developer 
     %meta{ :name=>'viewport', :content=>'width=device-width, initial-scale=1.0' }
     :css
       body {
@@ -15,12 +15,14 @@
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
-          %a.brand{ :href=>"#{site.base_url}" } Project Name
+          %a.brand{ :href=>"#{site.base_url}" } Java EE - Experiences of a Developer 
           %ul.nav
             %li
               %a{ :href=>"#{site.base_url}" } Home
-    .container
-      ~ content
+    .container-fluid
+      .row-fluid
+        ~ content
+      .row-fluid
       %hr
       %footer
         %p &copy; Organization #{Date.today.year}

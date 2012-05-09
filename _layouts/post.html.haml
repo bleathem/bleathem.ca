@@ -1,5 +1,7 @@
 ---
-layout: base
+layout: default
 ---
 #content
+  %h6= page.date.strftime("%A, %B #{page.date.day}, %Y")
+  %h2= page.title
   ~ content

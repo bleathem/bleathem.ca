@@ -4,7 +4,7 @@ title: "View Configuration with Seam 3 Faces - the Introduction"
 ---
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://1.bp.blogspot.com/-gFktJJ5_jbk/T6im8bGivLI/AAAAAAAAC4I/YVqSnzq03to/s1600/faces_emblem.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="99" src="http://1.bp.blogspot.com/-gFktJJ5_jbk/T6im8bGivLI/AAAAAAAAC4I/YVqSnzq03to/s200/faces_emblem.png" width="100" /></a></div>
+<a href="/images/blog/2011-03-28-view-configuration-with-seam-3-faces/faces_emblem.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="99" src="/images/blog/2011-03-28-view-configuration-with-seam-3-faces/faces_emblem.png" width="100" /></a></div>
 In <a href="http://seamframework.org/Seam3/FacesModule">Seam Faces</a> we've provided JSF developers with a mechanism to centrally configure various aspects of their JSF views. Concerns like transaction control and view security are currently supported, and support for URL rewriting, XSRF attack prevention, and JSF navigation is in the planning stage.
 
 

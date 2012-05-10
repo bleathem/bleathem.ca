@@ -11,7 +11,7 @@ If your keen and want to get started right away, you can download the distributi
 
 
 
-<a href="http://3.bp.blogspot.com/-nnukXG1tazc/Trq193wnJyI/AAAAAAAAAJ4/MnxQ06gczwg/s1600/mobile+showcase.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="320" src="http://3.bp.blogspot.com/-nnukXG1tazc/Trq193wnJyI/AAAAAAAAAJ4/MnxQ06gczwg/s320/mobile+showcase.png" width="226" /></a>**Mobile showcase improvements**
+<a href="/images/blog/2011-11-09-richfaces-410m4-release-announcement/mobile+showcase.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="320" src="/images/blog/2011-11-09-richfaces-410m4-release-announcement/mobile+showcase.png" width="226" /></a>**Mobile showcase improvements**
 
 The CSS 3 overlay was improved to provide better mobile compatibility of the components. We also added an ajax status indicator to the mobile showcase. Since it is entirely an ajax driven application, the status indicator improves the user experience dramatically.
 

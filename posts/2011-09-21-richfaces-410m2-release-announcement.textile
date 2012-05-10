@@ -34,7 +34,7 @@ The Editor has several new features, but the most valuable is the integration wi
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-F3MhOWZIJ5M/TnoLm6gkdtI/AAAAAAAAAI4/nj5Bdrnc2hE/s1600/editor.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="305" src="http://4.bp.blogspot.com/-F3MhOWZIJ5M/TnoLm6gkdtI/AAAAAAAAAI4/nj5Bdrnc2hE/s640/editor.png" width="640" /></a></div>
+<a href="/images/blog/2011-09-21-richfaces-410m2-release-announcement/editor.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="305" src="/images/blog/2011-09-21-richfaces-410m2-release-announcement/editor.png" width="640" /></a></div>
 
 
 

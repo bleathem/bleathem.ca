@@ -173,7 +173,7 @@ We can see we have multiple tabs, and for kicks I nested the <a href="http://blo
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://4.bp.blogspot.com/-rMdCAiIqndQ/TtXgr4yvsFI/AAAAAAAAAKE/EI8leVSEZHQ/s1600/calendar_tab.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="228" src="http://4.bp.blogspot.com/-rMdCAiIqndQ/TtXgr4yvsFI/AAAAAAAAAKE/EI8leVSEZHQ/s320/calendar_tab.png" width="320" /></a></div>
+<a href="/images/blog/2011-11-29-richfaces-4-cdk-jqeury-ui-tabs/calendar_tab.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="228" src="/images/blog/2011-11-29-richfaces-4-cdk-jqeury-ui-tabs/calendar_tab.png" width="320" /></a></div>
 
 
 So here it is, the jQuery UI tabs plugin wrapped with the RichFaces CDK, providing us with a bare-bones tab component. A lot more work is required to get this to a point where it could replace the RichFaces tab component, but we have succeeded in creating a functional component leveraging existing javascript code, and without a lot of work on our part.

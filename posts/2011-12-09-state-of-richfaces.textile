@@ -16,7 +16,7 @@ Moving forward, I would like to see the project continue to focus on the key str
 **Innovation**
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-vjtDzI_LeHM/TuJB-MjPiLI/AAAAAAAAAN8/ivQ4ggJY6zc/s1600/showcase.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="202" src="http://3.bp.blogspot.com/-vjtDzI_LeHM/TuJB-MjPiLI/AAAAAAAAAN8/ivQ4ggJY6zc/s400/showcase.png" width="400" /></a></div>
+<a href="/images/blog/2011-12-09-state-of-richfaces/showcase.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="202" src="/images/blog/2011-12-09-state-of-richfaces/showcase.png" width="400" /></a></div>
 RichFaces has long been the place to come for JSF innovation. Never content to simply provide a JSF component set, the RichFaces project (together with other JBoss projects) has always aimed to provide developers with a complete JSF framework for developing applications. Some of these innovations include:
 
 <ul>

@@ -29,7 +29,7 @@ The&nbsp;<a href="http://bootstrap-richfaces.rhcloud.com/component/buttonDropdow
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-fr543eWcuyg/T6PRMbUgXHI/AAAAAAAAC28/vVrCqByVZ20/s1600/buttonDropdown.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-fr543eWcuyg/T6PRMbUgXHI/AAAAAAAAC28/vVrCqByVZ20/s1600/buttonDropdown.png" /></a></div>
+<a href="/images/blog/2012-05-04-richfaces-bootstrap/buttonDropdown.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="/images/blog/2012-05-04-richfaces-bootstrap/buttonDropdown.png" /></a></div>
 
 
 
@@ -41,7 +41,7 @@ The bootstrap <a href="http://bootstrap-richfaces.rhcloud.com/component/grid/ind
 
 
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://2.bp.blogspot.com/-69wCSpAV6-U/T6PRZXufCBI/AAAAAAAAC3E/GpaSR0q3BY8/s1600/gridContainer.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="235" src="http://2.bp.blogspot.com/-69wCSpAV6-U/T6PRZXufCBI/AAAAAAAAC3E/GpaSR0q3BY8/s640/gridContainer.png" width="640" /></a></div>
+<a href="/images/blog/2012-05-04-richfaces-bootstrap/gridContainer.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="235" src="/images/blog/2012-05-04-richfaces-bootstrap/gridContainer.png" width="640" /></a></div>
 
 
 I'll blog more about the individual components as they get fleshed out. There's a ton of blog material here!

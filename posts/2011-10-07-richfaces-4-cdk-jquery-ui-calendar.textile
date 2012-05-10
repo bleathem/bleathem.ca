@@ -168,7 +168,7 @@ When rendered, this looks like:
 <div style="text-align: center;">
 **__Screen shot__**</div>
 <div class="separator" style="clear: both; text-align: center;">
-<a href="http://3.bp.blogspot.com/-X6Y4MjdGPe8/To4hm_jaSSI/AAAAAAAAAJg/CRNlNFa-YOw/s1600/datepicker.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="181" src="http://3.bp.blogspot.com/-X6Y4MjdGPe8/To4hm_jaSSI/AAAAAAAAAJg/CRNlNFa-YOw/s320/datepicker.png" width="320" /></a></div>
+<a href="/images/blog/2011-10-07-richfaces-4-cdk-jquery-ui-calendar/datepicker.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="181" src="/images/blog/2011-10-07-richfaces-4-cdk-jquery-ui-calendar/datepicker.png" width="320" /></a></div>
 
 
 While this has certainly grown in complexity over our initial <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">HelloWorld component</a>, we've managed to keep our JSF component development DRY. We've leveraged existing, high-quality javascript components. We've also made use of the RichFaces CDK to wire the JSF configured component to the javascript object. Some additional work is required to continue mapping the jQuery UI datepicker plugin options into JSF component attributes, but the mechanism for this has been laid out, and completing the component will be quite straight forward (pull requests welcome!).

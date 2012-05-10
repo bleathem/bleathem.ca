@@ -12,16 +12,30 @@ layout: base
       %li JSR-344 (JSF 2.2) EG member
     %hr
     %h6 twitter
+    .tweet
+      :javascript
+        $(function() {
+          $(".tweet").tweet({
+            username: "brianleathem",
+            avatar_size: 24,
+            count: 4,
+            template: "{avatar} {text} {time}",
+            loading_text: "Loading tweets...",
+            outro_text: 'Follow me on <a href="https://twitter.com/#!/brianleathem">@brianleathem</a> on twitter.com...'
+          });
+        });    
     %hr
     %h6 Stack Overflow   
     %a{:href => "http://stackoverflow.com/users/264797/brian-leathem"}
       %img{:src => "http://stackoverflow.com/users/flair/264797.png", 
            :width => "208", :height => "58",
            :alt => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers",
-	   :title => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers"}
+           :title => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers"}
     %hr
     %h6 Blog Archive
 
 .span9
   ~ content
+
+%script{ :type=>'text/javascript', :src=>'/javascripts/jquery-tweet.js' }
 

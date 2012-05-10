@@ -95,7 +95,11 @@ class BlogFileParser
           file.write(resp.body)
         end
         puts img['src']
-        textile.gsub!( img['src'], '/images/blog/'+blog_id+'/'+filename )
+        img_link = img['src'].sub(/s\d+/, "s1600")
+        new_img_src = '/images/blog/'+blog_id+'/'+filename
+        textile.gsub!( img['src'], new_img_src)
+        textile.gsub!( img_link, new_img_src)
+
       end
     end
   end

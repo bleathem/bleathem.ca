@@ -33,6 +33,18 @@ layout: base
            :title => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers"}
     %hr
     %h6 Blog Archive
+    %ul
+      -site.post_map.each do |year, months|
+        %li= year
+        %ul
+          -months.each do |month, posts|
+            %li
+              %span.month= Date::MONTHNAMES[month]
+              %span.count= "(#{posts.size})"
+            %ul
+              -posts.each do |post|
+                %li
+                  %a{:href => post.url}= post.title
 
 .span9
   ~ content

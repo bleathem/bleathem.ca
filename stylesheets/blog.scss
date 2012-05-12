@@ -1,8 +1,12 @@
 #sidebar .title {
  padding-bottom: 5px;
- font-size: 11px;
+ font-size: 12px;
  color: #909090;
  text-transform: uppercase;
+}
+
+#sidebar hr {
+ margin: 35px 0;
 }
 
 .about {
@@ -40,5 +44,15 @@
  padding-right : 5px;
 }
 
-.twitter {
+.tweet .tweet_outro {
+ font-size : 11px;
+ text-align: center;
+}
+
+.archive ul {
+}
+
+
+.archive li.collapse {
+ 
 }

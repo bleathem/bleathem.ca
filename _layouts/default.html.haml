@@ -14,7 +14,7 @@ layout: base
           %li Seam Faces Module Lead
           %li JSR-344 (JSF 2.2) EG member
     %hr
-    .title twitter
+    .title twitter updates
     .tweet
       :javascript
         $(function() {
@@ -24,7 +24,7 @@ layout: base
             count: 4,
             template: "{avatar} {text} {time}",
             loading_text: "Loading tweets...",
-            outro_text: 'Follow me on <a href="https://twitter.com/#!/brianleathem">@brianleathem</a> on twitter.com...'
+            outro_text: '<a class="btn"  href="https://twitter.com/#!/brianleathem">Follow me on twitter</a>'
           });
         });    
     %hr
@@ -36,18 +36,22 @@ layout: base
            :title => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers"}
     %hr
     .title Blog Archive
-    %ul
-      -site.post_map.each do |year, months|
-        %li= year
-        %ul
-          -months.each do |month, posts|
-            %li
-              %span.month= Date::MONTHNAMES[month]
-              %span.count= "(#{posts.size})"
-            %ul
-              -posts.each do |post|
-                %li
-                  %a{:href => post.url}= post.title
+    .archive
+      %ul#years
+        -site.post_map.each do |year, months|
+          %li.year{:id=>"year_#{year}"}
+            %a{:data => {:toggle => "collapse", :target => "#year_#{year} > ul.year", :parent=>"#years"}}
+              = year
+            %ul.year.collapse
+              -months.each do |month, posts|
+                %li.month{:id=>"month_#{month}"}
+                  %a
+                    %span.month= Date::MONTHNAMES[month]
+                    %span.count= "(#{posts.size})"
+                  %ul.month
+                    -posts.each do |post|
+                      %li
+                        %a{:href => post.url}= post.title
 
 .span9
   ~ content

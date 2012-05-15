@@ -28,18 +28,18 @@ layout: base
           });
         });    
     %hr
+      .title Tags
+      .row-fluid
+        .span1 &nbsp;
+        .span10.tags
+          = site.posts_tag_cloud
+    %hr
     .title Stack Overflow   
     %a{:href => "http://stackoverflow.com/users/264797/brian-leathem"}
       %img{:src => "http://stackoverflow.com/users/flair/264797.png", 
            :width => "208", :height => "58",
            :alt => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers",
            :title => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers"}
-    %hr
-      .title Tags
-      .row-fluid
-        .span1 &nbsp;
-        .span10.tags
-          = site.posts_tag_cloud
     %hr
     .title Blog Archive
     .archive

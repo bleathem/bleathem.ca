@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.1.0.Final Release Announcement"
+tags: [ RF41, RichFaces ]
 ---
 
 <div class="separator" style="clear: both; text-align: center;">

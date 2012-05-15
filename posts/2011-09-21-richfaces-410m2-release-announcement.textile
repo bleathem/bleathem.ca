@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.1.0.M2 Release Announcement"
+tags: [ RF41, RichFaces ]
 ---
 
 The Richfaces 4.1 milestone releases are trucking along. With <a href="http://blog.bleathem.ca/2011/08/richfaces-410m1-release-announcement.html">M1</a>, we had a focus on changes surrounding project infrastructure, and the introduction of some new components. Now with <a href="https://issues.jboss.org/browse/RF/fixforversion/12316708">M2</a> we see updates to the core, and a stabilization of both the new components and the framework as a whole.

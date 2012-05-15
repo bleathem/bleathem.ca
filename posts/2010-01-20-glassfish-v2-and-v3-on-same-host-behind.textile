@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Glassfish V2 and V3 on the same host, behind mod_jk"
+tags: [ mod_jk, JavaEE, JSF, glassfish ]
 ---
 
 p. I've jumped on the JavaEE 6 bandwagon, with one application already in production.  The developer productivity improvements in JavaEE6/Glassfish V3 are tremendous.  The only downside is that I still have some JavaEE 5 applications in production.  The JavaEE 5 apps can't migrate to JavaEE 6 until Icefaces supports JSF 1.2.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces Bootstrap"
+tags: [ Bootstrap, CDK, RichFaces ]
 ---
 
 I'm happy to share the news that the RichFaces community has started an effort to wrap <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> with the RichFaces <a href="https://community.jboss.org/wiki/RichFacesCDKHowTos">CDK</a>. If you haven't yet heard, Twitter's Bootstrap project is a set of HTML/CSS/js "widgets" that you can use for building a website/web application with an emphasis on a fluid layouts that adapt well to mobile devices. The RichFaces community effort centres around <a href="https://github.com/richfaces/sandbox/tree/develop/bootstrap">providing a set</a>&nbsp;of first-class JSF components built using these Bootstrap widgets via the RichFaces CDK.

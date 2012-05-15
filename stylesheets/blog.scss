@@ -72,3 +72,37 @@
  display: block;
  float:left;
 }
+
+.tags {
+ text-transform: uppercase;
+}
+
+.tags .title {
+ font-size: 12px;
+ color: #909090;
+}
+
+@mixin tag-cloud-groups($groups, $increment: .1) {
+  @for $n from 0 through ($groups - 1) {
+    $opacity: $n * .05 + .8;
+    @if $opacity > 1 {
+      $opacity: 1;
+    }
+    .tag-#{$n} {
+      font-size: #{1 + $n * $increment}em;  
+      opacity: $opacity;
+    }
+  }
+}
+
+// Tag cloud styling
+
+.tag-cloud {
+  @include tag-cloud-groups(12, .15);
+  a {
+    padding: 3px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  text-align : center;
+}

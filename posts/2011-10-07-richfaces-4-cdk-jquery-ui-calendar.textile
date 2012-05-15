@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4 CDK | jQuery UI Calendar"
+tags: [ CDK, RichFaces ]
 ---
 
 Further incrementing the complexity over the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-input-component.html">input component</a> we created previously, this time we will create a JSF calendar component. Being pragmatic OSS developers, we will leverage the existing javascript of the <a href="http://jqueryui.com/demos/datepicker/">datepicker</a> component from the <a href="http://jqueryui.com/">jQuery UI</a> project, and we'll see how well the RichFaces CDK lends itself to mapping JSF component attributes into javascript configuration options.

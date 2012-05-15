@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4 CDK | jQeury UI Tabs"
+tags: [ CDK, RichFaces ]
 ---
 
 Following on with another entry in my <a href="http://blog.bleathem.ca/search/label/CDK">CDK series</a>, this time we will look at at creating a pair of components to wrap the <a href="http://jqueryui.com/demos/tabs/">jQuery UI tabs plugin</a> with the RichFaces CDK. It'll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let's dive right in with a look at the Abstract component definitions.

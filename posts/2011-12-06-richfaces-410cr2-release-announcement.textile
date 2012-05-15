@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.1.0.CR2 Release Announcement"
+tags: [ RF41, RichFaces ]
 ---
 
 

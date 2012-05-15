@@ -8,6 +8,16 @@ layout: default
       %h2
         %a{:href=>post.url}= post.title
       = post.content
+      - if post.tags
+        .tags
+          %span.title
+            tags: 
+          -for tag in post.tags
+            %a{:href => "/posts/tags/#{tag}"}
+              -if (tag != post.tags.last)
+                = "#{tag}, "
+              -else
+                = "#{tag} "
       %hr
 
 = page.posts.links

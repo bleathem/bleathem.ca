@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Seam Faces 3.0.2.Final released"
+tags: [ seam ]
 ---
 
 

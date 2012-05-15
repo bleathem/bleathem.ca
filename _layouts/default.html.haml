@@ -35,6 +35,12 @@ layout: base
            :alt => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers",
            :title => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers"}
     %hr
+      .title Tags
+      .row-fluid
+        .span1 &nbsp;
+        .span10.tags
+          = site.posts_tag_cloud
+    %hr
     .title Blog Archive
     .archive
       %ul#years

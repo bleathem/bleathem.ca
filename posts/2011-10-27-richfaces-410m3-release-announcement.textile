@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.1.0.M3 Release Announcement"
+tags: [ RF41, RichFaces ]
 ---
 
 

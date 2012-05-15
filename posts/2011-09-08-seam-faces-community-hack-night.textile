@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Seam Faces Community Hack Night"
+tags: [ seam, RichFaces ]
 ---
 
 **<u><span class="Apple-style-span" style="font-size: large;">Seam Faces Community Hack Night!</span></u>**

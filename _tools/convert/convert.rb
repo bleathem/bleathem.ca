@@ -24,9 +24,12 @@ class BlogFileParser
       id = entry.xpath("atom:id", "atom" => "http://www.w3.org/2005/Atom").text
       categories = entry.xpath("atom:category", "atom" => "http://www.w3.org/2005/Atom")
       is_post = false
+      tags = []
       categories.each do |category|
         if (category['term'] == 'http://schemas.google.com/blogger/2008/kind#post')
           is_post = true
+        else
+          tags << category['term']
         end
       end
       next if (! is_post) 
@@ -37,11 +40,11 @@ class BlogFileParser
       clothred = ClothRed.new(text)
       textile = clothred.to_textile
       #puts markdown
-      write_entry(entry, content, textile)
+      write_entry(entry, content, textile, tags)
     end
   end
 
-  def write_entry(entry, content, textile)
+  def write_entry(entry, content, textile, tags)
     #puts
     #puts entry
     date_str = entry.xpath("atom:published", "atom" => "http://www.w3.org/2005/Atom").text + " +0000"
@@ -60,7 +63,11 @@ class BlogFileParser
     path = '_site/posts/'+filename
     
     title = entry.xpath("atom:title", "atom" => "http://www.w3.org/2005/Atom").text
-    head = "---\nlayout: post\ntitle: \"#{title}\"\n---\n\n"
+    head = "---\nlayout: post\ntitle: \"#{title}\"\n"
+    if (tags.any?)
+      head = head + "tags: [ #{tags.join(', ')} ]\n"
+    end
+    head = head + "---\n\n"
     textile = head + textile
     textile.gsub!( %r{#\{}, '\#{' )
 

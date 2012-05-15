@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.1.0.M4 Release Announcement"
+tags: [ RF41, RichFaces ]
 ---
 
 The RichFaces 4.1 Milestone 4 release is now available for <a href="http://www.jboss.org/richfaces/download/milestones">download</a>! With this <a href="https://issues.jboss.org/browse/RF/fixforversion/12317054">M4</a> release we focused on stabilizing the features we introduced in the earlier 4.1 release-train milestones (<a href="http://blog.bleathem.ca/2011/08/richfaces-410m1-release-announcement.html">M1</a>, <a href="http://blog.bleathem.ca/2011/09/richfaces-410m2-release-announcement.html">M2</a>, <a href="http://blog.bleathem.ca/2011/10/richfaces-410m3-release-announcement.html">M3</a>). The release following M4 will be our 4.1 release candidate, so we want to make sure we achieve maximum stability with M4. Some of the key areas we touched are listed below.

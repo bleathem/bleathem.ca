@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.1.0.CR1 Release Announcement"
+tags: [ RF41, RichFaces ]
 ---
 
 I’m excited to announce the availability of RichFaces<a href="https://issues.jboss.org/browse/RF/fixforversion/12317055"> 4.1.0.CR1</a>, the first release candidate for RichFaces 4.1.0. Stability of the platform has been a strong focus for all the RichFaces 4.1.0 <a href="http://blog.bleathem.ca/search/label/RF41">milestone releases</a>, and has been even more so of a focus for our CR1 release.

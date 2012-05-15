@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.2.0.CR1 Release Announcement"
+tags: [ RF42, RichFaces ]
 ---
 
 I’m excited to announce the availability of RichFaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12318573">4.2.0.CR1</a>, our release candidate for RichFaces 4.2.0. &nbsp;Hot on the heels of the RichFaces <a href="http://blog.bleathem.ca/2011/12/richfaces-410final-release-announcement.html">4.1 release</a>, Richfaces 4.2 delivers some "missing" components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API. &nbsp;Not to forget a significant number of bug fixes, and overall usability improvements.

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4 CDK | Hello World"
+tags: [ CDK, RichFaces ]
 ---
 
 This is the first technical post of my CDK series. Starting real simple, we'll create a component that produces a __hello world__ output. "Why start with a hello world? Isn't that a little cliche?". Well indeed it is, but it is by far the best way to point out the fundamental pieces of the CDK, and how they together. We'll build a strong foundation in our understanding of the CDK, on which we can build more interesting components in future posts.

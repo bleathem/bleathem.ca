@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "CDI does events too!"
+tags: [ java ee 6, cdi ]
 ---
 
 CDI is the new programming model introduced with Java EE 6.  An acronym for Contexts and Dependency Injection, CDI advertises well two of the programming paradigms it aims to solve.  But there is another, often overlooked sibling: Event handling.  While I'd heard it mentioned in the context of CDI, I'd never really paid much attention - I was probably too busy trying to wrap my head around Conversations, and how CDI provides Dependency Injection.  And me being me, once I learn something cool, I have to tell everyone who will isten all about it!

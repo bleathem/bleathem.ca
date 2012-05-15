@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4 CDK | Introduction"
+tags: [ RichFaces ]
 ---
 
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.2.1.Final Release Announcement"
+tags: [ RF42, RichFaces ]
 ---
 
 We've&nbsp;released RichFaces<a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12319306"> 4.2.1.Final</a> - the first micro release for the 4.2 release train. Since the CR1 release we've primarily addressed bugs with the Richfaces showcase and the RichFaces archetypes. &nbsp;CR1 itself focused on bug fixes and stability improvements throughout the framework.

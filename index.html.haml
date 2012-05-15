@@ -13,7 +13,7 @@ layout: default
           %span.title
             tags: 
           -for tag in post.tags
-            %a{:href => "/posts/tags/#{tag}"}
+            %a{:href => "/blog/tags/#{tag}"}
               -if (tag != post.tags.last)
                 = "#{tag}, "
               -else

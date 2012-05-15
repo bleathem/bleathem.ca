@@ -16,7 +16,7 @@ class BlogFileParser
     puts "parsing..."
     Dir.mkdir("_site") unless File.exists?("_site")
     Dir.mkdir("_site/images") unless File.exists?("_site/images")
-    Dir.mkdir("_site/posts") unless File.exists?("_site/posts")
+    Dir.mkdir("_site/blog") unless File.exists?("_site/blog")
     Dir.mkdir("_site/images/blog") unless File.exists?("_site/images/blog")
     
     entries = @blog.xpath("//atom:entry", "atom" => "http://www.w3.org/2005/Atom")
@@ -60,7 +60,7 @@ class BlogFileParser
     blog_id = date.strftime("%Y-%m-%d-"+name)
     filename = blog_id + '.textile'
     puts filename;
-    path = '_site/posts/'+filename
+    path = '_site/blog/'+filename
     
     title = entry.xpath("atom:title", "atom" => "http://www.w3.org/2005/Atom").text
     head = "---\nlayout: post\ntitle: \"#{title}\"\n"

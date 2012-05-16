@@ -6,20 +6,14 @@ tags: [ CDK, RichFaces ]
 
 Further incrementing the complexity over the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-input-component.html">input component</a> we created previously, this time we will create a JSF calendar component. Being pragmatic OSS developers, we will leverage the existing javascript of the <a href="http://jqueryui.com/demos/datepicker/">datepicker</a> component from the <a href="http://jqueryui.com/">jQuery UI</a> project, and we'll see how well the RichFaces CDK lends itself to mapping JSF component attributes into javascript configuration options.
 
-
-
 As always, if you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples">github</a>.
 
-
-
-**<u>The Component Class</u>**
+h3. The Component Class
 
 Starting again with the component class:
 
+div=. **AbstractDatepicker.java**
 
-
-<div style="text-align: center;">
-**AbstractDatepicker.java**</div>
 <pre class="code brush:java">package ca.bleathem.richfaces.jquery.component;
 
 import org.richfaces.cdk.annotations.*;
@@ -42,23 +36,16 @@ abstract public class AbstractDatepicker extends javax.faces.component.UIInput {
 
 }</pre>
 
-
 Here we see we are again extending the <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/javax/faces/component/UIInput.html">UIInput</a> class, as we did with the Input component. &nbsp;What's new is the introduction of some additional attributes. &nbsp;The __@Attribute__ annotation instructs the CDK that these abstract getter methods map to&nbsp;component attributes, and the CDK then takes care of wiring the attributes into the JSF state saving mechanism for us.
-
-
 
 The naming convention of the attribute is alligned with <a href="http://jqueryui.com/demos/datepicker/#options">jQeury UI datepicker options</a>. This allows us to transparently pass the JSF component attributes through to the jQuery plugin, as we see in the Renderer below.
 
-
-
-**<u>The Renderer</u>**
+h3. The Renderer
 
 The renderer is again an xml file:
 
+div=. **datepicker.template.xml**
 
-
-<div style="text-align: center;">
-**datepicker.template.xml**</div>
 <pre class="code brush:xml"><?xml version="1.0" encoding="UTF-8"?>
 
 <cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
@@ -87,21 +74,14 @@ The renderer is again an xml file:
 </cdk:root>
 </pre>
 
-
 Diving first into the __cc:implementation__ of this renderer template, we see again an __input__ element. What's new is the __script__ tag following the input. This __script__ tag get's compiled into javascript when the component renders. Using CDK xml markup, we build up the javascript object __pluginOptions__ which we pass as a parameter to the call to the jQueryUI plugin.
-
-
 
 The __document.getElementById('\#{clientId}')__ is a workaround for JSF's use of the ":" character in javascript IDs - this doesn't play well with jQuery. By first calling __document.getElementById__, we end up with an argument that is acceptible to jQuery. Notice the __\#{toScriptArgs(pluginOptions)}__ argument to the datepicker jQuery UI plugin. This initializes the datepicker plugin, with the JSF component attributes specified by the application developer.
 
-
-
 From the __cc:interface__ of this renderer template, we see that we are extending the class __DatepickerRendererBase__. This class is included below:
 
+div=. **DatepickerRendererBase.java**
 
-
-<div style="text-align: center;">
-**DatepickerRendererBase.java**</div>
 <pre class="code brush:java">package ca.bleathem.richfaces.jquery.renderkit;
 
 import org.richfaces.renderkit.InputRendererBase;
@@ -122,21 +102,14 @@ public class DatepickerRendererBase extends InputRendererBase {
 }
 </pre>
 
-
 The __DatepickerRendererBase__ class is again extending the __InputRendererBase__, and it is holding a number of __@ResourceDependency__ annotations. These annotations ensure the appropriate resources are included on the page when we reference this JSF component. For us, these resources are the jQuery UI plugins necessary to get the datepicker component working.
-
-
 
 Introducing an entire new class merely to hold the __@ResourceDependency__ annotations may seem like overkill, but in any reasonably complex component, we will end up putting some renderer helper logic into this class file. There are times when the expressivity of Java works better than the declarativity of xml. We'll see some of this later in our blog series.
 
-
-
 Finally, let's look at en example use of this component:
 
+div=. **__sample.xhtml__**
 
-
-<div style="text-align: center;">
-**__sample.xhtml__**</div>
 <pre class="code brush:xml"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
@@ -161,19 +134,11 @@ Finally, let's look at en example use of this component:
 </html>
 </pre>
 
-
 When rendered, this looks like:
 
-
-
-<div style="text-align: center;">
-**__Screen shot__**</div>
-<div class="separator" style="clear: both; text-align: center;">
-<a href="/images/blog/2011-10-07-richfaces-4-cdk-jquery-ui-calendar/datepicker.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="181" src="/images/blog/2011-10-07-richfaces-4-cdk-jquery-ui-calendar/datepicker.png" width="320" /></a></div>
-
+div=. **__Screen shot__**
+<a href="/images/blog/2011-10-07-richfaces-4-cdk-jquery-ui-calendar/datepicker.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="181" src="/images/blog/2011-10-07-richfaces-4-cdk-jquery-ui-calendar/datepicker.png" width="320" /></a>
 
 While this has certainly grown in complexity over our initial <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">HelloWorld component</a>, we've managed to keep our JSF component development DRY. We've leveraged existing, high-quality javascript components. We've also made use of the RichFaces CDK to wire the JSF configured component to the javascript object. Some additional work is required to continue mapping the jQuery UI datepicker plugin options into JSF component attributes, but the mechanism for this has been laid out, and completing the component will be quite straight forward (pull requests welcome!).
-
-
 
 In my next CDK installment, we'll look at creating a layout based component, rather than an input component. Stay tuned!

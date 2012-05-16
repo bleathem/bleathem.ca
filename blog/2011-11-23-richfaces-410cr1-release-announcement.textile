@@ -6,56 +6,34 @@ tags: [ RF41, RichFaces ]
 
 I’m excited to announce the availability of RichFaces<a href="https://issues.jboss.org/browse/RF/fixforversion/12317055"> 4.1.0.CR1</a>, the first release candidate for RichFaces 4.1.0. Stability of the platform has been a strong focus for all the RichFaces 4.1.0 <a href="http://blog.bleathem.ca/search/label/RF41">milestone releases</a>, and has been even more so of a focus for our CR1 release.
 
-
-
 We really appreciate the community feedback we’ve received throughout the 4.1 development cycle, with each of the milestone releases. The bugs found and the suggestions provided from the community have really helped us nail down this release. As such, we are encouraging everyone to download this release candidate, and help us flush out any regressions or other potential blocker issues. Let us not forget, "given enough eyeballs, all bugs are shallow"!
-
-
 
 To try out this release, you can download the distribution <a href="http://www.jboss.org/richfaces/download/milestones">directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.1.0.20111111-CR1. For more information on setting up a RichFaces 4 application, refer to our <a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x">getting started guide</a>.
 
-
-
 With that “call to arms” out of the way, let’s take a look at what’s changed in this release.
 
-
-
-**Mobile Compatibility**
+h3. Mobile Compatibilityh3. 
 
 We have been working on the RichFaces mobile guide, and will have it available shortly - watch for it the RichFaces <a href="http://www.jboss.org/community/wiki/richfaceswikihomepage">wiki</a>. Refer to this guide to take advantage of the mobile compatibility of the RichFaces components in our <a href="http://showcase.richfaces.org/">mobile showcase</a> as we presented at a recent <a href="http://www.jboss.org/webinars">JBoss webinar</a> (video of the webinar is <a href="http://vimeo.com/31616425">available</a>). The CSS and javascript we used in our mobile showcase has been cleaned-up and refactored, and ready for public consumption, with details of how to do so in the mobile guide.
 
-
-
 We've also improved the mobile compatibility of some individual components, such as the calendar component (specifically the time picker), and the rendering of the pickList buttons. Thanks to the community members who pointed these deficiencies out!
 
-
-
-**Documentation**
+h3. Documentation
 
 The <a href="http://docs.jboss.org/richfaces/latest_4_1_X/Component_Reference/en-US/html/">Component Reference</a> and <a href="http://docs.jboss.org/richfaces/latest_4_1_X/Developer_Guide/en-US/html/">Developer Guide</a> have been updated for this release candidate, in preparation for the upcoming final release. In addition, a bug in the automatic generation of the <a href="http://docs.jboss.org/richfaces/latest_4_1_X/vdldoc/">VDL-DOC</a> (tag library docs) has been addressed, once again providing a complete listing of all RichFaces components’ attributes. The latest <a href="http://docs.jboss.org/richfaces/latest_4_1_X/javadoc/">javadoc</a> has also been published.
 
-
-
 Many of the attribute descriptions themselves in the VDL-DOC still need to be filled out (pull requests here would be very welcome!) - so be sure to refer to the Component Reference to supplement the VDL-DOC.
 
-
-
-**Framework upgrades**
+h3. Framework upgrades
 
 We upgraded our client-side bean validation extension to use <a href="http://www.hibernate.org/subprojects/validator.html">Hibernate Validator</a> 4.2, aligning with what is currently shipped in <a href="http://www.jboss.org/as7">JBoss AS 7</a>, and with what developers will be using with their applications. We also changed the project compiler compatibility to Java SE 6.0, reflecting in reality what has been true for the project for some time. We also started verification of the RichFaces platform against the upcoming JBoss AS 7.1 release, aiming for a smooth transition for RichFaces applications when AS 7.1 is released.
 
-
-
-**Individual improvements**
+h3. Individual improvements
 
 Individual components have seen some improvements with this release. Ajax rendering of drag sources and drop targets has been improved, tab panel switching across the client/server has been cleaned up, and the tooltip was changed to better respect the value attribute for delivering the tooltip message. In addtion to these individual fixes, we addressed a number of IE8 compatibility issues.
 
-
-
-**Onward to Final**
+h3. Onward to Final
 
 Unfortunately, we’ve have introduced some regressions with this release, namely with the calendar component and table sorting/filtering. These issues have already been <a href="https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+RF+AND+fixVersion+%3D+%224.1.0.Final%22+AND+component+%3D+regression">addressed</a> in our development branch, and will be ready for the upcoming final release.
-
-
 
 Be sure to give this release a spin, and help us make 4.1.0.Final a top-notch release!

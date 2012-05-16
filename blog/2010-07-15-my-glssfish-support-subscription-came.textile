@@ -3,31 +3,14 @@ layout: post
 title: "My Glassfish support subscription came through - finally"
 ---
 
-p. Call me eager, call me insane, I had a JavaEE 6 app up and running in production on <a href="http://glassfish.dev.java.net/">Glassfish</a> 3.0 one month after it's release.  The improvements in JSF 2 and CDI were too compelling for me to hold off adopting, and sure enough, the application was quick and painless to develop.
+Call me eager, call me insane, I had a JavaEE 6 app up and running in production on <a href="http://glassfish.dev.java.net/">Glassfish</a> 3.0 one month after it's release.  The improvements in JSF 2 and CDI were too compelling for me to hold off adopting, and sure enough, the application was quick and painless to develop.
 
-
-
-p. 
 I did however pay a price for being an early adopter - a Glassfish / Weld bug was preventing my JSF login pages from working.  Fortunately I was able to quickly find an (ugly)  workaround to get me going using JSPs.  This brings me to the interesting nugget of this post: the story of my first use of our Glassfish v3 support contract.
 
-
-
-p. 
 I promptly reported the <a href="https://glassfish.dev.java.net/issues/show_bug.cgi?id=11504">bug</a> to Glassfish, using the support tools provided, and was overall impressed at how quickly the bug was isolated, and a resolution was found.  All I had to do was wait for the patch, and my problem would disappear. So I waited for the patch.  And waited.  And waited...
 
-
-
-p. 
 I reported the bug in January, and heard of a fix in February.  The patched release was supposed to come out in March.  By May, there was still no release.  I made a little noise, and got some attention from both Glassfish support, and the <a href="http://blogs.sun.com/theaquarium/">Glassfish Community</a>, but was told the release was delayed by Oracle <a href="http://www.oracle.com/us/sun/index.htm">buying Sun</a>, and the  associated "Change in Control".  I was however assured that the release was imminent.
 
-
-
-p. 
 Sure enough, Glassfish 3.0.1 was released June 17th, with the fix to my bug - a turnaround of 5 months.  While annoyed that I had to wait so long for the fix, I do appreciate having that support structure in place to ensure we get our apps working.  I'm just glad we had a workaround.
 
-
-
-p. 
 Here's to looking forward to a regular release schedule for Glassfish patches!
-
-

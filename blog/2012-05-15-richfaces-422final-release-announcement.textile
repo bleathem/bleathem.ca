@@ -6,48 +6,32 @@ tags: [ RF42, RichFaces ]
 
 RichFaces<a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12319519"> 4.2.2.Final</a> is available, the second RichFaces 4.2 micro release. This release was originally intended to focus on changes required to better align with the upcoming JBoss AS 7.1.2 release. However we had some community members step forward with some fixes, and those contributions ended up turning this release into a reasonable bug fix release!
 
-
-
 I would like to give a big shout out to <a href="https://community.jboss.org/people/tritibo">Luca Nardelli</a>, <a href="https://community.jboss.org/people/gonzalad">Adrian Gonzalez</a>, and <a href="https://community.jboss.org/people/lightguard">Jason Porter</a>. These are RichFaces users who contributed back to the project with bug fixes and new features; improving the quality of the JSF component framework we all use to build applications on a daily basis. Three cheers for OSS, and our community contributors! If you would also like to get involved and contribute code to the project, check out our <a href="https://community.jboss.org/wiki/ContributorGettingStartedGuide">ContributorGettingStartedGuide</a> wiki page!
-
-
 
 To try out this release, you can download the distribution<a href="http://www.jboss.org/richfaces/download/stable"> directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.2.2.Final. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
-
-
-**<u>What’s new with 4.2.2.Final?</u>**
-
-
+h3. What’s new with 4.2.2.Final?
 
 The __rich:tooltip__ has seen a number of improvements centered around changing the javascript implementation to use the RichFaces <a href="http://alexsmirnov.wordpress.com/2011/03/24/richfaces-javascript-service/">Javascript Service</a> feature, and defer javascript loading until all components are rendered. Nice catch Luca! Specific issues resolved with this approach include: 
 
+* [<a href="https://issues.jboss.org/browse/RF-10839">RF-10839</a>] - tooltip: attachment using target not works if tooltip defined before the component to which it attaches.
+* [<a href="https://issues.jboss.org/browse/RF-11370">RF-11370</a>] - rich:toolTip: targetted example causes NPE for some IDs</li>
+* [<a href="https://issues.jboss.org/browse/RF-12198">RF-12198</a>] - rich:tooltip does not work inside a4j:commandButton
+* [<a href="https://issues.jboss.org/browse/RF-12199">RF-12199</a>] - rich:tooltip does not work inside h:graphicImage
 
-<ul>
-<li>[<a href="https://issues.jboss.org/browse/RF-10839">RF-10839</a>] - tooltip: attachment using target not works if tooltip defined before the component to which it attaches.</li>
-<li>[<a href="https://issues.jboss.org/browse/RF-11370">RF-11370</a>] - rich:toolTip: targetted example causes NPE for some IDs</li>
-<li>[<a href="https://issues.jboss.org/browse/RF-12198">RF-12198</a>] - rich:tooltip does not work inside a4j:commandButton</li>
-<li>[<a href="https://issues.jboss.org/browse/RF-12199">RF-12199</a>] - rich:tooltip does not work inside h:graphicImage</li>
-</ul>
 For those <a href="https://community.jboss.org/wiki/RichFacesMigrationGuide33x-4xMigration">migrating from RichFaces 3</a>, Adrian has contributed improvements to the <a href="http://docs.jboss.org/richfaces/latest_4_X/javadoc/richfaces-core-impl/org/richfaces/resource/Xcss2EcssConverter.html">Xcss2Ecss conversion utility</a>:
 
-<ul>
-<li>[<a href="https://issues.jboss.org/browse/RF-11994">RF-11994</a>] - Xcss2EcssConverter error handling f:importResource</li>
-<li>[<a href="https://issues.jboss.org/browse/RF-12010">RF-12010</a>] - ecss hot reloading</li>
-</ul>
+* [<a href="https://issues.jboss.org/browse/RF-11994">RF-11994</a>] - Xcss2EcssConverter error handling f:importResource
+* [<a href="https://issues.jboss.org/browse/RF-12010">RF-12010</a>] - ecss hot reloading
+
 A number of other fixes are seen with:
 
-<ul>
-<li>__rich:dataTable__ and __rich:extendedDataTable__</li>
-<li>validation and messages</li>
-<li>dependency updates, matching changes in the upcoming JBoss AS 7.1.2 release</li>
-</ul>
+* __rich:dataTable__ and __rich:extendedDataTable__
+* validation and messages
+* dependency updates, matching changes in the upcoming JBoss AS 7.1.2 release
+
 Lastly I’ll mention a simple feature, but one which I’m sure many will find useful. The __a4j:log__ component has a new mode of operation, the <a href="https://issues.jboss.org/browse/RF-11294">console mode</a>, allowing __a4j:log__ messages to be output to the browser javascript error console.
 
-
-
-**<u>What’s Next?</u>**
-
-
+h3. What’s Next?
 
 We’ll shortly begin our <a href="https://issues.jboss.org/browse/RF/fixforversion/12318553">4.3.0.M1</a> sprint which will focus on MyFaces compatibility issues and some <a href="https://community.jboss.org/wiki/CDKWish-List">CDK improvements</a> in this first milestone. Concurrent to this, we will be working in the <a href="https://github.com/richfaces/sandbox">RichFaces Sandbox</a> to deliver our <a href="http://blog.bleathem.ca/2012/05/richfaces-bootstrap.html">next-generation component set</a>. Should any of the above initiatives appeal to you, feel free to <a href="https://community.jboss.org/wiki/RichFacesWikiHomePage#contribute">get involved</a>, and help move the project forward!

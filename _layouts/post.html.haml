@@ -5,6 +5,15 @@ layout: default
   %h6= page.date.strftime("%A, %B #{page.date.day}, %Y")
   %h2.title= page.title
   ~ content
+  %hr
+  .row-fluid
+    %h6.previous.span1
+      - if page.previous_post
+        %a.btn.btn-info{:href => "#{page.previous_post.url}"} Previous
+    .span10 &nbsp;    
+    %h6.next.span1
+      - if page.next_post
+        %a.btn.btn-info{:href => "#{page.next_post.url}"} Next
   #disqus_thread
     :javascript
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

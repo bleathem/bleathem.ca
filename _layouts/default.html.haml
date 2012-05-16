@@ -24,13 +24,13 @@ layout: base
             count: 4,
             template: "{text} {time}",
             loading_text: "Loading tweets...",
-            outro_text: '<a class="btn"  href="https://twitter.com/#!/brianleathem">Follow me on twitter</a>'
+            outro_text: '&lt;a class="btn"  href="https://twitter.com/#!/brianleathem">Follow me on twitter&lt;/a&gt;'
           });
         });    
     %hr
-      .title Tags
-      .tags
-        = site.posts_tag_cloud
+    .title Tags
+    .tags
+      = site.posts_tag_cloud
     %hr
     .title Stack Overflow
     %a{:href => "http://stackoverflow.com/users/264797/brian-leathem"}
@@ -48,7 +48,7 @@ layout: base
               = year
             %ul.year.collapse
               -months.each do |month, posts|
-                %li.month{:id=>"month_#{month}"}
+                %li.month{:id=>"month_#{month}_#{year}"}
                   %a
                     %span.month= Date::MONTHNAMES[month]
                     %span.count= "(#{posts.size})"

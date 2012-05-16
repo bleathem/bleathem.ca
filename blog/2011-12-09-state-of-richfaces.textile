@@ -14,12 +14,12 @@ h3. Innovation
 RichFaces has long been the place to come for JSF innovation. Never content to simply provide a JSF component set, the RichFaces project (together with other JBoss projects) has always aimed to provide developers with a complete JSF framework for developing applications. Some of these innovations include:
 
 * Pioneering JSF ajax support
-* <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=clientValidation&skin=blueSky">Client side validation</a>
-* Ajax <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push&skin=blueSky">Push component</a> - leveraging websockets where available
+* <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=clientValidation&amp;skin=blueSky">Client side validation</a>
+* Ajax <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push&amp;skin=blueSky">Push component</a> - leveraging websockets where available
 * The <a href="http://community.jboss.org/wiki/RichFacesCDKHowTos">CDK</a> (Component Development Kit) - in RF 4 the CDK builds on top of the <a href="http://andyschwartz.wordpress.com/2009/07/31/whats-new-in-jsf-2/#composite-components">JSF 2 composite components</a> feature
 * Support for <a href="http://community.jboss.org/wiki/GettingStartedWithMobileRichFaces">mobile</a> browsers in our base component set
 * Resource <a href="http://docs.jboss.org/richfaces/latest_4_1_X/Developer_Guide/en-US/html/chap-Developer_Guide-Advanced_features.html#sect-Developer_Guide-Advanced_features-Resource_loading_strategies">packaging and minification</a>
-* Advanced <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=queue&skin=blueSky">queuing</a>
+* Advanced <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=queue&amp;skin=blueSky">queuing</a>
 * Sophisticated tooling support (together with <a href="http://www.jboss.org/tools">JBoss tools</a>)
 
 h3. Open Standards
@@ -34,9 +34,9 @@ h3. Community
 
 RichFaces is also very much a community oriented project. Both our development and planning efforts are done out in the open, with an open door to anyone who wants to help out. Some of the ways we actively work to facilitate community interaction include:
 
-* A <a href="http://www.jboss.org/index.html?module=bb&op=viewforum&f=261">user forum</a> with an incredible amount of traffic
+* A <a href="http://www.jboss.org/index.html?module=bb&amp;op=viewforum&amp;f=261">user forum</a> with an incredible amount of traffic
 * Weekly <a href="http://community.jboss.org/en/richfaces/dev/teammtgs">team meetings</a> held openly in IRC
-* A <a href="http://www.jboss.org/index.html?module=bb&op=viewforum&f=262">developer forum</a> - where new ideas for the framework are worked out
+* A <a href="http://www.jboss.org/index.html?module=bb&amp;op=viewforum&amp;f=262">developer forum</a> - where new ideas for the framework are worked out
 * Active use of social media (<a href="http://twitter.com/#!/richfaces">twitter</a>, <a href="https://plus.google.com/h3. /0/115573055688754345457">Google+</a>)
 * <a href="https://github.com/richfaces">Github</a> hosting - facilitating community contributions
 

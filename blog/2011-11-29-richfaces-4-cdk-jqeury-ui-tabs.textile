@@ -80,9 +80,9 @@ div=. **tab.template.xhtml**
 </cdk:root>
 </pre>
 
-This renderer is simple, again comparable to the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">hello.template.xml</a>. The new piece we've introduced is the __<cdk:body />__ tag. This tag indicates where we want to render the contents of the component. So any content (or child components) we nest in out __tab__ tag will be wrapped by the div tag. 
+This renderer is simple, again comparable to the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">hello.template.xml</a>. The new piece we've introduced is the __&lt;cdk:body /&gt;__ tag. This tag indicates where we want to render the contents of the component. So any content (or child components) we nest in out __tab__ tag will be wrapped by the div tag. 
 
-We'll see this __<cdk:body />__ tag again when we look as the (slightly more complex) tabs renderer:
+We'll see this __&lt;cdk:body /&gt;__ tag again when we look as the (slightly more complex) tabs renderer:
 
 div=. **tabs.template.xhtml**
 
@@ -125,11 +125,11 @@ div=. **tabs.template.xhtml**
 </cdk:root>
 </pre>
 
-This renderer template introduces a number of new concepts. For one, you might have noticed I didn't create a RenderBase class, like we did for the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component. We could have, but I wanted to demonstrate that it's not strictly necessary. The CDK allows one to replace the __@ResourceDependency__ annotations we used in the __DatepickerRenderBase__, with a CDK tag: __<cdk:resource-dependency />.__ This is a one-for-one replacement for the annotation, with matching attributes (in fact, the CDK creates actual @ResourcesDependency annotations in the generated java code). This allows us to define all the required javascript and css resources required by the component in the renderer template itself.
+This renderer template introduces a number of new concepts. For one, you might have noticed I didn't create a RenderBase class, like we did for the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component. We could have, but I wanted to demonstrate that it's not strictly necessary. The CDK allows one to replace the __@ResourceDependency__ annotations we used in the __DatepickerRenderBase__, with a CDK tag: __&lt;cdk:resource-dependency /&gt;.__ This is a one-for-one replacement for the annotation, with matching attributes (in fact, the CDK creates actual @ResourcesDependency annotations in the generated java code). This allows us to define all the required javascript and css resources required by the component in the renderer template itself.
 
 We've also made use of the jstl core EL expressions to execute some logic in our renderer. You can see we loop over each of the children of the __tabs__ component, which will be our __tab__ components. For each child __tab__, we create an entry in an unordered list with the __title__ attribute of the tab. This isn't just some arbitrary html, we are fulfilling the contract of the <a href="http://jqueryui.com/demos/tabs/">jQuery UI tabs</a> plugin. The plugin is going to look for this specific markup to render the tab components, and attach the necessary behavior.
 
-Following the unodered list, we see the __<cdk:body />__ tag. This renders the child components, delegating to the render associated with each child. In this case, the children are the __tab__ components and will be rendered using the __tab__ renderer from the above __tab.template.xhtml__ template.
+Following the unodered list, we see the __&lt;cdk:body /&gt;__ tag. This renders the child components, delegating to the render associated with each child. In this case, the children are the __tab__ components and will be rendered using the __tab__ renderer from the above __tab.template.xhtml__ template.
 
 The last piece of this template is the javascript call, where we invoke the jQuery UI tabs plugin to enable the client-side behavior. We aren't passing any options to the plugin in this example, but we could easily do so using the __scriptOption__ CDK tag demonstrated with the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component.
 

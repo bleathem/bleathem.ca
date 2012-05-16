@@ -64,13 +64,13 @@ div=. **hello.template.xml**
 </cdk:root>
 </pre>
 
-If you are familiar with JSF Component development, you may be surprised to see that our Renderer is not a java class.  On the other hand, you may find that it looks quite similar to a JSF 2 composite component. It has a "<span class="Apple-style-span" style="font-family: monospace; white-space: pre;"><cc:interface>" section, and "</span><cc:implementation>" section, both of which are analogous to the facelet file of a composite component. In fact, you can prototype your components as composite components, then migrate to CDK components when you find you need the extra flexibility the CDK provides.
+If you are familiar with JSF Component development, you may be surprised to see that our Renderer is not a java class.  On the other hand, you may find that it looks quite similar to a JSF 2 composite component. It has a <code><cc:interface></code> section, and <code>cc:implementation></code> section, both of which are analogous to the facelet file of a composite component. In fact, you can prototype your components as composite components, then migrate to CDK components when you find you need the extra flexibility the CDK provides.
 
 As we did for the component class, let's dissect the cdk tags found in our renderer template.
 
-- <cdk:class> := this is the name of the JSF Renderer class that will generated.</dd>
-- <cdk:superclass> := the class that will be extended by our generated JSF Renderer class. Here we are explicitly stating the default for reference when we get into more complex components.</dd>
-- <cdk:renderer-type> := this is how JSF identifies our Renderer.  It will be used in the generated faces-config file, and in the generated xml taglib file.</dd>
+- &lt;cdk:class&gt; := this is the name of the JSF Renderer class that will be generated.
+- &lt;cdk:superclass&gt; := the class that will be extended by our generated JSF Renderer class. Here we are explicitly stating the default for reference when we get into more complex components.
+- &lt;cdk:renderer-type&gt; := this is how JSF identifies our Renderer.  It will be used in the generated faces-config file, and in the generated xml taglib file.
 
 And there we have it, a JSF Component, and it's associated Renderer! -- err almost. There is one final piece missing. We need to specify a name space for our component - the namespace that will be used on facelet pages that refer to our components. Fortunately, the CDK also makes this easy for us. All we need is a package-info.java in the java package of our component:
 

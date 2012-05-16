@@ -13,11 +13,12 @@ Seam Faces aims to provide JSF developers with a truly worthy framework for web 
 
 Adhering to the CDI core tenet of type safety, Seam Faces offers a type-safe mechanism to configure the behaviour of your JSF views.  So far these configurable behaviors include:
 
-<ol><li>Restricting view access by integrating with Seam Security</li>
-<li>Configuring URL rewriting by integrating with PrettyFaces (or any other pluggable URL rewriting framework)</li>
-<li>Configuring Transactions via Seam Persistence</li>
-<li>And a personal favorite: setting “?faces-redirect=true” when navigating to a view.</li>
-</ol>Note: the above integrations are optional, you must include the relevant jars in the application for their respective configurations to have any effect
+# Restricting view access by integrating with Seam Security
+# Configuring URL rewriting by integrating with PrettyFaces (or any other pluggable URL rewriting framework)
+# Configuring Transactions via Seam Persistence
+# And a personal favorite: setting “?faces-redirect=true” when navigating to a view.
+
+Note: the above integrations are optional, you must include the relevant jars in the application for their respective configurations to have any effect
 
 Lets take a closer look at the View configuration from the Seam Faces example “faces-viewconfig”:
 

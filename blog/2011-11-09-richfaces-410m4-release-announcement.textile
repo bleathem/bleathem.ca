@@ -26,7 +26,7 @@ The file upload component has some new attributes, allowing for more fine-graine
 
 h3. Misc. Fixes
 
-Some additional issues resolved include a jQuery update (to version 1.6.4), and improvements to both the simpleapp and GAE RichFaces archetypes. Many more fixes and improvements were checked, feel free to <a href="https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+RF+AND+fixVersion+%3D+%224.1.0.Milestone4%22+AND+resolution+%3D+Done">browse the issues fixed</a> to see what else has been improved.
+Some additional issues resolved include a jQuery update (to version 1.6.4), and improvements to both the simpleapp and GAE RichFaces archetypes. Many more fixes and improvements were checked, feel free to <a href="https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+RF+AND+fixVersion+%3D+%224.1.0.Milestone4%22+AND+resolution+%3D+Done">browse the issues fixed</a> to see what else has been improved.
 
 h3. Forward: CR1 & Further Stabilisation
 

@@ -25,7 +25,7 @@ table{font-family: fixed-width}.
 
 Next, we had to get mod_jk installed and working.  The glassfish support team (yes, I pay for support!) pointed me to the following resources:
 
-* V2 instructions -  <a class="moz-txt-link-freetext" href="http://weblogs.java.net/blog/2006/03/17/running-glassfish-apache-httpd">http://weblogs.java.net/blog/2006/03/17/running-glassfish-apache-httpd</a></li>
+* V2 instructions -  <a class="moz-txt-link-freetext" href="http://weblogs.java.net/blog/2006/03/17/running-glassfish-apache-httpd">http://weblogs.java.net/blog/2006/03/17/running-glassfish-apache-httpd</a>
 * V3 instructions -  <a class="moz-txt-link-freetext" href="http://weblogs.java.net/blog/2009/06/24/running-glassfish-v3-apache-httpd">http://weblogs.java.net/blog/2009/06/24/running-glassfish-v3-apache-httpd</a>
 
 These were a great starting point, from which I ended up with the solution.

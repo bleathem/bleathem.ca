@@ -35,10 +35,10 @@ Along-side these showcase improvements, we’ve introduced framework improvement
 
 h3. Ajax Push
 
-Last (and by no means least!) I’d like to mention that the AJAX push component has seen a lot of improvements with this release. We’ve introduced a <a href="http://showcase1104558964.prod.rhcloud.com/richfaces/component-sample.jsf?demo=push&sample=pushCdi">CDI interface</a> for firing push events. This is not intended to supercede the existing Push API, but is instead provided as a means to tie the powerful CDI event mechanism into the RichFaces push technology.
+Last (and by no means least!) I’d like to mention that the AJAX push component has seen a lot of improvements with this release. We’ve introduced a <a href="http://showcase1104558964.prod.rhcloud.com/richfaces/component-sample.jsf?demo=push&amp;sample=pushCdi">CDI interface</a> for firing push events. This is not intended to supercede the existing Push API, but is instead provided as a means to tie the powerful CDI event mechanism into the RichFaces push technology.
 
 Coupled with earlier push improvements (<a href="http://rik-ansikter.blogspot.com/2011/08/lot-of-improvements-has-been-done-in-4.html">removing the JMS requirement from the push component</a>), the push component is shaping up to be much more accessible to developers working in either Java EE or Servlet container environments.
 
-h3. Forward: M4 & Stabilization
+h3. Forward: M4 &amp; Stabilization
 
 Work is already well underway with our M4 release, where we are improving on the compatibility of our components with mobile browsers, and adding a last round of small feature improvements. Give <a href="http://www.jboss.org/richfaces/download/milestones">M3 a spin</a>, and let us know what you think! Drop us a note in the <a href="http://community.jboss.org/en/richfaces?view=discussions">forums</a>, or join us for our weekly <a href="http://community.jboss.org/en/richfaces/dev/teammtgs?view=documents">community/team meetings</a> in IRC.

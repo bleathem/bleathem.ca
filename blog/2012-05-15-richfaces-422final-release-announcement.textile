@@ -4,7 +4,7 @@ title: "RichFaces 4.2.2.Final Release Announcement"
 tags: [ RF42, RichFaces ]
 ---
 
-RichFaces<a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12319519"> 4.2.2.Final</a> is available, the second RichFaces 4.2 micro release. This release was originally intended to focus on changes required to better align with the upcoming JBoss AS 7.1.2 release. However we had some community members step forward with some fixes, and those contributions ended up turning this release into a reasonable bug fix release!
+RichFaces<a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12319519"> 4.2.2.Final</a> is available, the second RichFaces 4.2 micro release. This release was originally intended to focus on changes required to better align with the upcoming JBoss AS 7.1.2 release. However we had some community members step forward with some fixes, and those contributions ended up turning this release into a reasonable bug fix release!
 
 I would like to give a big shout out to <a href="https://community.jboss.org/people/tritibo">Luca Nardelli</a>, <a href="https://community.jboss.org/people/gonzalad">Adrian Gonzalez</a>, and <a href="https://community.jboss.org/people/lightguard">Jason Porter</a>. These are RichFaces users who contributed back to the project with bug fixes and new features; improving the quality of the JSF component framework we all use to build applications on a daily basis. Three cheers for OSS, and our community contributors! If you would also like to get involved and contribute code to the project, check out our <a href="https://community.jboss.org/wiki/ContributorGettingStartedGuide">ContributorGettingStartedGuide</a> wiki page!
 
@@ -15,7 +15,7 @@ h3. What’s new with 4.2.2.Final?
 The __rich:tooltip__ has seen a number of improvements centered around changing the javascript implementation to use the RichFaces <a href="http://alexsmirnov.wordpress.com/2011/03/24/richfaces-javascript-service/">Javascript Service</a> feature, and defer javascript loading until all components are rendered. Nice catch Luca! Specific issues resolved with this approach include: 
 
 * [<a href="https://issues.jboss.org/browse/RF-10839">RF-10839</a>] - tooltip: attachment using target not works if tooltip defined before the component to which it attaches.
-* [<a href="https://issues.jboss.org/browse/RF-11370">RF-11370</a>] - rich:toolTip: targetted example causes NPE for some IDs</li>
+* [<a href="https://issues.jboss.org/browse/RF-11370">RF-11370</a>] - rich:toolTip: targetted example causes NPE for some IDs
 * [<a href="https://issues.jboss.org/browse/RF-12198">RF-12198</a>] - rich:tooltip does not work inside a4j:commandButton
 * [<a href="https://issues.jboss.org/browse/RF-12199">RF-12199</a>] - rich:tooltip does not work inside h:graphicImage
 

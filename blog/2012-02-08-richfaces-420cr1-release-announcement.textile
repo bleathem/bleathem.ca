@@ -4,7 +4,7 @@ title: "RichFaces 4.2.0.CR1 Release Announcement"
 tags: [ RF42, RichFaces ]
 ---
 
-I’m excited to announce the availability of RichFaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12318573">4.2.0.CR1</a>, our release candidate for RichFaces 4.2.0.  Hot on the heels of the RichFaces <a href="http://blog.bleathem.ca/2011/12/richfaces-410final-release-announcement.html">4.1 release</a>, Richfaces 4.2 delivers some "missing" components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API.  Not to forget a significant number of bug fixes, and overall usability improvements.
+I’m excited to announce the availability of RichFaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12318573">4.2.0.CR1</a>, our release candidate for RichFaces 4.2.0.  Hot on the heels of the RichFaces <a href="http://blog.bleathem.ca/2011/12/richfaces-410final-release-announcement.html">4.1 release</a>, Richfaces 4.2 delivers some "missing" components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API.  Not to forget a significant number of bug fixes, and overall usability improvements.
 
 To try out this release, you can download the distribution <a href="http://www.jboss.org/richfaces/download/milestones">directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.2.0.CR1. For more information on setting up a RichFaces 4 application, refer to our <a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x">getting started guide</a>.
 
@@ -78,10 +78,10 @@ A number of other notable improvements include:
 * a4j:actionListener example in the showcase
 ** omitted in our initial release of the showcase, an example of <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=actionListener">a4j:actionListener</a> usage has been added to the 4.2 showcase
 * Build improvements
-** The dependency management across all the projects’ poms has been cleaned up and centralized
+** The dependency management across all the projects' poms has been cleaned up and centralized
 
 h3. Moving forward
 
 With RichFaces 4.2.0.CR1 in the hands of our community, we look forward to hearing your feedback on this release, particularly if we missed any regressions.  Should 4.2.0.CR1 be well accepted by our community members, we will release RichFaces 4.2.0.Final as a simple respin of CR1.  In the mean time we will work on getting our 4.2 docs finalized, including an effort to fill in the missing attribute descriptions of our tag library documentation (VDL doc).
 
-Looking beyond 4.2, we will consolidate many of the great ideas brought forward in our "<a href="https://community.jboss.org/thread/175973">4.3 and beyond</a>" planning discussion into a project roadmap, and start some prototyping to spearhead our new initiatives.
+Looking beyond 4.2, we will consolidate many of the great ideas brought forward in our <a href="https://community.jboss.org/thread/175973">"4.3 and beyond"</a> planning discussion into a project roadmap, and start some prototyping to spearhead our new initiatives.

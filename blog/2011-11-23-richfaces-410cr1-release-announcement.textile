@@ -34,6 +34,6 @@ Individual components have seen some improvements with this release. Ajax render
 
 h3. Onward to Final
 
-Unfortunately, we’ve have introduced some regressions with this release, namely with the calendar component and table sorting/filtering. These issues have already been <a href="https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&jqlQuery=project+%3D+RF+AND+fixVersion+%3D+%224.1.0.Final%22+AND+component+%3D+regression">addressed</a> in our development branch, and will be ready for the upcoming final release.
+Unfortunately, we’ve have introduced some regressions with this release, namely with the calendar component and table sorting/filtering. These issues have already been <a href="https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+RF+AND+fixVersion+%3D+%224.1.0.Final%22+AND+component+%3D+regression">addressed</a> in our development branch, and will be ready for the upcoming final release.
 
 Be sure to give this release a spin, and help us make 4.1.0.Final a top-notch release!

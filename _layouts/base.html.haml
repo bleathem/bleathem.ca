@@ -21,18 +21,15 @@
   %body
     .navbar
       .navbar-inner
-        .container-fluid
-          .row-fluid
-            .span3 &nbsp;
-            .span9
-              %a.brand{ :href=>"#{site.base_url}" } Java EE - Experiences of a Developer 
-              %ul.nav
-                %li
-                  %a{ :href=>"#{site.base_url}" } Home
-    .container-fluid
-      .row-fluid
+        .container
+          %a.brand{ :href=>"#{site.base_url}" } Java EE - Experiences of a Developer 
+          %ul.nav
+            %li
+              %a{ :href=>"#{site.base_url}" } Home
+    .container
+      .row
         ~ content
-      .row-fluid
+      .row
       %hr
       %footer
         %p &copy; Organization #{Date.today.year}

@@ -4,10 +4,10 @@ layout: base
 .span3
   #sidebar
     .about
-      .title About Me
+      .title about me
       %img{:src => "/images/bleathem.jpg"}
+      .name Brian Leathem
       .details
-        %span.name Brian Leathem
         %ul
           %li Senior Software Engineer at JBoss, by Red hat
           %li RichFaces Project Lead
@@ -29,12 +29,10 @@ layout: base
         });    
     %hr
       .title Tags
-      .row-fluid
-        .span1 &nbsp;
-        .span10.tags
-          = site.posts_tag_cloud
+      .tags
+        = site.posts_tag_cloud
     %hr
-    .title Stack Overflow   
+    .title Stack Overflow
     %a{:href => "http://stackoverflow.com/users/264797/brian-leathem"}
       %img{:src => "http://stackoverflow.com/users/flair/264797.png", 
            :width => "208", :height => "58",

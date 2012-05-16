@@ -1,3 +1,7 @@
+.navbar .container {
+  width: 940px;
+}
+
 #sidebar .title {
  padding-bottom: 5px;
  font-size: 12px;
@@ -14,14 +18,13 @@
 }
 
 .about img {
- height: 80px;
- width: 80px;
- float: left;
+ height: 120px;
+ width: 120px;
 }
 
 .about .details {
+ text-align : left;
  vertical-align: top;
- margin-left: 90px;
 }
 
 .about ul {
@@ -110,4 +113,12 @@
 #content .img {
  margin: auto;
  text-align : center;
+}
+
+pre.prettyprint {
+ overflow:auto;
+ width : auto;
+ overflow: auto;
+ word-wrap: normal;
+ white-space: pre;
 }

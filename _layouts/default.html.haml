@@ -1,6 +1,8 @@
 ---
 layout: base
 ---
+.span9
+  ~ content
 .span3
   #sidebar
     .about
@@ -55,9 +57,6 @@ layout: base
                     -posts.each do |post|
                       %li
                         %a{:href => post.url}= post.title
-
-.span9
-  ~ content
 
 %script{ :type=>'text/javascript', :src=>'/javascripts/jquery-tweet.js' }
 

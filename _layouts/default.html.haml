@@ -49,9 +49,8 @@ layout: base
             %ul.year.collapse
               -months.each do |month, posts|
                 %li.month{:id=>"month_#{month}_#{year}"}
-                  %a
-                    %span.month= Date::MONTHNAMES[month]
-                    %span.count= "(#{posts.size})"
+                  %span.month= Date::MONTHNAMES[month]
+                  %span.count= "(#{posts.size})"
                   %ul.month
                     -posts.each do |post|
                       %li

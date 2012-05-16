@@ -44,7 +44,7 @@ layout: base
       %ul#years
         -site.post_map.each do |year, months|
           %li.year{:id=>"year_#{year}"}
-            %a{:data => {:toggle => "collapse", :target => "#year_#{year} > ul.year", :parent=>"#years"}}
+            %a{:data => {:toggle => "collapse", :target => "#year_#{year} > ul.year", :parent=>"#years"}, :href => "##{year}"}
               = year
             %ul.year.collapse
               -months.each do |month, posts|

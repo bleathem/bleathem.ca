@@ -25,7 +25,7 @@ Specific components addressed include the <a href="http://showcase.richfaces.org
 ** [<a href="https://issues.jboss.org/browse/RF-11948">RF-11948</a>] - rich:extendedDataTable create an onready event to trigger javascript interactions after the EDT has been initialized
 * a4j:push
 ** [<a href="https://issues.jboss.org/browse/RF-12013">RF-12013</a>] - Deadlock in push component
-** [RF-12072] - Push: add onsubscribed event
+** [<a href="https://issues.jboss.org/browse/RF-12072">RF-12072</a>] - Push: add onsubscribed event
 * rich:contextMenu
 ** [<a href="https://issues.jboss.org/browse/RF-11936">RF-11936</a>] - rich:contextMenu activation is possible outside of tree nodes
 ** [<a href="https://issues.jboss.org/browse/RF-11971">RF-11971</a>] - rich:menuItem onclick return value ignored
@@ -44,7 +44,7 @@ Overall, areas such as event handling, validation, messages, and browser compati
 ** [<a href="https://issues.jboss.org/browse/RF-7351">RF-7351</a>] - Regression: "messages: globalOnly does not work properly"
 ** [<a href="https://issues.jboss.org/browse/RF-11978">RF-11978</a>] - Graph Validator - does not mark context to fail validation
 * Browser compatibility
-** [RF-12026] - Javascript error in AjaxRequests on FireFox "invalid 'in' operand event"
+** [<a href="https://issues.jboss.org/browse/RF-12026">RF-12026</a>] - Javascript error in AjaxRequests on FireFox "invalid 'in' operand event"
 ** [<a href="https://issues.jboss.org/browse/RF-11884">RF-11884</a>] - Multiple Errors with IE8/9
 
 The RichFaces showcase saw some improvements, including some mobile specific fixes:

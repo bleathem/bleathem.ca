@@ -22,7 +22,7 @@ h4. b:gridContainer
 
 The bootstrap <a href="http://bootstrap-richfaces.rhcloud.com/component/grid/index.jsf">grid components</a> (gridContainer/gridRow/gridColumn) provide a powerful means to layout your page. Being proper JSF components, they are also valid JSF execute/render targets.
 
-div=. <a href="/images/blog/2012-05-04-richfaces-bootstrap/gridContainer.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="235" src="/images/blog/2012-05-04-richfaces-bootstrap/gridContainer.png" width="640" /></a></div>
+div=. <a href="/images/blog/2012-05-04-richfaces-bootstrap/gridContainer.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="235" src="/images/blog/2012-05-04-richfaces-bootstrap/gridContainer.png" width="640" /></a>
 
 I'll blog more about the individual components as they get fleshed out. There's a ton of blog material here!
 

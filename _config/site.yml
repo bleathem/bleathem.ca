@@ -1,0 +1,7 @@
+profiles:
+  development:
+  production:
+    base_url: http://www.bleathem.ca/
+    deploy:
+      host: bleathem.ca
+      path: /home/bleathem/bleathem.ca/

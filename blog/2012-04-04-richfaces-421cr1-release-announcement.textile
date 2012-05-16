@@ -4,7 +4,7 @@ title: "RichFaces 4.2.1.CR1 Release Announcement"
 tags: [ RF42, RichFaces ]
 ---
 
-We've released RichFaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12319019">4.2.1.CR1</a> - the first candidate release for the first 4.2 micro release. This release comes with&nbsp;initial support for rapid component development with the CDK and jRebel, and&nbsp;a new archetype demonstrating (among other things) a mobile RichFaces application,. For the most part however, this release focuses on bug-fixes and stability of the components and framework.
+We've released RichFaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12319019">4.2.1.CR1</a> - the first candidate release for the first 4.2 micro release. This release comes with initial support for rapid component development with the CDK and jRebel, and a new archetype demonstrating (among other things) a mobile RichFaces application,. For the most part however, this release focuses on bug-fixes and stability of the components and framework.
 
 To try out this release, you can download the distribution<a href="http://www.jboss.org/richfaces/download/milestones"> directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.2.1.CR1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 

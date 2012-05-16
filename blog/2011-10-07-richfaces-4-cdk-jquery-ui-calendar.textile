@@ -36,7 +36,7 @@ abstract public class AbstractDatepicker extends javax.faces.component.UIInput {
 
 }</pre>
 
-Here we see we are again extending the <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/javax/faces/component/UIInput.html">UIInput</a> class, as we did with the Input component. &nbsp;What's new is the introduction of some additional attributes. &nbsp;The __@Attribute__ annotation instructs the CDK that these abstract getter methods map to&nbsp;component attributes, and the CDK then takes care of wiring the attributes into the JSF state saving mechanism for us.
+Here we see we are again extending the <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/javax/faces/component/UIInput.html">UIInput</a> class, as we did with the Input component.  What's new is the introduction of some additional attributes.  The __@Attribute__ annotation instructs the CDK that these abstract getter methods map to component attributes, and the CDK then takes care of wiring the attributes into the JSF state saving mechanism for us.
 
 The naming convention of the attribute is alligned with <a href="http://jqueryui.com/demos/datepicker/#options">jQeury UI datepicker options</a>. This allows us to transparently pass the JSF component attributes through to the jQuery plugin, as we see in the Renderer below.
 

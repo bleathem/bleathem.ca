@@ -59,4 +59,4 @@ And add below it the lines:
 
 This will configure your AS 7 instance to use your newly created certificate store on it's SSL enabled port. The default __https__ port for AS7 is 8443.
 
-And there we have it! &nbsp;A fully functional SSL/https enabled environment for testing our web apps!
+And there we have it!  A fully functional SSL/https enabled environment for testing our web apps!

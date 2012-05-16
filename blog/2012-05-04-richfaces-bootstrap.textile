@@ -4,7 +4,7 @@ title: "RichFaces Bootstrap"
 tags: [ Bootstrap, CDK, RichFaces ]
 ---
 
-I'm happy to share the news that the RichFaces community has started an effort to wrap <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> with the RichFaces <a href="https://community.jboss.org/wiki/RichFacesCDKHowTos">CDK</a>. If you haven't yet heard, Twitter's Bootstrap project is a set of HTML/CSS/js "widgets" that you can use for building a website/web application with an emphasis on a fluid layouts that adapt well to mobile devices. The RichFaces community effort centres around <a href="https://github.com/richfaces/sandbox/tree/develop/bootstrap">providing a set</a>&nbsp;of first-class JSF components built using these Bootstrap widgets via the RichFaces CDK.
+I'm happy to share the news that the RichFaces community has started an effort to wrap <a href="http://twitter.github.com/bootstrap/">Twitter Bootstrap</a> with the RichFaces <a href="https://community.jboss.org/wiki/RichFacesCDKHowTos">CDK</a>. If you haven't yet heard, Twitter's Bootstrap project is a set of HTML/CSS/js "widgets" that you can use for building a website/web application with an emphasis on a fluid layouts that adapt well to mobile devices. The RichFaces community effort centres around <a href="https://github.com/richfaces/sandbox/tree/develop/bootstrap">providing a set</a> of first-class JSF components built using these Bootstrap widgets via the RichFaces CDK.
 
 This is still early days for the effort, consider what we have so far as a Proof of Concept. The work is being done in the <a href="https://community.jboss.org/wiki/RichFaces4ComponentDevelopmentProcess">RichFaces Sandbox</a>, where new ideas/components are explored and proven before migrating in the the framework core. We'll explore how to bring these Bootstrap components into the framework proper when the effort is complete. The reason for this blog post is to let people know what the community is doing and invite people to <a href="https://community.jboss.org/wiki/ContributorGettingStartedGuide">get involved</a>!
 
@@ -30,9 +30,9 @@ h3. RichFaces Bootstrap Roadmap
 
 Our roadmap for these bootstrap components moving forward involves:
 
-# <a href="https://issues.jboss.org/browse/RFSBOX-7">RFSBOX-7</a>&nbsp;Finish wrapping the remaining bootstrap components
-# <a href="https://issues.jboss.org/browse/RFSBOX-8">RFSBOX-8</a>&nbsp;Flesh out the attributes of the already wrapped components
-# <a href="https://issues.jboss.org/browse/RFSBOX-9">RFSBOX-9</a>&nbsp;Couple the widget events into the RichFaces/JSF event subsytem (eg. for enabling JSF behaviours)
+# <a href="https://issues.jboss.org/browse/RFSBOX-7">RFSBOX-7</a> Finish wrapping the remaining bootstrap components
+# <a href="https://issues.jboss.org/browse/RFSBOX-8">RFSBOX-8</a> Flesh out the attributes of the already wrapped components
+# <a href="https://issues.jboss.org/browse/RFSBOX-9">RFSBOX-9</a> Couple the widget events into the RichFaces/JSF event subsytem (eg. for enabling JSF behaviours)
 # Migrate/wrap (or re-implement if required) the existing RF 4 components
 
 The task is big, and we could use your commits! So if you are interested in either RichFaces, Bootstrap, or both - be sure to drop by #richfaces on IRC (freenode.net) to discuss how you can <a href="https://community.jboss.org/wiki/ContributorGettingStartedGuide">get involved</a> and influence how these components will shape up!

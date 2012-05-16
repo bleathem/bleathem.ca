@@ -12,8 +12,8 @@ Adam Bien does a fantastic job introducing CDI events in his <a href="http://www
 * events.fire(new HelloEvent(...));
 * public void listenToHello(@Observes HelloEvent helloEvent){ ... }
 
-These three lines are all that's required to produce and observe the event.  Anyone who's programmed with Swing knows the benefit of decoupling concerns with action events and action listeners.&nbsp; This is the same thing, only far more elegantly implemented.
+These three lines are all that's required to produce and observe the event.  Anyone who's programmed with Swing knows the benefit of decoupling concerns with action events and action listeners.  This is the same thing, only far more elegantly implemented.
 
-One of distinguishing points for me is the POJO nature of the events.&nbsp; With nothing to extend or implement, they can be as simple or as complex as necessary.&nbsp; All without the loss of (compile-time) type safety, due to the generic implementation.
+One of distinguishing points for me is the POJO nature of the events.  With nothing to extend or implement, they can be as simple or as complex as necessary.  All without the loss of (compile-time) type safety, due to the generic implementation.
 
 Well done guys, CDI just got that much better for me!

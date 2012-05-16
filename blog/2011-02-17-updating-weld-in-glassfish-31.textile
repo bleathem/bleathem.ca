@@ -7,7 +7,7 @@ Like any piece of software, <a href="http://seamframework.org/Weld">Weld</a>, th
 
 A quick search of the Glassfish folder structure identifies the Weld implementation:
 
-<pre class="code brush: bash">
+<pre class="prettyprint">
 $ find /opt/sun/glassfish/ -iname '*weld*'
 /opt/sun/glassfish/glassfish/modules/weld-integration-fragment.jar
 /opt/sun/glassfish/glassfish/modules/weld-integration.jar
@@ -26,33 +26,33 @@ Update: The Weld OSGI bundle is now published to the maven repository.  Instead 
 
 Not to worry, the weld guys have this in hand.  The OSGI bundle is built as an artifact during the weld build.  To begin, proceed to the<a href="https://github.com/weld/core"> Weld core github page</a>,  and checkout the project:
 
-<pre class="code brush: bash">
+<pre class="prettyprint">
 git clone https://github.com/weld/core.git
 cd core
 </pre>
 
 I had a bit of trouble building the entire project, due to the requirement of some <a href="http://community.jboss.org/wiki/MavenGettingStarted-Developers">deprecated artifacts</a>.  So just build the impl module in core:
 
-<pre class="code brush: bash">cd impl
+<pre class="prettyprint">cd impl
 mvn clean install
 </pre>
 
 Next, build the OSGI bundle:
 
-<pre class="code brush: bash">
+<pre class="prettyprint">
 cd ../bundles/osgi/
 mvn clean install
 </pre>
 
 Now take that newly created Weld OSGI bundle, and use it to replace the Glassfish weld-osgi-bundle.jar file we located earlier.
 
-<pre class="code brush: bash">
+<pre class="prettyprint">
 cp target/weld-osgi-bundle-1.1.0-SNAPSHOT.jar /opt/sun/glassfish/glassfish/modules/weld-osgi-bundle.jar
 </pre>
 
 Restart Glassfish, and you should see a message in the log file along the lines of:
 
-<pre class="code brush: bash">
+<pre class="prettyprint">
 INFO: Updated bundle 75 from /opt/sun/glassfish-3.1-b41/glassfish/modules/weld-osgi-bundle.jar
 </pre>
 

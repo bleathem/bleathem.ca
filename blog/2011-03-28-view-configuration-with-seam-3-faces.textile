@@ -14,7 +14,7 @@ In this post I will cover the @ViewConfig security annotations supported  in the
 
 Consider this @ViewConfig interface:
 
-<pre class="code brush: java">
+<pre class="prettyprint">
 @ViewConfig
 public interface Pages {
  
@@ -46,7 +46,7 @@ The following annotations are available:
 
 The secret sauce is in the annotations qualified with the @SecureBindingType qualifier.
 
-<pre class="code brush: java">
+<pre class="prettyprint">
 @SecurityBindingType
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.TYPE})
@@ -56,7 +56,7 @@ public @interface Owner {
 
 These annotations are mapped to methods that check for appropriate  authorization, functionality provided by the Seam Security module.  The  authorization methods themselves are annotated with @Secure and the  corresponding @SecureBindingType qualified annotation, as in the class  below:
 
-<pre class="code brush: java">
+<pre class="prettyprint">
 public class SecurityRules {
  
     private transient final Logger logger = Logger.getLogger(SecurityRules.class.getName());
@@ -82,7 +82,7 @@ So how do these pieces fit together?  Consider a request for the view __/list.xh
 
 The enforcement of security restrictions is highly tuned to the JSF  life-cycle. By default, authorization is checked before the Invoke Application and Render Response phases (because the view requested may  change between these phases). However, by including a "restrictAtPhase"  method on SecureBindingType qualified annotation, the phases at which that  restriction is applied can be fine tuned. Additionally, the  @RestrictAtPhase annotation can be applied to an enum value to change the  default phase for all SecureBindingType qualified annotations on enums  values that match that pattern.  In the example above, the @Admin restriction would be checked at the RestoreView phase, and the @Admin annotation is defined as follows:
 
-<pre class="code brush: java">
+<pre class="prettyprint">
 @SecurityBindingType
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.TYPE})

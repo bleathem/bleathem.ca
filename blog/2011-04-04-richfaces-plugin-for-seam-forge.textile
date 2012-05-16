@@ -13,25 +13,25 @@ For instructions on installing Forge, refer to the <a href="http://seamframework
 
 First, lets install the RichFaces plugin for forge (installing from git!):
 
-<pre class="code">
+<pre class="prettyprint">
 $ forge git-plugin git://github.com/bleathem/richfaces-forge-plugin.git
 </pre>
 
 Forge makes it easy to create a new project:
 
-<pre class="code">
+<pre class="prettyprint">
 $ new-project --named richfacesApp --topLevelPackage ca.bleathem.richfaces.test --projectFolder richfacesApp
 </pre>
 
 Next, make the project a Java EE wep app, by installing the "servlet facet":
 
-<pre class="code">
+<pre class="prettyprint">
 $ project install-facet forge.spec.servlet
 </pre>
 
 Now, we can run the "richfaces" command, with no arguments to see the options available:
 
-<pre class="code">$ richfaces
+<pre class="prettyprint">$ richfaces
 Use the install commands to install:
   install-base: maven dependencies, and web.xml configuration
   install-example-facelet: a sample RichFaces enabled facelet file with backing bean
@@ -40,7 +40,7 @@ Use the install commands to install:
 
 Running "richfaces install" duplicates the behaviour of the existing <a href="http://docs.jboss.org/richfaces/latest_4_0_X/Developer_Guide/en-US/html/chap-Developer_Guide-Getting_started_with_RichFaces.html#sect-Component_Reference-Using_RichFaces_with_Maven-Using_the_RichFaces_project_archetype">RichFaces maven archetype</a>.  If you have an existing project, and you just want to use forge to add the RichFaces dependencies and setup the web.xml, run "richfaces isntall-base".  For our vanilla application, we'll run the full install, and see a simple facelet page with an input component "ajaxified" with RichFaces.
 
-<pre class="code">
+<pre class="prettyprint">
 $ richfaces install
 ***SUCCESS*** RichFaces BOM dependency has been installed.
 ***SUCCESS*** org.richfaces.ui:richfaces-components-ui:4.0.0.Final dependency has been installed.

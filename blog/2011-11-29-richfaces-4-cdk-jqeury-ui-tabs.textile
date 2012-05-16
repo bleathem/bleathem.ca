@@ -12,7 +12,7 @@ h3. The Component Classes
 
 div=. **AbstractTabs.java**
 
-<pre class="code brush:java">package ca.bleathem.richfaces.jquery.component;
+<pre class="prettyprint">package ca.bleathem.richfaces.jquery.component;
 import org.richfaces.cdk.annotations.*;
 
 import javax.faces.component.UIComponent;
@@ -35,7 +35,7 @@ Here we have the component class for tor the __tabs__ tag - this will be the con
 
 div=. **AbstractTab.java**
 
-<pre class="code brush:java">package ca.bleathem.richfaces.jquery.component;
+<pre class="prettyprint">package ca.bleathem.richfaces.jquery.component;
 
 import org.richfaces.cdk.annotations.*;
 
@@ -58,7 +58,7 @@ Looking first at the simpler __tab__ renderer:
 
 div=. **tab.template.xhtml**
 
-<pre class="code brush:xml"><?xml version="1.0" encoding="UTF-8"?>
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
 
 <cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el"
         xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
@@ -86,7 +86,7 @@ We'll see this __<cdk:body />__ tag again when we look as the (slightly more com
 
 div=. **tabs.template.xhtml**
 
-<pre class="code brush:xml"><?xml version="1.0" encoding="UTF-8"?>
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
 
 <cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el"
         xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
@@ -139,7 +139,7 @@ So what does it look like when we put it all together?
 
 With this sample markup:
 
-<pre class="code brush:xml">
+<pre class="prettyprint">
 <b:tabs>
     <b:tab title="Tab 1">
         Hello <b>Tab</b>!!

@@ -32,7 +32,7 @@ These were a great starting point, from which I ended up with the solution.
 
 mod_jk.conf:
 
-<pre class="code">
+<pre class="prettyprint">
 #mod_jk/1.2.28
 LoadModule jk_module modules/mod_jk.so
 JkWorkersFile /etc/httpd/conf.d/worker.properties
@@ -76,7 +76,7 @@ JkShmFile /var/log/httpd/jk-runtime-status
 
 And worker.properties:
 
-<pre class="code">
+<pre class="prettyprint">
 ## Define 1 real worker using ajp13
 worker.list=worker1,worker2
 # Set properties for worker1 (ajp13)

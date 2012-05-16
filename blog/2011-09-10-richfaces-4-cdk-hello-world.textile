@@ -14,7 +14,7 @@ To start, we need a component class. The component class itself will be generate
 
 div=. **AbstractHello.java**
 
-<pre "="" class="code brush:java">package ca.bleathem.richfaces.hello.component;
+<pre class="prettyprint">package ca.bleathem.richfaces.hello.component;
 
 import org.richfaces.cdk.annotations.*;
 
@@ -45,7 +45,7 @@ Next, let's look at the JSF Renderer:
 
 div=. **hello.template.xml**
 
-<pre "="" class="code brush:xml"><?xml version="1.0" encoding="UTF-8"?>
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
 
 <cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
     xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core" xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite"
@@ -76,7 +76,7 @@ And there we have it, a JSF Component, and it's associated Renderer! -- err almo
 
 div=. **package-info.java**
 
-<pre "="" class="code brush:java">
+<pre class="prettyprint">
 @TagLibrary(uri="http://bleathem.ca/test",shortName="testLib")
 package ca.bleathem.richfaces.hello.component;
 import org.richfaces.cdk.annotations.TagLibrary;

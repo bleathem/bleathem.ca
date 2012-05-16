@@ -5,7 +5,7 @@ title: "RESTful URLs, with JSF 2"
 
 JSF 2 introduced the ability to create RESTful URLs with the introduction of the <f:viewParam> tag.  The tag is easy enough to use, you simply place it in the <f:metadate> tag, and configure the attributes to decode the url.
 
-<pre class="code brush: xml">
+<pre class="prettyprint">
 <f:metadata>
      <f:viewParam />
 </f:metadata>

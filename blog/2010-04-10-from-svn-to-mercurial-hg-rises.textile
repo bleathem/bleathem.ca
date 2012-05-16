@@ -20,7 +20,7 @@ Turns out mercurial has this functionality built in with the bundled <a href="ht
 
 I'd achieved svn LDAP integration using apache, so I was quite happy to see hg did the same thing.  I <a href="http://mercurial.selenic.com/wiki/PublishingRepositories#multiple">set up the hgwebdir.cgi</a> script to serve my newly imported hg repositories, hi-jacking the LDAP authentication from my svn setup.  Worked like a charm.  p. Update, here's the apache config for authentication: 
 
-<pre class="code brush: bash">
+<pre class="prettyprint">
 # cat /etc/httpd/conf.d/hg.conf
 ScriptAlias /hg "/var/www/hg/hgwebdir.cgi"
 
@@ -44,7 +44,7 @@ This one seemed simple enough, given that there is a mercurial <a href="http://w
 
 My hg warpper looks like: 
 
-<pre class="code brush: bash">
+<pre class="prettyprint">
 # cat /usr/local/bin/hg_pythonpath_wrapper
 #!/bin/sh
 export PYTHONPATH=/usr/local/lib64/python2.4/site-packages

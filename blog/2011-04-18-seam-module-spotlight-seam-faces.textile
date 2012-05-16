@@ -21,7 +21,7 @@ Adhering to the CDI core tenet of type safety, Seam Faces offers a type-safe mec
 
 Lets take a closer look at the View configuration from the Seam Faces example “faces-viewconfig”:
 
-<pre class="code brush: java">
+<pre class="prettyprint">
 @ViewConfig
 public interface Pages {
 
@@ -54,7 +54,7 @@ h3. Seam Security via the @ViewConfig
 
 Now let’s look at the Seam Security annotations @Admin and @Owner.  These annotations are user-provided, meaning they were built solely for this example, and are qualified with the Seam Security qualifier: @SecurityBindingType.  When a view is requested that matches a pattern in the @ViewConfig annotated with such an annotation, Seam Faces invokes Seam Security to determine if access should be granted. Authorization is evaluated with the following class:
 
-<pre class="code brush:java">
+<pre class="prettyprint">
 public class SecurityRules {
 public @Secures @Owner boolean ownerChecker(Identity identity, @Current Item item) {
 if (item == null || identity.getUser() == null) {
@@ -78,7 +78,7 @@ In this way, views annotated with the @Owner annotation are secured by the @Secu
 
 Furthermore, the @Admin annotation is defined with an additional qualifier:
 
-<pre class="code brush:java">
+<pre class="prettyprint">
 @RestrictAtPhase(PhaseIdType.RESTORE_VIEW)
 </pre>
 

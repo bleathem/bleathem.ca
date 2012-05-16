@@ -26,7 +26,7 @@ h3. Improvements - a4j:push
 
 The a4j:push component has seen some attention, improving it’s usability with this release.  First and foremost is our decision to turn off JMS integration by default - as of RichFaces 4.2.0, JMS integration must be explicitly turned on (<a href="https://issues.jboss.org/browse/RF-11892">RF-11892</a>).  This breaking change was introduced to ease the on-boarding of new users with push technology, as the component now works in both Servlet and EE containers out-of-the-box.  Those who want to leverage the benefit of JMS integration will now have to explicitly enable it with the contextParam in your web.xml:
 
-<pre class="code brush:xml"><context-param>
+<pre class="prettyprint"><context-param>
     <param-name>org.richfaces.push.jms.enabled</param-name>
     <param-value>true</param-value>
 </context-param></pre>

@@ -14,7 +14,7 @@ Starting again with the component class:
 
 div=. **AbstractDatepicker.java**
 
-<pre class="code brush:java">package ca.bleathem.richfaces.jquery.component;
+<pre class="prettyprint">package ca.bleathem.richfaces.jquery.component;
 
 import org.richfaces.cdk.annotations.*;
 
@@ -46,7 +46,7 @@ The renderer is again an xml file:
 
 div=. **datepicker.template.xml**
 
-<pre class="code brush:xml"><?xml version="1.0" encoding="UTF-8"?>
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
 
 <cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
     xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core" xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite"
@@ -82,7 +82,7 @@ From the __cc:interface__ of this renderer template, we see that we are extendin
 
 div=. **DatepickerRendererBase.java**
 
-<pre class="code brush:java">package ca.bleathem.richfaces.jquery.renderkit;
+<pre class="prettyprint">package ca.bleathem.richfaces.jquery.renderkit;
 
 import org.richfaces.renderkit.InputRendererBase;
 
@@ -110,7 +110,7 @@ Finally, let's look at en example use of this component:
 
 div=. **__sample.xhtml__**
 
-<pre class="code brush:xml"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<pre class="prettyprint"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"

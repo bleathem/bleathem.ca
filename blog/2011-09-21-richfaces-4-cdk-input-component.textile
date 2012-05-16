@@ -14,7 +14,7 @@ In a similar approach to our Hello World component, we'll start with the compone
 
 div=. **AbstractInput.java**
 
-<pre class="code brush:java">package ca.bleathem.richfaces.input.component;
+<pre class="prettyprint">package ca.bleathem.richfaces.input.component;
 
 import org.richfaces.cdk.annotations.*;
 
@@ -36,7 +36,7 @@ The corresponding renderer template for our input component is:
 
 div=. **input.template.xml**
 
-<pre class="code brush:java"><?xml version="1.0" encoding="UTF-8"?>
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
 
 <cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
     xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core" xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite"

@@ -110,6 +110,30 @@
   text-align : center;
 }
 
+h1.title,
+h2.title,
+h3.title,
+h4.title,
+h5.title,
+h6.title,
+h1.title a,
+h2.title a,
+h3.title a,
+h4.title a,
+h5.title a,
+h6.title a {
+ color: #c06000;
+}
+
+#content h2.title {
+ font-weight: normal;
+}
+
+#content h3 {
+ margin-top: 10px;
+ font-size: 14px;
+}
+
 #content .img {
  margin: auto;
  text-align : center;

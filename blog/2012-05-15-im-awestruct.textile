@@ -8,8 +8,8 @@ I'm officially "Awestruct":http://www.awestruct.org! with this launch of my new 
 
 If you haven't heard, Awestruct is a great Ruby-based tool for building static HTML websites.  A project originally started by "Bob McWhirter":http://bob.mcwhirter.org/, it has grown in true Open Source fashion with a number of new users and "contributors":http://github.com/awestruct.  While awestruct is centred around creating websites with static HTML content, HTML these days is very far from static.  With so many content providers providing web APIs, it's easy to consume content with javascript and give a static page a dynamic feel.  Some examples of truly fantastic dynamic capabilities include:
 
-* the comment system of this new blog (driven by "Disqus":http://www.disqus.com 
-* the "twitter":http://www.twitter.com/brianleathem feed in the side panel.  
+* the comment system of this new blog (driven by "Disqus":http://www.disqus.com) 
+* the "twitter":http://www.twitter.com/brianleathem feed in the side panel  
 
 These are both great examples of content both consumed and created by a javascript interface on a "static" HTML website.
 

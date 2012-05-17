@@ -7,12 +7,13 @@ layout: default
   ~ content
   %hr
   .row
-    %h6.previous.span1
-      - if page.previous_post
-        %a.btn.btn-info{:href => "#{page.previous_post.url}"} Previous
-    %h6.next.span1.offset7
-      - if page.next_post
-        %a.btn.btn-info{:href => "#{page.next_post.url}"} Next
+    %ul.pager  
+      %li.previous.span1
+        - if page.previous_post
+          %a{:href => "#{page.previous_post.url}"} Previous
+      %li.next.span1.offset7
+        - if page.next_post
+          %a{:href => "#{page.next_post.url}"} Next
   #disqus_thread
     :javascript
       /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */

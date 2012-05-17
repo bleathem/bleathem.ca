@@ -63,23 +63,6 @@
 .archive li.collapse {
 }
 
-.pagination-links :first-child {
- border-radius: 3px 0 0 3px;
-}
-
-.pagination-links :last-child {
- border-radius: 0 3px 3px 0;
-}
-
-.pagination-links > * {
- border: 1px solid #ddd;
- padding: 8px 14px;
- box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
- margin: 0;
- display: block;
- float:left;
-}
-
 .tags {
  text-transform: uppercase;
 }

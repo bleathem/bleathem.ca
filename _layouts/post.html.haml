@@ -2,6 +2,7 @@
 layout: default
 ---
 #content
+  - identifier= page.date.strftime("%Y-%m-%d") + "-" + page.slug
   %h6= page.date.strftime("%A, %B #{page.date.day}, %Y")
   %h2.title= page.title
   ~ content
@@ -20,6 +21,8 @@ layout: default
       var disqus_shortname = 'bleathem-java'; // required: replace example with your forum shortname
       var disqus_developer = 1; // developer mode is on
       var disqus_url = "http://blog.bleathem.ca#{page.url.sub(%r{^/blog}, '')}";
+      var disqus_identifier = "#{identifier}";
+      var disqus_title = "#{page.slug}";
 
       /* * * DON'T EDIT BELOW THIS LINE * * */
       (function() {

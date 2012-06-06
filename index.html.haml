@@ -8,6 +8,7 @@ layout: default
       %h2.title
         %a{:href=>post.url}= post.title
       = post.content
+      %div{:style => "clear:both"}
       - if post.tags
         .tags
           %span.title

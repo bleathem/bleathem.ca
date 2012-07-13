@@ -1,0 +1,19 @@
+---
+layout: post
+title: "JAXconf-2012: JSF - Components & Mobile"
+tags: [ RichFaces, JAX, JAXconf, talk, mobile, components]
+---
+
+!>images/blog/2012-07-13-jax-conf-2012/jax.gif(JAX Conf 2012)!:http://jaxconf.com/2012/
+
+RichFaces represented at the "2012 JAX conference":http://jaxconf.com/2012/ in San Francisco this week.  I presented three times on two JSF topics.  The conference was overall a great success in my opinion - while not the most highly attended conference at which I've presented, those that attended were highly engaged and happy to have such direct access to the speakers.
+
+Indeed this was one of my preferred aspects to JAX conf.  One couldn't help but be impressed with the calibre of speakers that flocked to the JAX brand for their 2nd annual North American conference.  Unfortunately I missed the speaker summit over the weekend, but there was no shortage of conversation during the famous "hallway track".  Events like JAX are great catalysts, bringing communities together to foster fantastic innovation!  It's surely just a matter of time until the US and Canadian java developers catch on - next year's conference will be an even bigger success, I'm sure!
+
+!<images/blog/2012-07-13-jax-conf-2012/communities.jpg(Communities coming together at JAX)!:https://twitter.com/brianleathem/status/222869673778216960
+
+My first presentation on Mobile JSF + RichFaces was quite similar to the mobile RichFaces talk I presented earlier this month "at JBoss World":http://www.bleathem.ca/blog/2012/07/jboss-world-2012.html.  The session begins with my proposal that the mobile web is important and unavoidable in today's market.  I then demonstrate how one can build mobile web applications using "vanilla JSF", then we look at the value-add of introducing RichFaces to simplify the process of building mobile web applications with JSF.  Feel free to "dig into the slides":http://www.bleathem.ca/talks/2012-JAX/richfaces-mobile.html.
+
+My second talk on JSF components took a similar approach.  We begin at looking how we can quickly, rapidly, and easily build custom JSF components leveraging existing jQuery plugins.  We then finish by looking at how building similar components with the RichFaces CDK gives us greater expressivity, and an effective workaround for some known JSF 2 composite components bugs.  I had the pleasure of giving this talk twice at the conference: the first time in an abbreviated form at a JAX community evening event, and again a 2nd time the following day to the JAX conf attendees, this time diving further into the details.  Check out the "slides here":http://www.bleathem.ca/talks/2012-JAX/jsf-components.html.
+
+Overall I have to say this is one of my favourite conferences both to attend and at which to present.  The folks who run JAX definitely know how to put a conference together, and I look forward to speaking again at any future events!

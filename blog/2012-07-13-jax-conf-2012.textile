@@ -4,13 +4,13 @@ title: "JAXconf-2012: JSF - Components & Mobile"
 tags: [ RichFaces, JAX, JAXconf, talk, mobile, components]
 ---
 
-!>images/blog/2012-07-13-jax-conf-2012/jax.gif(JAX Conf 2012)!:http://jaxconf.com/2012/
+!>/images/blog/2012-07-13-jax-conf-2012/jax.gif(JAX Conf 2012)!:http://jaxconf.com/2012/
 
 RichFaces represented at the "2012 JAX conference":http://jaxconf.com/2012/ in San Francisco this week.  I presented three times on two JSF topics.  The conference was overall a great success in my opinion - while not the most highly attended conference at which I've presented, those that attended were highly engaged and happy to have such direct access to the speakers.
 
 Indeed this was one of my preferred aspects to JAX conf.  One couldn't help but be impressed with the calibre of speakers that flocked to the JAX brand for their 2nd annual North American conference.  Unfortunately I missed the speaker summit over the weekend, but there was no shortage of conversation during the famous "hallway track".  Events like JAX are great catalysts, bringing communities together to foster fantastic innovation!  It's surely just a matter of time until the US and Canadian java developers catch on - next year's conference will be an even bigger success, I'm sure!
 
-!<images/blog/2012-07-13-jax-conf-2012/communities.jpg(Communities coming together at JAX)!:https://twitter.com/brianleathem/status/222869673778216960
+!</images/blog/2012-07-13-jax-conf-2012/communities.jpg(Communities coming together at JAX)!:https://twitter.com/brianleathem/status/222869673778216960
 
 My first presentation on Mobile JSF + RichFaces was quite similar to the mobile RichFaces talk I presented earlier this month "at JBoss World":http://www.bleathem.ca/blog/2012/07/jboss-world-2012.html.  The session begins with my proposal that the mobile web is important and unavoidable in today's market.  I then demonstrate how one can build mobile web applications using "vanilla JSF", then we look at the value-add of introducing RichFaces to simplify the process of building mobile web applications with JSF.  Feel free to "dig into the slides":http://www.bleathem.ca/talks/2012-JAX/richfaces-mobile.html.
 

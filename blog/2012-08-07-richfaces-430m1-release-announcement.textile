@@ -8,7 +8,7 @@ tags: [ RichFaces, RF43, CDK, testing, MyFaces ]
 
 The first milestone release of RichFaces 4.3 ("4.3.0.M1":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12318553) is now available.  This is a significant release, with primary focus on improving the RichFaces Component Development Kit ("CDK":https://community.jboss.org/wiki/RichFacesCDKHowTos) - the tool we use to author our JSF components.  A second goal of the release was to improve our "MyFaces":http://myfaces.apache.org/ support, which we accomplished by fixing a number of issues, and identifying some further issues to be addressed in a subsequent 4.3 milestone release.
 
-div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.M1.#. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
+div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.20120802-M1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
 h3. CDK Improvements
 
@@ -18,13 +18,13 @@ RichFaces developer "Paul Dijou":https://community.jboss.org/people/paul.dijou h
 
 h3. "Real" Tests
 
-Testing of our components and framework has always been a primary concern of the RichFaces project.  All our releases to date have been tested not only with unit tests, but also with a large battery of significant number of "functional tests":https://github.com/richfaces/qa.  However, functional tests treat the JSF servlet as a black box - we know what we put it and we can test what comes out, and on the other hand, unit tests mocks the environment where our implementation runs, hiding any issues that would occur only in a real environment.  If you think about it, these tests operate in a blind-folded manner: what's happening as the container executes our application logic?
+Testing of our components and framework has always been a primary concern of the RichFaces project.  All our releases to date have been tested not only with unit tests, but also with a large battery of significant number of "functional tests":https://github.com/richfaces/qa.  However, functional tests treat the JSF servlet as a black box - we know what we put it and we can test what comes out.  On the other hand, unit tests mock the environment where our implementation runs, hiding any issues that would occur only in a real environment.  If you think about it, these tests operate in a blind-folded manner: what's happening as the container executes our application logic?
 
 To this end, the RichFaces project has co-ordinated with the "Arquillian":http://aqruillian.org project in the development of a new extension: ""Arquillian Warp":http://arquillian.org/blog/2012/05/27/arquillian-extension-warp-1-0-0-Alpha1/".  With Warp, we can write tests that assert state simultaneously on both the client and the server.  For JSF, this means our tests can assert state at arbitrary points throughout the JSF lifecycle.  As you can imagine, this opens up a whole new category of tests we can write, as we can not only assert that our application logic has the desired effect, but also that it executes as we expect.
 
-Warp reuses outstanding Arquillian integration with various containers, which allows to test the integration of RichFaces with many application servers and servlet containers. Furthermore, Warp leverages the "Arquillian Drone":http://www.arquillian.org/extensions/drone/ extension for running Selenium-based tests. Arquillian's flexibility together with Drone's ability to drive both real and mocked browsers (ie. HtmlUnit), allows us to run tests using minimal resources in continuous integration, and we can run those same tests in "real" environments to verify integration with many real containers.
+Warp reuses outstanding Arquillian integration with various containers, which allows us to test the integration of RichFaces with many application servers and servlet containers. Furthermore, Warp leverages the "Arquillian Drone":http://www.arquillian.org/extensions/drone/ extension for running Selenium-based tests. Arquillian's flexibility together with Drone's ability to drive both real and mocked browsers (ie. HtmlUnit), allows us to run tests using minimal resources in continuous integration, and we can run those same tests in "real" environments to verify integration with many real containers.
 
-Our integration tests makes heavy use of "ShrinkWrap":http://www.jboss.org/shrinkwrap/ to create _micro-deployments_ allowing us to separate the project into small testable pieces. ShrinkWrap Resolvers provide support for resolving various modules from our multi-module project, while ShrinkWrap Descriptors allows us to programatically describe configuration files (like faces-config.xml and web.xml), property files, and Facelet files - which enable us to write tests once and run them in many different configurations.
+Our integration tests makes heavy use of "ShrinkWrap":http://www.jboss.org/shrinkwrap/ to create _micro-deployments_ allowing us to separate the project into small testable pieces. ShrinkWrap Resolvers provides support for resolving various modules from our multi-module project, while ShrinkWrap Descriptors allows us to programatically describe configuration files (like faces-config.xml and web.xml), property files, and Facelet files - which enable us to write tests once and run them in many different configurations.
 
 So far we've used this new capability within the framework to harden our RichFaces Push and Resource Mapping implementation, and we will continue to develop new cross-container integration tests of our components and frameworks to complement our already impressive test suite.
 
@@ -38,7 +38,7 @@ The "*rich:jQuery*":https://issues.jboss.org/browse/RF-12328 function in EL to c
 This is a convenience method introduced as a short-hand for the current:
 <code>$('#\#{rich:clientId('your-id')}')</code>
 
-The RichFaces "*a4j:push*":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push feature now has a "max inactive timeout":https://issues.jboss.org/browse/RF-12370, that specifies the maximum amount of time a session is allowed to be inactive.  This by assembling the required jars. is an experimental feature, put in place as a workaround while we resolve the underlying issue "RF-12219":https://issues.jboss.org/browse/RF-12219.  Try it out, let us know what you think!
+The RichFaces "*a4j:push*":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push feature now has a "max inactive timeout":https://issues.jboss.org/browse/RF-12370, that specifies the maximum amount of time a session is allowed to be inactive.  This is an experimental feature, put in place as a workaround while we resolve the underlying issue "RF-12219":https://issues.jboss.org/browse/RF-12219.  Try it out, let us know what you think!
 
 h3. Component Upgrades
 
@@ -63,7 +63,7 @@ h3. What's Next?
 In a recent RichFaces "community meeting":https://community.jboss.org/wiki/RichFacesTeamMeetingAgenda2012-07-31#comment-10330, we set some goals for the M2 release of RichFaces 4.3.  These goals include:
 
 * Restructure the build (according to the requirements being collected "in our wiki":https://community.jboss.org/wiki/RichFaces43BuildRedesign)
-* Finish the MyFaces fixes
+* Proceed with further MyFaces fixes
 * Iteration/repeating issues
 * Critical/Popular bugs
 

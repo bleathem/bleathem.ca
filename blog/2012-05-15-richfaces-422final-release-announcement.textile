@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.2.2.Final Release Announcement"
-tags: [ RF42, RichFaces ]
+tags: [ RF42, Final, RichFaces ]
 ---
 
 RichFaces<a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12319519"> 4.2.2.Final</a> is available, the second RichFaces 4.2 micro release. This release was originally intended to focus on changes required to better align with the upcoming JBoss AS 7.1.2 release. However we had some community members step forward with some fixes, and those contributions ended up turning this release into a reasonable bug fix release!

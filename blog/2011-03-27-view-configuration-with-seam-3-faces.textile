@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "View Configuration with Seam 3 Faces - the Introduction"
+tags: [ Seam, ViewConfig ]
 ---
 
 <a href="/images/blog/2011-03-28-view-configuration-with-seam-3-faces/faces_emblem.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="99" src="/images/blog/2011-03-28-view-configuration-with-seam-3-faces/faces_emblem.png" width="100" /></a>

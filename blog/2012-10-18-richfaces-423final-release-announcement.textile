@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "RichFaces 4.2.3.CR1 Release Announcement"
-tags: [ RichFaces, RF43, Final, Portal, Community ]
+tags: [ RichFaces, RF42, Final, Portal, Community ]
 ---
 
 !>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/
 
 RichFaces 4.2.3.Final has been released.  This *Final* release is a re-tag of the "4.2.3.CR1":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320071 release, as no blocking issues were found by either our "QE team":http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html, nor the community.
 
-div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.2.3.CR1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
+div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/stable, or for maven users, increment the RichFaces version in your pom.xml to 4.2.3.Final. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
 The RichFaces 4.2.3.Final release is purely a bug-fix release, with a focus on compatibility between RichFaces and the "JBoss Portlet Bridge":http://www.jboss.org/portletbridge.  I'll refer you to the "RichFaces 4.2.3.CR1 release blog":http://www.bleathem.ca/blog/2012/10/richfaces-423cr1-release-announcement.html for details of the release, with a special highlight paid to the contributions from the JBoss Portal Bridge team, and contributions from community members.
 

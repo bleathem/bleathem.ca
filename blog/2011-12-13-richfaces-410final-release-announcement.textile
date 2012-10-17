@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "RichFaces 4.1.0.Final Release Announcement"
-tags: [ RF41, RichFaces ]
+tags: [ RF41, Final, RichFaces ]
 ---
 
 <a href="/images/blog/2011-12-13-richfaces-410final-release-announcement/richfaces.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="/images/blog/2011-12-13-richfaces-410final-release-announcement/richfaces.png" /></a>

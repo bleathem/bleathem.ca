@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "RichFaces Plugin for Seam Forge"
+title: "RichFaces Plugin for JBoss Forge"
+tags: [ Forge, RichFaces ]
 ---
 
-If you haven't yet heard about it, <a href="http://seamframework.org/Documentation/SeamForge">Seam Forge</a> is a fantastic new tool from JBoss for rapid application development of standards based applications.  Forge allows a developer to quickly set up the scaffolding for an application, and quickly get to the matter of solving domain problems.
+If you haven't yet heard about it, "JBoss Forge":http://forge.jboss.org/ is a fantastic new tool from JBoss for rapid application development of standards based applications.  Forge allows a developer to quickly set up the scaffolding for an application, and quickly get to the matter of solving domain problems.
 
 What makes Forge particularly interesting, from my perspective, is the way it was built with plugins in mind as a defining way in which the platform is meant to be extended.  To take this new tool for a spin, I created a Forge plugin for <a href="http://www.jboss.org/richfaces">RichFaces</a> - the killer component kit for JSF 2.
 
-For instructions on installing Forge, refer to the <a href="http://seamframework.org/Documentation/SeamForge">Forge Documentation</a>.  The following guide assumes you have Forge installed and functional.
+For instructions on installing Forge, refer to the "Forge Documentation":http://forge.jboss.org/docs/index.html.  The following guide assumes you have Forge installed and functional.
 
-<h4 style='color:green; border: solid green 2px; padding : 10px'>** The instructions in this blog are for the 0.1.0 version of the RichFaces plugin for Seam Forge.  See the project's <a href="https://github.com/bleathem/richfaces-forge-plugin/blob/master/README.txt">README.txt</a> for update usage instructions. ** </h4>
+<h4 style='color:green; border: solid green 2px; padding : 10px'>** The instructions in this blog are for the 0.1.0 version of the RichFaces plugin for JBoss Forge.  See the project's <a href="https://github.com/bleathem/richfaces-forge-plugin/blob/master/README.txt">README.txt</a> for updated usage instructions. ** </h4>
 
 First, lets install the RichFaces plugin for forge (installing from git!):
 
@@ -69,4 +70,4 @@ This is early days for this plugin.  I achieved my initial goal of being functio
 * Test and support the generated application in more containers - including Servlet 2.5
 * Scan and convert vanilla facelet tags (or tags from other frameworks) converting them to RichFaces components.  I'm thinking specifically dataTables, but I'm sure this would work well for other components.
 
-Fork away, lets show the power of Seam Forge with the RichFaces plugin!
+Fork away, lets show the power of JBoss Forge with the RichFaces plugin!

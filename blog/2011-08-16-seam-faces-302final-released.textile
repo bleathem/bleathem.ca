@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Seam Faces 3.0.2.Final released"
-tags: [ seam ]
+tags: [ Seam, Final ]
 ---
 
 (cross posted from :<a href="http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released">http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released</a>)

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Seam Module Spotlight: Seam Faces"
+tags: [ Seam ]
 ---
 
 This is a blog entry I wrote for <a href="http://in.relation.to/Bloggers/SeamFaces301FinalReleaseAndFacesModuleSpotlight">in.relation.to</a>.  I'm including it here to keep a personal record of the post.

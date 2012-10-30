@@ -12,7 +12,7 @@ div(alert alert-info). *To try out this release:* You can download the distribut
 
 h3. Community involvement
 
-I'd again like to thank RichFaces community members for their contributions to this release.  In total there are 7 community who have contributed this milestone release!  This is a number that makes me incredibly proud to share, and demonstrates how the RichFaces community is truly thriving.  So together, as a community, let's have a collective shout-out to:
+I'd again like to thank RichFaces community members for their contributions to this release.  In total there are 7 community members who have contributed this milestone release!  This is a number that makes me incredibly proud to share, and demonstrates how the RichFaces community is truly thriving.  So together, as a community, let's have a collective shout-out to:
 
 * "Bernard Labno":https://community.jboss.org/people/blabno
 * "Christian Kaltepoth":https://community.jboss.org/people/chkal ("@chkal":https://twitter.com/chkal)
@@ -53,7 +53,7 @@ A number of libraries within the project have been upgraded in this milestone.  
 * "Atmosphere to 1.0.1":https://issues.jboss.org/browse/RF-12348
 * "jQuery to 1.8.2":https://issues.jboss.org/browse/RF-12418
 
-In addition, the Mojarra upgrade necessitated some library upgrades in "jsf-test":https://github.com/richfaces/jsf-test, to enable us to "reset the FacesContext after each test":https://issues.jboss.org/browse/RF-12508
+In addition, upstream changes in Mojarra required some significant changes to "jsf-test":https://github.com/richfaces/jsf-test, and the jQuery upgrade necessitated upgrading some of the jsf-test libraries as well:
 
 * "HTMLUnit to 2.1.0":https://issues.jboss.org/browse/RF-12431
 * "Qunit to 1.9.0":https://issues.jboss.org/browse/RF-12432
@@ -66,9 +66,9 @@ In addition to the above features, RichFaces 4.3.0.M2 delivers a number of addit
 
 - "RF-12360":https://issues.jboss.org/browse/RF-12360 := The onchange behaviour of the @<rich:pickList>@ has been changed to fire whenever the picked value list changes, rather than waiting until the component loses focus.
 - "RF-12397":https://issues.jboss.org/browse/RF-12397 := A MyFaces profile has been added to the RichFaces showcase build
-- "RF-12457":https://issues.jboss.org/browse/RF-12457 := The @<rich:validator>@ has two new attributes _onvalid_ and _oninvalid_ that can be used to trigger a javascript callback when validation succeeds/fails.
+- "RF-12457":https://issues.jboss.org/browse/RF-12457 := The @<rich:validator>@ has two new attributes _onvalid_ and _oninvalid_ that can be used to trigger a javascript callback when validation succeeds/fails.  Thanks for this addition Bernard!
 - "RF-12492":https://issues.jboss.org/browse/RF-12457 := A visual improvement, the @<rich:inputNumberSlider>@ gets a new handle, in the style of the progress bar.
 
 h3. Moving forward
 
-Work has already begun on RichFaces "4.3.0.M3":https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=221&view=planning after which there will be a CR1 release, followed (hopefully!) by the Final release.  Then it's on to "RichFaces 5":https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning where we will implement the "new RichFaces build":https://issues.jboss.org/browse/RF-12439.  Tune in to the RichFaces developer forum, where we will soon start the discussion and planning of what will be in RichFaces 5 in addition to this build re-structure.
+As per the "RichFaces road map":https://issues.jboss.org/browse/RF#selectedTab=com.atlassian.jira.plugin.system.project%3Aroadmap-panel, we have one final milestone scheduled for RichFaces 4.3.  Work has already begun on RichFaces "4.3.0.M3":https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=221&view=planning after which there will be a CR1 release, followed (hopefully!) by the Final release.  Then it's on to "RichFaces 5":https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning where we will implement the "new RichFaces build":https://issues.jboss.org/browse/RF-12439.  Tune in to the RichFaces developer forum, where we will soon start the discussion and planning of what will be in RichFaces 5 in addition to this build re-structure.

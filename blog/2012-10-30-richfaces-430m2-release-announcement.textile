@@ -1,0 +1,74 @@
+---
+layout: post
+title: "RichFaces 4.3.0.M2 Release Announcement"
+tags: [ RichFaces, RF43 ]
+---
+
+!>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/
+
+The second milestone release of RichFaces 4.3 ("4.3.0.M3":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12319880) is now available.  Another significant milestone for the project, this release incorporates a number of new features, bug fixes, and component upgrades.  Read on for some highlights of the release, or go straight to the "Release Notes":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12319880 for a complete list of what's been addressed.
+
+div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.20121024-M2. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
+
+h3. Community involvement
+
+I'd again like to thank RichFaces community members for their contributions to this release.  In total there are 7 community who have contributed this milestone release!  This is a number that makes me incredibly proud to share, and demonstrates how the RichFaces community is truly thriving.  So together, as a community, let's have a collective shout-out to:
+
+* "Bernard Labno":https://community.jboss.org/people/blabno
+* "Christian Kaltepoth":https://community.jboss.org/people/chkal ("@chkal":https://twitter.com/chkal)
+* "Ken Finnigan":https://community.jboss.org/people/kenfinni ("@kenfinnigan":https://twitter.com/kenfinnigan)
+* "Luca Nardelli":https://community.jboss.org/people/tritibo
+* "Michał Wojciechowski":https://community.jboss.org/people/mwojciechowski
+* "Morten Ludvigsen":https://community.jboss.org/people/mortenlud
+* "Sergiy Michka":https://community.jboss.org/people/sergiy.michka
+
+Keep the "pull requests":https://community.jboss.org/wiki/GuideToUsePullRequestsWithGitHubAndJIRA coming guys!
+
+h3. UIRepeat support in Toggle Panels
+
+With the resolution of "RF-9443":https://issues.jboss.org/browse/RF-9443, the RichFaces increases support for the @<a4j:repeat>@ component to dynamically define repeating child panels of components that extend _AbstractTogglePanel_ class.  This includes:
+* "rich:togglePanel":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=togglePanel
+* "rich:tabPanel":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=tabPanel
+* "rich:tabAccordion":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=accordion 
+
+While it has always been possible to use the JSTL @<c:forEach>@ tag to define child panel components, this did not meet all use cases, as the JSTL tags are evaluated before the component tree is built, and hence don't play nice when the underlying data model changes without performing a full page reload.  With the new support for defining child panels using the @<a4j:repeat>@ syntax, evaluation is deferred until render time, making the child panels "truly dynamic".
+
+The implementation of this leans heavily on the RichFaces "UIDataAdaptor":http://docs.jboss.org/richfaces/latest_4_X/javadoc/richfaces-components-ui/org/richfaces/component/UIDataAdaptor.html, which forms the basis for all repeating RichFaces components.  stay tuned for a blog demonstrating @<a4j:repeat>@ usage to dynamically define repeating toggle panel items, and be sure to test this feature out in this milestone release, to be sure the feature meets your requirements for dynamic repeating panel components - let us know if it doesn't!
+
+div(alert alert-warning). Note: this feature does not yet support the use of the @<a4j:repeat>@ tag for defining dynamic *columns*.  That issue is being addressed as part of "RF-7882":https://issues.jboss.org/browse/RF-7882.
+
+h3. CDK incremental build
+
+With this second 4.3.0 milestone, we've carried on with some of the CDK improvements we saw in our "first milestone":http://www.bleathem.ca/blog/2012/08/richfaces-430m1-release-announcement.html.  This time we've added support for "incremental build with the RichFaces CDK":https://issues.jboss.org/browse/RF-8287, greatly reducing the time it takes to build RichFaces components, as the CDK now only processes CDK templates and resources that have been touched since the previous build.
+
+Making use of the incremental build for the "RichFaces Components" project reduces the project build time from 2m18s to 1m00s -- a 56% decrease in build time.  A further reduction in project build time is seen with the proposed "new build structure":https://community.jboss.org/wiki/RichFaces43BuildRedesign, where we do away with the independent artifacts, and their associated assembly steps.
+
+This is an important achievement, as reducing the turnaround time from IDE to browser improves developer productivity, and let's RichFaces developer's more quickly and efficiently deliver bug fixes and new features.
+
+h3. Component Upgrades
+
+A number of libraries within the project have been upgraded in this milestone.  This includes upgrading:
+
+* "Mojarra to 2.1.13":https://issues.jboss.org/browse/RF-12344
+* "Atmosphere to 1.0.1":https://issues.jboss.org/browse/RF-12348
+* "jQuery to 1.8.2":https://issues.jboss.org/browse/RF-12418
+
+In addition, the Mojarra upgrade necessitated some library upgrades in "jsf-test":https://github.com/richfaces/jsf-test, to enable us to "reset the FacesContext after each test":https://issues.jboss.org/browse/RF-12508
+
+* "HTMLUnit to 2.1.0":https://issues.jboss.org/browse/RF-12431
+* "Qunit to 1.9.0":https://issues.jboss.org/browse/RF-12432
+
+While we currently use jsf-test to mock the faces context and execute our RichFaces unit tests, I'll take this opportunity to plug the Arquillian extensions "Graphene":http://arquillian.org/modules/graphene-extension/ and "Warp":http://arquillian.org/modules/warp-extension/ which the RichFaces Dev and QE teams are developing to allow us to take advantage of the Arquillian revolution, and unit test our components in real containers.  Head on over to the "Arquillian site":http://arquillian.org/blog/tags/graphene/ to learn more about using these extensions to test your own JSF/RichFaces applications.
+
+h3. Noteworthy fixes
+
+In addition to the above features, RichFaces 4.3.0.M2 delivers a number of additional features and bug fixes, including the fixes released with "RichFaces 4.2.3.Final":http://www.bleathem.ca/blog/2012/10/richfaces-423final-release-announcement.html.  Some noteworthy fixes include:
+
+- "RF-12360":https://issues.jboss.org/browse/RF-12360 := The onchange behaviour of the @<rich:pickList>@ has been changed to fire whenever the picked value list changes, rather than waiting until the component loses focus.
+- "RF-12397":https://issues.jboss.org/browse/RF-12397 := A MyFaces profile has been added to the RichFaces showcase build
+- "RF-12457":https://issues.jboss.org/browse/RF-12457 := The @<rich:validator>@ has two new attributes _onvalid_ and _oninvalid_ that can be used to trigger a javascript callback when validation succeeds/fails.
+- "RF-12492":https://issues.jboss.org/browse/RF-12457 := A visual improvement, the @<rich:inputNumberSlider>@ gets a new handle, in the style of the progress bar.
+
+h3. Moving forward
+
+Work has already begun on RichFaces "4.3.0.M3":https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=221&view=planning after which there will be a CR1 release, followed (hopefully!) by the Final release.  Then it's on to "RichFaces 5":https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning where we will implement the "new RichFaces build":https://issues.jboss.org/browse/RF-12439.  Tune in to the RichFaces developer forum, where we will soon start the discussion and planning of what will be in RichFaces 5 in addition to this build re-structure.

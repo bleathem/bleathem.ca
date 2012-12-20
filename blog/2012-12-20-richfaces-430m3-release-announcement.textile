@@ -6,7 +6,7 @@ tags: [ RichFaces, RF43 ]
 
 !>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/
 
-The third milestone release of RichFaces 4.3 ("4.3.0.M3":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320295) is now available.  This 3rd and final milestone for the RichFaces 4.3 release brings in a number of huge features, including new components, some long-time outstanding features migrations from RichFaces 3, and some significant bug fixes.  Read on for some details of these release highlights, or go straight to the "Release Notes":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320295 for a complete list of what's been addressed.
+The third milestone release of RichFaces 4.3 ("4.3.0.M3":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320295) is now available.  This 3rd and final milestone for the RichFaces 4.3 release brings in a number of huge features, including new components, some long-time outstanding feature migrations from RichFaces 3, and some significant bug fixes.  Read on for some details of these release highlights, or go straight to the "Release Notes":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320295 for a complete list of what's been addressed.
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.20121214-M3. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
@@ -30,7 +30,7 @@ Check out the "usage examples in the RichFaces showcase snapshot":http://showcas
 
 h3. New ExtendedDataTable Features
 
-With this third milestone release of RichFaces 4.3, we've ported a couple of new features forward for the rich:extendedDataTable component.  Both the "table state saving functionality":https://issues.jboss.org/browse/RF-10442 and "built-in sorting/filtering":https://issues.jboss.org/browse/RF-8125 features from RichFaces 3 have been ported to the RichFaces 4 implementation on the rich:extendedDataTable.  check out the built-in sorting/filtering in our "showcase snapshot sample":http://showcaselatest-richfaces.rhcloud.com/richfaces/component-sample.jsf?demo=extendedDataTable&sample=edt-builtin-sorting-and-filtering.
+With this third milestone release of RichFaces 4.3, we've ported a couple of new features forward for the rich:extendedDataTable component.  Both the "table state saving functionality":https://issues.jboss.org/browse/RF-10442 and "built-in sorting/filtering":https://issues.jboss.org/browse/RF-8125 features from RichFaces 3 have been ported to the RichFaces 4 implementation on the rich:extendedDataTable.  Check out the built-in sorting/filtering in our "showcase snapshot sample":http://showcaselatest-richfaces.rhcloud.com/richfaces/component-sample.jsf?demo=extendedDataTable&sample=edt-builtin-sorting-and-filtering.
 
 div(alert alert-error). The introduction of built-in sorting/filtering will have a noticeable side-effect for those of you already using sorting/filtering functionality with the rich:extendedDataTable.  To prevent a "doubling up" of the controls, you will have to introduce the <code>sortType="custom"</code> and <code>filterType="custom"</code> attributes.
 

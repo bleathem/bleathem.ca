@@ -36,11 +36,21 @@ div(alert alert-error). The introduction of built-in sorting/filtering will have
 
 With RichFaces 4.3.0.CR1 we will provide a way to "centrally disable built-in sorting/filtering":https://issues.jboss.org/browse/RF-12683 allowing users to adopt RichFaces 4.3 without any required code changes.
 
-h3. Significant Fixes
+h3. Ajax improvements
 
-In addition to the new components and features listed above, the RichFaces Kitchensink Archetype has been "updated":https://issues.jboss.org/issues/?jql=project%20%3D%20RF%20AND%20fixVersion%20%3D%20%224.3.0.M3%22%20AND%20(status%3D%20Resolved%20or%20status%3D%20closed)%20and%20component%20%3D%20archetype%20ORDER%20BY%20component%20asc%2C%20priority%20DESC%2C%20id%20ASC, and a number of "drag and drop improvements":https://issues.jboss.org/issues/?jql=project%20%3D%20RF%20AND%20fixVersion%20%3D%20%224.3.0.M3%22%20AND%20(status%3D%20Resolved%20or%20status%3D%20closed)%20and%20component%20%3D%20%22component-drag%2Fdrop%22%20ORDER%20BY%20component%20asc%2C%20priority%20DESC%2C%20id%20ASC have been put in place.  We've also added a "MyFaces profile":https://issues.jboss.org/browse/RF-12581 MyFaces showcase for the RichFaces showcase.
+A number of fixes have gone into this release in the area of RichFaces ajax, each of these issues is significant in it's own right:
 
-Issue "RF-12442":https://issues.jboss.org/browse/RF-12442 addresses the use of RichFaces with multiform JSF pages, a significant improvement for a number of use cases.
+* "RF-12442":https://issues.jboss.org/browse/RF-12442 addresses the use of RichFaces with multiform JSF pages, a significant improvement for a number of use cases.
+* "RF-12229":https://issues.jboss.org/browse/RF-12229 fixes broken <code>render="@all"</code> functionality
+* "RF-12642":https://issues.jboss.org/browse/RF-12642 introduces two new events ajaxbegin and ajaxbeforedomupdate
+
+h3. Other Significant Fixes
+
+In addition to the new components and features listed above, I'd like to call out a few more areas that have seen improvements:
+
+* The RichFaces Kitchensink Archetype has been "updated":https://issues.jboss.org/issues/?jql=project%20%3D%20RF%20AND%20fixVersion%20%3D%20%224.3.0.M3%22%20AND%20(status%3D%20Resolved%20or%20status%3D%20closed)%20and%20component%20%3D%20archetype%20ORDER%20BY%20component%20asc%2C%20priority%20DESC%2C%20id%20ASC, 
+* A number of "drag and drop improvements":https://issues.jboss.org/issues/?jql=project%20%3D%20RF%20AND%20fixVersion%20%3D%20%224.3.0.M3%22%20AND%20(status%3D%20Resolved%20or%20status%3D%20closed)%20and%20component%20%3D%20%22component-drag%2Fdrop%22%20ORDER%20BY%20component%20asc%2C%20priority%20DESC%2C%20id%20ASC have been put in place.  
+* We've added a "MyFaces profile":https://issues.jboss.org/browse/RF-12581 MyFaces showcase for the RichFaces showcase.
 
 Finally I'll point out we've updated a some of the libraries on which RichFaces builds it's functionality:
 

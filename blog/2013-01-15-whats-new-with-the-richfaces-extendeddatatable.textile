@@ -26,7 +26,7 @@ If you require additional flexibility, and prefer to implement your own sort con
 
 h4. Built-in Filtering
 
-Similarly, taking advantage of the built-in filter controls is also straightforward.  Define the @filterValue@ attribute on the column to be filtered, then define either a @filterExpression@ for @filter@ attribute to implement the filter logic.  When the attributes are present an input element will be displayed in the column header.  Simple value conversions are performed implicitly in the EL of the @filterExpression@ or explicitly in the @filter@ implementation.
+Similarly, taking advantage of the built-in filter controls is also straightforward.  Define the @filterValue@ attribute on the column to be filtered, then define either a @filterExpression@ or @filter@ attribute to implement the filter logic.  When the attributes are present an input element will be displayed in the column header.  Simple value conversions are performed implicitly in the EL of the @filterExpression@ or explicitly in the @filter@ implementation.
 
 Analogously to built-in sorting, further control over the filter controls can be achieved by setting the @filterType=custom@ attribute, and implementing your own filter controls in the back-end.  Built-in filter controls can be disabled altogether by setting the web.xml context param @org.richfaces.builtin.filter.enabled@ to _false_.
 

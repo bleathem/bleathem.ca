@@ -9,6 +9,6 @@ profiles:
   stage:
     base_url: http://stage.bleathem.ca/
     deploy:
-      host: bleathem.ca
+      host: www.bleathem.ca
       path: /home/bleathem/stage.bleathem.ca/
       exclude: talks

@@ -6,7 +6,7 @@ tags: [ RichFaces, RF43 ]
 
 !>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/
 
-The first milestone release of RichFaces 4.3 ("4.3.0.CR1":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320379) has been release.  This release candidate for the RichFaces 4.3 release doesn't add any new features, but rather polishes, documents and showcases the new features added in the earlier milestones ("4.3.0.M3":http://www.bleathem.ca/blog/2012/12/richfaces-430m3-release-announcement.html, "4.3.0.M2":http://www.bleathem.ca/blog/2012/10/richfaces-430m2-release-announcement.html, "4.3.0.M1":http://www.bleathem.ca/blog/2012/08/richfaces-430m1-release-announcement.html.
+The first milestone release of RichFaces 4.3 ("4.3.0.CR1":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320379) has been release.  This release candidate for the RichFaces 4.3 release doesn't add any new features, but rather polishes, documents and showcases the new features added in the earlier milestones ("4.3.0.M3":http://www.bleathem.ca/blog/2012/12/richfaces-430m3-release-announcement.html, "4.3.0.M2":http://www.bleathem.ca/blog/2012/10/richfaces-430m2-release-announcement.html, "4.3.0.M1":http://www.bleathem.ca/blog/2012/08/richfaces-430m1-release-announcement.html).
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.CR1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
@@ -16,7 +16,7 @@ If you are interested in taking advantage of some of the new feature additions d
 
 Some of the documentation highlights include:
 
-* Component reference "documentation for @<rich:foucs>@":http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html_single/#sect-Component_Reference-Functionality_extension-richfocus
+* Component reference "documentation for @<rich:focus>@":http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html_single/#sect-Component_Reference-Functionality_extension-richfocus
 * Component reference "documentation for @<rich:placeholder>@":http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html_single/#sect-Component_Reference-Functionality_extension-richplaceholder
 * "Built-in sorting documentation for the @<rich:externdedDataTable>@":http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html_single/#sect-Component_Reference-Tables_and_grids-Basic_sorting
 * "Built-in filtering documentation for the @<rich:externdedDataTable>@":http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html_single/#sect-Component_Reference-Table_filtering-builtin_filtering

@@ -1,0 +1,127 @@
+.navbar .nav > li > a.subscribe {
+ padding : 15px 10px 13px;
+}
+
+#sidebar .title {
+ padding-bottom: 5px;
+ font-size: 12px;
+ color: #909090;
+ text-transform: uppercase;
+}
+
+#sidebar hr {
+ margin: 35px 0;
+}
+
+.about {
+  margin-top: 10px;
+
+  color: #909090;
+  img {
+    height: 120px;
+    width: 120px;
+  }
+  .details {
+    text-align: left;
+    vertical-align: top;
+  }
+
+  ul {
+    margin-left: 0;
+    list-style: none;
+    padding-left: 2ex;
+    text-indent: -2ex;
+  }
+
+  ul li {
+  }
+
+  .name {
+    font-variant: small-caps;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+
+  img {
+    padding-right: 5px;
+  }
+}
+
+.tweet .tweet_outro {
+ font-size : 11px;
+ text-align: center;
+}
+
+.tags {
+ text-transform: uppercase;
+}
+
+.tags .title {
+ font-size: 12px;
+ color: #909090;
+}
+
+.tag-opacity (@opacity) when (@opacity >= 1) {
+  opacity: 1;
+}
+
+.tag-opacity (@opacity) when (@opacity < 1) {
+  opacity: @opacity;
+}
+
+.tag-cloud-groups(@index, @increment: .1) when (@index > 0) {
+  (~".tag-@{index}") {
+    @opacity: @index * .05 + .8;
+    font-size: 1em + @index * @increment;
+    .tag-opacity(@opacity);
+  }
+
+  .tag-cloud-groups(@index - 1, @increment);
+
+}
+
+.tag-cloud-groups (0, @increment) {
+  opacity: .8;
+}
+
+// Tag cloud styling
+
+.tag-cloud {
+  .tag-cloud-groups(12, .15);
+  a {
+    padding: 3px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  text-align : center;
+}
+
+h6.date {
+  color: #999999;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+#content h2.title {
+ margin-top: 0;
+ font-weight: normal;
+}
+
+#content img {
+ margin: 10px;
+}
+
+pre.prettyprint {
+ overflow:auto;
+ width : auto;
+ overflow: auto;
+ word-wrap: normal;
+ white-space: pre;
+}
+
+div.img {
+ float: right;
+ text-align: center;
+ color: gray;
+}
+

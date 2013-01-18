@@ -10,7 +10,6 @@ title: Java EE - Experiences of a Developer
     %link{ :href => 'http://www.bleathem.ca/feed.atom', :rel => 'alternate', :title => 'Blog Feed', :type => 'application/atom+xml'}
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/google-code-prettify/prettify.css" }
-    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/theme.css" }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/blog.css" }
     :css
       .navbar-inner {
@@ -23,7 +22,7 @@ title: Java EE - Experiences of a Developer
     :javascript
       $(prettyPrint)
   %body
-    .navbar
+    .navbar.navbar-static-top
       .navbar-inner
         .container
           %a.brand{ :href=>"#{site.base_url}" } Java EE - Experiences of a Developer 

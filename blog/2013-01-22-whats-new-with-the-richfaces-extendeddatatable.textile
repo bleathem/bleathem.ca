@@ -14,7 +14,7 @@ The "upcoming 4.3 release":https://issues.jboss.org/browse/RF/fixforversion/1232
 
 h3. Built-in sorting and filtering
 
-The RichFaces 4 "extendedDataTable":showcase.richfaces.org/richfaces/component-sample.jsf?demo=extendedDataTable (EDT) has always had the ability to sort and filter columns, but required the developer to define the sort and filter controls themselves, then manually invoke the required operations on the back-end.  While not difficult to do, a lot of boiler-plate code was required for what is in fact a common operation.  With RichFaces 4.3 we've resolved "RF-8125":https://issues.jboss.org/browse/RF-8125 that tracked a long standing request to port the built-in search capabilities form the RichFaces 3 EDT to RichFaces 4.
+The RichFaces 4 "extendedDataTable":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=extendedDataTable (EDT) has always had the ability to sort and filter columns, but required the developer to define the sort and filter controls themselves, then manually invoke the required operations on the back-end.  While not difficult to do, a lot of boiler-plate code was required for what is in fact a common operation.  With RichFaces 4.3 we've resolved "RF-8125":https://issues.jboss.org/browse/RF-8125 that tracked a long standing request to port the built-in search capabilities form the RichFaces 3 EDT to RichFaces 4.
 
 div(alert alert-info). *Built-in sorting/filtering is currently only available in the extendedDataTable component.*  We will add support to the dataTable component in a subsequent release.
 

@@ -33,7 +33,7 @@ h3. Testing
 Automated testing has always been central to RichFaces.  We have a "great QE team":http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html behind the framework that works hard to help us deliver solid releases.  But with RichFaces 4.3 we've taken our automated tests to the next level.
 
 We've developed the "Arquillian":http://arquillian.org/ extensions "Warp":http://arquillian.org/modules/warp-extension/ and "Graphene":http://arquillian.org/modules/graphene-extension/ to enable us to author _real_ tests, running in _real_ containers, with _real_ browsers.  Through the magic of Arquillian and "Shrinkwrap":http://www.jboss.org/shrinkwrap, these tests are still fast both to author and to execute.  
-%(label label-info)Blog% Read more about it in this "deep dive to testing in RichFaces 4.3" (Link coming later today).
+%(label label-info)Blog% Read more about it in this "deep dive to testing in RichFaces 4.3":http://lukas.fryc.eu/blog/2013/01/richfaces-testing.html.
 
 h3. CDK improvements
 

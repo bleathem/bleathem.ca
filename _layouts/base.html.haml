@@ -7,6 +7,8 @@ title: Java EE - Experiences of a Developer
     %meta{ :charset=>'utf-8' }
     %title= page.title
     %meta{ :name=>'viewport', :content=>'width=device-width, initial-scale=1.0' }
+    - if page.image_url
+      %meta{:property => "og:image", :content => "#{site.base_url}#{page.image_url}" }
     %link{ :href => 'http://www.bleathem.ca/feed.atom', :rel => 'alternate', :title => 'Blog Feed', :type => 'application/atom+xml'}
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/google-code-prettify/prettify.css" }

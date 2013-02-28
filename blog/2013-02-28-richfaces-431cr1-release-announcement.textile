@@ -2,6 +2,7 @@
 layout: post
 title: "RichFaces 4.3.1.CR1 Release Announcement"
 tags: [ RichFaces, RF43 ]
+image_url: "/images/blog/common/richfaces.png"
 ---
 
 !>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/

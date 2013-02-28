@@ -3,6 +3,7 @@ layout: post
 title: "RichFaces 4.3.1.CR1 Release Announcement"
 tags: [ RichFaces, RF43 ]
 image_url: "/images/blog/common/richfaces.png"
+description: "The first candidate release of RichFaces 4.3 has been released.  This micro release addresses some bugs present in the RichFaces 4.3.0.Final release, and offers some improvements on the new features introduced in that same release."
 ---
 
 !>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "RichFaces 4.3.1.Final Release Announcement"
+title: "Speaking on Polyglot Widgets at JAXConf 2013"
 tags: [ JAX, JAXConf, talk, polyglot, widgets ]
 image_url: "/images/blog/2013-03-05-speaking-at-jaxconf-2013/SpeakerButtonJAXConf2013.jpg"
 description: "I will be returning to speak at JAXConf again this year.  I'll be speaking on the topic of \"Poly-framework\" Web applications with Java EE.  The session will further explore the ideas I presented in my Polyglot Widgets blog, where I demoed a sample application written using three different web frameworks, demonstrating both a consistent look & feel, and uniform server-side programming model."

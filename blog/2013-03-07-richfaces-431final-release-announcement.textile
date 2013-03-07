@@ -8,9 +8,9 @@ description: "The final release of RichFaces 4.3.1 is now available.  This micro
 
 !>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/
 
-The final release of RichFaces 4.3.1 ("4.3.0.Final":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320379) has been released.  This micro release addresses some bugs present in the "4.3.0.Final release":http://www.bleathem.ca/blog/2013/02/richfaces-430final-release-announcement.html, and offers some improvements on the new features introduced in that same release.  Have a look at the "4.3.1.Final Release Notes":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320558 for a complete listing if what was included in this release.
+The final release of RichFaces 4.3.1 ("4.3.1.Final":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320558) has been released.  This micro release addresses some bugs present in the "4.3.0.Final release":http://www.bleathem.ca/blog/2013/02/richfaces-430final-release-announcement.html, and offers some improvements on the new features introduced in that same release.  Have a look at the "4.3.1.Final Release Notes":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320558 for a complete listing if what was included in this release.
 
-div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.1.CR1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
+div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/stable, or for maven users, increment the RichFaces version in your pom.xml to 4.3.1.Final. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
 h3. Release Highlights
 

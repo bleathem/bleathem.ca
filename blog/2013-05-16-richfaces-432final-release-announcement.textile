@@ -14,6 +14,8 @@ div(alert alert-info). *To try out this release:* You can download the distribut
 
 h3. Release Highlights
 
+This release of the RichFaces framework is not accompanied by a release of the CDK.  The 4.3.2.Final release of RichFaces was created with the 4.3.1.Final version of the RichFaces CDK.  Future RichFaces 4 releases will only be accompanied by a RichFaces CDK release when a CDK fix was required to enable the framework release.
+
 With fixes to the extendedDataTable, tab panel, autocomplete, fileuplaod and popup panel, as well as some fixes addressing compatibility with the latest Mojarra release, you'll definitely want to move your applications to this release and take advantage of these improvements.  Refer to the release notes below for a complete listing of what has been fixed in this release.
 
 h3. Release Notes "<i class="icon-external-link-sign"></i>":https://issues.jboss.org/browse/RF/fixforversion/12321315

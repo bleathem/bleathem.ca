@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'awestruct', '~> 0.5.0.cr'
+gem 'awestruct', '~> 0.5.1'
 gem 'haml', '~> 4.0.0'
 gem 'RedCloth', '~> 4.2.9'
 gem 'less', '~> 2.3.1'

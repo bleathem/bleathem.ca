@@ -1,0 +1,48 @@
+---
+layout: post
+title: "RichFaces moves to asciidoc"
+tags: [ RichFaces, docs, asciidoc, asciidoctor ]
+image_url: "/images/blog/common/richfaces_notext.png"
+description: "With RichFaces 5 we have made a significant change to our documentation tool-chain with the introduction of asciidoc to simplify the task of authoring and editing the RichFaces documentation."
+---
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+With RichFaces 5 we have made a significant change to our documentation tool-chain with the introduction of http://asciidoc.org/[asciidoc] to simplify the task of authoring and editing the http://www.jboss.org/richfaces/docs[RichFaces documentation].  Our documentation has for a long time been based on http://www.docbook.org/[docbook xml] against which we have applied the http://www.jboss.org/pressgang[Red Hat PressGang] XSLT to create the HTML and PDF output of our docs.
+
+Additionally the docbook xml is fed downstream into Red Hat's http://www.redhat.com/products/jbossenterprisemiddleware/web-framework-kit/[WFK product], where it undergoes further transformations to fit well into Red Hat's product documentation.  Docbook xml is great for such manipulations, but it is by no means straight-forward to author.  Anything more than simple edits quickly turns into a complex task.
+
+== Bring in the Asciidoc!
+
+Fortunately we have been able to remedy this problem, without sacrificing any of the power and flexibility of our docbook tool-chain, by converting all our docbook source into asciidoc.  The asciidoc source is in turn converted back into docbook xml, and fed into our existing tool-chain.  
+
+The capabilities of asciidoc are well demonstrated by the fact that we were able to create identical HTML and PDF docs using the asciidoc generated docbook xml, without making any changes to our docbook tool-chain.  Asciidoc is indeed a highly expressive markup language.  On the other hand, asciidoc is only as complex as you want it to be - in basic use cases it's as simple to read as http://en.wikipedia.org/wiki/Markdown[markdown].
+
+== The conversion to asciidoc
+
+Converting the docbook xml into asciidoc however was not a simple task.  We had a significant step forward by starting with the https://github.com/oreillymedia/docbook2asciidoc[docbook2asciidoc XSLT project] from O'Reilly media that converts docbook xml into asciidoc.  https://twitter.com/lightguardjp[Jason Porter] had already https://github.com/LightGuard/docbook2asciidoc[forked the project], introducing some changes to handle Red Hat _flavoured_ docbook.
+
+We https://github.com/bleathem/docbook2asciidoc[forked that fork], and introduced a number of additional changes to the XSLT to properly convert the docbook xml into asciidoc.  This conversion took us 98% of the way there, the final leg of the conversion was finished with some regexps and manual fine-tuning.
+
+Checkout the results, here are links to the asciidoc files on GitHub.  Notice how GitHub renders the files, you can click the "raw" buttons to see the asciidoc source.
+
+RichFaces Component reference:: https://github.com/richfaces/richfaces-docs/blob/master/Component_Reference/src/main/docbook/en-US/Component_Reference.asciidoc[Component_Reference.asciidoc]
+RichFaces Developer Guide:: https://github.com/richfaces/richfaces-docs/blob/master/Developer_Guide/src/main/docbook/en-US/Developer_Guide.asciidoc[Developer_Guide.asciidoc]
+
+== Asciidoctor
+
+A word on asciidoc implementations.  Asciidoc is by no means a new id on the block - the original http://asciidoc.org/[python implementation] has been around since 2002.  However in 2012 a second implementation of asciidoc was begun called http://asciidoctor.org/[asciidoctor].  Written in Ruby, asciidoctor has recently caught up with the original asciidoc implementation, and in many ways surpassed it.  Asciidoctor is amazingly fast, rendering documents an order of magnitude more quickly than the original python implementation.
+
+Coupled with these general improvements, the community surrounding asciidoctor have done a great job integrating asciidoctor with java, via the https://github.com/asciidoctor/asciidoctor-java-integration[asciidoctor-java-integration] project.  The asciidoctor community has then used this java integration to create a full-featured https://github.com/asciidoctor/asciidoctor-maven-plugin[asciidoctor-maven-plugin], making asciidoctor a natural choice and a good fit into our existing tool-chain.
+
+== Changes with RichFaces 5
+
+Following the asciidoc conversion, we put the new format to the test with a massive edit of the docs to reflect the changes we introduced to the framework in RichFaces 5.  I'm happy to report that the transformation was a success - the doc changes were nearly trivial to implement.  This is indeed a huge step forward for the project, and will enable us to provide you, our user community, with much better documentation.
+
+=== Enable the community!
+
+Conversely, we are hoping the more accessible format will enable more of you to jump in and fix errors and provide additions as you notice gaps in the documentation.  So jump in!  Give the new docs a read, and click that edit button in GitHub to initiate a pull request with any improvements you can suggest!
+
+== Next steps
+
+While we will release RichFaces 5.0.0.Alpha1 with our new asciidoc based documentation, we are by no means down with our doc changes.  Now that we have the new simpler asciidoc source in place, we will re-arrange the docs to provide something that is both more accessible and useful.

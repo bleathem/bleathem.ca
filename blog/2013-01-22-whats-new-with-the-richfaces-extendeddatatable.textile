@@ -12,13 +12,13 @@ The "upcoming 4.3 release":https://issues.jboss.org/browse/RF/fixforversion/1232
 * External table state saving
 * A number of bug-fixes
 
-h3. Built-in sorting and filtering
+h2. Built-in sorting and filtering
 
 The RichFaces 4 "extendedDataTable":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=extendedDataTable (EDT) has always had the ability to sort and filter columns, but required the developer to define the sort and filter controls themselves, then manually invoke the required operations on the back-end.  While not difficult to do, a lot of boiler-plate code was required for what is in fact a common operation.  With RichFaces 4.3 we've resolved "RF-8125":https://issues.jboss.org/browse/RF-8125 that tracked a long standing request to port the built-in search capabilities form the RichFaces 3 EDT to RichFaces 4.
 
 div(alert alert-info). *Built-in sorting/filtering is currently only available in the extendedDataTable component.*  We will add support to the dataTable component in a subsequent release.
 
-h4. Built-in Sorting
+h3. Built-in Sorting
 
 Implementing sortable columns in the EDT is now as simple as adding the @sortBy@ attribute to your EDT column, and the sort controls will automatically be generated and linked to the internal sorting mechanism.  To influence how the sorting is performed, add the @comparator@ attribute to your column, and the comparator defined there will be used for the sort.
 
@@ -26,7 +26,7 @@ Refer to the RichFaces 4 "Component Reference":http://docs.jboss.org/richfaces/4
 
 div(alert alert-warning). If you require additional flexibility, and prefer to implement your own sort controls, set the @sortType=custom@ attribute, and the built-in sort controls will not be rendered.  Built-in sort controls can be disabled altogether by setting the web.xml context param @org.richfaces.builtin.sort.enabled@ to _false_.
 
-h4. Built-in Filtering
+h3. Built-in Filtering
 
 Similarly, taking advantage of the built-in filter controls is also straightforward.  Define the @filterValue@ attribute on the column to be filtered, then define either a @filterExpression@ or @filter@ attribute to implement the filter logic.  When the attributes are present an input element will be displayed in the column header.  Simple value conversions are performed implicitly in the EL of the @filterExpression@ or explicitly in the @filter@ implementation.
 
@@ -34,11 +34,11 @@ Refer to the RichFaces 4 "Component Reference":http://docs.jboss.org/richfaces/4
 
 div(alert alert-warning). Further control over the filter controls can be achieved by setting the @filterType=custom@ attribute, and implementing your own filter controls in the back-end.  Built-in filter controls can be disabled altogether by setting the web.xml context param @org.richfaces.builtin.filter.enabled@ to _false_.
 
-h3. ExtendedDataTable State Saving
+h2. ExtendedDataTable State Saving
 
 The EDT has had another RichFaces 3 feature ported forward: table state saving.  With the resolution of "RF-10442":https://issues.jboss.org/browse/RF-10442, application developers can add the @tableState@ attribute to their EDT components, providing a value-binding to a bean String property that can be used to store the state of the column width, sequence, sorting, and filtering of the EDT.  The table state is stored in a JSON string format, and is easily stored in a data base for later retrieval.
 
-h3. Bug fixes
+h2. Bug fixes
 
 In addition to the above feature additions, the EDT has seen a number of bug fixes in the 4.3 release.  These fixes include:
 
@@ -80,6 +80,6 @@ In addition to the above feature additions, the EDT has seen a number of bug fix
     <dd>extendedDataTable: Header facet render problem in RichFaces 4</dd>
 </dl>
 
-h3. The 4.3 release
+h2. The 4.3 release
 
 RichFaces "4.3.0.CR1":http://www.bleathem.ca/blog/2013/01/richfaces-430cr1-release-announcement.html is currently available, having undergone our "extensive QA process":http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html, and a 4.3.0.CR2 release will be available shortly.  Please take the time to take the extendedDataTable for a spin with this release, and give us your feedback for the new features and bug fixes via the "RichFaces forum":https://community.jboss.org/en/richfaces?view=discussions or "issue tracker":https://issues.jboss.org/browse/RF.

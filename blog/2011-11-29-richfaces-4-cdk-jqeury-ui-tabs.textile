@@ -8,7 +8,7 @@ Following on with another entry in my <a href="http://blog.bleathem.ca/search/la
 
 As always, if you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples">github</a>.
 
-h3. The Component Classes
+h2. The Component Classes
 
 div=. **AbstractTabs.java**
 
@@ -52,7 +52,7 @@ abstract public class AbstractTab extends javax.faces.component.UIPanel {
 
 The component class for the __tab__ tag is similar to the one for the __tabs__ tag, adding a definition for a __title__ attribute, and with slightly different component properties. Let's move on from these mundane component definitions and look at the Renderers, where things get more interesting.
 
-h3. The Renderers
+h2. The Renderers
 
 Looking first at the simpler __tab__ renderer:
 
@@ -133,7 +133,7 @@ Following the unodered list, we see the __&lt;cdk:body /&gt;__ tag. This renders
 
 The last piece of this template is the javascript call, where we invoke the jQuery UI tabs plugin to enable the client-side behavior. We aren't passing any options to the plugin in this example, but we could easily do so using the __scriptOption__ CDK tag demonstrated with the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component.
 
-h3. The Result
+h2. The Result
 
 So what does it look like when we put it all together?
 

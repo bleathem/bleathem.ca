@@ -6,37 +6,37 @@ tags: [ RF41, RichFaces ]
 
 The Richfaces 4.1 milestone releases are trucking along. With <a href="http://blog.bleathem.ca/2011/08/richfaces-410m1-release-announcement.html">M1</a>, we had a focus on changes surrounding project infrastructure, and the introduction of some new components. Now with <a href="https://issues.jboss.org/browse/RF/fixforversion/12316708">M2</a> we see updates to the core, and a stabilization of both the new components and the framework as a whole.
 
-h3. jQuery Upgrade
+h2. jQuery Upgrade
 
 We built the RichFaces 4 components using <a href="http://jquery.com/">jQuery</a> for DOM manipulation. Given the degree to which the we rely on jQuery, upgrading it is a "big deal". In order to ensure none of our components break during this milestone release, both our QE and Dev teams have been busy tending to our test infrastructure.  The benefit of shipping with the latest jQuery is that it provides better compatibility to application developers wishing to leverage cutting edge <a href="http://plugins.jquery.com/">jQuery plugins</a>, or integrate with other component libraries.
 
-h3. IE9 support
+h2. IE9 support
 
 As part of our extensive testing of our platform, we noticed a number of compatibility issues with Internet Explorer 9 running in <a href="http://msdn.microsoft.com/en-us/library/cc288325.aspx">__strict__ or __normal__ mode</a>.  We isolated this as <a href="http://java.net/jira/browse/JAVASERVERFACES-2063">an upstream issue</a>, and will work with the Mojarra team to patch the underlying problem.  In the mean-time, the issues can be worked-around if you run <a href="http://msdn.microsoft.com/en-us/library/cc288325(v=vs.85).aspx#SetMode">IE 9 in __compatibility__ mode</a>.
 
-h3. Stabilization of the new components
+h2. Stabilization of the new components
 
 The new components introduced in M1 have benefited from further development, and constructive user feedback (thanks!).
 
-h3. rich:editor
+h2. rich:editor
 
 The Editor has several new features, but the most valuable is the integration with the standard RichFaces styling scheme. Further details are available in <a href="http://rik-ansikter.blogspot.com/2011/09/improvements-of-richfaces-editor-in.html">Lukas’ blog post</a>.
 
 div=. 
 <a href="/images/blog/2011-09-21-richfaces-410m2-release-announcement/editor.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="305" src="/images/blog/2011-09-21-richfaces-410m2-release-announcement/editor.png" width="640" /></a>
 
-h3. rich:notify
+h2. rich:notify
 
 Notify Messages have been better integrated into the RichFaces ecosystem, allowing them to consume Client-Side Validation messages. The Notify Stack was also refactored - this is where one configures the location and orientation of messages.
 
-h3. rich:pickList
+h2. rich:pickList
 
 The Pick List has picked up ordering capabilities in the target list, making it now a viable replacement for the older listShuttle from RichFaces 3.  In addition, the Pick and Ordering Lists have exposed more events, allowing for applications to better hook into their behavior.
 
-h3. Face-to-Face
+h2. Face-to-Face
 
 A fair chunk of time during the M2 sprint was spent by the team in a face-2-face meeting, where our world-wide development team came together to discuss the future of the project.  Stay tuned for updates along these lines, as we distill our ideas and engage the community for feedback to collectively define our project vision and future.
 
-h3. Forward: M3 and mobile
+h2. Forward: M3 and mobile
 
 As always, we've taken care of a number of bug fixes with the M2 milestone release.  However, the upcoming M3 release is when we will buckle down and focus on taking care of stabilizing the platform as a whole, and fixing as many bugs as we can, particularly in the mobile space.  To help us better identify where we would best be spending out attention, please get on Jira, and <a href="http://community.jboss.org/thread/172631">vote for the issues</a> that are important to you.

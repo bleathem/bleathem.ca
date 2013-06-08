@@ -6,7 +6,7 @@ layout: default
     - identifier= post.date.strftime("%Y-%m-%d") + "-" + post.slug
     .post
       %h6.date= post.date.strftime("%A, %B #{post.date.day}, %Y")
-      %h2.title
+      %h1.title
         %a{:href=>post.url}= post.title
       = post.content
       %div{:style => "clear:both"}

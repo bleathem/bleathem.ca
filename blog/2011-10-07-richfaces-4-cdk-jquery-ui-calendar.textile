@@ -8,7 +8,7 @@ Further incrementing the complexity over the <a href="http://blog.bleathem.ca/20
 
 As always, if you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples">github</a>.
 
-h3. The Component Class
+h2. The Component Class
 
 Starting again with the component class:
 
@@ -40,7 +40,7 @@ Here we see we are again extending the <a href="http://javaserverfaces.java.net/
 
 The naming convention of the attribute is alligned with <a href="http://jqueryui.com/demos/datepicker/#options">jQeury UI datepicker options</a>. This allows us to transparently pass the JSF component attributes through to the jQuery plugin, as we see in the Renderer below.
 
-h3. The Renderer
+h2. The Renderer
 
 The renderer is again an xml file:
 

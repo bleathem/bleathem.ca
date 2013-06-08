@@ -6,13 +6,13 @@ tags: [ Arquillian, JSF, testing, Graphene, Warp, Drone ]
 
 Last week I was at "Java One":http://www.oracle.com/javaone/, where I can easily say I thoroughly enjoyed the week of chaos that is JavaOne.  The quality of people and content was truly astounding - I met a number of people I'd been wanting to meet for a while, and also spent some time getting to know more fellow JBoss developers.  I spent the bulk of my time preparing my presentations, leaving little time to attend sessions.  Hopefully this extra effort paid off ;)
 
-h3. JBoss Booth Sessions.
+h2. JBoss Booth Sessions.
 
 The first talk I gave was an impromptu one, filling in a last-minute vacancy in the schedule.  I delivered a trimmed down version of the "Mobile JSF":http://www.bleathem.ca/talks/2012-JavaOne/richfaces-mobile.html talk I gave at JBW and "JAX":http://www.bleathem.ca/blog/2012/07/jax-conf-2012.html last June/July.  The talk was well received, "trapping" a fair amount of traffic around the booth, and resulting in some interesting discussion at the end of the session.  The "slides from this session":http://www.bleathem.ca/talks/2012-JavaOne/richfaces-mobile.html are available, and the session was filmed - I'll follow up with links when the videos are available.
 
 My second talk was also a booth session.  This time I presented on "Leveraging jQuery plugins to build JSF components":http://www.bleathem.ca/talks/2012-JavaOne/jsf-components.html.  This talk demonstrates how to build custom JSF components using first the JSF 2 composite component feature, then the RichFaces CDK.  Unfortunately this session was less well attended, which I think had a lot to do with the early morning-timing.
 
-h3. JavaOne Session
+h2. JavaOne Session
 
 div(img). !/images/blog/2012-10-10-back-from-java-one/hotdog.jpg(Hot dog at Pearl Jam party)!:http://richfaces.org/ 
 Chili dog served at the JavaOne Appreciation Event

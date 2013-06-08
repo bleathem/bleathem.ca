@@ -8,7 +8,7 @@ With a RichFaces <a href="https://issues.jboss.org/browse/RF/fixforversion/12318
 
 Moving forward, I would like to see the project continue to focus on the key strengths that have made RichFaces such a great project to be involved with: innovation, open standards, community, and quality.
 
-h3. Innovation
+h2. Innovation
 
 <a href="/images/blog/2011-12-09-state-of-richfaces/showcase.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="202" src="/images/blog/2011-12-09-state-of-richfaces/showcase.png" width="400" /></a>
 RichFaces has long been the place to come for JSF innovation. Never content to simply provide a JSF component set, the RichFaces project (together with other JBoss projects) has always aimed to provide developers with a complete JSF framework for developing applications. Some of these innovations include:
@@ -22,7 +22,7 @@ RichFaces has long been the place to come for JSF innovation. Never content to s
 * Advanced <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=queue&amp;skin=blueSky">queuing</a>
 * Sophisticated tooling support (together with <a href="http://www.jboss.org/tools">JBoss tools</a>)
 
-h3. Open Standards
+h2. Open Standards
 
 Richfaces has played a significant role in improving the <a href="http://javaserverfaces-spec-public.java.net/">JSF specification</a> with contributions to JSF 2.0, particularly in the area of ajax integration. RichFaces also aims to improve the standards story by integrating JSF with other Java EE standards in some of the same innovations mentioned above:
 
@@ -30,21 +30,21 @@ Richfaces has played a significant role in improving the <a href="http://javaser
 * The push component couples JMS messaging with our JSF component set
 * The push component also leverages <a href="http://jcp.org/en/jsr/summary?id=299">CDI</a>, providing building on the standardized Java EE programming model
 
-h3. Community
+h2. Community
 
 RichFaces is also very much a community oriented project. Both our development and planning efforts are done out in the open, with an open door to anyone who wants to help out. Some of the ways we actively work to facilitate community interaction include:
 
 * A <a href="http://www.jboss.org/index.html?module=bb&amp;op=viewforum&amp;f=261">user forum</a> with an incredible amount of traffic
 * Weekly <a href="http://community.jboss.org/en/richfaces/dev/teammtgs">team meetings</a> held openly in IRC
 * A <a href="http://www.jboss.org/index.html?module=bb&amp;op=viewforum&amp;f=262">developer forum</a> - where new ideas for the framework are worked out
-* Active use of social media (<a href="http://twitter.com/#!/richfaces">twitter</a>, <a href="https://plus.google.com/h3. /0/115573055688754345457">Google+</a>)
+* Active use of social media (<a href="http://twitter.com/#!/richfaces">twitter</a>, <a href="https://plus.google.com/h2. /0/115573055688754345457">Google+</a>)
 * <a href="https://github.com/richfaces">Github</a> hosting - facilitating community contributions
 
-h3. Quality
+h2. Quality
 
 RichFaces is a very well tested project, with a dedicated QE team that continually writes new tests for the framework, and ensures that existing tests continue to pass in their automated runs. Look forward to some upcoming blog posts, where we will expand on our testing strategy, and speak to the industry leading role JBoss is taking with projects like <a href="http://www.jboss.org/arquillian">Arquillian</a>, <a href="http://www.jboss.org/jsfunit">JSFUnit</a>, and how we build on that with RichFaces. This all comes together in a robust, <a href="http://www.jboss.com/">enterprise-ready platform</a> on which you can develop and deploy your applications.
 
-h3. Moving Forward
+h2. Moving Forward
 
 Moving forward we plan to keep up this pace of innovation with our 4.Next efforts. The <a href="http://showcase.richfaces.org/">existing component set</a> is crucial to the project, and will continue to see new improvements and additions - but we need a new vehicle to deliver new components faster and more effectively. We would like to be able to better leverage the mountain of work done in other OSS projects in the javascript component space, and facilitate contributions from prospective contributors looking to implement their own “critical components”. To this end, we are proposing the addition of another component set in the RichFaces project.
 

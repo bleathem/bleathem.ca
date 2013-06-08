@@ -4,13 +4,13 @@ title: "RichFaces 4 CDK | Introduction"
 tags: [ RichFaces ]
 ---
 
-h3. A new blog series
+h2. A new blog series
 
 Having recently dived head first into the RichFaces 4 Component development Kit (CDK), I thought it would be useful to share the knowledge and experience I've gained.  Over the next few weeks, I am going to put out a series of blog posts giving some examples of how to use the RichFaces CDK.  Hopefully by the end of this series, we will have written some interesting components and left you with the urge to write your own JSF components using the CDK!
 
 Before I get into specific examples, I’d first like to motivate the series by describing what exactly the CDK is and the problems that it solves.  If you already know all about JSF components, and you want to get straight into using the CDK, skip this blog post! - the rest of the entries in this series will deal purely with implementation details.
 
-h4. What is the RichFaces CDK anyway?
+h3. What is the RichFaces CDK anyway?
 
 JSF was designed to make components easy to consume.  The syntax is very html-like, and EL makes it easy to bind components to backing beans.  However, writing JSF components has traditionally not been very accessible.  With the number of classes that one has to create and wire together, along with a requirement for detailed knowledge of the JSF API, components were typically left to third party component suites, like <a href="http://www.jboss.org/richfaces/">RichFaces</a>, <a href="http://www.icefaces.org/">IceFaces</a> and <a href="http://myfaces.apache.org/tomahawk/">Apache</a>.  Things were improved drastically with the release of JSF 2.0, and it’s support for composite components.
 
@@ -20,7 +20,7 @@ The concise and non-java nature of composite components that makes them so appea
 
 This is where the RichFaces CDK comes in.  The RichFaces team provides the CDK as a means for developers to write JSF components with many of the simplifying advantages of the JSF 2 composite components, but also with the full power and flexibility provided by the JSF component APIs.
 
-h3. JSF Components simplified with the CDK
+h2. JSF Components simplified with the CDK
 
 To understand how to use the CDK, one first has to understand how JSF components are put together.  At the end of the day, JSF components are built out of Java classes, and the CDK is simply an effective means to generate those classes.
 

@@ -8,13 +8,13 @@ I'm excited about the buzz the "RichFaces Bootstrap":http://www.bleathem.ca/blog
 
 Along with the "new approach we are taking":https://community.jboss.org/thread/199693 in the development of these new components, the RichFaces project is incorporating a new "LESS":http://lesscss.org/ based approach to style/themes.  With LESS we can take advantage of dynamic features such as variables, mixins, operations and functions.  However, this requires us to make some changes to "how we serve resources":https://issues.jboss.org/browse/RFSBOX-42 and is still in active development as we work through various prototypes in the RichFaces Sandbox.
 
-h3. The RichFaces Bootstrap Quickstart
+h2. The RichFaces Bootstrap Quickstart
 
 We've added a "RichFaces Bootstrap Quickstart":https://github.com/richfaces/sandbox/tree/develop/bootstrap/quickstart project that you can use to build an application to test-drive these new components.  This quickstart application has the sole intention of being a starting point, and is much simpler to grok than the demo application we've been providing that is more of a component showcase.  As an added bonus, creating this quickstart served as a good driver to simplify the RichFaces bootstrap-ui project, making it easier to consume.  Simplicity for-the-win!
 
 div(alert alert-info). Rest assured the complexity of this approach will ultimately disappear and usage of these components will become transparent as we move out of the prototyping stage and include these components in "RichFaces proper".
 
-h3. A walk-through the Quickstart
+h2. A walk-through the Quickstart
 
 The RichFaces Bootstrap quickstart is a maven project "available on github":https://github.com/richfaces/sandbox/tree/develop/bootstrap/quickstart in the RichFaces Sandbox repository.  It includes the appropriate configuration in the web.xml deployment descriptor that, when coupled with a resource mapping file, allows us to activate the client-side LESS styling of the RichFaces Bootstrap components.
 

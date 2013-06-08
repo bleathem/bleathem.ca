@@ -10,7 +10,7 @@ The first candidate release of RichFaces 4.3 ("4.3.0.CR1":https://issues.jboss.o
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.CR1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
-h3. Documentation updates
+h2. Documentation updates
 
 If you are interested in taking advantage of some of the new feature additions described in the "earlier milestone release blogs":http://www.bleathem.ca/blog/tags/RF43/, be sure to check out the updated "RichFaces 4.3.0.CR1 documentation":http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/, and the "showcase snapshot":http://showcase-latest.richfaces.org/ which demos the latest updates to the showcase.
 
@@ -27,19 +27,19 @@ Also, check out the code samples in the showcase:
 * "Code sample for @<rich:placeholder>@":http://showcase-latest.richfaces.org/richfaces/component-sample.jsf?demo=placeholder
 * "Code sample for built-in sorting and filtering with the @<rich:externdedDataTable>@":http://showcase-latest.richfaces.org/richfaces/component-sample.jsf?demo=extendedDataTable&sample=edt-builtin-sorting-and-filtering
 
-h3. Bug fixes
+h2. Bug fixes
 
 Most of the bug fixes in CR1 centered around the new 4.3 features.  These bug fixes include:
 
-h4. Validation fixes
+h3. Validation fixes
 * ["RF-12700":https://issues.jboss.org/browse/RF-12700] - LongRangeValidator client-side messages differs from server-side ones on MyFaces
 * ["RF-12669":https://issues.jboss.org/browse/RF-12669] - Autocomplete: client side validation for custom validators doesn't work
 
-h4. Select component fixes
+h3. Select component fixes
 * ["RF-12608":https://issues.jboss.org/browse/RF-12608] - pickList without collectionType results in failure to lazily load
 * ["RF-12692":https://issues.jboss.org/browse/RF-12692] - rich:select - unknown validator SelectLabelValueValidator
 
-h4. New component fixes
+h3. New component fixes
 * ["RF-12650":https://issues.jboss.org/browse/RF-12650] - rich:placeholder: when @rendered=false the placeholder is still rendered
 * ["RF-12668":https://issues.jboss.org/browse/RF-12668] - rich:focus - stops to work when containing form is re-rendered by another form
 
@@ -51,27 +51,27 @@ h4. New component fixes
 * ["RF-12684":https://issues.jboss.org/browse/RF-12684] - The last page shows rows from the page before if rich:collapsibleSubTable is included in rich:dataTable with rich:dataScroller.
 * ["RF-12714":https://issues.jboss.org/browse/RF-12714] - Showcase and rich:dataTable: sorting in Arrangeable demo doesn't work
 
-h4. JSF compatibility fixes
+h3. JSF compatibility fixes
 * ["RF-12670":https://issues.jboss.org/browse/RF-12670] - JSF 2.0 compatibility issue, NoSuchFieldError: javax/faces/component/visit/VisitHint.SKIP_ITERATION
 * ["RF-12693":https://issues.jboss.org/browse/RF-12693] - Mojarra fails to encode form inputs correctly when they doesn't have name attribute
 
-h4. Drag and drop fixes
+h3. Drag and drop fixes
 * ["RF-12666":https://issues.jboss.org/browse/RF-12666] - Showcase - Drag and Drop with indicator - the styles do not apply for indicator when dragging over various targets
 * ["RF-12671":https://issues.jboss.org/browse/RF-12671] - dropTarget does not work inside dynamic tabs when switchType is ajax or server
 * ["RF-12703":https://issues.jboss.org/browse/RF-12703] - showcase - drag and drop - JS error with default dragIndicator
 
-h4. Input fixes
+h3. Input fixes
 * ["RF-11067":https://issues.jboss.org/browse/RF-11067] - rich:autocomplete popups with suggestions does not reflect the value in input
 * ["RF-11565":https://issues.jboss.org/browse/RF-11565] - Showcase: multiple selections in rich:autocomplete doesn't work when 'clicking' is used
 * ["RF-12707":https://issues.jboss.org/browse/RF-12707] - rich:calendar - setValue(...) method from javascript API doesn't work correctly
 
-h4. Misc fixes
+h3. Misc fixes
 * ["RF-12708":https://issues.jboss.org/browse/RF-12708] - rich:jQuery: wrong VDL documentation of selector attribute
 * ["RF-12716":https://issues.jboss.org/browse/RF-12716] - VDL-doc for a4j:ajax incorrectly states that the listener method cannot accept parameters
 * ["RF-12709":https://issues.jboss.org/browse/RF-12709] - richfaces.js: fire ajaxcomplete event
 * ["RF-12705":https://issues.jboss.org/browse/RF-12705] - vdl documentation for a4j:outputPanel contains non-implemented layout=&quot;none&quot;
 * ["RF-12713":https://issues.jboss.org/browse/RF-12713] - Listeners don't work inside panels
 
-h3. Moving forward
+h2. Moving forward
 
 We'll let RichFaces 4.3.0.CR1 bake in the community for a few weeks.  Take it for a spin, and "report any regressions":https://issues.jboss.org/browse/RF you should come across that our "top-notch QE team":http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html might have overlooked.  Hopefully we can have a final release out by the end of the month.

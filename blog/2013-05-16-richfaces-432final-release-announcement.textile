@@ -12,15 +12,15 @@ I am excited to announce the release of RichFaces "4.3.2.Final":https://issues.j
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/stable, or for maven users, increment the RichFaces version in your pom.xml to 4.3.2.Final. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
-h3. Release Highlights
+h2. Release Highlights
 
 This release of the RichFaces framework is not accompanied by a release of the CDK.  The 4.3.2.Final release of RichFaces was created with the 4.3.1.Final version of the RichFaces CDK.  Future RichFaces 4 releases will only be accompanied by a RichFaces CDK release when a CDK fix was required to enable the framework release.
 
 With fixes to the extendedDataTable, tab panel, autocomplete, fileuplaod and popup panel, as well as some fixes addressing compatibility with the latest Mojarra release, you'll definitely want to move your applications to this release and take advantage of these improvements.  Refer to the release notes below for a complete listing of what has been fixed in this release.
 
-h3. Release Notes "<i class="icon-external-link-sign"></i>":https://issues.jboss.org/browse/RF/fixforversion/12321315
+h2. Release Notes "<i class="icon-external-link-sign"></i>":https://issues.jboss.org/browse/RF/fixforversion/12321315
 
-h4. Bug
+h3. Bug
 
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-12193'>RF-12193</a>] -         rich:extendedDataTable is blank on show
@@ -63,7 +63,7 @@ h4. Bug
 </li>
 </ul>
         
-h4. Component  Upgrade
+h3. Component  Upgrade
 
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-12688'>RF-12688</a>] -         Upgrade Guava from 11.02 to 13.0.1
@@ -74,7 +74,7 @@ h4. Component  Upgrade
 </li>
 </ul>
         
-h4. Enhancement
+h3. Enhancement
 
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-12784'>RF-12784</a>] -         Showcase readme - update deployment from eclipse part
@@ -85,7 +85,7 @@ h4. Enhancement
 </li>
 </ul>
         
-h4. Feature Request
+h3. Feature Request
 
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-12810'>RF-12810</a>] -         Introduce profiles for verification of fundamental tests on Tomcat 6 and 7, TomEE 1.5 and GlassFish 3.1
@@ -104,13 +104,13 @@ h4. Feature Request
 </li>
 </ul>
                             
-h4. Task
+h3. Task
 
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-12843'>RF-12843</a>] -         Apply unix style line-endings to the entire codebase
 </li>
 </ul>
                 
-h3. Moving forward
+h2. Moving forward
 
 We've finished development of "RichFaces 5.0.0.Alpha1":https://issues.jboss.org/browse/RF/fixforversion/12320296, and our QA team is currently working on stabilizing "for a release":https://issues.jboss.org/browse/RFPL-2915.  So stay tuned for an exciting announcement of the availability of our first RichFaces 5 Alpha!

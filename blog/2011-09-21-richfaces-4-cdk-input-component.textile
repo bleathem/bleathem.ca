@@ -8,7 +8,7 @@ With our <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.ht
 
 If you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples" style="color: #5588aa; text-decoration: none;">github</a>.
 
-h3. The Component Class
+h2. The Component Class
 
 In a similar approach to our Hello World component, we'll start with the component class for our Input component:
 
@@ -30,7 +30,7 @@ abstract public class AbstractInput extends javax.faces.component.UIInput {
 
 This looks pretty similar to the component class for the Hello World component, with an appropriate changing or type, family, renderer and tag. One significant change to take note of is the base class for the component. Notice how we are extending the <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/javax/faces/component/UIInput.html">__UIInput__</a> class. This allows us to leverage the value holding and state saving that has already been built into this component. No matter what kind of UI you want to build for your component, you will almost always want to store a single value (we'll discuss select many components in another post). So extending UIInput is generally a good idea.
 
-h3. The Renderer
+h2. The Renderer
 
 The corresponding renderer template for our input component is:
 

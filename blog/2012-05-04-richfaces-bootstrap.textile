@@ -12,13 +12,13 @@ Take a look at the <a href="http://bootstrap-richfaces.rhcloud.com/">RichFaces b
 
 Some example bootstrap components that I particularly like are:
 
-h4. b:buttonDropdown
+h3. b:buttonDropdown
 
 The <a href="http://bootstrap-richfaces.rhcloud.com/component/buttonDropdown/index.jsf">buttonDropdown</a> can be used to provide alternate actions for a button on your page:
 
 div=. "!/images/blog/2012-05-04-richfaces-bootstrap/buttonDropdown.png!":/images/blog/2012-05-04-richfaces-bootstrap/buttonDropdown.png
 
-h4. b:gridContainer
+h3. b:gridContainer
 
 The bootstrap <a href="http://bootstrap-richfaces.rhcloud.com/component/grid/index.jsf">grid components</a> (gridContainer/gridRow/gridColumn) provide a powerful means to layout your page. Being proper JSF components, they are also valid JSF execute/render targets.
 
@@ -26,7 +26,7 @@ div=. <a href="/images/blog/2012-05-04-richfaces-bootstrap/gridContainer.png" im
 
 I'll blog more about the individual components as they get fleshed out. There's a ton of blog material here!
 
-h3. RichFaces Bootstrap Roadmap
+h2. RichFaces Bootstrap Roadmap
 
 Our roadmap for these bootstrap components moving forward involves:
 

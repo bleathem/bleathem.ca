@@ -10,7 +10,7 @@ I'm very excited to announce the availability of the final release of RichFaces 
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/stable, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.Final. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
-h3. New components
+h2. New components
 
 We've delivered some new components with this release.  These are components that were originally contributed by "Bernard Labno":https://community.jboss.org/people/blabno via the "RichFaces Sandbox":https://community.jboss.org/wiki/4XSandboxComponents.  The new components we shipped are:
 
@@ -20,7 +20,7 @@ We've delivered some new components with this release.  These are components tha
 * @<rich:placeholder>@ - pre-fills form inputs with text, similar to the HTML 5 placeholder attribute.
 %(label label-info)Blog% Learn more about it in the "rich:placeholder component":http://lukas.fryc.eu/blog/2013/01/richfaces-placeholder-in-richfaces-4-3.html blog post.
 
-h3. New Features
+h2. New Features
 
 Aside from the new components, a number of existing components have seen some significant feature additions.  The @<rich:extendedDataTable>@ for instance has added support for built-in sorting and filtering, and table-state saving.
 %(label label-info)Blog% We have a blog dedicated to the "EDT improvements in RichFaces 4.3":http://www.bleathem.ca/blog/2013/01/whats-new-with-the-richfaces-extendeddatatable.html.
@@ -28,23 +28,23 @@ Aside from the new components, a number of existing components have seen some si
 New with RichFaces 4.3 is the ability to define child _toggle panels_ with the @<a4j:repeat>@ tag.  This offers developers additional flexibility when defining child toggle panels when @<c:forEach>@ is insufficient.  
 %(label label-info)Blog% Check out the "Dynamic Panels with a4j:repeat":http://www.bleathem.ca/blog/2013/01/dynamic-panels-with-a4jrepeat.html blog for more details.
 
-h3. Testing
+h2. Testing
 
 Automated testing has always been central to RichFaces.  We have a "great QE team":http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html behind the framework that works hard to help us deliver solid releases.  But with RichFaces 4.3 we've taken our automated tests to the next level.
 
 We've developed the "Arquillian":http://arquillian.org/ extensions "Warp":http://arquillian.org/modules/warp-extension/ and "Graphene":http://arquillian.org/modules/graphene-extension/ to enable us to author _real_ tests, running in _real_ containers, with _real_ browsers.  Through the magic of Arquillian and "Shrinkwrap":http://www.jboss.org/shrinkwrap, these tests are still fast both to author and to execute.  
 %(label label-info)Blog% Read more about it in this "deep dive to testing in RichFaces 4.3":http://lukas.fryc.eu/blog/2013/01/richfaces-testing.html.
 
-h3. CDK improvements
+h2. CDK improvements
 
 Early on in our RichFaces 4.3 efforts we delivered a number of improvements to our Component Development Kit (CDK) which we used throughout this release to reduce our developer turnaround time in creating new components and features.  In addition to enriching the CDK templating language, we introduced an incremental build feature in the CDK.  This incremental build has proven to be so beneficial that is one of the primary drivers behind the "RichFaces 5 build redesign":https://community.jboss.org/wiki/RichFaces43BuildRedesign.
 
 %(label label-info)Blog% Refer back to this blog for further details on "Incremental build with the RichFaces CDK":http://lukas.fryc.eu/blog/2012/08/incremental-build-with-richfaces-cdk.html
 
-h3. Bug fixes
+h2. Bug fixes
 
 With so many shiny new features to look at, it would be easy to overlook the number of bugs fixed in the release.  In total "242 issues were addressed":https://issues.jboss.org/issues/?jql=project%20%3D%20RF%20AND%20fixVersion%20%3E%3D%20%224.3.0.M1%22%20and%20fixVersion%20%3C%3D%20%224.3.0.Final%22 in this release.  An epic effort for an epic release!
 
-h3. Path forward
+h2. Path forward
 
 As I just hinted, our steps forward are on the path to RichFaces 5.  We've already started working on the new consolidated "RichFaces 5 repository":https://github.com/richfaces/richfaces5.  Feel free to comment with where you'd like to see the project head in RichFaces 5 in the "RichFaces developer forum thread":https://community.jboss.org/thread/213160.

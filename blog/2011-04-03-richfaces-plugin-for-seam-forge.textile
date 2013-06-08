@@ -10,7 +10,7 @@ What makes Forge particularly interesting, from my perspective, is the way it wa
 
 For instructions on installing Forge, refer to the "Forge Documentation":http://forge.jboss.org/docs/index.html.  The following guide assumes you have Forge installed and functional.
 
-<h4 style='color:green; border: solid green 2px; padding : 10px'>** The instructions in this blog are for the 0.1.0 version of the RichFaces plugin for JBoss Forge.  See the project's <a href="https://github.com/bleathem/richfaces-forge-plugin/blob/master/README.txt">README.txt</a> for updated usage instructions. ** </h4>
+<h3 style='color:green; border: solid green 2px; padding : 10px'>** The instructions in this blog are for the 0.1.0 version of the RichFaces plugin for JBoss Forge.  See the project's <a href="https://github.com/bleathem/richfaces-forge-plugin/blob/master/README.txt">README.txt</a> for updated usage instructions. ** </h3>
 
 First, lets install the RichFaces plugin for forge (installing from git!):
 

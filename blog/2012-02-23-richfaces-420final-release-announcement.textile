@@ -8,7 +8,7 @@ Richfaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12
 
 To try out this release, you can download the distribution <a href="http://www.jboss.org/richfaces/download/stable">directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.2.0.Final. For more information on setting up a RichFaces 4 application, refer to our <a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x">getting started guide</a>.
 
-h3. What’s new in Richfaces 4.2
+h2. What’s new in Richfaces 4.2
 
 For details on what’s new in 4.2, have a look at the <a href="http://blog.bleathem.ca/2012/02/richfaces-420cr1-release-announcement.html">4.2.0.CR1 release announcement</a>, where we cover:
 
@@ -26,7 +26,7 @@ Additionally, <a href="https://twitter.com/lfryc">Lukas Fryc</a>, has a few blog
 * <a href="http://rik-ansikter.blogspot.com/2012/02/optimizing-resource-loading-with.html">Optimizing Resource Loading with RichFaces 4.2</a>
 * <a href="http://rik-ansikter.blogspot.com/2012/02/re-routing-jsf-resource-requests-with.html">Re-routing JSF resource requests with RichFaces Resource Mapping</a>
 
-h3. Looking Ahead
+h2. Looking Ahead
 
 It’s now time to buckle down and focus on 4.3/4.Future efforts. The themes we will be focusing on are narrowing down to:
 

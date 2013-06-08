@@ -15,7 +15,7 @@ We'll start with a review of Arquillian and Selenium, then look at the Arquillia
 
 For the sake of completeness, here's the abstract as originally submitted:
 
-h3. Abstract
+h2. Abstract
 
 <blockquote>
 In modern development environments, it’s a “must” to include testing of web applications as a standard part of the development life-cycle.  Such tests can also be used as acceptance criteria in enterprise projects. While full-automation is possible, it is considered to be very expensive. As a result, in projects where testing is included as part of the project plan, it is also often the first requirement cut when the project schedule begins to slip.

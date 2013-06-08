@@ -6,7 +6,7 @@ tags: [ RF41, RichFaces ]
 
 The <a href="http://richfaces.org/">RichFaces</a> team is proud to announce the first milestone release of RichFaces 4.1. This release includes some significant contributions from community members, adding to and building on top of the efforts of the RichFaces core developer team! You can find this development release on the project’s <a href="http://www.jboss.org/richfaces/download/milestones">download page</a> and check out our “<a href="http://community.jboss.org/wiki/GettingStartedWithRichFaces4x">getting started</a>” resources.
 
-h3. First Milestone for 4.1
+h2. First Milestone for 4.1
 
 The 4.1.0 Milestone1 release includes several highly anticipated features and improvements in RichFaces 4. 
 
@@ -21,7 +21,7 @@ In addition, we’ve made some big improvements to the Push component.  It is no
 
 In addition, a new sample application <a href="https://github.com/richfaces/tweetstream">Tweetstream</a> has been developed.  This application demonstrates the “mobile platform” directions and capabilities that can be expected from future releases of RichFaces.
 
-h3. New Components
+h2. New Components
 
 Three of the new components, “Editor”, “Pick List”, and “Ordering List” are components that were available in RichFaces 3, but were not present in the initial RichFaces 4 release.  With this first milestone release for RichFaces 4.1, we have remedied this and provided these missing components.  The 4th new component, “Notify”, is a community contributed component, the first component contributed from <a href="http://community.jboss.org/people/blabno">Bernard Labno</a> - a RichFaces community enthusiast.  Let’s take a closer look at each of these components:
 
@@ -37,20 +37,20 @@ Lastly, the Notify component provides interactive feedback from your application
 
 The components provided in this first milestone are functionally complete, so you can take them for a spin, and provide us with your feedback about any functionality or key API’s we might have missed (or where we got it right!)
 
-h3. Migration to Git
+h2. Migration to Git
 
 New features and functionality have not been our sole focus. In preparation for this release we’ve migrated our entire framework to <a href="https://github.com/richfaces">GitHub</a> and broken it up into several modules.  The main goal we had in mind with this migration was to make contributing to the RichFaces framework easier, and help us extend the level of collaboration.  I think we can say we’ve definitely achieved this goal, given the number of community contributions we’ve already seen.
 
 With GitHub, it is now pretty easy to send patches to the project in form of pull requests. Thanks to <a href="http://nvie.com/posts/a-successful-git-branching-model/">git-flow</a> it is now trivial process to develop new features in feature branches and, because of <a href="http://git-scm.com/">Git</a> itself, it is easy to merge them back into the most recent development branch.
 
-h3. Next Milestone
+h2. Next Milestone
 
 <a href="https://issues.jboss.org/browse/RF/fixforversion/12316708">Milestone 2</a> will be a great sprint for ironing out the details of the new components’ features as well as polish their look&feel.  Most importantly however, we will focus on further stabilization of the framework by fixing bugs both reported by the community and those found by our QE team. A lot of work is also planned for mobile devices support, and as previously mentioned, we are working on initial versions of a Mobile Showcase.
 
-h3. Face to Face Meeting
+h2. Face to Face Meeting
 
 After Milestone2, the globally distributed RichFaces team will get together with some other JBoss teams in Toronto, Canada,  to discuss the future of the framework itself and it’s integration with other parts of Java EE.  The goal of this meeting is to offer you, the developer, the best development experience possible. Should you be around Toronto in September and would like to join us for an evening beer, you are more than welcome. ;-)
 
-h3. Give it a spin!
+h2. Give it a spin!
 
 Go ahead, and <a href="http://www.jboss.org/richfaces/download/milestones">download</a> this first Milestone release of RichFaces 4.1 (or add the <a href="http://community.jboss.org/wiki/HowToAddRichFaces4xToMavenBasedProject">dependency</a> to your maven pom file), and give the new components a spin.  Let us know what you think, either where we’ve missed something, or where we got it right, and help shape the component for the upcoming 4.1.0.Final release.

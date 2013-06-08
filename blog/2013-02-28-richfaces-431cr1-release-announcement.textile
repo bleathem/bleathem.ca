@@ -12,7 +12,7 @@ The first candidate release of RichFaces 4.3.1 ("4.3.1.CR1":https://issues.jboss
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.1.CR1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
-h3. Concurrent testing efforts
+h2. Concurrent testing efforts
 
 Normally we leave RichFaces releases in our "Nexus staging server":https://repository.jboss.org/nexus/content/groups/staging/ until the "RichFaces QE":http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html team has fully verified the release.  With this release however, we are trying something new.
 

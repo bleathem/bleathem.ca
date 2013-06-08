@@ -18,19 +18,19 @@ The "polyglot-widgets demo":http://polyglotwidgets-richfaces.rhcloud.com/ takes 
 
 Some key points of the demo to call out:
 
-h3. Consistent L&F
+h2. Consistent L&F
 
 Imagine writing "polyglot" web applications with both a consistent Look & Feel, and access to the rich set of "enterprise-grade widgets":http://showcase.richfaces.org/ that you've come to expect from the RichFaces project.  In the demo, the same "RichFaces Sandbox pickList widget":http://bootstrap-richfaces.rhcloud.com/component/pickList/index.jsf is used in a "JSF":http://polyglotwidgets-richfaces.rhcloud.com/richfaces-bootstrap.jsf, "GWT":http://polyglotwidgets-richfaces.rhcloud.com/gwt-bootstrap.html  and "HTML 5":http://polyglotwidgets-richfaces.rhcloud.com/html5-bootstrap.html application.  The widget and the demo pages themselves use the "Bootstrap":http://twitter.github.com/bootstrap/ project for styling, which is what enables us to achieve a consistent L&amp;F across the pages backed by different web technologies.  This common L&F is taken one step further to deliver a consistent user experience by using the same javascript widget implementation across all the demo pages.
 
-h3. CDI Programming model
+h2. CDI Programming model
 
 In the demo, we use the pickList component to make a selection on one of the demo pages, then click the submit button. On navigation to one of the other demo pages, you'll notice the state persisted. This demonstrates how we can leverage "CDI":http://www.jboss.org/developer/about.html to provide a common programming model across all our web frameworks.
 
-h3. Integrated Ajax Push
+h2. Integrated Ajax Push
 
 Open each page of the demo in a separate window to witness selection updates synchronizing the pages in real time. Taking advantage of "RichFaces push":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push&sample=pushCdi, the "Errai CDI bus":https://github.com/mikebrock/errai-cdi, and HTML 5 Server-Sent-Events (via the "Atmosphere project":https://github.com/Atmosphere/atmosphere) in each of the respective frameworks provides incredible power in keeping our "polyglot" web-apps in a coherent state.
 
-h3. Screencast
+h2. Screencast
 
 I created a screencast of the demo, to make it easier to see the above points in action.  Watch the "screencast":https://vimeo.com/54314451 below, then head off to "play with the demo":http://polyglotwidgets-richfaces.rhcloud.com/ yourself.  Even better, "fork the demo on github":https://github.com/bleathem/polyglot-widgets, and see what cool things you can do with it.
 

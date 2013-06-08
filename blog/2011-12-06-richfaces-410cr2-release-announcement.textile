@@ -8,7 +8,7 @@ We are announcing the release of RichFaces <a href="https://issues.jboss.org/sec
 
 To try out this release, you can download the distribution <a href="http://www.jboss.org/richfaces/download/milestones">directly</a>, or for maven users increment the RichFaces version in your pom.xml to 4.1.0.CR2. For more information on setting up a RichFaces 4 application, refer to our <a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x">getting started guide</a>.
 
-h3. Noteworthy changes
+h2. Noteworthy changes
 
 In addition to addressing the above regressions, our CR2 release has addressed a couple other noteworthy issues.
 

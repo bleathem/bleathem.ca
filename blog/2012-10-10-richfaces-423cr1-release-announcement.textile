@@ -10,22 +10,22 @@ I am happy to announce that the first candidate release of RichFaces 4.2.3 ("4.2
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.2.3.CR1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
-h3. Portlet Bridge Fixes
+h2. Portlet Bridge Fixes
 
 RichFaces aims to be a container agnostic project, working in Servlet containers, Java EE implementations, and Portals, all from multiple vendors.  Of course keeping up with bugs and fixes across all these deployment environments is a lot of work, so we naturally tend to focus our efforts on certain specific environments.  As such, nothing makes us happier then receiving github pull requests addressing compatibility issues between RichFaces and one of these deployment containers.
 
 This is precisely what Ken Finnigan of the Portal Bridge team has done, identifying and resolving a number of issues with RichFaces when running in a Portlet environment.  Unfortunately a number of servlet specific references leaked through in some of our implementations, but Ken has done an excellent job rounding these up, and replacing them with the appropriate JSF abstraction, ensuring RichFaces components work equally well in servlet and portlet environments.  Great job Ken!
 
-h3. Community Contributions
+h2. Community Contributions
 
 I'd also like to call out , "Bernard Labno":https://community.jboss.org/people/blabno, "Christian Kaltepoth":https://issues.jboss.org/secure/ViewProfile.jspa?name=chkal, and "Luca Nardelli":https://community.jboss.org/people/tritibo for the bugs they fixed and submitted as github pull requests.  RichFaces is a very much a community project, and it's in part contributions like these that keep the project healthy and moving forward.  Thanks guys -- and keep those pull requests coming!
 
-h3. Release Notes:
+h2. Release Notes:
 
 Specific issues resolved with this release include:
 
 <blockquote>
-<h4>Bug</h4>
+<h3>Bug</h3>
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-10758'>RF-10758</a>] -         Input fields in popupPanel lose focus
 </li>
@@ -53,14 +53,14 @@ Specific issues resolved with this release include:
 </li>
 </ul>
                 
-<h4>Enhancement</h4>
+<h3>Enhancement</h3>
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-12343'>RF-12343</a>] -         Problem when saving form with rich picklist inside composite component
 </li>
 </ul>
 </blockquote>
 
-h3. What's next?
+h2. What's next?
 
 Be sure to take this candidate release for a spin, and report back any regressions.  We are expecting the 4.2.3.Final release to simply be a re-tag of the CR1 release, barring any unforeseen blockers.
 

@@ -12,12 +12,12 @@ The RichFaces 4.2.3.Final release is purely a bug-fix release, with a focus on c
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/stable, or for maven users, increment the RichFaces version in your pom.xml to 4.2.3.Final. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
-h3. Release Notes:
+h2. Release Notes:
 
 To re-cap, the changes in the 4.2.3.Final release compared to the "4.2.2.Final":http://stage.bleathem.ca/blog/2012/05/richfaces-422final-release-announcement.html release include:
 
 <blockquote>
-<h4>Bug</h4>
+<h3>Bug</h3>
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-10758'>RF-10758</a>] -         Input fields in popupPanel lose focus
 </li>
@@ -45,7 +45,7 @@ To re-cap, the changes in the 4.2.3.Final release compared to the "4.2.2.Final":
 </li>
 </ul>
                 
-<h4>Enhancement</h4>
+<h3>Enhancement</h3>
 <ul>
 <li>[<a href='https://issues.jboss.org/browse/RF-12343'>RF-12343</a>] -         Problem when saving form with rich picklist inside composite component
 </li>
@@ -54,6 +54,6 @@ To re-cap, the changes in the 4.2.3.Final release compared to the "4.2.2.Final":
 
 This is very much a community driven release.  Thanks guys, you rock!
 
-h3. Stay Tuned for 4.3.0.M2
+h2. Stay Tuned for 4.3.0.M2
 
 The QA process for the 4.3.0.M2 release is about to begin, with a release as soon as QA is done.  So stay tuned, as there is lots more great stuff to come!

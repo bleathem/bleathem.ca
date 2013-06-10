@@ -1,10 +1,10 @@
-Brian Leathem
-2013-06-10
+---
 :title: RichFaces moves to AsciiDoc
 :layout: post
 :tags: [ RichFaces, docs, asciidoc, asciidoctor ]
 :image_url: "/images/blog/common/richfaces_notext.png"
 :description: "With RichFaces 5 we have made a significant change to our documentation tool-chain with the introduction of AsciiDoc to simplify the task of authoring and editing the RichFaces documentation."
+---
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 

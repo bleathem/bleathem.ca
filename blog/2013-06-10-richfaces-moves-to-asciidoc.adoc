@@ -1,6 +1,6 @@
-= RichFaces moves to AsciiDoc
 Brian Leathem
 2013-06-10
+:title: RichFaces moves to AsciiDoc
 :layout: post
 :tags: [ RichFaces, docs, asciidoc, asciidoctor ]
 :image_url: "/images/blog/common/richfaces_notext.png"

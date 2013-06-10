@@ -14,18 +14,26 @@ Additionally the docbook xml is fed downstream into Red Hat's http://www.redhat.
 
 == Bring in the Asciidoc!
 
-Fortunately we have been able to remedy this problem, without sacrificing any of the power and flexibility of our docbook tool-chain, by converting all our docbook source into asciidoc.  The asciidoc source is in turn converted back into docbook xml, and fed into our existing tool-chain.  
+Fortunately we have been able to remedy this problem, without sacrificing any of the power and flexibility of our docbook tool-chain, by converting all our docbook source into asciidoc.  The asciidoc source is in turn converted back into docbook xml, and fed into our existing tool-chain.  This toolchain is a set of https://github.com/pressgang/pressgang-tools[Pressgang XSLT files] that takes the docbook xml and converts it into our http://docs.jboss.org/richfaces/[published] PDF and HTML docs. 
 
 The capabilities of asciidoc are well demonstrated by the fact that we were able to create identical HTML and PDF docs using the asciidoc generated docbook xml, without making any changes to our docbook tool-chain.  Asciidoc is indeed a highly expressive markup language.  On the other hand, asciidoc is only as complex as you want it to be - in basic use cases it's as simple to read as http://en.wikipedia.org/wiki/Markdown[markdown].
 
-== The conversion to asciidoc
+== The one-time conversion to asciidoc
 
 Converting the docbook xml into asciidoc however was not a simple task.  We had a significant step forward by starting with the https://github.com/oreillymedia/docbook2asciidoc[docbook2asciidoc XSLT project] from O'Reilly media that converts docbook xml into asciidoc.  https://twitter.com/lightguardjp[Jason Porter] had already https://github.com/LightGuard/docbook2asciidoc[forked the project], introducing some changes to handle Red Hat _flavoured_ docbook.
 
 We https://github.com/bleathem/docbook2asciidoc[forked that fork], and introduced a number of additional changes to the XSLT to properly convert the docbook xml into asciidoc.  This conversion took us 98% of the way there, the final leg of the conversion was finished with some regexps and manual fine-tuning.
 
+We also looked at the http://johnmacfarlane.net/pandoc/[Pandoc project] - a multi-purpose document converter that is able to output docbook xml.  We stuck with the XSLT for two reasons: 
+
+. Out-of-the-box the XSLT brought us closer to our target.
+. Our XSLT expertise allowed us to hack the docbook2asciidoc to suit our needs, wheres Pandoc is written in Haskell which presented too a steep learning curve for a one off migration.
+
+Although had our initial format not been xml, Pandoc would probably have been a better choice.  Hopefully the asciidoctor project is able to fill this conversion-to-asciidoc void in a future release.
+
 Checkout the results, here are links to the asciidoc files on GitHub.  Notice how GitHub renders the files, you can click the "raw" buttons to see the asciidoc source.
 
+[role="alert alert-info"]
 RichFaces Component reference:: https://github.com/richfaces/richfaces-docs/blob/master/Component_Reference/src/main/docbook/en-US/Component_Reference.asciidoc[Component_Reference.asciidoc]
 RichFaces Developer Guide:: https://github.com/richfaces/richfaces-docs/blob/master/Developer_Guide/src/main/docbook/en-US/Developer_Guide.asciidoc[Developer_Guide.asciidoc]
 

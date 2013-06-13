@@ -1,16 +1,15 @@
----
-layout: post
-title: "RichFaces 5.0.0.Alpha1 Release Announcement"
-tags: [ RichFaces, RF50, Alpha ]
-image_url: "/images/blog/common/richfaces_notext.png"
-description: "I am excited to announce the release of RichFaces 5.0.0.Alpha1.  While RichFaces 5.0.0.Alpha1 is an incredibly significant release (with almost all aspects of the framework seeing some changes) the release is in fact functionally equivalent to RichFaces 4.3.2.Final.  So go ahead an try it out, and give us your feedback!"
----
+= RichFaces 5.0.0.Alpha1 Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF50, Alpha1]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: "I am excited to announce the release of RichFaces 5.0.0.Alpha1.  While RichFaces 5.0.0.Alpha1 is an incredibly significant release (with almost all aspects of the framework seeing some changes) the release is in fact functionally equivalent to RichFaces 4.3.2.Final.  So go ahead an try it out, and give us your feedback!"
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 I am excited to announce the release of https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12320296[RichFaces 5.0.0.Alpha1].  While RichFaces 5.0.0.Alpha1 is an incredibly significant release (with almost all aspects of the framework seeing some changes) the release is in fact functionally equivalent to RichFaces 4.3.2.Final.  So go ahead an try it out, and give us https://community.jboss.org/en/richfaces?view=discussions[your feedback]!
 
-[role="alert alert-info"]
+[.alert.alert-info]
 *To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha1. For more information on setting up a RichFaces 5 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
 
 == Release highlights
@@ -43,7 +42,7 @@ In RichFaces 5, starting with this Alpha1 release, we are collapsing the namespa
 
 [label label-info]#Blog# Read more about the namespace change, and how to automate the migration of your own applications to use the the new namespace in the http://lukas.fryc.eu/blog/2013/06/richfaces-build-restructure.html#_namespaces[Namespace section of the Build Re-Structure blog].
 
-[role="alert alert-info"]
+[.alert.alert-info]
 The http://showcase5-richfaces.rhcloud.com/[RichFaces 5 Showcase] has been updated to reflect the simplified showcase.
 
 == Framework distribution simplification

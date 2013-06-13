@@ -11,7 +11,7 @@ image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://
 I am excited to announce the release of RichFaces 5.0.0.Alpha1.  While RichFaces 5.0.0.Alpha1 is an incredibly significant release, with almost all aspects of the framework seeing some changes, the release is in fact functionally equivalent to RichFaces 4.3.2.Final.
 
 [role="alert alert-info"]
-*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha1. For more information on setting up a RichFaces 5 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha1. For more information on setting up a RichFaces 5 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
 
 == Release highlights
 The primary goals for RichFaces 5.0.0.Alpha1 were as follows:
@@ -37,7 +37,7 @@ The end result is a build structure now contained within a https://github.com/ri
 [[namespaces]]
 == Collapse the +rich:+ and +a4j:+ namespaces
 
-As you may know, the current RichFaces framework is built from the old http://en.wikipedia.org/wiki/Ajax4jsf[Ajax4Jsf] project, and the original RichFaces component set.  This distinction of the libraries has been preserved in the RichFaces framework with the use of the +rich:+ and +a4j:+ namespaces.  However this distinction has become less distinct overtime, and has unfortunately become a barrier to adoption for new RichFaces users.
+As you may know, the current RichFaces framework is built from the old http://en.wikipedia.org/wiki/Ajax4jsf[Ajax4Jsf] project, and the original RichFaces component set.  This distinction of the libraries has been preserved in the RichFaces framework with the use of the +rich:+ and +a4j:+ namespaces.  However this distinction has become less distinct over time, and has unfortunately become a barrier to adoption for new RichFaces users.
 
 In RichFaces 5, starting with this Alpha1 release we are collapsing the namespaces into the single +r:+ namespace.  This will ease adoption for new developers, and allow for a more intuitive tooling experience within your IDE.
 
@@ -63,7 +63,7 @@ Testing has always been a primary concern of the RichFaces project.  In RichFace
 
 [label label-info]#Blog# Read how http://lukas.fryc.eu/blog/2013/06/richfaces-framework-tests.html[RichFaces uses these tools] to provide real, automated and fast tests for our framework.
 
-[label label-info]#Blog# Read how you can use these tools yourself to test your JSF applications with this http://lukas.fryc.eu/blog/tags/testing-jsf/ [blog series on testing JSF].
+[label label-info]#Blog# Read how you can use these tools yourself to test your JSF applications with this http://lukas.fryc.eu/blog/tags/testing-jsf/[blog series on testing JSF].
 
 [[asciidoc]]
 == Move to asciidoc for our documentation

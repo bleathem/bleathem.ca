@@ -1,16 +1,15 @@
----
-layout: post
-title: "RichFaces 4.3.2.Final Release Announcement"
-tags: [ RichFaces, RF43, Final ]
-image_url: "/images/blog/common/richfaces_notext.png"
-description: ""
----
+= RichFaces 4.3.2.Final Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF43, Final]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description:
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 I am excited to announce the release of RichFaces 5.0.0.Alpha1.  While RichFaces 5.0.0.Alpha1 is an incredibly significant release, with almost all aspects of the framework seeing some changes, the release is in fact functionally equivalent to RichFaces 4.3.2.Final.
 
-[role="alert alert-info"]
+[.alert.alert-info]
 *To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha1. For more information on setting up a RichFaces 5 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
 
 == Release highlights

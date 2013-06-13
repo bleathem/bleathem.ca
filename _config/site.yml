@@ -1,3 +1,7 @@
+:asciidoctor:
+  :eruby: erubis
+  :attributes:
+    source-highlighter: prettify
 profiles:
   development:
   production:

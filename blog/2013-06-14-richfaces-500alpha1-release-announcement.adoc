@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "RichFaces 4.3.2.Final Release Announcement"
-tags: [ RichFaces, RF43, Final ]
+title: "RichFaces 5.0.0.Alpha1 Release Announcement"
+tags: [ RichFaces, RF50, Alpha ]
 image_url: "/images/blog/common/richfaces_notext.png"
-description: ""
+description: "I am excited to announce the release of RichFaces 5.0.0.Alpha1.  While RichFaces 5.0.0.Alpha1 is an incredibly significant release (with almost all aspects of the framework seeing some changes) the release is in fact functionally equivalent to RichFaces 4.3.2.Final.  So go ahead an try it out, and give us your feedback!"
 ---
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]

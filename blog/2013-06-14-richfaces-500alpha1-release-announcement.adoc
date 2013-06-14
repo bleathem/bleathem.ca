@@ -43,6 +43,9 @@ In RichFaces 5, starting with this Alpha1 release, we are collapsing the namespa
 
 [label label-info]#Blog# Read more about the namespace change, and how to automate the migration of your own applications to use the the new namespace in the http://lukas.fryc.eu/blog/2013/06/richfaces-build-restructure.html#_namespaces[Namespace section of the Build Re-Structure blog].
 
+[role="alert alert-info"]
+The http://showcase5-richfaces.rhcloud.com/[RichFaces 5 Showcase] has been updated to reflect the simplified showcase.
+
 == Framework distribution simplification
 
 Incorporating RichFaces into your applications is easier with RichFaces 5.  We now distribute a single +richfaces.jar+.  No more separate API/UI/Impl jars, and no more BOM!  If you are using maven, simply add the RichFaces jar to your project as in:

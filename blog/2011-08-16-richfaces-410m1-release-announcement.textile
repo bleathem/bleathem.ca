@@ -17,7 +17,7 @@ We have new components:
 * Ordering List
 * Notify
 
-In addition, we’ve made some big improvements to the Push component.  It is now more lightweight, decoupled from JMS, and support has been added for <a href="http://en.wikipedia.org/wiki/Comet_%28programming%29">Comet</a> - the websockets-like light alternative for long-poliing.  A Push demo has also been added to the RichFaces Showcase, with support for JBoss AS 7 (although not yet visible in the <a href="http://richfaces.org/showcase">public showcase</a>, the code is <a href="https://github.com/richfaces/showcase/tree/develop/src/main/webapp/richfaces/push">available</a>).
+In addition, we’ve made some big improvements to the Push component.  It is now more lightweight, decoupled from JMS, and support has been added for <a href="http://en.wikipedia.org/wiki/Comet_%28programming%29">Comet</a> - the websockets-like light alternative for long-poliing.  A Push demo has also been added to the RichFaces Showcase, with support for JBoss AS 7 (although not yet visible in the <a href="http://richfaces.org/showcase">public showcase</a>, the code is <a href="https://github.com/richfaces/showcase/tree/master/src/main/webapp/richfaces/push">available</a>).
 
 In addition, a new sample application <a href="https://github.com/richfaces/tweetstream">Tweetstream</a> has been developed.  This application demonstrates the “mobile platform” directions and capabilities that can be expected from future releases of RichFaces.
 

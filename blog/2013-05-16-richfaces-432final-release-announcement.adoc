@@ -3,7 +3,7 @@ Brian Leathem
 :awestruct-layout: post
 :awestruct-tags: [RichFaces, RF43, Final]
 :awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: "I am excited to announce the release of RichFaces 4.3.2.Final.  This second minor release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework."
+:awestruct-description: "I am excited to announce the release of RichFaces 4.3.2.Final.  This second micro release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework."
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 

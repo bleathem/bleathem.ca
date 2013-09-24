@@ -13,7 +13,7 @@ I am excited to announce the release of RichFaces https://issues.jboss.org/brows
 *To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.3.4.Final. For more information on setting up a RichFaces 4 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
 
 == Release Highlights
-With 46 issues resolved, RichFaces 4.3.4 is a substantial bug-fix release, offering improvements in a number of components including the select components, extendedDataTable, popup panels, and a4j:log.
+With 47 issues resolved, RichFaces 4.3.4 is a substantial bug-fix release, offering improvements in a number of components including the select components, extendedDataTable, popup panels, and a4j:log.
 
 Additionally we upgraded our Atmosphere dependency to the latest release (https://github.com/Atmosphere/atmosphere/releases/tag/atmosphere-project-1.0.17[1.0.17]) to ensure RichFaces Push continues to work with the upcoming http://www.jboss.org/jbossas/downloads/[JBoss EAP] 6.1.1 release.  A big shout out to https://twitter.com/jfarcand[@jfarcand] and his https://github.com/Atmosphere/[Atmosphere community] for accepting our https://github.com/Atmosphere/atmosphere/pull/1263[pull request] and getting an updated release out in a timely manner.  Working with Atmosphere as an upstream project is truly an example of OSS at it's best!
 
@@ -77,4 +77,4 @@ Enhancement
                 
 == Moving forward
 
-We are actively https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[working on RichFaces 5.0.0.Alpha2] that will feature some re-worked component taking advantage of our new decoupled component architecture, making use of standalone javascript widgets to provide a robust client-side implementation of RichFaces components.  Look forward this a new Alpha release in the coming weeks.
+We are actively https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[working on RichFaces 5.0.0.Alpha2] that will feature some re-worked components taking advantage of our new decoupled component architecture and making use of standalone javascript widgets to provide a more robust client-side implementation of RichFaces components.  Look forward this a new Alpha release in the coming weeks.

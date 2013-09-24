@@ -25,7 +25,7 @@ Additionally we upgraded our Atmosphere dependency to the latest release (https:
 * https://issues.jboss.org/browse/RF-12345[RF-12345] - JS error when pressing ESC on an open inplaceSelect in IE
 * https://issues.jboss.org/browse/RF-12853[RF-12853] - rich:inplaceSelect: JS API bugs
 * https://issues.jboss.org/browse/RF-12929[RF-12929] - PickList change event not firing correctly when ordering objects in target area
-* https://issues.jboss.org/browse/RF-12943[RF-12943] - ExtendedDataTable: clearing of filter input doesn't work correctly
+* https://issues.jboss.org/browse/RF-12943[RF-12943] - ExtendedDataTable: clearing of filter input doesnt work correctly
 * https://issues.jboss.org/browse/RF-12989[RF-12989] - Documentation for togglePanelItem is wrong and 4.2.2 components are not working anymore in 4.3.0.Final
 * https://issues.jboss.org/browse/RF-13010[RF-13010] - Popup panel inside popup panel: button not rendered in IE10
 * https://issues.jboss.org/browse/RF-13017[RF-13017] - richfaces-bom 4.3.2.Final, JSF-API 2.1.0 not compatible
@@ -53,6 +53,8 @@ Additionally we upgraded our Atmosphere dependency to the latest release (https:
 * https://issues.jboss.org/browse/RF-13149[RF-13149] - a4j:push in Metamer doesn't have subtopic name
 * https://issues.jboss.org/browse/RF-13161[RF-13161] - rich:notifyMessages CSS incorrect on MyFaces 2.x
 * https://issues.jboss.org/browse/RF-13174[RF-13174] - Correct the WFK version of the JBoss BOM used in the archetypes
+* https://issues.jboss.org/browse/RF-13195[RF-13195] - Showcase: Unauthorized deserialization attempt with MyFaces
+* https://issues.jboss.org/browse/RF-13205[RF-13205] - Photoalbum: Hibernate error during deployment
 
 === Component Upgrade
 * https://issues.jboss.org/browse/RF-13132[RF-13132] - Upgrade JBoss Java EE BOMs to 3.0.2.Final
@@ -67,10 +69,10 @@ Enhancement
 === Feature Request
 * https://issues.jboss.org/browse/RF-13038[RF-13038] - Command button/link: attribute tabindex missing
 * https://issues.jboss.org/browse/RF-13063[RF-13063] - RichFacesInputNumberSlider setValueByDragging
-* https://issues.jboss.org/browse/RF-13155[RF-13155] - Unable to trigger hidden FileUpload in IE with an associated Label: missing Id on generated <input type=“file“>
 * https://issues.jboss.org/browse/RF-13159[RF-13159] - Add Maven compiler properties and remove Maven plugin from the the quickstart POM files
 * https://issues.jboss.org/browse/RF-13185[RF-13185] - Quickstarts: Modify GAV to use org.jboss.quickstarts.rf
-Sub-task
+
+=== Sub-task
 * https://issues.jboss.org/browse/RF-13189[RF-13189] - Update jquery-atmosphere.js to 1.0.17 in 4.3.x
                 
 == Moving forward

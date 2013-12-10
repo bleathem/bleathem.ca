@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'awestruct', '~> 0.5.1'
+gem 'awestruct', '~> 0.5.2'
 gem 'tilt', '~> 1.3.6', :require => ['asciidoctor']
 gem 'slim', '~> 2.0.0'
 gem 'haml', '~> 4.0.0'

@@ -10,7 +10,7 @@ image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://
 RichFaces 5.0.0.Alpha2 is now available for download.  This second alpha release of our RichFaces 5 effort is significant as it brings in our new component architecture, new components, a further refinement in our approach to testing, and the beginnings of a new look and feel.  We'll dive further into each of these topics below.
 
 [.alert.alert-info]
-*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha1. For more information on setting up a RichFaces application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha2. For more information on setting up a RichFaces application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
 
 == New Component Architecture
 We've been planning a new component architecture https://community.jboss.org/thread/175973[for quite some time].  We http://www.bleathem.ca/blog/2012/11/polyglot-widgets.html[PoC'ed the concept] last year, and we now have the groundwork in place to move full-steam ahead.
@@ -23,11 +23,11 @@ Our new component architecture is based on standalone javascript _widgets_ loose
 
 After delivering http://www.bleathem.ca/blog/2013/06/richfaces-500alpha1-release-announcement.html[RichFaces 5.0.0.Alpha1] we went off and hid in a corner for a while to lay the foundation for the javascript work required to pull this off.  We wanted to create a space where we could contribute our javascript development efforts in a true OSS manner and participate as closely as possible with upstream projects.
 
-To this end we created http://www.richwidgets.io/[RichWidgets], a _pure_ javascript project that sits upstream of RichFaces, providing the javascript implementations of the RichFaces 5 set of components.  Built with grunt and bower, and tested with karma and jasmine, the project should be easily accessible to all participating in the javascript development space, irrespective of the server-side framework/language with whcih they are trying to inter-operate.
+To this end we created http://www.richwidgets.io/[RichWidgets], a _pure_ javascript project that sits upstream of RichFaces, providing the javascript implementations of the RichFaces 5 set of components.  Built with grunt and bower, and tested with karma and jasmine, the project should be easily accessible to all participating in the javascript development space, irrespective of the server-side framework/language with which they are trying to inter-operate.
 
 Styled with Bootstrap and the http://rcue-uxd.itos.redhat.com/[Red Hat Common User Experience], and powered using the http://api.jqueryui.com/jQuery.widget/[jQuery UI widget factory], RichWidgets provides users with both a consistent API and a consistent look-and-feel.
 
-Checkout what we have so for by browsing the http://www.richwidgets.io[RichWidgets demo site], of by taking a look at the https://github.com/richwidgets/richwidgets/[source code on GitHub].  If you are still curious, learn more about RichWidgets in the RichWidgets 0.1 release announcement.
+Checkout what we have so far by browsing the http://www.richwidgets.io[RichWidgets demo site], of by taking a look at the https://github.com/richwidgets/richwidgets/[source code on GitHub].  If you are still curious, learn more about RichWidgets in the RichWidgets 0.1 release announcement.
 
 == New Components
 
@@ -62,4 +62,4 @@ This idea is truly revolutionary, and I look forward to see how you the RichFace
 
 == Next Steps
 
-You will likely have noticed the lack of a mention of JSF 2.2 in this release announcement.  Unfortunately our plate was too full with this release to properly tackle JSF .2.2 support.  We do however recognize this as important to many of you, particularly with WildFly 8 in a Beta stage.  With this in mind we will make JSF 2.2 our primary focus for RichFaces 5.0.0.Alpha3, and will work to expedite it's release.  We will also continue with a release of our stable RichFaces 4.3 branch in the new year.
+You will likely have noticed the lack of a mention of JSF 2.2 in this release announcement.  Unfortunately our plate was too full with this release to properly tackle JSF 2.2 support.  We do however recognize this as important to many of you, particularly with WildFly 8 in a Beta stage.  With this in mind we will make JSF 2.2 our primary focus for RichFaces 5.0.0.Alpha3, and will work to expedite its release.  We will also continue with a release of our stable RichFaces 4.3 branch in the new year.

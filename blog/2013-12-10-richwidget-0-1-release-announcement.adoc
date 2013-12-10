@@ -1,0 +1,43 @@
+= RichWidgets 0.1 Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichWidgets, release]
+:awestruct-description: ""
+
+RichWidgets 0.1 is released and ready for download.  The road to this first release was a long one, requiring us to get our first javascript project in order.  Built with grunt, dependencies managed by bower, and our jasmine tests run by karma, RichWidgets is _pure_ javascript project and as such should be equally accessible with all languages and frameworks targeting the web.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution https://github.com/richwidgets/richwidgets/releases[directly], or for bower users, point your bower.json file to consume the `richwidgets` library in the http://sindresorhus.com/bower-components/#!/search/richwidgets[bower registry].
+
+== Design Choices
+The RichWidgets widgets are designed to be used either standalone, or integrated with a web-framework.  The widgets are built using the jQuery UI widget factory and styled with Bootstrap.  Wherever possible we aim to consume existing OSS widgets (contributing back wherever possible!).  By wrapping the upstream widgets with the jQuery UI widget factory, we aim to provide a set of responsive widgets with a well-defined life-cycle, a standard API, and a consistent look-and-feel.
+
+Have a look at http://www.richwidgets.io/[our demos] to get a feel for how you can use our widgets in your application.  Or, if you are a developer of a we framework, take a look at how we've link:richfaces-5-0-0-alpha2-release-announcement.html[wrapped RichWidgets] in the RichFaces framework.
+
+== Widgets Available
+
+This first release makes four widgets available:
+
+=== Autocomplete widget
+Based on the jQuery UI widget factory, the autocomplete widget comes pre-configured 
+for a number of typical use cases.  Have a look at the http://www.richwidgets.io/input/autocomplete.html[autocomplete widget demo] to see how you can use the widget in your own application.
+
+The http://www.richwidgets.io/api/classes/autocomplete.html[autocomplete widget API docs].
+
+=== Charts widget
+The charts widget builds on the upstream Flot library and provides the ability to create several types of charts, including: line, pie, and bar charts.  Check out the http://www.richwidgets.io/output/charts.html[charts widget demo] to see some use cases for the various chart types.
+
+The http://www.richwidgets.io/api/classes/chart.html[chart widget API docs].
+
+=== Ordering list widget
+The ordering list widget is a simple widget used for re-ordering items in a list.  Built using the jQuery UI selectable and sortable plug-ins, the ordering list provides support for re-ordering items with either mouse clicks or via drag and drop.  Check out the http://www.richwidgets.io/select/ordering-list.html[ordering list widget demo] to see the ordering list in various configurations.
+
+The http://www.richwidgets.io/api/classes/orderingList.html[ordering list API docs].
+
+=== Pick list widget
+The pick list widget is composed of two ordering lists, and items can be selected by placing them in the target list.  Similarly to the ordering list, items can be moved by mouse clicks, or by drag and drop.  The http://www.richwidgets.io/select/pick-list.html[pick list demo] shows the pick list in various configurations.
+
+The http://www.richwidgets.io/api/classes/pickList.html[pick list widget API docs].
+
+== Next steps
+We will likely have a 0.1.1 micro release fixing some bugs with the existing widgets while we concurrently work on some new widgets for our 0.2 release.  We have some ideas about what we are targeting with https://github.com/richwidgets/richwidgets/issues?milestone=2[the 0.2 release], but nothing is set in stone.  Feel free to http://www.richwidgets.io/contributing.html[get involved] and help take the project to where you want it to go!

@@ -1,0 +1,65 @@
+= RichFaces 5.0.0.Alpha2 Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF50, Alpha2]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+RichFaces 5.0.0.Alpha2 is now available for download.  This second alpha release of our RichFaces 5 effort is significant as it brings in our new component architecture, new components, a further refinement in our approach to testing, and the beginnings of a new look and feel.  We'll dive further into each of these topics below.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha1. For more information on setting up a RichFaces application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+
+== New Component Architecture
+We've been planning a new component architecture https://community.jboss.org/thread/175973[for quite some time].  We http://www.bleathem.ca/blog/2012/11/polyglot-widgets.html[PoC'ed the concept] last year, and we now have the groundwork in place to move full-steam ahead.
+
+Our new component architecture is based on standalone javascript _widgets_ loosely coupled to the JSF back-end via an event-based mechanism.  Building JSF components on top of standalone javascript widgets has (among others) the following benefits:
+
+. Reduced delivery-time on new components when re-using existing OSS widgets.
+. Improved testability when testing widgets across many browser implementations/versions.
+. Widget re-use across multiple web frameworks - allowing for poly-framework/polyglot web applications with a consistent L&F.
+
+After delivering http://www.bleathem.ca/blog/2013/06/richfaces-500alpha1-release-announcement.html[RichFaces 5.0.0.Alpha1] we went off and hid in a corner for a while to lay the foundation for the javascript work required to pull this off.  We wanted to create a space where we could contribute our javascript development efforts in a true OSS manner and participate as closely as possible with upstream projects.
+
+To this end we created http://www.richwidgets.io/[RichWidgets], a _pure_ javascript project that sits upstream of RichFaces, providing the javascript implementations of the RichFaces 5 set of components.  Built with grunt and bower, and tested with karma and jasmine, the project should be easily accessible to all participating in the javascript development space, irrespective of the server-side framework/language with whcih they are trying to inter-operate.
+
+Styled with Bootstrap and the http://rcue-uxd.itos.redhat.com/[Red Hat Common User Experience], and powered using the http://api.jqueryui.com/jQuery.widget/[jQuery UI widget factory], RichWidgets provides users with both a consistent API and a consistent look-and-feel.
+
+Checkout what we have so for by browsing the http://www.richwidgets.io[RichWidgets demo site], of by taking a look at the https://github.com/richwidgets/richwidgets/[source code on GitHub].  If you are still curious, learn more about RichWidgets in the RichWidgets 0.1 release announcement.
+
+== New Components
+
+=== r:chart
+The RichFaces 5 chart component was built by a GSoC student (https://github.com/lukindo[Lukas Macko]) using the above mentioned JSF component architecture.  Built using the http://www.flotcharts.org/[Flot charting library], the flot charts were first wrapped as RichWidgets to provide a consistent javascript API and L&F.  Check out the RichWidgets http://www.richwidgets.io/output/charts.html[demo of the charts widget].
+
+The RichWidget charts were consumed by RichFaces, providing a first-class JSF component.  The RichFaces http://showcase-latest.richfaces.org/richfaces/component-sample.jsf?demo=chart[chart component demo] is currently shown in our old RichFaces 4 showcase - we are hard at work https://issues.jboss.org/browse/RF-13406[creating a new showcase] specific to RichFaces 5.
+
+=== r:autocomplete
+The RichFaces _autocomplete_ component has had a client-side rewrite using the RichWidgets approach.  Starting with the jQuery UI autocomplete component, the RichWidget autocomplete widget was built-up to have the features and extension points required for RichFaces integration.  The resulting RichWidget http://www.richwidgets.io/input/autocomplete.html[autocomplete widget demo] shows well the capabilities of the autocomplete widget.
+
+The RichWidget autocomplete widget was wrapped using the RichFaces CDK to provide another first-class JSF component.  The JSF facelet API has been maintained wherever possible to make it easy to migrate to the new version of the component.  You can see the RichFaces http://showcase-latest.richfaces.org/richfaces/component-sample.jsf?demo=autocomplete[autocomplete component demo] in the richfaces-latest showcase.
+
+=== r:orderingList
+In a similar manner to the _r:autocomplete_ rewrite, the r:orderingList we re-implemented as a javascript widget, built on top of the jQuery UI sortable and selectable plug-ins.  The RichWidget http://www.richwidgets.io/select/ordering-list.html[orderingList widget demo] shows the new capabilities achieved with this widget rewrite, including support for dragging items to re-order them.
+
+RichFaces 5 is consuming the orderingList widget via the RichFaces CDK, bringing these new capabilities to RichFaces/JSF applications.  Visit the RichFaces http://showcase-latest.richfaces.org/richfaces/component-sample.jsf?demo=orderingList[orderingList component demo] to see these capabilities in action.
+
+=== r:pickList
+The fourth and final new component available with RichFaces is the _pickList_ component.  Composed using two orderingList RichWidgets, the pickList also provides drag-and-drop between the source and target lists.  Check out the RichWidgets http://www.richwidgets.io/select/pick-list.html[demo of the pickList widget], and the RichFaces http://showcase-latest.richfaces.org/richfaces/component-sample.jsf?demo=pickList[demo of the pickList component].
+
+== Migrating applications
+With a revision in the major version number, I know many of you are apprehensive about the overhead involved in migrating to Richfaces 5.  We have taken your concerns to heart, and have worked heavily on porting the RichFaces 4 components to work the with the re-vamped RichFaces 5 core as a separate jar.  We are releasing this as Richfaces UI 4.5.0.Alpha1.  With this component set, you will be able to re-use the RichFaces 4 components in your Richfaces 5 application without any changes required to your facelet code.  You can then migrate to the new RichFaces 5 components on an as needed basis.
+
+In a parallel effort, we are working to maintain the facelet API of the RichFaces 5 components to minimize any barrier to adoption of the new components.  We are https://github.com/richfaces/richfaces/wiki/RichFaces-5-Migration-Guide[tracking any such API changes] that we do make, and will make these notes available in our 5.0.0.Final release documentation.
+
+== Testing Components with Page Fragments
+
+The http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html[RichFaces QE team] has developed a set of http://arquillian.org/blog/2012/09/19/introducting-arquillian-graphene-page-fragments/[Arquillian Graphene Page Fragments] for use in testing our components.  The neat thing about page fragments, is they _componentize_ the testing model, allowing for easy code re-use.  What do this mean for you as a RichFaces developer?  You can use the RichFaces page fragments to test your own application, and write your tests to a high-level component API, without worrying about the underlying DOM implementation.  If we update the DOM implementation of a component in a future release, we'll update the page fragment with it.  Your tests will not have to change to reflect the DOM change in any way!
+
+This idea is truly revolutionary, and I look forward to see how you the RichFaces community adopt these page fragments, and where you will take them.  Functional testing of enterprise web applications has never been so compelling!
+
+== Next Steps
+
+You will likely have noticed the lack of a mention of JSF 2.2 in this release announcement.  Unfortunately our plate was too full with this release to properly tackle JSF .2.2 support.  We do however recognize this as important to many of you, particularly with WildFly 8 in a Beta stage.  With this in mind we will make JSF 2.2 our primary focus for RichFaces 5.0.0.Alpha3, and will work to expedite it's release.  We will also continue with a release of our stable RichFaces 4.3 branch in the new year.

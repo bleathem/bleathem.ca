@@ -4,7 +4,6 @@ Brian Leathem
 :awestruct-tags: [RichFaces, RF50, Alpha2]
 :awestruct-image_url: /images/blog/common/richfaces_notext.png
 :awestruct-description: "RichFaces 5.0.0.Alpha2 is now available for download.  This second alpha release of our RichFaces 5 effort is significant as it brings in our new component architecture, new components, a further refinement in our approach to testing, and the beginnings of a new look and feel."
-"
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 

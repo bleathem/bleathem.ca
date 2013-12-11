@@ -2,7 +2,7 @@
 Brian Leathem
 :awestruct-layout: post
 :awestruct-tags: [RichWidgets, release]
-:awestruct-description: ""
+:awestruct-description: "RichWidgets 0.1 is released and ready for download.  The road to this first release was a long one, requiring us to get our first javascript project in order.  Built with grunt, dependencies managed by bower, and our jasmine tests run by karma, RichWidgets is pure javascript project and as such should be equally accessible with all languages and frameworks targeting the web."
 
 RichWidgets 0.1 is released and ready for download.  The road to this first release was a long one, requiring us to get our first javascript project in order.  Built with grunt, dependencies managed by bower, and our jasmine tests run by karma, RichWidgets is _pure_ javascript project and as such should be equally accessible with all languages and frameworks targeting the web.
 

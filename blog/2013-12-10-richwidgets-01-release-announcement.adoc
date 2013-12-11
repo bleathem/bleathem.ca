@@ -12,7 +12,7 @@ RichWidgets 0.1 is released and ready for download.  The road to this first rele
 == Design Choices
 The RichWidgets widgets are designed to be used either standalone, or integrated with a web-framework.  The widgets are built using the jQuery UI widget factory and styled with Bootstrap.  Wherever possible we aim to consume existing OSS widgets (contributing back wherever possible!).  By wrapping the upstream widgets with the jQuery UI widget factory, we aim to provide a set of responsive widgets with a well-defined life-cycle, a standard API, and a consistent look-and-feel.
 
-Have a look at http://www.richwidgets.io/[our demos] to get a feel for how you can use our widgets in your application.  Or, if you are a developer of a we framework, take a look at how we've link:richfaces-5-0-0-alpha2-release-announcement.html[wrapped RichWidgets] in the RichFaces framework.
+Have a look at http://www.richwidgets.io/[our demos] to get a feel for how you can use our widgets in your application.  Or, if you are a developer of a we framework, take a look at how we've link:richfaces-500alpha2-release-announcement.html[wrapped RichWidgets] in the RichFaces framework.
 
 == Widgets Available
 

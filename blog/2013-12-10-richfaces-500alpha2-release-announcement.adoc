@@ -27,7 +27,7 @@ To this end we created http://www.richwidgets.io/[RichWidgets], a _pure_ javascr
 
 Styled with Bootstrap and the http://rcue-uxd.itos.redhat.com/[Red Hat Common User Experience], and powered using the http://api.jqueryui.com/jQuery.widget/[jQuery UI widget factory], RichWidgets provides users with both a consistent API and a consistent look-and-feel.
 
-Checkout what we have so far by browsing the http://www.richwidgets.io[RichWidgets demo site], of by taking a look at the https://github.com/richwidgets/richwidgets/[source code on GitHub].  If you are still curious, learn more about RichWidgets in the link:richwidget-0-1-release-announcement.html[RichWidgets 0.1 release announcement].
+Checkout what we have so far by browsing the http://www.richwidgets.io[RichWidgets demo site], of by taking a look at the https://github.com/richwidgets/richwidgets/[source code on GitHub].  If you are still curious, learn more about RichWidgets in the link:richwidgets-01-release-announcement.html[RichWidgets 0.1 release announcement].
 
 == New Components
 

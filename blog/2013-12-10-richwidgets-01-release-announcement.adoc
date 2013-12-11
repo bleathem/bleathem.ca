@@ -7,7 +7,7 @@ Brian Leathem
 RichWidgets 0.1 is released and ready for download.  The road to this first release was a long one, requiring us to get our first javascript project in order.  Built with grunt, dependencies managed by bower, and our jasmine tests run by karma, RichWidgets is _pure_ javascript project and as such should be equally accessible with all languages and frameworks targeting the web.
 
 [.alert.alert-info]
-*To try out this release:* You can download the distribution https://github.com/richwidgets/richwidgets/releases[directly], or for bower users, point your bower.json file to consume the `richwidgets` library in the http://sindresorhus.com/bower-components/#!/search/richwidgets[bower registry].
+*To try out this release:* You can download the distribution https://github.com/richwidgets/richwidgets/releases[directly], or for bower users, point your bower.json file to consume the `richwidgets#0.1.0` library in the http://sindresorhus.com/bower-components/#!/search/richwidgets[bower registry].
 
 == Design Choices
 The RichWidgets widgets are designed to be used either standalone, or integrated with a web-framework.  The widgets are built using the jQuery UI widget factory and styled with Bootstrap.  Wherever possible we aim to consume existing OSS widgets (contributing back wherever possible!).  By wrapping the upstream widgets with the jQuery UI widget factory, we aim to provide a set of responsive widgets with a well-defined life-cycle, a standard API, and a consistent look-and-feel.

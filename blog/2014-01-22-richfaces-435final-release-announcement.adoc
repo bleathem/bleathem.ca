@@ -1,0 +1,86 @@
+= RichFaces 4.3.5.Final Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF43, Final]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+We are happy to release an update to our stable branch with the release of RichFaces https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12322481[4.3.5.Final].  This 5th micro release of the RichFaces http://www.bleathem.ca/blog/tags/RF43/[4.3 release] series provides a number of bug fixes while we concurrently work on https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[RichFaces 5].
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.3.5.Final. For more information on setting up a RichFaces 4 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+
+== Release Highlights
+This release resolves 50 issues, making RichFaces 4.3.5 a substantial bug-fix release.  The issues themselves span a number of components and features, offering an overall increase in framework stability.
+
+With this release we have brought back the Photoalbum demo from the RichFaces 3 project.  We've enhanced the demo offering social media tie-ins to facebook and google plus.  Check out the https://github.com/richfaces4/dev-examples/tree/master/photoalbum[source code on github].
+
+== Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12322481[+++<i class='icon-external-link-sign'></i>+++]
+
+=== Bug
+* https://issues.jboss.org/browse/RF-11469[RF-11469] - autocomplete method does not resolve bean if ui:included and only one parameter provided
+* https://issues.jboss.org/browse/RF-11973[RF-11973] - rich:contextMenu - after ajax re-render of table contextMenu no longer works
+* https://issues.jboss.org/browse/RF-12811[RF-12811] - VDL Documentation: rich:calendar is missing attribute "maxlength"
+* https://issues.jboss.org/browse/RF-12813[RF-12813] - rich:panelMenuItem executes action even if disabled attribute evaluates to true
+* https://issues.jboss.org/browse/RF-13172[RF-13172] - rich:toolbarGroup location="right" doesn't work if toolbarGroup location="left" contains not rendered values
+* https://issues.jboss.org/browse/RF-13208[RF-13208] - Push: error "not well-formed" appears in browser console in Firefox - make messages a valid XML
+* https://issues.jboss.org/browse/RF-13220[RF-13220] - Quickstart - Remove references to AS 7.1 in the RichFaces quickstarts
+* https://issues.jboss.org/browse/RF-13239[RF-13239] - Popup panel: CSS class rf-pp-hdr contains invalid property repeat-x
+* https://issues.jboss.org/browse/RF-13252[RF-13252] - a4j:ajax includes jsf.js script twice
+* https://issues.jboss.org/browse/RF-13257[RF-13257] - PhotoAlbum: uploading and deleting images
+* https://issues.jboss.org/browse/RF-13266[RF-13266] - mediaOutput not working anymore on Glassfish3 and EAP6.1
+* https://issues.jboss.org/browse/RF-13287[RF-13287] - rich:extendedDataTable column resizing with ajax loading not working properly
+* https://issues.jboss.org/browse/RF-13292[RF-13292] - Autocomplete: up and down arrow keys not working in Opera
+* https://issues.jboss.org/browse/RF-13298[RF-13298] - Richfaces BOM manages a non Maven Central dependency
+* https://issues.jboss.org/browse/RF-13342[RF-13342] - archetype-simpleapp: facelet with name 'title' is not defined in template, but it is used in the sample
+* https://issues.jboss.org/browse/RF-13358[RF-13358] - rich:panelMenuGroup allowing actions executions even if originally disabled
+* https://issues.jboss.org/browse/RF-13455[RF-13455] - The rich:tabPanel no longer visits tab header facets while rendering a response.
+* https://issues.jboss.org/browse/RF-13464[RF-13464] - Photoalbum: bad positioning of progressBar for G+/FB login on Firefox
+* https://issues.jboss.org/browse/RF-13465[RF-13465] - Photoalbum: cannot run album slideshow when an image has been added
+* https://issues.jboss.org/browse/RF-13466[RF-13466] - Photoalbum: editor for creating comments has not visible toolbar
+* https://issues.jboss.org/browse/RF-13467[RF-13467] - Photoalbum: wrong selector in js function when selecting album from multiple album groups
+* https://issues.jboss.org/browse/RF-13468[RF-13468] - Photoalbum build fails with JDK 6
+* https://issues.jboss.org/browse/RF-13471[RF-13471] - Photoalbum: search: option for search in own albums is not visible when logged in
+* https://issues.jboss.org/browse/RF-13473[RF-13473] - Photoalbum: cannot open help for fileUpload and dataScroller
+* https://issues.jboss.org/browse/RF-13485[RF-13485] - Photoalbum: cannot login with FB account
+* https://issues.jboss.org/browse/RF-13486[RF-13486] - Photoalbum: viewing g+ albums improvements
+* https://issues.jboss.org/browse/RF-13487[RF-13487] - Photoalbum: viewing FB albums improvements
+* https://issues.jboss.org/browse/RF-13497[RF-13497] - Photoalbum: cannot add album via contextMenu
+* https://issues.jboss.org/browse/RF-13500[RF-13500] - Photoalbum: viewing Facebook albums throws exception
+* https://issues.jboss.org/browse/RF-13501[RF-13501] - PhotoAlbum: sharing a photo does not work, can not choose album
+* https://issues.jboss.org/browse/RF-13502[RF-13502] - Photoalbum: editing uploaded photo throws NPE
+
+=== Component Upgrade
+* https://issues.jboss.org/browse/RF-13277[RF-13277] - Upgrade Atmosphere to 1.0.18
+* https://issues.jboss.org/browse/RF-13310[RF-13310] - Upgrade Graphene and Warp in 4.3 branch
+Enhancement
+* https://issues.jboss.org/browse/RF-13274[RF-13274] - Use QSTools:archetypeSync to keep the kitchensink archetype synchronized with the kithensink-rf quickstart
+* https://issues.jboss.org/browse/RF-13314[RF-13314] - Deprecate reslib resource files
+* https://issues.jboss.org/browse/RF-13439[RF-13439] - Photoalbum - update help section
+* https://issues.jboss.org/browse/RF-13462[RF-13462] - Photoalbum: improvements for adding album and album groups
+* https://issues.jboss.org/browse/RF-13463[RF-13463] - Photoalbum: improvements for adding images
+* https://issues.jboss.org/browse/RF-13479[RF-13479] - Re-organize files/folders in the top-level webapp folder
+* https://issues.jboss.org/browse/RF-13480[RF-13480] - Java package re-structure for the photoalbum demo
+
+=== Epic
+* https://issues.jboss.org/browse/RF-13047[RF-13047] - Implement improvements to the photoalbum application
+
+=== Feature Request
+* https://issues.jboss.org/browse/RF-12793[RF-12793] - Photoalbum improvements
+* https://issues.jboss.org/browse/RF-12949[RF-12949] - Create a set of Photoalbum smoke tests which will verify it starts and that the basic features works
+* https://issues.jboss.org/browse/RF-13227[RF-13227] - Prepare the RichFaces 4.3.x photoalbum for release
+* https://issues.jboss.org/browse/RF-13305[RF-13305] - Autocomplete: i must press button twice for popup window
+* https://issues.jboss.org/browse/RF-13306[RF-13306] - Autocomplete: initialize value from DOM (was: ignored API call .setValue(''))
+
+=== Patch
+* https://issues.jboss.org/browse/RF-13268[RF-13268] - Typo in LookAheadObjectInputStream.java
+Task
+* https://issues.jboss.org/browse/RF-13404[RF-13404] - Port the RichFaces 5 improvements back to RichFaces 4.3
+* https://issues.jboss.org/browse/RF-13405[RF-13405] - Merge the photoalbum fixes from QE
+* https://issues.jboss.org/browse/RF-13509[RF-13509] - Add Photoalbum sources to RichFaces distribution
+                
+== Moving forward
+
+You will likely have noticed no mention of JSF 2.2 in this announcement.  We are not at this time introducing JSF 2.2 support into our stable branch, but are rather doing so in the upcoming https://issues.jboss.org/browse/RF/fixforversion/12322162[5.0.0.Alpha3] release of RichFaces.  https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[Progress on RichFaces 5] has continued while we prepared the 4.3.5 release, and we have already committed a number of JSF 2.2 related fixes.  Look for this release in the next week or two.

@@ -1,0 +1,74 @@
+= RichFaces 5.0.0.Alpha3 Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF50, Alpha3]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+RichFaces https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12322162[5.0.0.Alpha3] has been released.  With this third alpha release of RichFaces 5 we are providing compatibility with JSF 2.2.  Go download http://www.wildfly.org/[WildFly] and give the JSF 2.2 capabilities of this release a spin.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha3. For more information on setting up a RichFaces application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces5x[getting started guide].
+
+== Release Notes
+
+This release does not provide any new components, but rather focuses on JSF 2.2 compatibility.  Looking through the issues resolved you can see both a number of component specific fixes as well as some framework "core" fixes.
+
+[.alert]
+*Note:* While this release adds support for JSF 2.2, you are still free to use RichFaces 5 with JSF 2.1
+
+=== Bug
+* https://issues.jboss.org/browse/RF-11973[RF-11973] - rich:contextMenu - after ajax re-render of table contextMenu no longer works
+* https://issues.jboss.org/browse/RF-12813[RF-12813] - rich:panelMenuItem executes action even if disabled attribute evaluates to true
+* https://issues.jboss.org/browse/RF-12865[RF-12865] - Correct deferred partial response ending by leveraging PVC wrapper chain
+* https://issues.jboss.org/browse/RF-13040[RF-13040] - Examples don't work on WildFly
+* https://issues.jboss.org/browse/RF-13041[RF-13041] - Metamer: demos throw NullPointerException
+* https://issues.jboss.org/browse/RF-13062[RF-13062] - r:validator stops working
+* https://issues.jboss.org/browse/RF-13093[RF-13093] - EPVC: ViewState must be written even for transient (stateless) views
+* https://issues.jboss.org/browse/RF-13168[RF-13168] - 3rd party JSF component disappears on RichFaces ajax refresh
+* https://issues.jboss.org/browse/RF-13197[RF-13197] - Input with name javax.faces.ViewState is not rendered after submit
+* https://issues.jboss.org/browse/RF-13198[RF-13198] - ITAutoRegisteredPushServlet fails with - Async is not supported for this request on WildFly80
+* https://issues.jboss.org/browse/RF-13199[RF-13199] - Framework tests does not include all needed classes to the deployment when deploying on WildFly
+* https://issues.jboss.org/browse/RF-13208[RF-13208] - Push: error "not well-formed" appears in browser console in Firefox - make messages a valid XML
+* https://issues.jboss.org/browse/RF-13239[RF-13239] - Popup panel: CSS class rf-pp-hdr contains invalid property repeat-x
+* https://issues.jboss.org/browse/RF-13252[RF-13252] - a4j:ajax includes jsf.js script twice
+* https://issues.jboss.org/browse/RF-13317[RF-13317] - ExtendedPartialViewContextImpl should specify correct javax.faces.ViewState id in startUpdate()
+* https://issues.jboss.org/browse/RF-13358[RF-13358] - rich:panelMenuGroup allowing actions executions even if originally disabled
+* https://issues.jboss.org/browse/RF-13369[RF-13369] - autocomplete problem in glassfish 4 with jsf 2.2
+* https://issues.jboss.org/browse/RF-13379[RF-13379] - Build on Travis fails due to NoClassDefFoundEx.: javax/servlet/Servlet (during framework resource optimization)
+* https://issues.jboss.org/browse/RF-13417[RF-13417] - Some warp-based framework tests fail on WildFly with exception 'Could not inject members'
+* https://issues.jboss.org/browse/RF-13420[RF-13420] - Showcase - WARNING No mime type could be found for file fontawesome-webfont.woff is logged
+* https://issues.jboss.org/browse/RF-13444[RF-13444] - r:fileUpload throws IOException "Request prolog cannot be read"
+* https://issues.jboss.org/browse/RF-13455[RF-13455] - The rich:tabPanel no longer visits tab header facets while rendering a response.
+* https://issues.jboss.org/browse/RF-13472[RF-13472] - Action listener: binding doesn't work
+* https://issues.jboss.org/browse/RF-13496[RF-13496] - StackOverflowError in RendererBase.encodeEnd
+* https://issues.jboss.org/browse/RF-13498[RF-13498] - Photoalbum - shutting down server with deployed app will throw JdbcSQLException:
+* https://issues.jboss.org/browse/RF-13508[RF-13508] - Deprecate reslib resource file - RF 4.5/5
+* https://issues.jboss.org/browse/RF-13513[RF-13513] - CollectionDataModel API is not available on pre-JSF 2.1 that poses backward compatibility problem
+* https://issues.jboss.org/browse/RF-13518[RF-13518] - Action Listener - invoking from composite component does not work
+* https://issues.jboss.org/browse/RF-13519[RF-13519] - Stackoverflow in CharRendererBase
+* https://issues.jboss.org/browse/RF-13520[RF-13520] - mediaOutput: NPE is thrown when used with CDI beans and JSF 2.2
+
+=== Component Upgrade
+* https://issues.jboss.org/browse/RF-13432[RF-13432] - Upgrade framework build to JSF 2.2
+* https://issues.jboss.org/browse/RF-13438[RF-13438] - Update jboss-parent to 12
+* https://issues.jboss.org/browse/RF-13454[RF-13454] - Upgrade integration tests use of WildFly to 8.0.0.CR1
+* https://issues.jboss.org/browse/RF-13481[RF-13481] - Upgrade to Warp 1.0.0.Alpha6
+
+=== Enhancement
+* https://issues.jboss.org/browse/RF-13278[RF-13278] - Add support for a 'header' meta-component to the rich:tabPanel
+* https://issues.jboss.org/browse/RF-13307[RF-13307] - Support java.util.Collection in iteration components
+* https://issues.jboss.org/browse/RF-13314[RF-13314] - Deprecate reslib resource files
+* https://issues.jboss.org/browse/RF-13494[RF-13494] - Make the RichFaces RendererBase decode/encode* methods final
+
+=== Task
+* https://issues.jboss.org/browse/RF-13248[RF-13248] - Switch RichFaces smoke tests to run on WildFly 8 by default
+* https://issues.jboss.org/browse/RF-13343[RF-13343] - Page Fragments: Re-implement setupFragmentFromWidget() methods using component options access
+* https://issues.jboss.org/browse/RF-13448[RF-13448] - Add javadoc to the SequenceIterationStatus class
+* https://issues.jboss.org/browse/RF-13517[RF-13517] - Mark all framework tests that requires JSF 2.2 with a new @Category(RequiresJSF22)
+
+== Next steps
+
+We have begun work on RichFaces https://issues.jboss.org/browse/RF/fixforversion/12323897[5.0.0.Alpha4].  Our fourth alpha release will provide some additional component migrations to the new RichWidget-based architecture and the associated Bootstrap-based style.

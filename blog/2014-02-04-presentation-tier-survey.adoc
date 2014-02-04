@@ -2,7 +2,7 @@
 Brian Leathem
 :awestruct-layout: post
 :awestruct-tags: [RichFaces, JSF, JBoss, presentation tier, survey]
-:awestruct-description: "Please fill out this bit.ly/jboss-presentation-tier-survey[survey] to help us at JBoss better understand the presentation tier technologies you use when building your applications."
+:awestruct-description: "Please fill out this bit.ly/jboss-presentation-tier-survey to help us at JBoss better understand the presentation tier technologies you use when building your applications."
 
 It's feedback time!  Developers today are presented with an abundance of options when selecting which technologies will form the basis of their applications.  Even if we constrain ourselves to the presentation tier, that choices available are staggering.  Technology providers then get to play the fun game of anticipating in which direction its users and customers are headed and make sure they are providing them with value.
 

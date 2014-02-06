@@ -3,7 +3,7 @@ Brian Leathem
 :awestruct-layout: post
 :awestruct-tags: [RichFaces, RF50, Alpha3]
 :awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: ""
+:awestruct-description: "RichFaces 5.0.0.Alpha3 has been released addressing JSF 2.2 compatibility.  Try this release of RichFaces out with the latest WildFly 8 release and take advantage of the spec improvements available in JSF 2.2"
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
@@ -11,6 +11,10 @@ RichFaces https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&ve
 
 [.alert.alert-info]
 *To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha3. For more information on setting up a RichFaces application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces5x[getting started guide].
+
+== RichFaces 4 compatibility
+
+We are keeping forward compatibility front of mind with an updated release of RichFaces UI 4.5.0.Alpha2.  This release of the RichFaces 4 UI components has been updated to work with the latest RichFaces 5 core.
 
 == Release Notes
 

@@ -1,0 +1,26 @@
+= Hands on with the jQuery UI widget factory at DevNation
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [jQuery, jQuery UI, Widgets]
+:awestruct-image_url: /images/blog/2014-03-11-jqeury-ui-widgets-at-devnation/devnation_250x250_blogbadge_joinme.png
+:awestruct-description: ""
+
+image::/images/blog/2014-03-11-jqeury-ui-widgets-at-devnation/devnation_250x250_blogbadge_joinme.png[DevNation, float="right", link="http://devnation.org/"]
+
+I'm thrilled to be speaking the upcoming http://www.devnation.org/[DevNation conference].  DevNation is an Open Source Developer conference co-located with the http://www.redhat.com/summit/[Red Hat Summit].  With the announced http://www.devnation.org/#agenda[agenda] and the co-location with Summit, the conference is shaping up to be quite the event!
+
+I'll be speaking about http://www.devnation.org/#details-leathem[developing widgets with the jQuery UI widget factory].  We'll look at how the widget factory takes away much of the boiler plate when writing stateful jQuery plug-ins, statefulness that comes intrinsically when creating visual plug-ins.  This talk is based off of the work we've been doing lately with http://richwidgets.io[RichWidgets].  It's a widely applicable topic, as the browser is the target for so many applications frameworks and languages.
+
+I'm also really looking forward to participating in the Beer & BoF _Mobile & Rich Client smack down_.  I participated in the BOF at the 2012 JBoss World, and it was a lot of fun.  The guys behind a number of UI frameworks at JBoss get together in a no-holds barred smack down between the various framework.  The tongue-in-cheek approach is entertaining, and the content discussed is very enlightening.  Be sure to attend this BOF if you are curious how the various UI technologies stack up against each other.
+
+While at the conference I look forward to attending a number of interesting looking sessions:
+
+* jQuery: Behind the JavaScript - Kris Borchers
+* Write your first Ceylon program with the language author - Gavin King 
+* High Performance Reactive Applications with Vert.x - Tim Fox 
+* Full stack Javascript from mobile to cloud - Grant Shipley
+* Mobile web development: workflow and best practises - Luke Holmquist 
+
+Finally let's not forget the hacknight!  Here's a great chance to share a table with a group of developers and hack away on some OSS.  From new contributors to old, all are welcome.  Come and share your ideas and your code!
+
+I look forward to meeting many folks at DevNation - feel free to track me down if there is anything you want to discuss, or even just to say hi!

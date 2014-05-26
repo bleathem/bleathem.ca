@@ -1,0 +1,44 @@
+= RichFaces 4.3.7.Final Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF43, Final]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+The RichFaces stable branch receives an update with the release of RichFaces https://issues.jboss.org/browse/RF/fixforversion/12324641[4.3.7.Final].  This most recent micro release of the RichFaces http://www.bleathem.ca/blog/tags/RF43/[4.3 release] series provides a number of bug fixes while we concurrently work on getting a JSF 2.2 compatible https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[RichFaces 4.5] released.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.3.7.Final. For more information on setting up a RichFaces 4 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+
+== Release Highlights
+This release resolves 13 issues, making RichFaces 4.3.5 a small bug-fix release.  Hopefully this reflects well on the stability of the framework!  The issues themselves address fixes for the tab, popupPanel, push, contextMenu, pickList and showcase.  Full details of the fixes included are available in the release notes below.
+
+
+== Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12324641[+++<i class='icon-external-link-sign'></i>+++]
+
+=== Bug
+* https://issues.jboss.org/browse/RF-11417[RF-11417] - Tab: investigate why @action does not work
+* https://issues.jboss.org/browse/RF-11427[RF-11427] - rich:tab - actionListener
+* https://issues.jboss.org/browse/RF-11736[RF-11736] - rich:popupPanel x domElementAttachment="parent"
+* https://issues.jboss.org/browse/RF-13569[RF-13569] - Photoalbum: the change of users avatar doesn't work
+* https://issues.jboss.org/browse/RF-13592[RF-13592] - a4j:push doesn't work after rendering
+* https://issues.jboss.org/browse/RF-13613[RF-13613] - ContextMenu doesn't show on mouseover
+* https://issues.jboss.org/browse/RF-13616[RF-13616] - PopupPanel autosize with togglePanel doesn't resize
+* https://issues.jboss.org/browse/RF-13629[RF-13629] - popupPanel - minWidth, minHeight, maxWidth, maxHeight are not ignored when autosize == true
+
+=== Component Upgrade
+* https://issues.jboss.org/browse/RF-13364[RF-13364] - Upgrade Mojarra to 2.1.28 in RichFaces 4.3.x
+
+=== Enhancement
+* https://issues.jboss.org/browse/RF-13478[RF-13478] - VDL documentation typos
+* https://issues.jboss.org/browse/RF-13506[RF-13506] - Incorrect information on showcase fileUpload sample page (maxRequestSize description)
+* https://issues.jboss.org/browse/RF-13564[RF-13564] - rich:pickList shows an outline when clicked
+
+=== Task
+* https://issues.jboss.org/browse/RF-13512[RF-13512] - Photoalbum: port fix from RF-13498 to RF4 photoalbum
+                
+== Moving forward
+
+We are finishing off work on our https://issues.jboss.org/browse/RF/fixforversion/12324013[RichFaces 4.5 release] to address JSF 2.2 compatibility with the RichFaces 4.x branch.  This has necessitated we put RichFaces 5 development on hold, but we feel will be worth it to get JSF 2.2 support in a stable release sooner rather than later.

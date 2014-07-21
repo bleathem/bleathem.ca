@@ -1,0 +1,134 @@
+= RichFaces 4.5.0.Alpha3 Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF45, Alpha]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+We have a feature complete release of RichFaces 4.5 available with the release of RichFaces https://issues.jboss.org/browse/RF/fixforversion/12324013[4.5.0.Alpha3].  This is a full framework release with RichFaces 4.5.0.Alpha3, whereas previous 4.5 Alpha releases consisted of just the components.  We've back-ported many of the improvements from RichFaces 5 Alphas into this release, while maintaining backward compatibility with the RichFaces 4.3 branch.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Alpha3. For more information on setting up a RichFaces 4 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+
+== Release Highlights
+Significant improvements in this RichFaces 4.5.0.Alpha3 release over previous 4.3 releases include:
+
+* JSF 2.2 compatibility
+* Our replacement Extended PartialViewContext (PVC) that extends the JSF PVC (for better interoperability with other JSF-based frameworks)
+* A re-vamped build consisting of a single (multi-module) repository
+* Chart components developed as part of last year's GSoC
+* The updated JSF 2.2 compatible RichFaces Fileupload component
+* A type-safe approach for attribute definitions (using interfaces rather than xml)
+* Page fragments for abstracting your functional tests
+* An simplified Asciidoc version of the docs
+ 
+== Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12324013[+++<i class='icon-external-link-sign'></i>+++]
+
+=== Bug
+* https://issues.jboss.org/browse/RF-11093[RF-11093] - UIDataAdaptor context variable backup broken (re-entrance problem)
+* https://issues.jboss.org/browse/RF-12108[RF-12108] - Components second tab changes are not rendered after performing some ajax action if attribute ajaxRendered="true" inside <rich:message /> located on first tab
+* https://issues.jboss.org/browse/RF-12132[RF-12132] - RichFaces queue not cleared after js error in oncomplete attribute
+* https://issues.jboss.org/browse/RF-13018[RF-13018] - a4j:commandButton wrong actions performed
+* https://issues.jboss.org/browse/RF-13200[RF-13200] - Tree: Uncaught TypeError: Object #<Object> has no method '$'
+* https://issues.jboss.org/browse/RF-13235[RF-13235] - Tree - Row key conversion fails (UITree should not have generated @rowKeyConverter, since it is fully implemented in AbstractTree)
+* https://issues.jboss.org/browse/RF-13361[RF-13361] - Placeholder inside calendar is not rendered
+* https://issues.jboss.org/browse/RF-13374[RF-13374] - RichFaces push registered as $.fn.push overrides jQuery function
+* https://issues.jboss.org/browse/RF-13498[RF-13498] - Photoalbum - shutting down server with deployed app will throw JdbcSQLException:
+* https://issues.jboss.org/browse/RF-13513[RF-13513] - CollectionDataModel API is not available on pre-JSF 2.1 that poses backward compatibility problem
+* https://issues.jboss.org/browse/RF-13518[RF-13518] - Action Listener - invoking from composite component does not work
+* https://issues.jboss.org/browse/RF-13520[RF-13520] - mediaOutput: NPE is thrown when used with CDI beans and JSF 2.2
+* https://issues.jboss.org/browse/RF-13559[RF-13559] - Backport RF-13018 (a4j:commandButton wrong actions performed) to RF 4
+* https://issues.jboss.org/browse/RF-13565[RF-13565] - RichFaces 4.5 not compilable because of FileUploadResourcesTest
+* https://issues.jboss.org/browse/RF-13580[RF-13580] - RichFaces 4.5.x branch doesn't compile
+* https://issues.jboss.org/browse/RF-13581[RF-13581] - Remove components from the framework module
+* https://issues.jboss.org/browse/RF-13591[RF-13591] - RichFaces 4.5 integration tests are failing
+* https://issues.jboss.org/browse/RF-13609[RF-13609] - Showcase doesn't build
+* https://issues.jboss.org/browse/RF-13610[RF-13610] - Resource loading error in the showcase
+* https://issues.jboss.org/browse/RF-13611[RF-13611] - RichFaces 5.0.0.Alpha3 doesn't work with Weld 2.2.0.Final
+* https://issues.jboss.org/browse/RF-13614[RF-13614] - RichFaces 4.5 unit tests are failing
+* https://issues.jboss.org/browse/RF-13615[RF-13615] - ExtendedDataTable: double ajax request on scrolling
+* https://issues.jboss.org/browse/RF-13630[RF-13630] - RichFaces 4.5.x can not be built due to cyclic maven dependency
+* https://issues.jboss.org/browse/RF-13635[RF-13635] - rich:menuGroup: Menu node image is missing
+* https://issues.jboss.org/browse/RF-13640[RF-13640] - Autocomplete with custom layout: cant select item by mouse
+* https://issues.jboss.org/browse/RF-13644[RF-13644] - Rich:editor JS Error in IE11
+* https://issues.jboss.org/browse/RF-13646[RF-13646] - Fix resource optimization
+* https://issues.jboss.org/browse/RF-13647[RF-13647] - File Download throws exception when used with a commandButton of type="button"
+* https://issues.jboss.org/browse/RF-13649[RF-13649] - TogglePanel: fails to render meta-component '@header'
+* https://issues.jboss.org/browse/RF-13650[RF-13650] - ITResourceOptimization tests fail - no resource aggregation applied
+* https://issues.jboss.org/browse/RF-13656[RF-13656] - Table collapse after tab change
+* https://issues.jboss.org/browse/RF-13657[RF-13657] - Remove bootstrap, font-awesome and richwidgets from 4.5
+* https://issues.jboss.org/browse/RF-13658[RF-13658] - Component issues in 4.5
+* https://issues.jboss.org/browse/RF-13676[RF-13676] - InputNumberSpinner - Validation is not triggered by ajax when nested in iteration components
+* https://issues.jboss.org/browse/RF-13677[RF-13677] - InputNumberSlider & Spinner render does not work when nested in iteration components
+* https://issues.jboss.org/browse/RF-13678[RF-13678] - Render @all does not work for nested a4j:region in collapsibleSubTable
+* https://issues.jboss.org/browse/RF-13679[RF-13679] - PickList is missing styleClass attribute
+* https://issues.jboss.org/browse/RF-13680[RF-13680] - Editor JS API method blur does not work after upgrade of CKEditor
+* https://issues.jboss.org/browse/RF-13682[RF-13682] - Stateless view: CSS stylesheets not included in head after form submit
+* https://issues.jboss.org/browse/RF-13684[RF-13684] - GraphValidator with uiRepat does not validate numeric group correctly
+* https://issues.jboss.org/browse/RF-13685[RF-13685] - ExtendedPartialViewContext.release causes IllegalStateException
+* https://issues.jboss.org/browse/RF-13687[RF-13687] - TabPanel header is not updated after switching of tabs
+* https://issues.jboss.org/browse/RF-13692[RF-13692] - Photoalbum can not be deployed to WildFly 8.0.x or 8.1.x due to Weld exception
+* https://issues.jboss.org/browse/RF-13697[RF-13697] - fileupload: maxFilesQuantity + multiple select: can upload more files than the limit
+* https://issues.jboss.org/browse/RF-13698[RF-13698] - RF 4.5 Chart title does not render
+* https://issues.jboss.org/browse/RF-13699[RF-13699] - RF 4.5 Chart attribute 'zoom' does not work
+* https://issues.jboss.org/browse/RF-13701[RF-13701] - RF 4.5 Bar chart plotClick malfunctioning
+* https://issues.jboss.org/browse/RF-13706[RF-13706] - dequeued Ajax request not processed correctly if its source element has been updated
+* https://issues.jboss.org/browse/RF-13717[RF-13717] - Some integration tests within components/rich are using wrongly FrameworkDeployment class
+
+=== Component Upgrade
+* https://issues.jboss.org/browse/RF-13571[RF-13571] - Upgrade Arquillian components: Core, Drone, Warp
+* https://issues.jboss.org/browse/RF-13641[RF-13641] - Upgrade CSSParser to 0.9.14
+* https://issues.jboss.org/browse/RF-13667[RF-13667] - Upgrade mojarra dependency
+Enhancement
+* https://issues.jboss.org/browse/RF-13027[RF-13027] - Warning when deploying showcase - using a private modules which can be removed in the future
+* https://issues.jboss.org/browse/RF-13160[RF-13160] - Refactor the InputNumber* components into abstract classes
+* https://issues.jboss.org/browse/RF-13307[RF-13307] - Support java.util.Collection in iteration components
+* https://issues.jboss.org/browse/RF-13505[RF-13505] - Refactor custom tree traversal logic in EPVCI in order to leverage VisitContextFactory (blocked by Mojarra issue)
+* https://issues.jboss.org/browse/RF-13514[RF-13514] - Support file upload progress tracking in Servlets >= 3.0 environment
+* https://issues.jboss.org/browse/RF-13612[RF-13612] - Document styling attributes for rich:dataTable
+* https://issues.jboss.org/browse/RF-13623[RF-13623] - Merge components/pom with components/parent/pom in 4.5.x
+* https://issues.jboss.org/browse/RF-13634[RF-13634] - Consolidate deployment classes for integration tests
+* https://issues.jboss.org/browse/RF-13675[RF-13675] - Showcase: chart component improvements
+* https://issues.jboss.org/browse/RF-13683[RF-13683] - Backport RF-13237 (Showcase: enable debugging tools (ui:debug, r:log) when in development mode) to RF 4.5 and 4.3 Showcase
+* https://issues.jboss.org/browse/RF-13713[RF-13713] - Create Smoke test(s) for chart in RF 4.5
+
+=== Feature Request
+* https://issues.jboss.org/browse/RF-12292[RF-12292] - "this" in oncomplete of a4j:commandButton returns window object.
+* https://issues.jboss.org/browse/RF-13597[RF-13597] - Drag and drop support for file upload
+* https://issues.jboss.org/browse/RF-13620[RF-13620] - Port the RichFaces 5 re-write of xml attribute to interfaces
+* https://issues.jboss.org/browse/RF-13636[RF-13636] - Add List Impls to the resource serialization whitelist
+* https://issues.jboss.org/browse/RF-13638[RF-13638] - Upgrade CKEditor to 4.3
+* https://issues.jboss.org/browse/RF-13651[RF-13651] - Integration tests failing in chrome
+* https://issues.jboss.org/browse/RF-13664[RF-13664] - EDT firstChild call will return a text element when the source code is formatted to have one element per line
+* https://issues.jboss.org/browse/RF-13665[RF-13665] - RichFaces 4.5 should fail fast when used with un-patched Mojarra
+* https://issues.jboss.org/browse/RF-13670[RF-13670] - Update the "new" labels in the showcase
+* https://issues.jboss.org/browse/RF-13673[RF-13673] - Backport the plain skin fix from RF 5
+
+=== Task
+* https://issues.jboss.org/browse/RF-13334[RF-13334] - Upgrade jQuery UI to 1.10.3
+* https://issues.jboss.org/browse/RF-13507[RF-13507] - Backport RF-13317 (EPVCI should specify correct ViewState)
+* https://issues.jboss.org/browse/RF-13582[RF-13582] - Revert the core package re-factoring
+* https://issues.jboss.org/browse/RF-13583[RF-13583] - Backport the chart components to RichFaces 4.5 components module
+* https://issues.jboss.org/browse/RF-13584[RF-13584] - Backport the RF 5 component fixes
+* https://issues.jboss.org/browse/RF-13585[RF-13585] - Re-factor the components demo
+* https://issues.jboss.org/browse/RF-13586[RF-13586] - Port the page fragments to RF 4.5
+* https://issues.jboss.org/browse/RF-13608[RF-13608] - Apply appropriate package and artifact names to the component poms
+* https://issues.jboss.org/browse/RF-13626[RF-13626] - Rename the BOM artifact
+* https://issues.jboss.org/browse/RF-13627[RF-13627] - Refactor the RF 4.5 components to make use of the type-safe handlerClass attribute
+* https://issues.jboss.org/browse/RF-13631[RF-13631] - Remove the components/dist module
+* https://issues.jboss.org/browse/RF-13632[RF-13632] - RF 4.5 - refactor Javascript namespaces
+* https://issues.jboss.org/browse/RF-13637[RF-13637] - Refresh the dist zip for RF 4.5
+* https://issues.jboss.org/browse/RF-13642[RF-13642] - Fork and re-factor the asciidoc-based docs from RF 5 to RF 4.5
+* https://issues.jboss.org/browse/RF-13652[RF-13652] - Forward port the 4.3.7 fixes into the 4.5.x branch
+* https://issues.jboss.org/browse/RF-13653[RF-13653] - Update component namespaces in 4.5 examples
+* https://issues.jboss.org/browse/RF-13654[RF-13654] - Port photoalbum changes from 4.3.x
+* https://issues.jboss.org/browse/RF-13672[RF-13672] - Framework tests: add profile for WildFly 8.1
+* https://issues.jboss.org/browse/RF-13694[RF-13694] - Update README files for RichFaces 4.5.x
+* https://issues.jboss.org/browse/RF-13709[RF-13709] - Remove the chart components from the RichFaces mobile showcase
+
+
+== Next steps
+
+With RichFaces 4.5.0.Alpha3 being feature complete we will proceed with a series of stabilizing Betas, followed by CR and Final releases in the end-of-summer / early-fall time-frame.  The post 4.5.0 story is a bit more complicated, and deserving of link:richfaces-will-pursue-stability-over-innovation.html[it's own post].

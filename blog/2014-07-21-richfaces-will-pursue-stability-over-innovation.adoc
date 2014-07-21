@@ -1,0 +1,31 @@
+= RichFaces will pursue a path of stability over innovation
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF45, RF50]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+For more than a decade now, JavaServer Faces (JSF) has held a special place as the sole portion of the JavaEE specification that addresses building UI's for our web applications.  As such JSF has historically been the only web front-end we've pushed at JBoss.  Along with Seam and later CDI, RichFaces has been an important part of our JSF story, and a vehicle for our innovation in the JSF space.  We are very proud to see so many of the initiatives we've spearheaded in the RichFaces project standardized in recent iterations of the JSF standard.
+ 
+Nowadays however, developers are increasingly being asked to create mobile web applications; a use case for which the server-side rendering model used by JSF is proving to be insufficient.  Many mobile web-developers are looking to client-side javascript frameworks to help them build the rich and fast-responding web applications their users are demanding.  Many parts of the industry are moving to rich HTML5-based web apps that leverage frameworks like jQuery or AngularJS with lighter-weight server resources that leverage JAX-RS.  Through JBoss Developer (http://www.jboss.org/developer-materials) we've been providing examples and quickstarts to help developers explore and get started with these new approaches for building user interfaces.  Be sure to take a look through those quickstarts to explore the available alternatives to JSF for building Web UIs.
+ 
+With these trends in mind, we've decided that moving forward we will pursue a path of stability with our JSF approach, rather than a path of innovation.  We will continue to track the JSF spec with our RichFaces components and address compatibility issues with new browsers.  Applications currently running with RichFaces 4 can continue to do so with an assurance of stability. With this goal in mind we are focusing on delivering a RichFaces 4.5 release, rather than the previously planned RichFaces 5.
+ 
+RichFaces 4.5 will include:
+
+* JSF 2.2 compatibility
+* Our replacement Extended PartialViewContext (PVC) that extends the JSF PVC (for better interoperability with other JSF-based frameworks)
+* A re-vamped build consisting of a single (multi-module) repository
+* Chart components developed as part of last year's GSoC
+* The updated JSF 2.2 compatible RichFaces Fileupload component
+* A type-safe approach for attribute definitions (using interfaces rather than xml)
+* Page fragments for abstracting your functional tests
+* An simplified Asciidoc version of the docs
+ 
+Some of the ideas we prototyped in RichFaces 5 that will not be available in RichFaces 4.5 include the collapsed component namespace, the JSF independent client-side component implementation (RichWidgets), the Bootstrap theme, and the java package re-factoring.
+
+RichFaces 4.5 will support JSF 2.2 and will be backwards compatible with RichFaces 4.3.  This will allow your RichFaces applications to take advantage of the latest and greatest improvements in JSF, without incurring any migration costs.  We have a feature-complete release of link:richfaces-450alpha3-release-announcement.html[RichFaces 4.5.0.Alpha3 available today] for you to try these features out.
+ 
+While we are no longer pursuing further innovation with our set of custom JSF components (RichFaces), the JSF runtime on JBoss EAP / WildFly is here to stay - it is part of the JavaEE specification after all.  Likewise the JSF tooling in JBoss Tools and Developer Studio will not disappear.  You are welcome to continue running your JSF-based applications on JBoss EAP / WildFly using either our stabilized RichFaces components or any of the other JSF component sets available.

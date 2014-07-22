@@ -131,4 +131,4 @@ Enhancement
 
 == Next steps
 
-With RichFaces 4.5.0.Alpha3 being feature complete we will proceed with a series of stabilizing Betas, followed by CR and Final releases in the end-of-summer / early-fall time-frame.  The post 4.5.0 story is a bit more complicated, and deserving of link:richfaces-will-pursue-stability-over-innovation.html[it's own post].
+With RichFaces 4.5.0.Alpha3 being feature complete we will proceed with a series of stabilizing Betas, followed by CR and Final releases in the end-of-summer / early-fall time-frame.  The post 4.5.0 story is a bit more complicated, and deserving of link:/blog/2014/07/richfaces-will-pursue-stability-over-innovation.html[it's own post].

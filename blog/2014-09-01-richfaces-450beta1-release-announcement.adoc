@@ -7,7 +7,7 @@ Brian Leathem
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
-The first beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12324941[4.5.0.Beta1]) is now available.  This full framework release incorporates a number library upgrades as well as some new features for existing components.  Read below for a summary of the issues resolved, and stay tuned for further posts going into the improvements in detail.
+The first beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12324941[4.5.0.Beta1]) is now available.  This full framework release incorporates a number of library upgrades as well as some new features for existing components.  Read below for a summary of the issues resolved, and stay tuned for further posts going into the improvements in detail.
 
 [.alert.alert-info]
 *To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Beta1. For more information on setting up a RichFaces 4 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
@@ -16,14 +16,14 @@ The first beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixf
 Significant improvements in this RichFaces 4.5.0.Beta1 release include:
 
 * Big update to RichFaces push with the upgrade of Atmosphere to 2.2.0
-* jQuery upgrade to 1.11.1
-* Google Guava updated to 17.0
 * DataTable component gets built-in sorting and filtering
 * Select component gets autcomplete functionality (for autocompleting on object selection)
-* Showcase gets functional tests
+* jQuery upgrade to 1.11.1
+* Google Guava updated to 17.0
+* Showcase gets automated functional tests
 
 === Atmosphere upgrade to 2.2.0
-While Atmosphere 2.2.0 supports websockets out-of-the box, the RichFaces push component configuration still uses long-polling.  This issue (https://issues.jboss.org/browse/RF-13787[RF-13787]) has already been resolved and will be available in the upcoming https://issues.jboss.org/browse/RF/fixforversion/12325456[4.5.0.Beta2] release.
+While Atmosphere 2.2.0 supports websockets out-of-the box, however the RichFaces push component configuration still uses long-polling.  This issue (https://issues.jboss.org/browse/RF-13787[RF-13787]) has already been resolved and will be available in the upcoming https://issues.jboss.org/browse/RF/fixforversion/12325456[4.5.0.Beta2] release.
 
 === Built-in sorting and filtering of the DataTable
 The built-in sorting and filtering capabilities of the ExtendedDataTable have been ported to the simpler DataTable component.  As with the ExtendedDataTable, you'll have to disable the built-in sorting and filtering controls if you instead want to use custom controls.  For further details refer to the RichFaces http://docs.jboss.org/richfaces/latest_4_X/Component_Reference/en-US/html/chap-Component_Reference-Tables_and_grids.html#sect-Component_Reference-Tables_and_grids-Table_filtering[Component Reference] for additional details on using the built-in and external filter controls.

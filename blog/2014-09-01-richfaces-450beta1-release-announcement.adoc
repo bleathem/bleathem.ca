@@ -10,7 +10,7 @@ image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://
 The first beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12324941[4.5.0.Beta1]) is now available.  This full framework release incorporates a number of library upgrades as well as some new features for existing components.  Read below for a summary of the issues resolved, and stay tuned for further posts going into the improvements in detail.
 
 [.alert.alert-info]
-*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Beta1. For more information on setting up a RichFaces 4 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Beta1. For more information on setting up a RichFaces 4 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
 
 == Release Highlights
 Significant improvements in this RichFaces 4.5.0.Beta1 release include:

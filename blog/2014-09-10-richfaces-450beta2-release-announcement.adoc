@@ -1,0 +1,59 @@
+= RichFaces 4.5.0.Beta2 Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF45, Beta]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+The first beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12324941[4.5.0.Beta2]) has been released.  This release focuses on stabilizing RichFaces 4.5.0.Beta1 with a number of bug fixes.  Read below for a summary of the issues resolved.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Beta2. For more information on setting up a RichFaces 4 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
+
+Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12325456[+++<i class='icon-external-link-sign'></i>+++]
+
+=== Bug
+* https://issues.jboss.org/browse/RF-11090[RF-11090] - rich:collapsibleSubTable cannot be nested
+* https://issues.jboss.org/browse/RF-11656[RF-11656] - Nested collapsibleSubTable always expanded
+* https://issues.jboss.org/browse/RF-12399[RF-12399] - Showcase: rich:contextmenu cannot find image
+* https://issues.jboss.org/browse/RF-13081[RF-13081] - Facets "disabled" not working for dataScroller
+* https://issues.jboss.org/browse/RF-13645[RF-13645] - contextMenu for extendedDataTable breaks after ajax render of contextMenu
+* https://issues.jboss.org/browse/RF-13655[RF-13655] - Popup Panel autosize does not work when its content is dynamically updated
+* https://issues.jboss.org/browse/RF-13708[RF-13708] - Photoalbum: refresh over index page throws error
+* https://issues.jboss.org/browse/RF-13722[RF-13722] - Document CDK Maven Changes for 4.5
+* https://issues.jboss.org/browse/RF-13747[RF-13747] - a4j:commandLink does not have a default event name
+* https://issues.jboss.org/browse/RF-13781[RF-13781] - Enable RichFaces to be built with the jdk6
+* https://issues.jboss.org/browse/RF-13783[RF-13783] - Placeholder: attribute styleClass doesn't work inside inplace input and inplace select
+* https://issues.jboss.org/browse/RF-13787[RF-13787] - Push with EAP 6.3 not using WebSockets
+* https://issues.jboss.org/browse/RF-13790[RF-13790] - Showcase - dataTable Styling example - broken styling after built in sorting/filtering is enabled
+* https://issues.jboss.org/browse/RF-13791[RF-13791] - Push in Showcase with EAP 6.2
+* https://issues.jboss.org/browse/RF-13794[RF-13794] - FileUpload serverError on upload on Wildfly
+* https://issues.jboss.org/browse/RF-13795[RF-13795] - RichFaces build is broken when running integration with release profile
+* https://issues.jboss.org/browse/RF-13798[RF-13798] - Showcase: select sample is not working [myfaces]
+* https://issues.jboss.org/browse/RF-13803[RF-13803] - Push on Tomcat 8: Unable to load current conversations from the associated request
+* https://issues.jboss.org/browse/RF-13804[RF-13804] - rich:select selectFirst attribute not working
+* https://issues.jboss.org/browse/RF-13814[RF-13814] - Photoalbum cannot be deployed to EAP
+* https://issues.jboss.org/browse/RF-13817[RF-13817] - Both the Component Reference are missing the Revision History appendices
+
+=== Component Upgrade
+* https://issues.jboss.org/browse/RF-13774[RF-13774] - Upgrade MyFaces to 2.2.4
+* https://issues.jboss.org/browse/RF-13805[RF-13805] - Upgrade jsf-test to 1.1.8
+
+=== Enhancement
+* https://issues.jboss.org/browse/RF-12674[RF-12674] - Write framework tests for Autocomplete tokenizing feature
+* https://issues.jboss.org/browse/RF-13056[RF-13056] - Showcase - delete unused configuration for GAE
+* https://issues.jboss.org/browse/RF-13796[RF-13796] - Chart component - documentation improvement
+
+=== Feature Request
+* https://issues.jboss.org/browse/RF-8701[RF-8701] - dataScroller: add facets support for customizations
+* https://issues.jboss.org/browse/RF-13797[RF-13797] - Integration tests - enable HTTPS testing on Wildfly
+* https://issues.jboss.org/browse/RF-13807[RF-13807] - Add a an autocomplete sample for the select component to the showcase
+
+=== Task
+* https://issues.jboss.org/browse/RF-13765[RF-13765] - EDT: meta-components @footer, @header and @body are not documented
+* https://issues.jboss.org/browse/RF-13800[RF-13800] - docs: rich:select: add information about autocomplete functionality
+
+= Next steps
+Work on RichFaces 4.5.0.CR1 is currently underway.  However, API compatibility with RichFaces 4.3 is a top-priority with us for this release (making migrations as easy as possible).  As such we may squeeze in a 4.5.0.Beta3 release to ensure we get a 4.5 release that is fully compatible with 4.3.  We'll make this decision as we get close to our next milestone release.

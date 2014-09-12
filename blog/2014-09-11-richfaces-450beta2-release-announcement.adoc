@@ -7,7 +7,7 @@ Brian Leathem
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
-The first beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12324941[4.5.0.Beta2]) has been released.  This release focuses on stabilizing RichFaces 4.5.0.Beta1 with a number of bug fixes.  Read below for a summary of the issues resolved.
+The second beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12324941[4.5.0.Beta2]) has been released.  This release focuses on stabilizing RichFaces 4.5.0.Beta1 with a number of bug fixes.  Read below for a summary of the issues resolved.
 
 [.alert.alert-info]
 *To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Beta2. For more information on setting up a RichFaces 4 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
@@ -56,4 +56,4 @@ Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=1231034
 * https://issues.jboss.org/browse/RF-13800[RF-13800] - docs: rich:select: add information about autocomplete functionality
 
 = Next steps
-Work on RichFaces 4.5.0.CR1 is currently underway.  However, API compatibility with RichFaces 4.3 is a top-priority with us for this release (making migrations as easy as possible).  As such we may squeeze in a 4.5.0.Beta3 release to ensure we get a 4.5 release that is fully compatible with 4.3.  We'll make this decision as we get close to our next milestone release.
+Work on RichFaces 4.5.0.CR1 is currently underway.  Look for this first CR release to follow in the next week or two.

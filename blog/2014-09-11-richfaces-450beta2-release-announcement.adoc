@@ -12,7 +12,7 @@ The second beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fix
 [.alert.alert-info]
 *To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Beta2. For more information on setting up a RichFaces 4 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
 
-Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12325456[+++<i class='icon-external-link-sign'></i>+++]
+== Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12325456[+++<i class='icon-external-link-sign'></i>+++]
 
 === Bug
 * https://issues.jboss.org/browse/RF-11090[RF-11090] - rich:collapsibleSubTable cannot be nested
@@ -55,5 +55,5 @@ Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=1231034
 * https://issues.jboss.org/browse/RF-13765[RF-13765] - EDT: meta-components @footer, @header and @body are not documented
 * https://issues.jboss.org/browse/RF-13800[RF-13800] - docs: rich:select: add information about autocomplete functionality
 
-= Next steps
+== Next steps
 Work on RichFaces 4.5.0.CR1 is currently underway.  Look for this first CR release to follow in the next week or two.

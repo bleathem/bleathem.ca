@@ -1,0 +1,84 @@
+= RichFaces 4.5.0.Final Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF45, Final]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+RichFaces https://issues.jboss.org/browse/RF/fixforversion/12325589[4.5.0.Final] is now available for download!  RichFaces 4.5 is a significant improvement over the previous 4.3 release, offering JSF 2.2 compatibility, new components, a simplified build and distribution layout, and Page Fragments for simplified functional testing.  Please read below for details on each of these improvements..
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Final. For more information on setting up a RichFaces 4 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
+
+[.alert.alert-warn]
+--
+*Compatibility with RichFaces 4.3:* RichFaces 4.5 is intended to be backwards compatibility with RichFaces 4.3 and should be a drop in replacement into your applications, requiring only changes in your pom.xml.
+
+Any breaking changes with RichFaces 4.5 are being tracked in our GitHub wiki https://github.com/richfaces/richfaces/wiki/Migration-from-RichFaces-4-to-RichFaces-4.5[migration page].  Please update that wiki page with a Pull Request if you find any incompatibilities.
+--
+
+== JSF 2.2 Compatibility
+RichFaces 4.5 has been developed and tested against both JSF 2.1 and 2.2.  Go forth and take advantage of the https://javaserverfaces.java.net/2.2/whatsnew.html[new features available in JSF 2.2].
+
+== Chart components
+Thanks to the hard work of our Google Summer of Code student and subsequent intern Lukas Macko, we are providing a set of Chart components in RichFaces 4.5.  Use these components to graphically represent the data in your applications with a similar API as the rest of your JSF components.
+
+Read more about the RichFaces 4.5 charts in https://developer.jboss.org/people/michpetrov/blog/2014/09/29/new-in-richfaces-45-charts[Michal Petrov's blog post on using charts].
+
+== Component improvements
+A number of existing components have seen some improvements in RichFaces 4.5.  These are outlined below:
+
+=== Select component with autocomplete
+The `<rich:select>` component has been augmented to support the same auto-completing functionality as the `<rich:autocomplete>` component.  The rule-of-thumb to keep in mind when deciding between incorporating either of these similar components is as follows:
+
+* use the `<rich:select>` component when auto-completing a list of backend objects.
+* use the `<rich:autocomplete>` component when auto-completing with text-based input. 
+
+=== Built-in sorting and filtering of the DataTable
+The `<rich:dataTable>` has picked up the built-in sorting and filtering capabilities that have been available for some time in it's big brother the `<rich:extendedDataTable>`.
+
+If you are already using the `<rich:dataTable>` in your application with custom controls, and do not wish to take advantage of the built-in controls, then please refer to the Component reference for instructions on http://docs.jboss.org/richfaces/latest_4_5_X/Component_Reference/en-US/html_single/#sect-Component_Reference-Table_filtering-builtin_filtering[disabling the builtin sorting and filtering controls].
+
+=== Push with web-sockets
+We've upgraded our atmosphere dependency to version 2.2, allowing our `<a4j:push>` component to take advantage of web-sockets.  The component will gracefully fall-back to long-polling when web-sockets are not available in either your deployment container nor in the browser.
+
+=== Fileupload
+The `<rich:fileupload>` component has been re-worked to https://issues.jboss.org/browse/RF-13444[take advantage of the new APIs] provided with the Servlet 3.0 specification.  This re-implementation has allowed us to add some new features.  Check out the http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=fileUpload&skin=blueSky[Fileupload sample in the showcase] to play with the new implementation.
+
+== Under the hood
+A number of improvements have been made in RichFaces 4.5 _under the hood_, these include:
+
+=== A new ExtendedPartialViewContext
+The new RichFaces EPVC extends the PVC in Mojarra, rather than fork it.  This has the effect of not only making our EPVC easier to maintain with new Mojarra releases, but also eases compatibility with other JSF libraries.
+
+However, due to a https://java.net/jira/browse/JAVASERVERFACES-3157[patched bug in Mojarra], our new EPVC will only work with newer Mojarra releases.  As such we've implemented a check verifying that you are running in a container providing Mojarra ≥ 2.1.28 or ≥ 2.2.6.  MyFaces is not affected by this bug.
+
+=== Simplified build
+The build in RichFaces 4.5 has been greatly simplified.  We've consolidated the RichFaces source down to a https://github.com/richfaces/richfaces[single github repository].  Along with improvements to the CDK, we have been able to drastically reduce our developer turnaround time when working with the framework.
+
+It's also expected that this simpler build structure will encourage more community contributions, so get those https://developer.jboss.org/wiki/GuideToUsePullRequestsWithGitHubAndJIRA[Pull Requests coming]!
+
+== Page Fragments
+If you do functional testing (or would like to) and haven't yet looked at the  http://planet.jboss.org/post/introducing_arquillian_graphene_page_fragments[Arquillian Graphene Page Fragments], then do yourself a favour and do so.
+
+This is all the more relevant with our RichFaces 4.5.0.Final release as our RichFaces QE team has ported their set of https://github.com/richfaces/richfaces/tree/master/build/page-fragments[page fragments for RichFaces components] to the framework, providing you with a stable set of page fragments matching the shipped components.  Write your tests to the stable page fragments API, and you won't be caught by surprise with failing tests when the DOM implementation of a component changes in a future release.
+
+Have a look at one of our https://github.com/richfaces/richfaces/blob/master/components/rich/src/test/integration/org/richfaces/component/tabPanel/ITStaticTab.java[Framework tests] to see these page fragments in action.
+
+== Asciidoc
+We've ported the RichFaces docs from the hard-to-work-with docbook xml to the writer's paradise that is Asciidoc.  This migration was motivated in large part by the Asciidoc improvements introduced by the http://Asciidoctor.org[Asciidoctor team].  Thanks guys!
+
+The https://github.com/richfaces/richfaces-docs[docs are on github] and ready for pull requests!
+
+== Release Notes 
+Check out the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12325589[+++<i class='icon-external-link-sign'></i>+++ Release notes] for a list of the issues addressed since the 4.5.0.CR2 release.
+
+== A bug with Mojarra
+An unfortunate regression in Mojarra caused by the fix to https://java.net/jira/browse/JAVASERVERFACES-3152[JAVASERVERFACES-3152] has broken a number of RichFaces components when nested in a `<ui:repeat>` component (see https://issues.jboss.org/browse/RFPL-3506[RFPL-3506]).  We are working with the Mojarra team to see this resolved (via https://java.net/jira/browse/JAVASERVERFACES-3452[JAVASERVERFACES-3452]).
+
+In the mean time please use the `<a4j:repeat>` component as a workaround.
+
+== Next steps
+We will follow on the 4.5.0.Final release with a series of micro releases further improving the stability of our framework.  There are no planned additional releases of the 4.3 branch.

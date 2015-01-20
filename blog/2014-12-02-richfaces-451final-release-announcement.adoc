@@ -7,4 +7,4 @@ Brian Leathem
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
-RichFaces https://issues.jboss.org/browse/RF/fixforversion/12325804[4.5.1.Final] is now available for download!  Check out https://twitter.com/Makhiel[@Michal Petrov]'s blog for details of https://developer.jboss.org/people/michpetrov/blog/2014/12/02/richfaces-451final-release-announcement[what this 4.5.2.Final] release includes.
+RichFaces https://issues.jboss.org/browse/RF/fixforversion/12325804[4.5.1.Final] is now available for download!  Check out https://twitter.com/Makhiel[@Michal Petrov]'s blog for details of https://developer.jboss.org/people/michpetrov/blog/2014/12/02/richfaces-451final-release-announcement[what this 4.5.1.Final] release includes.

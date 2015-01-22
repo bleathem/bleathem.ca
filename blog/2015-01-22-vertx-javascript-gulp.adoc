@@ -1,0 +1,260 @@
+= Vert.x with gulp.js
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [vert.x, javascript, gulp]
+:awestruct-description: ""
+
+http://vertx.io/[Vert.x] is often put forward as a https://www.google.ca/#q=vert.x+node.js+alternative[polyglot alternative to node.js] that runs on the JVM.  A read through the http://vertx.io/core_manual_js.html[vert.x javascript docs] indicates that javascript is a first-class language in vert.x, and both node.js and vert.x use an event-driven, non-blocking I/O programming model.  This leaves me wondering to what degree will a node.js developer feel at home in a vert.x environment?
+
+In this blog post I will explore the development of a vert.x web application from the perspective of a node.js developer.  If you'd rather skip straight to the results, the source code for the example used in this blog is https://github.com/bleathem/vertx-js-demo[available on GitHub].  This article does not attempt to compare the run-time and performance characteristics of node.js and vert.x, as this has been https://www.google.ca/#q=vert.x+node.js+performance[covered well elsewhere].
+
+== The view at 20,000 ft.
+
+The application discussed in this blog consists of a vert.x module built with node.js build tools.  The http://vertx.io/docs.html[vert.x documentation] refers to the http://maven.apache.org/[maven] and https://www.gradle.org/[gradle] build tools that are more commonly used with JVM-based projects, but there is nothing specific about our build process that requires either of these tools.  We'll see how the http://gulpjs.com[gulp.js] build tool in fact makes a great fit for our vert.x application, allowing us to leverage the multitude of gulp plugins already available for manipulating our javascript sources.
+
+The demo project is a chat application with a web client that uses both a REST API and web-sockets to connect to the backend.  After looking at the gulp build, we'll see how we can configure vert.x to serve the static content for our web-application, how we can implement a REST API, and finally how we can easily leverage vert.x's sockjs integration to provide websockets support.
+
+The target audience for this blog consists of both:
+
+1. node.js developers looking to build a vert.x application
+2. vert.x developers looking to adopt a javascript-based build environment
+
+
+== Installing vert.x, node.js, and npm
+The first step involves a global install of both the vert.x and node.js platforms.  Vert.x will provide the run-time for our application, and node.js will provide us with the build environment for our project.  Refer to the http://vertx.io/install.html[vert.x install docs] and the  https://docs.npmjs.com/getting-started/installing-node[node and npm install docs] for further details.
+
+== Project layout
+The gulp.js build tool has us apply transformations to streams of our source code, and as such doesn't dictate how we structure our source code within our project.  The structure I chose is as follows:
+
+[source,bash]
+----
+.
+├── gulpfile.js
+├── node_modules
+│   └── ...
+├── package.json
+├── src
+│   └── ...
+├── tasks
+│   └── ...
+└── vertx_modules
+    └── ...
+----
+
+The `package.json` file manages the npm dependencies for our gulp.js build, where those dependencies are stored in the `node_modules` folder.  The `gulpfile.js` file is our gulp build file, and incorporates individual build tasks defined in the `tasks` folder.  The `src` folder contains our the source for our vert.x module, and finally the `vertx_modules` folder contains the vert.x modules on which our application depends; I chose this name specifically to highlight the analog between vertx and npm modules.
+
+== The gulp build
+The gulp build file (`gulpfile.js`) is pretty straightforward; the top-level gulp file is used to configure the project, with individual tasks defined in separate files.  These files are then included using the `require` statement.
+
+[source,javascript]
+.gulpfile.js
+----
+process.env.VERTX_MODS = 'vertx_modules';
+
+var gulp = require('gulp');
+
+var opts = {
+  module: {
+    group: 'ca.bleathem',
+    artifact: 'demo',
+    version: '0.0.1'
+  },
+  paths: {
+    src: 'src/**/*',
+    dist: 'dist'
+  }
+};
+
+opts.module.name = opts.module.group + '~' + opts.module.artifact + '~' + opts.module.version + '.zip';
+opts.paths.cp = 'src';
+
+require('./tasks/vertx.gulp.js')(gulp, opts);
+require('./tasks/zip.gulp.js')(gulp, opts);
+
+gulp.task('default', ['vertx']);
+----
+
+Notice the `VERTX_MODS` environment variable is set in the gulpfile.  Using the build file to programtically set environment variable depending on the deployment target (production/development) can be a powerful technique.
+
+The `*.gulp.js` build files containing the individual gulp task definitions are stored in the `gulp` sub folder.
+
+[source,bash]
+----
+...
+├── tasks
+│   ├── vertx.gulp.js
+│   └── zip.gulp.js
+...
+----
+
+Let's explore these vertx and zip tasks further.
+
+=== The vert.x gulp task
+The https://github.com/gulpjs/gulp/blob/master/docs/writing-a-plugin/guidelines.md[gulp plugin guidelines] recommend not creating a plugin for a task that can "be done easily with an existing node module".  To this end, we'll start by seeing how far we can by leveraging the abilities of node to spawn a child process.  Below is a gulp task that runs the vert.x module that is our sample application:
+
+
+[source,javascript]
+.vertx.gulp.js
+----
+var spawn = require('child_process').spawn
+  , gutil = require('gulp-util');
+
+module.exports = function(gulp, opts) {
+  gulp.task('vertx', [], function(done) {
+    var child = spawn('vertx', ['runmod', opts.module.name, '-cp', opts.paths.cp ], {cwd: process.cwd()}),
+        stdout = '',
+        stderr = '';
+
+    child.stdout.setEncoding('utf8');
+    child.stdout.on('data', function (data) {
+        stdout += data;
+        gutil.log(data.slice(0, data.length - 1));
+    });
+
+    child.stderr.setEncoding('utf8');
+    child.stderr.on('data', function (data) {
+        stderr += data;
+        gutil.log(gutil.colors.red(data.slice(0, data.length - 1)));
+        gutil.beep();
+    });
+
+    child.on('close', function(code) {
+        gutil.log('Done with exit code', code);
+        done();
+    });
+  });
+};
+----
+
+The bulk of the above listing deals with re-directing and formatting the output of the vert.x child process.  The invocation of the `spawn` function is the interesting part, and is where we pass our arguments to the vert.x process.  In our case we want to run the module that is our sample project, and we set the vert.x classpath to our source folder to allow for on-the-fly code changes.
+
+Invoking the build via the command `gulp vertx` will start vert.x, running the module in our project.
+
+=== The zip gulp task
+The distribution format for vert.x is a wonderfully simple zip format.  This makes it easy to use a the `gulp-zip` plugin to zip up the file and create a "binary" for our module.
+
+[source,javascript]
+.vertx.gulp.js
+----
+var zip = require('gulp-zip');
+
+module.exports = function(gulp, opts) {
+  return gulp.task('zip', function() {
+    return gulp.src(opts.paths.src)
+      .pipe(zip(opts.module.name))
+      .pipe(gulp.dest(opts.paths.dist));
+  });
+};
+----
+
+The above invocation is a trivial one.  If you've used gulp before, you'll recognize we could easily add additional stream transformations here, eg. compiling coffecript, minifying client code, compiling sass etc.
+
+== The vert.x module source
+
+We'll end with a brief look at the source code of our vert.x module.  The top-level of the `src` folder contains the module definition file (`mod.json`) and the module entry point (`app.js`).  The rest of the source is split into two `client` and `server` source folders.
+
+[source,bash]
+----
+...
+├── src
+│   ├── app.js
+│   ├── client
+│   │   ├── css
+│   │   │   └── app.css
+│   │   ├── index.html
+│   │   └── js
+│   │       ├── client.js
+│   │       └── vertxbus.js
+│   ├── mod.json
+│   └── server
+│       └── server.js
+...
+----
+
+
+The `mod.json` file is analogous to the `package.json` file for node:
+
+[source,javascript]
+.mod.json
+----
+{
+  "main": "app.js",
+  "includes": "io.vertx~mod-web-server~2.0.0-final",
+  "auto-redeploy": "true"
+}
+----
+
+This `mod.json` specifies any dependencies our module has on other vert.x modules. It also identifies the _main_ javascript file, which is the entry point of our module.  We define a sole dependency on a web-server module; we will see how we make use of this dependency below.  Finally we enable the `auto-redeploy` feature to reduce developer turnaround times during development.
+
+Our entry point `app.js` is at this point completely trivial, simply including our `server.js` CommonJS file using the `require` statement.  The app.js file is expected to grown in complexity along with the application.
+
+[source,javascript]
+.app.js
+----
+var vertx = require('vertx')
+  , server = require('server/server.js');
+----
+
+In the server.js file, we first instantiate a `vertx.createHttpServer` instance to handle our web traffic.  We then use a `vertx.RouteMatcher` instance to create a REST API.  In our example the API returns a static token we'll use to secure our sock.js communications.  Any URLs not matched by the routeMatcher are passed through to an instance of the `org.vertx.mods.web.StaticFileHandler` class.  This StaticFileHandler class comes from the `web-server` module included in the mod.js file above, and is used to handle the serving of static files.
+
+Additionally we see the invocation of the `vertx.createSockJSServer` function to bridge the vert.x event bus into the browser.  The http://vertx.io/core_manual_js.html#the-event-bus[vert.x js docs] do an excellent job of covering the sock.js configuration.
+
+[source,javascript]
+.server.js
+----
+var vertx = require('vertx')
+  , container = require('vertx/container')
+  , console = require('vertx/console');
+
+var server = vertx.createHttpServer()
+  , token = 'HDWWER$^BBE#$552323dfxcsd3@!134#$';
+
+var routeMatcher = new vertx.RouteMatcher();
+routeMatcher.post('/api/user', function(req) {
+  var data = {
+    token : token
+  };
+  req.response.end(JSON.stringify(data));
+});
+var staticHandler = new org.vertx.mods.web.StaticFileHandler(__jvertx, 'client', 'client/index.html', false, false);
+routeMatcher._to_java_handler().noMatch(staticHandler);
+server.requestHandler(routeMatcher);
+
+var sockJSServer = vertx.createSockJSServer(server);
+sockJSServer.bridge({prefix : '/eventbus'},
+  [
+    {
+      address: 'demo-chat',
+      match: {
+        token: token
+      }
+    }
+  ],
+  [{address: 'demo-chat'}]
+);
+
+server.listen(9000, '0.0.0.0');
+
+module.exports = server;
+----
+
+The client code in `client.js` is pretty mundane.  It does some DOM manipulation and uses an instance of the XMLHttpRequest object to fetch the static token from the REST API we defined above.  I will however include a code snippet showing how we use the vert.x event bus from the client:
+
+[source,javascript]
+.client.js
+----
+var eventBus = new vertx.EventBus('/eventbus');
+...
+eventBus.publish('demo-chat', data);
+...
+eventBus.onopen = function() {
+  eventBus.registerHandler('demo-chat', chatResponseHandler);
+}
+----
+
+In the above listing we can see that is is trivial to instantiate the event bus, publish events, and respond to events using a callback.
+
+== Conclusion
+My impression of vert.x is that it offers a powerful platform for building real-time applications.  I'm impressed with the polyglot nature of the platform, and how I was able to write a not-completely-trivial demo without writing a single line of java.  And while a vert.x does have a http://modulereg.vertx.io/[module registry] with a number of modules, it lacks the diverse ecosystem of modules available with npm.
+
+Further investigations on my part will involve expanding my gulp build file to include more code manipulation (SASS, uglification, etc.) and setting up a test runner for my vert.x module.

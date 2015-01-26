@@ -184,7 +184,7 @@ The `mod.json` file is analogous to the `package.json` file for node:
 }
 ----
 
-This `mod.json` specifies any dependencies our module has on other vert.x modules. It also identifies the _main_ javascript file, which is the entry point of our module.  We define a sole dependency on a web-server module; we will see how we make use of this dependency below.  Finally we enable the `auto-redeploy` feature to reduce developer turnaround times during development.
+This `mod.json` specifies any dependencies our module has on other vert.x modules. It also identifies the _main_ javascript file, which is the entry point of our module.  We define a sole dependency on a web-server module; we will see how we make use of this dependency below.  Finally we enable the `auto-redeploy` feature to reduce developer turnaround times during development.  Details on creating modules can be found in the http://vertx.io/mods_manual.html[vert.x module docs].
 
 Our entry point `app.js` is at this point completely trivial, simply including our `server.js` CommonJS file using the `require` statement.  The app.js file is expected to grown in complexity along with the application.
 

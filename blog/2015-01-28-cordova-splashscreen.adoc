@@ -1,0 +1,111 @@
+= Scalable splash screens with Cordova
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [cordova]
+:awestruct-description: ""
+
+Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks.  In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.
+
+== Drawing the splash screen
+If you're not an artist (as I am not!) then creating a graphical splash screen can be a somewhat daunting task.  Finding a relevant image to use as a starting point can be a big help.  I used the http://search.creativecommons.org/[Creative Commons Search] tool to find my initial image.
+
+Edit the image using your favorite imaging editing software (I'm a fan of http://www.gimp.org[GIMP]).  Android pre-defines a set of sizes which you should target with your image:
+
+* xhdpi: 640 x 960
+* hdpi: 480 x 800
+* mdpi: 320 x 480
+* ldpi: 240 x 320
+
+Similarly Apple has a set of predefined sizes, see the https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html[Apple HIG for details], but I'll be addressing specifically Android with this post.
+
+To keep things simple, I created a single square image to use for both portrait and landscape orientations:
+
+image::/images/blog/2015-01-28-cordova-splashscreen/splash-hdpi.png[Splahscreen, style="center"]
+
+== Making the splash screen scalable
+Scaling the above image to fit the size and shape of a phone or tablet would distort the graphic and the text.  To get around this we use the 9-patch file format to mark the areas of the image that can safely be stretched.
+
+To convert the PNG file you created above into a 9-ptach file, use the draw9patch application distributed with the android SDK.  The basic steps of the conversion are as follows:
+
+1. Open you PNG file with the draw9patch application
+2. Drag with you mouse to mark the areas on the top and left margins where it is safe to stretch the image.
++
+* The right and bottom margins can be used to mark where content should be inserted into the image, and is useful when creating images for buttons.  However this does not apply to splash screens, and you can safely ignore the right and bottom margins.
++
+3. Save your file with the `*.9.png` extension.  The extension is critical, otherwise your splash screen image will not be interpreted as a 9-patch file, and the stretching will not be applied.  I named mine `splash.9.png`.
+
+Further details on using draw9patch can be found in the http://developer.android.com/training/multiscreen/screensizes.html#TaskUse9Patch[Android documentation].
+
+== Cordova build hooks
+I like to structure my cordova projects to leave the `platforms` and `plugins` folders out of source control.  I then use Cordova build hooks to install plugins and copy resources. For more information on build hooks, refer to  http://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/[this great post on using build hooks].
+
+I place the above 9-patch image in the project folder `config/android/res/screens` and use the following build hook to copy this scm-controlled resource into the `platforms` folder:
+
+[source, javascript]
+.030_resource_files.js
+----
+#!/usr/bin/env node
+
+//
+// This hook copies various resource files
+// from our version control system directories
+// into the appropriate platform specific location
+//
+
+// [{source: target}]
+var filestocopy = [
+  ...
+  , {
+    "config/android/res/screens/splash.9.png":
+    "platforms/android/res/drawable/splash.9.png"
+  }
+];
+
+
+var fs = require('fs');
+var path = require('path');
+
+var rootdir = process.argv[2];
+
+filestocopy.forEach(function(obj) {
+    Object.keys(obj).forEach(function(key) {
+        var val = obj[key];
+        var srcfile = path.join(rootdir, key);
+        var destfile = path.join(rootdir, val);
+        console.log("copying "+srcfile+" to "+destfile);
+        var destdir = path.dirname(destfile);
+        if (fs.existsSync(srcfile) && fs.existsSync(destdir)) {
+            fs.createReadStream(srcfile).pipe(
+               fs.createWriteStream(destfile));
+        }
+    });
+});
+----
+
+I've taken a one-size-fits-all approach with my splash screen.  This works because I place my splash screen file in the `platforms/android/res/drawable` folder.  If you want to create a different splash screen to accommodate each of the different screen sizes in either the portrait or landscape orientations, you can modify the above build hook to copy the appropriately sized files into each of the `platforms/android/res/drawable-{port|land}-{ldpi|mdpi|hdpi|xhdpi}/` folders.
+
+== Cordova configuration
+Finally we will install the https://github.com/apache/cordova-plugin-splashscreen[cordova splashscreen plugin].  This plugin allows us to manage the splash screen from our Cordova application.
+
+We configure the default timeout and the name of our splah screen file in the `config.xml` of our project:
+
+[source, xml]
+.config.xml
+----
+
+...
+<preference name="SplashScreen" value="splash" />
+<preference name="SplashScreenDelay" value="10000" />
+...
+
+----
+
+Using an appropriate listener in your Cordova application, dismiss the splash screen:
+
+[source, javascript]
+----
+navigator.splashscreen.hide();
+----
+
+== Conclusion
+Getting the above pieces correctly lined up was surprisingly difficult.  If the files are not named correctly, or placed in the wrong folder everything falls apart. The http://cordova.apache.org/docs/en/edge/config_ref_images.md.html[Cordova documentation] on the topic provides some help, but leaves out a lot of important details.  This is apparent by the number of forum, stack overflow, and github issue threads on the subject.  Hopefully this post helps someone shortcut the frustration of getting this working.

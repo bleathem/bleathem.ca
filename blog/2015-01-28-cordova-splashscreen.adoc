@@ -20,17 +20,17 @@ Similarly Apple has a set of predefined sizes, see the https://developer.apple.c
 
 To keep things simple, I created a single square image to use for both portrait and landscape orientations:
 
-image::/images/blog/2015-01-28-cordova-splashscreen/splash-hdpi.png[Splahscreen, style="center"]
+image::/images/blog/2015-01-28-cordova-splashscreen/splash-hdpi.png[Splashscreen, style="center"]
 
 == Making the splash screen scalable
 Scaling the above image to fit the size and shape of a phone or tablet would distort the graphic and the text.  To get around this we use the 9-patch file format to mark the areas of the image that can safely be stretched.
 
-To convert the PNG file you created above into a 9-ptach file, use the draw9patch application distributed with the android SDK.  The basic steps of the conversion are as follows:
+To convert the PNG file you created above into a 9-patch file, use the draw9patch application distributed with the android SDK.  The basic steps of the conversion are as follows:
 
 1. Open you PNG file with the draw9patch application
 2. Drag with you mouse to mark the areas on the top and left margins where it is safe to stretch the image.
 +
-* The right and bottom margins can be used to mark where content should be inserted into the image, and is useful when creating images for buttons.  However this does not apply to splash screens, and you can safely ignore the right and bottom margins.
+* The right and bottom margins can be used to mark where content should be inserted into the image, and are useful when creating images for buttons.  However this does not apply to splash screens, and you can safely ignore the right and bottom margins.
 +
 3. Save your file with the `*.9.png` extension.  The extension is critical, otherwise your splash screen image will not be interpreted as a 9-patch file, and the stretching will not be applied.  I named mine `splash.9.png`.
 
@@ -87,7 +87,7 @@ I've taken a one-size-fits-all approach with my splash screen.  This works becau
 == Cordova configuration
 Finally we will install the https://github.com/apache/cordova-plugin-splashscreen[cordova splashscreen plugin].  This plugin allows us to manage the splash screen from our Cordova application.
 
-We configure the default timeout and the name of our splah screen file in the `config.xml` of our project:
+We configure the default timeout and the name of our splash screen file in the `config.xml` of our project:
 
 [source, xml]
 .config.xml
@@ -108,4 +108,4 @@ navigator.splashscreen.hide();
 ----
 
 == Conclusion
-Getting the above pieces correctly lined up was surprisingly difficult.  If the files are not named correctly, or placed in the wrong folder everything falls apart. The http://cordova.apache.org/docs/en/edge/config_ref_images.md.html[Cordova documentation] on the topic provides some help, but leaves out a lot of important details.  This is apparent by the number of forum, stack overflow, and github issue threads on the subject.  Hopefully this post helps someone shortcut the frustration of getting this working.
+Getting the above pieces correctly lined up was surprisingly difficult.  If the files are not named correctly, or placed in the wrong folder, everything falls apart. The http://cordova.apache.org/docs/en/edge/config_ref_images.md.html[Cordova documentation] on the topic provides some help, but leaves out a lot of important details.  This is apparent in the number of forum, stack overflow, and github issue threads on the subject.  Hopefully this post helps someone shortcut the frustration of getting this working.

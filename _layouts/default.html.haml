@@ -16,18 +16,10 @@ layout: base
           %li RichFaces Project Lead
     %hr
     .title twitter updates
-    .tweet
-      :javascript
-        $(function() {
-          $(".tweet").tweet({
-            username: "brianleathem",
-            avatar_size: 24,
-            count: 4,
-            template: "{text} {time}",
-            loading_text: "Loading tweets...",
-            outro_text: '<a class="btn"  href="https://twitter.com/#!/brianleathem">Follow me on twitter</a>'
-          });
-        });    
+    .twitter
+      :plain
+        <a class="twitter-timeline" href="https://twitter.com/brianleathem" data-widget-id="563478361763098625">Tweets by @brianleathem</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     %hr
     .title Tags
     .tags
@@ -35,7 +27,7 @@ layout: base
     %hr
     .title Stack Overflow
     %a{:href => "http://stackoverflow.com/users/264797/brian-leathem"}
-      %img{:src => "http://stackoverflow.com/users/flair/264797.png", 
+      %img{:src => "http://stackoverflow.com/users/flair/264797.png",
            :width => "208", :height => "58",
            :alt => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers",
            :title => "profile for Brian Leathem at Stack Overflow, Q&amp;A for professional and enthusiast programmers"}
@@ -56,6 +48,3 @@ layout: base
                     -posts.each do |post|
                       %li
                         %a{:href => post.url}= post.title
-
-%script{ :type=>'text/javascript', :src=>'/javascripts/jquery-tweet.js' }
-

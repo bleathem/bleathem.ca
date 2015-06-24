@@ -1,0 +1,19 @@
+= Rx.js and d3.js show strong at DevNation & Red Hat Summit
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [rxjs, d3js, DevNation, summit]
+:awestruct-description: ""
+
+This year's DevNation/Red Hat Summit was a big one for me.  Not only did I present a session
+on Rx.js, but I also wrote the frontends for the Red Hat Summit Middleware keynote demo.
+The Reactive Extentions in Rx.js played a huge role in enabling me to manipulate the data
+streams from the various backend systems, and transform that data into a from that can drive the UI.
+
+== Rx.js in the Keynote Demo
+This year's Red Hat Summit Middleware keynote demo showcased 3 major technologies at Red Hat:
+
+# IoT using Red Hat JBoss A/MQ as the message broker
+# Docker at Scale using OpenShift
+# Mobile with the Red Hat Mobile Application platform
+
+To showcase the data we collected from the systems I built 3 user interfaces:

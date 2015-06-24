@@ -1,0 +1,204 @@
+= Rx.js Session at DevNation
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [rxjs, d3js, DevNation, summit]
+:awestruct-description: ""
+
+I presented a Session on Rx.js at http://devnation.org[DevNation] this year.  My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time.  This analogy was very well described by http://twitter.com/jhusain[@jhusain] his https://www.youtube.com/watch?v=FAZJsxcykPs[Async Javascript at Netflix] talk that initially got me excited about Reactive Functional programming.  My contribution to this idea was to present in a visual way.
+
+To visualize both a "regular" collection, as well as a collection-in-time, I used the d3.js library to visually present a collection of javascript objects that each represent a shape with a given size, color, and shape-type.  In my presentation I embedded these visualizations using as Code pens, which I've included in this blog post below.
+
+The slides from my presentation are available at:
+http://www.bleathem.ca/talks/2015-DevNation/reactive.html
+
+[.codepen]
+== A Collection
+Here is the visualization of a Collection.  With a "regular" collection we can get a reference to every object in the collection at any given point in time.  Go ahead, "grab" a shape with your mouse!
+++++
+<p data-height="520" data-theme-id="0" data-slug-hash="QbgKmp" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/QbgKmp/'>Collection | Iden</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+[.codepen]
+== An Observable
+And here we have the visualization of an Observable, as a Collection-in-time.  An Observable is different from a "regular" collection in that we cannot grab a reference to every object at any point in time.  The objects stream past us as time progresses.
+++++
+<p data-height="420" data-theme-id="0" data-slug-hash="mJwrae" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/mJwrae/'>Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+
+I then proceed to use these visualizations as basis for describing some of the tools we use for manipulating Collections/Observables:
+
+== Map
+With the `map` function we can operate on each item in the collection.  In our example mapping function we map each shape into a new shape of the same size, but of type square and color green.
+
+into a green square
+
+of the same size
+[source,javascript]
+----
+.map(function(x) {
+  return {
+    id: x.id
+  , color: 'green'
+  , size: x.size
+  , type: 'square'
+  };
+});
+----
+
+=== Collection `map`
+Here we have the above `map` function applied to a "regular" Collection:
+[.codepen]
+--
+++++
+<p data-height="1000" data-theme-id="0" data-slug-hash="JdJNJj" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/JdJNJj/'>Operating on a Collection</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
+=== Observable `map`
+The above `map` function applied to an Observable:
+[.codepen]
+--
+++++
+<p data-height="655" data-theme-id="0" data-slug-hash="zGzwWg" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/zGzwWg/'>Map an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
+== MergeAll
+The `mergeAll` function is used to "flatten" a 2-dimensional collection into a 1-dimensional collection.  In this code sample we map each shape into a pair of shapes which we return as an array.  The resulting "array of arrays" is then passed to the `mergeAll` function where it is flattened.
+[source,javascript]
+----
+.map(function(x) {
+    var y = _.clone(x);
+    y.id = y.id + 80;
+    y.color = 'green';
+
+    var z = _.clone(x);
+    y.size = y.size / 1.5;
+    z.size = z.size / 1.5;
+
+    return [y, z];
+  })
+  .mergeAll();
+----
+
+=== Nested Collections
+This visualization shows the above mapping without the `mergeAll` applied.  Notice how the resulting collection consists of object pairs.  We _do not_ have a flat collection.  Try to grab one of the shapes with your mouse and see for yourself!
+[.codepen]
+--
+++++
+<p data-height="1000" data-theme-id="0" data-slug-hash="waepdK" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/waepdK/'>Map a nested Collection</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
+=== Nested Collections `mergeAll`
+With the `mergeAll` function applied to the Nested collection we now have a flattened collection, which we can continue to operate on with our tool set.
+[.codepen]
+--
+++++
+<p data-height="1000" data-theme-id="0" data-slug-hash="eNRVGx" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/eNRVGx/'>MergeAll a Collection</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
+=== Observable `mergeAll`
+The `mergeAll` function applied to a 2-dimensional Observable.
+[.codepen]
+--
+++++
+<p data-height="655" data-theme-id="0" data-slug-hash="mJwXxW" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/mJwXxW/'>MergeAll an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
+== FlatMap
+It turns out the `map` -> `mergeAll` combination is a pattern we apply so often that we created the `flatMap` function as a shorthand.  We can then rewrite the above transformation as:
+
+[source,javascript]
+----
+.flatMap(function(x) {
+    var y = _.clone(x);
+    y.id = y.id + 80;
+    y.color = 'green';
+
+    var z = _.clone(x);
+    y.size = y.size / 1.5;
+    z.size = z.size / 1.5;
+
+    return [y, z];
+  });
+----
+
+== Reduce
+A common use case for analyzing collections is the `reduce` function, where one iterates over a collection and "accumulates" a value for each object in the collection.  In this code sample we are accumulating the size of each shape, and using that to create a new shape of the accumulated size.
+[source,javascript]
+----
+var outputData = inputData
+  .reduce(function(acc, x) {
+    return {
+      id: x.id
+    , color: 'green'
+    , size: acc.size + x.size
+    , type: 'square'
+    };
+  }, {size: 0});
+----
+
+=== Collection `reduce`
+The above reduce function applied to a collection:
+[.codepen]
+--
+++++
+<p data-height="1000" data-theme-id="0" data-slug-hash="doRWKp" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/doRWKp/'>Reduce a Collection</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
+=== Observable `reduce`
+The reduce function applied to an Observable:
+
+[NOTE.alert]
+====
+You will want to click the `RERUN` button that appears when you mouse-over this codepen.  Then wait until the input Observable terminates to see the `reduce` result.
+====
+
+[.codepen]
+--
+++++
+<p data-height="564" data-theme-id="0" data-slug-hash="eNRWKa" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/eNRWKa/'>Reduce an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
+== Zip
+The last function we will look at is the `zip` function which is used to combine to many Observables into a single observable.  It accomplishes this by taking each Observable as a parameter, followed by a function that is used to "combine" the object retrieved from each Observable.
+
+In the following code sample we combine our shapes by creating a new shape with the color of the first shape, but the size and type of the 2nd shape.
+
+[source,javascript]
+----
+var outputData = Rx.Observable.zip(
+  input1Data,
+  input2Data,
+  function(x1, x2) {
+    return {
+      id: x1.id
+    , color: x1.color
+    , size: x2.size
+    , type: x2.type
+    };
+  });
+----
+
+=== Observable `zip`
+[.codepen]
+--
+++++
+<p data-height="655" data-theme-id="0" data-slug-hash="doRmgm" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/doRmgm/'>Zip an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--

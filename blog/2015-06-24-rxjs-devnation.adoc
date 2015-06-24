@@ -4,12 +4,15 @@ Brian Leathem
 :awestruct-tags: [rxjs, d3js, DevNation, summit]
 :awestruct-description: ""
 
-I presented a Session on Rx.js at http://devnation.org[DevNation] this year.  My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time.  This analogy was very well described by http://twitter.com/jhusain[@jhusain] his https://www.youtube.com/watch?v=FAZJsxcykPs[Async Javascript at Netflix] talk that initially got me excited about Reactive Functional programming.  My contribution to this idea was to present in a visual way.
+I presented a Session on Rx.js at http://devnation.org[DevNation] this year.  My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time.  This analogy was very well described by http://twitter.com/jhusain[@jhusain] his https://www.youtube.com/watch?v=FAZJsxcykPs[Async Javascript at Netflix] talk that initially got me excited about Reactive Functional programming.  My contribution to this idea is to present it in a visual way.
 
-To visualize both a "regular" collection, as well as a collection-in-time, I used the d3.js library to visually present a collection of javascript objects that each represent a shape with a given size, color, and shape-type.  In my presentation I embedded these visualizations using as Code pens, which I've included in this blog post below.
+To visualize both a "regular" collection, as well as a collection-in-time, I used the d3.js library to visually present a collection of javascript objects that each represent a shape with a given size, color, and shape-type.  In my presentation I embedded these visualizations using as http://codepen.io/collection/XzxeVQ/[Codepens], which I've included in this blog post below.
 
 The slides from my presentation are available at:
+[quote]
+--
 http://www.bleathem.ca/talks/2015-DevNation/reactive.html
+--
 
 [.codepen]
 == A Collection
@@ -21,20 +24,17 @@ Here is the visualization of a Collection.  With a "regular" collection we can g
 
 [.codepen]
 == An Observable
-And here we have the visualization of an Observable, as a Collection-in-time.  An Observable is different from a "regular" collection in that we cannot grab a reference to every object at any point in time.  The objects stream past us as time progresses.
+And here we have the visualization of an Observable as a Collection-in-time.  An Observable is different from a "regular" collection in that we cannot grab a reference to every object at any given point in time.  The objects stream past us as time progresses.
 ++++
 <p data-height="420" data-theme-id="0" data-slug-hash="mJwrae" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/mJwrae/'>Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 ++++
 
-I then proceed to use these visualizations as basis for describing some of the tools we use for manipulating Collections/Observables:
+== Reactive Extensions
+In the session I then proceed to use these visualizations as basis for describing some of the tools we use for manipulating Collections/Observables:
 
 == Map
 With the `map` function we can operate on each item in the collection.  In our example mapping function we map each shape into a new shape of the same size, but of type square and color green.
-
-into a green square
-
-of the same size
 [source,javascript]
 ----
 .map(function(x) {
@@ -159,7 +159,7 @@ The above reduce function applied to a collection:
 --
 
 === Observable `reduce`
-The reduce function applied to an Observable:
+The `reduce` function applied to an Observable:
 
 [NOTE.alert]
 ====
@@ -175,7 +175,7 @@ You will want to click the `RERUN` button that appears when you mouse-over this 
 --
 
 == Zip
-The last function we will look at is the `zip` function which is used to combine to many Observables into a single observable.  It accomplishes this by taking each Observable as a parameter, followed by a function that is used to "combine" the object retrieved from each Observable.
+The last function we will look at is the `zip` function which is used to combine many Observables into a single observable.  It accomplishes this by taking each Observable as a parameter, followed by a function that is used to "combine" the object retrieved from each Observable.
 
 In the following code sample we combine our shapes by creating a new shape with the color of the first shape, but the size and type of the 2nd shape.
 
@@ -201,4 +201,13 @@ var outputData = Rx.Observable.zip(
 <p data-height="655" data-theme-id="0" data-slug-hash="doRmgm" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/doRmgm/'>Zip an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
 <script async src="//assets.codepen.io/assets/embed/ei.js"></script>
 ++++
+--
+
+== The rest of the talk
+In the remaining slides I discuss creating and subscribing to Observables, and went through a number of use cases and examples.  I ended with a preview and brief code walk-through of the Red Hat Summit Middleware keynote demo, that I wrote using Rx.js.  But that is a topic for another post.
+
+The slides are available at:
+[quote]
+--
+http://www.bleathem.ca/talks/2015-DevNation/reactive.html
 --

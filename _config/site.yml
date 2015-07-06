@@ -4,6 +4,7 @@
     source-highlighter: prettify
 profiles:
   development:
+    base_url: http://localhost:4242/
   production:
     base_url: http://www.bleathem.ca/
     deploy:

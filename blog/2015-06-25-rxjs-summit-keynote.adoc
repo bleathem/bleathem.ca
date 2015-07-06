@@ -1,19 +1,34 @@
-= Rx.js and d3.js show strong at DevNation & Red Hat Summit
+= Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo
 Brian Leathem
 :awestruct-layout: post
-:awestruct-tags: [rxjs, d3js, DevNation, summit]
+:awestruct-tags: [rxjs, d3js, Red Hat, summit]
 :awestruct-description: ""
 
-This year's DevNation/Red Hat Summit was a big one for me.  Not only did I present a session
-on Rx.js, but I also wrote the frontends for the Red Hat Summit Middleware keynote demo.
-The Reactive Extentions in Rx.js played a huge role in enabling me to manipulate the data
-streams from the various backend systems, and transform that data into a from that can drive the UI.
+This year's DevNation/Red Hat Summit was a big one for me.  Not only did I http://www.bleathem.ca/blog/2015/06/rxjs-devnation.html[present a session on Rx.js], but I also wrote the frontends for the Red Hat Summit Middleware keynote demo.  The Reactive Extentions in https://github.com/Reactive-Extensions/RxJS[Rx.js] played a huge role in enabling me to manipulate the data streams from the various backend systems, and transform that data into a from that can drive the UI using http://d3js.org/[d3.js].
 
 == Rx.js in the Keynote Demo
 This year's Red Hat Summit Middleware keynote demo showcased 3 major technologies at Red Hat:
 
-# IoT using Red Hat JBoss A/MQ as the message broker
-# Docker at Scale using OpenShift
-# Mobile with the Red Hat Mobile Application platform
+* IoT using Red Hat JBoss A/MQ as the message broker
+* Docker at Scale using OpenShift
+* Mobile with the Red Hat Mobile Application platform
 
-To showcase the data we collected from the systems I built 3 user interfaces:
+To showcase the data we collected from the systems I built 3 user interfaces using Rx.js to mainipulate the data, and d3.js to visualize it.  Developing these UIs provided me wtih an excellent opportunity to dive deep into these libraries and learn many of their ins-and-outs.
+
+In this post I will cover the UIs at a high-level.  The code I developed will provide fodder for a number of blog posts moving forward, so stay tuned.
+
+== IoT Beacon Location
+The data collected for the IoT portion of our keynote demo consisted of millions of scan events from 300 https://store.gimbal.com/collections/beacons/products/s10[Gimbal BLE beacons] handed out to http://www.devnation.org/[DevNation] attendees.  The scanners were made using https://www.raspberrypi.org/[Raspberry PIs] that transmitted the scan events to a http://www.redhat.com/en/technologies/jboss-middleware/amq[Red Hat A-MQ] message broker.  These numerous events were then processed using  https://spark.apache.org/[Apache Spark], reducing the millions of beacon events into tens-of-thousands of meaningful "business events" representing attendee movement trhoughout the conference.
+
+=== IoT Map Visualisation
+The Spark-processed data was retrieved from the message broker into a node backend using Rx.js to wrap a https://github.com/jmesnil/stomp-websocket[STOMP over Websocket] protocol connection.  Using Rx.js to wrap the data stream meant that any idiosyncrasies of the STOMP protocol were encapsulated in a single Observable definition, and the rest of the application adheres to a consistent Rx.Observable API.
+
+The map UI uses d3.demo to bind the beacon location data to SVG elements in the browser.  We then use the d3.force layout
+
+=== IoT broker Visualisation
+The map UI worked really well to display the business value of the beacon data collected.  We needed a second UI however to demonstrate both the sheer volume of data that our A-MQ message broker was receiving from the Raspberry Pis, and the dramatic reduction if data volume as Spark processed the data.
+
+Again using a STOMP over websockets connection to the message broker, I used Rx.js to ...
+
+== 1k Containers Visualisation
+The power of docker, kubernetes, and OpenShift was demonstrated with a quick scale up of 1026 containers live on stage.  To visualize this scale up, we developed a custom "hexboard" UI 

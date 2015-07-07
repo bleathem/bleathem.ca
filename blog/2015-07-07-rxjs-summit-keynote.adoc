@@ -25,10 +25,35 @@ The Spark-processed data was retrieved from the message broker into a node backe
 
 The map UI uses d3.demo to bind the beacon location data to SVG elements in the browser.  We then use the d3.force layout
 
+[.codepen-half]
+--
+++++
+<p data-height="1080" data-theme-id="0" data-slug-hash="NqYgRx" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/NqYgRx/'>Beacon Location</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
 === IoT broker Visualisation
 The map UI worked really well to display the business value of the beacon data collected.  We needed a second UI however to demonstrate both the sheer volume of data that our A-MQ message broker was receiving from the Raspberry Pis, and the dramatic reduction if data volume as Spark processed the data.
 
 Again using a STOMP over websockets connection to the message broker, I used Rx.js to ...
 
+[.codepen-half]
+--
+++++
+<p data-height="1080" data-theme-id="0" data-slug-hash="jPzLXQ" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/jPzLXQ/'>Broker</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--
+
 == 1k Containers Visualisation
-The power of docker, kubernetes, and OpenShift was demonstrated with a quick scale up of 1026 containers live on stage.  To visualize this scale up, we developed a custom "hexboard" UI 
+The power of docker, kubernetes, and OpenShift was demonstrated with a quick scale up of 1026 containers live on stage.  To visualize this scale up, we developed a custom "hexboard" UI
+
+
+[.codepen-half]
+--
+++++
+<p data-height="1080" data-theme-id="0" data-slug-hash="domKre" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/domKre/'>Hexboard</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+++++
+--

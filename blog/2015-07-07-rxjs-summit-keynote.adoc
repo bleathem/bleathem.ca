@@ -28,7 +28,7 @@ To showcase the data we collected from the systems, I built 3 user interfaces us
 The data collected for the IoT portion of our keynote demo consisted of millions of scan events from 300 https://store.gimbal.com/collections/beacons/products/s10[Gimbal BLE beacons] handed out to http://www.devnation.org/[DevNation] attendees.  The scanners were made using https://www.raspberrypi.org/[Raspberry PIs] that transmitted the scan events to a http://www.redhat.com/en/technologies/jboss-middleware/amq[Red Hat A-MQ] message broker.  These numerous events were then processed using  https://spark.apache.org/[Apache Spark], reducing the millions of beacon events into tens-of-thousands of meaningful "business events" representing attendee movements throughout the conference.
 
 === IoT Map Visualization
-The Spark-processed data was retrieved from the message broker into a node.js backend, was stored in a mongodb datastore, and then was re-broadcast to the browser clients.  I used Rx.js throughout both the node.js backend and in the browser to:
+The Spark-processed data was retrieved from the message broker into a node.js back-end, was stored in a mongodb datastore, and then was re-broadcast to the browser clients.  I used Rx.js throughout both the node.js back-end and in the browser to:
 
 * wrap a https://github.com/jmesnil/stomp-websocket[STOMP over Websocket] protocol connection.
 * wrap the websocket broadcasts and clients

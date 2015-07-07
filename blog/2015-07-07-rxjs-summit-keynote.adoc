@@ -4,7 +4,7 @@ Brian Leathem
 :awestruct-tags: [rxjs, d3js, Red Hat, summit]
 :awestruct-description: ""
 
-At this year's DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo.  I made the custom frontends in the demo using Reactive Extensions for javascript (https://github.com/Reactive-Extensions/RxJS[Rx.js]) to manipulate the data streams from the various backend systems and transform that data into a form that can drive the UI using http://d3js.org/[d3.js].
+At this year's DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo.  I made the custom front-ends in the demo using Reactive Extensions for javascript (https://github.com/Reactive-Extensions/RxJS[Rx.js]) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using http://d3js.org/[d3.js].
 
 If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at https://www.youtube.com/watch?v=wWNVpFibayA&feature=youtu.be&t=19m3s[19m]).  In this blog post I will cover at a high level the UIs I created for the keynote demo, setting the stage for a more in-depth analysis with subsequent posts.
 
@@ -22,13 +22,13 @@ This year's Red Hat Summit Middleware keynote demo showcased 3 major technologie
 * Docker at Scale using OpenShift
 * Mobile with the Red Hat Mobile Application platform
 
-To showcase the data we collected from the systems I built 3 user interfaces using Rx.js to manipulate the data, and d3.js to visualize it.  Developing these UIs provided me with an excellent opportunity to dive deep into these libraries and learn many of their ins and outs.
+To showcase the data we collected from the systems, I built 3 user interfaces using Rx.js to manipulate the data, and d3.js to visualize it.  Developing these UIs provided me with an excellent opportunity to dive deep into these libraries and learn many of their ins and outs.
 
 == IoT Beacon Location
-The data collected for the IoT portion of our keynote demo consisted of millions of scan events from 300 https://store.gimbal.com/collections/beacons/products/s10[Gimbal BLE beacons] handed out to http://www.devnation.org/[DevNation] attendees.  The scanners were made using https://www.raspberrypi.org/[Raspberry PIs] that transmitted the scan events to a http://www.redhat.com/en/technologies/jboss-middleware/amq[Red Hat A-MQ] message broker.  These numerous events were then processed using  https://spark.apache.org/[Apache Spark], reducing the millions of beacon events into tens-of-thousands of meaningful "business events" representing attendee movement throughout the conference.
+The data collected for the IoT portion of our keynote demo consisted of millions of scan events from 300 https://store.gimbal.com/collections/beacons/products/s10[Gimbal BLE beacons] handed out to http://www.devnation.org/[DevNation] attendees.  The scanners were made using https://www.raspberrypi.org/[Raspberry PIs] that transmitted the scan events to a http://www.redhat.com/en/technologies/jboss-middleware/amq[Red Hat A-MQ] message broker.  These numerous events were then processed using  https://spark.apache.org/[Apache Spark], reducing the millions of beacon events into tens-of-thousands of meaningful "business events" representing attendee movements throughout the conference.
 
 === IoT Map Visualization
-The Spark-processed data was retrieved from the message broker into a node.js backend, stored in a mongodb datastore, and re-broadcast to the browser clients.  I used Rx.js throughout both the node.js backend and in the browser to:
+The Spark-processed data was retrieved from the message broker into a node.js backend, was stored in a mongodb datastore, and then was re-broadcast to the browser clients.  I used Rx.js throughout both the node.js backend and in the browser to:
 
 * wrap a https://github.com/jmesnil/stomp-websocket[STOMP over Websocket] protocol connection.
 * wrap the websocket broadcasts and clients
@@ -38,7 +38,7 @@ The Spark-processed data was retrieved from the message broker into a node.js ba
 
 Using Rx.js throughout the application meant that any idiosyncrasies of the the various protocols were encapsulated within the Observable definition, and the rest of the application adhered to a consistent API for authoring Asynchronous javascript code.
 
-The map UI uses d3.js to bind the beacon location data to SVG circles in the browser.  I then used the d3.js https://github.com/mbostock/d3/wiki/Force-Layout[force layout] to animate the circles, moving around the map, mimicking the movement of the real-world beacons.
+The map UI uses d3.js to bind the beacon location data to SVG circles in the browser.  I then used the d3.js https://github.com/mbostock/d3/wiki/Force-Layout[force layout] to animate the circles and move them around the map, mimicking the movement of the real-world beacons.
 
 Watch the video of the keynote linked above to see the UI backed with real data.  I additionally embedded a code-pen that shows the beacon-location visualization backed by simulated data. (If the animation is already complete, hover over the codepen and hit the "rerun" button in the bottom right).
 
@@ -64,7 +64,7 @@ Again using a STOMP over websockets connection to the message broker, I used Rx.
 --
 
 == 1k Containers Visualization
-The power of docker, kubernetes, and OpenShift was demonstrated with a rapid scale up of 1026 containers live on stage.  To visualize this scale up, we developed a custom "hexboard" UI, where each hexagon represents an individual kubernetes pod.  The lifecycle of each individual pod was reflected as a falling hexagon indicating each stage transition, culminating with the _shadowman_ Red Hat logo when all pods were online.
+The power of docker, kubernetes, and OpenShift was demonstrated with a rapid scale-up of 1026 containers live on stage.  To visualize this scale-up, we developed a custom "hexboard" UI, where each hexagon represents an individual kubernetes pod.  The lifecycle of each individual pod was reflected as a falling hexagon indicating each stage transition, culminating with the _shadowman_ Red Hat logo when all pods were online.
 
 I've included a codepen below showing the hexboard UI, again backed by "simulated" data.
 
@@ -77,7 +77,7 @@ I've included a codepen below showing the hexboard UI, again backed by "simulate
 --
 
 === Claim you container
-Audience members were then provided an opportunity to claim their own piece of "the cloud" by drawing a sketch on their mobile device and posting that sketch to an individual kubernetes pod via the https://www.redhat.com/en/technologies/mobile/application-platform[Red Hat Mobile Application Platform] backend.  The audience participation was incredible, and we quickly filled the hexboard with user-generated sketches!
+Audience members were then provided an opportunity to claim their own piece of "the cloud" by drawing a sketch on their mobile devices and posting those sketches to an individual kubernetes pod via the https://www.redhat.com/en/technologies/mobile/application-platform[Red Hat Mobile Application Platform] back-end.  The audience participation was incredible, and we quickly filled the hexboard with user-generated sketches!
 
 [.tweet]
 --

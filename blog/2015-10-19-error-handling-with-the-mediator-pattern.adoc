@@ -1,0 +1,110 @@
+= Error handling in a request/response model with the mediator pattern
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [mediator, pattern, error handling]
+:awestruct-description: ""
+
+== The mediator pattern
+https://twitter.com/addyosmani[Andy Osamani] has a great blog post introducing the mediator pattern in his post http://addyosmani.com/largescalejavascript/[Patterns For Large-Scale JavaScript Application Architecture].  I've recently started working with this pattern, using the https://www.npmjs.com/package/mediator-js[mediator.js implementation] available via npm.  Overall the pattern works well when notifying one module of changes in another; for example when publishing state changes.
+
+However one area where the pattern seems to fall short is when one module wants to request information from another.  For example, consider a module that manages a list of jobs.  Now consider another module that wants to retrieve a job from that list.  An initial implementation using the mediator pattern could look like:
+
+=== A naive object request implementation
+[source,javascript]
+----
+mediator.subscribe('job:loaded', function(job) {
+  console.log('job loaded');
+});
+mediator.publish('job:load', jobId);
+----
+
+Some problems with the above implementation include:
+
+. There is a memory leak with the subscription object returned from the `subscribe` method.
+. A race condition exists whereby a second job:load event may be fired and complete before the first one completes; our listener would receive this second job object.
+
+=== An improved object request implementation
+The first issue above can be resolved by appending the `jobId` value to the event `job:loaded` event.  The second issue can be resolved by un-subscribing from the event in the callback function.  It turns out this is a common enough pattern that we have the shorthand `once` method that accomplished this for us.
+
+[source,javascript]
+----
+mediator.once('job:loaded:'+jobId, function(job) {
+  console.log('job loaded');
+});
+mediator.publish('job:load', jobId);
+----
+
+This second implementation indeed corrects the problems of the first implementation, but we still have a source for a potential memory leak, whereby the `job:loaded:#` event never fires.  We are left with a dangling subscription;  there is no _error handling_ in the above implementation.
+
+A possible _gotcha_ can be uncovered if the _job load_ task is synchronous, then the subscription *must* be created before the requesting event is triggered.
+
+I also don't like the verbosity of the approach.  Triggering the event and registering a callback for the corresponding success event results in a lot of repeated boilerplate code.
+
+=== Object request with error handling
+The error handling issue can be resolved by introducing an _error_ event in addition to the already used _success_ event.  To keep things clear I'll adjust the naming convention of the events to look like:
+
+job:load:: An event requesting for the job to be loaded.
+job:load:done:: An event fired when the job is successfully loaded
+job:load:error:: An event fired when an error is encountered while loading the job
+
+Secondly we need to set a timeout to ensure any unfulfilled subscriptions do not result in a memory leak.
+
+The result of this is a whole heap of boilerplate code:
+
+[source,javascript]
+----
+var complete = false;
+
+var done = mediator.subscribe('job:load:'+jobId+'done', function(job) {
+  complete = true;
+  console.log('job loaded');
+});
+var error = mediator.subscribe('job:load:'+jobId+'error:', function(job) {
+  complete = true;
+  console.error('error loading job');
+});
+
+setTimeout(function) {
+  if (!complete) {
+    mediator.remove('job:load:'+jobId+'done', done);
+    mediator.remove('job:load:'+jobId+'error:', error);
+    console.error('timeout loading job');
+  }
+}, 2000);
+
+mediator.publish('job:load', jobId);
+----
+
+=== Introducing the `mediator.request` method
+This can be simplified by encapsulating the above logic in a helper function I call `mediator.request`, and adopting the https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Promise[Promise API]:
+
+[source,javascript]
+----
+mediator.request('job:load',  // the request event
+  jobId,                      // the request parameter
+  'job:load:'+jobId+'done:',  // the request success event
+  'job:load:'+jobId+'error:', // the request error event
+  2000                        // timeout after which an error event is published
+).then(function(job) {
+  console.log('job loaded');
+}, function(error) {
+  console.error('error loading job');
+});
+----
+
+Lastly, we can simplify the above invocation by adopting a naming convention for our success and error events using the `:<param>:done` and `:<param>:error` suffixes respectively (allowing for overrides of course).  The resulting API then looks like:
+
+[source,javascript]
+----
+mediator.request('job:load', jobId, [options])
+  .then(function(job) {
+    console.log('job loaded');
+  }, function(error) {
+    console.error('error loading job');
+  });
+----
+
+=== Concerns and conclusion
+The above approach for dealing with a request/response communication model between modules using the mediator pattern is loosely based of the HTTP model, where the mediator events map to URLs.  The proposed `mediator.request` method API is then analogous to the https://www.npmjs.com/package/request[_request_ npm module], and the API could be extended using that module as inspiration.
+
+Finally I'll mention that I have also considered that it may be an inappropriate use of the mediator pattern when a request/response form of inter-module communication is required. However I feel that with adopting the above API we can maintain the benefits of having loosely-coupled modular architecture provided by the mediator pattern, while addressing the reql-world concern of one module requesting data from another.

@@ -5,7 +5,7 @@ Brian Leathem
 :awestruct-description: ""
 
 == The mediator pattern
-https://twitter.com/addyosmani[Andy Osamani] has a great blog post introducing the mediator pattern in his post http://addyosmani.com/largescalejavascript/[Patterns For Large-Scale JavaScript Application Architecture].  I've recently started working with this pattern, using the https://www.npmjs.com/package/mediator-js[mediator.js implementation] available via npm.  Overall the pattern works well when notifying one module of changes in another; for example when publishing state changes.
+https://twitter.com/addyosmani[Addy Osmani] has a great blog post introducing the mediator pattern in his post http://addyosmani.com/largescalejavascript/[Patterns For Large-Scale JavaScript Application Architecture].  I've recently started working with this pattern, using the https://www.npmjs.com/package/mediator-js[mediator.js implementation] available via npm.  Overall the pattern works well when notifying one module of changes in another; for example when publishing state changes.
 
 However one area where the pattern seems to fall short is when one module wants to request information from another.  For example, consider a module that manages a list of jobs.  Now consider another module that wants to retrieve a job from that list.  An initial implementation using the mediator pattern could look like:
 

@@ -1,12 +1,13 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-author: ""
+author: "Brian Leathem"
 draft: true
-categories: []
+categories: [""]
 description: ""
 linktitle: ""
 featured: ""
 featuredpath: ""
 featuredalt: ""
+type: "post"
 ---

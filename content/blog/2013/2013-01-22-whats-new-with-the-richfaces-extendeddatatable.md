@@ -1,85 +1,159 @@
 ---
-layout: post
-title: "What's new with the RichFaces extendedDataTable"
-tags: [ RichFaces, RF43, edt, extendedDataTable ]
+  title: "What's new with the RichFaces extendedDataTable"
+  date: 2013-01-22
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RichFaces, RF43, edt, extendedDataTable ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2013/01/whats-new-with-the-richfaces-extendeddatatable.html
 ---
 
-!>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/
+{{< figure src="/img/blog/common/richfaces.png" title="RichFaces" link="http://richfaces.org/" >}}
 
-The "upcoming 4.3 release":https://issues.jboss.org/browse/RF/fixforversion/12320380 of RichFaces will offer the RichFaces community a number of improvements to the extendedDataTable.  These new features include:
+The [upcoming 4.3 release](https://issues.jboss.org/browse/RF/fixforversion/12320380) of RichFaces will offer the RichFaces community a number of improvements to the extendedDataTable. These new features include:
 
-* Built-in sorting and filtering
-* External table state saving
-* A number of bug-fixes
+-   Built-in sorting and filtering
+-   External table state saving
+-   A number of bug-fixes
 
-h2. Built-in sorting and filtering
+Built-in sorting and filtering
+------------------------------
 
-The RichFaces 4 "extendedDataTable":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=extendedDataTable (EDT) has always had the ability to sort and filter columns, but required the developer to define the sort and filter controls themselves, then manually invoke the required operations on the back-end.  While not difficult to do, a lot of boiler-plate code was required for what is in fact a common operation.  With RichFaces 4.3 we've resolved "RF-8125":https://issues.jboss.org/browse/RF-8125 that tracked a long standing request to port the built-in search capabilities form the RichFaces 3 EDT to RichFaces 4.
+The RichFaces 4 [extendedDataTable](http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=extendedDataTable) (EDT) has always had the ability to sort and filter columns, but required the developer to define the sort and filter controls themselves, then manually invoke the required operations on the back-end. While not difficult to do, a lot of boiler-plate code was required for what is in fact a common operation. With RichFaces 4.3 we've resolved [RF-8125](https://issues.jboss.org/browse/RF-8125) that tracked a long standing request to port the built-in search capabilities form the RichFaces 3 EDT to RichFaces 4.
 
-div(alert alert-info). *Built-in sorting/filtering is currently only available in the extendedDataTable component.*  We will add support to the dataTable component in a subsequent release.
+div(alert alert-info). **Built-in sorting/filtering is currently only available in the extendedDataTable component.** We will add support to the dataTable component in a subsequent release.
 
-h3. Built-in Sorting
+### Built-in Sorting
 
-Implementing sortable columns in the EDT is now as simple as adding the @sortBy@ attribute to your EDT column, and the sort controls will automatically be generated and linked to the internal sorting mechanism.  To influence how the sorting is performed, add the @comparator@ attribute to your column, and the comparator defined there will be used for the sort.
+Implementing sortable columns in the EDT is now as simple as adding the `sortBy` attribute to your EDT column, and the sort controls will automatically be generated and linked to the internal sorting mechanism. To influence how the sorting is performed, add the `comparator` attribute to your column, and the comparator defined there will be used for the sort.
 
-Refer to the RichFaces 4 "Component Reference":http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html/chap-Component_Reference-Tables_and_grids.html#sect-Component_Reference-Tables_and_grids-Table_sorting for additional details on using the built-in and external sort controls.
+Refer to the RichFaces 4 [Component Reference](http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html/chap-Component_Reference-Tables_and_grids.html#sect-Component_Reference-Tables_and_grids-Table_sorting) for additional details on using the built-in and external sort controls.
 
-div(alert alert-warning). If you require additional flexibility, and prefer to implement your own sort controls, set the @sortType=custom@ attribute, and the built-in sort controls will not be rendered.  Built-in sort controls can be disabled altogether by setting the web.xml context param @org.richfaces.builtin.sort.enabled@ to _false_.
+div(alert alert-warning). If you require additional flexibility, and prefer to implement your own sort controls, set the `sortType=custom` attribute, and the built-in sort controls will not be rendered. Built-in sort controls can be disabled altogether by setting the web.xml context param `org.richfaces.builtin.sort.enabled` to *false*.
 
-h3. Built-in Filtering
+### Built-in Filtering
 
-Similarly, taking advantage of the built-in filter controls is also straightforward.  Define the @filterValue@ attribute on the column to be filtered, then define either a @filterExpression@ or @filter@ attribute to implement the filter logic.  When the attributes are present an input element will be displayed in the column header.  Simple value conversions are performed implicitly in the EL of the @filterExpression@ or explicitly in the @filter@ implementation.
+Similarly, taking advantage of the built-in filter controls is also straightforward. Define the `filterValue` attribute on the column to be filtered, then define either a `filterExpression` or `filter` attribute to implement the filter logic. When the attributes are present an input element will be displayed in the column header. Simple value conversions are performed implicitly in the EL of the `filterExpression` or explicitly in the `filter` implementation.
 
-Refer to the RichFaces 4 "Component Reference":http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html/chap-Component_Reference-Tables_and_grids.html#sect-Component_Reference-Tables_and_grids-Table_filtering for additional details on using the built-in and external filter controls.
+Refer to the RichFaces 4 [Component Reference](http://docs.jboss.org/richfaces/4.3.X/4.3.0.CR1/Component_Reference/en-US/html/chap-Component_Reference-Tables_and_grids.html#sect-Component_Reference-Tables_and_grids-Table_filtering) for additional details on using the built-in and external filter controls.
 
-div(alert alert-warning). Further control over the filter controls can be achieved by setting the @filterType=custom@ attribute, and implementing your own filter controls in the back-end.  Built-in filter controls can be disabled altogether by setting the web.xml context param @org.richfaces.builtin.filter.enabled@ to _false_.
+div(alert alert-warning). Further control over the filter controls can be achieved by setting the `filterType=custom` attribute, and implementing your own filter controls in the back-end. Built-in filter controls can be disabled altogether by setting the web.xml context param `org.richfaces.builtin.filter.enabled` to *false*.
 
-h2. ExtendedDataTable State Saving
+ExtendedDataTable State Saving
+------------------------------
 
-The EDT has had another RichFaces 3 feature ported forward: table state saving.  With the resolution of "RF-10442":https://issues.jboss.org/browse/RF-10442, application developers can add the @tableState@ attribute to their EDT components, providing a value-binding to a bean String property that can be used to store the state of the column width, sequence, sorting, and filtering of the EDT.  The table state is stored in a JSON string format, and is easily stored in a data base for later retrieval.
+The EDT has had another RichFaces 3 feature ported forward: table state saving. With the resolution of [RF-10442](https://issues.jboss.org/browse/RF-10442), application developers can add the `tableState` attribute to their EDT components, providing a value-binding to a bean String property that can be used to store the state of the column width, sequence, sorting, and filtering of the EDT. The table state is stored in a JSON string format, and is easily stored in a data base for later retrieval.
 
-h2. Bug fixes
+Bug fixes
+---------
 
-In addition to the above feature additions, the EDT has seen a number of bug fixes in the 4.3 release.  These fixes include:
+In addition to the above feature additions, the EDT has seen a number of bug fixes in the 4.3 release. These fixes include:
 
 <dl class="dl-horizontal">
-    <dt><a href="https://issues.jboss.org/browse/RF-10154">RF-10154</a></dt>
-    <dd>UIDataAdaptor vs. UIData visitTee small difference</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-10154">RF-10154</a>
 
-    <dt><a href="https://issues.jboss.org/browse/RF-10799">RF-10799</a></dt>
-    <dd>EDT - attribute @clientRows missing in taglib</dd>
+</dt>
+<dd>
+UIDataAdaptor vs. UIData visitTee small difference
 
-    <dt><a href="https://issues.jboss.org/browse/RF-11382">RF-11382</a></dt>
-    <dd>Datatable and ExtendedDatatable evaluate value attribute even if rendered=false</dd>
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-10799">RF-10799</a>
 
-    <dt><a href="https://issues.jboss.org/browse/RF-11776">RF-11776</a></dt>
-    <dd>rich:extendedDataTable columnsOrder attribute is not working</dd>
+</dt>
+<dd>
+EDT - attribute @clientRows missing in taglib
 
-    <dt><a href="https://issues.jboss.org/browse/RF-12236">RF-12236</a></dt>
-    <dd>showcase - rich:extendedDataTable - re-sizing columns breaks horizontal scrolling</dd>
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-11382">RF-11382</a>
 
-    <dt><a href="https://issues.jboss.org/browse/RF-12450">RF-12450</a></dt>
-    <dd>Collapsible subtable toggler not rendered</dd>
+</dt>
+<dd>
+Datatable and ExtendedDatatable evaluate value attribute even if rendered=false
 
-    <dt><a href="https://issues.jboss.org/browse/RF-12611">RF-12611</a></dt>
-    <dd>rich:dataTable doesn't call restoreState() on a row-level composite component</dd>
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-11776">RF-11776</a>
 
-    <dt><a href="https://issues.jboss.org/browse/RF-12639">RF-12639</a></dt>
-    <dd>rich:extendedDataTable inside rich:tab: The columns which are not frozen are not rendered after switching the tab for the first time in IE 8.</dd>
+</dt>
+<dd>
+rich:extendedDataTable columnsOrder attribute is not working
 
-    <dt><a href="https://issues.jboss.org/browse/RF-12659">RF-12659</a></dt>
-    <dd>ExtendedDataTable layout breaks when table element width set to 100%</dd>
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-12236">RF-12236</a>
 
-    <dt><a href="https://issues.jboss.org/browse/RF-12672">RF-12672</a></dt>
-    <dd>Collapsible sub table: noData facet doesn't work inside switchable panels</dd>
+</dt>
+<dd>
+showcase - rich:extendedDataTable - re-sizing columns breaks horizontal scrolling
 
-    <dt><a href="https://issues.jboss.org/browse/RF-12684">RF-12684</a></dt>
-    <dd>The last page shows rows from the page before if rich:collapsibleSubTable is included in rich:dataTable with rich:dataScroller.</dd>
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-12450">RF-12450</a>
 
-    <dt><a href="https://issues.jboss.org/browse/RF-12691">RF-12691</a></dt>
-    <dd>extendedDataTable: Header facet render problem in RichFaces 4</dd>
+</dt>
+<dd>
+Collapsible subtable toggler not rendered
+
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-12611">RF-12611</a>
+
+</dt>
+<dd>
+rich:dataTable doesn't call restoreState() on a row-level composite component
+
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-12639">RF-12639</a>
+
+</dt>
+<dd>
+rich:extendedDataTable inside rich:tab: The columns which are not frozen are not rendered after switching the tab for the first time in IE 8.
+
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-12659">RF-12659</a>
+
+</dt>
+<dd>
+ExtendedDataTable layout breaks when table element width set to 100%
+
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-12672">RF-12672</a>
+
+</dt>
+<dd>
+Collapsible sub table: noData facet doesn't work inside switchable panels
+
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-12684">RF-12684</a>
+
+</dt>
+<dd>
+The last page shows rows from the page before if rich:collapsibleSubTable is included in rich:dataTable with rich:dataScroller.
+
+</dd>
+<dt>
+<a href="https://issues.jboss.org/browse/RF-12691">RF-12691</a>
+
+</dt>
+<dd>
+extendedDataTable: Header facet render problem in RichFaces 4
+
+</dd>
 </dl>
+The 4.3 release
+---------------
 
-h2. The 4.3 release
-
-RichFaces "4.3.0.CR1":http://www.bleathem.ca/blog/2013/01/richfaces-430cr1-release-announcement.html is currently available, having undergone our "extensive QA process":http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html, and a 4.3.0.CR2 release will be available shortly.  Please take the time to take the extendedDataTable for a spin with this release, and give us your feedback for the new features and bug fixes via the "RichFaces forum":https://community.jboss.org/en/richfaces?view=discussions or "issue tracker":https://issues.jboss.org/browse/RF.
+RichFaces [4.3.0.CR1](http://www.bleathem.ca/blog/2013/01/richfaces-430cr1-release-announcement.html) is currently available, having undergone our [extensive QA process](http://blog.pavol.pitonak.com/2012/09/meet-richfaces-qe-team.html), and a 4.3.0.CR2 release will be available shortly. Please take the time to take the extendedDataTable for a spin with this release, and give us your feedback for the new features and bug fixes via the [RichFaces forum](https://community.jboss.org/en/richfaces?view=discussions) or [issue tracker](https://issues.jboss.org/browse/RF).

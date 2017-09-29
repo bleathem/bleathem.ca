@@ -1,11 +1,21 @@
+---
+  title: Hands on with the jQuery UI widget factory at DevNation
+  date: 2014-03-11
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [jQuery, jQuery UI, Widgets]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2014/03/jqeury-ui-widgets-at-devnation.html
+---
 = Hands on with the jQuery UI widget factory at DevNation
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [jQuery, jQuery UI, Widgets]
-:awestruct-image_url: /images/blog/2014-03-11-jqeury-ui-widgets-at-devnation/devnation_250x250_blogbadge_joinme.png
-:awestruct-description: ""
 
-image::/images/blog/2014-03-11-jqeury-ui-widgets-at-devnation/devnation_250x250_blogbadge_joinme.png[DevNation, float="right", link="http://devnation.org/"]
+image::/img/blog/2014-03-11-jqeury-ui-widgets-at-devnation/devnation_250x250_blogbadge_joinme.png[DevNation, float="right", link="http://devnation.org/"]
 
 I'm thrilled to be speaking the upcoming http://www.devnation.org/[DevNation conference].  DevNation is an Open Source Developer conference co-located with the http://www.redhat.com/summit/[Red Hat Summit].  With the announced http://www.devnation.org/#agenda[agenda] and the co-location with Summit, the conference is shaping up to be quite the event!
 
@@ -16,10 +26,10 @@ I'm also really looking forward to participating in the Beer & BoF _Mobile & Ric
 While at the conference I look forward to attending a number of interesting looking sessions:
 
 * jQuery: Behind the JavaScript - Kris Borchers
-* Write your first Ceylon program with the language author - Gavin King 
-* High Performance Reactive Applications with Vert.x - Tim Fox 
+* Write your first Ceylon program with the language author - Gavin King
+* High Performance Reactive Applications with Vert.x - Tim Fox
 * Full stack Javascript from mobile to cloud - Grant Shipley
-* Mobile web development: workflow and best practises - Luke Holmquist 
+* Mobile web development: workflow and best practises - Luke Holmquist
 
 Finally let's not forget the hacknight!  Here's a great chance to share a table with a group of developers and hack away on some OSS.  From new contributors to old, all are welcome.  Come and share your ideas and your code!
 

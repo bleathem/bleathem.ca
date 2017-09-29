@@ -1,47 +1,58 @@
 ---
-layout: post
-title: "RichFaces Plugin for JBoss Forge"
-tags: [ Forge, RichFaces ]
+  title: RichFaces Plugin for JBoss Forge
+  date: 2011-04-03
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ Forge, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/04/richfaces-plugin-for-seam-forge.html
 ---
 
-If you haven't yet heard about it, "JBoss Forge":http://forge.jboss.org/ is a fantastic new tool from JBoss for rapid application development of standards based applications.  Forge allows a developer to quickly set up the scaffolding for an application, and quickly get to the matter of solving domain problems.
+If you haven't yet heard about it, [JBoss Forge](http://forge.jboss.org/) is a fantastic new tool from JBoss for rapid application development of standards based applications.  Forge allows a developer to quickly set up the scaffolding for an application, and quickly get to the matter of solving domain problems.
 
 What makes Forge particularly interesting, from my perspective, is the way it was built with plugins in mind as a defining way in which the platform is meant to be extended.  To take this new tool for a spin, I created a Forge plugin for <a href="http://www.jboss.org/richfaces">RichFaces</a> - the killer component kit for JSF 2.
 
-For instructions on installing Forge, refer to the "Forge Documentation":http://forge.jboss.org/docs/index.html.  The following guide assumes you have Forge installed and functional.
+For instructions on installing Forge, refer to the [Forge Documentation](http://forge.jboss.org/docs/index.html).  The following guide assumes you have Forge installed and functional.
 
 <h3 style='color:green; border: solid green 2px; padding : 10px'>** The instructions in this blog are for the 0.1.0 version of the RichFaces plugin for JBoss Forge.  See the project's <a href="https://github.com/bleathem/richfaces-forge-plugin/blob/master/README.txt">README.txt</a> for updated usage instructions. ** </h3>
 
 First, lets install the RichFaces plugin for forge (installing from git!):
 
-<pre class="prettyprint">
+```bash
 $ forge git-plugin git://github.com/bleathem/richfaces-forge-plugin.git
-</pre>
+```
 
 Forge makes it easy to create a new project:
 
-<pre class="prettyprint">
+```bash
 $ new-project --named richfacesApp --topLevelPackage ca.bleathem.richfaces.test --projectFolder richfacesApp
-</pre>
+```
 
 Next, make the project a Java EE wep app, by installing the "servlet facet":
 
-<pre class="prettyprint">
+```bash
 $ project install-facet forge.spec.servlet
-</pre>
+```
 
 Now, we can run the "richfaces" command, with no arguments to see the options available:
 
-<pre class="prettyprint">$ richfaces
+```bash
+$ richfaces
 Use the install commands to install:
   install-base: maven dependencies, and web.xml configuration
   install-example-facelet: a sample RichFaces enabled facelet file with backing bean
   install: both base and example-facelet
-</pre>
+```
 
 Running "richfaces install" duplicates the behaviour of the existing <a href="http://docs.jboss.org/richfaces/latest_4_0_X/Developer_Guide/en-US/html/chap-Developer_Guide-Getting_started_with_RichFaces.html#sect-Component_Reference-Using_RichFaces_with_Maven-Using_the_RichFaces_project_archetype">RichFaces maven archetype</a>.  If you have an existing project, and you just want to use forge to add the RichFaces dependencies and setup the web.xml, run "richfaces isntall-base".  For our vanilla application, we'll run the full install, and see a simple facelet page with an input component "ajaxified" with RichFaces.
 
-<pre class="prettyprint">
+```bash
 $ richfaces install
 ***SUCCESS*** RichFaces BOM dependency has been installed.
 ***SUCCESS*** org.richfaces.ui:richfaces-components-ui:4.0.0.Final dependency has been installed.
@@ -60,7 +71,7 @@ Wrote /home/bleathem/NetBeansProjects/richfaces/richfacesApp/src/main/webapp/ind
 ***SUCCESS*** index.xhtml file has been installed.
 Wrote /home/bleathem/NetBeansProjects/richfaces/richfacesApp/src/main/java/ca/bleathem/richfaces/test/RichBean.java
 ***SUCCESS*** RichBean class has been installed.
-</pre>
+```
 
 This new RichFaces enabled maven project is ready to be opened up in your favorite IDE (I used Netbeans) and run in your preferred run-time container (I used Glassfish 3.1).
 

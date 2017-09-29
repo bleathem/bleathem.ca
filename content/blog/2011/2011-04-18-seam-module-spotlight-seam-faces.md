@@ -1,12 +1,22 @@
 ---
-layout: post
-title: "Seam Module Spotlight: Seam Faces"
-tags: [ Seam ]
+  title: "Seam Module Spotlight: Seam Faces"
+  date: 2011-04-18
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ Seam ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/04/seam-module-spotlight-seam-faces.html
 ---
 
 This is a blog entry I wrote for <a href="http://in.relation.to/Bloggers/SeamFaces301FinalReleaseAndFacesModuleSpotlight">in.relation.to</a>.  I'm including it here to keep a personal record of the post.
 
-hr. 
+----
 
 In this entry for the Seam Module Spotlight series, we will take a close look at the “view configuration” feature of Seam Faces.
 
@@ -14,16 +24,16 @@ Seam Faces aims to provide JSF developers with a truly worthy framework for web 
 
 Adhering to the CDI core tenet of type safety, Seam Faces offers a type-safe mechanism to configure the behaviour of your JSF views.  So far these configurable behaviors include:
 
-# Restricting view access by integrating with Seam Security
-# Configuring URL rewriting by integrating with PrettyFaces (or any other pluggable URL rewriting framework)
-# Configuring Transactions via Seam Persistence
-# And a personal favorite: setting “?faces-redirect=true” when navigating to a view.
+* Restricting view access by integrating with Seam Security
+* Configuring URL rewriting by integrating with PrettyFaces (or any other pluggable URL rewriting framework)
+* Configuring Transactions via Seam Persistence
+* And a personal favorite: setting “?faces-redirect=true” when navigating to a view.
 
 Note: the above integrations are optional, you must include the relevant jars in the application for their respective configurations to have any effect
 
 Lets take a closer look at the View configuration from the Seam Faces example “faces-viewconfig”:
 
-<pre class="prettyprint">
+```java
 @ViewConfig
 public interface Pages {
 
@@ -46,17 +56,17 @@ public interface Pages {
 
   }
 }
-</pre>
+```
 
 At first glance, the structure of the above configuration might appear odd.  The @ViewConfig annotation is on the interface, and the interface is nothing more than a container for a static enum.  This arrangement is unfortunately required by the current CDI specification for the view configuration annotations to be scanned, and will hopefully be corrected in future iterations of the CDI spec.
 
 The properties of the enum are annotated with a @ViewPattern annotation, specifying to which views the adjacent annotations apply.  ViewPatterns support wildcards, and matches are made to a particular view weighted by the specificity of the match; therefore, if two annotations paired with different @ViewPatterns conflict for a given view, the annotation paired with the more specific @ViewPattern takes precedence.
 
-h2. Seam Security via the @ViewConfig
+## Seam Security via the @ViewConfig
 
 Now let’s look at the Seam Security annotations @Admin and @Owner.  These annotations are user-provided, meaning they were built solely for this example, and are qualified with the Seam Security qualifier: @SecurityBindingType.  When a view is requested that matches a pattern in the @ViewConfig annotated with such an annotation, Seam Faces invokes Seam Security to determine if access should be granted. Authorization is evaluated with the following class:
 
-<pre class="prettyprint">
+```java
 public class SecurityRules {
 public @Secures @Owner boolean ownerChecker(Identity identity, @Current Item item) {
 if (item == null || identity.getUser() == null) {
@@ -74,27 +84,27 @@ return "admin".equals(identity.getUser().getId());
 }
 }
 }
-</pre>
+```
 
 In this way, views annotated with the @Owner annotation are secured by the @Secures method annotated with the same @Owner annotation.  Coupled with parameter injection, this is truly a declarative syntax for securing view access.
 
 Furthermore, the @Admin annotation is defined with an additional qualifier:
 
-<pre class="prettyprint">
+```java
 @RestrictAtPhase(PhaseIdType.RESTORE_VIEW)
-</pre>
+```
 
 This annotation causes the security restriction to be applied at the “Restore View” phase, rather than the default phases: “Invoke Application” and “Render Response”.  These default phases were chosen in order for application data to be present and allow access restrictions to be contextual.  The default phases also mean that the security restrictions are evaluated twice per lifecycle, as the view often changes at the end of the “Invoke Application” phase.
 
-h2. URL rewriting via the @ViewConfig
+## URL rewriting via the @ViewConfig
 
 The view config also let’s us configure URL rewriting for a view using the @UrlMapping annotation.  In the above @ViewConfig, the URL /item.jsf?item =1 would get mapped into /item/1/, courtesy of PrettyFaces and the annotation: @UrlMapping(“/item/\#{id}”).  In this mapping, “\#{id}” tells the rewriting-engine to treat the last portion of the URL as the value of the the query-parameter named “id”.  By integrating the configuration of rewriting URLs alongside the rest of the view configuration, Seam Faces attempts to make this powerful technology more accessible, and a core part of JSF application development.
 
-h2. Setting faces-redirect=true
+## Setting faces-redirect=true
 
-A seemingly simple annotation, @FacesRedirect is a surprisingly useful one.  When this annotation is present with a @ViewPattern, any navigation to a matching view is intercepted, and the faces-redirect attribute is activated.  In the provided example the @FacesRedirect annotation is applied once to the pattern “/*”, which applies the configuration to all views.  One could optionally override this catch all setting on a more specific pattern, or on an individual view, with the annotation @FacesRedirect(false).  This annotation has a special place close to my heart - no more “?faces-redirect=true” peppered throughout any more applications!  
+A seemingly simple annotation, @FacesRedirect is a surprisingly useful one.  When this annotation is present with a @ViewPattern, any navigation to a matching view is intercepted, and the faces-redirect attribute is activated.  In the provided example the @FacesRedirect annotation is applied once to the pattern “/*”, which applies the configuration to all views.  One could optionally override this catch all setting on a more specific pattern, or on an individual view, with the annotation @FacesRedirect(false).  This annotation has a special place close to my heart - no more “?faces-redirect=true” peppered throughout any more applications!
 
-h2. Seam Persistence via the @ViewConfig
+## Seam Persistence via the @ViewConfig
 
 Last, but not least, there is the SeamManagedTransaction annotation that can be applied in the @ViewConfig.  This allows transactional behaviour to be defined on a per view basis.  Exploring the possibilities here will be the subject matter for a subsequent post.
 

@@ -1,11 +1,21 @@
+---
+  title: RichFaces 5.0.0.Alpha3 Release Announcement
+  date: 2014-02-06
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF50, Alpha3]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2014/02/richfaces-500alpha3-release-announcement.html
+---
 = RichFaces 5.0.0.Alpha3 Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF50, Alpha3]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: "RichFaces 5.0.0.Alpha3 has been released addressing JSF 2.2 compatibility.  Try this release of RichFaces out with the latest WildFly 8 release and take advantage of the spec improvements available in JSF 2.2"
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 RichFaces https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12322162[5.0.0.Alpha3] has been released.  With this third alpha release of RichFaces 5 we are providing compatibility with JSF 2.2.  Go download http://www.wildfly.org/[WildFly] and give the JSF 2.2 capabilities of this release a spin.
 

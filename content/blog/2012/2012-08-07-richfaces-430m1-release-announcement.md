@@ -1,12 +1,22 @@
 ---
-layout: post
-title: "RichFaces 4.3.0.M1 Release Announcement"
-tags: [ RichFaces, RF43, CDK, testing, MyFaces ]
+  title: "RichFaces 4.3.0.M1 Release Announcement"
+  date: 2012-08-07
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RichFaces, RF43, CDK, testing, MyFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2012/08/richfaces-430m1-release-announcement.html
 ---
 
-!>/images/blog/common/richfaces.png(RichFaces)!:http://richfaces.org/
+{{< figure src="/img/blog/common/richfaces.png" title="RichFaces" link="http://richfaces.org/" >}}
 
-The first milestone release of RichFaces 4.3 ("4.3.0.M1":https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12318553) is now available.  This is a significant release, with primary focus on improving the RichFaces Component Development Kit ("CDK":https://community.jboss.org/wiki/RichFacesCDKHowTos) - the tool we use to author our JSF components.  A second goal of the release was to improve our "MyFaces":http://myfaces.apache.org/ support, which we accomplished by fixing a number of issues, and identifying some further issues to be addressed in a subsequent 4.3 milestone release.
+The first milestone release of RichFaces 4.3 ([4.3.0.M1](https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12318553)) is now available.  This is a significant release, with primary focus on improving the RichFaces Component Development Kit ([CDK](https://community.jboss.org/wiki/RichFacesCDKHowTos)) - the tool we use to author our JSF components.  A second goal of the release was to improve our "MyFaces":http://myfaces.apache.org/ support, which we accomplished by fixing a number of issues, and identifying some further issues to be addressed in a subsequent 4.3 milestone release.
 
 div(alert alert-info). *To try out this release:* You can download the distribution "directly":http://www.jboss.org/richfaces/download/milestones, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.20120802-M1. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 

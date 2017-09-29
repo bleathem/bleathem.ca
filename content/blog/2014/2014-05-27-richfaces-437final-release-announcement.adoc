@@ -1,11 +1,21 @@
+---
+  title: RichFaces 4.3.7.Final Release Announcement
+  date: 2014-05-27
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF43, Final]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2014/05/richfaces-437final-release-announcement.html
+---
 = RichFaces 4.3.7.Final Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF43, Final]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: ""
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 The RichFaces stable branch receives an update with the release of RichFaces https://issues.jboss.org/browse/RF/fixforversion/12324641[4.3.7.Final].  This most recent micro release of the RichFaces http://www.bleathem.ca/blog/tags/RF43/[4.3 release] series provides a number of bug fixes while we concurrently work on getting a JSF 2.2 compatible https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[RichFaces 4.5] released.
 
@@ -38,7 +48,7 @@ This release resolves 13 issues, making RichFaces 4.3.5 a small bug-fix release.
 
 === Task
 * https://issues.jboss.org/browse/RF-13512[RF-13512] - Photoalbum: port fix from RF-13498 to RF4 photoalbum
-                
+
 == Moving forward
 
 We are finishing off work on our https://issues.jboss.org/browse/RF/fixforversion/12324013[RichFaces 4.5 release] to address JSF 2.2 compatibility with the RichFaces 4.x branch.  This has necessitated we put RichFaces 5 development on hold, but we feel will be worth it to get JSF 2.2 support in a stable release sooner rather than later.

@@ -1,14 +1,24 @@
 ---
-layout: post
-title: "RichFaces 4 CDK | jQeury UI Tabs"
-tags: [ CDK, RichFaces ]
+  title: "RichFaces 4 CDK | jQeury UI Tabs"
+  date: 2011-11-29
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ CDK, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/11/richfaces-4-cdk-jqeury-ui-tabs.html
 ---
 
 Following on with another entry in my <a href="http://blog.bleathem.ca/search/label/CDK">CDK series</a>, this time we will look at at creating a pair of components to wrap the <a href="http://jqueryui.com/demos/tabs/">jQuery UI tabs plugin</a> with the RichFaces CDK. It'll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let's dive right in with a look at the Abstract component definitions.
 
 As always, if you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples">github</a>.
 
-h2. The Component Classes
+## The Component Classes
 
 div=. **AbstractTabs.java**
 
@@ -52,7 +62,7 @@ abstract public class AbstractTab extends javax.faces.component.UIPanel {
 
 The component class for the __tab__ tag is similar to the one for the __tabs__ tag, adding a definition for a __title__ attribute, and with slightly different component properties. Let's move on from these mundane component definitions and look at the Renderers, where things get more interesting.
 
-h2. The Renderers
+## The Renderers
 
 Looking first at the simpler __tab__ renderer:
 
@@ -80,7 +90,7 @@ div=. **tab.template.xhtml**
 </cdk:root>
 </pre>
 
-This renderer is simple, again comparable to the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">hello.template.xml</a>. The new piece we've introduced is the __&lt;cdk:body /&gt;__ tag. This tag indicates where we want to render the contents of the component. So any content (or child components) we nest in out __tab__ tag will be wrapped by the div tag. 
+This renderer is simple, again comparable to the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">hello.template.xml</a>. The new piece we've introduced is the __&lt;cdk:body /&gt;__ tag. This tag indicates where we want to render the contents of the component. So any content (or child components) we nest in out __tab__ tag will be wrapped by the div tag.
 
 We'll see this __&lt;cdk:body /&gt;__ tag again when we look as the (slightly more complex) tabs renderer:
 
@@ -133,7 +143,7 @@ Following the unodered list, we see the __&lt;cdk:body /&gt;__ tag. This renders
 
 The last piece of this template is the javascript call, where we invoke the jQuery UI tabs plugin to enable the client-side behavior. We aren't passing any options to the plugin in this example, but we could easily do so using the __scriptOption__ CDK tag demonstrated with the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component.
 
-h2. The Result
+## The Result
 
 So what does it look like when we put it all together?
 

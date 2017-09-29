@@ -1,21 +1,32 @@
 ---
-layout: post
-title: "RESTful URLs, with JSF 2"
+  title: RESTful URLs, with JSF 2
+  date: 2011-01-29
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [JSF]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/01/restful-urls-with-jsf-2.html
 ---
 
 JSF 2 introduced the ability to create RESTful URLs with the introduction of the &lt;f:viewParam&gt; tag.  The tag is easy enough to use, you simply place it in the &lt;f:metadate&gt; tag, and configure the attributes to decode the url.
 
-<pre class="prettyprint">
+```html
 <f:metadata>
      <f:viewParam />
 </f:metadata>
-</pre>
+```
 
 There are no words to explain how great a feature this is for JSF.  The old "every request is a POST" theory didn't pan out.  RESTful URLs are bookmarkable, and meaningful to end-users. Unfortunately they are still a bit tricky to use in vanilla JSF, as there are only three backing bean scopes in "vanilla" Java EE 6 that are capable of dealing with business transactions/conversations, and each currently has it's own set of limitations.  They are the Session, Conversation, and View scopes
 
 First the Session scope - don't use it!  The Session scope is essentially global for your user as they interact with your web application; there is no concept of a business conversation.  In short, you'll end up with a scalability issue as your session fills up with business objects that are no longer relevant to the current user task.
 
-The second scope to consider is the Conversation scope introduced in Java EE 6 with CDI.  It can span multiple requests, but is shorter lived than the Session.  It at first seems great, but if you're not careful, it breaks the concept of RESTful URLs by tagging the nasty little "cid=#" parameter to your query string.  If the user bookmarks, or otherwise shares the URL, a conversation expired exception will be thrown when the URL is later reloaded.  This quickly becomes a burden to try and deal with.  This *is* something that <a href="https://issues.jboss.org/browse/WELD-549">is fixed with Weld 1.1</a>, but I've got apps to write today!  
+The second scope to consider is the Conversation scope introduced in Java EE 6 with CDI.  It can span multiple requests, but is shorter lived than the Session.  It at first seems great, but if you're not careful, it breaks the concept of RESTful URLs by tagging the nasty little "cid=#" parameter to your query string.  If the user bookmarks, or otherwise shares the URL, a conversation expired exception will be thrown when the URL is later reloaded.  This quickly becomes a burden to try and deal with.  This *is* something that <a href="https://issues.jboss.org/browse/WELD-549">is fixed with Weld 1.1</a>, but I've got apps to write today!
 
 Finally, this leaves the View scope introduced with JSF 2.  The lifetime of the bean is tied to the JSF view - ie. your bean falls out of scope when you navigate to a new view.  The short, well defined nature of this scope means you don't have the memory leak problems of the Session scope, and it doesn't mess up your RESTful URLs the way the Conversation scope does.  However, the only way to get View scoped beans to to share information between views is by using viewParams.  So if you store your business data in View scoped beans, you have to persist your data before moving on to the next view.  This is how I currently build my applications, but the views are becoming too cluttered with javascript panels and popup boxes, as I try to fit a complete business conversation in a single view.
 

@@ -1,8 +1,19 @@
+---
+  title: Error handling in a request/response model with the mediator pattern
+  date: 2015-10-19
+  author: Brian Leathem
+  categories: [Javascript]
+  tags: [mediator, pattern, error handling]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2015/10/error-handling-with-the-mediator-pattern.html
+---
 = Error handling in a request/response model with the mediator pattern
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [mediator, pattern, error handling]
-:awestruct-description: ""
 
 == The mediator pattern
 https://twitter.com/addyosmani[Addy Osmani] has a great blog post introducing the mediator pattern in his post http://addyosmani.com/largescalejavascript/[Patterns For Large-Scale JavaScript Application Architecture].  I've recently started working with this pattern, using the https://www.npmjs.com/package/mediator-js[mediator.js implementation] available via npm.  Overall the pattern works well when notifying one module of changes in another; for example when publishing state changes.

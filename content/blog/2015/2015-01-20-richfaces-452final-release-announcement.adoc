@@ -1,10 +1,20 @@
+---
+  title: RichFaces 4.5.2.Final Release Announcement
+  date: 2015-01-20
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF45, Final]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2015/01/richfaces-452final-release-announcement.html
+---
 = RichFaces 4.5.2.Final Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF45, Final]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: ""
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 RichFaces https://issues.jboss.org/browse/RF/fixforversion/12326280[4.5.2.Final] is now available for download!  Check out https://twitter.com/Makhiel[@Michal Petrov]'s blog for the detailed https://developer.jboss.org/people/michpetrov/blog/2015/01/15/richfaces-452final-release-announcement[RichFaces 4.5.2.Final release announcement].

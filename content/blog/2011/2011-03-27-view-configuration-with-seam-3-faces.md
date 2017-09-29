@@ -1,10 +1,20 @@
 ---
-layout: post
-title: "View Configuration with Seam 3 Faces - the Introduction"
-tags: [ Seam, ViewConfig ]
+  title: View Configuration with Seam 3 Faces - the Introduction
+  date: 2011-03-27
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ Seam, ViewConfig ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/03/view-configuration-with-seam-3-faces.html
 ---
 
-<a href="/images/blog/2011-03-28-view-configuration-with-seam-3-faces/faces_emblem.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="99" src="/images/blog/2011-03-28-view-configuration-with-seam-3-faces/faces_emblem.png" width="100" /></a>
+<a href="/img/blog/2011-03-28-view-configuration-with-seam-3-faces/faces_emblem.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" height="99" src="/img/blog/2011-03-28-view-configuration-with-seam-3-faces/faces_emblem.png" width="100" /></a>
 In <a href="http://seamframework.org/Seam3/FacesModule">Seam Faces</a> we've provided JSF developers with a mechanism to centrally configure various aspects of their JSF views. Concerns like transaction control and view security are currently supported, and support for URL rewriting, XSRF attack prevention, and JSF navigation is in the planning stage.
 
 The end-goal is to support view configuration via multiple sources  (including some support for &lt;f:metadata&gt; child tags).  For now we  provide type-safe configuration using annotations on enums.  The benefit  of type-safety for page configuration is a tremendous benefit, and will  become evident in the following code examples.
@@ -15,27 +25,27 @@ In this post I will cover the @ViewConfig security annotations supported  in the
 
 Consider this @ViewConfig interface:
 
-<pre class="prettyprint">
+```java
 @ViewConfig
 public interface Pages {
- 
+
     static enum Pages1 {
- 
+
         @ViewPattern("/*")
         @LoginView("/login.xhtml")
         @AccessDeniedView("/item/list.xhtml")
         ALL,
- 
+
         @ViewPattern("/admin/*")
         @Admin(restrictAtPhase=RESTORE_VIEW)
         ADMIN,
-         
+
         @ViewPattern("/item.xhtml")
         @Owner
         ITEM;
     }
 }
-</pre>
+```
 
 The following annotations are available:
 
@@ -47,21 +57,21 @@ The following annotations are available:
 
 The secret sauce is in the annotations qualified with the @SecureBindingType qualifier.
 
-<pre class="prettyprint">
+```java
 @SecurityBindingType
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.TYPE})
 public @interface Owner {
 }
-</pre>
+```
 
 These annotations are mapped to methods that check for appropriate  authorization, functionality provided by the Seam Security module.  The  authorization methods themselves are annotated with @Secure and the  corresponding @SecureBindingType qualified annotation, as in the class  below:
 
-<pre class="prettyprint">
+```java
 public class SecurityRules {
- 
+
     private transient final Logger logger = Logger.getLogger(SecurityRules.class.getName());
- 
+
     public @Secures @Owner boolean ownerCheck(Identity identity) {
         if (identity == null || identity.getUser() == null) {
             logger.info("Identity/User is null");
@@ -72,25 +82,25 @@ public class SecurityRules {
             return "demo".equals(id);
         }
     }
- 
+
     public @Secures @Admin boolean adminCheck() {
         return false; // No one is an admin!
     }
 }
-</pre>
+```
 
 So how do these pieces fit together?  Consider a request for the view __/list.xhtml__.  This would match the view pattern, "/*" and access would be granted, as no  SecureBindingType qualified annotation is present.  On the other hand, a request to the view __/item.xhtml__ is matched by the more specific pattern "/item.xhtml", and the request would be intercepted.  Authorization would be checked according to the method annotated by @Secures, and @Owner, and the user redirected to the login view __/login.xhtml__.  If the user was already logged in, and authorization still failed, the user would be instead redirected to the access denied view. If these views are not defined by their respective annotations, a 401 response is returned.
 
 The enforcement of security restrictions is highly tuned to the JSF  life-cycle. By default, authorization is checked before the Invoke Application and Render Response phases (because the view requested may  change between these phases). However, by including a "restrictAtPhase"  method on SecureBindingType qualified annotation, the phases at which that  restriction is applied can be fine tuned. Additionally, the  @RestrictAtPhase annotation can be applied to an enum value to change the  default phase for all SecureBindingType qualified annotations on enums  values that match that pattern.  In the example above, the @Admin restriction would be checked at the RestoreView phase, and the @Admin annotation is defined as follows:
 
-<pre class="prettyprint">
+```java
 @SecurityBindingType
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD, ElementType.TYPE})
 public @interface Admin {
     public PhaseIdType[] restrictAtPhase();
 }
-</pre>
+```
 
 While there are a lot of controls to fine tune your security  requirements, the defaults are sensible (we hope!) and your security  configuration can be quite straight forward. Of course one still has to configure Seam Security to perform the authentication - see the <a href="http://seamframework.org/Seam3/SecurityModule">Seam 3 Security module page</a> for further details.
 

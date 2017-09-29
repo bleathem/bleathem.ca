@@ -1,11 +1,21 @@
+---
+  title: RichFaces 4.5.0.Beta2 Release Announcement
+  date: 2014-09-11
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF45, Beta]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2014/09/richfaces-450beta2-release-announcement.html
+---
 = RichFaces 4.5.0.Beta2 Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF45, Beta]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: ""
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 The second beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12324941[4.5.0.Beta2]) has been released.  This release focuses on stabilizing RichFaces 4.5.0.Beta1 with a number of bug fixes.  Read below for a summary of the issues resolved.
 

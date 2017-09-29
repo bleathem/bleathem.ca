@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "Seam Faces Community Hack Night"
-tags: [ Seam, Community ]
+  title: "Seam Faces Community Hack Night"
+  date: 2011-09-07
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ Seam, Community ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/09/seam-faces-community-hack-night.html
 ---
 
 This week's <a href="http://seamframework.org/Seam3">Seam 3</a> Community hack night is centered around <a href="http://seamframework.org/Seam3/FacesModule">Seam Faces</a>.  This is a great chance to mingle with some CDI/JSF developers on <a href="http://seamframework.org/Seam3/Chat">IRC</a>, and get your fingerprint into the Seam Faces DNA!  Whether you have your own itch you want to scratch, a long-standing bug you want to see resolved, or implement a new feature altogether, we've got plenty of low hanging fruit ripe for the picking!

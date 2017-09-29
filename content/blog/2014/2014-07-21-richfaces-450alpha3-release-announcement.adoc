@@ -1,11 +1,21 @@
+---
+  title: RichFaces 4.5.0.Alpha3 Release Announcement
+  date: 2014-07-21
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF45, Alpha]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2014/07/richfaces-450alpha3-release-announcement.html
+---
 = RichFaces 4.5.0.Alpha3 Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF45, Alpha]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: ""
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 We have a feature complete release of RichFaces 4.5 available with the release of RichFaces https://issues.jboss.org/browse/RF/fixforversion/12324013[4.5.0.Alpha3].  This is a full framework release with RichFaces 4.5.0.Alpha3, whereas previous 4.5 Alpha releases consisted of just the components.  We've back-ported many of the improvements from RichFaces 5 Alphas into this release, while maintaining backward compatibility with the RichFaces 4.3 branch.
 
@@ -23,7 +33,7 @@ Significant improvements in this RichFaces 4.5.0.Alpha3 release over previous 4.
 * A type-safe approach for attribute definitions (using interfaces rather than xml)
 * Page fragments for abstracting your functional tests
 * An simplified Asciidoc version of the docs
- 
+
 == Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12324013[+++<i class='icon-external-link-sign'></i>+++]
 
 === Bug

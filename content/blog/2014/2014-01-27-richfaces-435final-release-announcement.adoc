@@ -1,11 +1,21 @@
+---
+  title: RichFaces 4.3.5.Final Release Announcement
+  date: 2014-01-27
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF43, Final]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2014/01/richfaces-435final-release-announcement.html
+---
 = RichFaces 4.3.5.Final Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF43, Final]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: ""
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 We are happy to release an update to our stable branch with the release of RichFaces https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12322481[4.3.5.Final].  This 5th micro release of the RichFaces http://www.bleathem.ca/blog/tags/RF43/[4.3 release] series provides a number of bug fixes while we concurrently work on https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[RichFaces 5].
 
@@ -80,7 +90,7 @@ Task
 * https://issues.jboss.org/browse/RF-13404[RF-13404] - Port the RichFaces 5 improvements back to RichFaces 4.3
 * https://issues.jboss.org/browse/RF-13405[RF-13405] - Merge the photoalbum fixes from QE
 * https://issues.jboss.org/browse/RF-13509[RF-13509] - Add Photoalbum sources to RichFaces distribution
-                
+
 == Moving forward
 
 You will likely have noticed no mention of JSF 2.2 in this announcement.  We are not at this time introducing JSF 2.2 support into our stable branch, but are rather doing so in the upcoming https://issues.jboss.org/browse/RF/fixforversion/12322162[5.0.0.Alpha3] release of RichFaces.  https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[Progress on RichFaces 5] has continued while we prepared the 4.3.5 release, and we have already committed a number of JSF 2.2 related fixes.  Look for this release in the next week or two.

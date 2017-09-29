@@ -1,12 +1,19 @@
 ---
-:title: RichFaces moves to AsciiDoc
-:layout: post
-:tags: [ RichFaces, docs, asciidoc, asciidoctor ]
-:image_url: "/images/blog/common/richfaces_notext.png"
-:description: "With RichFaces 5 we have made a significant change to our documentation tool-chain with the introduction of AsciiDoc to simplify the task of authoring and editing the RichFaces documentation."
+  title: RichFaces moves to AsciiDoc
+  date: 2013-06-10
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RichFaces, docs, asciidoc, asciidoctor ]
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2013/06/richfaces-moves-to-asciidoc.html
 ---
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 With RichFaces 5 we have made a significant change to our documentation tool-chain with the introduction of http://asciidoc.org/[AsciiDoc] to simplify the task of authoring and editing the http://www.jboss.org/richfaces/docs[RichFaces documentation].  Our documentation has for a long time been based on http://www.docbook.org/[Docbook xml] against which we have applied the http://www.jboss.org/pressgang[Red Hat PressGang] XSLT to create the HTML and PDF output of our docs.
 
@@ -14,7 +21,7 @@ Additionally the Docbook xml is fed downstream into Red Hat's http://www.redhat.
 
 == Bring in the AsciiDoc!
 
-Fortunately we have been able to remedy this problem, without sacrificing any of the power and flexibility of our Docbook tool-chain, by converting all our Docbook source into AsciiDoc.  The AsciiDoc source is in turn converted back into Docbook xml, and fed into our existing tool-chain.  This toolchain is a set of https://github.com/pressgang/pressgang-tools[Pressgang XSLT files] that takes the Docbook xml and converts it into our http://docs.jboss.org/richfaces/[published] PDF and HTML docs. 
+Fortunately we have been able to remedy this problem, without sacrificing any of the power and flexibility of our Docbook tool-chain, by converting all our Docbook source into AsciiDoc.  The AsciiDoc source is in turn converted back into Docbook xml, and fed into our existing tool-chain.  This toolchain is a set of https://github.com/pressgang/pressgang-tools[Pressgang XSLT files] that takes the Docbook xml and converts it into our http://docs.jboss.org/richfaces/[published] PDF and HTML docs.
 
 The capabilities of AsciiDoc are well demonstrated by the fact that we were able to create identical HTML and PDF docs using the AsciiDoc generated Docbook xml, without making any changes to our Docbook tool-chain.  AsciiDoc is indeed a highly expressive markup language.  On the other hand, AsciiDoc is only as complex as you want it to be - in basic use cases it's as simple to read as http://en.wikipedia.org/wiki/Markdown[Markdown].
 
@@ -24,7 +31,7 @@ Converting the Docbook xml into AsciiDoc however was not a simple task.  We had 
 
 We https://github.com/bleathem/docbook2asciidoc[forked that fork], and introduced a number of additional changes to the XSLT to properly convert the Docbook xml into AsciiDoc.  This conversion took us 98% of the way there, the final leg of the conversion was finished with some regexps and manual fine-tuning.
 
-We also looked at the http://johnmacfarlane.net/pandoc/[Pandoc project] - a multi-purpose document converter that is able to output Docbook xml.  We stuck with the XSLT for two reasons: 
+We also looked at the http://johnmacfarlane.net/pandoc/[Pandoc project] - a multi-purpose document converter that is able to output Docbook xml.  We stuck with the XSLT for two reasons:
 
 . Out-of-the-box the XSLT brought us closer to our target.
 . Our XSLT expertise allowed us to hack the docbook2asciidoc to suit our needs, wheres Pandoc is written in Haskell which presented too a steep learning curve for a one off migration.

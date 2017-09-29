@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "RichFaces 4.1.0.M4 Release Announcement"
-tags: [ RF41, RichFaces ]
+  title: "RichFaces 4.1.0.M4 Release Announcement"
+  date: 2011-11-09
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RF41, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/11/richfaces-410m4-release-announcement.html
 ---
 
 The RichFaces 4.1 Milestone 4 release is now available for <a href="http://www.jboss.org/richfaces/download/milestones">download</a>! With this <a href="https://issues.jboss.org/browse/RF/fixforversion/12317054">M4</a> release we focused on stabilizing the features we introduced in the earlier 4.1 release-train milestones (<a href="http://blog.bleathem.ca/2011/08/richfaces-410m1-release-announcement.html">M1</a>, <a href="http://blog.bleathem.ca/2011/09/richfaces-410m2-release-announcement.html">M2</a>, <a href="http://blog.bleathem.ca/2011/10/richfaces-410m3-release-announcement.html">M3</a>). The release following M4 will be our 4.1 release candidate, so we want to make sure we achieve maximum stability with M4. Some of the key areas we touched are listed below.
@@ -12,22 +22,22 @@ If your keen and want to get started right away, you can download the distributi
 
 The CSS 3 overlay was improved to provide better mobile compatibility of the components. We also added an ajax status indicator to the mobile showcase. Since it is entirely an ajax driven application, the status indicator improves the user experience dramatically.
 
-h2. Resource mapping
+## Resource mapping
 
 The resource mapping feature introduced in M3 has been made more usable, adopting a consistent naming convention, with reasonable defaults. Additionally the ability to completely disable the feature was introduced, should you want to handle resources yourself in your applications.
 
-h2. Client Side validation
+## Client Side validation
 
 Improvements to the client-side validation (CSV) involved better aligning the client-side regexp with the Bean Validation specification. The CSV mechanism for discerning component values on the client (using javascript) was enhanced to improve the CSV interop with other JSF component providers.
 
-h2. Individual component fixes
+## Individual component fixes
 
 The file upload component has some new attributes, allowing for more fine-grained control over what the user is able to upload to the server. The pickList saw the switchByClick and switchByDblClick functionality from RichFaces 3 ported to RichFaces 4, further improving the RF 3 to RF 4 migration story.
 
-h2. Misc. Fixes
+## Misc. Fixes
 
 Some additional issues resolved include a jQuery update (to version 1.6.4), and improvements to both the simpleapp and GAE RichFaces archetypes. Many more fixes and improvements were checked, feel free to <a href="https://issues.jboss.org/secure/IssueNavigator.jspa?reset=true&amp;jqlQuery=project+%3D+RF+AND+fixVersion+%3D+%224.1.0.Milestone4%22+AND+resolution+%3D+Done">browse the issues fixed</a> to see what else has been improved.
 
-h2. Forward: CR1 & Further Stabilisation
+## Forward: CR1 & Further Stabilisation
 
 The CR1 development is currently ongoing, with a focus on providing documentation for all the new 4.1 features, and further stabilisation. So <a href="http://www.jboss.org/richfaces/download/milestones">give M4 a spin</a>, and let us know what you think! Drop a note in the <a href="http://community.jboss.org/en/richfaces?view=discussions">forums</a>, or join us for our weekly <a href="http://community.jboss.org/en/richfaces/dev/teammtgs?view=documents">community/team meetings</a> in IRC.

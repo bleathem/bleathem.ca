@@ -1,6 +1,17 @@
 ---
-layout: post
-title: "ViewAccessScope - why it's useful"
+  title: ViewAccessScope - why it's useful
+  date: 2010-12-17
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [JSF, Seam Faces, CDI]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2010/12/viewaccessscope-why-its-useful.html
 ---
 
 At first the conversation scope introduced with CDI seemed like it would be incredibly useful.  Unfortunately, working with conversations ended up being more difficult than expected.  Details of why this is, is fodder for another post.

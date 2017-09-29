@@ -1,8 +1,19 @@
+---
+  title: Scalable splash screens with Cordova
+  date: 2015-01-28
+  author: Brian Leathem
+  categories: [Javascript, Mobile]
+  tags: [cordova]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2015/01/cordova-splashscreen.html
+---
 = Scalable splash screens with Cordova
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [cordova]
-:awestruct-description: ""
 
 Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks.  In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.
 

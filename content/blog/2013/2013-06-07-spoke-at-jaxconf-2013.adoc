@@ -1,12 +1,19 @@
 ---
-layout: post
-title: "Spoke on Polyglot Widgets at JAXConf 2013"
-tags: [ JAX, JAXConf, talk, polyglot, widgets ]
-image_url: "/images/blog/2013-03-05-speaking-at-jaxconf-2013/SpeakerButtonJAXConf2013.jpg"
-description: "This week I attended the JAXConf 2013 conference for a third year in a row.  This year JAXConf was held in Santa Clara, the heart of silicon valley.  The conference once again had a fantastic line up of speakers, with well recognized industry leaders speaking on a variety of current and exciting topics."
+  title: "Spoke on Polyglot Widgets at JAXConf 2013"
+  date: 2013-06-07
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ JAX, JAXConf, talk, polyglot, widgets ]
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2013/06/spoke-at-jaxconf-2013.html
 ---
 
-image::/images/blog/2013-03-05-speaking-at-jaxconf-2013/SpeakerButtonJAXConf2013.jpg["Speaking at JAX 2013", float="right", link="http://jaxconf.com/"]
+image::/img/blog/2013-03-05-speaking-at-jaxconf-2013/SpeakerButtonJAXConf2013.jpg["Speaking at JAX 2013", float="right", link="http://jaxconf.com/"]
 
 This week I attended the http://jaxconf.com/[JAXConf 2013] conference for a http://www.bleathem.ca/blog/2011/06/seam-faces-jaxconfjsf-summit.html[third] http://www.bleathem.ca/blog/2012/07/jax-conf-2012.html[year] in a row.  This year JAXConf was held in Santa Clara, the heart of silicon valley.  The conference once again had a fantastic line up of speakers, with well recognized industry leaders speaking on a variety of current and exciting topics.  Unfortunately, JAX continued this year to be one of the best kept secrets of the tech industry on the West coast, with attendance not being as strong as many would have liked.
 

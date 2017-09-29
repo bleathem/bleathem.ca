@@ -1,9 +1,18 @@
+---
+  title: RichFaces 5.0.0.Alpha1 Release Announcement
+  date: 2013-06-14
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF50, Alpha1]
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2013/06/richfaces-500alpha1-release-announcement.html
+---
 = RichFaces 5.0.0.Alpha1 Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF50, Alpha1]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: "I am excited to announce the release of RichFaces 5.0.0.Alpha1.  While RichFaces 5.0.0.Alpha1 is an incredibly significant release (with almost all aspects of the framework seeing some changes) the release is in fact functionally equivalent to RichFaces 4.3.2.Final.  So go ahead an try it out, and give us your feedback!"
 
 image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 

@@ -1,8 +1,19 @@
+---
+  title: Vert.x with gulp.js
+  date: 2015-01-26
+  author: Brian Leathem
+  categories: [Javascript, mobile]
+  tags: [vert.x, javascript, gulp]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2015/01/vertx-javascript-gulp.html
+---
 = Vert.x with gulp.js
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [vert.x, javascript, gulp]
-:awestruct-description: ""
 
 http://vertx.io/[Vert.x] is often put forward as a https://www.google.ca/#q=vert.x+node.js+alternative[polyglot alternative to node.js] that runs on the JVM.  A read through the http://vertx.io/core_manual_js.html[vert.x javascript docs] indicates that javascript is a first-class language in vert.x, and both node.js and vert.x use an event-driven, non-blocking I/O programming model.  But to what degree will a node programmer feel at home in writing a vert.x application?
 

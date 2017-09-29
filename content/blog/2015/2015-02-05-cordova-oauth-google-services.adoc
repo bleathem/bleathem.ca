@@ -1,8 +1,19 @@
+---
+  title: Google Play Services Oauth2 Token Lookup via Cordova
+  date: 2015-02-05
+  author: Brian Leathem
+  categories: [Javascript, Mobile]
+  tags: [cordova, plugin]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2015/02/cordova-oauth-google-services.html
+---
 = Google Play Services Oauth2 Token Lookup via Cordova
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [cordova, plugin]
-:awestruct-description: ""
 
 Delegating to 3rd parties to manage your authorization is incredibly helpful when developing a new application.  A benefit to users and developers alike, this task is made all the more helpful with the number of social networks providing Oauth2 APIs that we can use for our authorization.  In this blog post I will address using the Google Play services on Android from a hybrid mobile Cordova application to retrieve an Oauth2 token that we can then use with Google's Oauth2 REST API.
 

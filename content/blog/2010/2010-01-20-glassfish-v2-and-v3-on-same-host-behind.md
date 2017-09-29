@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "Glassfish V2 and V3 on the same host, behind mod_jk"
-tags: [ mod_jk, JavaEE, JSF, glassfish ]
+  title: Glassfish V2 and V3 on the same host, behind mod_jk
+  date: 2010-01-20
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ mod_jk, JavaEE, JSF, glassfish ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2010/01/glassfish-v2-and-v3-on-same-host-behind.html
 ---
 
 I've jumped on the JavaEE 6 bandwagon, with one application already in production.  The developer productivity improvements in JavaEE6/Glassfish V3 are tremendous.  The only downside is that I still have some JavaEE 5 applications in production.  The JavaEE 5 apps can't migrate to JavaEE 6 until Icefaces supports JSF 1.2.
@@ -12,16 +22,16 @@ My solution was to run both Glassfish V2 and Glassfish V3 on the same box, with 
 
 The first step was to get GF v2, and GF v3 running on the same machine.  I have GF v2 running on the standard ports, and I incremented each port by 1 for GF v3.  It looks like:
 
-table{font-family: fixed-width}. 
-||GF v2 Port|GF v3 Port|
-|HTTP|8080 |8081|
-|HTTPS |8181 |8182|
-|HTTP - ADMIN |4848 |4849|
-|IIOP |3700 |3701|
-|IIOP SSL|3820 |3821|
-|IIOP SSL-MUTUALAUTH |3920 |3921|
-|JMX |8686 |8687|
-|JMS|7676|7677|
+|                     | GF v2 Port | GF v3 Port |
+| -------------------:| ---------- | ---------- |
+| HTTP                | 8080       | 8081       |
+| HTTPS               | 8181       | 8182       |
+| HTTP - ADMIN        | 4848       | 4849       |
+| IIOP                | 3700       | 3701       |
+| IIOP SSL            | 3820       | 3821       |
+| IIOP SSL-MUTUALAUTH | 3920       | 3921       |
+| JMX                 | 8686       | 8687       |
+| JMS                 | 7676       | 7677       |
 
 Next, we had to get mod_jk installed and working.  The glassfish support team (yes, I pay for support!) pointed me to the following resources:
 
@@ -32,7 +42,7 @@ These were a great starting point, from which I ended up with the solution.
 
 mod_jk.conf:
 
-<pre class="prettyprint">
+```ApacheConf
 #mod_jk/1.2.28
 LoadModule jk_module modules/mod_jk.so
 JkWorkersFile /etc/httpd/conf.d/worker.properties
@@ -72,18 +82,18 @@ JkMount /javaee6app/* worker2
 JkMount /glassfish-test/* worker1
 
 JkShmFile /var/log/httpd/jk-runtime-status
-</pre>
+```
 
 And worker.properties:
 
-<pre class="prettyprint">
+```ApacheConf
 ## Define 1 real worker using ajp13
 worker.list=worker1,worker2
 # Set properties for worker1 (ajp13)
 worker.worker1.type=ajp13
 worker.worker1.host=localhost.localdomain
 worker.worker1.port=8009
-#Only used for a member worker of a load balancer. 
+#Only used for a member worker of a load balancer.
 #worker.worker1.lbfactor=50
 #Do not use cachesize with values higher then 1 on Apache 2.x prefork
 #worker.worker1.cachesize=10
@@ -97,7 +107,7 @@ worker.worker1.socket_timeout=60
 worker.worker2.type=ajp13
 worker.worker2.host=localhost.localdomain
 worker.worker2.port=8010
-#Only used for a member worker of a load balancer. 
+#Only used for a member worker of a load balancer.
 #worker.worker2.lbfactor=50
 #Do not use cachesize with values higher then 1 on Apache 2.x prefork
 #worker.worker2.cachesize=10
@@ -107,7 +117,7 @@ worker.worker2.connection_pool_timeout=0
 worker.worker2.socket_keepalive=1
 #Socket timeout in seconds
 worker.worker2.socket_timeout=60
-</pre>
+```
 
 These are not the worker.properties as prescribed in the above links.  After implementing the initial solution, I got reports from the wild of users mysteriously losing sessions.  After much reading about mod_jk, I think I narrowed down the problem to a cachesize/connection_pool_size > 1 in conjunction with the prefork mpm apache module.  Apparently this is a no-no.
 

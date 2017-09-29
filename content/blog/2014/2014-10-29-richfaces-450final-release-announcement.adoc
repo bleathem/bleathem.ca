@@ -1,11 +1,21 @@
+---
+  title: RichFaces 4.5.0.Final Release Announcement
+  date: 2014-10-29
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF45, Final]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2014/10/richfaces-450final-release-announcement.html
+---
 = RichFaces 4.5.0.Final Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF45, Final]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: ""
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 RichFaces https://issues.jboss.org/browse/RF/fixforversion/12325589[4.5.0.Final] is now available for download!  RichFaces 4.5 is a significant improvement over the previous 4.3 release, offering JSF 2.2 compatibility, new components, a simplified build and distribution layout, and Page Fragments for simplified functional testing.  Please read below for details on each of these improvements..
 
@@ -34,7 +44,7 @@ A number of existing components have seen some improvements in RichFaces 4.5.  T
 The `<rich:select>` component has been augmented to support the same auto-completing functionality as the `<rich:autocomplete>` component.  The rule-of-thumb to keep in mind when deciding between incorporating either of these similar components is as follows:
 
 * use the `<rich:select>` component when auto-completing a list of backend objects.
-* use the `<rich:autocomplete>` component when auto-completing with text-based input. 
+* use the `<rich:autocomplete>` component when auto-completing with text-based input.
 
 === Built-in sorting and filtering of the DataTable
 The `<rich:dataTable>` has picked up the built-in sorting and filtering capabilities that have been available for some time in it's big brother the `<rich:extendedDataTable>`.
@@ -72,7 +82,7 @@ We've ported the RichFaces docs from the hard-to-work-with docbook xml to the wr
 
 The https://github.com/richfaces/richfaces-docs[docs are on github] and ready for pull requests!
 
-== Release Notes 
+== Release Notes
 Check out the https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12325589[+++<i class='icon-external-link-sign'></i>+++ Release notes] for a list of the issues addressed since the 4.5.0.CR2 release.
 
 == A bug with Mojarra

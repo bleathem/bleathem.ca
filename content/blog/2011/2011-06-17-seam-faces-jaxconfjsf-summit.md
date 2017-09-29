@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "Seam Faces @JAXConf/JSF Summit"
-tags: [ Seam, JAX, JAXConf, JSF ]
+  title: Seam Faces @JAXConf/JSF Summit
+  date: 2011-04-18
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ Seam, JAX, JAXConf, JSF ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/06/seam-faces-jaxconfjsf-summit.html
 ---
 
 It's been a while since my last post, as I've gone through a significant career change.  I am now working for <a href="http://redhat.com">Red Hat</a>, as a core developer on the <a href="http://richfaces.org">RichFaces project</a>.  I am also representing Red hat on the <a href="http://www.jcp.org/en/jsr/detail?id=344">JSR-344: JSF 2.2</a> Expert Group, and will continue in my role as <a href="http://seamframework.org/Seam3/FacesModule">Seam Faces</a> module lead.

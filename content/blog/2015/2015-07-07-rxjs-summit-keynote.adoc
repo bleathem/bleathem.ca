@@ -1,8 +1,19 @@
+---
+  title: Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo
+  date: 2015-07-07
+  author: Brian Leathem
+  categories: [Javascript]
+  tags: [rxjs, d3js, Red Hat, summit]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2015/07/rxjs-summit-keynote.html
+---
 = Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [rxjs, d3js, Red Hat, summit]
-:awestruct-description: ""
 
 At this year's DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo.  I made the custom front-ends in the demo using Reactive Extensions for javascript (https://github.com/Reactive-Extensions/RxJS[Rx.js]) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using http://d3js.org/[d3.js].
 

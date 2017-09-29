@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "RichFaces 4.2.0.CR1 Release Announcement"
-tags: [ RF42, RichFaces ]
+  title: "RichFaces 4.2.0.CR1 Release Announcement"
+  date: 2012-02-08
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RF42, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2012/02/richfaces-420cr1-release-announcement.html
 ---
 
 I’m excited to announce the availability of RichFaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12318573">4.2.0.CR1</a>, our release candidate for RichFaces 4.2.0.  Hot on the heels of the RichFaces <a href="http://blog.bleathem.ca/2011/12/richfaces-410final-release-announcement.html">4.1 release</a>, Richfaces 4.2 delivers some "missing" components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API.  Not to forget a significant number of bug fixes, and overall usability improvements.
@@ -10,19 +20,19 @@ To try out this release, you can download the distribution <a href="http://www.j
 
 Let’s begin our look at the RichFaces 4.2.0.CR1 release with a look at the new components: rich:contextMenu and rich:hotKey.
 
-h2. New Component - rich:contextMenu
+## New Component - rich:contextMenu
 
 The <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=contextMenu">rich:contextMenu</a> component provides hierarchical context menu system similar to those found in many desktop applications, and was widely sought after by our community with a significant number of <a href="https://issues.jboss.org/browse/RF-10197">votes</a> in our issue tracker.  I’d like to thank our loyal and persistent community for identifying the gaps in our RichFaces 3 -> Richfaces 4 migration story, and assure you that we will continue to work diligently to ease the migration process.
 
-<a href="/images/blog/2012-02-08-richfaces-420cr1-release-announcement/contextMenu.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="/images/blog/2012-02-08-richfaces-420cr1-release-announcement/contextMenu.png" /></a>The rich:contextMenu itself is built on top of the existing rich:dropDownMenu implementation, making it a natural fit into the RichFaces 4 component set.  The rich:contextMenu has 3 modes of operation client, ajax, and server, and integrates with the row/node selection capabilities of the rich:extendedDataTable and rich:tree components.  The RichFaces showcase includes <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=contextMenu">examples</a> of each of these features.
+<a href="/img/blog/2012-02-08-richfaces-420cr1-release-announcement/contextMenu.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="/img/blog/2012-02-08-richfaces-420cr1-release-announcement/contextMenu.png" /></a>The rich:contextMenu itself is built on top of the existing rich:dropDownMenu implementation, making it a natural fit into the RichFaces 4 component set.  The rich:contextMenu has 3 modes of operation client, ajax, and server, and integrates with the row/node selection capabilities of the rich:extendedDataTable and rich:tree components.  The RichFaces showcase includes <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=contextMenu">examples</a> of each of these features.
 
 The RichFaces 3 feature of "macrosubstituion" (client side string replacement) for the contextMenu has been so far omitted from the feature, but is being racked via jira (<a href="https://issues.jboss.org/browse/RF-11842">RF-11842</a>).  Be sure to vote for this issue if you feel it’s important to include in a future Richfaces 4 release.  Likewise, be sure to file any jira issues should you have additional use-cases we’ve overlooked.
 
-h2. New Component - rich:hotKey
+## New Component - rich:hotKey
 
 The <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=hotKey">rich:hotKey</a> component is another ported Richfaces 3 component we are making available with our 4.2.0.CR1 release.  The rich:hotKey component allows one to register a "hot key" on the page (or on a particular component) to execute some logic when the registered key-combination is pressed.  This is functionality is often sought after in "heads down" data entry style applications, but is also valuable in any use case where one wants to enable "mouse free" operations.  Many thanks to <a href="https://community.jboss.org/people/ilya_shaikovsky">Ilya Shaikovsky</a> for the pull request porting this feature to Richfaces 4.
 
-h2. Improvements - a4j:push
+## Improvements - a4j:push
 
 The a4j:push component has seen some attention, improving it’s usability with this release.  First and foremost is our decision to turn off JMS integration by default - as of RichFaces 4.2.0, JMS integration must be explicitly turned on (<a href="https://issues.jboss.org/browse/RF-11892">RF-11892</a>).  This breaking change was introduced to ease the on-boarding of new users with push technology, as the component now works in both Servlet and EE containers out-of-the-box.  Those who want to leverage the benefit of JMS integration will now have to explicitly enable it with the contextParam in your web.xml:
 
@@ -37,17 +47,17 @@ However, when using push outside of the FacesContext threads (JMS-end points, ti
 
 <a href="https://community.jboss.org/people/lfryc">Lukas Fryc</a> has a great <a href="http://rik-ansikter.blogspot.com/2012/02/configuring-richfaces-push-with-42.html">blog post</a> giving an introduction to using the 4.2 a4j:push technology.  We'll have the Developer Guide updated with a complete description of using this feature in time for the 4.2.0.Final release.
 
-h2. Resource Loading
+## Resource Loading
 
 With our 4.1 release, we introduced our resource loading optimisation feature.  Unfortunately, we conflated the ideas of resource mapping, with resource minification/packaging.  There are valid use cases to enable resource mapping, while requiring neither minification, nor packaging, such as providing your own patched version of jsf.js, or even replacing the packaged version of jQuery with your own.
 
 To better reflect these use cases, we re-worked the context-params that enable the feature, renaming them to clarify their purpose, and introduced a resource mapping file (independent of the mapping file used with resource packaging - <a href="https://issues.jboss.org/browse/RF-11909">RF-11909</a>).  The 4.1 context-params map into the new 4.2 context-params as follows:
 
-table{margin: 30px auto}.
-|_>. RichFaces 4.1 context-param | |_<. RichFaces 4.2 context-param |
-|>. org.richfaces.resourceMapping.enabled | → | org.richfaces.resourceOptimization.enabled |
-|>. org.richfaces.resourceMapping.compressedStages | → | org.richfaces.resourceOptimization.compressionStages |
-|>. org.richfaces.resourceMapping.packedStages | → |org.richfaces.resourceOptimization.packagingStages |
+| RichFaces 4.1 context-param |  | RichFaces 4.2 context-param |
+| :--- | ---- | :--- |
+| org.richfaces.resourceMapping.enabled | &rarr;  | org.richfaces.resourceOptimization.enabled |
+| org.richfaces.resourceMapping.compressedStages | &rarr; | org.richfaces.resourceOptimization.compressionStages |
+| org.richfaces.resourceMapping.packedStages | &rarr; |org.richfaces.resourceOptimization.packagingStages |
 
 *Note:* The 4.1 context-params will work in 4.2, they will be removed in a subsequent release
 
@@ -55,15 +65,15 @@ The significance of this, it that application developers can now create a simple
 
 Look forward to some forthcoming blog posts detailing how to make use of the Resource Loading optimisations in RichFaces.  We'll also have the docs updated in time for the 4.2.0.Final release.
 
-h2. Skinning Improvement - Rounded Corners
+## Skinning Improvement - Rounded Corners
 
-<a href="/images/blog/2012-02-08-richfaces-420cr1-release-announcement/round2.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="261" src="/images/blog/2012-02-08-richfaces-420cr1-release-announcement/round2.png" width="400" /></a>A pull request from a community member (<a href="https://community.jboss.org/people/gonzalad">Adrian Gonzalez</a>) enables round corner support in the RichFaces skins (<a href="https://issues.jboss.org/browse/RF-11848">RF-11848</a>).   This feature takes advantage of the <a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp">border-radius</a> CSS 3 property, and so will only work with compatible browsers - with a safe fall back to square corners in browsers that don’t support this CSS property.  The screenshot below demonstrates what the RichFaces showcase looks like, with round corner support enabled.
+<a href="/img/blog/2012-02-08-richfaces-420cr1-release-announcement/round2.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="261" src="/img/blog/2012-02-08-richfaces-420cr1-release-announcement/round2.png" width="400" /></a>A pull request from a community member (<a href="https://community.jboss.org/people/gonzalad">Adrian Gonzalez</a>) enables round corner support in the RichFaces skins (<a href="https://issues.jboss.org/browse/RF-11848">RF-11848</a>).   This feature takes advantage of the <a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp">border-radius</a> CSS 3 property, and so will only work with compatible browsers - with a safe fall back to square corners in browsers that don’t support this CSS property.  The screenshot below demonstrates what the RichFaces showcase looks like, with round corner support enabled.
 
 To enable round-corner support for your skin set the panelBorderRadius property of your skin to the desired border-radius value.
 
 Note: panelBorderRadius is not used in any of the out-of-the box 4.2 themes
 
-h2. Miscellaneous fixes
+## Miscellaneous fixes
 
 A number of other notable improvements include:
 
@@ -80,7 +90,7 @@ A number of other notable improvements include:
 * Build improvements
 ** The dependency management across all the projects' poms has been cleaned up and centralized
 
-h2. Moving forward
+## Moving forward
 
 With RichFaces 4.2.0.CR1 in the hands of our community, we look forward to hearing your feedback on this release, particularly if we missed any regressions.  Should 4.2.0.CR1 be well accepted by our community members, we will release RichFaces 4.2.0.Final as a simple respin of CR1.  In the mean time we will work on getting our 4.2 docs finalized, including an effort to fill in the missing attribute descriptions of our tag library documentation (VDL doc).
 

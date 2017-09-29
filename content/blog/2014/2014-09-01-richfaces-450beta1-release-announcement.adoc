@@ -1,11 +1,21 @@
+---
+  title: RichFaces 4.5.0.Beta1 Release Announcement
+  date: 2014-09-01
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF45, Beta]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2014/09/richfaces-450beta1-release-announcement.html
+---
 = RichFaces 4.5.0.Beta1 Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF45, Beta]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: ""
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 The first beta release of RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12324941[4.5.0.Beta1]) is now available.  This full framework release incorporates a number of library upgrades as well as some new features for existing components.  Read below for a summary of the issues resolved, and stay tuned for further posts going into the improvements in detail.
 
@@ -35,7 +45,7 @@ Control over the filter controls can be achieved by setting the @filterType=cust
 With the initial release of RichFaces 4, the Autcomplete component was re-designed to target only text-based use cases.  It was felt that object selection use cases were better served by the Select component.  However the Select component lacked the autocompleting capability to round out this story.  Until now!
 
 With RichFaces 4.5.0.Beta2 we've ported the autocomplete capabilities from the Autocomplete component to the Select component.  Using a similar syntax as with the Autocomplete, you can now dynamically populate the Select components options list via ajax.  Refer to the http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=select&skin=blueSky[showcase] for an example of how this works.
- 
+
 == Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12324941[+++<i class='icon-external-link-sign'></i>+++]
 
 === Bug

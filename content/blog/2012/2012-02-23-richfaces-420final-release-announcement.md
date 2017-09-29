@@ -1,14 +1,24 @@
 ---
-layout: post
-title: "RichFaces 4.2.0.Final Release Announcement"
-tags: [ RF42, Final, RichFaces ]
+  title: "RichFaces 4.2.0.Final Release Announcement"
+  date: 2012-02-23
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RF42, Final, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2012/02/richfaces-420final-release-announcement.html
 ---
 
 Richfaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12318970">4.2.0.Final</a> is now available for download! A quick follow on to our <a href="http://blog.bleathem.ca/2011/12/richfaces-410final-release-announcement.html">4.1 release</a>, Richfaces 4.2 delivers some “missing” components migrated from RichFaces 3, and provides usability and API improvements for resource loading optimizations and the push API. Documentation was a huge effort for this release; we are delivering an updated and complete <a href="http://docs.jboss.org/richfaces/latest_4_X/vdldoc/">VDL taglib doc</a>, along with our more well established <a href="http://docs.jboss.org/richfaces/latest_4_X/Developer_Guide/">Developer Guide</a>, and <a href="http://docs.jboss.org/richfaces/latest_4_X/Component_Reference/">Components Reference</a>.
 
 To try out this release, you can download the distribution <a href="http://www.jboss.org/richfaces/download/stable">directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.2.0.Final. For more information on setting up a RichFaces 4 application, refer to our <a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x">getting started guide</a>.
 
-h2. What’s new in Richfaces 4.2
+## What’s new in Richfaces 4.2
 
 For details on what’s new in 4.2, have a look at the <a href="http://blog.bleathem.ca/2012/02/richfaces-420cr1-release-announcement.html">4.2.0.CR1 release announcement</a>, where we cover:
 
@@ -26,7 +36,7 @@ Additionally, <a href="https://twitter.com/lfryc">Lukas Fryc</a>, has a few blog
 * <a href="http://rik-ansikter.blogspot.com/2012/02/optimizing-resource-loading-with.html">Optimizing Resource Loading with RichFaces 4.2</a>
 * <a href="http://rik-ansikter.blogspot.com/2012/02/re-routing-jsf-resource-requests-with.html">Re-routing JSF resource requests with RichFaces Resource Mapping</a>
 
-h2. Looking Ahead
+## Looking Ahead
 
 It’s now time to buckle down and focus on 4.3/4.Future efforts. The themes we will be focusing on are narrowing down to:
 

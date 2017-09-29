@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "Seam Faces 3.0.2.Final released"
-tags: [ Seam, Final ]
+  title: "Seam Faces 3.0.2.Final released"
+  date: 2011-08-16
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ Seam, Final ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/08/seam-faces-302final-released.html
 ---
 
 (cross posted from :<a href="http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released">http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released</a>)

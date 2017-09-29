@@ -1,11 +1,21 @@
+---
+  title: RichFaces 4.3.4.Final Release Announcement
+  date: 2013-09-17
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF43, Final]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2013/09/richfaces-434final-release-announcement.html
+---
 = RichFaces 4.3.4.Final Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF43, Final]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: "I am excited to announce the release of RichFaces 4.3.4.Final.  This fourth micro release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework."
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 I am excited to announce the release of RichFaces https://issues.jboss.org/browse/RF/fixforversion/12321718[4.3.4.Final].  This 4th minor release of the RichFaces http://www.bleathem.ca/blog/tags/RF43/[4.3 release] series is conservative in scope focusing on providing bug fixes to our stable release branch while we concurrently work on https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[RichFaces 5].
 
@@ -74,7 +84,7 @@ Enhancement
 
 === Sub-task
 * https://issues.jboss.org/browse/RF-13189[RF-13189] - Update jquery-atmosphere.js to 1.0.17 in 4.3.x
-                
+
 == Moving forward
 
 We are actively https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[working on RichFaces 5.0.0.Alpha2] that will feature some re-worked components taking advantage of our new decoupled component architecture and making use of standalone javascript widgets to provide a more robust client-side implementation of RichFaces components.  Look forward this a new Alpha release in the coming weeks.

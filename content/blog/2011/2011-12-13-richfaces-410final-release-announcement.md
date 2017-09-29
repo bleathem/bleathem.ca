@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "RichFaces 4.1.0.Final Release Announcement"
-tags: [ RF41, Final, RichFaces ]
+  title: "RichFaces 4.1.0.Final Release Announcement"
+  date: 2011-12-13
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RF41, Final, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/12/richfaces-410final-release-announcement.html
 ---
 
 <a href="/images/blog/2011-12-13-richfaces-410final-release-announcement/richfaces.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="/images/blog/2011-12-13-richfaces-410final-release-announcement/richfaces.png" /></a>
@@ -12,11 +22,11 @@ To try out this release you can download the distribution <a href="http://www.jb
 
 Let's dive in, and look at some of the details of what's new in RichFaces 4.1!
 
-h2.New Components
+## New Components
 
 <a href="/images/blog/2011-12-13-richfaces-410final-release-announcement/editor.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="153" src="/images/blog/2011-12-13-richfaces-410final-release-announcement/editor.png" width="320" /></a>
 
-We've delivered a number of new components in this release: 
+We've delivered a number of new components in this release:
 
 * <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=editor">rich:editor</a>
 * <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=pickList">rich:pickList</a>
@@ -25,17 +35,17 @@ We've delivered a number of new components in this release:
 
 Not only have we migrated forward more RichFaces 3.x components, but we're also providing an altogether new component - the notify component - put together by <a href="http://community.jboss.org/people/blabno">Bernard Labno</a>, a RichFaces community member.
 
-h2. Mobile Compatible Components
+## Mobile Compatible Components
 
-<a href="/images/blog/2011-12-13-richfaces-410final-release-announcement/mobile.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="320" src="/images/blog/2011-12-13-richfaces-410final-release-announcement/mobile.png" width="216" /></a>We've leveraged HTML 5 and CSS 3 to create a set of resources that make the existing RichFaces components mobile compatible. Check out the results yourself in our <a href="http://showcase.richfaces.org/">mobile showcase</a> with your webkit-based mobile phone, (or checkout the mobile showcase <a href="http://showcase.richfaces.org/phoneHome.jsf">directly</a> with your desktop browser). 
+<a href="/images/blog/2011-12-13-richfaces-410final-release-announcement/mobile.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="320" src="/images/blog/2011-12-13-richfaces-410final-release-announcement/mobile.png" width="216" /></a>We've leveraged HTML 5 and CSS 3 to create a set of resources that make the existing RichFaces components mobile compatible. Check out the results yourself in our <a href="http://showcase.richfaces.org/">mobile showcase</a> with your webkit-based mobile phone, (or checkout the mobile showcase <a href="http://showcase.richfaces.org/phoneHome.jsf">directly</a> with your desktop browser).
 
 We've put together a <a href="http://community.jboss.org/wiki/GettingStartedWithMobileRichFaces">comprehensive guide</a> detailing how you can take advantage of this approach with your own applications, and deliver a modern mobile application today - leveraging your existing skillset and investments in both JSF and Richfaces.
 
 Not all the components make sense in a mobile environment, and not all mobile browsers are equally capable. Be sure to also take a look at our <a href="http://community.jboss.org/wiki/RichFaces410xMobileSkinPlanningDesign">mobile design document</a>, outlining the choices and compromises we had to make.
 
-h2. Showcase
+## Showcase
 
-Along with this new mobile face, the Richfaces <a href="http://showcase.richfaces.org/">showcase</a> has undergone a number of additional significant changes. 
+Along with this new mobile face, the Richfaces <a href="http://showcase.richfaces.org/">showcase</a> has undergone a number of additional significant changes.
 
 div=. <a href="/images/blog/2011-12-13-richfaces-410final-release-announcement/showcase.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="162" src="/images/blog/2011-12-13-richfaces-410final-release-announcement/showcase.png" width="320" /></a>
 
@@ -44,9 +54,9 @@ We've deployed the showcase to <a href="https://openshift.redhat.com/">OpenShift
 
 We've also included samples for the new components listed above, as well as a <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push">rich:push</a> component sample, keeping it straightforward to incorporate advanced RichFaces components in your application. Lastly, a number of bug fixes and simple improvements throughout the showcase have overall improved the user experience of the showcase itself.
 
-h2. Individual component improvements
+## Individual component improvements
 
-I'd like to single out a few component enhancements from this release: 
+I'd like to single out a few component enhancements from this release:
 
 - "rich:push":http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push:= Push has been de-coupled from JMS, allowing RichFaces users to take advantage of push technology in non-JMS (ie. servlet) environments
   := A CDI API has been provided for firing push events - aligning the push component with the standardized Java EE programming model
@@ -59,23 +69,23 @@ I'd like to single out a few component enhancements from this release:
 
 For a complete listing of issues resolved, refer to the release notes of each of the milestone releases: <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12315856">4.1.0.M1</a>, <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12316708">4.1.0.M2</a>, <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12318072">4.1.0.M3</a>, <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12317054">4.1.0.M4</a>, <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12317055">4.1.0.CR1</a>, <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12318315">4.1.0.CR2</a>, <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12318600">4.1.0.Final</a>
 
-h2. Resource packaging
+## Resource packaging
 
-Another great feature with this release is the Resource packaging and minification. An absolute necessity when developing for mobile applications, this feature can provide performance improvements to your desktop applications as well by dramatically reducing the number of javascript and CSS files the browser client has to download. Read the <a href="http://docs.jboss.org/richfaces/latest_4_1_X/Developer_Guide/en-US/html/chap-Developer_Guide-Advanced_features.html#sect-Developer_Guide-Advanced_features-Resource_loading_strategies">docs</a> to see how you can activate this for your applications. 
+Another great feature with this release is the Resource packaging and minification. An absolute necessity when developing for mobile applications, this feature can provide performance improvements to your desktop applications as well by dramatically reducing the number of javascript and CSS files the browser client has to download. Read the <a href="http://docs.jboss.org/richfaces/latest_4_1_X/Developer_Guide/en-US/html/chap-Developer_Guide-Advanced_features.html#sect-Developer_Guide-Advanced_features-Resource_loading_strategies">docs</a> to see how you can activate this for your applications.
 
 For those looking for the RichFaces 3 LOAD_NONE capability, you can use this resource minification <a href="http://community.jboss.org/wiki/WorkaroundForLOADNONEResourceLoadingStrategyInRichFaces41">configuration</a> to achieve the same results.
 
-h2. Source hosted on github
+## Source hosted on github
 
 <a href="/images/blog/2011-12-13-richfaces-410final-release-announcement/Octocat.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="200" src="/images/blog/2011-12-13-richfaces-410final-release-announcement/Octocat.png" width="200" /></a>A significant achievement early in the 4.1 development process was the migration of our source code version control system from svn to git, specifically hosted on <a href="http://github.com/richfaces">github.com</a>. We noticed significant advantages to using git, both within our team, and in our collaboration with community members. Git's ability to enable a sophisticated workflow, and encourage community contribution in the form of pull requests has made “bit management” a pleasurable task.
 
-h2. Other noteworthy items
+## Other noteworthy items
 
 It's worth pointing out that RichFaces 4.1 ships with an updated jQuery release (v. 1.6.4). Keeping the jQuery release version up-to-date facilitates RichFaces inter-operability with other jQuery plugins.
 
 RichFaces 4.1 works with a number of <a href="http://community.jboss.org/wiki/PrioritizedRichFacesBrowsersCompatibilityMatrix">modern browsers</a>, however it currently requires Internet explorer 9 to be run in compatibility mode, due to an upstream <a href="http://java.net/jira/browse/JAVASERVERFACES-2063">mojarra issue</a>.
 
-h2. Documentation
+## Documentation
 
 Lastly, I'd like to remind everyone of the availability of the RichFaces <a href="http://www.jboss.org/richfaces/docs">documentation</a>:
 
@@ -89,6 +99,6 @@ Lastly, I'd like to remind everyone of the availability of the RichFaces <a href
 
 These docs are a great resource detailing how to make use of the RichFaces framework in your application. They are however an ongoing effort, with some specific areas that need improvement. Specifically we need to flesh out the descriptions of the VDL tag library doc (note: the attribute listing is complete), and we need to vet the migration guide. This is a great way to get involved, should you want to contribute to the project!
 
-h2. Looking Forward
+## Looking Forward
 
 In a recent <a href="http://blog.bleathem.ca/2011/12/state-of-richfaces.html">blog post</a>, I laid out a strategy for the future of the RichFaces project, and extended an invitation to all who would like to <a href="http://community.jboss.org/thread/175973">have a say in future directions</a> in our development forum. While RichFaces 4.1 undoubtedly provides some great fixes and features, we are excited about the future direction of the project, and what we can offer moving forward!

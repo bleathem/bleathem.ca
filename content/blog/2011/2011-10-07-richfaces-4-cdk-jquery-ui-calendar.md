@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "RichFaces 4 CDK | jQuery UI Calendar"
-tags: [ CDK, RichFaces ]
+  title: "RichFaces 4 CDK | jQuery UI Calendar"
+  date: 2011-10-07
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ CDK, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/07/richfaces-4-cdk-jquery-ui-calendar.html
 ---
 
 Further incrementing the complexity over the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-input-component.html">input component</a> we created previously, this time we will create a JSF calendar component. Being pragmatic OSS developers, we will leverage the existing javascript of the <a href="http://jqueryui.com/demos/datepicker/">datepicker</a> component from the <a href="http://jqueryui.com/">jQuery UI</a> project, and we'll see how well the RichFaces CDK lends itself to mapping JSF component attributes into javascript configuration options.
@@ -14,7 +24,8 @@ Starting again with the component class:
 
 div=. **AbstractDatepicker.java**
 
-<pre class="prettyprint">package ca.bleathem.richfaces.jquery.component;
+```java
+package ca.bleathem.richfaces.jquery.component;
 
 import org.richfaces.cdk.annotations.*;
 
@@ -34,7 +45,8 @@ abstract public class AbstractDatepicker extends javax.faces.component.UIInput {
     @Attribute
     public abstract String getButtonImageOnly();
 
-}</pre>
+}
+```
 
 Here we see we are again extending the <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/javax/faces/component/UIInput.html">UIInput</a> class, as we did with the Input component.  What's new is the introduction of some additional attributes.  The __@Attribute__ annotation instructs the CDK that these abstract getter methods map to component attributes, and the CDK then takes care of wiring the attributes into the JSF state saving mechanism for us.
 
@@ -46,7 +58,8 @@ The renderer is again an xml file:
 
 div=. **datepicker.template.xml**
 
-<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 
 <cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
     xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core" xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite"
@@ -72,7 +85,7 @@ div=. **datepicker.template.xml**
     </cc:implementation>
 
 </cdk:root>
-</pre>
+```
 
 Diving first into the __cc:implementation__ of this renderer template, we see again an __input__ element. What's new is the __script__ tag following the input. This __script__ tag get's compiled into javascript when the component renders. Using CDK xml markup, we build up the javascript object __pluginOptions__ which we pass as a parameter to the call to the jQueryUI plugin.
 
@@ -82,7 +95,8 @@ From the __cc:interface__ of this renderer template, we see that we are extendin
 
 div=. **DatepickerRendererBase.java**
 
-<pre class="prettyprint">package ca.bleathem.richfaces.jquery.renderkit;
+```java
+package ca.bleathem.richfaces.jquery.renderkit;
 
 import org.richfaces.renderkit.InputRendererBase;
 
@@ -100,7 +114,7 @@ import javax.faces.application.ResourceDependency;
 })
 public class DatepickerRendererBase extends InputRendererBase {
 }
-</pre>
+```
 
 The __DatepickerRendererBase__ class is again extending the __InputRendererBase__, and it is holding a number of __@ResourceDependency__ annotations. These annotations ensure the appropriate resources are included on the page when we reference this JSF component. For us, these resources are the jQuery UI plugins necessary to get the datepicker component working.
 
@@ -110,7 +124,8 @@ Finally, let's look at en example use of this component:
 
 div=. **__sample.xhtml__**
 
-<pre class="prettyprint"><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+```java
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets"
@@ -132,7 +147,7 @@ div=. **__sample.xhtml__**
 </ui:composition>
 </body>
 </html>
-</pre>
+```
 
 When rendered, this looks like:
 

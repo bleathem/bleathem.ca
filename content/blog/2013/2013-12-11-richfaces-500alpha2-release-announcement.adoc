@@ -1,11 +1,22 @@
-= RichFaces 5.0.0.Alpha2 Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF50, Alpha2]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: "RichFaces 5.0.0.Alpha2 is now available for download.  This second alpha release of our RichFaces 5 effort is significant as it brings in our new component architecture, new components, a further refinement in our approach to testing, and the beginnings of a new look and feel."
+---
+  title: RichFaces 5.0.0.Alpha2 Release Announcement
+  date: 2013-12-11
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF50, Alpha2]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2013/12/richfaces-500alpha2-release-announcement.html
+---
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+= RichFaces 5.0.0.Alpha2 Release Announcement
+
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 RichFaces https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12321280[5.0.0.Alpha2] is now available for download.  This second alpha release of our RichFaces 5 effort is significant as it brings in our new component architecture, new components, a further refinement in our approach to testing, and the beginnings of a new look and feel.  We'll dive further into each of these topics below.
 
@@ -59,7 +70,7 @@ To enable this feature, we've changed the RichFaces 5 facelet namespace to be no
 
 [.alert.alert-warn]
 --
-As of RichFaces 5.0.0.Alpha2, the facelt namespace for components is: 
+As of RichFaces 5.0.0.Alpha2, the facelt namespace for components is:
 
 ----
 xmlns:r="http://richfaces.org"

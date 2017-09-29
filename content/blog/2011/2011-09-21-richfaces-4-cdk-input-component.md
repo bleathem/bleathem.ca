@@ -1,20 +1,31 @@
 ---
-layout: post
-title: "RichFaces 4 CDK | Input Component"
-tags: [ CDK, RichFaces ]
+  title: "RichFaces 4 CDK | Input Component"
+  date: 2011-09-21
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ CDK, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2011/09/richfaces-4-cdk-input-component.html
 ---
 
 With our <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">last component</a>, we saw how we could output some simple text with a custom JSF component created with the RichFaces CDK.  Let's increment the complexity, and see how we can create a component that accepts input. Again, the goal here is to highlight how the important features fit together, and to leverage as much of the plumbing work as possible from the RichFaces CDK.
 
 If you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples" style="color: #5588aa; text-decoration: none;">github</a>.
 
-h2. The Component Class
+## The Component Class
 
 In a similar approach to our Hello World component, we'll start with the component class for our Input component:
 
 div=. **AbstractInput.java**
 
-<pre class="prettyprint">package ca.bleathem.richfaces.input.component;
+```java
+package ca.bleathem.richfaces.input.component;
 
 import org.richfaces.cdk.annotations.*;
 
@@ -26,17 +37,18 @@ import org.richfaces.cdk.annotations.*;
 abstract public class AbstractInput extends javax.faces.component.UIInput {
 
 }
-</pre>
+```
 
 This looks pretty similar to the component class for the Hello World component, with an appropriate changing or type, family, renderer and tag. One significant change to take note of is the base class for the component. Notice how we are extending the <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/javax/faces/component/UIInput.html">__UIInput__</a> class. This allows us to leverage the value holding and state saving that has already been built into this component. No matter what kind of UI you want to build for your component, you will almost always want to store a single value (we'll discuss select many components in another post). So extending UIInput is generally a good idea.
 
-h2. The Renderer
+## The Renderer
 
 The corresponding renderer template for our input component is:
 
 div=. **input.template.xml**
 
-<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
 
 <cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el" xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
     xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core" xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite"
@@ -53,7 +65,7 @@ div=. **input.template.xml**
     </cc:implementation>
 
 </cdk:root>
-</pre>
+```
 
 Again, this looks pretty similar to the template for the Hello World component. The key difference being the Renderer __superclass__, and the html markup in the __cc:implementation__. By extending the RichFaces <a href="http://docs.jboss.org/richfaces/latest_4_0_X/javadoc/richfaces-components-ui/org/richfaces/renderkit/InputRendererBase.html" style="font-style: italic;">InputRendererBase</a> class, we save ourselves from having to write the logic to decode and invoke the validators for our component. Again, this is something we will want to do for many of the components we write.
 

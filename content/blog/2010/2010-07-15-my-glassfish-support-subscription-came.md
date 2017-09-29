@@ -1,6 +1,17 @@
 ---
-layout: post
-title: "My Glassfish support subscription came through - finally"
+  title: My Glassfish support subscription came through - finally
+  date: 2010-07-15
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [Glassfish]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2010/07/my-glssfish-support-subscription-came.html
 ---
 
 Call me eager, call me insane, I had a JavaEE 6 app up and running in production on <a href="http://glassfish.dev.java.net/">Glassfish</a> 3.0 one month after it's release.  The improvements in JSF 2 and CDI were too compelling for me to hold off adopting, and sure enough, the application was quick and painless to develop.

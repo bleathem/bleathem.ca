@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "RichFaces 4.2.2.Final Release Announcement"
-tags: [ RF42, Final, RichFaces ]
+  title: "RichFaces 4.2.2.Final Release Announcement"
+  date: 2012-05-15
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RF42, Final, RichFaces ]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2012/05/richfaces-422final-release-announcement.html
 ---
 
 RichFaces<a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12319519"> 4.2.2.Final</a> is available, the second RichFaces 4.2 micro release. This release was originally intended to focus on changes required to better align with the upcoming JBoss AS 7.1.2 release. However we had some community members step forward with some fixes, and those contributions ended up turning this release into a reasonable bug fix release!
@@ -10,9 +20,9 @@ I would like to give a big shout out to <a href="https://community.jboss.org/peo
 
 To try out this release, you can download the distribution<a href="http://www.jboss.org/richfaces/download/stable"> directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.2.2.Final. For more information on setting up a RichFaces 4 application, refer to our<a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x"> getting started guide</a>.
 
-h2. What’s new with 4.2.2.Final?
+## What’s new with 4.2.2.Final?
 
-The __rich:tooltip__ has seen a number of improvements centered around changing the javascript implementation to use the RichFaces <a href="http://alexsmirnov.wordpress.com/2011/03/24/richfaces-javascript-service/">Javascript Service</a> feature, and defer javascript loading until all components are rendered. Nice catch Luca! Specific issues resolved with this approach include: 
+The __rich:tooltip__ has seen a number of improvements centered around changing the javascript implementation to use the RichFaces <a href="http://alexsmirnov.wordpress.com/2011/03/24/richfaces-javascript-service/">Javascript Service</a> feature, and defer javascript loading until all components are rendered. Nice catch Luca! Specific issues resolved with this approach include:
 
 * [<a href="https://issues.jboss.org/browse/RF-10839">RF-10839</a>] - tooltip: attachment using target not works if tooltip defined before the component to which it attaches.
 * [<a href="https://issues.jboss.org/browse/RF-11370">RF-11370</a>] - rich:toolTip: targetted example causes NPE for some IDs
@@ -32,6 +42,6 @@ A number of other fixes are seen with:
 
 Lastly I’ll mention a simple feature, but one which I’m sure many will find useful. The __a4j:log__ component has a new mode of operation, the <a href="https://issues.jboss.org/browse/RF-11294">console mode</a>, allowing __a4j:log__ messages to be output to the browser javascript error console.
 
-h2. What’s Next?
+## What’s Next?
 
 We’ll shortly begin our <a href="https://issues.jboss.org/browse/RF/fixforversion/12318553">4.3.0.M1</a> sprint which will focus on MyFaces compatibility issues and some <a href="https://community.jboss.org/wiki/CDKWish-List">CDK improvements</a> in this first milestone. Concurrent to this, we will be working in the <a href="https://github.com/richfaces/sandbox">RichFaces Sandbox</a> to deliver our <a href="http://blog.bleathem.ca/2012/05/richfaces-bootstrap.html">next-generation component set</a>. Should any of the above initiatives appeal to you, feel free to <a href="https://community.jboss.org/wiki/RichFacesWikiHomePage#contribute">get involved</a>, and help move the project forward!

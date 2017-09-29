@@ -1,7 +1,17 @@
 ---
-layout: post
-title: "RichFaces 3 Showcase on OpenShift"
-tags: [ RichFaces, RF3, OpenShift]
+  title: "RichFaces 3 Showcase on OpenShift"
+  date: 2012-06-06
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [ RichFaces, RF3, OpenShift]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2012/06/richfaces3-showcase.html
 ---
 
 For those of you still developing against RichFaces 3 (you should strongly consider "migrating to RichFaces 4":https://community.jboss.org/wiki/RichFacesMigrationGuide33x-4xMigration!) we have deployed the "RichFaces 3 showcase":http://showcase-rf3.richfaces.org (also referred to as the RichFaces 3 "demo") to "OpenShift":http://openshift.com, Red Hat's PaaS offering.  This is the same cloud environment we use to host the "RichFaces 4 showcase":http://showcase.richfaces.org.

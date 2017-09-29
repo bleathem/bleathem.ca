@@ -1,11 +1,21 @@
-= RichFaces 4.3.2.Final Release Announcement
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [RichFaces, RF43, Final]
-:awestruct-image_url: /images/blog/common/richfaces_notext.png
-:awestruct-description: "I am excited to announce the release of RichFaces 4.3.2.Final.  This second micro release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework."
+---
+  title: RichFaces 4.3.2.Final Release Announcement
+  date: 2013-05-16
+  author: Brian Leathem
+  categories: [Java EE]
+  tags: [RichFaces, RF43, Final]
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2013/05/richfaces-432final-release-announcement.html
+---
 
-image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+= RichFaces 4.3.2.Final Release Announcement
+
+image::/img/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
 
 I am excited to announce the release of RichFaces https://issues.jboss.org/browse/RF/fixforversion/12321315[4.3.2.Final]. -  This 2nd minor release of the RichFaces http://www.bleathem.ca/blog/tags/RF43/[4.3 release] series provides a number of bug fixes further increasing the stability of the framework.
 
@@ -41,19 +51,19 @@ With fixes to the extendedDataTable, tab panel, autocomplete, fileuplaod and pop
 * https://issues.jboss.org/browse/RF-12958[RF-12958] - Popup panel opened from inside popup panel doesn&#39;t work
 * https://issues.jboss.org/browse/RF-12969[RF-12969] - rich:tabPanel: Click on already selected rich:tab causes JavaScript error
 * https://issues.jboss.org/browse/RF-12975[RF-12975] - rich:extendedDataTable - can not change order of columns
-        
+
 === Component  Upgrade
 
 * https://issues.jboss.org/browse/RF-12688[RF-12688] - Upgrade Guava from 11.02 to 13.0.1
 * https://issues.jboss.org/browse/RF-12780[RF-12780] - Upgrade to Mojarra 2.1.19
 * https://issues.jboss.org/browse/RF-12898[RF-12898] - Tie RichFaces 4.3 to CDK 4.3.1.Final
-        
+
 === Enhancement
 
 * https://issues.jboss.org/browse/RF-12784[RF-12784] - Showcase readme - update deployment from eclipse part
 * https://issues.jboss.org/browse/RF-12786[RF-12786] - Showcase - rewrite readme to markdown
 * https://issues.jboss.org/browse/RF-12964[RF-12964] - Create appropriate push timeouts for the showcase
-        
+
 === Feature Request
 
 * https://issues.jboss.org/browse/RF-12810[RF-12810] - Introduce profiles for verification of fundamental tests on Tomcat 6 and 7, TomEE 1.5 and GlassFish 3.1
@@ -63,11 +73,11 @@ With fixes to the extendedDataTable, tab panel, autocomplete, fileuplaod and pop
 * https://issues.jboss.org/browse/RF-12938[RF-12938] - Update Shrinkwrap
 * https://issues.jboss.org/browse/RF-12940[RF-12940] - Showcase: fix path to outputPanel - compositeMessages sample source
 * https://issues.jboss.org/browse/RF-12941[RF-12941] - Showcase: ProgressBar demo - remove obsolete attribute and make the progress smoother
-                            
+
 === Task
 
 * https://issues.jboss.org/browse/RF-12843[RF-12843] - Apply unix style line-endings to the entire codebase
-                
+
 == Moving forward
 
 We've finished development of https://issues.jboss.org/browse/RF/fixforversion/12320296[RichFaces - 5.0.0.Alpha1], and our QA team is currently working on stabilizing https://issues.jboss.org/browse/RFPL-2915[for a release].  So stay tuned for an exciting announcement of the availability of our first RichFaces 5 Alpha!

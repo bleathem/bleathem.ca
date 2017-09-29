@@ -1,8 +1,19 @@
+---
+  title: Rx.js Session at DevNation
+  date: 2015-06-24
+  author: Brian Leathem
+  categories: [Javascript]
+  description:
+  tags: [rxjs, d3js, DevNation, summit]
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  aliases:
+    - /blog/2015/06/rxjs-devnation.html
+---
 = Rx.js Session at DevNation
-Brian Leathem
-:awestruct-layout: post
-:awestruct-tags: [rxjs, d3js, DevNation, summit]
-:awestruct-description: ""
 
 I presented a Session on Rx.js at http://devnation.org[DevNation] this year.  My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time.  This analogy was very well described by http://twitter.com/jhusain[@jhusain] his https://www.youtube.com/watch?v=FAZJsxcykPs[Async Javascript at Netflix] talk that initially got me excited about Reactive Functional programming.  My contribution to this idea is to present it in a visual way.
 

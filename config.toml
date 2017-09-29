@@ -1,4 +1,4 @@
-baseurl = "bleathem.github.io/bleathem.ca"
+baseurl = "https://bleathem.github.io/"
 languageCode = "en-us"
 title = "Experiences of a developer"
 theme = "hugo-future-imperfect"

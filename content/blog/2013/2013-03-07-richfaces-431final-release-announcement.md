@@ -3,7 +3,7 @@
   date: 2013-03-07
   author: Brian Leathem
   categories: [Java EE, RichFaces]
-  tags: \[ RichFaces, RF43 \]
+  tags: [ RichFaces, RF43 ]
   linktitle:
   featured:
   featuredpath:

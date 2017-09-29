@@ -3,7 +3,7 @@
   date: 2013-03-05
   author: Brian Leathem
   categories: [Java EE, Conferences]
-  tags: \[ JAX, JAXConf, talk, polyglot, widgets \]
+  tags: [ JAX, JAXConf, talk, polyglot, widgets ]
   linktitle:
   featured:
   featuredpath:

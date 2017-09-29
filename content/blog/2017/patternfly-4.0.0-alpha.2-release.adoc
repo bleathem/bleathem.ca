@@ -1,0 +1,146 @@
+---
+  title: "Patteryfly 4.0.0 Alpha.2 Release"
+  date: 2017-01-27
+  author: Brian Leathem
+  categories: ["PatternFly"]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+---
+
+crosspost from: https://blog.patternfly.org/patternfly-4-0-0-alpha-2-release/
+
+In the https://blog.patternfly.org/the-patternfly-roadmap/[PatternFly
+Roadmap] we outlined our future plans for PatternFly and laid out the
+goals for the PatternFly 4 release:
+
+* Providing initial support for Angular 2 application development
+* Updating the libraries on which Angular-Patternfly is built
+* Making the dependence on jQuery optional when consuming
+Angular-PatternFly
+
+Today, we are excited to announce our first PatternFly 4 alpha release,
+PatternFly 4.0.0-alpha.2  (we had to skip 4.0.0-alpha.1 due to some
+known issues).  This blog provides some highlights of the release,
+please check the release notes for
+https://github.com/patternfly/patternfly/releases/tag/v4.0.0-alpha.2[PatternFly]
+and
+https://github.com/patternfly/angular-patternfly/wiki/Angular-PatternFly-4-Migration-Guide[Angular-PatternFly]
+for further details.
+
+The PatternFly 4 changes are centered around the javascript
+implementations of our patterns.  The patterns and their CSS
+implementations have not changed since PatternFly 3. There are no API
+changes to PatternFly Core, however you will want to refer to the
+migration guides for
+https://github.com/patternfly/patternfly/wiki/PatternFly-4-Migration-Guide[PatternFly]
+and
+https://github.com/patternfly/angular-patternfly/wiki/Angular-PatternFly-4-Migration-Guide[Angular
+PatternFly] for details on migrating your applications to PatternFly 4.
+
+[[angular-patternfly]]
+# Angular-PatternFly
+
+[[directive-to-component-migration]]
+## Directive to component migration
+
+The primary driver for the PatternFly 4 release is to enable Angular 2
+development through the re-factor of our Angular 1.x directives into
+Angular 1.5+ components.  These components can be used in a “downgraded”
+Angular 2 application.  All directives have been converted to
+components, except the pfRemainingCharsCount, pfFocused, pfValidation,
+and pfFixedAccordion directives.  We have provided a
+https://github.com/patternfly/patternfly-angular2-demo-app[Angular 2
+quickstart] that can be used as a starting point for your own PatternFly
+Angular 2 applications.
+
+[[optional-jquery]]
+## Optional jQuery
+
+With PatternFly 4, we’ve refactored our Angular modules to enable
+development of Angular-PatternFly applications without bringing in the
+jQuery dependency.  To take advantage of this, include the
+patternfly-settings.js file from the PatternFly dependency, rather than
+patternfly.js.  More details can be found in the associated
+https://github.com/patternfly/angular-patternfly/pull/361[Github Pull
+Request].
+
+[[table-view-component]]
+## Table View Component
+
+New common component work has landed in PatternFly 4 with the
+introduction of the Angular-PatternFly Table View component.  The table
+view component leverages the
+https://www.npmjs.com/package/angular-datatables[angular-datables] port
+of the https://datatables.net/[datatables.net] library we are using in
+PatternFly 4.  It brings the highly requested table view pattern
+implementation to Angular.  Check out the
+https://www.patternfly.org/angular-patternfly/#/api/patternfly.table.component:pfTableView%20-%20Basic[Angular-PatternFly
+docs] for more details on using the table view in your Angular
+applications.
+
+[[patternfly-core]]
+# PatternFly Core
+
+[[jquery-component-split]]
+## jQuery component split
+
+We’ve refactored the monolithic patternfly.js file into a number of
+separate source files with this PatternFly 4 release.  The goal was to
+better enable developers to locate functionality and contribute to
+PatternFly.  The individual files are still packaged into a single file
+at build time, mimicking the PatternFly 3 distribution, as such there is
+no migration step required in this regard for your applications.
+
+[[ruby-now-optional-for-building-patternfly]]
+## Ruby now optional for building PatternFly
+
+Ruby is no longer required to build and contribute to the PatternFly
+project.  Ruby was required due to our use of jekyll to provide code
+samples that are used in both the development of PatternFly components,
+as well as live examples on the patternfly.org site.  Having to install
+ruby and the associated gems however presented a source of frustration
+and an impediment to contribution from our javascript developer
+community.
+
+To overcome this hurdle, we’ve implemented a javascript tool to render
+our jekyll test pages using the
+https://github.com/sirlantis/liquid-node[liquid-node] library.  The full
+jekyll build is however still available for those who have ruby
+installed.  See the
+https://github.com/patternfly/patternfly/tree/branch-4.0-dev#install-npm-dependencies[README]
+for instructions on toggling the javascript/ruby build for PatternFly.
+
+[[migration]]
+# Migration
+
+The migration steps associated with the above changes are being tracked
+in
+https://github.com/patternfly/patternfly/wiki/PatternFly-4-Migration-Guide[PatternFly
+migration guide] and
+https://github.com/patternfly/angular-patternfly/wiki/Angular-PatternFly-4-Migration-Guide[Angular-PatternFly
+migration guide] wiki pages. These migration guides are works in
+progress, please suggest any additions as you migrate your own
+applications.
+
+[[next-steps]]
+# Next Steps
+
+We will follow up with additional PatternFly 4 alpha releases as we
+solidify our API and component changes.  Once we are API stable and
+feature complete we will have a Beta release, followed by a final 4.0.0
+release.  We will  continue with PatternFly 3 releases until PatternFly
+4.0.0 is ready.  After the 4.0.0 release, we do not plan to have anymore
+PatternFly 3 releases.
+
+[[patternfly-5]]
+PatternFly 5
+~~~~~~~~~~~~
+
+PatternFly 5 development has continued concurrent to the Patternfly 4
+effort.  We are planning a 5.0.0-alpha.1 release in the coming weeks.
+ Stay tuned for blogs and announcements detailing what we’ve been up to
+with PatternFly 5.

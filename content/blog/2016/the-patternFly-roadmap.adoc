@@ -1,0 +1,308 @@
+---
+  title: "The Patternfly Roadmap"
+  date: 2016-12-14
+  author: Brian Leathem
+  categories: ["PatternFly"]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+---
+
+crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
+
+The UXD team has been hard at work churning out
+https://github.com/PatternFly/PatternFly/releases[PatternFly releases]
+at a regular cadence, steadily increasing the number of design patterns
+and design pattern implementations. In recent releases we introduced a
+number of changes aimed at simplifying the consumption and contribution
+processes for both designers and developers.
+
+There are a number of ways we want to improve and scale out PatternFly
+that can’t be addressed without introducing breaking changes to the
+project. As such, we’ve had a series of planning meetings to address
+those concerns and build out a roadmap for our community to plan around
+and coordinate their efforts.
+
+The PatternFly roadmap consists of two major releases over the course of
+the next year. In PatternFly 4, the first of these major releases, we
+will provide an immediate solution for developers looking to take
+advantage of PatternFly in their Angular 2 applications. PatternFly 5
+will follow with a more complete strategy for scaling out PatternFly by
+taking a modular approach in both our pattern designs and
+implementations.
+
+[[patternfly-4-goals]]
+# PatternFly 4
+## Goals
+
+The goals for PatternFly 4 are primarily focused on modernizing the
+Angular-PatternFly project, and consist of:
+
+* Providing initial support for Angular 2 application development
+* Updating the libraries on which Angular-Patternfly is built
+* Making the dependence on jQuery optional when consuming
+Angular-PatternFly
+
+[[angular-patternfly]]
+### Angular-PatternFly
+
+http://www.patternfly.org/angular-patternfly/[Angular-PatternFly] 4 will
+consist of a refactor of all our Angular directives as
+https://docs.angularjs.org/guide/component[Angular 1.5 components]. This
+is a comparatively simple re-factor and enables
+https://angular.io/[Angular 2] applications to consume our existing
+pattern implementations. Look for additional blog posts detailing how to
+build such Angular 2 applications as we roll out our initial Angular 1.5
+components. This migration has the follow-on effect that all downstream
+applications will have to upgrade to Angular 1.5 to stay current with
+PatternFly releases.
+
+In addition to this directive -> component refactor, we will introduce a
+number of dependency upgrades into Angular-PatternFly with this major
+release. Most notably we will update our
+https://angular-ui.github.io/bootstrap/[ui-bootstrap] dependency to the
+latest release, an update a number of developers have been asking for.
+
+The Angular-PatternFly https://jquery.org/[jQuery] dependency will be
+made optional in this 4.0 release. Several of our pattern
+implementations will continue to be built around jQuery, but if an
+application doesn’t use those patterns, then the jQuery dependency will
+not be required.
+
+It should be noted that these updates will result in some directive API
+changes, implying minor code changes in downstream applications. It is
+for this reason that we are incrementing the major version to 4 with
+this release.
+
+[[patternfly-core]]
+### PatternFly “core”
+
+The changes to our https://github.com/patternfly/patternfly[PatternFly
+“core”] repository are less significant in the 4.0 release. They
+primarily involve breaking apart the “core” repo into one for CSS and
+one for the jQuery pattern implementations. Re-structuring the
+repositories in this manner puts the jQuery pattern implementations on
+an even level with the Angular-PatternFly implementations.
+
+PatternFly consists of:
+
+1.  Design patterns
+2.  A CSS implementation of those design patterns
+3.  Alternate javascript implementations of the behaviours associated
+with the design patterns
+
+image:https://blog.patternfly.org/wp-content/uploads/2016/12/slack-imgs-1024x344.png[slack-imgs]
+
+[[release-timeline]]
+### Release Timeline
+
+We will have an initial alpha release of the PatternFly and
+Angular-PatternFly projects in January. This first alpha is expected to
+be sufficiently complete to try it out in downstream applications. We
+will stabilize our APIs and implementations with follow-on alpha and
+beta releases, aiming to get to a final release a timely manner.
+
+[[patternfly-5]]
+# PatternFly 5
+
+[[goals]]
+## Goals
+
+The scope of PatternFly 5 is much larger than the scope of PatternFly 4.
+With PatternFly 5, we are working to scale PatternFly in a number of
+areas:
+
+* Scaling adoption with a modular design system to increase the number
+of use cases we can support
+* Scaling design contributions by pioneering a design workflow centered
+around github
+* Scaling developer contributions with a modular approach in both our
+CSS and javascript implementations
+* Scaling support for new javascript frameworks
+* Scaling supported devices with mobile considerations in our designs
+patterns and their corresponding CSS/JS implementations
+* Scaling target audiences with support for internationalisation and
+accessibility
+* Modernizing PatternFly with style changes around typography, font
+size, spacing and gradients
+
+The roadmap below covers how we’ve solved these challenges and are
+pushing PatternFly forward to power great user experiences through open
+source design.
+
+[[modular-approach]]
+## Modular approach
+
+In PatternFly 5, we are adopting a modular approach in both our CSS and
+Javascript implementations. This modular approach offers a number of
+advantages:
+
+* Easing the contribution process
+* Facilitating piecewise consumption of our patterns
+* Fostering a community of patterns around PatternFly
+
+image:https://blog.patternfly.org/wp-content/uploads/2016/12/g11516-1024x505.png[image,width=580,height=286]
+
+[[atomic-css]]
+## Atomic CSS
+
+We are using the
+http://bradfrost.com/blog/post/atomic-web-design/[atomic design system]
+by Brad Frost to implement our modular design system for PatternFly 5.
+Implementing our CSS in such a modular fashion involves a full rewrite,
+which provides a good opportunity to adopt
+https://v4-alpha.getbootstrap.com/[Bootstrap 4]. We've also developed a
+set
+ofhttps://github.com/andresgalante/patternfly-atomic/blob/code-guidelines/CODE-GUIDELINES.md[CSS
+guidelines] based on BEM to ensure we develop performant and
+maintainable CSS.
+
+[[web-components]]
+## Web components
+
+The PatternFly 4 work to move to Angular 1.5 components offers a useful
+stop gap, enabling Angular 2 development, but does not offer a suitable
+long term strategy. Nor does it address the requests to support React
+and other web UI frameworks. To understand what it means for PatternFly
+to support a web framework, let's review our current deliverables.
+
+PatternFly 3 and 4 deliverables consist of:
+
+1.  A CSS implementation of our design patterns
+2.  Javascript implementations of pattern behaviours
+
+The behaviors associated with patterns are implemented as both jQuery
+plugins as well as Angular 1 directives/components. We could
+support Angular 2 and React by developing both Angular 2 components and
+React components, effectively doubling the number of behavior
+implementations we develop and support for each pattern. However, this
+is an approach that does not scale.
+
+Instead, we are looking tohttp://webcomponents.org/[web components] as
+the solution to scale out our PatternFly framework support. We are
+focusing on the
+https://html.spec.whatwg.org/multipage/scripting.html#custom-elements[Custom
+Element specification] in particular, and the corresponding
+https://github.com/webcomponents/webcomponentsjs[polyfill]. We will
+consider incorporating the remaining web component specifications into
+our solution in the future, after they have had a chance to mature.
+
+https://github.com/webcomponents/webcomponentsjs#browser-support[Browser
+support] for custom elements (when incorporating the polyfill), provide
+support for relatively current browser releases, and provides support
+for IE as far back as IE 10. This is acceptable for new applications,
+and applications that adopt modern browser support statements. We
+recognize that there are applications in production that will have an
+ongoing requirement to support older browsers for some time. We are
+recommending applications with such requirements stay on PatternFly 4,
+and wait to move to PatternFly 5 until their browser requirements are
+aligned with what is supported by PatternFly 5.
+
+[[internationalization-and-accessibility]]
+## Internationalization and accessibility
+
+Support for internationalization and accessibility are increasingly
+requested features for PatternFly. However, retro-fitting those concerns
+into our existing framework has proven to be a difficult task. As such,
+we are baking solutions for these concerns into our web component
+development process to ensure the problem is solved from the get-go in
+PatternFly 5.
+
+[[design-and-style-changes]]
+## Design and style changes
+
+[[decision-tree]]
+### Decision tree
+
+As recommended by the guidelines of the Atomic design system, we are
+employing a decision tree to formalize the criteria that prospective
+patterns will be evaluated against before including them in PatternFly.
+A draft of our decision tree is included below. Refer to Andres
+Galante’s blog post for more details of how we plan to
+https://blog.patternfly.org/the-tree-of-wisdom/[apply the decision
+tree].
+
+image:https://blog.patternfly.org/wp-content/uploads/2016/11/patternfly-decision-tree-1024x386.png[patternfly-decision-tree,width=580,height=219]
+
+[[mobile-support]]
+### Mobile support
+
+While PatternFly is built around Bootstrap, and Bootstrap is responsive,
+not all of our patterns are themselves responsive. With PatternFly 5 we
+will revisit mobile-relevant patterns and make sure they are indeed
+responsive and progressively enhanced, both in their design and
+implementation.
+
+[[updated-style-guidelines]]
+### Updated style guidelines
+
+Additional style changes involve a move to the Overpass font, designing
+a new Typography system, and increasing the base type sizing. Read more
+about this in Kyle Baker’s blog
+post: https://blog.patternfly.org/choosing-the-best-font-for-application-design/[Choosing
+the Best Font for Application Design].
+
+Additionally we’ve had to revise the spacing of the entire library to
+accommodate the new modular design system and update the documentation
+and artifacts to reflect these new styling changes.
+
+[[the-patternfly-5-flywheel]]
+The PatternFly 5 “flywheel”
++++++++++++++++++++++++++++
+
+The redevelopment effort for PatternFly 5 can be summarized with the
+following diagram. We start by applying the decision tree to evaluate
+the pattern and consider breaking it down into common components. The
+pattern then undergoes design revisions, followed by new CSS and
+Javascript implementations. Testing of our implementations is a
+priority, along with the cross-cutting concerns of internationalisation
+and accessibility.
+
+image:https://blog.patternfly.org/wp-content/uploads/2016/12/g10618-1-1024x561.png[g10618,width=580,height=318]
+
+[[release-timeline-1]]
+## Release Timeline
+
+Work has already begun on PatternFly 5. The CSS rewrite is being done in
+a patternlab instance, check it out at
+http://www.PatternFly.org/patternfly-atomic/. Get involved with the CSS
+rewrite in the
+https://patternfly.slack.com/messages/css-army/[#css-army] channel of
+the https://patternfly.slack.com/[PatternFly slack].
+
+Similarly, work has begun on the webcomponent effort, finalizing the
+details of our web component prototype. Check it out on github
+https://github.com/patternfly-webcomponents and get involved via the
+https://github.com/patternfly-webcomponents[#webcomponents] channel in
+our https://patternfly.slack.com/[PatternFly slack].
+
+Look for an initial alpha release with our PatternFly-core CSS
+(including our new style updates) and a few initial web components in
+the coming months.
+
+[[future]]
+# Future
+
+While developing PatternFly 4 we will continue to do maintenance
+releases of PatternFly 3, and will continue with PatternFly 3
+maintenance releases until the bulk of our community has had a chance to
+migrate to PatternFly 4. The migration of applications to PatternFly 4
+is expected to be fairly straightforward.
+
+Development of PatternFly 5 will take some time, with a potential
+delivery in late 2017/early 2018. During the development of PatternFly
+5, we will continue to introduce support for new patterns and components
+in PatternFly 4. Once PatternFly 5 is released, we will continue to
+develop new patterns concurrently in both PatternFly 4 and PatternFly 5
+until the web-component browser support story of our our downstream
+products allows us to consolidate our efforts on a single approach.
+
+There are many opportunities to contribute to PatternFly as we push
+forward on this roadmap. Whether you’re a designer, or a developer, or
+even a writer, we encourage you to
+http://www.patternfly.org/community[reach out to us and get involved] in
+bringing this open source community project and help make it the project
+you need it to be!

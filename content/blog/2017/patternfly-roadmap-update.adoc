@@ -1,0 +1,130 @@
+---
+  title: "Patternfly Roadmap Update"
+  date: 2017-05-30
+  author: Brian Leathem
+  categories: ["PatternFly"]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+---
+
+crosspost from: https://blog.patternfly.org/patternfly-roadmap-update/
+
+Last November we published the
+https://blog.patternfly.org/the-patternfly-roadmap/[PatternFly
+roadmap] where we put forward the idea for PatternFly 4 and 5, an effort
+around web components, and a CSS rewrite. Alpha releases for
+https://blog.patternfly.org/patternfly-4-0-0-alpha-2-release/[PatternFly
+4] and https://blog.patternfly.org/web-component-0-0-8-alpha/[PatternFly
+Web Components] delivered initial progress on these efforts. However,
+the story has grown more complex with the introduction of
+https://blog.patternfly.org/patternfly-angular-2-and-react-repos[additional
+PatternFly framework repositories]. In this post we will provide a
+status update on our delivery of our roadmap, and explain how all these
+repositories and future versions tie together.
+
+[[the-big-picture]]
+
+## The Big Picture
+
+The PatternFly design system consists of:
+
+1.  A set of patterns for use in enterprise applications
+2.  A CSS implementation of the patterns’ visuals
+3.  JS implementations of the patterns’ behaviours
+
+image:https://blog.patternfly.org/wp-content/uploads/2017/05/PatternFly-Roadmap-Update.png[image,width=546,height=457]
+
+Implementations of the behaviours are offered via multiple framework
+integrations (Angular, React, and jQuery) to enable more code reuse and
+increase developer productivity. We are positioning web components as
+our vehicle for code reuse between our framework integrations, as
+described in a previous
+https://blog.patternfly.org/web-component-0-0-8-alpha/[PatternFly Web
+Component post].
+
+[[independent-releases]]
+## Independent releases
+
+Each of the PatternFly repositories will move forward with an
+independent release cycle and version (following http://semver.org).
+This is in contrast with the version lock we’ve had to date between
+PatternFly and Angular-PatternFly.
+
+[[angular-patternfly-4]]
+## Angular-PatternFly 4
+
+Taking advantage of this break in the PatternFly/Angular-PatternFly
+version lock, we have released
+https://github.com/patternfly/angular-patternfly/releases/tag/v4.0.0[Angular-PatternFly
+4.0.0]. Refer to the release notes fro complete details, but the major
+deliverables of this release are:
+
+* A port of the Angular directives to Angular 1.5+ components
+* The jQuery dependency is now optional
+* A major ui-bootstrap dependency update
+* A number of new component implementations
+
+Angular-Patternfly 4.0.0 relies on version 3.25.0 of PatternFly..
+
+[[patternfly-4]]
+## PatternFly 4
+
+The changes introduced to date in the Patternfly 4 Alpha and RC’s did
+not warrant a major version bump. As such those changes were merged back
+into the master branch, and delivered as PatternFly 3.25.0.
+
+We will move forward with a PatternFly 4 effort centered around
+splitting the CSS and jQuery implementations into separate repositories
+to be consistent with our model of PatternFly presented above. This will
+facilitate uses cases that consume PatternFly CSS but don’t want to
+bring in the jQuery implementations, such as the various framework
+integrations.
+
+PatternFly will also move to a continuous release process, rather than
+the current sprint-based release cycle. A release will be triggered with
+every PR merge to master, applying semantic versioning as appropriate.
+This will make it easier for downstream to consume PatternFly changes in
+a timely manner.
+
+[[framework-repositories]]
+## Framework Repositories
+
+PatternFly Web Components and PatternFly React have initial releases and
+will move forward with a continuous release process. Look for a
+PatternFly-ng release soon.
+
+[[patternfly-css]]
+## PatternFly CSS
+
+What we initially called “PatternFly 5” is being carried out in the
+PatternFly-CSS repository.  It consists of a rewrite of our CSS based on
+Bootstrap 4. Check out the
+http://www.patternfly.org/patternfly-css/[PatternFly-CSS component
+showcase] to follow along with progress. When this new CSS
+implementation is ready, it will replace the current CSS implementation.
+
+[[get-involved]]
+## Get involved
+
+There is a place for everyone to get involved in one of our PatternFly
+repositories.
+
+* If you want to participate in design pattern contribution and reviews
+check out: +
+https://github.com/patternfly/patternfly-design
+* If you want to participate in PatternFly CSS development visit: +
+https://github.com/patternfly/patternfly
+* If you want to participate in javascript behavioural implementations
+and framework integrations visit any of:
+** https://github.com/patternfly/angular-patternfly
+** https://github.com/patternfly/patternfly-ng
+** https://github.com/patternfly/patternfly-react
+** https://github.com/patternfly-webcomponents/patternfly-webcomponents
+
+Get in touch with us via any of the mechanisms on our
+http://www.patternfly.org/community/[community page] to learn more about
+contributing to the above efforts.

@@ -1,0 +1,50 @@
+= RichFaces 4.5.0.CR2 Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF45, CR]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+We have a second candidate release for RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12325841[4.5.0.CR2]) available.  We've fixed a couple of regressions uncovered by both our community and QA team.  Thanks guys!  Read on for the specifics of what was fixed in this release.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.CR2. For more information on setting up a RichFaces 4 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
+
+[.alert.alert-warn]
+--
+*Compatibility with RichFaces 4.3:* RichFaces 4.5 is intended to be backwards compatibility with RichFaces 4.3 and should be a drop in replacement into your applications, requiring only changes in your pom.xml.
+
+Any breaking changes with RichFaces 4.5 are being tracked in our GitHub wiki https://github.com/richfaces/richfaces/wiki/Migration-from-RichFaces-4-to-RichFaces-4.5[migration page].  Please update that wiki page with a Pull Request if you find any incompatibilities.
+--
+
+== Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12325588[+++<i class='icon-external-link-sign'></i>+++]
+
+=== Bug
+* https://issues.jboss.org/browse/RF-13217[RF-13217] - ITFileUpload framework test freezes on PhantomJS
+* https://issues.jboss.org/browse/RF-13839[RF-13839] - Drop-down menu page fragment should have show event aligned with the component
+* https://issues.jboss.org/browse/RF-13845[RF-13845] - Showcase select sample - new autocomplete like sample has wrong color or typed text
+* https://issues.jboss.org/browse/RF-13851[RF-13851] - Selected item in rich:select is not highlighted.
+* https://issues.jboss.org/browse/RF-13852[RF-13852] - When rich:select is included in EDT, navigation with up/down keys in the select list is not possible.
+* https://issues.jboss.org/browse/RF-13854[RF-13854] - The width option of the style attribute in rich:select does not work
+* https://issues.jboss.org/browse/RF-13860[RF-13860] - Richfaces Photoalbum example - tree navigation doesn't work after deployment into EAP-6.3.1 with JRE-1.6
+* https://issues.jboss.org/browse/RF-13862[RF-13862] - Headers are stationary in rich:extendedTable with tabbed rich:column movement
+* https://issues.jboss.org/browse/RF-13864[RF-13864] - The tab key does not render the value when entered manually in rich:select
+* https://issues.jboss.org/browse/RF-13865[RF-13865] - Revert the rename of a4jSkin to richSkin, changing it back to a4jSkin
+* https://issues.jboss.org/browse/RF-13869[RF-13869] - page-fragments: editor: switching to correct frame
+* https://issues.jboss.org/browse/RF-13872[RF-13872] - Ajax doesn't accept array in execute/render anymore
+* https://issues.jboss.org/browse/RF-13874[RF-13874] - integration tests: tests with Category FailingOnPhantomJS are skipped on Chrome
+* https://issues.jboss.org/browse/RF-13875[RF-13875] - RF 4.5 : a4j:push component fails on reconnect in push-demo
+* https://issues.jboss.org/browse/RF-13876[RF-13876] - Command button/link, jsFunction and poll missing parameter bypassUpdates
+
+=== Enhancement
+* https://issues.jboss.org/browse/RF-13301[RF-13301] - Favor use of Page Fragments in Framework Tests
+* https://issues.jboss.org/browse/RF-13853[RF-13853] - page-fragments: refactor implementation part of orderingList, pickList
+* https://issues.jboss.org/browse/RF-13870[RF-13870] - showcase tests: select correct war classifier for activated integration profile
+
+=== Feature Request
+* https://issues.jboss.org/browse/RF-13859[RF-13859] - Selecting an item while typing in rich:select does not work when enableManualInput=false.
+
+== Next steps
+We will again let this 4.5.0.CR2 release "bake" in the community for the next week, and determine from your feedback whether or not we need a 4.5.0.CR3 release.  If no blockers are found, we will proceed with our 4.5.0.Final release.  So please be sure to this release out in your applications and file any issues ASAP!

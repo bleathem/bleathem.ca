@@ -1,0 +1,68 @@
+= Google Play Services Oauth2 Token Lookup via Cordova
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [cordova, plugin]
+:awestruct-description: ""
+
+Delegating to 3rd parties to manage your authorization is incredibly helpful when developing a new application.  A benefit to users and developers alike, this task is made all the more helpful with the number of social networks providing Oauth2 APIs that we can use for our authorization.  In this blog post I will address using the Google Play services on Android from a hybrid mobile Cordova application to retrieve an Oauth2 token that we can then use with Google's Oauth2 REST API.
+
+There are a number of blogs and how-tos on the web that show us how to use the https://www.google.ca/webhp#q=cordova+inappbrowser+oauth2[Cordova InAppBrowser to trigger an Oauth2 token request].  This approach works well, and indeed achieves the desired result of authenticating the user and retrieving an Oauth2 token.  However the user experience is poor, requiring the user to enter their credentials.  Why not leverage the already authenticated user logged into the mobile device?  To achieve this we will have to make use of the Google Play services API.
+
+== Google Play services API
+The Android documentation on https://developer.android.com/google/auth/http-auth.html[Authorizing with Google for REST APIs] is quite clear.  We can use the Android API https://developer.android.com/reference/com/google/android/gms/auth/GoogleAuthUtil.html[GoogleAuthUtil.getToken()] method to retrieve an Oauth2 token for the logged-in user.  The only missing link then is invoking the Android API from our javascript application.
+
+== A Cordova plugin
+To close this gap, I created a Cordova plugin that invokes the GoogleAuthUtil API from a line of javascript, and returns the retrieved Oauth2 token to the javascript environment using a callback function.  The Cordova http://cordova.apache.org/docs/en/4.0.0/guide_hybrid_plugins_index.md.html[Plugin Development Guide] does a good job in describing how to author plugins. I recommend giving it a read if you are not familiar with developing Cordova plugins.
+
+The only "gotcha" I had to deal with was the http://developer.android.com/reference/com/google/android/gms/auth/UserRecoverableAuthException.html[UserRecoverableAuthException] that is thrown when first trying to retrieve the token.  The above-mentioned Android documentation does a good job on describing how to catch the exception and retrieve appropriate permissions, but the Oauth2 token seems to get lost in the process.  It turns out the token can be retrieved from an "Intent Extra" in the `onActivityResult` method of our plugin.  Check out the https://github.com/bleathem/cordova-oauth-google-services/blob/master/src/android/OauthGoogleServices.java#L70[plugin source] if this is meaningful to you.
+
+== Consuming the plugin
+The plugin I created is https://github.com/bleathem/cordova-oauth-google-services[available on Github], and is installed using the command:
+----
+cordova plugin add https://github.com/bleathem/cordova-oauth-google-services.git
+----
+
+Remove this plugin with the command:
+----
+cordova plugin remove ca.bleathem.plugin.OauthGoogleServices
+----
+
+Invoke the plugin from your javascript:
+[source, javascript]
+----
+window.cordova.plugins.oauth([scope], done, [err]);
+----
+
+* `scope` *optional*: the scope for the Oath2 token request.  Default: `https://www.googleapis.com/auth/plus.me`
+* `done` *required*: a success callback invoked the Oauth2 token as its single parameter
+* `err` *optional*: a failure callback invoked when there is an error retrieving the token
+
+== Example usage
+In my Angular.js application I used a http://www.html5rocks.com/en/tutorials/es6/promises/[Promise API] to retrieve the token:
+
+[source, javascript]
+----
+var localLogin = function() {
+  var deferred = $q.defer();
+  $window.cordova.plugins.oauth.getToken('openid', function(token) {
+    deferred.resolve(token);
+  }, function(error) {
+    deferred.reject(error);
+  });
+  return deferred.promise;
+}
+----
+
+I then posted the token to my backend where the token was verified and used to lookup/create a user.  I set up a fallback mechanism to use the InAppBrowser approach to retrieve a Oauth2 token in cases where the Google Play services API was not present:
+
+[source, javascript]
+----
+if ($window.cordova && $window.cordova.plugins && $window.cordova.plugins.oauth) {
+  return localLogin().then(verifyToken, remoteLogin);
+}
+----
+
+== The Final Word
+This was the first Cordova plugin I created, and I must say I'm impressed at how easy it was to implement.  I'll definitely keep this tool close-at-hand when developing hybrid mobile applications.
+
+Hopefully this Cordova plugin is useful to someone else; it certainly is easier to use than setting up the InAppBrowser solution!

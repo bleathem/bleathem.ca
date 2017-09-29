@@ -1,0 +1,159 @@
+---
+layout: post
+title: "RichFaces 4 CDK | jQeury UI Tabs"
+tags: [ CDK, RichFaces ]
+---
+
+Following on with another entry in my <a href="http://blog.bleathem.ca/search/label/CDK">CDK series</a>, this time we will look at at creating a pair of components to wrap the <a href="http://jqueryui.com/demos/tabs/">jQuery UI tabs plugin</a> with the RichFaces CDK. It'll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let's dive right in with a look at the Abstract component definitions.
+
+As always, if you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples">github</a>.
+
+h2. The Component Classes
+
+div=. **AbstractTabs.java**
+
+<pre class="prettyprint">package ca.bleathem.richfaces.jquery.component;
+import org.richfaces.cdk.annotations.*;
+
+import javax.faces.component.UIComponent;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+@JsfComponent(
+        type = "ca.bleathem.richfaces.jquery.Tabs",
+        family = "ca.bleathem.Tabs",
+        renderer = @JsfRenderer(type = "ca.bleathem.jquery.TabsRenderer"),
+        tag = @Tag(name="tabs"))
+abstract public class AbstractTabs extends javax.faces.component.UIPanel {
+}
+</pre>
+
+Here we have the component class for tor the __tabs__ tag - this will be the container for the __tab__ components that follow. This is strikingly similar to the earlier <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">AbstractHello</a> component we saw in our first CDK example. The component class is serving as a placeholder to define the component properties (type, family, tag) , and the renderer associations. Look back through the previous blogs in <a href="http://blog.bleathem.ca/search/label/CDK">this series</a> if you don't recognize these properties.
+
+div=. **AbstractTab.java**
+
+<pre class="prettyprint">package ca.bleathem.richfaces.jquery.component;
+
+import org.richfaces.cdk.annotations.*;
+
+@JsfComponent(
+        type = "ca.bleathem.richfaces.jquery.Tab",
+        family = "ca.bleathem.Tab",
+        renderer = @JsfRenderer(type = "ca.bleathem.jquery.TabRenderer"),
+        tag = @Tag(name="tab"))
+abstract public class AbstractTab extends javax.faces.component.UIPanel {
+    @Attribute
+    public abstract String getTitle();
+}
+</pre>
+
+The component class for the __tab__ tag is similar to the one for the __tabs__ tag, adding a definition for a __title__ attribute, and with slightly different component properties. Let's move on from these mundane component definitions and look at the Renderers, where things get more interesting.
+
+h2. The Renderers
+
+Looking first at the simpler __tab__ renderer:
+
+div=. **tab.template.xhtml**
+
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
+
+<cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el"
+        xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
+        xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core"
+        xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite">
+
+    <cc:interface>
+        <cdk:class>ca.bleathem.richfaces.jquery.renderkit.TabRenderer</cdk:class>
+        <cdk:superclass>org.richfaces.renderkit.html.DivPanelRenderer</cdk:superclass>
+        <cdk:renderer-type>ca.bleathem.jquery.TabRenderer</cdk:renderer-type>
+    </cc:interface>
+
+    <cc:implementation>
+        <div id="\#{clientId}" class="rf_jq_tab">
+            <cdk:body />
+        </div>
+    </cc:implementation>
+
+</cdk:root>
+</pre>
+
+This renderer is simple, again comparable to the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">hello.template.xml</a>. The new piece we've introduced is the __&lt;cdk:body /&gt;__ tag. This tag indicates where we want to render the contents of the component. So any content (or child components) we nest in out __tab__ tag will be wrapped by the div tag. 
+
+We'll see this __&lt;cdk:body /&gt;__ tag again when we look as the (slightly more complex) tabs renderer:
+
+div=. **tabs.template.xhtml**
+
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
+
+<cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el"
+        xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
+        xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core"
+        xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite">
+
+    <cc:interface>
+        <cdk:class>ca.bleathem.richfaces.jquery.renderkit.TabsRenderer</cdk:class>
+        <cdk:superclass>org.richfaces.renderkit.html.DivPanelRenderer</cdk:superclass>
+        <cdk:renderer-type>ca.bleathem.jquery.TabsRenderer</cdk:renderer-type>
+        <cdk:resource-dependency name="" />
+        <cdk:resource-dependency library = "javax.faces" name = "jsf.js" />
+        <cdk:resource-dependency name = "jquery.js" />
+        <cdk:resource-dependency library = "com.jqueryui/css/ui-lightness" name = "jquery-ui-1.8.16.custom.css" />
+        <cdk:resource-dependency library = "com.jqueryui/development-bundle/ui" name = "jquery.ui.core.js" />
+        <cdk:resource-dependency library = "com.jqueryui/development-bundle/ui" name = "jquery.ui.tabs.js" />
+    </cc:interface>
+
+    <cc:implementation>
+        <div id="\#{clientId}" class="rf_jq_tabs">
+            <ul>
+                <c:forEach items="\#{component.children}" var="child">
+                    <li><a href="#\#{child.clientId}">\#{child.attributes['title']}</a></li>
+                </c:forEach>
+            </ul>
+            <cdk:body />
+        </div>
+
+        <script type="text/javascript">
+            jQuery(function() {
+                $(document.getElementById('\#{clientId}')).tabs();
+            });
+     </script>
+    </cc:implementation>
+
+</cdk:root>
+</pre>
+
+This renderer template introduces a number of new concepts. For one, you might have noticed I didn't create a RenderBase class, like we did for the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component. We could have, but I wanted to demonstrate that it's not strictly necessary. The CDK allows one to replace the __@ResourceDependency__ annotations we used in the __DatepickerRenderBase__, with a CDK tag: __&lt;cdk:resource-dependency /&gt;.__ This is a one-for-one replacement for the annotation, with matching attributes (in fact, the CDK creates actual @ResourcesDependency annotations in the generated java code). This allows us to define all the required javascript and css resources required by the component in the renderer template itself.
+
+We've also made use of the jstl core EL expressions to execute some logic in our renderer. You can see we loop over each of the children of the __tabs__ component, which will be our __tab__ components. For each child __tab__, we create an entry in an unordered list with the __title__ attribute of the tab. This isn't just some arbitrary html, we are fulfilling the contract of the <a href="http://jqueryui.com/demos/tabs/">jQuery UI tabs</a> plugin. The plugin is going to look for this specific markup to render the tab components, and attach the necessary behavior.
+
+Following the unodered list, we see the __&lt;cdk:body /&gt;__ tag. This renders the child components, delegating to the render associated with each child. In this case, the children are the __tab__ components and will be rendered using the __tab__ renderer from the above __tab.template.xhtml__ template.
+
+The last piece of this template is the javascript call, where we invoke the jQuery UI tabs plugin to enable the client-side behavior. We aren't passing any options to the plugin in this example, but we could easily do so using the __scriptOption__ CDK tag demonstrated with the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component.
+
+h2. The Result
+
+So what does it look like when we put it all together?
+
+With this sample markup:
+
+<pre class="prettyprint">
+<b:tabs>
+    <b:tab title="Tab 1">
+        Hello <b>Tab</b>!!
+    </b:tab>
+    <b:tab title="Tab 2">
+        With nested components:
+        <br />
+        <b:datepicker value="\#{myBean.value}" dateFormat="yy-mm-dd" showOn="both" buttonImageOnly="true" /> <br />
+    </b:tab>
+</b:tabs>
+</pre>
+
+We can see we have multiple tabs, and for kicks I nested the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component from the previous CDK entry.
+
+div=. <a href="/images/blog/2011-11-29-richfaces-4-cdk-jqeury-ui-tabs/calendar_tab.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="228" src="/images/blog/2011-11-29-richfaces-4-cdk-jqeury-ui-tabs/calendar_tab.png" width="320" /></a>
+
+So here it is, the jQuery UI tabs plugin wrapped with the RichFaces CDK, providing us with a bare-bones tab component. A lot more work is required to get this to a point where it could replace the RichFaces tab component, but we have succeeded in creating a functional component leveraging existing javascript code, and without a lot of work on our part.

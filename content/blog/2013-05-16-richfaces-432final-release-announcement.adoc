@@ -1,0 +1,73 @@
+= RichFaces 4.3.2.Final Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF43, Final]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: "I am excited to announce the release of RichFaces 4.3.2.Final.  This second micro release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework."
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+I am excited to announce the release of RichFaces https://issues.jboss.org/browse/RF/fixforversion/12321315[4.3.2.Final]. -  This 2nd minor release of the RichFaces http://www.bleathem.ca/blog/tags/RF43/[4.3 release] series provides a number of bug fixes further increasing the stability of the framework.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.3.2.Final. For more information on setting up a RichFaces 4 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+
+== Release Highlights
+
+This release of the RichFaces framework is not accompanied by a release of the CDK.  The 4.3.2.Final release of RichFaces was created with the 4.3.1.Final version of the RichFaces CDK.  Future RichFaces 4 releases will only be accompanied by a RichFaces CDK release when a CDK fix was required to enable the framework release.
+
+With fixes to the extendedDataTable, tab panel, autocomplete, fileuplaod and popup panel, as well as some fixes addressing compatibility with the latest Mojarra release, you'll definitely want to move your applications to this release and take advantage of these improvements.  Refer to the release notes below for a complete listing of what has been fixed in this release.
+
+== Release Notes https://issues.jboss.org/browse/RF/fixforversion/12321315[+++<i class='icon-external-link-sign'></i>+++]
+
+=== Bug
+
+* https://issues.jboss.org/browse/RF-12193[RF-12193] - rich:extendedDataTable is blank on show
+* https://issues.jboss.org/browse/RF-12765[RF-12765] - Rich:tabPanel not possible to switch tabs when only dynamic tabs are present
+* https://issues.jboss.org/browse/RF-12812[RF-12812] - Autocomplete does not hide popup on tabbing to the next field
+* https://issues.jboss.org/browse/RF-12827[RF-12827] - Showcase - switching among dynamically created panels, tabs cease to function
+* https://issues.jboss.org/browse/RF-12839[RF-12839] - Toggle panels: ajax-related attributes do not work
+* https://issues.jboss.org/browse/RF-12846[RF-12846] - a4j:commandLink accesskey attribute missing
+* https://issues.jboss.org/browse/RF-12847[RF-12847] - Fix quickstart license and white space issues exposed by qstool report
+* https://issues.jboss.org/browse/RF-12848[RF-12848] - Error &quot;source is not defined&quot; after richfaces-jsf-event.js merge
+* https://issues.jboss.org/browse/RF-12850[RF-12850] - Popup panel: button&#39;s label is invisible in IE10
+* https://issues.jboss.org/browse/RF-12851[RF-12851] - The RichFaces kitchensink-rf quickstart/archetype incorrectly depend on the AS google guava module
+* https://issues.jboss.org/browse/RF-12858[RF-12858] - rich:calendar dateselect event is fired twice
+* https://issues.jboss.org/browse/RF-12868[RF-12868] - Update the Summary of the RichFaces kitchensink quickstart
+* https://issues.jboss.org/browse/RF-12893[RF-12893] - Partial response not ended correctly on exception
+* https://issues.jboss.org/browse/RF-12928[RF-12928] - ExtendedDataTable: columnsOrder doesnt work after changing order
+* https://issues.jboss.org/browse/RF-12931[RF-12931] - rich:fileupload broken with jsf.js changes in Mojarra 2.1.21
+* https://issues.jboss.org/browse/RF-12933[RF-12933] - rich:tooltip replace &#39;defaultContent&#39; facet in docs and examples with &#39;loading&#39;
+* https://issues.jboss.org/browse/RF-12958[RF-12958] - Popup panel opened from inside popup panel doesn&#39;t work
+* https://issues.jboss.org/browse/RF-12969[RF-12969] - rich:tabPanel: Click on already selected rich:tab causes JavaScript error
+* https://issues.jboss.org/browse/RF-12975[RF-12975] - rich:extendedDataTable - can not change order of columns
+        
+=== Component  Upgrade
+
+* https://issues.jboss.org/browse/RF-12688[RF-12688] - Upgrade Guava from 11.02 to 13.0.1
+* https://issues.jboss.org/browse/RF-12780[RF-12780] - Upgrade to Mojarra 2.1.19
+* https://issues.jboss.org/browse/RF-12898[RF-12898] - Tie RichFaces 4.3 to CDK 4.3.1.Final
+        
+=== Enhancement
+
+* https://issues.jboss.org/browse/RF-12784[RF-12784] - Showcase readme - update deployment from eclipse part
+* https://issues.jboss.org/browse/RF-12786[RF-12786] - Showcase - rewrite readme to markdown
+* https://issues.jboss.org/browse/RF-12964[RF-12964] - Create appropriate push timeouts for the showcase
+        
+=== Feature Request
+
+* https://issues.jboss.org/browse/RF-12810[RF-12810] - Introduce profiles for verification of fundamental tests on Tomcat 6 and 7, TomEE 1.5 and GlassFish 3.1
+* https://issues.jboss.org/browse/RF-12849[RF-12849] - Showcase - update readme - remove obsolete, add new
+* https://issues.jboss.org/browse/RF-12935[RF-12935] - Fix resolution of framework tests&#39; artifacts with version enforced
+* https://issues.jboss.org/browse/RF-12937[RF-12937] - Introduce a profile for running framework tests against JBoss EAP
+* https://issues.jboss.org/browse/RF-12938[RF-12938] - Update Shrinkwrap
+* https://issues.jboss.org/browse/RF-12940[RF-12940] - Showcase: fix path to outputPanel - compositeMessages sample source
+* https://issues.jboss.org/browse/RF-12941[RF-12941] - Showcase: ProgressBar demo - remove obsolete attribute and make the progress smoother
+                            
+=== Task
+
+* https://issues.jboss.org/browse/RF-12843[RF-12843] - Apply unix style line-endings to the entire codebase
+                
+== Moving forward
+
+We've finished development of https://issues.jboss.org/browse/RF/fixforversion/12320296[RichFaces - 5.0.0.Alpha1], and our QA team is currently working on stabilizing https://issues.jboss.org/browse/RFPL-2915[for a release].  So stay tuned for an exciting announcement of the availability of our first RichFaces 5 Alpha!

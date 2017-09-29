@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Spoke on Polyglot Widgets at JAXConf 2013"
+tags: [ JAX, JAXConf, talk, polyglot, widgets ]
+image_url: "/images/blog/2013-03-05-speaking-at-jaxconf-2013/SpeakerButtonJAXConf2013.jpg"
+description: "This week I attended the JAXConf 2013 conference for a third year in a row.  This year JAXConf was held in Santa Clara, the heart of silicon valley.  The conference once again had a fantastic line up of speakers, with well recognized industry leaders speaking on a variety of current and exciting topics."
+---
+
+image::/images/blog/2013-03-05-speaking-at-jaxconf-2013/SpeakerButtonJAXConf2013.jpg["Speaking at JAX 2013", float="right", link="http://jaxconf.com/"]
+
+This week I attended the http://jaxconf.com/[JAXConf 2013] conference for a http://www.bleathem.ca/blog/2011/06/seam-faces-jaxconfjsf-summit.html[third] http://www.bleathem.ca/blog/2012/07/jax-conf-2012.html[year] in a row.  This year JAXConf was held in Santa Clara, the heart of silicon valley.  The conference once again had a fantastic line up of speakers, with well recognized industry leaders speaking on a variety of current and exciting topics.  Unfortunately, JAX continued this year to be one of the best kept secrets of the tech industry on the West coast, with attendance not being as strong as many would have liked.
+
+I attended a number of useful sessions covering topics from: testing web applications, the latest javascript frameworks, and what's new in Java EE 7.  There was one particularly interesting session in which it was https://twitter.com/brianleathem/status/342059221031985152["Tim Berglund vs. the audience"] with his seemingly radical ideas on the current state of agile development - very entertaining (and informative!)
+
+My own session went well. I took a opportunity to talk in stealth mode about the work we are doing in RichFaces 5 during my session on http://www.bleathem.ca/talks/2013-JAX/polyframework-webapps.html["poly-framework" web applications with Java EE].  While I possibly spent too much time talking about http://twitter.github.io/bootstrap/[Bootstrap], I think I got the point across about the power of http://lesscss.org/[Less CSS] and http://cdi-spec.org/[CDI], with lots of plugs for the http://www.jboss.org/errai[Errai] and http://aerogear.org/[Aerogear] projects.  The session was recorded, I'll update this post with a link to the video once it's available.
+
+A real highlight of the trip was the chance to meet up with RichFaces community member https://twitter.com/nicksgrave[Nick Graves] and talk all-things RichFaces 5.  It's always great to meet someone who's excited about the work we've been doing on https://bootstrap-richfaces.rhcloud.com/[RichFaces Bootstrap].  And don't worry Nick, those https://community.jboss.org/thread/224135[chart components are coming soon]!
+
+image::/images/blog/2013-06-07-spoke-at-jaxconf-2013/javaposse.jpg["Intimate and interactive with the Java Posse", float="left"]
+
+It was great to attend another Java Posse live podcast recording.  It made me realize that it's been a couple of years since I last listened to the Java Posse podcast - ever since I stopped commuting.  I enjoyed listening to their conversation quite a bit, particularly https://twitter.com/cquinn["@Carl Quinn's"] discussion of home automation with the http://www.arduino.cc/[Arduino chips] in the "hobby projects" portion of the podcast - definitely something I'd like to make some time to fiddle around with.
+
+There was plenty of excitement at the https://www.openshift.com/[OpenShift] booth (great to see Red Hat http://jaxconf.com/sponsors/red-hat-openshift[sponsoring the JAX event] yet again!).  It was great to meet https://twitter.com/ryanj[Ryan Jarvinen] https://twitter.com/TheSteve0[Steve Little] and help spread some OpenShift love!
+
+I had a fun time visiting with https://twitter.com/dblevins[David Blevins] (of http://tomee.apache.org/apache-tomee.html[Tom EE] fame) and his wife Amelia.  As always the JAX crew themselves were great to hang out with - such gracious event hosts they are!
+
+I look forward to the opportunity to speak again at JAXConf next year.  I hope they can find the right location to maximize attendance, and keep this conference going for many years!

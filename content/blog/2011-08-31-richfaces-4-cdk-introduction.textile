@@ -1,0 +1,33 @@
+---
+layout: post
+title: "RichFaces 4 CDK | Introduction"
+tags: [ RichFaces ]
+---
+
+h2. A new blog series
+
+Having recently dived head first into the RichFaces 4 Component development Kit (CDK), I thought it would be useful to share the knowledge and experience I've gained.  Over the next few weeks, I am going to put out a series of blog posts giving some examples of how to use the RichFaces CDK.  Hopefully by the end of this series, we will have written some interesting components and left you with the urge to write your own JSF components using the CDK!
+
+Before I get into specific examples, I’d first like to motivate the series by describing what exactly the CDK is and the problems that it solves.  If you already know all about JSF components, and you want to get straight into using the CDK, skip this blog post! - the rest of the entries in this series will deal purely with implementation details.
+
+h3. What is the RichFaces CDK anyway?
+
+JSF was designed to make components easy to consume.  The syntax is very html-like, and EL makes it easy to bind components to backing beans.  However, writing JSF components has traditionally not been very accessible.  With the number of classes that one has to create and wire together, along with a requirement for detailed knowledge of the JSF API, components were typically left to third party component suites, like <a href="http://www.jboss.org/richfaces/">RichFaces</a>, <a href="http://www.icefaces.org/">IceFaces</a> and <a href="http://myfaces.apache.org/tomahawk/">Apache</a>.  Things were improved drastically with the release of JSF 2.0, and it’s support for composite components.
+
+<a href="http://andyschwartz.wordpress.com/2009/07/31/whats-new-in-jsf-2/#composite-components">Composite components</a> let the user build JSF components purely in xhtml - without requiring any lines of Java.  This is a fantastic improvement, as developers can build their own re-usable components that encapsulate a fair amount of complexity and keep their applications <a href="http://en.wikipedia.org/wiki/DRY">DRY</a>.  An overall bonus indeed!  While composite components achieve a lot, the mechanism falls short when it comes to creating full-fledged JSF components.
+
+The concise and non-java nature of composite components that makes them so appealing, is also their biggest limitation.  Oftentimes one needs additional expressivity not available in EL, or one needs to tap further in to the JSF lifecycle.  Thus in JSF 2, the component suite providers find themselves once again writing components in Java, to be able to take advantage of the rich <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/index.html">APIs that JSF provides</a>.
+
+This is where the RichFaces CDK comes in.  The RichFaces team provides the CDK as a means for developers to write JSF components with many of the simplifying advantages of the JSF 2 composite components, but also with the full power and flexibility provided by the JSF component APIs.
+
+h2. JSF Components simplified with the CDK
+
+To understand how to use the CDK, one first has to understand how JSF components are put together.  At the end of the day, JSF components are built out of Java classes, and the CDK is simply an effective means to generate those classes.
+
+To build a JSF component, one starts by extending the UIComponent class.  This class defines the attributes and API of your component and is responsible for hooking into the JSF state saving mechanism.  While you could put your rendering code into this component class itself, you’re better off putting that rendering code in a separate Renderer class.  You’ll also end up writing a TagHandler class to couple the Render and component.  And should your component fire FacesEvents, well you’ll need to implement additional interfaces and provide more classes.  Lastly you’ll need to register these classes in the faces-config.xml and provide a taglib.xml file.  Now there’s a mouthful!
+
+The CDK simplifies this all for us, by generating a lot of the above code.  All we need to create when we use the CDK is a component base class, and an xhtml file to define the rendering behaviour called the “Renderer template” .  This Renderer template is designed to build on the JSF 2 composite component mechanism, so if you can build JSF 2 composite components, you’re already half-way there!
+
+With the component base class, the Renderer template, and the annotations that couple them, the CDK is able to generate the rest of the required files for us.  There is nothing sub-standard about these generated classes - they are full-fledged JSF components in every way!  In fact, much of the RichFaces 4 component suite is built using the CDK!
+
+There is a lot of detail to cover in how to write the component base class, and the accompanying Renderer template.  I’ll begin covering these details in my next post, where we will write a “Hello world” JSF component using the CDK.  But if you can’t wait for my post, feel free to dive into the <a href="http://community.jboss.org/wiki/RichFacesCDKHowTos">RichFaces CDK docs</a>.

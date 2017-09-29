@@ -1,0 +1,15 @@
+---
+layout: post
+title: "JBW-2012 and RichFaces Mobile"
+tags: [ RichFaces, JBoss World, Red Hat Summit, talk, mobile]
+---
+
+I just returned from an excellent trip to the "Red Hat Summit/JBoss World":http://www.redhat.com/summit/ in Boston.  The event was fantastic, kicking off with a great "keynote":http://www.redhat.com/summit/sessions/keynotes-sessions.html#12345 demoing "Drools":http://www.jboss.org/drools/ in a Mobile scenario.  Following the keynote were a number of great sessions, including one I presented on the topic of "Mobile RichFaces Applications":http://www.redhat.com/summit/sessions/jboss.html#187.
+
+The session was well received, with some good discussion afterwards.  In the session I motivated mobile web applications as a must-have in today's market - users' will want and expect a functional web application even if your native application *is* better.  I then demonstrated how JSF w/ RichFaces can be an effective means for providing mobile web applications, particularly if it's a technology stack in which you are already invested.  Feel free to check out "my slides":http://www.bleathem.ca/talks/2012-JBW/richfaces-mobile.html (be sure to use the _space_ key to advance through the pages).  I'm looking forward to seeing the mobile applications people will do with these tools, particularly once we get our mobile "slidfast components":https://github.com/richfaces/sandbox/tree/master/slidfast out the door.
+
+After my session on RichFaces mobile, we re-convened for a "mobile BOF":http://www.redhat.com/summit/sessions/jboss.html#809 with some of the other mobile related projects at JBoss ("Aerogear":http://www.jboss.org/aerogear/, "Errai":http://www.jboss.org/errai/, and the Demo app "Ticket Monster":http://www.jboss.org/jdf/examples/ticket-monster/tutorial/WhatIsTicketMonster/).  Here the discussion got very lively with a number of personalities both on the panel and in the audience getting their opinions out.  It's always great to hear user/customer feedback on our projects, with people oftentimes using the tools we provide in use cases we never envisioned.
+
+Aside from the sessions, BOFs, and the invaluable "hallway track" there were plenty of other things to do in the great city of Boston.  I managed to catch a game at "Fenway park":http://boston.redsox.mlb.com/bos/ballpark/index.jsp: the Red Sox vs. the Blue Jays - sadly my fellow Canadians weren't able to pull through with a win.  We also got to visit the park again two days later in a conference event.  This time we had a free-run over the park and I got my picture taken swinging over home plate!
+
+Thanks to all my team mates and our fantastic user community who made the event a success - I look forward to seeing you again next year!

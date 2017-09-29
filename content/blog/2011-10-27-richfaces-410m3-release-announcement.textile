@@ -1,0 +1,44 @@
+---
+layout: post
+title: "RichFaces 4.1.0.M3 Release Announcement"
+tags: [ RF41, RichFaces ]
+---
+
+The RichFaces 4.1 Milestone 3 release is now available for <a href="http://www.jboss.org/richfaces/download/milestones">download</a>. Further building on the new components and framework improvements introduced in the <a href="http://blog.bleathem.ca/2011/08/richfaces-410m1-release-announcement.html">M1</a> and <a href="http://blog.bleathem.ca/2011/09/richfaces-410m2-release-announcement.html">M2</a> releases, <a href="https://issues.jboss.org/browse/RF/fixforversion/12318072">M3</a> brings it all together with an improved showcase - featuring a demonstration of the mobile compatibility of the RichFaces 4 component set. Along-side improvements to resource handling, and enhancements to the push component, we’ve fixed a number of bugs and issues, as <a href="http://community.jboss.org/thread/172631">voted by you</a> - our user community!
+
+h2. Showcase - Going Mobile
+
+div=. 
+<a href="/images/blog/2011-10-27-richfaces-410m3-release-announcement/mobile+showcase.png" imageanchor="1" style="margin-bottom: 1em; margin-left: auto; margin-right: auto;">
+<img border="0" height="320" src="/images/blog/2011-10-27-richfaces-410m3-release-announcement/mobile+showcase.png" width="226" /></a>
+<div class="caption">The showcase as seen on mobile devices (using device detection)</div>
+
+br. 
+
+The <a href="http://bit.ly/rf-showcase">showcase</a> has received some attention in this release. First and foremost we’ve demonstrated the mobile compatibility of the existing component set with the addition of some simple css and javascript resources (using a <a href="http://www.html5rocks.com/en/mobile/optimization-and-performance.html">well vetted approach</a>).
+
+The mobile showcase in RichFaces is a an initial mobile effort, focusing on making the existing RichFaces components work within mobile browsers. While not a full-blown set of mobile components, we’ve tweaked the framework as necessary and put forward the mobile showcase as an example of how you can make your existing RichFaces applications mobile-friendly with the current RichFaces component set. Stay tuned for an upcoming blog entry with details on how you can take advantage of this in your own applications. Or, if you’re feeling adventurous, have a look at the <a href="https://github.com/richfaces/showcase">showcase code</a> to see how we did it!
+
+h2. Showcase - On OpenShift
+
+We've deployed the showcase application to <a href="http://openshift.redhat.com/">OpenShift</a> -- the PaaS offering by Red Hat. The OpenShift Java EE 6 support provides a great platform to take your application all the way from development with Express (free!) to production with Flex (highly scalable!). Express is a shared multi-tenant environment made to be as simple as possible to get started quickly, while Flex gives you dedicated VMs and DevOps control over architecture along with monitoring. For the RichFaces project, this gives us the chance to showcase our components in a Java EE environment, where our framework really shines!
+
+(Note, until 4.1 is released, the showcase at <a href="http://richfaces.org/showcase">http://richfaces.org/showcase</a> will continue to demonstrate the RichFaces 4.0 framework and components).
+
+h2. Showcase - New Component Samples
+
+Additionally we’ve added some polish to the showcase with bug fixes and user experience tweaks, and we've included samples of the latest RichFaces components. You will now find showcase samples for the <a href="http://showcase1104558964.prod.rhcloud.com/richfaces/component-sample.jsf?demo=editor">rich editor</a>, <a href="http://showcase1104558964.prod.rhcloud.com/richfaces/component-sample.jsf?demo=notify">notify</a>, <a href="http://showcase1104558964.prod.rhcloud.com/richfaces/component-sample.jsf?demo=orderingList">orderingList</a>, and <a href="http://showcase1104558964.prod.rhcloud.com/richfaces/component-sample.jsf?demo=pickList">pickList</a> components, complete with samples showing you how to put them to good effect in your applications.
+
+h2. Resource handling
+
+Along-side these showcase improvements, we’ve introduced framework improvements to improve the mobile experience. With the new RichFaces 4.1 Resource Handling features, we are packaging and minifying the out of box JavaScript and CSS. This is in an effort to reduce HTTP requests made by the framework and to give mobile apps (or any app) a boost in performance. For those familiar with RichFaces 3, this also brings back the old LOAD_ALL configuration, albeit with a new name. We’ll have a blog post out shortly, with details on how you can try these features out with the Milestone 3 release.
+
+h2. Ajax Push
+
+Last (and by no means least!) I’d like to mention that the AJAX push component has seen a lot of improvements with this release. We’ve introduced a <a href="http://showcase1104558964.prod.rhcloud.com/richfaces/component-sample.jsf?demo=push&amp;sample=pushCdi">CDI interface</a> for firing push events. This is not intended to supercede the existing Push API, but is instead provided as a means to tie the powerful CDI event mechanism into the RichFaces push technology.
+
+Coupled with earlier push improvements (<a href="http://rik-ansikter.blogspot.com/2011/08/lot-of-improvements-has-been-done-in-4.html">removing the JMS requirement from the push component</a>), the push component is shaping up to be much more accessible to developers working in either Java EE or Servlet container environments.
+
+h2. Forward: M4 &amp; Stabilization
+
+Work is already well underway with our M4 release, where we are improving on the compatibility of our components with mobile browsers, and adding a last round of small feature improvements. Give <a href="http://www.jboss.org/richfaces/download/milestones">M3 a spin</a>, and let us know what you think! Drop us a note in the <a href="http://community.jboss.org/en/richfaces?view=discussions">forums</a>, or join us for our weekly <a href="http://community.jboss.org/en/richfaces/dev/teammtgs?view=documents">community/team meetings</a> in IRC.

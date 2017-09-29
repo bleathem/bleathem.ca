@@ -1,0 +1,7 @@
+= A mosaic of selfies
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [mediator, pattern, error handling]
+:awestruct-description: ""
+
+I was fortunate enough to be a part of the Red Hat Summit Middleware Keynote demo again this year

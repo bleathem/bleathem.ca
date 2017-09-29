@@ -1,0 +1,80 @@
+= RichFaces 4.3.4.Final Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF43, Final]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: "I am excited to announce the release of RichFaces 4.3.4.Final.  This fourth micro release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework."
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+I am excited to announce the release of RichFaces https://issues.jboss.org/browse/RF/fixforversion/12321718[4.3.4.Final].  This 4th minor release of the RichFaces http://www.bleathem.ca/blog/tags/RF43/[4.3 release] series is conservative in scope focusing on providing bug fixes to our stable release branch while we concurrently work on https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[RichFaces 5].
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/stable[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.3.4.Final. For more information on setting up a RichFaces 4 application, refer to our http://community.jboss.org/wiki/GettingstartedwithRichFaces4x[getting started guide].
+
+== Release Highlights
+With 47 issues resolved, RichFaces 4.3.4 is a substantial bug-fix release, offering improvements in a number of components including the select components, extendedDataTable, popup panels, and a4j:log.
+
+Additionally we upgraded our Atmosphere dependency to the latest release (https://github.com/Atmosphere/atmosphere/releases/tag/atmosphere-project-1.0.17[1.0.17]) to ensure RichFaces Push continues to work with the upcoming http://www.jboss.org/jbossas/downloads/[JBoss EAP] 6.1.1 release.  A big shout out to https://twitter.com/jfarcand[@jfarcand] and his https://github.com/Atmosphere/[Atmosphere community] for accepting our https://github.com/Atmosphere/atmosphere/pull/1263[pull request] and getting an updated release out in a timely manner.  Working with Atmosphere as an upstream project is truly an example of OSS at it's best!
+
+== Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12321718[+++<i class='icon-external-link-sign'></i>+++]
+
+=== Bug
+* https://issues.jboss.org/browse/RF-11275[RF-11275] - showcase - rich:popup - Sample Modal panel - after changing the size of popup there is double shadow
+* https://issues.jboss.org/browse/RF-11691[RF-11691] - [rich:select] value disappears if you click between list and value
+* https://issues.jboss.org/browse/RF-12345[RF-12345] - JS error when pressing ESC on an open inplaceSelect in IE
+* https://issues.jboss.org/browse/RF-12853[RF-12853] - rich:inplaceSelect: JS API bugs
+* https://issues.jboss.org/browse/RF-12929[RF-12929] - PickList change event not firing correctly when ordering objects in target area
+* https://issues.jboss.org/browse/RF-12943[RF-12943] - ExtendedDataTable: clearing of filter input doesnt work correctly
+* https://issues.jboss.org/browse/RF-12989[RF-12989] - Documentation for togglePanelItem is wrong and 4.2.2 components are not working anymore in 4.3.0.Final
+* https://issues.jboss.org/browse/RF-13010[RF-13010] - Popup panel inside popup panel: button not rendered in IE10
+* https://issues.jboss.org/browse/RF-13017[RF-13017] - richfaces-bom 4.3.2.Final, JSF-API 2.1.0 not compatible
+* https://issues.jboss.org/browse/RF-13035[RF-13035] - Simpleapp Archetype: mobile version shows modal dialog
+* https://issues.jboss.org/browse/RF-13046[RF-13046] - EDT in EDT: when @frozenColumns is equal to number of columns then there is no vertical scroller in EDT
+* https://issues.jboss.org/browse/RF-13053[RF-13053] - Showcase: push doesn't work on EAP 6.1
+* https://issues.jboss.org/browse/RF-13057[RF-13057] - Kitchensink Archetype: update enterprise version of JBoss BOM
+* https://issues.jboss.org/browse/RF-13058[RF-13058] - Kitchensink Archetype: JSF community site link doesn't work
+* https://issues.jboss.org/browse/RF-13059[RF-13059] - Richfaces quickstart README files contain links that to be updated
+* https://issues.jboss.org/browse/RF-13060[RF-13060] - Issue in initializing the list of selected items in a Picklist
+* https://issues.jboss.org/browse/RF-13086[RF-13086] - Popup panel: button's label is invisible in IE8
+* https://issues.jboss.org/browse/RF-13094[RF-13094] - Wrong extendedDataTable header widths when narrowing columns
+* https://issues.jboss.org/browse/RF-13098[RF-13098] - Regression: mediaOutput broken for CDI MediaData beans
+* https://issues.jboss.org/browse/RF-13102[RF-13102] - rich:calendar with date pattern- input gets cleared on click
+* https://issues.jboss.org/browse/RF-13106[RF-13106] - Quickstart names in the POM files are not consistent and often are not clear
+* https://issues.jboss.org/browse/RF-13107[RF-13107] - ajaxRenderer component are renderer even though they are in non-active switchable panel, causing JSF to fail to update DOM
+* https://issues.jboss.org/browse/RF-13117[RF-13117] - ExtendedDataTable Sorting resets $(window).resize Events
+* https://issues.jboss.org/browse/RF-13119[RF-13119] - kitchensink-rf test-ds.xml does not use a unique datasource JNDI name
+* https://issues.jboss.org/browse/RF-13125[RF-13125] - a4j:log swallows the message from jsf.js's sendError method
+* https://issues.jboss.org/browse/RF-13133[RF-13133] - ExtendedDataTable: filterType=custom doesn't work when mixing custom and built-in filter columns
+* https://issues.jboss.org/browse/RF-13136[RF-13136] - a4j:log with mode=console doesn't take log level into consideration
+* https://issues.jboss.org/browse/RF-13137[RF-13137] - a4j:log - wrong log levels in attribute description
+* https://issues.jboss.org/browse/RF-13140[RF-13140] - PopupPanel: Hide @visualOptions and @keepVisualState options which weren't implemented yet
+* https://issues.jboss.org/browse/RF-13142[RF-13142] - Showcase: mediaOutput sample is not working with MyFaces
+* https://issues.jboss.org/browse/RF-13149[RF-13149] - a4j:push in Metamer doesn't have subtopic name
+* https://issues.jboss.org/browse/RF-13161[RF-13161] - rich:notifyMessages CSS incorrect on MyFaces 2.x
+* https://issues.jboss.org/browse/RF-13174[RF-13174] - Correct the WFK version of the JBoss BOM used in the archetypes
+* https://issues.jboss.org/browse/RF-13195[RF-13195] - Showcase: Unauthorized deserialization attempt with MyFaces
+* https://issues.jboss.org/browse/RF-13205[RF-13205] - Photoalbum: Hibernate error during deployment
+
+=== Component Upgrade
+* https://issues.jboss.org/browse/RF-13132[RF-13132] - Upgrade JBoss Java EE BOMs to 3.0.2.Final
+* https://issues.jboss.org/browse/RF-13154[RF-13154] - Upgrade Atmosphere to 1.0.17 (a4j:push fails with CNFE for org.apache.coyote.http11.upgrade.UpgradeInbound on latest EAP 6)
+Enhancement
+* https://issues.jboss.org/browse/RF-12784[RF-12784] - Showcase readme - update deployment from eclipse part
+* https://issues.jboss.org/browse/RF-13097[RF-13097] - showcase: update readme with password for jbas7 profile
+* https://issues.jboss.org/browse/RF-13150[RF-13150] - Remove JMS functionality from the RichFaces showcase
+* https://issues.jboss.org/browse/RF-13153[RF-13153] - Update version.compiler.plugin and jboss.maven.plugin versions in the quickstart POM files
+* https://issues.jboss.org/browse/RF-13169[RF-13169] - Replace hardcoded version in Arquilian FundamentalTestConfiguration with project version property - from pom file
+
+=== Feature Request
+* https://issues.jboss.org/browse/RF-13038[RF-13038] - Command button/link: attribute tabindex missing
+* https://issues.jboss.org/browse/RF-13063[RF-13063] - RichFacesInputNumberSlider setValueByDragging
+* https://issues.jboss.org/browse/RF-13159[RF-13159] - Add Maven compiler properties and remove Maven plugin from the the quickstart POM files
+* https://issues.jboss.org/browse/RF-13185[RF-13185] - Quickstarts: Modify GAV to use org.jboss.quickstarts.rf
+
+=== Sub-task
+* https://issues.jboss.org/browse/RF-13189[RF-13189] - Update jquery-atmosphere.js to 1.0.17 in 4.3.x
+                
+== Moving forward
+
+We are actively https://issues.jboss.org/secure/RapidBoard.jspa?rapidView=331&view=planning&quickFilter=1081[working on RichFaces 5.0.0.Alpha2] that will feature some re-worked components taking advantage of our new decoupled component architecture and making use of standalone javascript widgets to provide a more robust client-side implementation of RichFaces components.  Look forward this a new Alpha release in the coming weeks.

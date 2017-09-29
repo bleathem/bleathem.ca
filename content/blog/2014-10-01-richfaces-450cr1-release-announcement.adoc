@@ -1,0 +1,63 @@
+= RichFaces 4.5.0.CR1 Release Announcement
+Brian Leathem
+:awestruct-layout: post
+:awestruct-tags: [RichFaces, RF45, CR]
+:awestruct-image_url: /images/blog/common/richfaces_notext.png
+:awestruct-description: ""
+
+image::/images/blog/common/richfaces.png[RichFaces, float="right", link="http://richfaces.org/"]
+
+We have a first candidate release for RichFaces 4.5 (https://issues.jboss.org/browse/RF/fixforversion/12325588[4.5.0.CR1]) available.  With this candidate release we've further improved our stability over our beta releases, with a special focus on backwards compatibility with RichFaces 4.3.  Read below for details of what is included in this release.
+
+[.alert.alert-info]
+*To try out this release:* You can download the distribution http://www.jboss.org/richfaces/download/milestones[directly], or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.CR1. For more information on setting up a RichFaces 4 application, refer to our https://github.com/richfaces/richfaces#getting-started[getting started guide].
+
+== Compatibility with RichFaces 4.3
+RichFaces 4.5 is a significant release introducing many changes to the framework.  However with all these changes maintaining backwards compatibility with RichFaces 4.3 has been a priority.  As such, RichFaces 4.5 should be a drop in replacement into your applications, provided you make the necessary changes in your pom.xml.
+
+Any breaking changes with RichFaces 4.5 are being tracked in our GitHub wiki https://github.com/richfaces/richfaces/wiki/Migration-from-RichFaces-4-to-RichFaces-4.5[migration page].  Please update that wiki page with a Pull Request if you find any incompatibilities.
+
+== Release Notes https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&version=12325588[+++<i class='icon-external-link-sign'></i>+++]
+
+=== Bug
+* https://issues.jboss.org/browse/RF-8904[RF-8904] - Update project build to integrate jsDoc
+* https://issues.jboss.org/browse/RF-12312[RF-12312] - rich:select - duplicate labels
+* https://issues.jboss.org/browse/RF-13290[RF-13290] - Push framework tests fail after upgrade to 1.0.17 (probably Warp issue)
+* https://issues.jboss.org/browse/RF-13504[RF-13504] - Test that the ExtendedPartialViewContext writes the ClientWindow ID updates to the partial response
+* https://issues.jboss.org/browse/RF-13522[RF-13522] - Component reference - text for links to figures doesn't contain "Figure" prefix
+* https://issues.jboss.org/browse/RF-13788[RF-13788] - ExtendedDataTable supports the undocumented attribute "render"
+* https://issues.jboss.org/browse/RF-13812[RF-13812] - rich:validator misunderstands EL expressions inside Bean Validation 1.1
+* https://issues.jboss.org/browse/RF-13816[RF-13816] - Include Page Fragments in the RichFaces distribution and javadoc
+* https://issues.jboss.org/browse/RF-13818[RF-13818] - JSF server vs application Please upgrade to at least Mojarra 2.1.28 or 2.2.6
+* https://issues.jboss.org/browse/RF-13821[RF-13821] - InputNumber* component class changes cause backward compatibility problems
+* https://issues.jboss.org/browse/RF-13822[RF-13822] - Mobile showcase: fileupload sample is not working [myfaces]
+* https://issues.jboss.org/browse/RF-13823[RF-13823] - showcase: contextMenu: missing picturesUtils.js resource [myfaces]
+* https://issues.jboss.org/browse/RF-13826[RF-13826] - Media output: onclick doesn't work
+* https://issues.jboss.org/browse/RF-13827[RF-13827] - Selection mode simple and multiple in ExtendedDataTable throws JS error in Chrome 36
+* https://issues.jboss.org/browse/RF-13830[RF-13830] - Tooltip not attached must specify target=""
+* https://issues.jboss.org/browse/RF-13838[RF-13838] - ExtendedPartialViewContext.java is missing method setPartialRequest
+* https://issues.jboss.org/browse/RF-13840[RF-13840] - a4j:jsFunction - oncomplete is called twice
+* https://issues.jboss.org/browse/RF-13843[RF-13843] - rich:fileUpload should use feature detection for File API
+* https://issues.jboss.org/browse/RF-13846[RF-13846] - page-fragments: orderingList, pickList: rename method getContentAreaElements to getContentAreaElement
+* https://issues.jboss.org/browse/RF-13848[RF-13848] - page-fragments: orderingList: remove duplicated field
+* https://issues.jboss.org/browse/RF-13849[RF-13849] - page-fragments: pickList: stackoverflow in orderingList part
+
+=== Component Upgrade
+* https://issues.jboss.org/browse/RF-13475[RF-13475] - NullPointException when using Richfaces with ehcache
+* https://issues.jboss.org/browse/RF-13841[RF-13841] - Upgrade Selenium to 2.43.1
+
+=== Enhancement
+* https://issues.jboss.org/browse/RF-13414[RF-13414] - The showcase chart demo of event handling renders seemingly redundant info
+* https://issues.jboss.org/browse/RF-13831[RF-13831] - Review page fragments
+* https://issues.jboss.org/browse/RF-13832[RF-13832] - Built-in filtering and sorting inside richcollapsibleSubTable
+* https://issues.jboss.org/browse/RF-13833[RF-13833] - Doc for r:tree selectionChangeListener attribute is misplaced with toggleListener attribute doc
+* https://issues.jboss.org/browse/RF-13847[RF-13847] - page-fragments: pickList: rename methods for returning contentAreaElement
+* https://issues.jboss.org/browse/RF-13850[RF-13850] - page-fragments: refactor implementation part of collapsiblePanel, dataGrid, fileUpload, inplaceSelect, orderingList, pickList
+
+=== Task
+* https://issues.jboss.org/browse/RF-13834[RF-13834] - Alias the javascript method RichFaces.component to RichFaces.$
+* https://issues.jboss.org/browse/RF-13835[RF-13835] - Revert package and class names changes in 4.5
+* https://issues.jboss.org/browse/RF-13837[RF-13837] - Add "chart" prefix to chart components
+
+== Next steps
+We will let this 4.5.0.CR1 release "bake" in the community for the next week, and determine from your feedback whether or not we need a 4.5.0.CR2 release.  If no blockers are found, we will re-spin this 4.5.0.CR1 release as our 4.5.0.Final release.  So please be sure to this release out in your applications and file any issues ASAP!

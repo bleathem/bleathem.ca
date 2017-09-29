@@ -1,0 +1,44 @@
+---
+layout: post
+title: "RichFaces 4.2.0.Final Release Announcement"
+tags: [ RF42, Final, RichFaces ]
+---
+
+Richfaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12318970">4.2.0.Final</a> is now available for download! A quick follow on to our <a href="http://blog.bleathem.ca/2011/12/richfaces-410final-release-announcement.html">4.1 release</a>, Richfaces 4.2 delivers some “missing” components migrated from RichFaces 3, and provides usability and API improvements for resource loading optimizations and the push API. Documentation was a huge effort for this release; we are delivering an updated and complete <a href="http://docs.jboss.org/richfaces/latest_4_X/vdldoc/">VDL taglib doc</a>, along with our more well established <a href="http://docs.jboss.org/richfaces/latest_4_X/Developer_Guide/">Developer Guide</a>, and <a href="http://docs.jboss.org/richfaces/latest_4_X/Component_Reference/">Components Reference</a>.
+
+To try out this release, you can download the distribution <a href="http://www.jboss.org/richfaces/download/stable">directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.2.0.Final. For more information on setting up a RichFaces 4 application, refer to our <a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x">getting started guide</a>.
+
+h2. What’s new in Richfaces 4.2
+
+For details on what’s new in 4.2, have a look at the <a href="http://blog.bleathem.ca/2012/02/richfaces-420cr1-release-announcement.html">4.2.0.CR1 release announcement</a>, where we cover:
+
+* New components (ported from RichFaces 3)
+** <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=contextMenu">rich:contextMenu</a>
+** <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=hotKey">rich:hotKey</a>
+* Push (<a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=push">a4j:push</a>) API changes
+* Resource Loading improvements
+* Skinning changes
+* A number of miscellaneous fixes.
+
+Additionally, <a href="https://twitter.com/lfryc">Lukas Fryc</a>, has a few blogs out with further details on the developer impact of some of these features:
+
+* <a href="http://rik-ansikter.blogspot.com/2012/02/configuring-richfaces-push-with-42.html">4 simple steps for RichFaces Push with 4.2</a>
+* <a href="http://rik-ansikter.blogspot.com/2012/02/optimizing-resource-loading-with.html">Optimizing Resource Loading with RichFaces 4.2</a>
+* <a href="http://rik-ansikter.blogspot.com/2012/02/re-routing-jsf-resource-requests-with.html">Re-routing JSF resource requests with RichFaces Resource Mapping</a>
+
+h2. Looking Ahead
+
+It’s now time to buckle down and focus on 4.3/4.Future efforts. The themes we will be focusing on are narrowing down to:
+
+* Continued improvement of the RF 4 core components
+** Further feature migration from RichFaces 3 (as required)
+** Bug fixes, performance enhancements
+* <a href="https://community.jboss.org/thread/177821">A re-work of our testing infrastructure</a>
+** Bridge the gap between what we do to test our framework, and what devs do testing their applications
+* <a href="https://community.jboss.org/thread/177406">A new set of components</a>
+** Improving our turnaround time, by leveraging existing javascript “widgets”
+
+* CDK improvements
+** Further simplifying the process for creating new components, while improving the turnaround time of component development
+
+If you are interested in these efforts, and in the details behind them, chime in (or just follow along) to our <a href="https://community.jboss.org/thread/175973">RichFaces 4.3/4.Next planning discussion</a>.

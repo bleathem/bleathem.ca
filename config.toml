@@ -1,12 +1,15 @@
-baseurl = "http://hugo.spf13.com/"
+baseurl = "http://www.bleathem.ca/"
 languageCode = "en-us"
-title = "Hugo Future Imperfect"
+title = "Experiences of a developer"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
-disqusShortname = "shortname"
+disqusShortname = "bleathem-java"
 googleAnalytics = ""
 pluralizeListTitles = false
+
+[permalinks]
+  blog = "/blog/:slug/"
 
 [params]
     # Sets the meta tag description, usually reserved for the main page

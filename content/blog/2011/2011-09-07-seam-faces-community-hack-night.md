@@ -2,7 +2,7 @@
   title: "Seam Faces Community Hack Night"
   date: 2011-09-07
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Seam]
   tags: [ Seam, Community ]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: Hands on with the jQuery UI widget factory at DevNation
   date: 2014-03-11
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Conferences, Javascript]
   tags: [jQuery, jQuery UI, Widgets]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: "RichFaces 4 CDK | Hello World"
   date: 2011-09-10
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ CDK, RichFaces ]
   description:
   linktitle:

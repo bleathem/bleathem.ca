@@ -2,7 +2,7 @@
   title: Rx.js Session at DevNation
   date: 2015-06-24
   author: Brian Leathem
-  categories: [Javascript]
+  categories: [Javascript, Conferences]
   description:
   tags: [rxjs, d3js, DevNation, summit]
   linktitle:

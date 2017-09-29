@@ -2,7 +2,7 @@
   title: "RichFaces 4.1.0.CR1 Release Announcement"
   date: 2011-11-23
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RF41, RichFaces ]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: "Dynamic Panels with a4j:repeat"
   date: 2013-01-28
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces, RF43, repeat, dynamic, tab, accordion, toggle ]
   description:
   linktitle:

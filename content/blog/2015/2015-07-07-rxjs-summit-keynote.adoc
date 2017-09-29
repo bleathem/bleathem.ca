@@ -2,7 +2,7 @@
   title: Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo
   date: 2015-07-07
   author: Brian Leathem
-  categories: [Javascript]
+  categories: [Javascript, Conferences]
   tags: [rxjs, d3js, Red Hat, summit]
   description:
   linktitle:

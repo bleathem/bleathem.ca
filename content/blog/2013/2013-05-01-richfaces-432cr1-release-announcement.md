@@ -1,9 +1,9 @@
 ---
+  title: "RichFaces 4.3.2.CR1 Release Announcement"
   date: 2013-05-01
   author: Brian Leathem
-  categories: [Java EE]
-  title: "RichFaces 4.3.2.CR1 Release Announcement"
-  tags: \[ RichFaces, RF43 \]
+  categories: [Java EE, RichFaces]
+  tags: [ RichFaces, RF43 ]
   linktitle:
   featured:
   featuredpath:

@@ -2,7 +2,7 @@
   title: RichFaces Plugin for JBoss Forge
   date: 2011-04-03
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Seam ,RichFaces]
   tags: [ Forge, RichFaces ]
   description:
   linktitle:

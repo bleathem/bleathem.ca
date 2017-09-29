@@ -2,7 +2,7 @@
   title: "RichFaces 4.2.3.Final Release Announcement"
   date: 2012-10-18
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces, RF42, Final, Portal, Community ]
   description:
   linktitle:

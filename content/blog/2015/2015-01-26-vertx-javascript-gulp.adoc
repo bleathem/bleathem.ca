@@ -2,7 +2,7 @@
   title: Vert.x with gulp.js
   date: 2015-01-26
   author: Brian Leathem
-  categories: [Javascript, mobile]
+  categories: [Javascript]
   tags: [vert.x, javascript, gulp]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: "JSF-Testing Session at Java One"
   date: 2012-09-28
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Conferences]
   tags: [ Arquillian, JSF, testing, Graphene, Warp, Drone ]
   description:
   linktitle:

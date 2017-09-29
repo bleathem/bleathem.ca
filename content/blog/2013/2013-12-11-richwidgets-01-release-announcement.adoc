@@ -2,7 +2,7 @@
   title: RichWidgets 0.1 Release Announcement
   date: 2013-12-11
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Javascript]
   tags: [RichWidgets, release]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: RichFaces will pursue a path of stability over innovation
   date: 2014-07-21
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [RichFaces, RF45, RF50]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: "I'm Awestruct"
   date: 2012-05-15
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Tools]
   tags: [ Awestruct, Ruby, HAML, Blog, git, Blogger ]
   description:
   linktitle:

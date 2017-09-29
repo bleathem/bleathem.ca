@@ -2,7 +2,7 @@
   title: "RichFaces 4.3.0.M3 Release Announcement"
   date: 2012-12-20
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces, RF43 ]
   description:
   linktitle:

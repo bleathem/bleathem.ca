@@ -2,7 +2,7 @@
   title: "Seam Module Spotlight: Seam Faces"
   date: 2011-04-18
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Seam]
   tags: [ Seam ]
   description:
   linktitle:

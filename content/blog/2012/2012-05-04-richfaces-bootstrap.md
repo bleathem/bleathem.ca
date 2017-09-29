@@ -1,9 +1,9 @@
 ---
   title: "RichFaces Bootstrap"
-  tags: [ Bootstrap, CDK, RichFaces ]
   date: 2012-05-04
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
+  tags: [ Bootstrap, CDK, RichFaces ]
   description:
   linktitle:
   featured:

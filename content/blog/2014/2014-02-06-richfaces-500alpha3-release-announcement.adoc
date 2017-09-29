@@ -2,7 +2,7 @@
   title: RichFaces 5.0.0.Alpha3 Release Announcement
   date: 2014-02-06
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [RichFaces, RF50, Alpha3]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: RichFaces moves to AsciiDoc
   date: 2013-06-10
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces, docs, asciidoc, asciidoctor ]
   linktitle:
   featured:

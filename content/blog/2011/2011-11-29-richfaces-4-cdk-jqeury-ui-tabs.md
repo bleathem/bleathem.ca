@@ -2,7 +2,7 @@
   title: "RichFaces 4 CDK | jQeury UI Tabs"
   date: 2011-11-29
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ CDK, RichFaces ]
   description:
   linktitle:

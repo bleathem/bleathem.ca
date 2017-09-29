@@ -2,7 +2,7 @@
   title: "RichFaces 4 CDK | Introduction"
   date: 2011-08-31
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces ]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: "Seam Faces 3.0.2.Final released"
   date: 2011-08-16
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Seam]
   tags: [ Seam, Final ]
   description:
   linktitle:

@@ -2,7 +2,7 @@
   title: "Polyglot Widgets"
   date: 2012-11-29
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces, Javascript]
   tags: [ Bootstrap, RichFaces, JSF, Errai, GWT, CDI, javascript, jQuery, widgets ]
   description:
   linktitle:

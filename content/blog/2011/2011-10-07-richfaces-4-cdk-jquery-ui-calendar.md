@@ -2,7 +2,7 @@
   title: "RichFaces 4 CDK | jQuery UI Calendar"
   date: 2011-10-07
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Javascript]
   tags: [ CDK, RichFaces ]
   description:
   linktitle:

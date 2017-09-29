@@ -2,7 +2,7 @@
   title: "Speaking on Polyglot Widgets at JAXConf 2013"
   date: 2013-03-05
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Conferences]
   tags: \[ JAX, JAXConf, talk, polyglot, widgets \]
   linktitle:
   featured:

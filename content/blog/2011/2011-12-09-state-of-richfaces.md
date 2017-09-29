@@ -2,7 +2,7 @@
   title: "State of the RichFaces"
   date: 2011-12-09
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces ]
   description:
   linktitle:

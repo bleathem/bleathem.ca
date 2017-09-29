@@ -2,7 +2,7 @@
   title: "RichFaces Bootstrap Quickstart"
   date: 2012-10-12
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ Bootstrap, RichFaces, quickstart ]
   description:
   linktitle:

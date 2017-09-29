@@ -2,7 +2,7 @@
   title: "RichFaces 4.3.0.M1 Release Announcement"
   date: 2012-08-07
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces, RF43, CDK, testing, MyFaces ]
   description:
   linktitle:

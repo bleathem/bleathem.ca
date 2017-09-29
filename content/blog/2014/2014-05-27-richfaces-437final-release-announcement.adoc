@@ -2,7 +2,7 @@
   title: RichFaces 4.3.7.Final Release Announcement
   date: 2014-05-27
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [RichFaces, RF43, Final]
   description:
   linktitle:

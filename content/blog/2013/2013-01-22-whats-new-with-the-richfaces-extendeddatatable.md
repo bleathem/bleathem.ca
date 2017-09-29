@@ -2,7 +2,7 @@
   title: "What's new with the RichFaces extendedDataTable"
   date: 2013-01-22
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces, RF43, edt, extendedDataTable ]
   description:
   linktitle:

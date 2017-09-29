@@ -2,7 +2,7 @@
   title: "RichFaces 3 Showcase on OpenShift"
   date: 2012-06-06
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, RichFaces]
   tags: [ RichFaces, RF3, OpenShift]
   description:
   linktitle:

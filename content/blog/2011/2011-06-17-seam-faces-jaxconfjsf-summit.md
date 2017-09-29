@@ -2,7 +2,7 @@
   title: Seam Faces @JAXConf/JSF Summit
   date: 2011-04-18
   author: Brian Leathem
-  categories: [Java EE]
+  categories: [Java EE, Seam]
   tags: [ Seam, JAX, JAXConf, JSF ]
   description:
   linktitle:

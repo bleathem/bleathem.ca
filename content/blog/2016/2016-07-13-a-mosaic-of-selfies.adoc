@@ -1,7 +1,7 @@
 ---
   title: A mosaic of selfies
   draft: true
-  date: 2016-07-13-
+  date: 2016-07-13
   author: Brian Leathem
   categories:
   tags: [mediator, pattern, error handling]
@@ -12,6 +12,6 @@
   featuredalt:
   type: post
 ---
-= A mosaic of selfies
+# A mosaic of selfies
 
 I was fortunate enough to be a part of the Red Hat Summit Middleware Keynote demo again this year

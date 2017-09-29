@@ -10,6 +10,7 @@
   featuredalt:
   type: post
 ---
+## The Patternfly Roadmap
 
 crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
 
@@ -35,8 +36,8 @@ taking a modular approach in both our pattern designs and
 implementations.
 
 [[patternfly-4-goals]]
-# PatternFly 4
-## Goals
+## PatternFly 4
+### Goals
 
 The goals for PatternFly 4 are primarily focused on modernizing the
 Angular-PatternFly project, and consist of:
@@ -106,10 +107,10 @@ will stabilize our APIs and implementations with follow-on alpha and
 beta releases, aiming to get to a final release a timely manner.
 
 [[patternfly-5]]
-# PatternFly 5
+## PatternFly 5
 
 [[goals]]
-## Goals
+### Goals
 
 The scope of PatternFly 5 is much larger than the scope of PatternFly 4.
 With PatternFly 5, we are working to scale PatternFly in a number of
@@ -134,7 +135,7 @@ pushing PatternFly forward to power great user experiences through open
 source design.
 
 [[modular-approach]]
-## Modular approach
+### Modular approach
 
 In PatternFly 5, we are adopting a modular approach in both our CSS and
 Javascript implementations. This modular approach offers a number of
@@ -147,7 +148,7 @@ advantages:
 image:https://blog.patternfly.org/wp-content/uploads/2016/12/g11516-1024x505.png[image,width=580,height=286]
 
 [[atomic-css]]
-## Atomic CSS
+### Atomic CSS
 
 We are using the
 http://bradfrost.com/blog/post/atomic-web-design/[atomic design system]
@@ -161,7 +162,7 @@ guidelines] based on BEM to ensure we develop performant and
 maintainable CSS.
 
 [[web-components]]
-## Web components
+### Web components
 
 The PatternFly 4 work to move to Angular 1.5 components offers a useful
 stop gap, enabling Angular 2 development, but does not offer a suitable
@@ -202,7 +203,7 @@ and wait to move to PatternFly 5 until their browser requirements are
 aligned with what is supported by PatternFly 5.
 
 [[internationalization-and-accessibility]]
-## Internationalization and accessibility
+### Internationalization and accessibility
 
 Support for internationalization and accessibility are increasingly
 requested features for PatternFly. However, retro-fitting those concerns
@@ -212,10 +213,10 @@ development process to ensure the problem is solved from the get-go in
 PatternFly 5.
 
 [[design-and-style-changes]]
-## Design and style changes
+### Design and style changes
 
 [[decision-tree]]
-### Decision tree
+#### Decision tree
 
 As recommended by the guidelines of the Atomic design system, we are
 employing a decision tree to formalize the criteria that prospective
@@ -228,7 +229,7 @@ tree].
 image:https://blog.patternfly.org/wp-content/uploads/2016/11/patternfly-decision-tree-1024x386.png[patternfly-decision-tree,width=580,height=219]
 
 [[mobile-support]]
-### Mobile support
+#### Mobile support
 
 While PatternFly is built around Bootstrap, and Bootstrap is responsive,
 not all of our patterns are themselves responsive. With PatternFly 5 we
@@ -237,7 +238,7 @@ responsive and progressively enhanced, both in their design and
 implementation.
 
 [[updated-style-guidelines]]
-### Updated style guidelines
+#### Updated style guidelines
 
 Additional style changes involve a move to the Overpass font, designing
 a new Typography system, and increasing the base type sizing. Read more
@@ -264,7 +265,7 @@ and accessibility.
 image:https://blog.patternfly.org/wp-content/uploads/2016/12/g10618-1-1024x561.png[g10618,width=580,height=318]
 
 [[release-timeline-1]]
-## Release Timeline
+### Release Timeline
 
 Work has already begun on PatternFly 5. The CSS rewrite is being done in
 a patternlab instance, check it out at
@@ -284,7 +285,7 @@ Look for an initial alpha release with our PatternFly-core CSS
 the coming months.
 
 [[future]]
-# Future
+## Future
 
 While developing PatternFly 4 we will continue to do maintenance
 releases of PatternFly 3, and will continue with PatternFly 3

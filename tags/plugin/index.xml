@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Plugin on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/plugin/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/plugin/</link>
     <description>Recent content in Plugin on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Feb 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/plugin/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Play Services Oauth2 Token Lookup via Cordova</title>
-      <link>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</link>
       <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</guid>
       <description>Delegating to 3rd parties to manage your authorization is incredibly helpful when developing a new application. A benefit to users and developers alike, this task is made all the more helpful with the number of social networks providing Oauth2 APIs that we can use for our authorization. In this blog post I will address using the Google Play services on Android from a hybrid mobile Cordova application to retrieve an Oauth2 token that we can then use with Google&amp;#8217;s Oauth2 REST API.</description>
     </item>
     

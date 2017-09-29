@@ -1,0 +1,1215 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>The Patternfly Roadmap</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="The Patternfly Roadmap"/>
+<meta name="twitter:description" content="The Patternfly Roadmap crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
+ The UXD team has been hard at work churning out PatternFly releases at a regular cadence, steadily increasing the number of design patterns and design pattern implementations. In recent releases we introduced a number of changes aimed at simplifying the consumption and contribution processes for both designers and developers.
+ There are a number of ways we want to improve and scale out PatternFly that can’t be addressed without introducing breaking changes to the project."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="The Patternfly Roadmap" />
+<meta property="og:description" content="The Patternfly Roadmap crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
+ The UXD team has been hard at work churning out PatternFly releases at a regular cadence, steadily increasing the number of design patterns and design pattern implementations. In recent releases we introduced a number of changes aimed at simplifying the consumption and contribution processes for both designers and developers.
+ There are a number of ways we want to improve and scale out PatternFly that can’t be addressed without introducing breaking changes to the project." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/the-patternfly-roadmap/" />
+
+
+
+<meta property="article:published_time" content="2016-12-14T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2016-12-14T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="The Patternfly Roadmap">
+<meta itemprop="description" content="The Patternfly Roadmap crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
+ The UXD team has been hard at work churning out PatternFly releases at a regular cadence, steadily increasing the number of design patterns and design pattern implementations. In recent releases we introduced a number of changes aimed at simplifying the consumption and contribution processes for both designers and developers.
+ There are a number of ways we want to improve and scale out PatternFly that can’t be addressed without introducing breaking changes to the project.">
+
+
+<meta itemprop="dateModified" content="2016-12-14T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1656">
+
+
+
+<meta itemprop="keywords" content="" />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f&text=The%20Patternfly%20Roadmap&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f&title=The%20Patternfly%20Roadmap" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f&title=The%20Patternfly%20Roadmap" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f&title=The%20Patternfly%20Roadmap" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/the-patternfly-roadmap/">The Patternfly Roadmap</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2016-12-14'>
+            December 14, 2016</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>8 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f&text=The%20Patternfly%20Roadmap&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f&title=The%20Patternfly%20Roadmap" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f&title=The%20Patternfly%20Roadmap" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f&title=The%20Patternfly%20Roadmap" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2fthe-patternfly-roadmap%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/the-patternfly-roadmap/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        <div class="sect1">
+<h2 id="_the_patternfly_roadmap">The Patternfly Roadmap</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>crosspost from: <a href="https://blog.patternfly.org/the-patternfly-roadmap/" class="bare">https://blog.patternfly.org/the-patternfly-roadmap/</a></p>
+</div>
+<div class="paragraph">
+<p>The UXD team has been hard at work churning out
+<a href="https://github.com/PatternFly/PatternFly/releases">PatternFly releases</a>
+at a regular cadence, steadily increasing the number of design patterns
+and design pattern implementations. In recent releases we introduced a
+number of changes aimed at simplifying the consumption and contribution
+processes for both designers and developers.</p>
+</div>
+<div class="paragraph">
+<p>There are a number of ways we want to improve and scale out PatternFly
+that can’t be addressed without introducing breaking changes to the
+project. As such, we’ve had a series of planning meetings to address
+those concerns and build out a roadmap for our community to plan around
+and coordinate their efforts.</p>
+</div>
+<div class="paragraph">
+<p>The PatternFly roadmap consists of two major releases over the course of
+the next year. In PatternFly 4, the first of these major releases, we
+will provide an immediate solution for developers looking to take
+advantage of PatternFly in their Angular 2 applications. PatternFly 5
+will follow with a more complete strategy for scaling out PatternFly by
+taking a modular approach in both our pattern designs and
+implementations.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patternfly-4-goals">PatternFly 4</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_goals">Goals</h3>
+<div class="paragraph">
+<p>The goals for PatternFly 4 are primarily focused on modernizing the
+Angular-PatternFly project, and consist of:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Providing initial support for Angular 2 application development</p>
+</li>
+<li>
+<p>Updating the libraries on which Angular-Patternfly is built</p>
+</li>
+<li>
+<p>Making the dependence on jQuery optional when consuming
+Angular-PatternFly</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="angular-patternfly">Angular-PatternFly</h3>
+<div class="paragraph">
+<p><a href="http://www.patternfly.org/angular-patternfly/">Angular-PatternFly</a> 4 will
+consist of a refactor of all our Angular directives as
+<a href="https://docs.angularjs.org/guide/component">Angular 1.5 components</a>. This
+is a comparatively simple re-factor and enables
+<a href="https://angular.io/">Angular 2</a> applications to consume our existing
+pattern implementations. Look for additional blog posts detailing how to
+build such Angular 2 applications as we roll out our initial Angular 1.5
+components. This migration has the follow-on effect that all downstream
+applications will have to upgrade to Angular 1.5 to stay current with
+PatternFly releases.</p>
+</div>
+<div class="paragraph">
+<p>In addition to this directive &#8594; component refactor, we will introduce a
+number of dependency upgrades into Angular-PatternFly with this major
+release. Most notably we will update our
+<a href="https://angular-ui.github.io/bootstrap/">ui-bootstrap</a> dependency to the
+latest release, an update a number of developers have been asking for.</p>
+</div>
+<div class="paragraph">
+<p>The Angular-PatternFly <a href="https://jquery.org/">jQuery</a> dependency will be
+made optional in this 4.0 release. Several of our pattern
+implementations will continue to be built around jQuery, but if an
+application doesn’t use those patterns, then the jQuery dependency will
+not be required.</p>
+</div>
+<div class="paragraph">
+<p>It should be noted that these updates will result in some directive API
+changes, implying minor code changes in downstream applications. It is
+for this reason that we are incrementing the major version to 4 with
+this release.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="patternfly-core">PatternFly “core”</h3>
+<div class="paragraph">
+<p>The changes to our <a href="https://github.com/patternfly/patternfly">PatternFly
+“core”</a> repository are less significant in the 4.0 release. They
+primarily involve breaking apart the “core” repo into one for CSS and
+one for the jQuery pattern implementations. Re-structuring the
+repositories in this manner puts the jQuery pattern implementations on
+an even level with the Angular-PatternFly implementations.</p>
+</div>
+<div class="paragraph">
+<p>PatternFly consists of:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Design patterns</p>
+</li>
+<li>
+<p>A CSS implementation of those design patterns</p>
+</li>
+<li>
+<p>Alternate javascript implementations of the behaviours associated
+with the design patterns</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://blog.patternfly.org/wp-content/uploads/2016/12/slack-imgs-1024x344.png" alt="slack-imgs"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="release-timeline">Release Timeline</h3>
+<div class="paragraph">
+<p>We will have an initial alpha release of the PatternFly and
+Angular-PatternFly projects in January. This first alpha is expected to
+be sufficiently complete to try it out in downstream applications. We
+will stabilize our APIs and implementations with follow-on alpha and
+beta releases, aiming to get to a final release a timely manner.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="patternfly-5">PatternFly 5</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="goals">Goals</h3>
+<div class="paragraph">
+<p>The scope of PatternFly 5 is much larger than the scope of PatternFly 4.
+With PatternFly 5, we are working to scale PatternFly in a number of
+areas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Scaling adoption with a modular design system to increase the number
+of use cases we can support</p>
+</li>
+<li>
+<p>Scaling design contributions by pioneering a design workflow centered
+around github</p>
+</li>
+<li>
+<p>Scaling developer contributions with a modular approach in both our
+CSS and javascript implementations</p>
+</li>
+<li>
+<p>Scaling support for new javascript frameworks</p>
+</li>
+<li>
+<p>Scaling supported devices with mobile considerations in our designs
+patterns and their corresponding CSS/JS implementations</p>
+</li>
+<li>
+<p>Scaling target audiences with support for internationalisation and
+accessibility</p>
+</li>
+<li>
+<p>Modernizing PatternFly with style changes around typography, font
+size, spacing and gradients</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The roadmap below covers how we’ve solved these challenges and are
+pushing PatternFly forward to power great user experiences through open
+source design.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="modular-approach">Modular approach</h3>
+<div class="paragraph">
+<p>In PatternFly 5, we are adopting a modular approach in both our CSS and
+Javascript implementations. This modular approach offers a number of
+advantages:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Easing the contribution process</p>
+</li>
+<li>
+<p>Facilitating piecewise consumption of our patterns</p>
+</li>
+<li>
+<p>Fostering a community of patterns around PatternFly</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://blog.patternfly.org/wp-content/uploads/2016/12/g11516-1024x505.png" alt="image" width="580" height="286"></span></p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="atomic-css">Atomic CSS</h3>
+<div class="paragraph">
+<p>We are using the
+<a href="http://bradfrost.com/blog/post/atomic-web-design/">atomic design system</a>
+by Brad Frost to implement our modular design system for PatternFly 5.
+Implementing our CSS in such a modular fashion involves a full rewrite,
+which provides a good opportunity to adopt
+<a href="https://v4-alpha.getbootstrap.com/">Bootstrap 4</a>. We&#8217;ve also developed a
+set
+ofhttps://github.com/andresgalante/patternfly-atomic/blob/code-guidelines/CODE-GUIDELINES.md[CSS
+guidelines] based on BEM to ensure we develop performant and
+maintainable CSS.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="web-components">Web components</h3>
+<div class="paragraph">
+<p>The PatternFly 4 work to move to Angular 1.5 components offers a useful
+stop gap, enabling Angular 2 development, but does not offer a suitable
+long term strategy. Nor does it address the requests to support React
+and other web UI frameworks. To understand what it means for PatternFly
+to support a web framework, let&#8217;s review our current deliverables.</p>
+</div>
+<div class="paragraph">
+<p>PatternFly 3 and 4 deliverables consist of:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>A CSS implementation of our design patterns</p>
+</li>
+<li>
+<p>Javascript implementations of pattern behaviours</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The behaviors associated with patterns are implemented as both jQuery
+plugins as well as Angular 1 directives/components. We could
+support Angular 2 and React by developing both Angular 2 components and
+React components, effectively doubling the number of behavior
+implementations we develop and support for each pattern. However, this
+is an approach that does not scale.</p>
+</div>
+<div class="paragraph">
+<p>Instead, we are looking tohttp://webcomponents.org/[web components] as
+the solution to scale out our PatternFly framework support. We are
+focusing on the
+<a href="https://html.spec.whatwg.org/multipage/scripting.html#custom-elements">Custom
+Element specification</a> in particular, and the corresponding
+<a href="https://github.com/webcomponents/webcomponentsjs">polyfill</a>. We will
+consider incorporating the remaining web component specifications into
+our solution in the future, after they have had a chance to mature.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/webcomponents/webcomponentsjs#browser-support">Browser
+support</a> for custom elements (when incorporating the polyfill), provide
+support for relatively current browser releases, and provides support
+for IE as far back as IE 10. This is acceptable for new applications,
+and applications that adopt modern browser support statements. We
+recognize that there are applications in production that will have an
+ongoing requirement to support older browsers for some time. We are
+recommending applications with such requirements stay on PatternFly 4,
+and wait to move to PatternFly 5 until their browser requirements are
+aligned with what is supported by PatternFly 5.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="internationalization-and-accessibility">Internationalization and accessibility</h3>
+<div class="paragraph">
+<p>Support for internationalization and accessibility are increasingly
+requested features for PatternFly. However, retro-fitting those concerns
+into our existing framework has proven to be a difficult task. As such,
+we are baking solutions for these concerns into our web component
+development process to ensure the problem is solved from the get-go in
+PatternFly 5.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="design-and-style-changes">Design and style changes</h3>
+<div class="sect3">
+<h4 id="decision-tree">Decision tree</h4>
+<div class="paragraph">
+<p>As recommended by the guidelines of the Atomic design system, we are
+employing a decision tree to formalize the criteria that prospective
+patterns will be evaluated against before including them in PatternFly.
+A draft of our decision tree is included below. Refer to Andres
+Galante’s blog post for more details of how we plan to
+<a href="https://blog.patternfly.org/the-tree-of-wisdom/">apply the decision
+tree</a>.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://blog.patternfly.org/wp-content/uploads/2016/11/patternfly-decision-tree-1024x386.png" alt="patternfly-decision-tree" width="580" height="219"></span></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="mobile-support">Mobile support</h4>
+<div class="paragraph">
+<p>While PatternFly is built around Bootstrap, and Bootstrap is responsive,
+not all of our patterns are themselves responsive. With PatternFly 5 we
+will revisit mobile-relevant patterns and make sure they are indeed
+responsive and progressively enhanced, both in their design and
+implementation.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="updated-style-guidelines">Updated style guidelines</h4>
+<div class="paragraph">
+<p>Additional style changes involve a move to the Overpass font, designing
+a new Typography system, and increasing the base type sizing. Read more
+about this in Kyle Baker’s blog
+post: <a href="https://blog.patternfly.org/choosing-the-best-font-for-application-design/">Choosing
+the Best Font for Application Design</a>.</p>
+</div>
+<div class="paragraph">
+<p>Additionally we’ve had to revise the spacing of the entire library to
+accommodate the new modular design system and update the documentation
+and artifacts to reflect these new styling changes.</p>
+</div>
+<div class="sect4">
+<h5 id="the-patternfly-5-flywheel">The PatternFly 5 “flywheel”</h5>
+<div class="paragraph">
+<p>The redevelopment effort for PatternFly 5 can be summarized with the
+following diagram. We start by applying the decision tree to evaluate
+the pattern and consider breaking it down into common components. The
+pattern then undergoes design revisions, followed by new CSS and
+Javascript implementations. Testing of our implementations is a
+priority, along with the cross-cutting concerns of internationalisation
+and accessibility.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="https://blog.patternfly.org/wp-content/uploads/2016/12/g10618-1-1024x561.png" alt="g10618" width="580" height="318"></span></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="release-timeline-1">Release Timeline</h3>
+<div class="paragraph">
+<p>Work has already begun on PatternFly 5. The CSS rewrite is being done in
+a patternlab instance, check it out at
+<a href="http://www.PatternFly.org/patternfly-atomic/" class="bare">http://www.PatternFly.org/patternfly-atomic/</a>. Get involved with the CSS
+rewrite in the
+<a href="https://patternfly.slack.com/messages/css-army/">#css-army</a> channel of
+the <a href="https://patternfly.slack.com/">PatternFly slack</a>.</p>
+</div>
+<div class="paragraph">
+<p>Similarly, work has begun on the webcomponent effort, finalizing the
+details of our web component prototype. Check it out on github
+<a href="https://github.com/patternfly-webcomponents" class="bare">https://github.com/patternfly-webcomponents</a> and get involved via the
+<a href="https://github.com/patternfly-webcomponents">#webcomponents</a> channel in
+our <a href="https://patternfly.slack.com/">PatternFly slack</a>.</p>
+</div>
+<div class="paragraph">
+<p>Look for an initial alpha release with our PatternFly-core CSS
+(including our new style updates) and a few initial web components in
+the coming months.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="future">Future</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While developing PatternFly 4 we will continue to do maintenance
+releases of PatternFly 3, and will continue with PatternFly 3
+maintenance releases until the bulk of our community has had a chance to
+migrate to PatternFly 4. The migration of applications to PatternFly 4
+is expected to be fairly straightforward.</p>
+</div>
+<div class="paragraph">
+<p>Development of PatternFly 5 will take some time, with a potential
+delivery in late 2017/early 2018. During the development of PatternFly
+5, we will continue to introduce support for new patterns and components
+in PatternFly 4. Once PatternFly 5 is released, we will continue to
+develop new patterns concurrently in both PatternFly 4 and PatternFly 5
+until the web-component browser support story of our our downstream
+products allows us to consolidate our efforts on a single approach.</p>
+</div>
+<div class="paragraph">
+<p>There are many opportunities to contribute to PatternFly as we push
+forward on this roadmap. Whether you’re a designer, or a developer, or
+even a writer, we encourage you to
+<a href="http://www.patternfly.org/community">reach out to us and get involved</a> in
+bringing this open source community project and help make it the project
+you need it to be!</p>
+</div>
+</div>
+</div>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/patternfly'>PatternFly</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/"
+                class="button big previous">Error handling in a request/response model with the mediator pattern</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"
+                class="button big next">Patteryfly 4.0.0 Alpha.2 Release</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

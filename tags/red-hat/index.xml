@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Red Hat on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/red-hat/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/red-hat/</link>
     <description>Recent content in Red Hat on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Jul 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/red-hat/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/red-hat/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo</title>
-      <link>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</link>
       <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</guid>
       <description>At this year&amp;#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo. I made the custom front-ends in the demo using Reactive Extensions for javascript (Rx.js) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using d3.js.
  If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at 19m).</description>
     </item>

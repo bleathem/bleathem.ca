@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mobile on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/categories/mobile/</link>
+    <link>bleathem.github.io/bleathem.ca/categories/mobile/</link>
     <description>Recent content in Mobile on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Feb 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/categories/mobile/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/categories/mobile/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Google Play Services Oauth2 Token Lookup via Cordova</title>
-      <link>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</link>
       <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</guid>
       <description>Delegating to 3rd parties to manage your authorization is incredibly helpful when developing a new application. A benefit to users and developers alike, this task is made all the more helpful with the number of social networks providing Oauth2 APIs that we can use for our authorization. In this blog post I will address using the Google Play services on Android from a hybrid mobile Cordova application to retrieve an Oauth2 token that we can then use with Google&amp;#8217;s Oauth2 REST API.</description>
     </item>
     
     <item>
       <title>Scalable splash screens with Cordova</title>
-      <link>http://www.bleathem.ca/blog/scalable-splash-screens-with-cordova/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/</link>
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/scalable-splash-screens-with-cordova/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/</guid>
       <description>Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks. In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.
    Drawing the splash screen If you&amp;#8217;re not an artist (as I am not!) then creating a graphical splash screen can be a somewhat daunting task.</description>
     </item>

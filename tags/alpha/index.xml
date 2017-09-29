@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alpha on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/alpha/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/alpha/</link>
     <description>Recent content in Alpha on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Jul 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/alpha/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/alpha/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RichFaces 4.5.0.Alpha3 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</link>
       <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</guid>
       <description>We have a feature complete release of RichFaces 4.5 available with the release of RichFaces 4.5.0.Alpha3. This is a full framework release with RichFaces 4.5.0.Alpha3, whereas previous 4.5 Alpha releases consisted of just the components. We&amp;#8217;ve back-ported many of the improvements from RichFaces 5 Alphas into this release, while maintaining backward compatibility with the RichFaces 4.3 branch.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>

@@ -1,0 +1,988 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Scalable splash screens with Cordova</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Scalable splash screens with Cordova"/>
+<meta name="twitter:description" content="Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks. In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.
+   Drawing the splash screen If you&#8217;re not an artist (as I am not!) then creating a graphical splash screen can be a somewhat daunting task."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="Scalable splash screens with Cordova" />
+<meta property="og:description" content="Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks. In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.
+   Drawing the splash screen If you&#8217;re not an artist (as I am not!) then creating a graphical splash screen can be a somewhat daunting task." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/" />
+
+
+
+<meta property="article:published_time" content="2015-01-28T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-01-28T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Scalable splash screens with Cordova">
+<meta itemprop="description" content="Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks. In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.
+   Drawing the splash screen If you&#8217;re not an artist (as I am not!) then creating a graphical splash screen can be a somewhat daunting task.">
+
+
+<meta itemprop="dateModified" content="2015-01-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="751">
+
+
+
+<meta itemprop="keywords" content="cordova," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f&text=Scalable%20splash%20screens%20with%20Cordova&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f&title=Scalable%20splash%20screens%20with%20Cordova" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f&title=Scalable%20splash%20screens%20with%20Cordova" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f&title=Scalable%20splash%20screens%20with%20Cordova" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/">Scalable splash screens with Cordova</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2015-01-28'>
+            January 28, 2015</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>4 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f&text=Scalable%20splash%20screens%20with%20Cordova&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f&title=Scalable%20splash%20screens%20with%20Cordova" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f&title=Scalable%20splash%20screens%20with%20Cordova" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f&title=Scalable%20splash%20screens%20with%20Cordova" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2fscalable-splash-screens-with-cordova%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks.  In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_drawing_the_splash_screen">Drawing the splash screen</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>If you&#8217;re not an artist (as I am not!) then creating a graphical splash screen can be a somewhat daunting task.  Finding a relevant image to use as a starting point can be a big help.  I used the <a href="http://search.creativecommons.org/">Creative Commons Search</a> tool to find my initial image.</p>
+</div>
+<div class="paragraph">
+<p>Edit the image using your favorite imaging editing software (I&#8217;m a fan of <a href="http://www.gimp.org">GIMP</a>).  Android pre-defines a set of sizes which you should target with your image:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>xhdpi: 640 x 960</p>
+</li>
+<li>
+<p>hdpi: 480 x 800</p>
+</li>
+<li>
+<p>mdpi: 320 x 480</p>
+</li>
+<li>
+<p>ldpi: 240 x 320</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Similarly Apple has a set of predefined sizes, see the <a href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/MobileHIG/IconMatrix.html">Apple HIG for details</a>, but I&#8217;ll be addressing specifically Android with this post.</p>
+</div>
+<div class="paragraph">
+<p>To keep things simple, I created a single square image to use for both portrait and landscape orientations:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="/images/blog/2015-01-28-cordova-splashscreen/splash-hdpi.png" alt="Splashscreen">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_making_the_splash_screen_scalable">Making the splash screen scalable</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Scaling the above image to fit the size and shape of a phone or tablet would distort the graphic and the text.  To get around this we use the 9-patch file format to mark the areas of the image that can safely be stretched.</p>
+</div>
+<div class="paragraph">
+<p>To convert the PNG file you created above into a 9-patch file, use the draw9patch application distributed with the android SDK.  The basic steps of the conversion are as follows:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open you PNG file with the draw9patch application</p>
+</li>
+<li>
+<p>Drag with you mouse to mark the areas on the top and left margins where it is safe to stretch the image.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>The right and bottom margins can be used to mark where content should be inserted into the image, and are useful when creating images for buttons.  However this does not apply to splash screens, and you can safely ignore the right and bottom margins.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Save your file with the <code>*.9.png</code> extension.  The extension is critical, otherwise your splash screen image will not be interpreted as a 9-patch file, and the stretching will not be applied.  I named mine <code>splash.9.png</code>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Further details on using draw9patch can be found in the <a href="http://developer.android.com/training/multiscreen/screensizes.html#TaskUse9Patch">Android documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cordova_build_hooks">Cordova build hooks</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>I like to structure my cordova projects to leave the <code>platforms</code> and <code>plugins</code> folders out of source control.  I then use Cordova build hooks to install plugins and copy resources. For more information on build hooks, refer to  <a href="http://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/">this great post on using build hooks</a>.</p>
+</div>
+<div class="paragraph">
+<p>I place the above 9-patch image in the project folder <code>config/android/res/screens</code> and use the following build hook to copy this scm-controlled resource into the <code>platforms</code> folder:</p>
+</div>
+<div class="listingblock">
+<div class="title">030_resource_files.js</div>
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">#!/usr/bin/env node
+
+//
+// This hook copies various resource files
+// from our version control system directories
+// into the appropriate platform specific location
+//
+
+// [{source: target}]
+var filestocopy = [
+  ...
+  , {
+    "config/android/res/screens/splash.9.png":
+    "platforms/android/res/drawable/splash.9.png"
+  }
+];
+
+
+var fs = require('fs');
+var path = require('path');
+
+var rootdir = process.argv[2];
+
+filestocopy.forEach(function(obj) {
+    Object.keys(obj).forEach(function(key) {
+        var val = obj[key];
+        var srcfile = path.join(rootdir, key);
+        var destfile = path.join(rootdir, val);
+        console.log("copying "+srcfile+" to "+destfile);
+        var destdir = path.dirname(destfile);
+        if (fs.existsSync(srcfile) &amp;&amp; fs.existsSync(destdir)) {
+            fs.createReadStream(srcfile).pipe(
+               fs.createWriteStream(destfile));
+        }
+    });
+});</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve taken a one-size-fits-all approach with my splash screen.  This works because I place my splash screen file in the <code>platforms/android/res/drawable</code> folder.  If you want to create a different splash screen to accommodate each of the different screen sizes in either the portrait or landscape orientations, you can modify the above build hook to copy the appropriately sized files into each of the <code>platforms/android/res/drawable-{port|land}-{ldpi|mdpi|hdpi|xhdpi}/</code> folders.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_cordova_configuration">Cordova configuration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Finally we will install the <a href="https://github.com/apache/cordova-plugin-splashscreen">cordova splashscreen plugin</a>.  This plugin allows us to manage the splash screen from our Cordova application.</p>
+</div>
+<div class="paragraph">
+<p>We configure the default timeout and the name of our splash screen file in the <code>config.xml</code> of our project:</p>
+</div>
+<div class="listingblock">
+<div class="title">config.xml</div>
+<div class="content">
+<pre class="highlight"><code class="language-xml" data-lang="xml">...
+&lt;preference name="SplashScreen" value="splash" /&gt;
+&lt;preference name="SplashScreenDelay" value="10000" /&gt;
+...</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Using an appropriate listener in your Cordova application, dismiss the splash screen:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">navigator.splashscreen.hide();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_conclusion">Conclusion</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Getting the above pieces correctly lined up was surprisingly difficult.  If the files are not named correctly, or placed in the wrong folder, everything falls apart. The <a href="http://cordova.apache.org/docs/en/edge/config_ref_images.md.html">Cordova documentation</a> on the topic provides some help, but leaves out a lot of important details.  This is apparent in the number of forum, stack overflow, and github issue threads on the subject.  Hopefully this post helps someone shortcut the frustration of getting this working.</p>
+</div>
+</div>
+</div>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/javascript'>Javascript</a></li>
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/mobile'>Mobile</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/vert.x-with-gulp.js/"
+                class="button big previous">Vert.x with gulp.js</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/"
+                class="button big next">Google Play Services Oauth2 Token Lookup via Cordova</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

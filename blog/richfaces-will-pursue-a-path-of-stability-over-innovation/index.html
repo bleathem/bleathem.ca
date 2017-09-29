@@ -1,0 +1,869 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>RichFaces will pursue a path of stability over innovation</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="RichFaces will pursue a path of stability over innovation"/>
+<meta name="twitter:description" content="For more than a decade now, JavaServer Faces (JSF) has held a special place as the sole portion of the JavaEE specification that addresses building UI&#8217;s for our web applications. As such JSF has historically been the only web front-end we&#8217;ve pushed at JBoss. Along with Seam and later CDI, RichFaces has been an important part of our JSF story, and a vehicle for our innovation in the JSF space."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="RichFaces will pursue a path of stability over innovation" />
+<meta property="og:description" content="For more than a decade now, JavaServer Faces (JSF) has held a special place as the sole portion of the JavaEE specification that addresses building UI&#8217;s for our web applications. As such JSF has historically been the only web front-end we&#8217;ve pushed at JBoss. Along with Seam and later CDI, RichFaces has been an important part of our JSF story, and a vehicle for our innovation in the JSF space." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/" />
+
+
+
+<meta property="article:published_time" content="2014-07-21T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2014-07-21T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="RichFaces will pursue a path of stability over innovation">
+<meta itemprop="description" content="For more than a decade now, JavaServer Faces (JSF) has held a special place as the sole portion of the JavaEE specification that addresses building UI&#8217;s for our web applications. As such JSF has historically been the only web front-end we&#8217;ve pushed at JBoss. Along with Seam and later CDI, RichFaces has been an important part of our JSF story, and a vehicle for our innovation in the JSF space.">
+
+
+<meta itemprop="dateModified" content="2014-07-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="546">
+
+
+
+<meta itemprop="keywords" content="RichFaces,RF45,RF50," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f&text=RichFaces%20will%20pursue%20a%20path%20of%20stability%20over%20innovation&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f&title=RichFaces%20will%20pursue%20a%20path%20of%20stability%20over%20innovation" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f&title=RichFaces%20will%20pursue%20a%20path%20of%20stability%20over%20innovation" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f&title=RichFaces%20will%20pursue%20a%20path%20of%20stability%20over%20innovation" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/">RichFaces will pursue a path of stability over innovation</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2014-07-21'>
+            July 21, 2014</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f&text=RichFaces%20will%20pursue%20a%20path%20of%20stability%20over%20innovation&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f&title=RichFaces%20will%20pursue%20a%20path%20of%20stability%20over%20innovation" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f&title=RichFaces%20will%20pursue%20a%20path%20of%20stability%20over%20innovation" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f&title=RichFaces%20will%20pursue%20a%20path%20of%20stability%20over%20innovation" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-will-pursue-a-path-of-stability-over-innovation%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        <div class="imageblock" style="float: right">
+<div class="content">
+<a class="image" href="http://richfaces.org/"><img src="/images/blog/common/richfaces.png" alt="RichFaces"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>For more than a decade now, JavaServer Faces (JSF) has held a special place as the sole portion of the JavaEE specification that addresses building UI&#8217;s for our web applications.  As such JSF has historically been the only web front-end we&#8217;ve pushed at JBoss.  Along with Seam and later CDI, RichFaces has been an important part of our JSF story, and a vehicle for our innovation in the JSF space.  We are very proud to see so many of the initiatives we&#8217;ve spearheaded in the RichFaces project standardized in recent iterations of the JSF standard.</p>
+</div>
+<div class="paragraph">
+<p>Nowadays however, developers are increasingly being asked to create mobile web applications; a use case for which the server-side rendering model used by JSF is proving to be insufficient.  Many mobile web-developers are looking to client-side javascript frameworks to help them build the rich and fast-responding web applications their users are demanding.  Many parts of the industry are moving to rich HTML5-based web apps that leverage frameworks like jQuery or AngularJS with lighter-weight server resources that leverage JAX-RS.  Through JBoss Developer (<a href="http://www.jboss.org/developer-materials" class="bare">http://www.jboss.org/developer-materials</a>) we&#8217;ve been providing examples and quickstarts to help developers explore and get started with these new approaches for building user interfaces.  Be sure to take a look through those quickstarts to explore the available alternatives to JSF for building Web UIs.</p>
+</div>
+<div class="paragraph">
+<p>With these trends in mind, we&#8217;ve decided that moving forward we will pursue a path of stability with our JSF approach, rather than a path of innovation.  We will continue to track the JSF spec with our RichFaces components and address compatibility issues with new browsers.  Applications currently running with RichFaces 4 can continue to do so with an assurance of stability. With this goal in mind we are focusing on delivering a RichFaces 4.5 release, rather than the previously planned RichFaces 5.</p>
+</div>
+<div class="paragraph">
+<p>RichFaces 4.5 will include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JSF 2.2 compatibility</p>
+</li>
+<li>
+<p>Our replacement Extended PartialViewContext (PVC) that extends the JSF PVC (for better interoperability with other JSF-based frameworks)</p>
+</li>
+<li>
+<p>A re-vamped build consisting of a single (multi-module) repository</p>
+</li>
+<li>
+<p>Chart components developed as part of last year&#8217;s GSoC</p>
+</li>
+<li>
+<p>The updated JSF 2.2 compatible RichFaces Fileupload component</p>
+</li>
+<li>
+<p>A type-safe approach for attribute definitions (using interfaces rather than xml)</p>
+</li>
+<li>
+<p>Page fragments for abstracting your functional tests</p>
+</li>
+<li>
+<p>An simplified Asciidoc version of the docs</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Some of the ideas we prototyped in RichFaces 5 that will not be available in RichFaces 4.5 include the collapsed component namespace, the JSF independent client-side component implementation (RichWidgets), the Bootstrap theme, and the java package re-factoring.</p>
+</div>
+<div class="paragraph">
+<p>RichFaces 4.5 will support JSF 2.2 and will be backwards compatible with RichFaces 4.3.  This will allow your RichFaces applications to take advantage of the latest and greatest improvements in JSF, without incurring any migration costs.  We have a feature-complete release of <a href="/blog/2014/07/richfaces-450alpha3-release-announcement.html">RichFaces 4.5.0.Alpha3 available today</a> for you to try these features out.</p>
+</div>
+<div class="paragraph">
+<p>While we are no longer pursuing further innovation with our set of custom JSF components (RichFaces), the JSF runtime on JBoss EAP / WildFly is here to stay - it is part of the JavaEE specification after all.  Likewise the JSF tooling in JBoss Tools and Developer Studio will not disappear.  You are welcome to continue running your JSF-based applications on JBoss EAP / WildFly using either our stabilized RichFaces components or any of the other JSF component sets available.</p>
+</div>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/java-ee'>Java EE</a></li>
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/richfaces'>RichFaces</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/"
+                class="button big previous">RichFaces 4.3.7.Final Release Announcement</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/"
+                class="button big next">RichFaces 4.5.0.Alpha3 Release Announcement</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

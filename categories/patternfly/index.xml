@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>PatternFly on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/categories/patternfly/</link>
+    <link>bleathem.github.io/bleathem.ca/categories/patternfly/</link>
     <description>Recent content in PatternFly on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/categories/patternfly/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/categories/patternfly/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Patternfly Roadmap Update</title>
-      <link>http://www.bleathem.ca/blog/patternfly-roadmap-update/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/</link>
       <pubDate>Tue, 30 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/patternfly-roadmap-update/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/</guid>
       <description>crosspost from: https://blog.patternfly.org/patternfly-roadmap-update/
  Last November we published the PatternFly roadmap where we put forward the idea for PatternFly 4 and 5, an effort around web components, and a CSS rewrite. Alpha releases for PatternFly 4 and PatternFly Web Components delivered initial progress on these efforts. However, the story has grown more complex with the introduction of additional PatternFly framework repositories. In this post we will provide a status update on our delivery of our roadmap, and explain how all these repositories and future versions tie together.</description>
     </item>
     
     <item>
       <title>Patteryfly 4.0.0 Alpha.2 Release</title>
-      <link>http://www.bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</link>
       <pubDate>Fri, 27 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</guid>
-      <description>crosspost from: https://blog.patternfly.org/patternfly-4-0-0-alpha-2-release/
+      <guid>bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</guid>
+      <description>Patteryfly 4.0.0 Alpha.2 Release crosspost from: https://blog.patternfly.org/patternfly-4-0-0-alpha-2-release/
  In the PatternFly Roadmap we outlined our future plans for PatternFly and laid out the goals for the PatternFly 4 release:
    Providing initial support for Angular 2 application development
   Updating the libraries on which Angular-Patternfly is built
@@ -37,11 +37,11 @@
     
     <item>
       <title>The Patternfly Roadmap</title>
-      <link>http://www.bleathem.ca/blog/the-patternfly-roadmap/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/the-patternfly-roadmap/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/the-patternfly-roadmap/</guid>
-      <description>crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
+      <guid>bleathem.github.io/bleathem.ca/blog/the-patternfly-roadmap/</guid>
+      <description>The Patternfly Roadmap crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
  The UXD team has been hard at work churning out PatternFly releases at a regular cadence, steadily increasing the number of design patterns and design pattern implementations. In recent releases we introduced a number of changes aimed at simplifying the consumption and contribution processes for both designers and developers.
  There are a number of ways we want to improve and scale out PatternFly that can’t be addressed without introducing breaking changes to the project.</description>
     </item>

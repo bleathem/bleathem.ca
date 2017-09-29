@@ -1,0 +1,973 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>RichFaces 4 CDK | jQeury UI Tabs</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="RichFaces 4 CDK | jQeury UI Tabs"/>
+<meta name="twitter:description" content="Following on with another entry in my CDK series, this time we will look at at creating a pair of components to wrap the jQuery UI tabs plugin with the RichFaces CDK. It&rsquo;ll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let&rsquo;s dive right in with a look at the Abstract component definitions.
+As always, if you are interested in following along in your IDE, you can get the code below on github."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="RichFaces 4 CDK | jQeury UI Tabs" />
+<meta property="og:description" content="Following on with another entry in my CDK series, this time we will look at at creating a pair of components to wrap the jQuery UI tabs plugin with the RichFaces CDK. It&rsquo;ll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let&rsquo;s dive right in with a look at the Abstract component definitions.
+As always, if you are interested in following along in your IDE, you can get the code below on github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/" />
+
+
+
+<meta property="article:published_time" content="2011-11-29T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2011-11-29T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="RichFaces 4 CDK | jQeury UI Tabs">
+<meta itemprop="description" content="Following on with another entry in my CDK series, this time we will look at at creating a pair of components to wrap the jQuery UI tabs plugin with the RichFaces CDK. It&rsquo;ll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let&rsquo;s dive right in with a look at the Abstract component definitions.
+As always, if you are interested in following along in your IDE, you can get the code below on github.">
+
+
+<meta itemprop="dateModified" content="2011-11-29T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="778">
+
+
+
+<meta itemprop="keywords" content="CDK,RichFaces," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f&text=RichFaces%204%20CDK%20%7c%20jQeury%20UI%20Tabs&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f&title=RichFaces%204%20CDK%20%7c%20jQeury%20UI%20Tabs" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f&title=RichFaces%204%20CDK%20%7c%20jQeury%20UI%20Tabs" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f&title=RichFaces%204%20CDK%20%7c%20jQeury%20UI%20Tabs" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/">RichFaces 4 CDK | jQeury UI Tabs</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2011-11-29'>
+            November 29, 2011</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>4 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f&text=RichFaces%204%20CDK%20%7c%20jQeury%20UI%20Tabs&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f&title=RichFaces%204%20CDK%20%7c%20jQeury%20UI%20Tabs" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f&title=RichFaces%204%20CDK%20%7c%20jQeury%20UI%20Tabs" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f&title=RichFaces%204%20CDK%20%7c%20jQeury%20UI%20Tabs" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--jqeury-ui-tabs%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        
+
+<p>Following on with another entry in my <a href="http://blog.bleathem.ca/search/label/CDK">CDK series</a>, this time we will look at at creating a pair of components to wrap the <a href="http://jqueryui.com/demos/tabs/">jQuery UI tabs plugin</a> with the RichFaces CDK. It&rsquo;ll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let&rsquo;s dive right in with a look at the Abstract component definitions.</p>
+
+<p>As always, if you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples">github</a>.</p>
+
+<h2 id="the-component-classes">The Component Classes</h2>
+
+<p>div=. <strong>AbstractTabs.java</strong></p>
+
+<pre class="prettyprint">package ca.bleathem.richfaces.jquery.component;
+import org.richfaces.cdk.annotations.*;
+
+import javax.faces.component.UIComponent;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+@JsfComponent(
+        type = "ca.bleathem.richfaces.jquery.Tabs",
+        family = "ca.bleathem.Tabs",
+        renderer = @JsfRenderer(type = "ca.bleathem.jquery.TabsRenderer"),
+        tag = @Tag(name="tabs"))
+abstract public class AbstractTabs extends javax.faces.component.UIPanel {
+}
+</pre>
+
+<p>Here we have the component class for tor the <strong>tabs</strong> tag - this will be the container for the <strong>tab</strong> components that follow. This is strikingly similar to the earlier <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">AbstractHello</a> component we saw in our first CDK example. The component class is serving as a placeholder to define the component properties (type, family, tag) , and the renderer associations. Look back through the previous blogs in <a href="http://blog.bleathem.ca/search/label/CDK">this series</a> if you don&rsquo;t recognize these properties.</p>
+
+<p>div=. <strong>AbstractTab.java</strong></p>
+
+<pre class="prettyprint">package ca.bleathem.richfaces.jquery.component;
+
+import org.richfaces.cdk.annotations.*;
+
+@JsfComponent(
+        type = "ca.bleathem.richfaces.jquery.Tab",
+        family = "ca.bleathem.Tab",
+        renderer = @JsfRenderer(type = "ca.bleathem.jquery.TabRenderer"),
+        tag = @Tag(name="tab"))
+abstract public class AbstractTab extends javax.faces.component.UIPanel {
+    @Attribute
+    public abstract String getTitle();
+}
+</pre>
+
+<p>The component class for the <strong>tab</strong> tag is similar to the one for the <strong>tabs</strong> tag, adding a definition for a <strong>title</strong> attribute, and with slightly different component properties. Let&rsquo;s move on from these mundane component definitions and look at the Renderers, where things get more interesting.</p>
+
+<h2 id="the-renderers">The Renderers</h2>
+
+<p>Looking first at the simpler <strong>tab</strong> renderer:</p>
+
+<p>div=. <strong>tab.template.xhtml</strong></p>
+
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
+
+<cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el"
+        xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
+        xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core"
+        xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite">
+
+    <cc:interface>
+        <cdk:class>ca.bleathem.richfaces.jquery.renderkit.TabRenderer</cdk:class>
+        <cdk:superclass>org.richfaces.renderkit.html.DivPanelRenderer</cdk:superclass>
+        <cdk:renderer-type>ca.bleathem.jquery.TabRenderer</cdk:renderer-type>
+    </cc:interface>
+
+    <cc:implementation>
+        <div id="\#{clientId}" class="rf_jq_tab">
+            <cdk:body />
+        </div>
+    </cc:implementation>
+
+</cdk:root>
+</pre>
+
+<p>This renderer is simple, again comparable to the <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">hello.template.xml</a>. The new piece we&rsquo;ve introduced is the <strong>&lt;cdk:body /&gt;</strong> tag. This tag indicates where we want to render the contents of the component. So any content (or child components) we nest in out <strong>tab</strong> tag will be wrapped by the div tag.</p>
+
+<p>We&rsquo;ll see this <strong>&lt;cdk:body /&gt;</strong> tag again when we look as the (slightly more complex) tabs renderer:</p>
+
+<p>div=. <strong>tabs.template.xhtml</strong></p>
+
+<pre class="prettyprint"><?xml version="1.0" encoding="UTF-8"?>
+
+<cdk:root xmlns="http://jboss.org/schema/richfaces/cdk/xhtml-el"
+        xmlns:cdk="http://jboss.org/schema/richfaces/cdk/core"
+        xmlns:c="http://jboss.org/schema/richfaces/cdk/jstl/core"
+        xmlns:cc="http://jboss.org/schema/richfaces/cdk/jsf/composite">
+
+    <cc:interface>
+        <cdk:class>ca.bleathem.richfaces.jquery.renderkit.TabsRenderer</cdk:class>
+        <cdk:superclass>org.richfaces.renderkit.html.DivPanelRenderer</cdk:superclass>
+        <cdk:renderer-type>ca.bleathem.jquery.TabsRenderer</cdk:renderer-type>
+        <cdk:resource-dependency name="" />
+        <cdk:resource-dependency library = "javax.faces" name = "jsf.js" />
+        <cdk:resource-dependency name = "jquery.js" />
+        <cdk:resource-dependency library = "com.jqueryui/css/ui-lightness" name = "jquery-ui-1.8.16.custom.css" />
+        <cdk:resource-dependency library = "com.jqueryui/development-bundle/ui" name = "jquery.ui.core.js" />
+        <cdk:resource-dependency library = "com.jqueryui/development-bundle/ui" name = "jquery.ui.tabs.js" />
+    </cc:interface>
+
+    <cc:implementation>
+        <div id="\#{clientId}" class="rf_jq_tabs">
+            <ul>
+                <c:forEach items="\#{component.children}" var="child">
+                    <li><a href="#\#{child.clientId}">\#{child.attributes['title']}</a></li>
+                </c:forEach>
+            </ul>
+            <cdk:body />
+        </div>
+
+        <script type="text/javascript">
+            jQuery(function() {
+                $(document.getElementById('\#{clientId}')).tabs();
+            });
+     </script>
+    </cc:implementation>
+
+</cdk:root>
+</pre>
+
+<p>This renderer template introduces a number of new concepts. For one, you might have noticed I didn&rsquo;t create a RenderBase class, like we did for the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component. We could have, but I wanted to demonstrate that it&rsquo;s not strictly necessary. The CDK allows one to replace the <strong>@ResourceDependency</strong> annotations we used in the <strong>DatepickerRenderBase</strong>, with a CDK tag: <strong>&lt;cdk:resource-dependency /&gt;.</strong> This is a one-for-one replacement for the annotation, with matching attributes (in fact, the CDK creates actual @ResourcesDependency annotations in the generated java code). This allows us to define all the required javascript and css resources required by the component in the renderer template itself.</p>
+
+<p>We&rsquo;ve also made use of the jstl core EL expressions to execute some logic in our renderer. You can see we loop over each of the children of the <strong>tabs</strong> component, which will be our <strong>tab</strong> components. For each child <strong>tab</strong>, we create an entry in an unordered list with the <strong>title</strong> attribute of the tab. This isn&rsquo;t just some arbitrary html, we are fulfilling the contract of the <a href="http://jqueryui.com/demos/tabs/">jQuery UI tabs</a> plugin. The plugin is going to look for this specific markup to render the tab components, and attach the necessary behavior.</p>
+
+<p>Following the unodered list, we see the <strong>&lt;cdk:body /&gt;</strong> tag. This renders the child components, delegating to the render associated with each child. In this case, the children are the <strong>tab</strong> components and will be rendered using the <strong>tab</strong> renderer from the above <strong>tab.template.xhtml</strong> template.</p>
+
+<p>The last piece of this template is the javascript call, where we invoke the jQuery UI tabs plugin to enable the client-side behavior. We aren&rsquo;t passing any options to the plugin in this example, but we could easily do so using the <strong>scriptOption</strong> CDK tag demonstrated with the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component.</p>
+
+<h2 id="the-result">The Result</h2>
+
+<p>So what does it look like when we put it all together?</p>
+
+<p>With this sample markup:</p>
+
+<pre class="prettyprint">
+<b:tabs>
+    <b:tab title="Tab 1">
+        Hello <b>Tab</b>!!
+    </b:tab>
+    <b:tab title="Tab 2">
+        With nested components:
+        <br />
+        <b:datepicker value="\#{myBean.value}" dateFormat="yy-mm-dd" showOn="both" buttonImageOnly="true" /> <br />
+    </b:tab>
+</b:tabs>
+</pre>
+
+<p>We can see we have multiple tabs, and for kicks I nested the <a href="http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html">datepicker</a> component from the previous CDK entry.</p>
+
+<p>div=. <a href="/images/blog/2011-11-29-richfaces-4-cdk-jqeury-ui-tabs/calendar_tab.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="228" src="/images/blog/2011-11-29-richfaces-4-cdk-jqeury-ui-tabs/calendar_tab.png" width="320" /></a></p>
+
+<p>So here it is, the jQuery UI tabs plugin wrapped with the RichFaces CDK, providing us with a bare-bones tab component. A lot more work is required to get this to a point where it could replace the RichFaces tab component, but we have succeeded in creating a functional component leveraging existing javascript code, and without a lot of work on our part.</p>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/java-ee'>Java EE</a></li>
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/richfaces'>RichFaces</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.cr1-release-announcement/"
+                class="button big previous">RichFaces 4.1.0.CR1 Release Announcement</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.cr2-release-announcement/"
+                class="button big next">RichFaces 4.1.0.CR2 Release Announcement</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

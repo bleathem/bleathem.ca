@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JQuery on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/jquery/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/jquery/</link>
     <description>Recent content in JQuery on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 11 Mar 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/jquery/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hands on with the jQuery UI widget factory at DevNation</title>
-      <link>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</link>
       <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</guid>
       <description>I&amp;#8217;m thrilled to be speaking the upcoming DevNation conference. DevNation is an Open Source Developer conference co-located with the Red Hat Summit. With the announced agenda and the co-location with Summit, the conference is shaping up to be quite the event!
  I&amp;#8217;ll be speaking about developing widgets with the jQuery UI widget factory. We&amp;#8217;ll look at how the widget factory takes away much of the boiler plate when writing stateful jQuery plug-ins, statefulness that comes intrinsically when creating visual plug-ins.</description>
     </item>
     
     <item>
       <title>Polyglot Widgets</title>
-      <link>http://www.bleathem.ca/blog/polyglot-widgets/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/polyglot-widgets/</link>
       <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/polyglot-widgets/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/polyglot-widgets/</guid>
       <description>JBoss Developer Framework   The JBoss JDF project shows Java EE developers how to build state-of-the-art applications using the JBoss implementations of the Java EE stack. Specifically, the JDF View Frameworks section identifies a number of alternative approaches one can take when developing the view layer of your application. We in the RichFaces project have been working towards better supporting this effort by redesigning our JSF component architecture to allow the javascript part of our components (what we call our &amp;ldquo;widgets&amp;rdquo;) to be used independent of JSF, either in a standalone manner or coupled with another web framework.</description>
     </item>
     

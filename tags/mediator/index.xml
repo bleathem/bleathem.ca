@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mediator on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/mediator/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/mediator/</link>
     <description>Recent content in Mediator on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Oct 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/mediator/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/mediator/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Error handling in a request/response model with the mediator pattern</title>
-      <link>http://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</link>
       <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</guid>
       <description>The mediator pattern Addy Osmani has a great blog post introducing the mediator pattern in his post Patterns For Large-Scale JavaScript Application Architecture. I&amp;#8217;ve recently started working with this pattern, using the mediator.js implementation available via npm. Overall the pattern works well when notifying one module of changes in another; for example when publishing state changes.
  However one area where the pattern seems to fall short is when one module wants to request information from another.</description>
     </item>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ViewConfig on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/viewconfig/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/viewconfig/</link>
     <description>Recent content in ViewConfig on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 27 Mar 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/viewconfig/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/viewconfig/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>View Configuration with Seam 3 Faces - the Introduction</title>
-      <link>http://www.bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</link>
       <pubDate>Sun, 27 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</guid>
       <description>In Seam Faces we&amp;rsquo;ve provided JSF developers with a mechanism to centrally configure various aspects of their JSF views. Concerns like transaction control and view security are currently supported, and support for URL rewriting, XSRF attack prevention, and JSF navigation is in the planning stage.
 The end-goal is to support view configuration via multiple sources (including some support for &amp;lt;f:metadata&amp;gt; child tags). For now we provide type-safe configuration using annotations on enums.</description>
     </item>

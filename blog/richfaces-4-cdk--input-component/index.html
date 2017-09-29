@@ -1,0 +1,878 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>RichFaces 4 CDK | Input Component</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="RichFaces 4 CDK | Input Component"/>
+<meta name="twitter:description" content="With our last component, we saw how we could output some simple text with a custom JSF component created with the RichFaces CDK. Let&rsquo;s increment the complexity, and see how we can create a component that accepts input. Again, the goal here is to highlight how the important features fit together, and to leverage as much of the plumbing work as possible from the RichFaces CDK.
+If you are interested in following along in your IDE, you can get the code below on github."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="RichFaces 4 CDK | Input Component" />
+<meta property="og:description" content="With our last component, we saw how we could output some simple text with a custom JSF component created with the RichFaces CDK. Let&rsquo;s increment the complexity, and see how we can create a component that accepts input. Again, the goal here is to highlight how the important features fit together, and to leverage as much of the plumbing work as possible from the RichFaces CDK.
+If you are interested in following along in your IDE, you can get the code below on github." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--input-component/" />
+
+
+
+<meta property="article:published_time" content="2011-09-21T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2011-09-21T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="RichFaces 4 CDK | Input Component">
+<meta itemprop="description" content="With our last component, we saw how we could output some simple text with a custom JSF component created with the RichFaces CDK. Let&rsquo;s increment the complexity, and see how we can create a component that accepts input. Again, the goal here is to highlight how the important features fit together, and to leverage as much of the plumbing work as possible from the RichFaces CDK.
+If you are interested in following along in your IDE, you can get the code below on github.">
+
+
+<meta itemprop="dateModified" content="2011-09-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="486">
+
+
+
+<meta itemprop="keywords" content="CDK,RichFaces," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f&text=RichFaces%204%20CDK%20%7c%20Input%20Component&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f&title=RichFaces%204%20CDK%20%7c%20Input%20Component" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f&title=RichFaces%204%20CDK%20%7c%20Input%20Component" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f&title=RichFaces%204%20CDK%20%7c%20Input%20Component" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--input-component/">RichFaces 4 CDK | Input Component</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2011-09-21'>
+            September 21, 2011</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>3 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f&text=RichFaces%204%20CDK%20%7c%20Input%20Component&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f&title=RichFaces%204%20CDK%20%7c%20Input%20Component" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f&title=RichFaces%204%20CDK%20%7c%20Input%20Component" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f&title=RichFaces%204%20CDK%20%7c%20Input%20Component" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4-cdk--input-component%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--input-component/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        
+
+<p>With our <a href="http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html">last component</a>, we saw how we could output some simple text with a custom JSF component created with the RichFaces CDK.  Let&rsquo;s increment the complexity, and see how we can create a component that accepts input. Again, the goal here is to highlight how the important features fit together, and to leverage as much of the plumbing work as possible from the RichFaces CDK.</p>
+
+<p>If you are interested in following along in your IDE, you can get the code below on <a href="https://github.com/bleathem/CDK-examples" style="color: #5588aa; text-decoration: none;">github</a>.</p>
+
+<h2 id="the-component-class">The Component Class</h2>
+
+<p>In a similar approach to our Hello World component, we&rsquo;ll start with the component class for our Input component:</p>
+
+<p>div=. <strong>AbstractInput.java</strong></p>
+
+<pre><code class="language-java">package ca.bleathem.richfaces.input.component;
+
+import org.richfaces.cdk.annotations.*;
+
+@JsfComponent(
+        type = &quot;ca.bleathem.richfaces.input.Input&quot;,
+        family = &quot;ca.bleathem.input&quot;,
+        renderer = @JsfRenderer(type = &quot;ca.bleathem.input&quot;),
+        tag = @Tag(name=&quot;input&quot;))
+abstract public class AbstractInput extends javax.faces.component.UIInput {
+
+}
+</code></pre>
+
+<p>This looks pretty similar to the component class for the Hello World component, with an appropriate changing or type, family, renderer and tag. One significant change to take note of is the base class for the component. Notice how we are extending the <a href="http://javaserverfaces.java.net/nonav/docs/2.0/javadocs/javax/faces/component/UIInput.html"><strong>UIInput</strong></a> class. This allows us to leverage the value holding and state saving that has already been built into this component. No matter what kind of UI you want to build for your component, you will almost always want to store a single value (we&rsquo;ll discuss select many components in another post). So extending UIInput is generally a good idea.</p>
+
+<h2 id="the-renderer">The Renderer</h2>
+
+<p>The corresponding renderer template for our input component is:</p>
+
+<p>div=. <strong>input.template.xml</strong></p>
+
+<pre><code class="language-xml">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+
+&lt;cdk:root xmlns=&quot;http://jboss.org/schema/richfaces/cdk/xhtml-el&quot; xmlns:cdk=&quot;http://jboss.org/schema/richfaces/cdk/core&quot;
+    xmlns:c=&quot;http://jboss.org/schema/richfaces/cdk/jstl/core&quot; xmlns:cc=&quot;http://jboss.org/schema/richfaces/cdk/jsf/composite&quot;
+    xmlns:javaee=&quot;http://java.sun.com/xml/ns/javaee&quot;&gt;
+
+    &lt;cc:interface&gt;
+        &lt;cdk:class&gt;ca.bleathem.richfaces.input.renderkit.InputRenderer&lt;/cdk:class&gt;
+        &lt;cdk:superclass&gt;org.richfaces.renderkit.InputRendererBase&lt;/cdk:superclass&gt;
+        &lt;cdk:renderer-type&gt;ca.bleathem.input&lt;/cdk:renderer-type&gt;
+    &lt;/cc:interface&gt;
+
+    &lt;cc:implementation&gt;
+        &lt;input type=&quot;text&quot; name=&quot;\#{clientId}&quot; value=&quot;\#{getInputValue(facesContext, component)}&quot; /&gt;
+    &lt;/cc:implementation&gt;
+
+&lt;/cdk:root&gt;
+</code></pre>
+
+<p>Again, this looks pretty similar to the template for the Hello World component. The key difference being the Renderer <strong>superclass</strong>, and the html markup in the <strong>cc:implementation</strong>. By extending the RichFaces <a href="http://docs.jboss.org/richfaces/latest_4_0_X/javadoc/richfaces-components-ui/org/richfaces/renderkit/InputRendererBase.html" style="font-style: italic;">InputRendererBase</a> class, we save ourselves from having to write the logic to decode and invoke the validators for our component. Again, this is something we will want to do for many of the components we write.</p>
+
+<p>The html markup is also rather simple. By giving the input element the name of our component ID, we are indicating which form component should be decoded when the component is processed. When authoring a component with a complex UI, you will often make this input element a <strong>hidden</strong> input type, to store and submit your value while not interfering with your UI. We&rsquo;ll see more of this in later entries of this CDK series.</p>
+
+<p>I&rsquo;ll also add that the <strong><strong>package-info.java</strong></strong> file described in the Hello World entry is still required, if you don&rsquo;t already have one included in your jar.</p>
+
+<p>And that&rsquo;s our input component - again done as simply as possible. The next entry will wrap an existing jQuery UI component, showing how the CDK is an effective means to leverage the work others have already put in to authoring complex javascript components.</p>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/java-ee'>Java EE</a></li>
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/richfaces'>RichFaces</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m2-release-announcement/"
+                class="button big previous">RichFaces 4.1.0.M2 Release Announcement</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/testing-as7-web-apps-over-ssl/"
+                class="button big next">Testing AS7 web apps over SSL</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

@@ -1,0 +1,1190 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>RichFaces 4.5.0.Alpha3 Release Announcement</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="RichFaces 4.5.0.Alpha3 Release Announcement"/>
+<meta name="twitter:description" content="We have a feature complete release of RichFaces 4.5 available with the release of RichFaces 4.5.0.Alpha3. This is a full framework release with RichFaces 4.5.0.Alpha3, whereas previous 4.5 Alpha releases consisted of just the components. We&#8217;ve back-ported many of the improvements from RichFaces 5 Alphas into this release, while maintaining backward compatibility with the RichFaces 4.3 branch.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="RichFaces 4.5.0.Alpha3 Release Announcement" />
+<meta property="og:description" content="We have a feature complete release of RichFaces 4.5 available with the release of RichFaces 4.5.0.Alpha3. This is a full framework release with RichFaces 4.5.0.Alpha3, whereas previous 4.5 Alpha releases consisted of just the components. We&#8217;ve back-ported many of the improvements from RichFaces 5 Alphas into this release, while maintaining backward compatibility with the RichFaces 4.3 branch.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/" />
+
+
+
+<meta property="article:published_time" content="2014-07-21T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2014-07-21T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="RichFaces 4.5.0.Alpha3 Release Announcement">
+<meta itemprop="description" content="We have a feature complete release of RichFaces 4.5 available with the release of RichFaces 4.5.0.Alpha3. This is a full framework release with RichFaces 4.5.0.Alpha3, whereas previous 4.5 Alpha releases consisted of just the components. We&#8217;ve back-ported many of the improvements from RichFaces 5 Alphas into this release, while maintaining backward compatibility with the RichFaces 4.3 branch.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.">
+
+
+<meta itemprop="dateModified" content="2014-07-21T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1184">
+
+
+
+<meta itemprop="keywords" content="RichFaces,RF45,Alpha," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f&text=RichFaces%204.5.0.Alpha3%20Release%20Announcement&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f&title=RichFaces%204.5.0.Alpha3%20Release%20Announcement" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f&title=RichFaces%204.5.0.Alpha3%20Release%20Announcement" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f&title=RichFaces%204.5.0.Alpha3%20Release%20Announcement" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/">RichFaces 4.5.0.Alpha3 Release Announcement</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2014-07-21'>
+            July 21, 2014</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>6 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f&text=RichFaces%204.5.0.Alpha3%20Release%20Announcement&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f&title=RichFaces%204.5.0.Alpha3%20Release%20Announcement" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f&title=RichFaces%204.5.0.Alpha3%20Release%20Announcement" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f&title=RichFaces%204.5.0.Alpha3%20Release%20Announcement" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.5.0.alpha3-release-announcement%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        <div id="preamble">
+<div class="sectionbody">
+<div class="imageblock" style="float: right">
+<div class="content">
+<a class="image" href="http://richfaces.org/"><img src="/img/blog/common/richfaces.png" alt="RichFaces"></a>
+</div>
+</div>
+<div class="paragraph">
+<p>We have a feature complete release of RichFaces 4.5 available with the release of RichFaces <a href="https://issues.jboss.org/browse/RF/fixforversion/12324013">4.5.0.Alpha3</a>.  This is a full framework release with RichFaces 4.5.0.Alpha3, whereas previous 4.5 Alpha releases consisted of just the components.  We&#8217;ve back-ported many of the improvements from RichFaces 5 Alphas into this release, while maintaining backward compatibility with the RichFaces 4.3 branch.</p>
+</div>
+<div class="paragraph alert alert-info">
+<p><strong>To try out this release:</strong> You can download the distribution <a href="http://www.jboss.org/richfaces/download/milestones">directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Alpha3. For more information on setting up a RichFaces 4 application, refer to our <a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x">getting started guide</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_release_highlights">Release Highlights</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Significant improvements in this RichFaces 4.5.0.Alpha3 release over previous 4.3 releases include:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>JSF 2.2 compatibility</p>
+</li>
+<li>
+<p>Our replacement Extended PartialViewContext (PVC) that extends the JSF PVC (for better interoperability with other JSF-based frameworks)</p>
+</li>
+<li>
+<p>A re-vamped build consisting of a single (multi-module) repository</p>
+</li>
+<li>
+<p>Chart components developed as part of last year&#8217;s GSoC</p>
+</li>
+<li>
+<p>The updated JSF 2.2 compatible RichFaces Fileupload component</p>
+</li>
+<li>
+<p>A type-safe approach for attribute definitions (using interfaces rather than xml)</p>
+</li>
+<li>
+<p>Page fragments for abstracting your functional tests</p>
+</li>
+<li>
+<p>An simplified Asciidoc version of the docs</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_release_notes_a_href_https_issues_jboss_org_secure_releasenote_jspa_projectid_12310341_version_12324013_i_class_icon_external_link_sign_i_a">Release Notes <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12324013"><i class='icon-external-link-sign'></i></a></h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_bug">Bug</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-11093">RF-11093</a> - UIDataAdaptor context variable backup broken (re-entrance problem)</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-12108">RF-12108</a> - Components second tab changes are not rendered after performing some ajax action if attribute ajaxRendered="true" inside &lt;rich:message /&gt; located on first tab</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-12132">RF-12132</a> - RichFaces queue not cleared after js error in oncomplete attribute</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13018">RF-13018</a> - a4j:commandButton wrong actions performed</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13200">RF-13200</a> - Tree: Uncaught TypeError: Object #&lt;Object&gt; has no method '$'</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13235">RF-13235</a> - Tree - Row key conversion fails (UITree should not have generated @rowKeyConverter, since it is fully implemented in AbstractTree)</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13361">RF-13361</a> - Placeholder inside calendar is not rendered</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13374">RF-13374</a> - RichFaces push registered as $.fn.push overrides jQuery function</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13498">RF-13498</a> - Photoalbum - shutting down server with deployed app will throw JdbcSQLException:</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13513">RF-13513</a> - CollectionDataModel API is not available on pre-JSF 2.1 that poses backward compatibility problem</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13518">RF-13518</a> - Action Listener - invoking from composite component does not work</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13520">RF-13520</a> - mediaOutput: NPE is thrown when used with CDI beans and JSF 2.2</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13559">RF-13559</a> - Backport RF-13018 (a4j:commandButton wrong actions performed) to RF 4</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13565">RF-13565</a> - RichFaces 4.5 not compilable because of FileUploadResourcesTest</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13580">RF-13580</a> - RichFaces 4.5.x branch doesn&#8217;t compile</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13581">RF-13581</a> - Remove components from the framework module</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13591">RF-13591</a> - RichFaces 4.5 integration tests are failing</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13609">RF-13609</a> - Showcase doesn&#8217;t build</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13610">RF-13610</a> - Resource loading error in the showcase</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13611">RF-13611</a> - RichFaces 5.0.0.Alpha3 doesn&#8217;t work with Weld 2.2.0.Final</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13614">RF-13614</a> - RichFaces 4.5 unit tests are failing</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13615">RF-13615</a> - ExtendedDataTable: double ajax request on scrolling</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13630">RF-13630</a> - RichFaces 4.5.x can not be built due to cyclic maven dependency</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13635">RF-13635</a> - rich:menuGroup: Menu node image is missing</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13640">RF-13640</a> - Autocomplete with custom layout: cant select item by mouse</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13644">RF-13644</a> - Rich:editor JS Error in IE11</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13646">RF-13646</a> - Fix resource optimization</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13647">RF-13647</a> - File Download throws exception when used with a commandButton of type="button"</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13649">RF-13649</a> - TogglePanel: fails to render meta-component '@header'</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13650">RF-13650</a> - ITResourceOptimization tests fail - no resource aggregation applied</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13656">RF-13656</a> - Table collapse after tab change</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13657">RF-13657</a> - Remove bootstrap, font-awesome and richwidgets from 4.5</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13658">RF-13658</a> - Component issues in 4.5</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13676">RF-13676</a> - InputNumberSpinner - Validation is not triggered by ajax when nested in iteration components</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13677">RF-13677</a> - InputNumberSlider &amp; Spinner render does not work when nested in iteration components</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13678">RF-13678</a> - Render @all does not work for nested a4j:region in collapsibleSubTable</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13679">RF-13679</a> - PickList is missing styleClass attribute</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13680">RF-13680</a> - Editor JS API method blur does not work after upgrade of CKEditor</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13682">RF-13682</a> - Stateless view: CSS stylesheets not included in head after form submit</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13684">RF-13684</a> - GraphValidator with uiRepat does not validate numeric group correctly</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13685">RF-13685</a> - ExtendedPartialViewContext.release causes IllegalStateException</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13687">RF-13687</a> - TabPanel header is not updated after switching of tabs</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13692">RF-13692</a> - Photoalbum can not be deployed to WildFly 8.0.x or 8.1.x due to Weld exception</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13697">RF-13697</a> - fileupload: maxFilesQuantity + multiple select: can upload more files than the limit</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13698">RF-13698</a> - RF 4.5 Chart title does not render</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13699">RF-13699</a> - RF 4.5 Chart attribute 'zoom' does not work</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13701">RF-13701</a> - RF 4.5 Bar chart plotClick malfunctioning</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13706">RF-13706</a> - dequeued Ajax request not processed correctly if its source element has been updated</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13717">RF-13717</a> - Some integration tests within components/rich are using wrongly FrameworkDeployment class</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_component_upgrade">Component Upgrade</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13571">RF-13571</a> - Upgrade Arquillian components: Core, Drone, Warp</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13641">RF-13641</a> - Upgrade CSSParser to 0.9.14</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13667">RF-13667</a> - Upgrade mojarra dependency
+Enhancement</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13027">RF-13027</a> - Warning when deploying showcase - using a private modules which can be removed in the future</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13160">RF-13160</a> - Refactor the InputNumber* components into abstract classes</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13307">RF-13307</a> - Support java.util.Collection in iteration components</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13505">RF-13505</a> - Refactor custom tree traversal logic in EPVCI in order to leverage VisitContextFactory (blocked by Mojarra issue)</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13514">RF-13514</a> - Support file upload progress tracking in Servlets &gt;= 3.0 environment</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13612">RF-13612</a> - Document styling attributes for rich:dataTable</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13623">RF-13623</a> - Merge components/pom with components/parent/pom in 4.5.x</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13634">RF-13634</a> - Consolidate deployment classes for integration tests</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13675">RF-13675</a> - Showcase: chart component improvements</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13683">RF-13683</a> - Backport RF-13237 (Showcase: enable debugging tools (ui:debug, r:log) when in development mode) to RF 4.5 and 4.3 Showcase</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13713">RF-13713</a> - Create Smoke test(s) for chart in RF 4.5</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_feature_request">Feature Request</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-12292">RF-12292</a> - "this" in oncomplete of a4j:commandButton returns window object.</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13597">RF-13597</a> - Drag and drop support for file upload</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13620">RF-13620</a> - Port the RichFaces 5 re-write of xml attribute to interfaces</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13636">RF-13636</a> - Add List Impls to the resource serialization whitelist</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13638">RF-13638</a> - Upgrade CKEditor to 4.3</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13651">RF-13651</a> - Integration tests failing in chrome</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13664">RF-13664</a> - EDT firstChild call will return a text element when the source code is formatted to have one element per line</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13665">RF-13665</a> - RichFaces 4.5 should fail fast when used with un-patched Mojarra</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13670">RF-13670</a> - Update the "new" labels in the showcase</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13673">RF-13673</a> - Backport the plain skin fix from RF 5</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_task">Task</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13334">RF-13334</a> - Upgrade jQuery UI to 1.10.3</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13507">RF-13507</a> - Backport RF-13317 (EPVCI should specify correct ViewState)</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13582">RF-13582</a> - Revert the core package re-factoring</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13583">RF-13583</a> - Backport the chart components to RichFaces 4.5 components module</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13584">RF-13584</a> - Backport the RF 5 component fixes</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13585">RF-13585</a> - Re-factor the components demo</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13586">RF-13586</a> - Port the page fragments to RF 4.5</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13608">RF-13608</a> - Apply appropriate package and artifact names to the component poms</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13626">RF-13626</a> - Rename the BOM artifact</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13627">RF-13627</a> - Refactor the RF 4.5 components to make use of the type-safe handlerClass attribute</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13631">RF-13631</a> - Remove the components/dist module</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13632">RF-13632</a> - RF 4.5 - refactor Javascript namespaces</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13637">RF-13637</a> - Refresh the dist zip for RF 4.5</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13642">RF-13642</a> - Fork and re-factor the asciidoc-based docs from RF 5 to RF 4.5</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13652">RF-13652</a> - Forward port the 4.3.7 fixes into the 4.5.x branch</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13653">RF-13653</a> - Update component namespaces in 4.5 examples</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13654">RF-13654</a> - Port photoalbum changes from 4.3.x</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13672">RF-13672</a> - Framework tests: add profile for WildFly 8.1</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13694">RF-13694</a> - Update README files for RichFaces 4.5.x</p>
+</li>
+<li>
+<p><a href="https://issues.jboss.org/browse/RF-13709">RF-13709</a> - Remove the chart components from the RichFaces mobile showcase</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_next_steps">Next steps</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With RichFaces 4.5.0.Alpha3 being feature complete we will proceed with a series of stabilizing Betas, followed by CR and Final releases in the end-of-summer / early-fall time-frame.  The post 4.5.0 story is a bit more complicated, and deserving of <a href="/blog/2014/07/richfaces-will-pursue-stability-over-innovation.html">it&#8217;s own post</a>.</p>
+</div>
+</div>
+</div>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/java-ee'>Java EE</a></li>
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/richfaces'>RichFaces</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/"
+                class="button big previous">RichFaces will pursue a path of stability over innovation</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.beta1-release-announcement/"
+                class="button big next">RichFaces 4.5.0.Beta1 Release Announcement</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

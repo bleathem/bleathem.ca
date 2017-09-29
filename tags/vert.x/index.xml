@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Vert.x on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/vert.x/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/vert.x/</link>
     <description>Recent content in Vert.x on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 26 Jan 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/vert.x/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/vert.x/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Vert.x with gulp.js</title>
-      <link>http://www.bleathem.ca/blog/vert.x-with-gulp.js/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/vert.x-with-gulp.js/</link>
       <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/vert.x-with-gulp.js/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/vert.x-with-gulp.js/</guid>
       <description>Vert.x is often put forward as a polyglot alternative to node.js that runs on the JVM. A read through the vert.x javascript docs indicates that javascript is a first-class language in vert.x, and both node.js and vert.x use an event-driven, non-blocking I/O programming model. But to what degree will a node programmer feel at home in writing a vert.x application?
  In this blog post I will look at using gulp, a node.</description>
     </item>

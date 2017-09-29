@@ -2,109 +2,109 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Javascript on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/categories/javascript/</link>
+    <link>bleathem.github.io/bleathem.ca/categories/javascript/</link>
     <description>Recent content in Javascript on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Oct 2015 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Error handling in a request/response model with the mediator pattern</title>
-      <link>http://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</link>
       <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</guid>
       <description>The mediator pattern Addy Osmani has a great blog post introducing the mediator pattern in his post Patterns For Large-Scale JavaScript Application Architecture. I&amp;#8217;ve recently started working with this pattern, using the mediator.js implementation available via npm. Overall the pattern works well when notifying one module of changes in another; for example when publishing state changes.
  However one area where the pattern seems to fall short is when one module wants to request information from another.</description>
     </item>
     
     <item>
       <title>Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo</title>
-      <link>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</link>
       <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</guid>
       <description>At this year&amp;#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo. I made the custom front-ends in the demo using Reactive Extensions for javascript (Rx.js) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using d3.js.
  If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at 19m).</description>
     </item>
     
     <item>
       <title>Rx.js Session at DevNation</title>
-      <link>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/rx.js-session-at-devnation/</link>
       <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/rx.js-session-at-devnation/</guid>
       <description>I presented a Session on Rx.js at DevNation this year. My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time. This analogy was very well described by @jhusain his Async Javascript at Netflix talk that initially got me excited about Reactive Functional programming. My contribution to this idea is to present it in a visual way.
  To visualize both a &#34;regular&#34; collection, as well as a collection-in-time, I used the d3.</description>
     </item>
     
     <item>
       <title>Google Play Services Oauth2 Token Lookup via Cordova</title>
-      <link>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</link>
       <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</guid>
       <description>Delegating to 3rd parties to manage your authorization is incredibly helpful when developing a new application. A benefit to users and developers alike, this task is made all the more helpful with the number of social networks providing Oauth2 APIs that we can use for our authorization. In this blog post I will address using the Google Play services on Android from a hybrid mobile Cordova application to retrieve an Oauth2 token that we can then use with Google&amp;#8217;s Oauth2 REST API.</description>
     </item>
     
     <item>
       <title>Scalable splash screens with Cordova</title>
-      <link>http://www.bleathem.ca/blog/scalable-splash-screens-with-cordova/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/</link>
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/scalable-splash-screens-with-cordova/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/</guid>
       <description>Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks. In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.
    Drawing the splash screen If you&amp;#8217;re not an artist (as I am not!) then creating a graphical splash screen can be a somewhat daunting task.</description>
     </item>
     
     <item>
       <title>Vert.x with gulp.js</title>
-      <link>http://www.bleathem.ca/blog/vert.x-with-gulp.js/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/vert.x-with-gulp.js/</link>
       <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/vert.x-with-gulp.js/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/vert.x-with-gulp.js/</guid>
       <description>Vert.x is often put forward as a polyglot alternative to node.js that runs on the JVM. A read through the vert.x javascript docs indicates that javascript is a first-class language in vert.x, and both node.js and vert.x use an event-driven, non-blocking I/O programming model. But to what degree will a node programmer feel at home in writing a vert.x application?
  In this blog post I will look at using gulp, a node.</description>
     </item>
     
     <item>
       <title>Hands on with the jQuery UI widget factory at DevNation</title>
-      <link>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</link>
       <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</guid>
       <description>I&amp;#8217;m thrilled to be speaking the upcoming DevNation conference. DevNation is an Open Source Developer conference co-located with the Red Hat Summit. With the announced agenda and the co-location with Summit, the conference is shaping up to be quite the event!
  I&amp;#8217;ll be speaking about developing widgets with the jQuery UI widget factory. We&amp;#8217;ll look at how the widget factory takes away much of the boiler plate when writing stateful jQuery plug-ins, statefulness that comes intrinsically when creating visual plug-ins.</description>
     </item>
     
     <item>
       <title>RichWidgets 0.1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richwidgets-0.1-release-announcement/</link>
       <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richwidgets-0.1-release-announcement/</guid>
       <description>RichWidgets 0.1 is released and ready for download. The road to this first release was a long one, requiring us to get our first javascript project in order. Built with grunt, dependencies managed by bower, and our jasmine tests run by karma, RichWidgets is pure javascript project and as such should be equally accessible with all languages and frameworks targeting the web.
  To try out this release: You can download the distribution directly, or for bower users, point your bower.</description>
     </item>
     
     <item>
       <title>Polyglot Widgets</title>
-      <link>http://www.bleathem.ca/blog/polyglot-widgets/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/polyglot-widgets/</link>
       <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/polyglot-widgets/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/polyglot-widgets/</guid>
       <description>JBoss Developer Framework   The JBoss JDF project shows Java EE developers how to build state-of-the-art applications using the JBoss implementations of the Java EE stack. Specifically, the JDF View Frameworks section identifies a number of alternative approaches one can take when developing the view layer of your application. We in the RichFaces project have been working towards better supporting this effort by redesigning our JSF component architecture to allow the javascript part of our components (what we call our &amp;ldquo;widgets&amp;rdquo;) to be used independent of JSF, either in a standalone manner or coupled with another web framework.</description>
     </item>
     
     <item>
       <title>RichFaces 4 CDK | jQuery UI Calendar</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</link>
       <pubDate>Fri, 07 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</guid>
       <description>Further incrementing the complexity over the input component we created previously, this time we will create a JSF calendar component. Being pragmatic OSS developers, we will leverage the existing javascript of the datepicker component from the jQuery UI project, and we&amp;rsquo;ll see how well the RichFaces CDK lends itself to mapping JSF component attributes into javascript configuration options.
 As always, if you are interested in following along in your IDE, you can get the code below on github.</description>
     </item>

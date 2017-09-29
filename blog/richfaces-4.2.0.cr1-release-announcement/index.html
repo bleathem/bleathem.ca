@@ -1,0 +1,927 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>RichFaces 4.2.0.CR1 Release Announcement</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="RichFaces 4.2.0.CR1 Release Announcement"/>
+<meta name="twitter:description" content="I’m excited to announce the availability of RichFaces 4.2.0.CR1, our release candidate for RichFaces 4.2.0. Hot on the heels of the RichFaces 4.1 release, Richfaces 4.2 delivers some &ldquo;missing&rdquo; components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API. Not to forget a significant number of bug fixes, and overall usability improvements.
+To try out this release, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="RichFaces 4.2.0.CR1 Release Announcement" />
+<meta property="og:description" content="I’m excited to announce the availability of RichFaces 4.2.0.CR1, our release candidate for RichFaces 4.2.0. Hot on the heels of the RichFaces 4.1 release, Richfaces 4.2 delivers some &ldquo;missing&rdquo; components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API. Not to forget a significant number of bug fixes, and overall usability improvements.
+To try out this release, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/richfaces-4.2.0.cr1-release-announcement/" />
+
+
+
+<meta property="article:published_time" content="2012-02-08T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2012-02-08T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="RichFaces 4.2.0.CR1 Release Announcement">
+<meta itemprop="description" content="I’m excited to announce the availability of RichFaces 4.2.0.CR1, our release candidate for RichFaces 4.2.0. Hot on the heels of the RichFaces 4.1 release, Richfaces 4.2 delivers some &ldquo;missing&rdquo; components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API. Not to forget a significant number of bug fixes, and overall usability improvements.
+To try out this release, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom.">
+
+
+<meta itemprop="dateModified" content="2012-02-08T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="1177">
+
+
+
+<meta itemprop="keywords" content="RF42,RichFaces," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f&text=RichFaces%204.2.0.CR1%20Release%20Announcement&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f&title=RichFaces%204.2.0.CR1%20Release%20Announcement" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f&title=RichFaces%204.2.0.CR1%20Release%20Announcement" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f&title=RichFaces%204.2.0.CR1%20Release%20Announcement" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.2.0.cr1-release-announcement/">RichFaces 4.2.0.CR1 Release Announcement</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2012-02-08'>
+            February 8, 2012</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>6 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f&text=RichFaces%204.2.0.CR1%20Release%20Announcement&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f&title=RichFaces%204.2.0.CR1%20Release%20Announcement" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f&title=RichFaces%204.2.0.CR1%20Release%20Announcement" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f&title=RichFaces%204.2.0.CR1%20Release%20Announcement" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frichfaces-4.2.0.cr1-release-announcement%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.2.0.cr1-release-announcement/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        
+
+<p>I’m excited to announce the availability of RichFaces <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12310341&amp;version=12318573">4.2.0.CR1</a>, our release candidate for RichFaces 4.2.0.  Hot on the heels of the RichFaces <a href="http://blog.bleathem.ca/2011/12/richfaces-410final-release-announcement.html">4.1 release</a>, Richfaces 4.2 delivers some &ldquo;missing&rdquo; components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API.  Not to forget a significant number of bug fixes, and overall usability improvements.</p>
+
+<p>To try out this release, you can download the distribution <a href="http://www.jboss.org/richfaces/download/milestones">directly</a>, or for maven users, increment the RichFaces version in your pom.xml to 4.2.0.CR1. For more information on setting up a RichFaces 4 application, refer to our <a href="http://community.jboss.org/wiki/GettingstartedwithRichFaces4x">getting started guide</a>.</p>
+
+<p>Let’s begin our look at the RichFaces 4.2.0.CR1 release with a look at the new components: rich:contextMenu and rich:hotKey.</p>
+
+<h2 id="new-component-rich-contextmenu">New Component - rich:contextMenu</h2>
+
+<p>The <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=contextMenu">rich:contextMenu</a> component provides hierarchical context menu system similar to those found in many desktop applications, and was widely sought after by our community with a significant number of <a href="https://issues.jboss.org/browse/RF-10197">votes</a> in our issue tracker.  I’d like to thank our loyal and persistent community for identifying the gaps in our RichFaces 3 -&gt; Richfaces 4 migration story, and assure you that we will continue to work diligently to ease the migration process.</p>
+
+<p><a href="/img/blog/2012-02-08-richfaces-420cr1-release-announcement/contextMenu.png" imageanchor="1" style="clear: left; float: left; margin-bottom: 1em; margin-right: 1em;"><img border="0" src="/img/blog/2012-02-08-richfaces-420cr1-release-announcement/contextMenu.png" /></a>The rich:contextMenu itself is built on top of the existing rich:dropDownMenu implementation, making it a natural fit into the RichFaces 4 component set.  The rich:contextMenu has 3 modes of operation client, ajax, and server, and integrates with the row/node selection capabilities of the rich:extendedDataTable and rich:tree components.  The RichFaces showcase includes <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=contextMenu">examples</a> of each of these features.</p>
+
+<p>The RichFaces 3 feature of &ldquo;macrosubstituion&rdquo; (client side string replacement) for the contextMenu has been so far omitted from the feature, but is being racked via jira (<a href="https://issues.jboss.org/browse/RF-11842">RF-11842</a>).  Be sure to vote for this issue if you feel it’s important to include in a future Richfaces 4 release.  Likewise, be sure to file any jira issues should you have additional use-cases we’ve overlooked.</p>
+
+<h2 id="new-component-rich-hotkey">New Component - rich:hotKey</h2>
+
+<p>The <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=hotKey">rich:hotKey</a> component is another ported Richfaces 3 component we are making available with our 4.2.0.CR1 release.  The rich:hotKey component allows one to register a &ldquo;hot key&rdquo; on the page (or on a particular component) to execute some logic when the registered key-combination is pressed.  This is functionality is often sought after in &ldquo;heads down&rdquo; data entry style applications, but is also valuable in any use case where one wants to enable &ldquo;mouse free&rdquo; operations.  Many thanks to <a href="https://community.jboss.org/people/ilya_shaikovsky">Ilya Shaikovsky</a> for the pull request porting this feature to Richfaces 4.</p>
+
+<h2 id="improvements-a4j-push">Improvements - a4j:push</h2>
+
+<p>The a4j:push component has seen some attention, improving it’s usability with this release.  First and foremost is our decision to turn off JMS integration by default - as of RichFaces 4.2.0, JMS integration must be explicitly turned on (<a href="https://issues.jboss.org/browse/RF-11892">RF-11892</a>).  This breaking change was introduced to ease the on-boarding of new users with push technology, as the component now works in both Servlet and EE containers out-of-the-box.  Those who want to leverage the benefit of JMS integration will now have to explicitly enable it with the contextParam in your web.xml:</p>
+
+<pre class="prettyprint"><context-param>
+    <param-name>org.richfaces.push.jms.enabled</param-name>
+    <param-value>true</param-value>
+</context-param></pre>
+
+<p>Another usability improvement has been the introduction of on-demand topic creation (<a href="https://issues.jboss.org/browse/RF-11483">RF-11483</a>).  The significance of this change is that you no longer need to implement a ServletContextListener, initializing your topics at application startup time.  Instead, topics will be created on first access.  Similarly, the push component itself will be initialized on first use.</p>
+
+<p>However, when using push outside of the FacesContext threads (JMS-end points, timers, etc.) you will need to continue initializing push on startup, so that the push feature has a reference to the right contexts when called from those external threads.  To do so, enable the  context-param org.richfaces.push.initializeOnStartup in your web.xml.</p>
+
+<p><a href="https://community.jboss.org/people/lfryc">Lukas Fryc</a> has a great <a href="http://rik-ansikter.blogspot.com/2012/02/configuring-richfaces-push-with-42.html">blog post</a> giving an introduction to using the 4.2 a4j:push technology.  We&rsquo;ll have the Developer Guide updated with a complete description of using this feature in time for the 4.2.0.Final release.</p>
+
+<h2 id="resource-loading">Resource Loading</h2>
+
+<p>With our 4.1 release, we introduced our resource loading optimisation feature.  Unfortunately, we conflated the ideas of resource mapping, with resource minification/packaging.  There are valid use cases to enable resource mapping, while requiring neither minification, nor packaging, such as providing your own patched version of jsf.js, or even replacing the packaged version of jQuery with your own.</p>
+
+<p>To better reflect these use cases, we re-worked the context-params that enable the feature, renaming them to clarify their purpose, and introduced a resource mapping file (independent of the mapping file used with resource packaging - <a href="https://issues.jboss.org/browse/RF-11909">RF-11909</a>).  The 4.1 context-params map into the new 4.2 context-params as follows:</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">RichFaces 4.1 context-param</th>
+<th></th>
+<th align="left">RichFaces 4.2 context-param</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left">org.richfaces.resourceMapping.enabled</td>
+<td>&rarr;</td>
+<td align="left">org.richfaces.resourceOptimization.enabled</td>
+</tr>
+
+<tr>
+<td align="left">org.richfaces.resourceMapping.compressedStages</td>
+<td>&rarr;</td>
+<td align="left">org.richfaces.resourceOptimization.compressionStages</td>
+</tr>
+
+<tr>
+<td align="left">org.richfaces.resourceMapping.packedStages</td>
+<td>&rarr;</td>
+<td align="left">org.richfaces.resourceOptimization.packagingStages</td>
+</tr>
+</tbody>
+</table>
+
+<p><em>Note:</em> The 4.1 context-params will work in 4.2, they will be removed in a subsequent release</p>
+
+<p>The significance of this, it that application developers can now create a simple mapping file, overriding the individual entries of the default mapping file without having to re-execute the whole packaging/minification process.</p>
+
+<p>Look forward to some forthcoming blog posts detailing how to make use of the Resource Loading optimisations in RichFaces.  We&rsquo;ll also have the docs updated in time for the 4.2.0.Final release.</p>
+
+<h2 id="skinning-improvement-rounded-corners">Skinning Improvement - Rounded Corners</h2>
+
+<p><a href="/img/blog/2012-02-08-richfaces-420cr1-release-announcement/round2.png" imageanchor="1" style="clear: right; float: right; margin-bottom: 1em; margin-left: 1em;"><img border="0" height="261" src="/img/blog/2012-02-08-richfaces-420cr1-release-announcement/round2.png" width="400" /></a>A pull request from a community member (<a href="https://community.jboss.org/people/gonzalad">Adrian Gonzalez</a>) enables round corner support in the RichFaces skins (<a href="https://issues.jboss.org/browse/RF-11848">RF-11848</a>).   This feature takes advantage of the <a href="http://www.w3schools.com/cssref/css3_pr_border-radius.asp">border-radius</a> CSS 3 property, and so will only work with compatible browsers - with a safe fall back to square corners in browsers that don’t support this CSS property.  The screenshot below demonstrates what the RichFaces showcase looks like, with round corner support enabled.</p>
+
+<p>To enable round-corner support for your skin set the panelBorderRadius property of your skin to the desired border-radius value.</p>
+
+<p>Note: panelBorderRadius is not used in any of the out-of-the box 4.2 themes</p>
+
+<h2 id="miscellaneous-fixes">Miscellaneous fixes</h2>
+
+<p>A number of other notable improvements include:</p>
+
+<ul>
+<li>jQuery upgraded to v1.7.1 (<a href="https://issues.jboss.org/browse/RF-11838">RF-11838</a>)
+** Fixes the &ldquo;event.layerX and event.layerY&rdquo; deprecation warning in Google Chrome</li>
+<li>RichFaces available via maven central (<a href="https://issues.jboss.org/browse/RFPL-1800">RFPL-1800</a>)
+** No longer is it required to define the JBoss nexus repository in your settings.xml to consume richfaces maven artifacts</li>
+<li>Mobile tweaks
+** improvements to the <a href="https://community.jboss.org/wiki/GettingStartedWithMobileRichFaces">mobile getting started guide</a>
+** component specific usability improvements</li>
+<li>Spring Webflow compatibility (<a href="https://issues.jboss.org/browse/RF-11806">RF-11806</a>)</li>
+<li>a4j:actionListener example in the showcase
+** omitted in our initial release of the showcase, an example of <a href="http://showcase.richfaces.org/richfaces/component-sample.jsf?demo=actionListener">a4j:actionListener</a> usage has been added to the 4.2 showcase</li>
+<li>Build improvements
+** The dependency management across all the projects&rsquo; poms has been cleaned up and centralized</li>
+</ul>
+
+<h2 id="moving-forward">Moving forward</h2>
+
+<p>With RichFaces 4.2.0.CR1 in the hands of our community, we look forward to hearing your feedback on this release, particularly if we missed any regressions.  Should 4.2.0.CR1 be well accepted by our community members, we will release RichFaces 4.2.0.Final as a simple respin of CR1.  In the mean time we will work on getting our 4.2 docs finalized, including an effort to fill in the missing attribute descriptions of our tag library documentation (VDL doc).</p>
+
+<p>Looking beyond 4.2, we will consolidate many of the great ideas brought forward in our <a href="https://community.jboss.org/thread/175973">&ldquo;4.3 and beyond&rdquo;</a> planning discussion into a project roadmap, and start some prototyping to spearhead our new initiatives.</p>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/java-ee'>Java EE</a></li>
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/richfaces'>RichFaces</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/"
+                class="button big previous">RichFaces 4.1.0.Final Release Announcement</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/richfaces-4.2.0.final-release-announcement/"
+                class="button big next">RichFaces 4.2.0.Final Release Announcement</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

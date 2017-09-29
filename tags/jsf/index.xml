@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>JSF on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/jsf/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/jsf/</link>
     <description>Recent content in JSF on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Feb 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/jsf/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/jsf/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Presentation Tier Technology Survey</title>
-      <link>http://www.bleathem.ca/blog/presentation-tier-technology-survey/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/presentation-tier-technology-survey/</link>
       <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/presentation-tier-technology-survey/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/presentation-tier-technology-survey/</guid>
       <description>It&amp;#8217;s feedback time! Developers today are presented with an abundance of options when selecting which technologies will form the basis of their applications. Even if we constrain ourselves to the presentation tier, that choices available are staggering. Technology providers then get to play the fun game of anticipating in which direction its users and customers are headed and make sure they are providing them with value.
  To help us at JBoss better understand in which direction you are headed with your applications of today and tomorrow, we have prepared a quick 3-question survey on Presentation Tier technologies.</description>
     </item>
     
     <item>
       <title>Polyglot Widgets</title>
-      <link>http://www.bleathem.ca/blog/polyglot-widgets/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/polyglot-widgets/</link>
       <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/polyglot-widgets/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/polyglot-widgets/</guid>
       <description>JBoss Developer Framework   The JBoss JDF project shows Java EE developers how to build state-of-the-art applications using the JBoss implementations of the Java EE stack. Specifically, the JDF View Frameworks section identifies a number of alternative approaches one can take when developing the view layer of your application. We in the RichFaces project have been working towards better supporting this effort by redesigning our JSF component architecture to allow the javascript part of our components (what we call our &amp;ldquo;widgets&amp;rdquo;) to be used independent of JSF, either in a standalone manner or coupled with another web framework.</description>
     </item>
     
     <item>
       <title>Back From Java One</title>
-      <link>http://www.bleathem.ca/blog/back-from-java-one/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/back-from-java-one/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/back-from-java-one/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/back-from-java-one/</guid>
       <description>Last week I was at Java One, where I can easily say I thoroughly enjoyed the week of chaos that is JavaOne. The quality of people and content was truly astounding - I met a number of people I&amp;rsquo;d been wanting to meet for a while, and also spent some time getting to know more fellow JBoss developers. I spent the bulk of my time preparing my presentations, leaving little time to attend sessions.</description>
     </item>
     
     <item>
       <title>JSF-Testing Session at Java One</title>
-      <link>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/jsf-testing-session-at-java-one/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/jsf-testing-session-at-java-one/</guid>
       <description>I&amp;rsquo;ll speaking next week at Java One on the topic of &amp;ldquo;Testing JSF Applications with Arquillian and Selenium. The Session co-ordinates are as follows:
 Testing JSF Applications with Arquillian and Selenium +CON7622: Thursday, Oct 4, 2:00 PM - 3:00 PM - Parc 55 - Cyril Magnin I
 Unfortunately the Java One website truncated the abstract, and the bit that&amp;rsquo;s left doesn&amp;rsquo;t give you a good idea of what I&amp;rsquo;m talking about.</description>
@@ -52,50 +52,50 @@ Unfortunately the Java One website truncated the abstract, and the bit that&amp;
     
     <item>
       <title>Seam Faces @JAXConf/JSF Summit</title>
-      <link>http://www.bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</link>
       <pubDate>Mon, 18 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</guid>
       <description>It&amp;rsquo;s been a while since my last post, as I&amp;rsquo;ve gone through a significant career change. I am now working for Red Hat, as a core developer on the RichFaces project. I am also representing Red hat on the JSR-344: JSF 2.2 Expert Group, and will continue in my role as Seam Faces module lead.
 As such, I&amp;rsquo;ll be presenting at JAXConf/JSF Summit on the topic of Seam Faces. I really like this presentation, as I not only go into the features provided by Seam Faces, but I show how some of those features are implemented taking advantage of the platform extension points built into CDI and JSF.</description>
     </item>
     
     <item>
       <title>RESTful URLs, with JSF 2</title>
-      <link>http://www.bleathem.ca/blog/restful-urls-with-jsf-2/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/restful-urls-with-jsf-2/</link>
       <pubDate>Sat, 29 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/restful-urls-with-jsf-2/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/restful-urls-with-jsf-2/</guid>
       <description>JSF 2 introduced the ability to create RESTful URLs with the introduction of the &amp;lt;f:viewParam&amp;gt; tag. The tag is easy enough to use, you simply place it in the &amp;lt;f:metadate&amp;gt; tag, and configure the attributes to decode the url.
 &amp;lt;f:metadata&amp;gt; &amp;lt;f:viewParam /&amp;gt; &amp;lt;/f:metadata&amp;gt;  There are no words to explain how great a feature this is for JSF. The old &amp;ldquo;every request is a POST&amp;rdquo; theory didn&amp;rsquo;t pan out. RESTful URLs are bookmarkable, and meaningful to end-users.</description>
     </item>
     
     <item>
       <title>ViewAccessScope - why it&#39;s useful</title>
-      <link>http://www.bleathem.ca/blog/viewaccessscope---why-its-useful/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/viewaccessscope---why-its-useful/</link>
       <pubDate>Fri, 17 Dec 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/viewaccessscope---why-its-useful/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/viewaccessscope---why-its-useful/</guid>
       <description>At first the conversation scope introduced with CDI seemed like it would be incredibly useful. Unfortunately, working with conversations ended up being more difficult than expected. Details of why this is, is fodder for another post.
 I ended up often using the JSF ViewScope, exposed as a CDI scope though the Seam Faces CDI extension. When used in conjunction with JSF viewParams to propagate information between pages, the result is a book-markable end user experience.</description>
     </item>
     
     <item>
       <title>JSF Validation Failed Notice</title>
-      <link>http://www.bleathem.ca/blog/jsf-validation-failed-notice/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/jsf-validation-failed-notice/</link>
       <pubDate>Fri, 25 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/jsf-validation-failed-notice/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/jsf-validation-failed-notice/</guid>
       <description>Here&amp;rsquo;s how I show a notice on a JSF 2 page indicating that the JSF 2 postback failed due to validation errors. The following facelet snippet is rendered only when validation fails:
 &amp;lt;h:outputtext styleclass=&amp;quot;errorMessage globalMessage&amp;quot; value=&amp;quot;Request *not* saved due to input errors&amp;quot; rendered=&amp;quot;\#{facesContext.validationFailed}&amp;quot; /&amp;gt;  The user then knows they should look through the page to correct the individually marked validation failures.</description>
     </item>
     
     <item>
       <title>Glassfish V2 and V3 on the same host, behind mod_jk</title>
-      <link>http://www.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</link>
       <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</guid>
       <description>I&amp;rsquo;ve jumped on the JavaEE 6 bandwagon, with one application already in production. The developer productivity improvements in JavaEE6/Glassfish V3 are tremendous. The only downside is that I still have some JavaEE 5 applications in production. The JavaEE 5 apps can&amp;rsquo;t migrate to JavaEE 6 until Icefaces supports JSF 1.2.
 One workaround to this is to bundle the JSF 1.2 implementation with your application, then configure the classloader using the sun-web.</description>
     </item>

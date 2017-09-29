@@ -1,0 +1,1105 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Rx.js Session at DevNation</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Rx.js Session at DevNation"/>
+<meta name="twitter:description" content="I presented a Session on Rx.js at DevNation this year. My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time. This analogy was very well described by @jhusain his Async Javascript at Netflix talk that initially got me excited about Reactive Functional programming. My contribution to this idea is to present it in a visual way.
+ To visualize both a &#34;regular&#34; collection, as well as a collection-in-time, I used the d3."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="Rx.js Session at DevNation" />
+<meta property="og:description" content="I presented a Session on Rx.js at DevNation this year. My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time. This analogy was very well described by @jhusain his Async Javascript at Netflix talk that initially got me excited about Reactive Functional programming. My contribution to this idea is to present it in a visual way.
+ To visualize both a &#34;regular&#34; collection, as well as a collection-in-time, I used the d3." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/rx.js-session-at-devnation/" />
+
+
+
+<meta property="article:published_time" content="2015-06-24T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-06-24T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Rx.js Session at DevNation">
+<meta itemprop="description" content="I presented a Session on Rx.js at DevNation this year. My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time. This analogy was very well described by @jhusain his Async Javascript at Netflix talk that initially got me excited about Reactive Functional programming. My contribution to this idea is to present it in a visual way.
+ To visualize both a &#34;regular&#34; collection, as well as a collection-in-time, I used the d3.">
+
+
+<meta itemprop="dateModified" content="2015-06-24T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="953">
+
+
+
+<meta itemprop="keywords" content="rxjs,d3js,DevNation,summit," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f&text=Rx.js%20Session%20at%20DevNation&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f&title=Rx.js%20Session%20at%20DevNation" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f&title=Rx.js%20Session%20at%20DevNation" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f&title=Rx.js%20Session%20at%20DevNation" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/rx.js-session-at-devnation/">Rx.js Session at DevNation</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2015-06-24'>
+            June 24, 2015</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>5 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f&text=Rx.js%20Session%20at%20DevNation&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f&title=Rx.js%20Session%20at%20DevNation" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f&title=Rx.js%20Session%20at%20DevNation" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f&title=Rx.js%20Session%20at%20DevNation" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-session-at-devnation%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/rx.js-session-at-devnation/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>I presented a Session on Rx.js at <a href="http://devnation.org">DevNation</a> this year.  My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time.  This analogy was very well described by <a href="http://twitter.com/jhusain">@jhusain</a> his <a href="https://www.youtube.com/watch?v=FAZJsxcykPs">Async Javascript at Netflix</a> talk that initially got me excited about Reactive Functional programming.  My contribution to this idea is to present it in a visual way.</p>
+</div>
+<div class="paragraph">
+<p>To visualize both a "regular" collection, as well as a collection-in-time, I used the d3.js library to visually present a collection of javascript objects that each represent a shape with a given size, color, and shape-type.  In my presentation I embedded these visualizations using as <a href="http://codepen.io/collection/XzxeVQ/">Codepens</a>, which I&#8217;ve included in this blog post below.</p>
+</div>
+<div class="paragraph">
+<p>The slides from my presentation are available at:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><a href="http://www.bleathem.ca/talks/2015-DevNation/reactive.html" class="bare">http://www.bleathem.ca/talks/2015-DevNation/reactive.html</a></p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+<div class="sect1 codepen">
+<h2 id="_a_collection">A Collection</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Here is the visualization of a Collection.  With a "regular" collection we can get a reference to every object in the collection at any given point in time.  Go ahead, "grab" a shape with your mouse!</p>
+</div>
+<p data-height="520" data-theme-id="0" data-slug-hash="QbgKmp" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/QbgKmp/'>Collection | Iden</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+<div class="sect1 codepen">
+<h2 id="_an_observable">An Observable</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>And here we have the visualization of an Observable as a Collection-in-time.  An Observable is different from a "regular" collection in that we cannot grab a reference to every object at any given point in time.  The objects stream past us as time progresses.</p>
+</div>
+<p data-height="420" data-theme-id="0" data-slug-hash="mJwrae" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/mJwrae/'>Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reactive_extensions">Reactive Extensions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the session I then proceed to use these visualizations as basis for describing some of the tools we use for manipulating Collections/Observables:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_map">Map</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With the <code>map</code> function we can operate on each item in the collection.  In our example mapping function we map each shape into a new shape of the same size, but of type square and color green.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">.map(function(x) {
+  return {
+    id: x.id
+  , color: 'green'
+  , size: x.size
+  , type: 'square'
+  };
+});</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_collection_code_map_code">Collection <code>map</code></h3>
+<div class="paragraph">
+<p>Here we have the above <code>map</code> function applied to a "regular" Collection:</p>
+</div>
+<div class="openblock codepen">
+<div class="content">
+<p data-height="1000" data-theme-id="0" data-slug-hash="JdJNJj" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/JdJNJj/'>Operating on a Collection</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_observable_code_map_code">Observable <code>map</code></h3>
+<div class="paragraph">
+<p>The above <code>map</code> function applied to an Observable:</p>
+</div>
+<div class="openblock codepen">
+<div class="content">
+<p data-height="655" data-theme-id="0" data-slug-hash="zGzwWg" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/zGzwWg/'>Map an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mergeall">MergeAll</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The <code>mergeAll</code> function is used to "flatten" a 2-dimensional collection into a 1-dimensional collection.  In this code sample we map each shape into a pair of shapes which we return as an array.  The resulting "array of arrays" is then passed to the <code>mergeAll</code> function where it is flattened.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">.map(function(x) {
+    var y = _.clone(x);
+    y.id = y.id + 80;
+    y.color = 'green';
+
+    var z = _.clone(x);
+    y.size = y.size / 1.5;
+    z.size = z.size / 1.5;
+
+    return [y, z];
+  })
+  .mergeAll();</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nested_collections">Nested Collections</h3>
+<div class="paragraph">
+<p>This visualization shows the above mapping without the <code>mergeAll</code> applied.  Notice how the resulting collection consists of object pairs.  We <em>do not</em> have a flat collection.  Try to grab one of the shapes with your mouse and see for yourself!</p>
+</div>
+<div class="openblock codepen">
+<div class="content">
+<p data-height="1000" data-theme-id="0" data-slug-hash="waepdK" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/waepdK/'>Map a nested Collection</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_nested_collections_code_mergeall_code">Nested Collections <code>mergeAll</code></h3>
+<div class="paragraph">
+<p>With the <code>mergeAll</code> function applied to the Nested collection we now have a flattened collection, which we can continue to operate on with our tool set.</p>
+</div>
+<div class="openblock codepen">
+<div class="content">
+<p data-height="1000" data-theme-id="0" data-slug-hash="eNRVGx" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/eNRVGx/'>MergeAll a Collection</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_observable_code_mergeall_code">Observable <code>mergeAll</code></h3>
+<div class="paragraph">
+<p>The <code>mergeAll</code> function applied to a 2-dimensional Observable.</p>
+</div>
+<div class="openblock codepen">
+<div class="content">
+<p data-height="655" data-theme-id="0" data-slug-hash="mJwXxW" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/mJwXxW/'>MergeAll an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_flatmap">FlatMap</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>It turns out the <code>map</code> &#8594; <code>mergeAll</code> combination is a pattern we apply so often that we created the <code>flatMap</code> function as a shorthand.  We can then rewrite the above transformation as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">.flatMap(function(x) {
+    var y = _.clone(x);
+    y.id = y.id + 80;
+    y.color = 'green';
+
+    var z = _.clone(x);
+    y.size = y.size / 1.5;
+    z.size = z.size / 1.5;
+
+    return [y, z];
+  });</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_reduce">Reduce</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A common use case for analyzing collections is the <code>reduce</code> function, where one iterates over a collection and "accumulates" a value for each object in the collection.  In this code sample we are accumulating the size of each shape, and using that to create a new shape of the accumulated size.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">var outputData = inputData
+  .reduce(function(acc, x) {
+    return {
+      id: x.id
+    , color: 'green'
+    , size: acc.size + x.size
+    , type: 'square'
+    };
+  }, {size: 0});</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_collection_code_reduce_code">Collection <code>reduce</code></h3>
+<div class="paragraph">
+<p>The above reduce function applied to a collection:</p>
+</div>
+<div class="openblock codepen">
+<div class="content">
+<p data-height="1000" data-theme-id="0" data-slug-hash="doRWKp" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/doRWKp/'>Reduce a Collection</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_observable_code_reduce_code">Observable <code>reduce</code></h3>
+<div class="paragraph">
+<p>The <code>reduce</code> function applied to an Observable:</p>
+</div>
+<div class="admonitionblock note alert">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Note</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>You will want to click the <code>RERUN</code> button that appears when you mouse-over this codepen.  Then wait until the input Observable terminates to see the <code>reduce</code> result.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="openblock codepen">
+<div class="content">
+<p data-height="564" data-theme-id="0" data-slug-hash="eNRWKa" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/eNRWKa/'>Reduce an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_zip">Zip</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The last function we will look at is the <code>zip</code> function which is used to combine many Observables into a single observable.  It accomplishes this by taking each Observable as a parameter, followed by a function that is used to "combine" the object retrieved from each Observable.</p>
+</div>
+<div class="paragraph">
+<p>In the following code sample we combine our shapes by creating a new shape with the color of the first shape, but the size and type of the 2nd shape.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-javascript" data-lang="javascript">var outputData = Rx.Observable.zip(
+  input1Data,
+  input2Data,
+  function(x1, x2) {
+    return {
+      id: x1.id
+    , color: x1.color
+    , size: x2.size
+    , type: x2.type
+    };
+  });</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_observable_code_zip_code">Observable <code>zip</code></h3>
+<div class="openblock codepen">
+<div class="content">
+<p data-height="655" data-theme-id="0" data-slug-hash="doRmgm" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/doRmgm/'>Zip an Observable</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_rest_of_the_talk">The rest of the talk</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In the remaining slides I discuss creating and subscribing to Observables, and went through a number of use cases and examples.  I ended with a preview and brief code walk-through of the Red Hat Summit Middleware keynote demo, that I wrote using Rx.js.  But that is a topic for another post.</p>
+</div>
+<div class="paragraph">
+<p>The slides are available at:</p>
+</div>
+<div class="quoteblock">
+<blockquote>
+<div class="paragraph">
+<p><a href="http://www.bleathem.ca/talks/2015-DevNation/reactive.html" class="bare">http://www.bleathem.ca/talks/2015-DevNation/reactive.html</a></p>
+</div>
+</blockquote>
+</div>
+</div>
+</div>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/javascript'>Javascript</a></li>
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/conferences'>Conferences</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/"
+                class="button big previous">Google Play Services Oauth2 Token Lookup via Cordova</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/"
+                class="button big next">Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

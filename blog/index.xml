@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/blog/</link>
+    <link>bleathem.github.io/bleathem.ca/blog/</link>
     <description>Recent content in Blog on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 30 May 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Patternfly Roadmap Update</title>
-      <link>http://www.bleathem.ca/blog/patternfly-roadmap-update/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/</link>
       <pubDate>Tue, 30 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/patternfly-roadmap-update/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/</guid>
       <description>crosspost from: https://blog.patternfly.org/patternfly-roadmap-update/
  Last November we published the PatternFly roadmap where we put forward the idea for PatternFly 4 and 5, an effort around web components, and a CSS rewrite. Alpha releases for PatternFly 4 and PatternFly Web Components delivered initial progress on these efforts. However, the story has grown more complex with the introduction of additional PatternFly framework repositories. In this post we will provide a status update on our delivery of our roadmap, and explain how all these repositories and future versions tie together.</description>
     </item>
     
     <item>
       <title>Patteryfly 4.0.0 Alpha.2 Release</title>
-      <link>http://www.bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</link>
       <pubDate>Fri, 27 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</guid>
-      <description>crosspost from: https://blog.patternfly.org/patternfly-4-0-0-alpha-2-release/
+      <guid>bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</guid>
+      <description>Patteryfly 4.0.0 Alpha.2 Release crosspost from: https://blog.patternfly.org/patternfly-4-0-0-alpha-2-release/
  In the PatternFly Roadmap we outlined our future plans for PatternFly and laid out the goals for the PatternFly 4 release:
    Providing initial support for Angular 2 application development
   Updating the libraries on which Angular-Patternfly is built
@@ -37,465 +37,465 @@
     
     <item>
       <title>The Patternfly Roadmap</title>
-      <link>http://www.bleathem.ca/blog/the-patternfly-roadmap/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/the-patternfly-roadmap/</link>
       <pubDate>Wed, 14 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/the-patternfly-roadmap/</guid>
-      <description>crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
+      <guid>bleathem.github.io/bleathem.ca/blog/the-patternfly-roadmap/</guid>
+      <description>The Patternfly Roadmap crosspost from: https://blog.patternfly.org/the-patternfly-roadmap/
  The UXD team has been hard at work churning out PatternFly releases at a regular cadence, steadily increasing the number of design patterns and design pattern implementations. In recent releases we introduced a number of changes aimed at simplifying the consumption and contribution processes for both designers and developers.
  There are a number of ways we want to improve and scale out PatternFly that can’t be addressed without introducing breaking changes to the project.</description>
     </item>
     
     <item>
       <title>Error handling in a request/response model with the mediator pattern</title>
-      <link>http://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</link>
       <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</guid>
       <description>The mediator pattern Addy Osmani has a great blog post introducing the mediator pattern in his post Patterns For Large-Scale JavaScript Application Architecture. I&amp;#8217;ve recently started working with this pattern, using the mediator.js implementation available via npm. Overall the pattern works well when notifying one module of changes in another; for example when publishing state changes.
  However one area where the pattern seems to fall short is when one module wants to request information from another.</description>
     </item>
     
     <item>
       <title>Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo</title>
-      <link>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</link>
       <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</guid>
       <description>At this year&amp;#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo. I made the custom front-ends in the demo using Reactive Extensions for javascript (Rx.js) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using d3.js.
  If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at 19m).</description>
     </item>
     
     <item>
       <title>Rx.js Session at DevNation</title>
-      <link>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/rx.js-session-at-devnation/</link>
       <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/rx.js-session-at-devnation/</guid>
       <description>I presented a Session on Rx.js at DevNation this year. My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time. This analogy was very well described by @jhusain his Async Javascript at Netflix talk that initially got me excited about Reactive Functional programming. My contribution to this idea is to present it in a visual way.
  To visualize both a &#34;regular&#34; collection, as well as a collection-in-time, I used the d3.</description>
     </item>
     
     <item>
       <title>Google Play Services Oauth2 Token Lookup via Cordova</title>
-      <link>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</link>
       <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</guid>
       <description>Delegating to 3rd parties to manage your authorization is incredibly helpful when developing a new application. A benefit to users and developers alike, this task is made all the more helpful with the number of social networks providing Oauth2 APIs that we can use for our authorization. In this blog post I will address using the Google Play services on Android from a hybrid mobile Cordova application to retrieve an Oauth2 token that we can then use with Google&amp;#8217;s Oauth2 REST API.</description>
     </item>
     
     <item>
       <title>Scalable splash screens with Cordova</title>
-      <link>http://www.bleathem.ca/blog/scalable-splash-screens-with-cordova/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/</link>
       <pubDate>Wed, 28 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/scalable-splash-screens-with-cordova/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/scalable-splash-screens-with-cordova/</guid>
       <description>Adding a splash screen to your mobile application is useful to provide users with feedback that their application is starting while performing any initialization tasks. In this blog post I will summarize how I created a scalable splash screen and how I configured my Cordova application to use it.
    Drawing the splash screen If you&amp;#8217;re not an artist (as I am not!) then creating a graphical splash screen can be a somewhat daunting task.</description>
     </item>
     
     <item>
       <title>Vert.x with gulp.js</title>
-      <link>http://www.bleathem.ca/blog/vert.x-with-gulp.js/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/vert.x-with-gulp.js/</link>
       <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/vert.x-with-gulp.js/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/vert.x-with-gulp.js/</guid>
       <description>Vert.x is often put forward as a polyglot alternative to node.js that runs on the JVM. A read through the vert.x javascript docs indicates that javascript is a first-class language in vert.x, and both node.js and vert.x use an event-driven, non-blocking I/O programming model. But to what degree will a node programmer feel at home in writing a vert.x application?
  In this blog post I will look at using gulp, a node.</description>
     </item>
     
     <item>
       <title>RichFaces 4.5.2.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.2.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.2.final-release-announcement/</link>
       <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.2.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.2.final-release-announcement/</guid>
       <description>   RichFaces 4.5.2.Final is now available for download! Check out @Michal Petrov&#39;s blog for the detailed RichFaces 4.5.2.Final release announcement.
  </description>
     </item>
     
     <item>
       <title>RichFaces 4.5.1.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.1.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.1.final-release-announcement/</link>
       <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.1.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.1.final-release-announcement/</guid>
       <description>   RichFaces 4.5.1.Final is now available for download! Check out @Michal Petrov&#39;s blog for details of what this 4.5.1.Final release includes.
  </description>
     </item>
     
     <item>
       <title>RichFaces 4.5.0.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.final-release-announcement/</link>
       <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.final-release-announcement/</guid>
       <description>RichFaces 4.5.0.Final is now available for download! RichFaces 4.5 is a significant improvement over the previous 4.3 release, offering JSF 2.2 compatibility, new components, a simplified build and distribution layout, and Page Fragments for simplified functional testing. Please read below for details on each of these improvements..
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.5.0.CR2 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</link>
       <pubDate>Thu, 16 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</guid>
       <description>We have a second candidate release for RichFaces 4.5 (4.5.0.CR2) available. We&amp;#8217;ve fixed a couple of regressions uncovered by both our community and QA team. Thanks guys! Read on for the specifics of what was fixed in this release.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.CR2. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
     </item>
     
     <item>
       <title>RichFaces 4.5.0.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</link>
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</guid>
       <description>We have a first candidate release for RichFaces 4.5 (4.5.0.CR1) available. With this candidate release we&amp;#8217;ve further improved our stability over our beta releases, with a special focus on backwards compatibility with RichFaces 4.3. Read below for details of what is included in this release.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.5.0.Beta2 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.beta2-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.beta2-release-announcement/</link>
       <pubDate>Thu, 11 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.beta2-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.beta2-release-announcement/</guid>
       <description>The second beta release of RichFaces 4.5 (4.5.0.Beta2) has been released. This release focuses on stabilizing RichFaces 4.5.0.Beta1 with a number of bug fixes. Read below for a summary of the issues resolved.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Beta2. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
     </item>
     
     <item>
       <title>RichFaces 4.5.0.Beta1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.beta1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.beta1-release-announcement/</link>
       <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.beta1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.beta1-release-announcement/</guid>
       <description>The first beta release of RichFaces 4.5 (4.5.0.Beta1) is now available. This full framework release incorporates a number of library upgrades as well as some new features for existing components. Read below for a summary of the issues resolved, and stay tuned for further posts going into the improvements in detail.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.5.0.Alpha3 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</link>
       <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</guid>
       <description>We have a feature complete release of RichFaces 4.5 available with the release of RichFaces 4.5.0.Alpha3. This is a full framework release with RichFaces 4.5.0.Alpha3, whereas previous 4.5 Alpha releases consisted of just the components. We&amp;#8217;ve back-ported many of the improvements from RichFaces 5 Alphas into this release, while maintaining backward compatibility with the RichFaces 4.3 branch.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces will pursue a path of stability over innovation</title>
-      <link>http://www.bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/</link>
       <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/</guid>
       <description>For more than a decade now, JavaServer Faces (JSF) has held a special place as the sole portion of the JavaEE specification that addresses building UI&amp;#8217;s for our web applications. As such JSF has historically been the only web front-end we&amp;#8217;ve pushed at JBoss. Along with Seam and later CDI, RichFaces has been an important part of our JSF story, and a vehicle for our innovation in the JSF space.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.7.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</link>
       <pubDate>Tue, 27 May 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</guid>
       <description>The RichFaces stable branch receives an update with the release of RichFaces 4.3.7.Final. This most recent micro release of the RichFaces 4.3 release series provides a number of bug fixes while we concurrently work on getting a JSF 2.2 compatible RichFaces 4.5 released.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.</description>
     </item>
     
     <item>
       <title>RichFaces Security Advisory CVE-2014-0335</title>
-      <link>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</guid>
       <description>A security vulnerability has been uncovered and resolved in RichFaces 4. Details of the vulnerability can be found in this Red Hat Errata document released for our WFK product. We have released a community micro release addressing this vulnerability, so please update your applications ASAP. Read below for a summary of the problem and some additional minor fixes included in this release.
  To update to this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>Hands on with the jQuery UI widget factory at DevNation</title>
-      <link>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</link>
       <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</guid>
       <description>I&amp;#8217;m thrilled to be speaking the upcoming DevNation conference. DevNation is an Open Source Developer conference co-located with the Red Hat Summit. With the announced agenda and the co-location with Summit, the conference is shaping up to be quite the event!
  I&amp;#8217;ll be speaking about developing widgets with the jQuery UI widget factory. We&amp;#8217;ll look at how the widget factory takes away much of the boiler plate when writing stateful jQuery plug-ins, statefulness that comes intrinsically when creating visual plug-ins.</description>
     </item>
     
     <item>
       <title>RichFaces 5.0.0.Alpha3 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha3-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-5.0.0.alpha3-release-announcement/</link>
       <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha3-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-5.0.0.alpha3-release-announcement/</guid>
       <description>RichFaces 5.0.0.Alpha3 has been released. With this third alpha release of RichFaces 5 we are providing compatibility with JSF 2.2. Go download WildFly and give the JSF 2.2 capabilities of this release a spin.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha3. For more information on setting up a RichFaces application, refer to our getting started guide.</description>
     </item>
     
     <item>
       <title>Presentation Tier Technology Survey</title>
-      <link>http://www.bleathem.ca/blog/presentation-tier-technology-survey/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/presentation-tier-technology-survey/</link>
       <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/presentation-tier-technology-survey/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/presentation-tier-technology-survey/</guid>
       <description>It&amp;#8217;s feedback time! Developers today are presented with an abundance of options when selecting which technologies will form the basis of their applications. Even if we constrain ourselves to the presentation tier, that choices available are staggering. Technology providers then get to play the fun game of anticipating in which direction its users and customers are headed and make sure they are providing them with value.
  To help us at JBoss better understand in which direction you are headed with your applications of today and tomorrow, we have prepared a quick 3-question survey on Presentation Tier technologies.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.5.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</link>
       <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</guid>
       <description>We are happy to release an update to our stable branch with the release of RichFaces 4.3.5.Final. This 5th micro release of the RichFaces 4.3 release series provides a number of bug fixes while we concurrently work on RichFaces 5.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.5.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
     </item>
     
     <item>
       <title>RichFaces 5.0.0.Alpha2 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/</link>
       <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/</guid>
       <description>RichFaces 5.0.0.Alpha2 is now available for download. This second alpha release of our RichFaces 5 effort is significant as it brings in our new component architecture, new components, a further refinement in our approach to testing, and the beginnings of a new look and feel. We&amp;#8217;ll dive further into each of these topics below.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichWidgets 0.1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richwidgets-0.1-release-announcement/</link>
       <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richwidgets-0.1-release-announcement/</guid>
       <description>RichWidgets 0.1 is released and ready for download. The road to this first release was a long one, requiring us to get our first javascript project in order. Built with grunt, dependencies managed by bower, and our jasmine tests run by karma, RichWidgets is pure javascript project and as such should be equally accessible with all languages and frameworks targeting the web.
  To try out this release: You can download the distribution directly, or for bower users, point your bower.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.4.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</link>
       <pubDate>Tue, 17 Sep 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</guid>
       <description>I am excited to announce the release of RichFaces 4.3.4.Final. This 4th minor release of the RichFaces 4.3 release series is conservative in scope focusing on providing bug fixes to our stable release branch while we concurrently work on RichFaces 5.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.4.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
     </item>
     
     <item>
       <title>RichFaces Security Advisory CVE-2013-2165</title>
-      <link>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</link>
       <pubDate>Tue, 16 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</guid>
       <description>We have fixed a security vulnerability in RichFaces 3, 4 and 5. Details of the vulnerability can be found in this Red Hat Errata document released for our WFK product. We have released community micro releases addressing this vulnerability, so please update your applications ASAP. Read below for a summary of the problem and an explanation of how to use the fix in your applications.
  Download RichFaces 3.</description>
     </item>
     
     <item>
       <title>RichFaces 5.0.0.Alpha1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/</link>
       <pubDate>Fri, 14 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/</guid>
       <description>I am excited to announce the release of RichFaces 5.0.0.Alpha1. While RichFaces 5.0.0.Alpha1 is an incredibly significant release (with almost all aspects of the framework seeing some changes) the release is in fact functionally equivalent to RichFaces 4.3.2.Final. So go ahead an try it out, and give us your feedback!
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces moves to AsciiDoc</title>
-      <link>http://www.bleathem.ca/blog/richfaces-moves-to-asciidoc/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-moves-to-asciidoc/</link>
       <pubDate>Mon, 10 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-moves-to-asciidoc/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-moves-to-asciidoc/</guid>
       <description>With RichFaces 5 we have made a significant change to our documentation tool-chain with the introduction of AsciiDoc to simplify the task of authoring and editing the RichFaces documentation. Our documentation has for a long time been based on Docbook xml against which we have applied the Red Hat PressGang XSLT to create the HTML and PDF output of our docs.
  Additionally the Docbook xml is fed downstream into Red Hat&amp;#8217;s Web Framework Kit product (WFK), where it undergoes further transformations to fit well into Red Hat&amp;#8217;s product documentation.</description>
     </item>
     
     <item>
       <title>Spoke on Polyglot Widgets at JAXConf 2013</title>
-      <link>http://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</link>
       <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</guid>
       <description>This week I attended the JAXConf 2013 conference for a third year in a row. This year JAXConf was held in Santa Clara, the heart of silicon valley. The conference once again had a fantastic line up of speakers, with well recognized industry leaders speaking on a variety of current and exciting topics. Unfortunately, JAX continued this year to be one of the best kept secrets of the tech industry on the West coast, with attendance not being as strong as many would have liked.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.2.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</link>
       <pubDate>Thu, 16 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</guid>
       <description>I am excited to announce the release of RichFaces 4.3.2.Final. - This 2nd minor release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.2.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.2.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.2.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.2.cr1-release-announcement/</link>
       <pubDate>Wed, 01 May 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.2.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.2.cr1-release-announcement/</guid>
       <description>RichFaces   We&amp;rsquo;ve taken a break from our RichFaces 5 development to deliver a micro release of RichFaces 4.3. Today we are announcing that the first candidate release of this micro release is now available: RichFaces 4.3.2.CR1.
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.2.CR1. For more information on setting up a RichFaces 4 application, refer to ourgetting started guide.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.1.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.1.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.1.final-release-announcement/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.1.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.1.final-release-announcement/</guid>
       <description>RichFaces   The final release of RichFaces 4.3.1 (4.3.1.Final) has been released. This micro release addresses some bugs present in the 4.3.0.Final release, and offers some improvements on the new features introduced in that same release. Have a look at the 4.3.1.Final Release Notes for a complete listing if what was included in this release.
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>Speaking on Polyglot Widgets at JAXConf 2013</title>
-      <link>http://www.bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</link>
       <pubDate>Tue, 05 Mar 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</guid>
       <description>JAXConf 2013   I will be returning to speak at JAXConf again this year. I&amp;rsquo;ll be speaking on the topic of Poly-framework Web applications with Java EE. The session will further explore the ideas I presented in my Polyglot Widgets blog, where I demoed a sample application written using three different web frameworks, demonstrating both a consistent look &amp;amp; feel, and uniform server-side programming model.
 This topic will be particularly useful for those JAX attendees that have existing applications in production, yet like what they see with new web technologies and frameworks that they will learn about while attending JAXConf.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.1.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.1.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.1.cr1-release-announcement/</link>
       <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.1.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.1.cr1-release-announcement/</guid>
       <description>RichFaces   The first candidate release of RichFaces 4.3.1 (4.3.1.CR1) has been released. This micro release addresses some bugs present in the RichFaces 4.3.0.Final release, and offers some improvements on the new features introduced in that same release. Have a look at the 4.3.1.CR1 Release Notes for a complete listing of what has been included in this release.
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.0.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.final-release-announcement/</link>
       <pubDate>Fri, 01 Feb 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.final-release-announcement/</guid>
       <description>RichFaces   I&amp;rsquo;m very excited to announce the availability of the final release of RichFaces 4.3 (4.3.0.Final). This release is minor in version increment only, as it packs quite a significant number of features and improvements. We&amp;rsquo;ve covered many of these features in blogs already, we&amp;rsquo;ll summarize them again here, and provide links to where you can find additional details.
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>Dynamic Panels with a4j:repeat</title>
-      <link>http://www.bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</link>
       <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</guid>
       <description>RichFaces   With the imminent 4.3.0.Final release of RichFaces, we will be providing developers with the ability to dynamically create &amp;lt;rich:togglePanel&amp;gt;, &amp;lt;rich:accordion&amp;gt;, and &amp;lt;rich:tabPanel&amp;gt; panel items dynamically with the &amp;lt;a4j:repeat&amp;gt; tag.
 &amp;lt;a4j:repeat&amp;gt; vs. &amp;lt;c:forEach&amp;gt; Creating the above panels from a backing bean list has always been possible with RichFaces 4 using the JSTL &amp;lt;c:forEach&amp;gt; tag, so why have we bothered adding support for creating such panels with the &amp;lt;a4j:repeat&amp;gt; tag?</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.0.CR2 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.cr2-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.cr2-release-announcement/</link>
       <pubDate>Fri, 25 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.cr2-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.cr2-release-announcement/</guid>
       <description>RichFaces   The second milestone release of RichFaces 4.3 (4.3.0.CR2) has been released. This release candidate for the RichFaces 4.3 is an incremental release on top of the previous release candidate (4.3.0.CR1), providing a few bug fixes and documentation enhancements.
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.CR2. For more information on setting up a RichFaces 4 application, refer to ourgetting started guide.</description>
     </item>
     
     <item>
       <title>What&#39;s new with the RichFaces extendedDataTable</title>
-      <link>http://www.bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</link>
       <pubDate>Tue, 22 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</guid>
       <description>RichFaces   The upcoming 4.3 release of RichFaces will offer the RichFaces community a number of improvements to the extendedDataTable. These new features include:
  Built-in sorting and filtering External table state saving A number of bug-fixes  Built-in sorting and filtering The RichFaces 4 extendedDataTable (EDT) has always had the ability to sort and filter columns, but required the developer to define the sort and filter controls themselves, then manually invoke the required operations on the back-end.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.0.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.cr1-release-announcement/</link>
       <pubDate>Thu, 17 Jan 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.cr1-release-announcement/</guid>
       <description>RichFaces   The first candidate release of RichFaces 4.3 (4.3.0.CR1) has been released. This release candidate for the RichFaces 4.3 release doesn&amp;rsquo;t add any new features, rather it polishes, documents, and showcases the many new features added in the earlier 4.3 milestones (4.3.0.M3, 4.3.0.M2, 4.3.0.M1).
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.0.M3 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.m3-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.m3-release-announcement/</link>
       <pubDate>Thu, 20 Dec 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.m3-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.m3-release-announcement/</guid>
       <description>RichFaces   The third milestone release of RichFaces 4.3 (4.3.0.M3) is now available. This 3rd and final milestone for the RichFaces 4.3 release brings in a number of huge features, including new components, some long-time outstanding feature migrations from RichFaces 3, and some significant bug fixes. Read on for some details of these release highlights, or go straight to the Release Notes for a complete list of what&amp;rsquo;s been addressed.</description>
     </item>
     
     <item>
       <title>Polyglot Widgets</title>
-      <link>http://www.bleathem.ca/blog/polyglot-widgets/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/polyglot-widgets/</link>
       <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/polyglot-widgets/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/polyglot-widgets/</guid>
       <description>JBoss Developer Framework   The JBoss JDF project shows Java EE developers how to build state-of-the-art applications using the JBoss implementations of the Java EE stack. Specifically, the JDF View Frameworks section identifies a number of alternative approaches one can take when developing the view layer of your application. We in the RichFaces project have been working towards better supporting this effort by redesigning our JSF component architecture to allow the javascript part of our components (what we call our &amp;ldquo;widgets&amp;rdquo;) to be used independent of JSF, either in a standalone manner or coupled with another web framework.</description>
     </item>
     
     <item>
       <title>RichFaces 4.3.0.M2 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.m2-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.m2-release-announcement/</link>
       <pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.m2-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.m2-release-announcement/</guid>
       <description>RichFaces   The second milestone release of RichFaces 4.3 (4.3.0.M2) is now available. Another significant milestone for the project, this release incorporates a number of new features, bug fixes, and component upgrades. Read on for some highlights of the release, or go straight to the Release Notes for a complete list of what&amp;rsquo;s been addressed.
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.2.3.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</link>
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</guid>
       <description>RichFaces   RichFaces 4.2.3.Final has been released. This Final release is a re-tag of the 4.2.3.CR1 release as no blocking issues were found by either our QE team, nor by the community.
 The RichFaces 4.2.3.Final release is purely a bug-fix release, with a focus on compatibility between RichFaces and the JBoss Portlet Bridge. I&amp;rsquo;ll refer you to the RichFaces 4.2.3.CR1 release blog for details of the release, with a special highlight paid to the contributions from the JBoss Portal Bridge team, and contributions from community members.</description>
     </item>
     
     <item>
       <title>RichFaces Bootstrap Quickstart</title>
-      <link>http://www.bleathem.ca/blog/richfaces-bootstrap-quickstart/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-bootstrap-quickstart/</link>
       <pubDate>Fri, 12 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-bootstrap-quickstart/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-bootstrap-quickstart/</guid>
       <description>I&amp;rsquo;m excited about the buzz the RichFaces Bootstrap sandbox initiative is generating. It&amp;rsquo;s also exciting to see other projects offer a bootstrap style/theme. This can only help inter-op and component compatibility, marking life easier for all JSF developers. This post is meant to help those looking to build a custom application using the RichFaces Bootstrap components.
 Along with the new approach we are taking in the development of these new components, the RichFaces project is incorporating a new LESS based approach to style/themes.</description>
     </item>
     
     <item>
       <title>Back From Java One</title>
-      <link>http://www.bleathem.ca/blog/back-from-java-one/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/back-from-java-one/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/back-from-java-one/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/back-from-java-one/</guid>
       <description>Last week I was at Java One, where I can easily say I thoroughly enjoyed the week of chaos that is JavaOne. The quality of people and content was truly astounding - I met a number of people I&amp;rsquo;d been wanting to meet for a while, and also spent some time getting to know more fellow JBoss developers. I spent the bulk of my time preparing my presentations, leaving little time to attend sessions.</description>
     </item>
     
     <item>
       <title>RichFaces 4.2.3.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</guid>
       <description>RichFaces   I am happy to announce that the first candidate release of RichFaces 4.2.3 (4.2.3.CR1) is now available. This is purely a bug-fix release, with a focus on compatibility between RichFaces and the JBoss Portlet Bridge.
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.2.3.CR1. For more information on setting up a RichFaces 4 application, refer to ourgetting started guide.</description>
     </item>
     
     <item>
       <title>JSF-Testing Session at Java One</title>
-      <link>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/jsf-testing-session-at-java-one/</link>
       <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/jsf-testing-session-at-java-one/</guid>
       <description>I&amp;rsquo;ll speaking next week at Java One on the topic of &amp;ldquo;Testing JSF Applications with Arquillian and Selenium. The Session co-ordinates are as follows:
 Testing JSF Applications with Arquillian and Selenium +CON7622: Thursday, Oct 4, 2:00 PM - 3:00 PM - Parc 55 - Cyril Magnin I
 Unfortunately the Java One website truncated the abstract, and the bit that&amp;rsquo;s left doesn&amp;rsquo;t give you a good idea of what I&amp;rsquo;m talking about.</description>
@@ -503,39 +503,39 @@ Unfortunately the Java One website truncated the abstract, and the bit that&amp;
     
     <item>
       <title>RichFaces 4.3.0.M1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</link>
       <pubDate>Tue, 07 Aug 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</guid>
       <description>RichFaces   The first milestone release of RichFaces 4.3 (4.3.0.M1) is now available. This is a significant release, with primary focus on improving the RichFaces Component Development Kit (CDK) - the tool we use to author our JSF components. A second goal of the release was to improve our &amp;ldquo;MyFaces&amp;rdquo;:http://myfaces.apache.org/ support, which we accomplished by fixing a number of issues, and identifying some further issues to be addressed in a subsequent 4.</description>
     </item>
     
     <item>
       <title>JAXConf-2012: JSF - Components &amp; Mobile</title>
-      <link>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</link>
       <pubDate>Fri, 13 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</guid>
       <description>JAX Conf 2012   RichFaces represented at the &amp;ldquo;2012 JAX conference&amp;rdquo;:http://jaxconf.com/2012/ in San Francisco this week. I presented three times on two JSF topics. The conference was overall a great success in my opinion - while not the most highly attended conference at which I&amp;rsquo;ve presented, those that attended were highly engaged and happy to have such direct access to the speakers.
 Indeed this was one of my preferred aspects to JAX conf.</description>
     </item>
     
     <item>
       <title>JBW-2012 and RichFaces Mobile</title>
-      <link>http://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</link>
       <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</guid>
       <description>I just returned from an excellent trip to the &amp;ldquo;Red Hat Summit/JBoss World&amp;rdquo;:http://www.redhat.com/summit/ in Boston. The event was fantastic, kicking off with a great &amp;ldquo;keynote&amp;rdquo;:http://www.redhat.com/summit/sessions/keynotes-sessions.html#12345 demoing &amp;ldquo;Drools&amp;rdquo;:http://www.jboss.org/drools/ in a Mobile scenario. Following the keynote were a number of great sessions, including one I presented on the topic of &amp;ldquo;Mobile RichFaces Applications&amp;rdquo;:http://www.redhat.com/summit/sessions/jboss.html#187.
 The session was well received, with some good discussion afterwards. In the session I motivated mobile web applications as a must-have in today&amp;rsquo;s market - users&amp;rsquo; will want and expect a functional web application even if your native application is better.</description>
     </item>
     
     <item>
       <title>RichFaces 3 Showcase on OpenShift</title>
-      <link>http://www.bleathem.ca/blog/richfaces-3-showcase-on-openshift/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-3-showcase-on-openshift/</link>
       <pubDate>Wed, 06 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-3-showcase-on-openshift/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-3-showcase-on-openshift/</guid>
       <description>For those of you still developing against RichFaces 3 (you should strongly consider &amp;ldquo;migrating to RichFaces 4&amp;rdquo;:https://community.jboss.org/wiki/RichFacesMigrationGuide33x-4xMigration!) we have deployed the &amp;ldquo;RichFaces 3 showcase&amp;rdquo;:http://showcase-rf3.richfaces.org (also referred to as the RichFaces 3 &amp;ldquo;demo&amp;rdquo;) to &amp;ldquo;OpenShift&amp;rdquo;:http://openshift.com, Red Hat&amp;rsquo;s PaaS offering. This is the same cloud environment we use to host the &amp;ldquo;RichFaces 4 showcase&amp;rdquo;:http://showcase.richfaces.org.
 div=. &amp;ldquo;!/images/blog/2012-06-06-richfaces3-showcase/rf3-showcase_400x.png!&amp;rdquo;:http://showcase-rf3.richfaces.org
 This deployment of the RichFaces 3 showcase not only ensures that this useful and valuable resource will continue to be available to you, the developer community, but also serves to demonstrate how you can take advantage of OpenShift and the latest JBoss AS 7 releases to host your Richfaces 3&amp;frasl;4 applications!</description>
@@ -543,223 +543,223 @@ This deployment of the RichFaces 3 showcase not only ensures that this useful an
     
     <item>
       <title>I&#39;m Awestruct</title>
-      <link>http://www.bleathem.ca/blog/im-awestruct/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/im-awestruct/</link>
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/im-awestruct/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/im-awestruct/</guid>
       <description>I&amp;rsquo;m officially &amp;ldquo;Awestruct&amp;rdquo;:http://www.awestruct.org! with this launch of my new blog. My old &amp;ldquo;blogger.com blog&amp;rdquo;:http://blog.bleathem.ca will soon redirect here, as I have ported over all the content. Thanks blogger.com for keeping the data Open by providing a data export API! It has me leaving your great service with a nothing but positive experience.
 If you haven&amp;rsquo;t heard, Awestruct is a great Ruby-based tool for building static HTML websites. A project originally started by &amp;ldquo;Bob McWhirter&amp;rdquo;:http://bob.</description>
     </item>
     
     <item>
       <title>RichFaces 4.2.2.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.2.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.2.final-release-announcement/</link>
       <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.2.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.2.final-release-announcement/</guid>
       <description>RichFaces4.2.2.Final is available, the second RichFaces 4.2 micro release. This release was originally intended to focus on changes required to better align with the upcoming JBoss AS 7.1.2 release. However we had some community members step forward with some fixes, and those contributions ended up turning this release into a reasonable bug fix release!
 I would like to give a big shout out to Luca Nardelli, Adrian Gonzalez, and Jason Porter.</description>
     </item>
     
     <item>
       <title>RichFaces Bootstrap</title>
-      <link>http://www.bleathem.ca/blog/richfaces-bootstrap/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-bootstrap/</link>
       <pubDate>Fri, 04 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-bootstrap/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-bootstrap/</guid>
       <description>I&amp;rsquo;m happy to share the news that the RichFaces community has started an effort to wrap Twitter Bootstrap with the RichFaces CDK. If you haven&amp;rsquo;t yet heard, Twitter&amp;rsquo;s Bootstrap project is a set of HTML/CSS/js &amp;ldquo;widgets&amp;rdquo; that you can use for building a website/web application with an emphasis on a fluid layouts that adapt well to mobile devices. The RichFaces community effort centres around providing a set of first-class JSF components built using these Bootstrap widgets via the RichFaces CDK.</description>
     </item>
     
     <item>
       <title>RichFaces 4.2.1.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.1.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.1.final-release-announcement/</link>
       <pubDate>Tue, 17 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.1.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.1.final-release-announcement/</guid>
       <description>We&amp;rsquo;ve released RichFaces4.2.1.Final - the first micro release for the 4.2 release train. Since the CR1 release we&amp;rsquo;ve primarily addressed bugs with the Richfaces showcase and the RichFaces archetypes. CR1 itself focused on bug fixes and stability improvements throughout the framework.
 To try out this release, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.2.1.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
     </item>
     
     <item>
       <title>RichFaces 4.2.1.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.1.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.1.cr1-release-announcement/</link>
       <pubDate>Wed, 04 Apr 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.1.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.1.cr1-release-announcement/</guid>
       <description>We&amp;rsquo;ve released RichFaces 4.2.1.CR1 - the first candidate release for the first 4.2 micro release. This release comes with initial support for rapid component development with the CDK and jRebel, and a new archetype demonstrating (among other things) a mobile RichFaces application,. For the most part however, this release focuses on bug-fixes and stability of the components and framework.
 To try out this release, you can download the distributiondirectly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.2.0.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.0.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.0.final-release-announcement/</link>
       <pubDate>Thu, 23 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.0.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.0.final-release-announcement/</guid>
       <description>Richfaces 4.2.0.Final is now available for download! A quick follow on to our 4.1 release, Richfaces 4.2 delivers some “missing” components migrated from RichFaces 3, and provides usability and API improvements for resource loading optimizations and the push API. Documentation was a huge effort for this release; we are delivering an updated and complete VDL taglib doc, along with our more well established Developer Guide, and Components Reference.
 To try out this release, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.2.0.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.0.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.0.cr1-release-announcement/</link>
       <pubDate>Wed, 08 Feb 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.0.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.0.cr1-release-announcement/</guid>
       <description>I’m excited to announce the availability of RichFaces 4.2.0.CR1, our release candidate for RichFaces 4.2.0. Hot on the heels of the RichFaces 4.1 release, Richfaces 4.2 delivers some &amp;ldquo;missing&amp;rdquo; components migrated from RichFaces 3, and offers usability and API improvements for those looking to take advantage of our resource loading optimizations, and push API. Not to forget a significant number of bug fixes, and overall usability improvements.
 To try out this release, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.1.0.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</link>
       <pubDate>Tue, 13 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</guid>
       <description>I&amp;rsquo;m thrilled to announce the release of RichFaces 4.1.0.Final. It&amp;rsquo;s been a long road from 4.0 to 4.1, with a significant train of milestone releases along the way. The journey was worth it though, with a significant 4.1 release building on top of the successful 4.0.0.Final release, providing: additional components migrated from the RichFaces 3 component set, altogether new components, and significant enhancements to the framework feature set.</description>
     </item>
     
     <item>
       <title>State of the RichFaces</title>
-      <link>http://www.bleathem.ca/blog/state-of-the-richfaces/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/state-of-the-richfaces/</link>
       <pubDate>Fri, 09 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/state-of-the-richfaces/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/state-of-the-richfaces/</guid>
       <description>With a RichFaces 4.1.0.Final release on the horizon, now is a good time to talk about the future of the project. Let me start by announcing that I will be taking over from Jay Balunas as lead of the RichFaces project. Jay has been a long-time shepherd of RichFaces from within JBoss, and has had a direct hand in making the project such a great success. Jay has been a terrific mentor and while he is stepping down as the project lead, he will continue to stay involved, sharing his insight and experience with the Richfaces team.</description>
     </item>
     
     <item>
       <title>RichFaces 4.1.0.CR2 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.cr2-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.cr2-release-announcement/</link>
       <pubDate>Tue, 06 Dec 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.cr2-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.cr2-release-announcement/</guid>
       <description>We are announcing the release of RichFaces 4.1.0.CR2, a second release candidate for RichFaces 4.1. We had a couple of regressions that were introduced in the 4.1.0.CR1 release that we’ve addressed in the with this CR2 release. The expectation is that CR2 will be re-tagged and released as 4.1.0.Final, provided no blocking issues are found. Our QE team has done a great job running their test suite against this release, but I encourage as many community members as possible to download the CR2 release, and make sure it’s “up to snuff”!</description>
     </item>
     
     <item>
       <title>RichFaces 4 CDK | jQeury UI Tabs</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/</link>
       <pubDate>Tue, 29 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/</guid>
       <description>Following on with another entry in my CDK series, this time we will look at at creating a pair of components to wrap the jQuery UI tabs plugin with the RichFaces CDK. It&amp;rsquo;ll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let&amp;rsquo;s dive right in with a look at the Abstract component definitions.
 As always, if you are interested in following along in your IDE, you can get the code below on github.</description>
     </item>
     
     <item>
       <title>RichFaces 4.1.0.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.cr1-release-announcement/</link>
       <pubDate>Wed, 23 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.cr1-release-announcement/</guid>
       <description>I’m excited to announce the availability of RichFaces4.1.0.CR1, the first release candidate for RichFaces 4.1.0. Stability of the platform has been a strong focus for all the RichFaces 4.1.0 milestone releases, and has been even more so of a focus for our CR1 release.
 We really appreciate the community feedback we’ve received throughout the 4.1 development cycle, with each of the milestone releases. The bugs found and the suggestions provided from the community have really helped us nail down this release.</description>
     </item>
     
     <item>
       <title>RichFaces 4.1.0.M4 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.m4-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m4-release-announcement/</link>
       <pubDate>Wed, 09 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.m4-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m4-release-announcement/</guid>
       <description>The RichFaces 4.1 Milestone 4 release is now available for download! With this M4 release we focused on stabilizing the features we introduced in the earlier 4.1 release-train milestones (M1, M2, M3). The release following M4 will be our 4.1 release candidate, so we want to make sure we achieve maximum stability with M4. Some of the key areas we touched are listed below.
 If your keen and want to get started right away, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces 4.1.0.M3 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.m3-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m3-release-announcement/</link>
       <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.m3-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m3-release-announcement/</guid>
       <description>The RichFaces 4.1 Milestone 3 release is now available for download. Further building on the new components and framework improvements introduced in the M1 and M2 releases, M3 brings it all together with an improved showcase - featuring a demonstration of the mobile compatibility of the RichFaces 4 component set. Along-side improvements to resource handling, and enhancements to the push component, we’ve fixed a number of bugs and issues, as voted by you - our user community!</description>
     </item>
     
     <item>
       <title>RichFaces 4 CDK | jQuery UI Calendar</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</link>
       <pubDate>Fri, 07 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</guid>
       <description>Further incrementing the complexity over the input component we created previously, this time we will create a JSF calendar component. Being pragmatic OSS developers, we will leverage the existing javascript of the datepicker component from the jQuery UI project, and we&amp;rsquo;ll see how well the RichFaces CDK lends itself to mapping JSF component attributes into javascript configuration options.
 As always, if you are interested in following along in your IDE, you can get the code below on github.</description>
     </item>
     
     <item>
       <title>Testing AS7 web apps over SSL</title>
-      <link>http://www.bleathem.ca/blog/testing-as7-web-apps-over-ssl/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/testing-as7-web-apps-over-ssl/</link>
       <pubDate>Wed, 05 Oct 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/testing-as7-web-apps-over-ssl/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/testing-as7-web-apps-over-ssl/</guid>
       <description>Here&amp;rsquo;s a recipe I found useful for trouble-shooting a web-app over an SSL connection. The steps involved are to:
 Set the server name/IP on each of the testing machines (both Windows and Linux) Create a self-signed certificate for the server using the java-based keytool Export the certificate for installation as a CA in the clients Configure JBoss AS7 to use the certificate sotre All the above steps are sufficiently simple, but each required it&amp;rsquo;s own share of googling to get everything just right.</description>
     </item>
     
     <item>
       <title>RichFaces 4 CDK | Input Component</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--input-component/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--input-component/</link>
       <pubDate>Wed, 21 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--input-component/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--input-component/</guid>
       <description>With our last component, we saw how we could output some simple text with a custom JSF component created with the RichFaces CDK. Let&amp;rsquo;s increment the complexity, and see how we can create a component that accepts input. Again, the goal here is to highlight how the important features fit together, and to leverage as much of the plumbing work as possible from the RichFaces CDK.
 If you are interested in following along in your IDE, you can get the code below on github.</description>
     </item>
     
     <item>
       <title>RichFaces 4.1.0.M2 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.m2-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m2-release-announcement/</link>
       <pubDate>Wed, 21 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.m2-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m2-release-announcement/</guid>
       <description>The Richfaces 4.1 milestone releases are trucking along. With M1, we had a focus on changes surrounding project infrastructure, and the introduction of some new components. Now with M2 we see updates to the core, and a stabilization of both the new components and the framework as a whole.
 jQuery Upgrade We built the RichFaces 4 components using jQuery for DOM manipulation. Given the degree to which the we rely on jQuery, upgrading it is a &amp;ldquo;big deal&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>RichFaces 4 CDK | Hello World</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--hello-world/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--hello-world/</link>
       <pubDate>Sat, 10 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--hello-world/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--hello-world/</guid>
       <description>This is the first technical post of my CDK series. Starting real simple, we&amp;rsquo;ll create a component that produces a hello world output. &amp;ldquo;Why start with a hello world? Isn&amp;rsquo;t that a little cliche?&amp;rdquo;. Well indeed it is, but it is by far the best way to point out the fundamental pieces of the CDK, and how they together. We&amp;rsquo;ll build a strong foundation in our understanding of the CDK, on which we can build more interesting components in future posts.</description>
     </item>
     
     <item>
       <title>Seam Faces Community Hack Night</title>
-      <link>http://www.bleathem.ca/blog/seam-faces-community-hack-night/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/seam-faces-community-hack-night/</link>
       <pubDate>Wed, 07 Sep 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/seam-faces-community-hack-night/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/seam-faces-community-hack-night/</guid>
       <description>This week&amp;rsquo;s Seam 3 Community hack night is centered around Seam Faces. This is a great chance to mingle with some CDI/JSF developers on IRC, and get your fingerprint into the Seam Faces DNA! Whether you have your own itch you want to scratch, a long-standing bug you want to see resolved, or implement a new feature altogether, we&amp;rsquo;ve got plenty of low hanging fruit ripe for the picking!
 In preparation for the hack-a-thon, I&amp;rsquo;ve given the Seam Faces JIRA issues a once-over.</description>
     </item>
     
     <item>
       <title>RichFaces 4 CDK | Introduction</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--introduction/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--introduction/</link>
       <pubDate>Wed, 31 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--introduction/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4-cdk--introduction/</guid>
       <description>A new blog series Having recently dived head first into the RichFaces 4 Component development Kit (CDK), I thought it would be useful to share the knowledge and experience I&amp;rsquo;ve gained. Over the next few weeks, I am going to put out a series of blog posts giving some examples of how to use the RichFaces CDK. Hopefully by the end of this series, we will have written some interesting components and left you with the urge to write your own JSF components using the CDK!</description>
     </item>
     
     <item>
       <title>RichFaces 4.1.0.M1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.m1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m1-release-announcement/</link>
       <pubDate>Tue, 16 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.m1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.1.0.m1-release-announcement/</guid>
       <description>The RichFaces team is proud to announce the first milestone release of RichFaces 4.1. This release includes some significant contributions from community members, adding to and building on top of the efforts of the RichFaces core developer team! You can find this development release on the project’s download page and check out our “getting started” resources.
 First Milestone for 4.1 The 4.1.0 Milestone1 release includes several highly anticipated features and improvements in RichFaces 4.</description>
     </item>
     
     <item>
       <title>Seam Faces 3.0.2.Final released</title>
-      <link>http://www.bleathem.ca/blog/seam-faces-3.0.2.final-released/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/seam-faces-3.0.2.final-released/</link>
       <pubDate>Tue, 16 Aug 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/seam-faces-3.0.2.final-released/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/seam-faces-3.0.2.final-released/</guid>
       <description>(cross posted from :http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released)
 Great news, Seam Faces 3.0.2.Final has been released! It is available for download via the JBoss Nexus repository. Primarily a bug fix release, Seam Faces 3.0.2.Final resolves some compatibility issues with MyFaces, thanks to contributions from Christian Kaltepoth. Additionally, José Freitas has contributed some fixes to issues with the UIInputContainer. A full list of the bugs fixed is available here.
 I&amp;rsquo;m very excited about the community involvement in this release, and with more community members coming forward with features they&amp;rsquo;d like to see implemented/improved.</description>
@@ -767,20 +767,20 @@ I&amp;rsquo;m very excited about the community involvement in this release, and 
     
     <item>
       <title>Seam Faces @JAXConf/JSF Summit</title>
-      <link>http://www.bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</link>
       <pubDate>Mon, 18 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</guid>
       <description>It&amp;rsquo;s been a while since my last post, as I&amp;rsquo;ve gone through a significant career change. I am now working for Red Hat, as a core developer on the RichFaces project. I am also representing Red hat on the JSR-344: JSF 2.2 Expert Group, and will continue in my role as Seam Faces module lead.
 As such, I&amp;rsquo;ll be presenting at JAXConf/JSF Summit on the topic of Seam Faces. I really like this presentation, as I not only go into the features provided by Seam Faces, but I show how some of those features are implemented taking advantage of the platform extension points built into CDI and JSF.</description>
     </item>
     
     <item>
       <title>Seam Module Spotlight: Seam Faces</title>
-      <link>http://www.bleathem.ca/blog/seam-module-spotlight-seam-faces/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/seam-module-spotlight-seam-faces/</link>
       <pubDate>Mon, 18 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/seam-module-spotlight-seam-faces/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/seam-module-spotlight-seam-faces/</guid>
       <description>This is a blog entry I wrote for in.relation.to. I&amp;rsquo;m including it here to keep a personal record of the post.
 In this entry for the Seam Module Spotlight series, we will take a close look at the “view configuration” feature of Seam Faces.
 Seam Faces aims to provide JSF developers with a truly worthy framework for web development by ironing out some of JSF’s pain points, integrating tightly with CDI, and offering out of the box integration with the other Seam Modules and third party libraries.</description>
@@ -788,107 +788,107 @@ Seam Faces aims to provide JSF developers with a truly worthy framework for web 
     
     <item>
       <title>RichFaces Plugin for JBoss Forge</title>
-      <link>http://www.bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</link>
       <pubDate>Sun, 03 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</guid>
       <description>If you haven&amp;rsquo;t yet heard about it, JBoss Forge is a fantastic new tool from JBoss for rapid application development of standards based applications. Forge allows a developer to quickly set up the scaffolding for an application, and quickly get to the matter of solving domain problems.
 What makes Forge particularly interesting, from my perspective, is the way it was built with plugins in mind as a defining way in which the platform is meant to be extended.</description>
     </item>
     
     <item>
       <title>View Configuration with Seam 3 Faces - the Introduction</title>
-      <link>http://www.bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</link>
       <pubDate>Sun, 27 Mar 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</guid>
       <description>In Seam Faces we&amp;rsquo;ve provided JSF developers with a mechanism to centrally configure various aspects of their JSF views. Concerns like transaction control and view security are currently supported, and support for URL rewriting, XSRF attack prevention, and JSF navigation is in the planning stage.
 The end-goal is to support view configuration via multiple sources (including some support for &amp;lt;f:metadata&amp;gt; child tags). For now we provide type-safe configuration using annotations on enums.</description>
     </item>
     
     <item>
       <title>Updating Weld in Glassfish 3.1</title>
-      <link>http://www.bleathem.ca/blog/updating-weld-in-glassfish-3.1/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/updating-weld-in-glassfish-3.1/</link>
       <pubDate>Wed, 16 Feb 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/updating-weld-in-glassfish-3.1/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/updating-weld-in-glassfish-3.1/</guid>
       <description>Like any piece of software, Weld, the reference implementation for JSR-299, is continually improving as bugs are discovered, and performance is optimized. However, since Weld is tightly coupled with your application server of choice, using the latest weld is slightly more complicated than just bundling a weld release with your web application. This post outlines the relatively painless process of updating the Weld implementation of Glassfish 3.1 to use the latest SNAPSHOT, or any later release for that matter.</description>
     </item>
     
     <item>
       <title>RESTful URLs, with JSF 2</title>
-      <link>http://www.bleathem.ca/blog/restful-urls-with-jsf-2/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/restful-urls-with-jsf-2/</link>
       <pubDate>Sat, 29 Jan 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/restful-urls-with-jsf-2/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/restful-urls-with-jsf-2/</guid>
       <description>JSF 2 introduced the ability to create RESTful URLs with the introduction of the &amp;lt;f:viewParam&amp;gt; tag. The tag is easy enough to use, you simply place it in the &amp;lt;f:metadate&amp;gt; tag, and configure the attributes to decode the url.
 &amp;lt;f:metadata&amp;gt; &amp;lt;f:viewParam /&amp;gt; &amp;lt;/f:metadata&amp;gt;  There are no words to explain how great a feature this is for JSF. The old &amp;ldquo;every request is a POST&amp;rdquo; theory didn&amp;rsquo;t pan out. RESTful URLs are bookmarkable, and meaningful to end-users.</description>
     </item>
     
     <item>
       <title>ViewAccessScope - why it&#39;s useful</title>
-      <link>http://www.bleathem.ca/blog/viewaccessscope---why-its-useful/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/viewaccessscope---why-its-useful/</link>
       <pubDate>Fri, 17 Dec 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/viewaccessscope---why-its-useful/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/viewaccessscope---why-its-useful/</guid>
       <description>At first the conversation scope introduced with CDI seemed like it would be incredibly useful. Unfortunately, working with conversations ended up being more difficult than expected. Details of why this is, is fodder for another post.
 I ended up often using the JSF ViewScope, exposed as a CDI scope though the Seam Faces CDI extension. When used in conjunction with JSF viewParams to propagate information between pages, the result is a book-markable end user experience.</description>
     </item>
     
     <item>
       <title>CDI does events too!</title>
-      <link>http://www.bleathem.ca/blog/cdi-does-events-too/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/cdi-does-events-too/</link>
       <pubDate>Sat, 20 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/cdi-does-events-too/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/cdi-does-events-too/</guid>
       <description>CDI is the new programming model introduced with Java EE 6. An acronym for Contexts and Dependency Injection, CDI advertises well two of the programming paradigms it aims to solve. But there is another, often overlooked sibling: Event handling. While I&amp;rsquo;d heard it mentioned in the context of CDI, I&amp;rsquo;d never really paid much attention - I was probably too busy trying to wrap my head around Conversations, and how CDI provides Dependency Injection.</description>
     </item>
     
     <item>
       <title>My Glassfish support subscription came through - finally</title>
-      <link>http://www.bleathem.ca/blog/my-glassfish-support-subscription-came-through---finally/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/my-glassfish-support-subscription-came-through---finally/</link>
       <pubDate>Thu, 15 Jul 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/my-glassfish-support-subscription-came-through---finally/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/my-glassfish-support-subscription-came-through---finally/</guid>
       <description>Call me eager, call me insane, I had a JavaEE 6 app up and running in production on Glassfish 3.0 one month after it&amp;rsquo;s release. The improvements in JSF 2 and CDI were too compelling for me to hold off adopting, and sure enough, the application was quick and painless to develop.
 I did however pay a price for being an early adopter - a Glassfish / Weld bug was preventing my JSF login pages from working.</description>
     </item>
     
     <item>
       <title>JSF Validation Failed Notice</title>
-      <link>http://www.bleathem.ca/blog/jsf-validation-failed-notice/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/jsf-validation-failed-notice/</link>
       <pubDate>Fri, 25 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/jsf-validation-failed-notice/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/jsf-validation-failed-notice/</guid>
       <description>Here&amp;rsquo;s how I show a notice on a JSF 2 page indicating that the JSF 2 postback failed due to validation errors. The following facelet snippet is rendered only when validation fails:
 &amp;lt;h:outputtext styleclass=&amp;quot;errorMessage globalMessage&amp;quot; value=&amp;quot;Request *not* saved due to input errors&amp;quot; rendered=&amp;quot;\#{facesContext.validationFailed}&amp;quot; /&amp;gt;  The user then knows they should look through the page to correct the individually marked validation failures.</description>
     </item>
     
     <item>
       <title>From svn to mercurial, the hg rises!</title>
-      <link>http://www.bleathem.ca/blog/from-svn-to-mercurial-the-hg-rises/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/from-svn-to-mercurial-the-hg-rises/</link>
       <pubDate>Fri, 09 Apr 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/from-svn-to-mercurial-the-hg-rises/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/from-svn-to-mercurial-the-hg-rises/</guid>
       <description>I&amp;rsquo;ve been toying with the idea of moving from svn to a distributed version control system (dvcs) for a long time. I held back, hoping the mercurial (hg) vs. git &amp;ldquo;war&amp;rdquo; would declare a winner, but as major projects started adopting the two dvcs&amp;rsquo;s, it became apparent to me that neither tool was going to disappear anytime soon. This notion was cemented for me when I read a forum post saying hg = git &amp;gt;&amp;gt; svnThat settled it.</description>
     </item>
     
     <item>
       <title>Glassfish V2 and V3 on the same host, behind mod_jk</title>
-      <link>http://www.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</link>
       <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</guid>
       <description>I&amp;rsquo;ve jumped on the JavaEE 6 bandwagon, with one application already in production. The developer productivity improvements in JavaEE6/Glassfish V3 are tremendous. The only downside is that I still have some JavaEE 5 applications in production. The JavaEE 5 apps can&amp;rsquo;t migrate to JavaEE 6 until Icefaces supports JSF 1.2.
 One workaround to this is to bundle the JSF 1.2 implementation with your application, then configure the classloader using the sun-web.</description>
     </item>
     
     <item>
       <title>In the beginning...</title>
-      <link>http://www.bleathem.ca/blog/in-the-beginning/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/in-the-beginning/</link>
       <pubDate>Sat, 14 Nov 2009 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/in-the-beginning/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/in-the-beginning/</guid>
       <description>Ok, this is my blog. I&amp;rsquo;m not sure how I will use it, for the most part it will just be a place where I can organize my thoughts and ideas about Java development. Maybe it will be useful for others, but probably not!</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Java ee 6 on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/java-ee-6/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/java-ee-6/</link>
     <description>Recent content in Java ee 6 on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Nov 2010 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/java-ee-6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/java-ee-6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>CDI does events too!</title>
-      <link>http://www.bleathem.ca/blog/cdi-does-events-too/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/cdi-does-events-too/</link>
       <pubDate>Sat, 20 Nov 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/cdi-does-events-too/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/cdi-does-events-too/</guid>
       <description>CDI is the new programming model introduced with Java EE 6. An acronym for Contexts and Dependency Injection, CDI advertises well two of the programming paradigms it aims to solve. But there is another, often overlooked sibling: Event handling. While I&amp;rsquo;d heard it mentioned in the context of CDI, I&amp;rsquo;d never really paid much attention - I was probably too busy trying to wrap my head around Conversations, and how CDI provides Dependency Injection.</description>
     </item>
     

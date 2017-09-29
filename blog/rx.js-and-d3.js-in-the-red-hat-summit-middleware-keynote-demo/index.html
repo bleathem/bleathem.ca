@@ -1,0 +1,957 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.27.1" />
+        
+
+
+        
+            <meta name="author" content="Brian Leathem">
+        
+        
+            
+                <meta name="description" content="Experiences of a developer.  A blog by Brian Leathem">
+            
+        
+
+        <meta name="twitter:card" content="summary"/><meta name="twitter:title" content="Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo"/>
+<meta name="twitter:description" content="At this year&#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo. I made the custom front-ends in the demo using Reactive Extensions for javascript (Rx.js) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using d3.js.
+ If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at 19m)."/>
+<meta name="twitter:site" content="@brianleathem"/>
+
+        <meta property="og:title" content="Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo" />
+<meta property="og:description" content="At this year&#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo. I made the custom front-ends in the demo using Reactive Extensions for javascript (Rx.js) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using d3.js.
+ If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at 19m)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/" />
+
+
+
+<meta property="article:published_time" content="2015-07-07T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2015-07-07T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo">
+<meta itemprop="description" content="At this year&#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo. I made the custom front-ends in the demo using Reactive Extensions for javascript (Rx.js) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using d3.js.
+ If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at 19m).">
+
+
+<meta itemprop="dateModified" content="2015-07-07T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="815">
+
+
+
+<meta itemprop="keywords" content="rxjs,d3js,Red Hat,summit," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+        
+            
+        
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      
+          <h1><a href="/">blog</a></h1>
+      
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/about/">
+                            <i class="fa fa-id-card-o">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="bleathem.github.io/bleathem.ca">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="q" value="site:bleathem.github.io/bleathem.ca">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/about/">
+                            <h3>
+                                <i class="fa fa-id-card-o">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/contact/">
+                            <h3>
+                                <i class="fa fa-envelope-o">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+                    
+                
+
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/"><p>Patternfly Roadmap Update</p></a>
+                    </li>
+                
+                    <li>
+                        <a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/"><p>Patteryfly 4.0.0 Alpha.2 Release</p></a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f&text=Rx.js%20and%20d3.js%20in%20the%20Red%20Hat%20Summit%20Middleware%20Keynote%20Demo&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f&title=Rx.js%20and%20d3.js%20in%20the%20Red%20Hat%20Summit%20Middleware%20Keynote%20Demo" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f&title=Rx.js%20and%20d3.js%20in%20the%20Red%20Hat%20Summit%20Middleware%20Keynote%20Demo" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f&title=Rx.js%20and%20d3.js%20in%20the%20Red%20Hat%20Summit%20Middleware%20Keynote%20Demo" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+    <header>
+    <div class="title">
+        
+            <h1><a href="bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/">Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='2015-07-07'>
+            July 7, 2015</time>
+        <span class="author">Brian Leathem</span>
+        
+            <p>4 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+    
+    <section id="social-share">
+        <ul class="icons">
+            
+
+
+<li><a href="//twitter.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f&text=Rx.js%20and%20d3.js%20in%20the%20Red%20Hat%20Summit%20Middleware%20Keynote%20Demo&via=brianleathem" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+</a></li>
+
+
+<li><a href="//plus.google.com/share?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+</a></li>
+
+
+<li><a href="//www.facebook.com/sharer/sharer.php?u=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+</a></li>
+
+
+<li><a href="//reddit.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f&title=Rx.js%20and%20d3.js%20in%20the%20Red%20Hat%20Summit%20Middleware%20Keynote%20Demo" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+</a></li>
+
+
+<li><a href="//www.linkedin.com/shareArticle?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f&title=Rx.js%20and%20d3.js%20in%20the%20Red%20Hat%20Summit%20Middleware%20Keynote%20Demo" target="_blank" class="share-btn linkedin">
+    <i class="fa fa-linkedin"></i>
+    <p>LinkedIn</p>
+</a></li>
+
+
+<li><a href="//www.stumbleupon.com/submit?url=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f&title=Rx.js%20and%20d3.js%20in%20the%20Red%20Hat%20Summit%20Middleware%20Keynote%20Demo" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+</a></li>
+
+
+<li><a href="mailto:?subject=Check out this post by Brian%20Leathem&body=bleathem.github.io%2fbleathem.ca%2fblog%2frx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+</a></li>
+
+        </ul>
+    </section>
+    
+
+    
+    
+
+    
+        
+        
+
+
+
+
+    
+
+
+        
+
+        <a href="bleathem.github.io/bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/" class="image featured">
+            <img src="/" alt="" />
+        </a>
+    
+
+
+    <div id="content">
+        <div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>At this year&#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo.  I made the custom front-ends in the demo using Reactive Extensions for javascript (<a href="https://github.com/Reactive-Extensions/RxJS">Rx.js</a>) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using <a href="http://d3js.org/">d3.js</a>.</p>
+</div>
+<div class="paragraph">
+<p>If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at <a href="https://www.youtube.com/watch?v=wWNVpFibayA&amp;feature=youtu.be&amp;t=19m3s">19m</a>).  In this blog post I will cover at a high level the UIs I created for the keynote demo, setting the stage for a more in-depth analysis with subsequent posts.</p>
+</div>
+<div class="openblock center">
+<div class="content">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wWNVpFibayA" frameborder="0" allowfullscreen></iframe>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_rx_js_in_the_keynote_demo">Rx.js in the Keynote Demo</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This year&#8217;s Red Hat Summit Middleware keynote demo showcased 3 major technologies at Red Hat:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>IoT using Red Hat JBoss A/MQ as the message broker, and Apache Spark for streaming analytics</p>
+</li>
+<li>
+<p>Docker at Scale using OpenShift</p>
+</li>
+<li>
+<p>Mobile with the Red Hat Mobile Application platform</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To showcase the data we collected from the systems, I built 3 user interfaces using Rx.js to manipulate the data, and d3.js to visualize it.  Developing these UIs provided me with an excellent opportunity to dive deep into these libraries and learn many of their ins and outs.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_iot_beacon_location">IoT Beacon Location</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The data collected for the IoT portion of our keynote demo consisted of millions of scan events from 300 <a href="https://store.gimbal.com/collections/beacons/products/s10">Gimbal BLE beacons</a> handed out to <a href="http://www.devnation.org/">DevNation</a> attendees.  The scanners were made using <a href="https://www.raspberrypi.org/">Raspberry PIs</a> that transmitted the scan events to a <a href="http://www.redhat.com/en/technologies/jboss-middleware/amq">Red Hat A-MQ</a> message broker.  These numerous events were then processed using  <a href="https://spark.apache.org/">Apache Spark</a>, reducing the millions of beacon events into tens-of-thousands of meaningful "business events" representing attendee movements throughout the conference.</p>
+</div>
+<div class="sect2">
+<h3 id="_iot_map_visualization">IoT Map Visualization</h3>
+<div class="paragraph">
+<p>The Spark-processed data was retrieved from the message broker into a node.js back-end, was stored in a mongodb datastore, and then was re-broadcast to the browser clients.  I used Rx.js throughout both the node.js back-end and in the browser to:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>wrap a <a href="https://github.com/jmesnil/stomp-websocket">STOMP over Websocket</a> protocol connection.</p>
+</li>
+<li>
+<p>wrap the websocket broadcasts and clients</p>
+</li>
+<li>
+<p>filter and map the data streams</p>
+</li>
+<li>
+<p>bind to DOM events</p>
+</li>
+<li>
+<p>etc.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Using Rx.js throughout the application meant that any idiosyncrasies of the the various protocols were encapsulated within the Observable definition, and the rest of the application adhered to a consistent API for authoring Asynchronous javascript code.</p>
+</div>
+<div class="paragraph">
+<p>The map UI uses d3.js to bind the beacon location data to SVG circles in the browser.  I then used the d3.js <a href="https://github.com/mbostock/d3/wiki/Force-Layout">force layout</a> to animate the circles and move them around the map, mimicking the movement of the real-world beacons.</p>
+</div>
+<div class="paragraph">
+<p>Watch the video of the keynote linked above to see the UI backed with real data.  I additionally embedded a code-pen that shows the beacon-location visualization backed by simulated data. (If the animation is already complete, hover over the codepen and hit the "rerun" button in the bottom right).</p>
+</div>
+<div class="openblock codepen-half">
+<div class="content">
+<p data-height="1080" data-theme-id="0" data-slug-hash="NqYgRx" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/NqYgRx/'>Beacon Location</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_iot_broker_visualization">IoT broker Visualization</h3>
+<div class="paragraph">
+<p>The map UI worked really well to display the business value of the beacon data collected.  We needed a second UI however to demonstrate both the sheer volume of data that our A-MQ message broker was receiving from the Raspberry Pis, and the dramatic reduction in data volume as Spark processed the data.</p>
+</div>
+<div class="paragraph">
+<p>Again using a STOMP over websockets connection to the message broker, I used Rx.js to manipulate the data, and d3.js to visualize it.  This broker UI is running in the codepen below backed by simulated data.</p>
+</div>
+<div class="openblock codepen-half">
+<div class="content">
+<p data-height="1080" data-theme-id="0" data-slug-hash="jPzLXQ" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/jPzLXQ/'>Broker</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1k_containers_visualization">1k Containers Visualization</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The power of docker, kubernetes, and OpenShift was demonstrated with a rapid scale-up of 1026 containers live on stage.  To visualize this scale-up, we developed a custom "hexboard" UI, where each hexagon represents an individual kubernetes pod.  The lifecycle of each individual pod was reflected as a falling hexagon indicating each stage transition, culminating with the <em>shadowman</em> Red Hat logo when all pods were online.</p>
+</div>
+<div class="paragraph">
+<p>I&#8217;ve included a codepen below showing the hexboard UI, again backed by "simulated" data.</p>
+</div>
+<div class="openblock codepen-half">
+<div class="content">
+<p data-height="1080" data-theme-id="0" data-slug-hash="domKre" data-default-tab="result" data-user="bleathem" class='codepen'>See the Pen <a href='http://codepen.io/bleathem/pen/domKre/'>Hexboard</a> by Brian Leathem (<a href='http://codepen.io/bleathem'>@bleathem</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_claim_you_container">Claim you container</h3>
+<div class="paragraph">
+<p>Audience members were then provided an opportunity to claim their own piece of "the cloud" by drawing a sketch on their mobile devices and posting those sketches to an individual kubernetes pod via the <a href="https://www.redhat.com/en/technologies/mobile/application-platform">Red Hat Mobile Application Platform</a> back-end.  The audience participation was incredible, and we quickly filled the hexboard with user-generated sketches!</p>
+</div>
+<div class="openblock tweet">
+<div class="content">
+<blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/RHSummit?src=hash">#RHSummit</a> Thank you for your clever artwork during our keynote demo of <a href="https://twitter.com/hashtag/OpenShift3?src=hash">#OpenShift3</a> launching 1026 docker containers! <a href="http://t.co/GpSWOMOvdl">pic.twitter.com/GpSWOMOvdl</a></p>&mdash; Burr Sutter (@burrsutter) <a href="https://twitter.com/burrsutter/status/613756269162311684">June 24, 2015</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_the_source">The source</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The source code for the <a href="https://github.com/bleathem/keynote2015-beacon">beacon location UI</a>, and the <a href="https://github.com/bleathem/keynote2015-beacon">1k container UI</a> are both available on github.  The goal over the next few weeks is to clean up the keynote demo code, and provide it in a form where folks can run it themselves.  Stay tuned for further developments in this regard.</p>
+</div>
+</div>
+</div>
+
+    </div>
+
+    <footer>
+        <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Categories
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/javascript'>Javascript</a></li>
+    
+        <li><a href='bleathem.github.io/bleathem.ca/categories/conferences'>Conferences</a></li>
+    
+</ul>
+
+    </footer>
+</article>
+<ul class="actions pagination">
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/rx.js-session-at-devnation/"
+                class="button big previous">Rx.js Session at DevNation</a></li>
+    
+
+    
+        <li><a href="bleathem.github.io/bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/"
+                class="button big next">Error handling in a request/response model with the mediator pattern</a></li>
+    
+</ul>
+
+
+
+    
+        <article class="post">
+            <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "bleathem-java" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </article>
+    
+
+
+
+    </div>
+    
+<section id="sidebar">
+
+    
+        <section id="intro">
+            
+            
+                
+                    <a href="/" class="logo"><img src="/img/main/bleathem.png" alt="Brian Leathem" /></a>
+                
+            
+            
+                <header>
+                    <h2>Experiences of a developer</h2>
+                    <p>A journal of my journey through code.</p>
+                </header>
+            
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <ul class="posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patternfly-roadmap-update/">Patternfly Roadmap Update</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-05-30'>
+                                    May 30, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <h3><a href="bleathem.github.io/bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/">Patteryfly 4.0.0 Alpha.2 Release</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-01-27'>
+                                    January 27, 2017</time>
+                            </header>
+                        </article>
+                    </li>
+                
+
+                
+                    <li>
+                        <ul class="actions">
+                            <li><a href=
+                            
+                                /blog/
+                            
+                            class="button">View more posts</a></li>
+                        </ul>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+    
+    
+    
+        <section id="categories">
+            <ul class="posts">
+                <header>
+                    <h3><a href="/categories/">Categories</a></h3>
+                </header>
+
+                
+                    
+                
+
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/java-ee/">Java EE</a>
+                                <span style="float:right;">77</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/richfaces/">RichFaces</a>
+                                <span style="float:right;">55</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/javascript/">Javascript</a>
+                                <span style="float:right;">10</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/conferences/">Conferences</a>
+                                <span style="float:right;">8</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/seam/">Seam</a>
+                                <span style="float:right;">5</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/patternfly/">PatternFly</a>
+                                <span style="float:right;">3</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/mobile/">Mobile</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+                    <li>
+                        <article>
+                            <header>
+                                <a href="/categories/tools/">Tools</a>
+                                <span style="float:right;">2</span>
+                            </header>
+                        </article>
+                    </li>
+                
+            </ul>
+        </section>
+    
+
+    
+        
+        <section class="blurb">
+            <h2>About</h2>
+            <p>Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges.</p>
+
+            <ul class="actions">
+                <li><a href="/about/" class="button">Learn More</a></li>
+            </ul>
+        </section>
+        
+
+    
+        <section id="footer">
+            <ul class="icons">
+                
+                
+                    
+<li><a href="//github.com/bleathem" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li><a href="//linkedin.com/in/bleathem" target="_blank" title="LinkedIn" class="fa fa-linkedin"></a></li>
+
+
+
+
+
+<li><a href="//stackoverflow.com/users/264797" target="_blank" title="Stack Overflow" class="fa fa-stack-overflow"></a></li>
+
+
+
+
+
+
+
+<li><a href="//plus.google.com/+BrianLeathem" target="_blank" title="Google+" class="fa fa-google-plus"></a></li>
+
+
+
+
+
+<li><a href="//twitter.com/brianleathem" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+                
+            </ul>
+
+            <p class="copyright">&copy; 2017 Experiences of a developer. Powered by <a href="//gohugo.io" target="_blank">Hugo</a></p>
+        </section>
+
+</section>
+
+      </div>
+      <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+      
+
+      
+        
+      
+
+      
+      
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+        <script src="/js/util.js"></script>
+        <script src="/js/main.js"></script>
+        <script src="/js/backToTop.js"></script>
+      
+
+      
+
+      
+      <script>hljs.initHighlightingOnLoad();</script>
+    </body>
+</html>
+

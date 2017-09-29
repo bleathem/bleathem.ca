@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Forge on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/forge/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/forge/</link>
     <description>Recent content in Forge on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 03 Apr 2011 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/forge/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/forge/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RichFaces Plugin for JBoss Forge</title>
-      <link>http://www.bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</link>
       <pubDate>Sun, 03 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</guid>
       <description>If you haven&amp;rsquo;t yet heard about it, JBoss Forge is a fantastic new tool from JBoss for rapid application development of standards based applications. Forge allows a developer to quickly set up the scaffolding for an application, and quickly get to the matter of solving domain problems.
 What makes Forge particularly interesting, from my perspective, is the way it was built with plugins in mind as a defining way in which the platform is meant to be extended.</description>
     </item>

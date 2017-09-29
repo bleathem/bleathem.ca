@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>RF3 on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/rf3/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/rf3/</link>
     <description>Recent content in RF3 on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 16 Jul 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/rf3/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/rf3/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RichFaces Security Advisory CVE-2013-2165</title>
-      <link>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</link>
       <pubDate>Tue, 16 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</guid>
       <description>We have fixed a security vulnerability in RichFaces 3, 4 and 5. Details of the vulnerability can be found in this Red Hat Errata document released for our WFK product. We have released community micro releases addressing this vulnerability, so please update your applications ASAP. Read below for a summary of the problem and an explanation of how to use the fix in your applications.
  Download RichFaces 3.</description>
     </item>
     
     <item>
       <title>RichFaces 3 Showcase on OpenShift</title>
-      <link>http://www.bleathem.ca/blog/richfaces-3-showcase-on-openshift/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-3-showcase-on-openshift/</link>
       <pubDate>Wed, 06 Jun 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-3-showcase-on-openshift/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-3-showcase-on-openshift/</guid>
       <description>For those of you still developing against RichFaces 3 (you should strongly consider &amp;ldquo;migrating to RichFaces 4&amp;rdquo;:https://community.jboss.org/wiki/RichFacesMigrationGuide33x-4xMigration!) we have deployed the &amp;ldquo;RichFaces 3 showcase&amp;rdquo;:http://showcase-rf3.richfaces.org (also referred to as the RichFaces 3 &amp;ldquo;demo&amp;rdquo;) to &amp;ldquo;OpenShift&amp;rdquo;:http://openshift.com, Red Hat&amp;rsquo;s PaaS offering. This is the same cloud environment we use to host the &amp;ldquo;RichFaces 4 showcase&amp;rdquo;:http://showcase.richfaces.org.
 div=. &amp;ldquo;!/images/blog/2012-06-06-richfaces3-showcase/rf3-showcase_400x.png!&amp;rdquo;:http://showcase-rf3.richfaces.org
 This deployment of the RichFaces 3 showcase not only ensures that this useful and valuable resource will continue to be available to you, the developer community, but also serves to demonstrate how you can take advantage of OpenShift and the latest JBoss AS 7 releases to host your Richfaces 3&amp;frasl;4 applications!</description>

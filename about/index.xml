@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>About me on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/about/</link>
+    <link>bleathem.github.io/bleathem.ca/about/</link>
     <description>Recent content in About me on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/about/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/about/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>

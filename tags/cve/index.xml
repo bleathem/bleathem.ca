@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Cve on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/cve/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/cve/</link>
     <description>Recent content in Cve on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 11 Apr 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/cve/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/cve/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RichFaces Security Advisory CVE-2014-0335</title>
-      <link>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</link>
       <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</guid>
       <description>A security vulnerability has been uncovered and resolved in RichFaces 4. Details of the vulnerability can be found in this Red Hat Errata document released for our WFK product. We have released a community micro release addressing this vulnerability, so please update your applications ASAP. Read below for a summary of the problem and some additional minor fixes included in this release.
  To update to this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>
     
     <item>
       <title>RichFaces Security Advisory CVE-2013-2165</title>
-      <link>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</link>
       <pubDate>Tue, 16 Jul 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</guid>
       <description>We have fixed a security vulnerability in RichFaces 3, 4 and 5. Details of the vulnerability can be found in this Red Hat Errata document released for our WFK product. We have released community micro releases addressing this vulnerability, so please update your applications ASAP. Read below for a summary of the problem and an explanation of how to use the fix in your applications.
  Download RichFaces 3.</description>
     </item>

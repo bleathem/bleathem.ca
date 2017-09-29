@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Validation on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/validation/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/validation/</link>
     <description>Recent content in Validation on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Jun 2010 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/validation/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/validation/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>JSF Validation Failed Notice</title>
-      <link>http://www.bleathem.ca/blog/jsf-validation-failed-notice/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/jsf-validation-failed-notice/</link>
       <pubDate>Fri, 25 Jun 2010 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/jsf-validation-failed-notice/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/jsf-validation-failed-notice/</guid>
       <description>Here&amp;rsquo;s how I show a notice on a JSF 2 page indicating that the JSF 2 postback failed due to validation errors. The following facelet snippet is rendered only when validation fails:
 &amp;lt;h:outputtext styleclass=&amp;quot;errorMessage globalMessage&amp;quot; value=&amp;quot;Request *not* saved due to input errors&amp;quot; rendered=&amp;quot;\#{facesContext.validationFailed}&amp;quot; /&amp;gt;  The user then knows they should look through the page to correct the individually marked validation failures.</description>
     </item>

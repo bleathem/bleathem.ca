@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quickstart on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/quickstart/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/quickstart/</link>
     <description>Recent content in Quickstart on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 12 Oct 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/quickstart/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/quickstart/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RichFaces Bootstrap Quickstart</title>
-      <link>http://www.bleathem.ca/blog/richfaces-bootstrap-quickstart/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-bootstrap-quickstart/</link>
       <pubDate>Fri, 12 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-bootstrap-quickstart/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-bootstrap-quickstart/</guid>
       <description>I&amp;rsquo;m excited about the buzz the RichFaces Bootstrap sandbox initiative is generating. It&amp;rsquo;s also exciting to see other projects offer a bootstrap style/theme. This can only help inter-op and component compatibility, marking life easier for all JSF developers. This post is meant to help those looking to build a custom application using the RichFaces Bootstrap components.
 Along with the new approach we are taking in the development of these new components, the RichFaces project is incorporating a new LESS based approach to style/themes.</description>
     </item>

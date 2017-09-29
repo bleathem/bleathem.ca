@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>CR on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/cr/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/cr/</link>
     <description>Recent content in CR on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 16 Oct 2014 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/cr/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/cr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RichFaces 4.5.0.CR2 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</link>
       <pubDate>Thu, 16 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</guid>
       <description>We have a second candidate release for RichFaces 4.5 (4.5.0.CR2) available. We&amp;#8217;ve fixed a couple of regressions uncovered by both our community and QA team. Thanks guys! Read on for the specifics of what was fixed in this release.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.CR2. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
     </item>
     
     <item>
       <title>RichFaces 4.5.0.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</link>
       <pubDate>Wed, 01 Oct 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</guid>
       <description>We have a first candidate release for RichFaces 4.5 (4.5.0.CR1) available. With this candidate release we&amp;#8217;ve further improved our stability over our beta releases, with a special focus on backwards compatibility with RichFaces 4.3. Read below for details of what is included in this release.
  To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
     </item>

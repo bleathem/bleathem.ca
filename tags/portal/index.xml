@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portal on Experiences of a developer</title>
-    <link>http://www.bleathem.ca/tags/portal/</link>
+    <link>bleathem.github.io/bleathem.ca/tags/portal/</link>
     <description>Recent content in Portal on Experiences of a developer</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 18 Oct 2012 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://www.bleathem.ca/tags/portal/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="bleathem.github.io/bleathem.ca/tags/portal/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>RichFaces 4.2.3.Final Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</link>
       <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</guid>
       <description>RichFaces   RichFaces 4.2.3.Final has been released. This Final release is a re-tag of the 4.2.3.CR1 release as no blocking issues were found by either our QE team, nor by the community.
 The RichFaces 4.2.3.Final release is purely a bug-fix release, with a focus on compatibility between RichFaces and the JBoss Portlet Bridge. I&amp;rsquo;ll refer you to the RichFaces 4.2.3.CR1 release blog for details of the release, with a special highlight paid to the contributions from the JBoss Portal Bridge team, and contributions from community members.</description>
     </item>
     
     <item>
       <title>RichFaces 4.2.3.CR1 Release Announcement</title>
-      <link>http://www.bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</link>
+      <link>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</link>
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
-      <guid>http://www.bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</guid>
+      <guid>bleathem.github.io/bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</guid>
       <description>RichFaces   I am happy to announce that the first candidate release of RichFaces 4.2.3 (4.2.3.CR1) is now available. This is purely a bug-fix release, with a focus on compatibility between RichFaces and the JBoss Portlet Bridge.
 div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.2.3.CR1. For more information on setting up a RichFaces 4 application, refer to ourgetting started guide.</description>
     </item>

@@ -13,9 +13,9 @@ pluralizeListTitles = false
 
 [params]
     # Sets the meta tag description, usually reserved for the main page
-    description          = "HTML5 UP theme, Future Imperfect with some extra goodies, ported by Julio Pescador. Powered by Hugo"
+    description          = "Experiences of a developer.  A blog by Brian Leathem"
     # This will appear on the top left of the navigation bar
-    navbarTitle          = "Future Imperfect"
+    navbarTitle          = "Eperiences of a developer"
     # set this to the section name if section is not post
     viewMorePostLink     = "/blog/"
 
@@ -58,23 +58,23 @@ pluralizeListTitles = false
 # parms.intro will appear on the sidebar
 # This is optional, but it's suggested to use
 [params.intro]
-    header    = "Hugo Future Imperfect"
+    header    = "Experiences of a developer"
 
-    paragraph = "Another fine responsive site template by <a href=\"http://html5up.net\">HTML5 UP</a>. Ported by Julio Pescador with some extra goodies <i class='fa fa-hand-peace-o'></i>"
+    paragraph = "A journal of my journey through code."
 
-    about     = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+    about     = "Brian Leathem is a Principal Software Engineer at Red Hat as the technical architect for the PatternFly project, in the User Experience and Design team. Working as a developer in a UXD team, Brian strives to bridge the world of designers and developers by adapting his engineering experiences to help solve modern user experience and design challenges."
 
 # This will also appear on the sidebar.
 # A width of less than 100px is recommended
 # This is optional
 [params.intro.pic]
-    src       = "/img/main/logo.jpg"
+    src       = "/img/main/bleathem.png"
     # modify your picture in the shape of a circle or
     # future imperfect's hexagonal shape
     circle    = false
     imperfect = true
     width     = ""
-    alt       = "Hugo Future Imperfect"
+    alt       = "Brian Leathem"
 
 # Adjust the amount of recent posts on the sidebar.
 # This is optional. The default value 5 will be used
@@ -103,12 +103,6 @@ pluralizeListTitles = false
     weight = 3
 
 [[menu.main]]
-    name = "Itemized"
-    url = "/itemized/"
-    identifier = "fa fa-list"
-    weight = 4
-
-[[menu.main]]
     name = "Categories"
     url = "/categories/"
     identifier = "fa fa-sitemap"
@@ -124,7 +118,7 @@ pluralizeListTitles = false
 # socialAppearAtTop or socialAppearAtBottom is set to true in the params area
 # The social media icons will appear on the sidebar
 [social]
-    github          = "jpescador"
+    github          = "bleathem"
     bitbucket       = ""
     jsfiddle        = ""
     codepen         = ""
@@ -141,14 +135,14 @@ pluralizeListTitles = false
     wordpress       = ""
     tumblr          = ""
     xing            = ""
-    linkedin        = ""
+    linkedin        = "bleathem"
     slideshare      = ""
-    stackoverflow   = ""
+    stackoverflow   = "264797"
     reddit          = ""
     pinterest       = ""
-    googleplus      = ""
+    googleplus      = "BrianLeathem"
     facebook        = ""
     facebook_admin  = ""
     twitter_domain  = ""
-    twitter         = "julio_pescador"
+    twitter         = "brianleathem"
     email           = ""

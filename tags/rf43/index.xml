@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RF43 on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/rf43/</link>
+    <description>Recent content in RF43 on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 27 May 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/rf43/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RichFaces 4.3.7.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</link>
+      <pubDate>Tue, 27 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</guid>
+      <description>The RichFaces stable branch receives an update with the release of RichFaces 4.3.7.Final. This most recent micro release of the RichFaces 4.3 release series provides a number of bug fixes while we concurrently work on getting a JSF 2.2 compatible RichFaces 4.5 released.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces Security Advisory CVE-2014-0335</title>
+      <link>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</link>
+      <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</guid>
+      <description>A security vulnerability has been uncovered and resolved in RichFaces 4. Details of the vulnerability can be found in this Red Hat Errata document released for our WFK product. We have released a community micro release addressing this vulnerability, so please update your applications ASAP. Read below for a summary of the problem and some additional minor fixes included in this release.
+ To update to this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.5.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</link>
+      <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</guid>
+      <description>We are happy to release an update to our stable branch with the release of RichFaces 4.3.5.Final. This 5th micro release of the RichFaces 4.3 release series provides a number of bug fixes while we concurrently work on RichFaces 5.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.5.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.4.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</link>
+      <pubDate>Tue, 17 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</guid>
+      <description>I am excited to announce the release of RichFaces 4.3.4.Final. This 4th minor release of the RichFaces 4.3 release series is conservative in scope focusing on providing bug fixes to our stable release branch while we concurrently work on RichFaces 5.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.4.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces Security Advisory CVE-2013-2165</title>
+      <link>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</link>
+      <pubDate>Tue, 16 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</guid>
+      <description>We have fixed a security vulnerability in RichFaces 3, 4 and 5. Details of the vulnerability can be found in this Red Hat Errata document released for our WFK product. We have released community micro releases addressing this vulnerability, so please update your applications ASAP. Read below for a summary of the problem and an explanation of how to use the fix in your applications.
+ Download RichFaces 3.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.2.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</link>
+      <pubDate>Thu, 16 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</guid>
+      <description>I am excited to announce the release of RichFaces 4.3.2.Final. - This 2nd minor release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.2.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.2.CR1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.2.cr1-release-announcement/</link>
+      <pubDate>Wed, 01 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.2.cr1-release-announcement/</guid>
+      <description>RichFaces   We&amp;rsquo;ve taken a break from our RichFaces 5 development to deliver a micro release of RichFaces 4.3. Today we are announcing that the first candidate release of this micro release is now available: RichFaces 4.3.2.CR1.
+div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.2.CR1. For more information on setting up a RichFaces 4 application, refer to ourgetting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.1.CR1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.1.cr1-release-announcement/</link>
+      <pubDate>Thu, 28 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.1.cr1-release-announcement/</guid>
+      <description>RichFaces   The first candidate release of RichFaces 4.3.1 (4.3.1.CR1) has been released. This micro release addresses some bugs present in the RichFaces 4.3.0.Final release, and offers some improvements on the new features introduced in that same release. Have a look at the 4.3.1.CR1 Release Notes for a complete listing of what has been included in this release.
+div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.0.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.final-release-announcement/</link>
+      <pubDate>Fri, 01 Feb 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.final-release-announcement/</guid>
+      <description>RichFaces   I&amp;rsquo;m very excited to announce the availability of the final release of RichFaces 4.3 (4.3.0.Final). This release is minor in version increment only, as it packs quite a significant number of features and improvements. We&amp;rsquo;ve covered many of these features in blogs already, we&amp;rsquo;ll summarize them again here, and provide links to where you can find additional details.
+div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>Dynamic Panels with a4j:repeat</title>
+      <link>http://www.bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</link>
+      <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</guid>
+      <description>RichFaces   With the imminent 4.3.0.Final release of RichFaces, we will be providing developers with the ability to dynamically create &amp;lt;rich:togglePanel&amp;gt;, &amp;lt;rich:accordion&amp;gt;, and &amp;lt;rich:tabPanel&amp;gt; panel items dynamically with the &amp;lt;a4j:repeat&amp;gt; tag.
+&amp;lt;a4j:repeat&amp;gt; vs. &amp;lt;c:forEach&amp;gt; Creating the above panels from a backing bean list has always been possible with RichFaces 4 using the JSTL &amp;lt;c:forEach&amp;gt; tag, so why have we bothered adding support for creating such panels with the &amp;lt;a4j:repeat&amp;gt; tag?</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.0.CR2 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.cr2-release-announcement/</link>
+      <pubDate>Fri, 25 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.cr2-release-announcement/</guid>
+      <description>RichFaces   The second milestone release of RichFaces 4.3 (4.3.0.CR2) has been released. This release candidate for the RichFaces 4.3 is an incremental release on top of the previous release candidate (4.3.0.CR1), providing a few bug fixes and documentation enhancements.
+div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.0.CR2. For more information on setting up a RichFaces 4 application, refer to ourgetting started guide.</description>
+    </item>
+    
+    <item>
+      <title>What&#39;s new with the RichFaces extendedDataTable</title>
+      <link>http://www.bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</link>
+      <pubDate>Tue, 22 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</guid>
+      <description>RichFaces   The upcoming 4.3 release of RichFaces will offer the RichFaces community a number of improvements to the extendedDataTable. These new features include:
+ Built-in sorting and filtering External table state saving A number of bug-fixes  Built-in sorting and filtering The RichFaces 4 extendedDataTable (EDT) has always had the ability to sort and filter columns, but required the developer to define the sort and filter controls themselves, then manually invoke the required operations on the back-end.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.0.CR1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.cr1-release-announcement/</link>
+      <pubDate>Thu, 17 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.cr1-release-announcement/</guid>
+      <description>RichFaces   The first candidate release of RichFaces 4.3 (4.3.0.CR1) has been released. This release candidate for the RichFaces 4.3 release doesn&amp;rsquo;t add any new features, rather it polishes, documents, and showcases the many new features added in the earlier 4.3 milestones (4.3.0.M3, 4.3.0.M2, 4.3.0.M1).
+div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.0.M3 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.m3-release-announcement/</link>
+      <pubDate>Thu, 20 Dec 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.m3-release-announcement/</guid>
+      <description>RichFaces   The third milestone release of RichFaces 4.3 (4.3.0.M3) is now available. This 3rd and final milestone for the RichFaces 4.3 release brings in a number of huge features, including new components, some long-time outstanding feature migrations from RichFaces 3, and some significant bug fixes. Read on for some details of these release highlights, or go straight to the Release Notes for a complete list of what&amp;rsquo;s been addressed.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.0.M2 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.m2-release-announcement/</link>
+      <pubDate>Tue, 30 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.m2-release-announcement/</guid>
+      <description>RichFaces   The second milestone release of RichFaces 4.3 (4.3.0.M2) is now available. Another significant milestone for the project, this release incorporates a number of new features, bug fixes, and component upgrades. Read on for some highlights of the release, or go straight to the Release Notes for a complete list of what&amp;rsquo;s been addressed.
+div(alert alert-info). To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.0.M1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</link>
+      <pubDate>Tue, 07 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</guid>
+      <description>RichFaces   The first milestone release of RichFaces 4.3 (4.3.0.M1) is now available. This is a significant release, with primary focus on improving the RichFaces Component Development Kit (CDK) - the tool we use to author our JSF components. A second goal of the release was to improve our &amp;ldquo;MyFaces&amp;rdquo;:http://myfaces.apache.org/ support, which we accomplished by fixing a number of issues, and identifying some further issues to be addressed in a subsequent 4.</description>
+    </item>
+    
+  </channel>
+</rss>

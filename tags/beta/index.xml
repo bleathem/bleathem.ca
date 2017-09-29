@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Beta on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/beta/</link>
+    <description>Recent content in Beta on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 11 Sep 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/beta/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RichFaces 4.5.0.Beta2 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.beta2-release-announcement/</link>
+      <pubDate>Thu, 11 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.beta2-release-announcement/</guid>
+      <description>The second beta release of RichFaces 4.5 (4.5.0.Beta2) has been released. This release focuses on stabilizing RichFaces 4.5.0.Beta1 with a number of bug fixes. Read below for a summary of the issues resolved.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.5.0.Beta2. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.5.0.Beta1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.beta1-release-announcement/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.beta1-release-announcement/</guid>
+      <description>The first beta release of RichFaces 4.5 (4.5.0.Beta1) is now available. This full framework release incorporates a number of library upgrades as well as some new features for existing components. Read below for a summary of the issues resolved, and stay tuned for further posts going into the improvements in detail.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+  </channel>
+</rss>

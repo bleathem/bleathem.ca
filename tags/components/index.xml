@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Components on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/components/</link>
+    <description>Recent content in Components on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 13 Jul 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/components/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JAXConf-2012: JSF - Components &amp; Mobile</title>
+      <link>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</link>
+      <pubDate>Fri, 13 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</guid>
+      <description>JAX Conf 2012   RichFaces represented at the &amp;ldquo;2012 JAX conference&amp;rdquo;:http://jaxconf.com/2012/ in San Francisco this week. I presented three times on two JSF topics. The conference was overall a great success in my opinion - while not the most highly attended conference at which I&amp;rsquo;ve presented, those that attended were highly engaged and happy to have such direct access to the speakers.
+Indeed this was one of my preferred aspects to JAX conf.</description>
+    </item>
+    
+  </channel>
+</rss>

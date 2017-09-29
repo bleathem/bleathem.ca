@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Final on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/final/</link>
+    <description>Recent content in Final on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Jan 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/final/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RichFaces 4.5.2.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.5.2.final-release-announcement/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.5.2.final-release-announcement/</guid>
+      <description>   RichFaces 4.5.2.Final is now available for download! Check out @Michal Petrov&#39;s blog for the detailed RichFaces 4.5.2.Final release announcement.
+ </description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.5.1.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.5.1.final-release-announcement/</link>
+      <pubDate>Tue, 02 Dec 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.5.1.final-release-announcement/</guid>
+      <description>   RichFaces 4.5.1.Final is now available for download! Check out @Michal Petrov&#39;s blog for details of what this 4.5.1.Final release includes.
+ </description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.5.0.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.5.0.final-release-announcement/</link>
+      <pubDate>Wed, 29 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.5.0.final-release-announcement/</guid>
+      <description>RichFaces 4.5.0.Final is now available for download! RichFaces 4.5 is a significant improvement over the previous 4.3 release, offering JSF 2.2 compatibility, new components, a simplified build and distribution layout, and Page Fragments for simplified functional testing. Please read below for details on each of these improvements..
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.7.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</link>
+      <pubDate>Tue, 27 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</guid>
+      <description>The RichFaces stable branch receives an update with the release of RichFaces 4.3.7.Final. This most recent micro release of the RichFaces 4.3 release series provides a number of bug fixes while we concurrently work on getting a JSF 2.2 compatible RichFaces 4.5 released.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.5.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</link>
+      <pubDate>Mon, 27 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</guid>
+      <description>We are happy to release an update to our stable branch with the release of RichFaces 4.3.5.Final. This 5th micro release of the RichFaces 4.3 release series provides a number of bug fixes while we concurrently work on RichFaces 5.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.5.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.4.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</link>
+      <pubDate>Tue, 17 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</guid>
+      <description>I am excited to announce the release of RichFaces 4.3.4.Final. This 4th minor release of the RichFaces 4.3 release series is conservative in scope focusing on providing bug fixes to our stable release branch while we concurrently work on RichFaces 5.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.4.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.3.2.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</link>
+      <pubDate>Thu, 16 May 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</guid>
+      <description>I am excited to announce the release of RichFaces 4.3.2.Final. - This 2nd minor release of the RichFaces 4.3 release series provides a number of bug fixes further increasing the stability of the framework.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.3.2.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.2.3.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</guid>
+      <description>RichFaces   RichFaces 4.2.3.Final has been released. This Final release is a re-tag of the 4.2.3.CR1 release as no blocking issues were found by either our QE team, nor by the community.
+The RichFaces 4.2.3.Final release is purely a bug-fix release, with a focus on compatibility between RichFaces and the JBoss Portlet Bridge. I&amp;rsquo;ll refer you to the RichFaces 4.2.3.CR1 release blog for details of the release, with a special highlight paid to the contributions from the JBoss Portal Bridge team, and contributions from community members.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.2.2.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.2.2.final-release-announcement/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.2.2.final-release-announcement/</guid>
+      <description>RichFaces4.2.2.Final is available, the second RichFaces 4.2 micro release. This release was originally intended to focus on changes required to better align with the upcoming JBoss AS 7.1.2 release. However we had some community members step forward with some fixes, and those contributions ended up turning this release into a reasonable bug fix release!
+I would like to give a big shout out to Luca Nardelli, Adrian Gonzalez, and Jason Porter.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.2.1.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.2.1.final-release-announcement/</link>
+      <pubDate>Tue, 17 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.2.1.final-release-announcement/</guid>
+      <description>We&amp;rsquo;ve released RichFaces4.2.1.Final - the first micro release for the 4.2 release train. Since the CR1 release we&amp;rsquo;ve primarily addressed bugs with the Richfaces showcase and the RichFaces archetypes. CR1 itself focused on bug fixes and stability improvements throughout the framework.
+To try out this release, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 4.2.1.Final. For more information on setting up a RichFaces 4 application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.2.0.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.2.0.final-release-announcement/</link>
+      <pubDate>Thu, 23 Feb 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.2.0.final-release-announcement/</guid>
+      <description>Richfaces 4.2.0.Final is now available for download! A quick follow on to our 4.1 release, Richfaces 4.2 delivers some “missing” components migrated from RichFaces 3, and provides usability and API improvements for resource loading optimizations and the push API. Documentation was a huge effort for this release; we are delivering an updated and complete VDL taglib doc, along with our more well established Developer Guide, and Components Reference.
+To try out this release, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.1.0.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</link>
+      <pubDate>Tue, 13 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</guid>
+      <description>I&amp;rsquo;m thrilled to announce the release of RichFaces 4.1.0.Final. It&amp;rsquo;s been a long road from 4.0 to 4.1, with a significant train of milestone releases along the way. The journey was worth it though, with a significant 4.1 release building on top of the successful 4.0.0.Final release, providing: additional components migrated from the RichFaces 3 component set, altogether new components, and significant enhancements to the framework feature set.</description>
+    </item>
+    
+    <item>
+      <title>Seam Faces 3.0.2.Final released</title>
+      <link>http://www.bleathem.ca/blog/seam-faces-3.0.2.final-released/</link>
+      <pubDate>Tue, 16 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/seam-faces-3.0.2.final-released/</guid>
+      <description>(cross posted from :http://community.jboss.org/people/bleathem/blog/2011/06/20/seam-faces-302final-released)
+Great news, Seam Faces 3.0.2.Final has been released! It is available for download via the JBoss Nexus repository. Primarily a bug fix release, Seam Faces 3.0.2.Final resolves some compatibility issues with MyFaces, thanks to contributions from Christian Kaltepoth. Additionally, José Freitas has contributed some fixes to issues with the UIInputContainer. A full list of the bugs fixed is available here.
+I&amp;rsquo;m very excited about the community involvement in this release, and with more community members coming forward with features they&amp;rsquo;d like to see implemented/improved.</description>
+    </item>
+    
+  </channel>
+</rss>

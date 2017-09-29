@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seam Faces on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/seam-faces/</link>
+    <description>Recent content in Seam Faces on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 17 Dec 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/seam-faces/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ViewAccessScope - why it&#39;s useful</title>
+      <link>http://www.bleathem.ca/blog/viewaccessscope---why-its-useful/</link>
+      <pubDate>Fri, 17 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/viewaccessscope---why-its-useful/</guid>
+      <description>At first the conversation scope introduced with CDI seemed like it would be incredibly useful. Unfortunately, working with conversations ended up being more difficult than expected. Details of why this is, is fodder for another post.
+I ended up often using the JSF ViewScope, exposed as a CDI scope though the Seam Faces CDI extension. When used in conjunction with JSF viewParams to propagate information between pages, the result is a book-markable end user experience.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Release on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/release/</link>
+    <description>Recent content in Release on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 11 Dec 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/release/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RichWidgets 0.1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/</guid>
+      <description>RichWidgets 0.1 is released and ready for download. The road to this first release was a long one, requiring us to get our first javascript project in order. Built with grunt, dependencies managed by bower, and our jasmine tests run by karma, RichWidgets is pure javascript project and as such should be equally accessible with all languages and frameworks targeting the web.
+ To try out this release: You can download the distribution directly, or for bower users, point your bower.</description>
+    </item>
+    
+  </channel>
+</rss>

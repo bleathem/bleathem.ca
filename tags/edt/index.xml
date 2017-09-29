@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Edt on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/edt/</link>
+    <description>Recent content in Edt on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Jan 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/edt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>What&#39;s new with the RichFaces extendedDataTable</title>
+      <link>http://www.bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</link>
+      <pubDate>Tue, 22 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</guid>
+      <description>RichFaces   The upcoming 4.3 release of RichFaces will offer the RichFaces community a number of improvements to the extendedDataTable. These new features include:
+ Built-in sorting and filtering External table state saving A number of bug-fixes  Built-in sorting and filtering The RichFaces 4 extendedDataTable (EDT) has always had the ability to sort and filter columns, but required the developer to define the sort and filter controls themselves, then manually invoke the required operations on the back-end.</description>
+    </item>
+    
+  </channel>
+</rss>

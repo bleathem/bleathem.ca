@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Bootstrap on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/bootstrap/</link>
+    <description>Recent content in Bootstrap on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 29 Nov 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/bootstrap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Polyglot Widgets</title>
+      <link>http://www.bleathem.ca/blog/polyglot-widgets/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/polyglot-widgets/</guid>
+      <description>JBoss Developer Framework   The JBoss JDF project shows Java EE developers how to build state-of-the-art applications using the JBoss implementations of the Java EE stack. Specifically, the JDF View Frameworks section identifies a number of alternative approaches one can take when developing the view layer of your application. We in the RichFaces project have been working towards better supporting this effort by redesigning our JSF component architecture to allow the javascript part of our components (what we call our &amp;ldquo;widgets&amp;rdquo;) to be used independent of JSF, either in a standalone manner or coupled with another web framework.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces Bootstrap Quickstart</title>
+      <link>http://www.bleathem.ca/blog/richfaces-bootstrap-quickstart/</link>
+      <pubDate>Fri, 12 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-bootstrap-quickstart/</guid>
+      <description>I&amp;rsquo;m excited about the buzz the RichFaces Bootstrap sandbox initiative is generating. It&amp;rsquo;s also exciting to see other projects offer a bootstrap style/theme. This can only help inter-op and component compatibility, marking life easier for all JSF developers. This post is meant to help those looking to build a custom application using the RichFaces Bootstrap components.
+Along with the new approach we are taking in the development of these new components, the RichFaces project is incorporating a new LESS based approach to style/themes.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces Bootstrap</title>
+      <link>http://www.bleathem.ca/blog/richfaces-bootstrap/</link>
+      <pubDate>Fri, 04 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-bootstrap/</guid>
+      <description>I&amp;rsquo;m happy to share the news that the RichFaces community has started an effort to wrap Twitter Bootstrap with the RichFaces CDK. If you haven&amp;rsquo;t yet heard, Twitter&amp;rsquo;s Bootstrap project is a set of HTML/CSS/js &amp;ldquo;widgets&amp;rdquo; that you can use for building a website/web application with an emphasis on a fluid layouts that adapt well to mobile devices. The RichFaces community effort centres around providing a set of first-class JSF components built using these Bootstrap widgets via the RichFaces CDK.</description>
+    </item>
+    
+  </channel>
+</rss>

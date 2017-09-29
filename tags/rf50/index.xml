@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RF50 on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/rf50/</link>
+    <description>Recent content in RF50 on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Jul 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/rf50/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RichFaces will pursue a path of stability over innovation</title>
+      <link>http://www.bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/</link>
+      <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/</guid>
+      <description>For more than a decade now, JavaServer Faces (JSF) has held a special place as the sole portion of the JavaEE specification that addresses building UI&amp;#8217;s for our web applications. As such JSF has historically been the only web front-end we&amp;#8217;ve pushed at JBoss. Along with Seam and later CDI, RichFaces has been an important part of our JSF story, and a vehicle for our innovation in the JSF space.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 5.0.0.Alpha3 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha3-release-announcement/</link>
+      <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha3-release-announcement/</guid>
+      <description>RichFaces 5.0.0.Alpha3 has been released. With this third alpha release of RichFaces 5 we are providing compatibility with JSF 2.2. Go download WildFly and give the JSF 2.2 capabilities of this release a spin.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.xml to 5.0.0.Alpha3. For more information on setting up a RichFaces application, refer to our getting started guide.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 5.0.0.Alpha2 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/</guid>
+      <description>RichFaces 5.0.0.Alpha2 is now available for download. This second alpha release of our RichFaces 5 effort is significant as it brings in our new component architecture, new components, a further refinement in our approach to testing, and the beginnings of a new look and feel. We&amp;#8217;ll dive further into each of these topics below.
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 5.0.0.Alpha1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/</link>
+      <pubDate>Fri, 14 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/</guid>
+      <description>I am excited to announce the release of RichFaces 5.0.0.Alpha1. While RichFaces 5.0.0.Alpha1 is an incredibly significant release (with almost all aspects of the framework seeing some changes) the release is in fact functionally equivalent to RichFaces 4.3.2.Final. So go ahead an try it out, and give us your feedback!
+ To try out this release: You can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+  </channel>
+</rss>

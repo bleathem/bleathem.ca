@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Widgets on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/widgets/</link>
+    <description>Recent content in Widgets on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 Mar 2014 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/widgets/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Hands on with the jQuery UI widget factory at DevNation</title>
+      <link>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</link>
+      <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</guid>
+      <description>I&amp;#8217;m thrilled to be speaking the upcoming DevNation conference. DevNation is an Open Source Developer conference co-located with the Red Hat Summit. With the announced agenda and the co-location with Summit, the conference is shaping up to be quite the event!
+ I&amp;#8217;ll be speaking about developing widgets with the jQuery UI widget factory. We&amp;#8217;ll look at how the widget factory takes away much of the boiler plate when writing stateful jQuery plug-ins, statefulness that comes intrinsically when creating visual plug-ins.</description>
+    </item>
+    
+  </channel>
+</rss>

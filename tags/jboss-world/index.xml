@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>JBoss World on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/jboss-world/</link>
+    <description>Recent content in JBoss World on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 02 Jul 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/jboss-world/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JBW-2012 and RichFaces Mobile</title>
+      <link>http://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</link>
+      <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</guid>
+      <description>I just returned from an excellent trip to the &amp;ldquo;Red Hat Summit/JBoss World&amp;rdquo;:http://www.redhat.com/summit/ in Boston. The event was fantastic, kicking off with a great &amp;ldquo;keynote&amp;rdquo;:http://www.redhat.com/summit/sessions/keynotes-sessions.html#12345 demoing &amp;ldquo;Drools&amp;rdquo;:http://www.jboss.org/drools/ in a Mobile scenario. Following the keynote were a number of great sessions, including one I presented on the topic of &amp;ldquo;Mobile RichFaces Applications&amp;rdquo;:http://www.redhat.com/summit/sessions/jboss.html#187.
+The session was well received, with some good discussion afterwards. In the session I motivated mobile web applications as a must-have in today&amp;rsquo;s market - users&amp;rsquo; will want and expect a functional web application even if your native application is better.</description>
+    </item>
+    
+  </channel>
+</rss>

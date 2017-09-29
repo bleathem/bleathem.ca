@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Accordion on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/accordion/</link>
+    <description>Recent content in Accordion on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Jan 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/accordion/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dynamic Panels with a4j:repeat</title>
+      <link>http://www.bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</link>
+      <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</guid>
+      <description>RichFaces   With the imminent 4.3.0.Final release of RichFaces, we will be providing developers with the ability to dynamically create &amp;lt;rich:togglePanel&amp;gt;, &amp;lt;rich:accordion&amp;gt;, and &amp;lt;rich:tabPanel&amp;gt; panel items dynamically with the &amp;lt;a4j:repeat&amp;gt; tag.
+&amp;lt;a4j:repeat&amp;gt; vs. &amp;lt;c:forEach&amp;gt; Creating the above panels from a backing bean list has always been possible with RichFaces 4 using the JSTL &amp;lt;c:forEach&amp;gt; tag, so why have we bothered adding support for creating such panels with the &amp;lt;a4j:repeat&amp;gt; tag?</description>
+    </item>
+    
+  </channel>
+</rss>

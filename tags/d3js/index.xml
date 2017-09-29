@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>D3js on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/d3js/</link>
+    <description>Recent content in D3js on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/d3js/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo</title>
+      <link>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</guid>
+      <description>At this year&amp;#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo. I made the custom front-ends in the demo using Reactive Extensions for javascript (Rx.js) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using d3.js.
+ If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at 19m).</description>
+    </item>
+    
+    <item>
+      <title>Rx.js Session at DevNation</title>
+      <link>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</link>
+      <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</guid>
+      <description>I presented a Session on Rx.js at DevNation this year. My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time. This analogy was very well described by @jhusain his Async Javascript at Netflix talk that initially got me excited about Reactive Functional programming. My contribution to this idea is to present it in a visual way.
+ To visualize both a &#34;regular&#34; collection, as well as a collection-in-time, I used the d3.</description>
+    </item>
+    
+  </channel>
+</rss>

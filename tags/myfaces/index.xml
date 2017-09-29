@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MyFaces on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/myfaces/</link>
+    <description>Recent content in MyFaces on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Aug 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/myfaces/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RichFaces 4.3.0.M1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</link>
+      <pubDate>Tue, 07 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</guid>
+      <description>RichFaces   The first milestone release of RichFaces 4.3 (4.3.0.M1) is now available. This is a significant release, with primary focus on improving the RichFaces Component Development Kit (CDK) - the tool we use to author our JSF components. A second goal of the release was to improve our &amp;ldquo;MyFaces&amp;rdquo;:http://myfaces.apache.org/ support, which we accomplished by fixing a number of issues, and identifying some further issues to be addressed in a subsequent 4.</description>
+    </item>
+    
+  </channel>
+</rss>

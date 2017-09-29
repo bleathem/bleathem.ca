@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/patternfly-roadmap-update/</loc>
+    <lastmod>2017-05-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/patteryfly-4.0.0-alpha.2-release/</loc>
+    <lastmod>2017-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/the-patternfly-roadmap/</loc>
+    <lastmod>2016-12-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/error-handling-in-a-request/response-model-with-the-mediator-pattern/</loc>
+    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</loc>
+    <lastmod>2015-06-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/google-play-services-oauth2-token-lookup-via-cordova/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/scalable-splash-screens-with-cordova/</loc>
+    <lastmod>2015-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/vert.x-with-gulp.js/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.5.2.final-release-announcement/</loc>
+    <lastmod>2015-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.5.1.final-release-announcement/</loc>
+    <lastmod>2014-12-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.5.0.final-release-announcement/</loc>
+    <lastmod>2014-10-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.5.0.cr2-release-announcement/</loc>
+    <lastmod>2014-10-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.5.0.cr1-release-announcement/</loc>
+    <lastmod>2014-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.5.0.beta2-release-announcement/</loc>
+    <lastmod>2014-09-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.5.0.beta1-release-announcement/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.5.0.alpha3-release-announcement/</loc>
+    <lastmod>2014-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-will-pursue-a-path-of-stability-over-innovation/</loc>
+    <lastmod>2014-07-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.7.final-release-announcement/</loc>
+    <lastmod>2014-05-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2014-0335/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/about/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</loc>
+    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha3-release-announcement/</loc>
+    <lastmod>2014-02-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/presentation-tier-technology-survey/</loc>
+    <lastmod>2014-02-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.5.final-release-announcement/</loc>
+    <lastmod>2014-01-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha2-release-announcement/</loc>
+    <lastmod>2013-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richwidgets-0.1-release-announcement/</loc>
+    <lastmod>2013-12-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.4.final-release-announcement/</loc>
+    <lastmod>2013-09-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-security-advisory-cve-2013-2165/</loc>
+    <lastmod>2013-07-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-5.0.0.alpha1-release-announcement/</loc>
+    <lastmod>2013-06-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-moves-to-asciidoc/</loc>
+    <lastmod>2013-06-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</loc>
+    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.2.final-release-announcement/</loc>
+    <lastmod>2013-05-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.2.cr1-release-announcement/</loc>
+    <lastmod>2013-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.1.final-release-announcement/</loc>
+    <lastmod>2013-03-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</loc>
+    <lastmod>2013-03-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.1.cr1-release-announcement/</loc>
+    <lastmod>2013-02-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.0.final-release-announcement/</loc>
+    <lastmod>2013-02-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/dynamic-panels-with-a4jrepeat/</loc>
+    <lastmod>2013-01-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.0.cr2-release-announcement/</loc>
+    <lastmod>2013-01-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/whats-new-with-the-richfaces-extendeddatatable/</loc>
+    <lastmod>2013-01-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.0.cr1-release-announcement/</loc>
+    <lastmod>2013-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.0.m3-release-announcement/</loc>
+    <lastmod>2012-12-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/polyglot-widgets/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.0.m2-release-announcement/</loc>
+    <lastmod>2012-10-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.2.3.final-release-announcement/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-bootstrap-quickstart/</loc>
+    <lastmod>2012-10-12T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/back-from-java-one/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.2.3.cr1-release-announcement/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</loc>
+    <lastmod>2012-09-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</loc>
+    <lastmod>2012-08-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</loc>
+    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</loc>
+    <lastmod>2012-07-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-3-showcase-on-openshift/</loc>
+    <lastmod>2012-06-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/im-awestruct/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.2.2.final-release-announcement/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-bootstrap/</loc>
+    <lastmod>2012-05-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.2.1.final-release-announcement/</loc>
+    <lastmod>2012-04-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.2.1.cr1-release-announcement/</loc>
+    <lastmod>2012-04-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.2.0.final-release-announcement/</loc>
+    <lastmod>2012-02-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.2.0.cr1-release-announcement/</loc>
+    <lastmod>2012-02-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</loc>
+    <lastmod>2011-12-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/state-of-the-richfaces/</loc>
+    <lastmod>2011-12-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.1.0.cr2-release-announcement/</loc>
+    <lastmod>2011-12-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/</loc>
+    <lastmod>2011-11-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.1.0.cr1-release-announcement/</loc>
+    <lastmod>2011-11-23T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.1.0.m4-release-announcement/</loc>
+    <lastmod>2011-11-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.1.0.m3-release-announcement/</loc>
+    <lastmod>2011-10-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</loc>
+    <lastmod>2011-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/testing-as7-web-apps-over-ssl/</loc>
+    <lastmod>2011-10-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4-cdk--input-component/</loc>
+    <lastmod>2011-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.1.0.m2-release-announcement/</loc>
+    <lastmod>2011-09-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4-cdk--hello-world/</loc>
+    <lastmod>2011-09-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/seam-faces-community-hack-night/</loc>
+    <lastmod>2011-09-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4-cdk--introduction/</loc>
+    <lastmod>2011-08-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-4.1.0.m1-release-announcement/</loc>
+    <lastmod>2011-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/seam-faces-3.0.2.final-released/</loc>
+    <lastmod>2011-08-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/seam-faces-jaxconf/jsf-summit/</loc>
+    <lastmod>2011-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/seam-module-spotlight-seam-faces/</loc>
+    <lastmod>2011-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/richfaces-plugin-for-jboss-forge/</loc>
+    <lastmod>2011-04-03T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/view-configuration-with-seam-3-faces---the-introduction/</loc>
+    <lastmod>2011-03-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/updating-weld-in-glassfish-3.1/</loc>
+    <lastmod>2011-02-16T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/restful-urls-with-jsf-2/</loc>
+    <lastmod>2011-01-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/viewaccessscope---why-its-useful/</loc>
+    <lastmod>2010-12-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/cdi-does-events-too/</loc>
+    <lastmod>2010-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/my-glassfish-support-subscription-came-through---finally/</loc>
+    <lastmod>2010-07-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/jsf-validation-failed-notice/</loc>
+    <lastmod>2010-06-25T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/from-svn-to-mercurial-the-hg-rises/</loc>
+    <lastmod>2010-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/glassfish-v2-and-v3-on-the-same-host-behind-mod_jk/</loc>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/in-the-beginning/</loc>
+    <lastmod>2009-11-14T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/accordion/</loc>
+    <lastmod>2013-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/alpha/</loc>
+    <lastmod>2014-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/alpha1/</loc>
+    <lastmod>2013-06-14T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/alpha2/</loc>
+    <lastmod>2013-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/alpha3/</loc>
+    <lastmod>2014-02-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/arquillian/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/asciidoc/</loc>
+    <lastmod>2013-06-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/asciidoctor/</loc>
+    <lastmod>2013-06-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/awestruct/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/beta/</loc>
+    <lastmod>2014-09-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/blog/</loc>
+    <lastmod>2017-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/blog/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/blogger/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/bootstrap/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/cdi/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/cdk/</loc>
+    <lastmod>2012-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/cr/</loc>
+    <lastmod>2014-10-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/community/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/components/</loc>
+    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/conferences/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/cordova/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/cve/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/d3js/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/devnation/</loc>
+    <lastmod>2015-06-24T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/docs/</loc>
+    <lastmod>2013-06-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/drone/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/dynamic/</loc>
+    <lastmod>2013-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/edt/</loc>
+    <lastmod>2013-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/errai/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/error-handling/</loc>
+    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/</loc>
+    <lastmod>2017-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/extendeddatatable/</loc>
+    <lastmod>2013-01-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/final/</loc>
+    <lastmod>2015-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/forge/</loc>
+    <lastmod>2011-04-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/gwt/</loc>
+    <lastmod>2012-11-29T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/git/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/glassfish/</loc>
+    <lastmod>2010-07-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/glassfish/</loc>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/graphene/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/gulp/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/haml/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/jax/</loc>
+    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/jaxconf/</loc>
+    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/jboss/</loc>
+    <lastmod>2014-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/jboss-world/</loc>
+    <lastmod>2012-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/jquery/</loc>
+    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/jquery-ui/</loc>
+    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/jsf/</loc>
+    <lastmod>2014-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/java-ee/</loc>
+    <lastmod>2015-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/java-ee-6/</loc>
+    <lastmod>2010-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/javaee/</loc>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/javascript/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/javascript/</loc>
+    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/mediator/</loc>
+    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/mobile/</loc>
+    <lastmod>2012-07-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/mobile/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/mod_jk/</loc>
+    <lastmod>2010-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/myfaces/</loc>
+    <lastmod>2012-08-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/openshift/</loc>
+    <lastmod>2012-06-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/pattern/</loc>
+    <lastmod>2015-10-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/patternfly/</loc>
+    <lastmod>2017-05-30T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/plugin/</loc>
+    <lastmod>2015-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/polyglot/</loc>
+    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/portal/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/presentation-tier/</loc>
+    <lastmod>2014-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/quickstart/</loc>
+    <lastmod>2012-10-12T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/rf3/</loc>
+    <lastmod>2013-07-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/rf41/</loc>
+    <lastmod>2011-12-13T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/rf42/</loc>
+    <lastmod>2012-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/rf43/</loc>
+    <lastmod>2014-05-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/rf45/</loc>
+    <lastmod>2015-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/rf50/</loc>
+    <lastmod>2014-07-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/red-hat/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/red-hat-summit/</loc>
+    <lastmod>2012-07-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/release/</loc>
+    <lastmod>2013-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/repeat/</loc>
+    <lastmod>2013-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/richfaces/</loc>
+    <lastmod>2015-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/richfaces/</loc>
+    <lastmod>2015-01-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/richwidgets/</loc>
+    <lastmod>2013-12-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/ruby/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/rxjs/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/seam/</loc>
+    <lastmod>2011-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/seam/</loc>
+    <lastmod>2011-09-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/seam-faces/</loc>
+    <lastmod>2010-12-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/security/</loc>
+    <lastmod>2014-04-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/summit/</loc>
+    <lastmod>2015-07-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/survey/</loc>
+    <lastmod>2014-02-04T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/tab/</loc>
+    <lastmod>2013-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/</loc>
+    <lastmod>2013-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/talk/</loc>
+    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/testing/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/toggle/</loc>
+    <lastmod>2013-01-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/categories/tools/</loc>
+    <lastmod>2012-05-15T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/validation/</loc>
+    <lastmod>2010-06-25T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/vert.x/</loc>
+    <lastmod>2015-01-26T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/viewconfig/</loc>
+    <lastmod>2011-03-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/warp/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/widgets/</loc>
+    <lastmod>2013-06-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/widgets/</loc>
+    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/%5C-jax-jaxconf-talk-polyglot-widgets-%5C/</loc>
+    <lastmod>2013-03-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://www.bleathem.ca/tags/%5C-richfaces-rf43-%5C/</loc>
+    <lastmod>2013-03-07T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

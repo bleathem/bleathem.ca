@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graphene on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/graphene/</link>
+    <description>Recent content in Graphene on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Oct 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/graphene/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Back From Java One</title>
+      <link>http://www.bleathem.ca/blog/back-from-java-one/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/back-from-java-one/</guid>
+      <description>Last week I was at Java One, where I can easily say I thoroughly enjoyed the week of chaos that is JavaOne. The quality of people and content was truly astounding - I met a number of people I&amp;rsquo;d been wanting to meet for a while, and also spent some time getting to know more fellow JBoss developers. I spent the bulk of my time preparing my presentations, leaving little time to attend sessions.</description>
+    </item>
+    
+    <item>
+      <title>JSF-Testing Session at Java One</title>
+      <link>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</link>
+      <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</guid>
+      <description>I&amp;rsquo;ll speaking next week at Java One on the topic of &amp;ldquo;Testing JSF Applications with Arquillian and Selenium. The Session co-ordinates are as follows:
+Testing JSF Applications with Arquillian and Selenium +CON7622: Thursday, Oct 4, 2:00 PM - 3:00 PM - Parc 55 - Cyril Magnin I
+Unfortunately the Java One website truncated the abstract, and the bit that&amp;rsquo;s left doesn&amp;rsquo;t give you a good idea of what I&amp;rsquo;m talking about.</description>
+    </item>
+    
+  </channel>
+</rss>

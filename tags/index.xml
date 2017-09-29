@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/</link>
+    <description>Recent content in Tags on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 28 Jan 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Accordion</title>
+      <link>http://www.bleathem.ca/tags/accordion/</link>
+      <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/accordion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alpha</title>
+      <link>http://www.bleathem.ca/tags/alpha/</link>
+      <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/alpha/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alpha1</title>
+      <link>http://www.bleathem.ca/tags/alpha1/</link>
+      <pubDate>Fri, 14 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/alpha1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alpha2</title>
+      <link>http://www.bleathem.ca/tags/alpha2/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/alpha2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alpha3</title>
+      <link>http://www.bleathem.ca/tags/alpha3/</link>
+      <pubDate>Thu, 06 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/alpha3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Arquillian</title>
+      <link>http://www.bleathem.ca/tags/arquillian/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/arquillian/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asciidoc</title>
+      <link>http://www.bleathem.ca/tags/asciidoc/</link>
+      <pubDate>Mon, 10 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/asciidoc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Asciidoctor</title>
+      <link>http://www.bleathem.ca/tags/asciidoctor/</link>
+      <pubDate>Mon, 10 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/asciidoctor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Awestruct</title>
+      <link>http://www.bleathem.ca/tags/awestruct/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/awestruct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beta</title>
+      <link>http://www.bleathem.ca/tags/beta/</link>
+      <pubDate>Thu, 11 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/beta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>http://www.bleathem.ca/tags/blog/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blogger</title>
+      <link>http://www.bleathem.ca/tags/blogger/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/blogger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>http://www.bleathem.ca/tags/bootstrap/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/bootstrap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CDI</title>
+      <link>http://www.bleathem.ca/tags/cdi/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/cdi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CDK</title>
+      <link>http://www.bleathem.ca/tags/cdk/</link>
+      <pubDate>Tue, 07 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/cdk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CR</title>
+      <link>http://www.bleathem.ca/tags/cr/</link>
+      <pubDate>Thu, 16 Oct 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/cr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Community</title>
+      <link>http://www.bleathem.ca/tags/community/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/community/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Components</title>
+      <link>http://www.bleathem.ca/tags/components/</link>
+      <pubDate>Fri, 13 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/components/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cordova</title>
+      <link>http://www.bleathem.ca/tags/cordova/</link>
+      <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/cordova/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cve</title>
+      <link>http://www.bleathem.ca/tags/cve/</link>
+      <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/cve/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>D3js</title>
+      <link>http://www.bleathem.ca/tags/d3js/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/d3js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DevNation</title>
+      <link>http://www.bleathem.ca/tags/devnation/</link>
+      <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/devnation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docs</title>
+      <link>http://www.bleathem.ca/tags/docs/</link>
+      <pubDate>Mon, 10 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drone</title>
+      <link>http://www.bleathem.ca/tags/drone/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/drone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic</title>
+      <link>http://www.bleathem.ca/tags/dynamic/</link>
+      <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/dynamic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Edt</title>
+      <link>http://www.bleathem.ca/tags/edt/</link>
+      <pubDate>Tue, 22 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/edt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Errai</title>
+      <link>http://www.bleathem.ca/tags/errai/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/errai/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Error handling</title>
+      <link>http://www.bleathem.ca/tags/error-handling/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/error-handling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ExtendedDataTable</title>
+      <link>http://www.bleathem.ca/tags/extendeddatatable/</link>
+      <pubDate>Tue, 22 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/extendeddatatable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Final</title>
+      <link>http://www.bleathem.ca/tags/final/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/final/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Forge</title>
+      <link>http://www.bleathem.ca/tags/forge/</link>
+      <pubDate>Sun, 03 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/forge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GWT</title>
+      <link>http://www.bleathem.ca/tags/gwt/</link>
+      <pubDate>Thu, 29 Nov 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/gwt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>http://www.bleathem.ca/tags/git/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Glassfish</title>
+      <link>http://www.bleathem.ca/tags/glassfish/</link>
+      <pubDate>Thu, 15 Jul 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/glassfish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Glassfish</title>
+      <link>http://www.bleathem.ca/tags/glassfish/</link>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/glassfish/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Graphene</title>
+      <link>http://www.bleathem.ca/tags/graphene/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/graphene/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gulp</title>
+      <link>http://www.bleathem.ca/tags/gulp/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/gulp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HAML</title>
+      <link>http://www.bleathem.ca/tags/haml/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/haml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JAX</title>
+      <link>http://www.bleathem.ca/tags/jax/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/jax/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JAXConf</title>
+      <link>http://www.bleathem.ca/tags/jaxconf/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/jaxconf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JBoss</title>
+      <link>http://www.bleathem.ca/tags/jboss/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/jboss/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JBoss World</title>
+      <link>http://www.bleathem.ca/tags/jboss-world/</link>
+      <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/jboss-world/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JQuery</title>
+      <link>http://www.bleathem.ca/tags/jquery/</link>
+      <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/jquery/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JQuery UI</title>
+      <link>http://www.bleathem.ca/tags/jquery-ui/</link>
+      <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/jquery-ui/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JSF</title>
+      <link>http://www.bleathem.ca/tags/jsf/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/jsf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java ee 6</title>
+      <link>http://www.bleathem.ca/tags/java-ee-6/</link>
+      <pubDate>Sat, 20 Nov 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/java-ee-6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>JavaEE</title>
+      <link>http://www.bleathem.ca/tags/javaee/</link>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/javaee/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://www.bleathem.ca/tags/javascript/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mediator</title>
+      <link>http://www.bleathem.ca/tags/mediator/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/mediator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile</title>
+      <link>http://www.bleathem.ca/tags/mobile/</link>
+      <pubDate>Fri, 13 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/mobile/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mod_jk</title>
+      <link>http://www.bleathem.ca/tags/mod_jk/</link>
+      <pubDate>Wed, 20 Jan 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/mod_jk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MyFaces</title>
+      <link>http://www.bleathem.ca/tags/myfaces/</link>
+      <pubDate>Tue, 07 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/myfaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OpenShift</title>
+      <link>http://www.bleathem.ca/tags/openshift/</link>
+      <pubDate>Wed, 06 Jun 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/openshift/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pattern</title>
+      <link>http://www.bleathem.ca/tags/pattern/</link>
+      <pubDate>Mon, 19 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/pattern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Plugin</title>
+      <link>http://www.bleathem.ca/tags/plugin/</link>
+      <pubDate>Thu, 05 Feb 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/plugin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Polyglot</title>
+      <link>http://www.bleathem.ca/tags/polyglot/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/polyglot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Portal</title>
+      <link>http://www.bleathem.ca/tags/portal/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/portal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Presentation tier</title>
+      <link>http://www.bleathem.ca/tags/presentation-tier/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/presentation-tier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Quickstart</title>
+      <link>http://www.bleathem.ca/tags/quickstart/</link>
+      <pubDate>Fri, 12 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/quickstart/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RF3</title>
+      <link>http://www.bleathem.ca/tags/rf3/</link>
+      <pubDate>Tue, 16 Jul 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/rf3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RF41</title>
+      <link>http://www.bleathem.ca/tags/rf41/</link>
+      <pubDate>Tue, 13 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/rf41/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RF42</title>
+      <link>http://www.bleathem.ca/tags/rf42/</link>
+      <pubDate>Thu, 18 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/rf42/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RF43</title>
+      <link>http://www.bleathem.ca/tags/rf43/</link>
+      <pubDate>Tue, 27 May 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/rf43/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RF45</title>
+      <link>http://www.bleathem.ca/tags/rf45/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/rf45/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RF50</title>
+      <link>http://www.bleathem.ca/tags/rf50/</link>
+      <pubDate>Mon, 21 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/rf50/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat</title>
+      <link>http://www.bleathem.ca/tags/red-hat/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/red-hat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Red Hat Summit</title>
+      <link>http://www.bleathem.ca/tags/red-hat-summit/</link>
+      <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/red-hat-summit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Release</title>
+      <link>http://www.bleathem.ca/tags/release/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/release/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Repeat</title>
+      <link>http://www.bleathem.ca/tags/repeat/</link>
+      <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/repeat/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RichFaces</title>
+      <link>http://www.bleathem.ca/tags/richfaces/</link>
+      <pubDate>Tue, 20 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/richfaces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>RichWidgets</title>
+      <link>http://www.bleathem.ca/tags/richwidgets/</link>
+      <pubDate>Wed, 11 Dec 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/richwidgets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>http://www.bleathem.ca/tags/ruby/</link>
+      <pubDate>Tue, 15 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rxjs</title>
+      <link>http://www.bleathem.ca/tags/rxjs/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/rxjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seam</title>
+      <link>http://www.bleathem.ca/tags/seam/</link>
+      <pubDate>Wed, 07 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/seam/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Seam Faces</title>
+      <link>http://www.bleathem.ca/tags/seam-faces/</link>
+      <pubDate>Fri, 17 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/seam-faces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Security</title>
+      <link>http://www.bleathem.ca/tags/security/</link>
+      <pubDate>Fri, 11 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Summit</title>
+      <link>http://www.bleathem.ca/tags/summit/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/summit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survey</title>
+      <link>http://www.bleathem.ca/tags/survey/</link>
+      <pubDate>Tue, 04 Feb 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/survey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tab</title>
+      <link>http://www.bleathem.ca/tags/tab/</link>
+      <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/tab/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Talk</title>
+      <link>http://www.bleathem.ca/tags/talk/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testing</title>
+      <link>http://www.bleathem.ca/tags/testing/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Toggle</title>
+      <link>http://www.bleathem.ca/tags/toggle/</link>
+      <pubDate>Mon, 28 Jan 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/toggle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Validation</title>
+      <link>http://www.bleathem.ca/tags/validation/</link>
+      <pubDate>Fri, 25 Jun 2010 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/validation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vert.x</title>
+      <link>http://www.bleathem.ca/tags/vert.x/</link>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/vert.x/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ViewConfig</title>
+      <link>http://www.bleathem.ca/tags/viewconfig/</link>
+      <pubDate>Sun, 27 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/viewconfig/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Warp</title>
+      <link>http://www.bleathem.ca/tags/warp/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/warp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Widgets</title>
+      <link>http://www.bleathem.ca/tags/widgets/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/widgets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Widgets</title>
+      <link>http://www.bleathem.ca/tags/widgets/</link>
+      <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/widgets/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>\[ JAX, JAXConf, talk, polyglot, widgets \]</title>
+      <link>http://www.bleathem.ca/tags/%5C-jax-jaxconf-talk-polyglot-widgets-%5C/</link>
+      <pubDate>Tue, 05 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/%5C-jax-jaxconf-talk-polyglot-widgets-%5C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>\[ RichFaces, RF43 \]</title>
+      <link>http://www.bleathem.ca/tags/%5C-richfaces-rf43-%5C/</link>
+      <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/tags/%5C-richfaces-rf43-%5C/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

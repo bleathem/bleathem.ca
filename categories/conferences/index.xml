@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conferences on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/categories/conferences/</link>
+    <description>Recent content in Conferences on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/categories/conferences/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Rx.js and d3.js in the Red Hat Summit Middleware Keynote Demo</title>
+      <link>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/rx.js-and-d3.js-in-the-red-hat-summit-middleware-keynote-demo/</guid>
+      <description>At this year&amp;#8217;s DevNation/Red Hat Summit I was part of the team that created the Red Hat Summit Middleware keynote demo. I made the custom front-ends in the demo using Reactive Extensions for javascript (Rx.js) to manipulate the datastreams from the various back-end systems and to transform that data into a form that can drive the UI using d3.js.
+ If you missed the keynote, you can watch it on YouTube below (the keynote demo starts at 19m).</description>
+    </item>
+    
+    <item>
+      <title>Rx.js Session at DevNation</title>
+      <link>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</link>
+      <pubDate>Wed, 24 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/rx.js-session-at-devnation/</guid>
+      <description>I presented a Session on Rx.js at DevNation this year. My goal was to impress upon the audience how Observables can be interpreted as a collection-in-time. This analogy was very well described by @jhusain his Async Javascript at Netflix talk that initially got me excited about Reactive Functional programming. My contribution to this idea is to present it in a visual way.
+ To visualize both a &#34;regular&#34; collection, as well as a collection-in-time, I used the d3.</description>
+    </item>
+    
+    <item>
+      <title>Hands on with the jQuery UI widget factory at DevNation</title>
+      <link>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</link>
+      <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/hands-on-with-the-jquery-ui-widget-factory-at-devnation/</guid>
+      <description>I&amp;#8217;m thrilled to be speaking the upcoming DevNation conference. DevNation is an Open Source Developer conference co-located with the Red Hat Summit. With the announced agenda and the co-location with Summit, the conference is shaping up to be quite the event!
+ I&amp;#8217;ll be speaking about developing widgets with the jQuery UI widget factory. We&amp;#8217;ll look at how the widget factory takes away much of the boiler plate when writing stateful jQuery plug-ins, statefulness that comes intrinsically when creating visual plug-ins.</description>
+    </item>
+    
+    <item>
+      <title>Spoke on Polyglot Widgets at JAXConf 2013</title>
+      <link>http://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</guid>
+      <description>This week I attended the JAXConf 2013 conference for a third year in a row. This year JAXConf was held in Santa Clara, the heart of silicon valley. The conference once again had a fantastic line up of speakers, with well recognized industry leaders speaking on a variety of current and exciting topics. Unfortunately, JAX continued this year to be one of the best kept secrets of the tech industry on the West coast, with attendance not being as strong as many would have liked.</description>
+    </item>
+    
+    <item>
+      <title>Speaking on Polyglot Widgets at JAXConf 2013</title>
+      <link>http://www.bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</link>
+      <pubDate>Tue, 05 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</guid>
+      <description>JAXConf 2013   I will be returning to speak at JAXConf again this year. I&amp;rsquo;ll be speaking on the topic of Poly-framework Web applications with Java EE. The session will further explore the ideas I presented in my Polyglot Widgets blog, where I demoed a sample application written using three different web frameworks, demonstrating both a consistent look &amp;amp; feel, and uniform server-side programming model.
+This topic will be particularly useful for those JAX attendees that have existing applications in production, yet like what they see with new web technologies and frameworks that they will learn about while attending JAXConf.</description>
+    </item>
+    
+    <item>
+      <title>Back From Java One</title>
+      <link>http://www.bleathem.ca/blog/back-from-java-one/</link>
+      <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/back-from-java-one/</guid>
+      <description>Last week I was at Java One, where I can easily say I thoroughly enjoyed the week of chaos that is JavaOne. The quality of people and content was truly astounding - I met a number of people I&amp;rsquo;d been wanting to meet for a while, and also spent some time getting to know more fellow JBoss developers. I spent the bulk of my time preparing my presentations, leaving little time to attend sessions.</description>
+    </item>
+    
+    <item>
+      <title>JSF-Testing Session at Java One</title>
+      <link>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</link>
+      <pubDate>Fri, 28 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/jsf-testing-session-at-java-one/</guid>
+      <description>I&amp;rsquo;ll speaking next week at Java One on the topic of &amp;ldquo;Testing JSF Applications with Arquillian and Selenium. The Session co-ordinates are as follows:
+Testing JSF Applications with Arquillian and Selenium +CON7622: Thursday, Oct 4, 2:00 PM - 3:00 PM - Parc 55 - Cyril Magnin I
+Unfortunately the Java One website truncated the abstract, and the bit that&amp;rsquo;s left doesn&amp;rsquo;t give you a good idea of what I&amp;rsquo;m talking about.</description>
+    </item>
+    
+    <item>
+      <title>JAXConf-2012: JSF - Components &amp; Mobile</title>
+      <link>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</link>
+      <pubDate>Fri, 13 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</guid>
+      <description>JAX Conf 2012   RichFaces represented at the &amp;ldquo;2012 JAX conference&amp;rdquo;:http://jaxconf.com/2012/ in San Francisco this week. I presented three times on two JSF topics. The conference was overall a great success in my opinion - while not the most highly attended conference at which I&amp;rsquo;ve presented, those that attended were highly engaged and happy to have such direct access to the speakers.
+Indeed this was one of my preferred aspects to JAX conf.</description>
+    </item>
+    
+  </channel>
+</rss>

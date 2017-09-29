@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>RF41 on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/rf41/</link>
+    <description>Recent content in RF41 on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 13 Dec 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/rf41/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RichFaces 4.1.0.Final Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</link>
+      <pubDate>Tue, 13 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.final-release-announcement/</guid>
+      <description>I&amp;rsquo;m thrilled to announce the release of RichFaces 4.1.0.Final. It&amp;rsquo;s been a long road from 4.0 to 4.1, with a significant train of milestone releases along the way. The journey was worth it though, with a significant 4.1 release building on top of the successful 4.0.0.Final release, providing: additional components migrated from the RichFaces 3 component set, altogether new components, and significant enhancements to the framework feature set.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.1.0.CR2 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.cr2-release-announcement/</link>
+      <pubDate>Tue, 06 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.cr2-release-announcement/</guid>
+      <description>We are announcing the release of RichFaces 4.1.0.CR2, a second release candidate for RichFaces 4.1. We had a couple of regressions that were introduced in the 4.1.0.CR1 release that we’ve addressed in the with this CR2 release. The expectation is that CR2 will be re-tagged and released as 4.1.0.Final, provided no blocking issues are found. Our QE team has done a great job running their test suite against this release, but I encourage as many community members as possible to download the CR2 release, and make sure it’s “up to snuff”!</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.1.0.CR1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.cr1-release-announcement/</link>
+      <pubDate>Wed, 23 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.cr1-release-announcement/</guid>
+      <description>I’m excited to announce the availability of RichFaces4.1.0.CR1, the first release candidate for RichFaces 4.1.0. Stability of the platform has been a strong focus for all the RichFaces 4.1.0 milestone releases, and has been even more so of a focus for our CR1 release.
+We really appreciate the community feedback we’ve received throughout the 4.1 development cycle, with each of the milestone releases. The bugs found and the suggestions provided from the community have really helped us nail down this release.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.1.0.M4 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.m4-release-announcement/</link>
+      <pubDate>Wed, 09 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.m4-release-announcement/</guid>
+      <description>The RichFaces 4.1 Milestone 4 release is now available for download! With this M4 release we focused on stabilizing the features we introduced in the earlier 4.1 release-train milestones (M1, M2, M3). The release following M4 will be our 4.1 release candidate, so we want to make sure we achieve maximum stability with M4. Some of the key areas we touched are listed below.
+If your keen and want to get started right away, you can download the distribution directly, or for maven users, increment the RichFaces version in your pom.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.1.0.M3 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.m3-release-announcement/</link>
+      <pubDate>Thu, 27 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.m3-release-announcement/</guid>
+      <description>The RichFaces 4.1 Milestone 3 release is now available for download. Further building on the new components and framework improvements introduced in the M1 and M2 releases, M3 brings it all together with an improved showcase - featuring a demonstration of the mobile compatibility of the RichFaces 4 component set. Along-side improvements to resource handling, and enhancements to the push component, we’ve fixed a number of bugs and issues, as voted by you - our user community!</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.1.0.M2 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.m2-release-announcement/</link>
+      <pubDate>Wed, 21 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.m2-release-announcement/</guid>
+      <description>The Richfaces 4.1 milestone releases are trucking along. With M1, we had a focus on changes surrounding project infrastructure, and the introduction of some new components. Now with M2 we see updates to the core, and a stabilization of both the new components and the framework as a whole.
+jQuery Upgrade We built the RichFaces 4 components using jQuery for DOM manipulation. Given the degree to which the we rely on jQuery, upgrading it is a &amp;ldquo;big deal&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4.1.0.M1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.1.0.m1-release-announcement/</link>
+      <pubDate>Tue, 16 Aug 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.1.0.m1-release-announcement/</guid>
+      <description>The RichFaces team is proud to announce the first milestone release of RichFaces 4.1. This release includes some significant contributions from community members, adding to and building on top of the efforts of the RichFaces core developer team! You can find this development release on the project’s download page and check out our “getting started” resources.
+First Milestone for 4.1 The 4.1.0 Milestone1 release includes several highly anticipated features and improvements in RichFaces 4.</description>
+    </item>
+    
+  </channel>
+</rss>

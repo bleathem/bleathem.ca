@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>\[ JAX, JAXConf, talk, polyglot, widgets \] on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/%5C-jax-jaxconf-talk-polyglot-widgets-%5C/</link>
+    <description>Recent content in \[ JAX, JAXConf, talk, polyglot, widgets \] on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Mar 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/%5C-jax-jaxconf-talk-polyglot-widgets-%5C/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Speaking on Polyglot Widgets at JAXConf 2013</title>
+      <link>http://www.bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</link>
+      <pubDate>Tue, 05 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/speaking-on-polyglot-widgets-at-jaxconf-2013/</guid>
+      <description>JAXConf 2013   I will be returning to speak at JAXConf again this year. I&amp;rsquo;ll be speaking on the topic of Poly-framework Web applications with Java EE. The session will further explore the ideas I presented in my Polyglot Widgets blog, where I demoed a sample application written using three different web frameworks, demonstrating both a consistent look &amp;amp; feel, and uniform server-side programming model.
+This topic will be particularly useful for those JAX attendees that have existing applications in production, yet like what they see with new web technologies and frameworks that they will learn about while attending JAXConf.</description>
+    </item>
+    
+  </channel>
+</rss>

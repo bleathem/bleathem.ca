@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CDK on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/cdk/</link>
+    <description>Recent content in CDK on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 07 Aug 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/cdk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>RichFaces 4.3.0.M1 Release Announcement</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</link>
+      <pubDate>Tue, 07 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4.3.0.m1-release-announcement/</guid>
+      <description>RichFaces   The first milestone release of RichFaces 4.3 (4.3.0.M1) is now available. This is a significant release, with primary focus on improving the RichFaces Component Development Kit (CDK) - the tool we use to author our JSF components. A second goal of the release was to improve our &amp;ldquo;MyFaces&amp;rdquo;:http://myfaces.apache.org/ support, which we accomplished by fixing a number of issues, and identifying some further issues to be addressed in a subsequent 4.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces Bootstrap</title>
+      <link>http://www.bleathem.ca/blog/richfaces-bootstrap/</link>
+      <pubDate>Fri, 04 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-bootstrap/</guid>
+      <description>I&amp;rsquo;m happy to share the news that the RichFaces community has started an effort to wrap Twitter Bootstrap with the RichFaces CDK. If you haven&amp;rsquo;t yet heard, Twitter&amp;rsquo;s Bootstrap project is a set of HTML/CSS/js &amp;ldquo;widgets&amp;rdquo; that you can use for building a website/web application with an emphasis on a fluid layouts that adapt well to mobile devices. The RichFaces community effort centres around providing a set of first-class JSF components built using these Bootstrap widgets via the RichFaces CDK.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4 CDK | jQeury UI Tabs</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/</link>
+      <pubDate>Tue, 29 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--jqeury-ui-tabs/</guid>
+      <description>Following on with another entry in my CDK series, this time we will look at at creating a pair of components to wrap the jQuery UI tabs plugin with the RichFaces CDK. It&amp;rsquo;ll take two components to accomplish this; one component to define the tab container, and another to define the tabs themselves. Let&amp;rsquo;s dive right in with a look at the Abstract component definitions.
+As always, if you are interested in following along in your IDE, you can get the code below on github.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4 CDK | jQuery UI Calendar</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</link>
+      <pubDate>Fri, 07 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--jquery-ui-calendar/</guid>
+      <description>Further incrementing the complexity over the input component we created previously, this time we will create a JSF calendar component. Being pragmatic OSS developers, we will leverage the existing javascript of the datepicker component from the jQuery UI project, and we&amp;rsquo;ll see how well the RichFaces CDK lends itself to mapping JSF component attributes into javascript configuration options.
+As always, if you are interested in following along in your IDE, you can get the code below on github.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4 CDK | Input Component</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--input-component/</link>
+      <pubDate>Wed, 21 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--input-component/</guid>
+      <description>With our last component, we saw how we could output some simple text with a custom JSF component created with the RichFaces CDK. Let&amp;rsquo;s increment the complexity, and see how we can create a component that accepts input. Again, the goal here is to highlight how the important features fit together, and to leverage as much of the plumbing work as possible from the RichFaces CDK.
+If you are interested in following along in your IDE, you can get the code below on github.</description>
+    </item>
+    
+    <item>
+      <title>RichFaces 4 CDK | Hello World</title>
+      <link>http://www.bleathem.ca/blog/richfaces-4-cdk--hello-world/</link>
+      <pubDate>Sat, 10 Sep 2011 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/richfaces-4-cdk--hello-world/</guid>
+      <description>This is the first technical post of my CDK series. Starting real simple, we&amp;rsquo;ll create a component that produces a hello world output. &amp;ldquo;Why start with a hello world? Isn&amp;rsquo;t that a little cliche?&amp;rdquo;. Well indeed it is, but it is by far the best way to point out the fundamental pieces of the CDK, and how they together. We&amp;rsquo;ll build a strong foundation in our understanding of the CDK, on which we can build more interesting components in future posts.</description>
+    </item>
+    
+  </channel>
+</rss>

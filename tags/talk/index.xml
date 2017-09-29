@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talk on Experiences of a developer</title>
+    <link>http://www.bleathem.ca/tags/talk/</link>
+    <description>Recent content in Talk on Experiences of a developer</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 07 Jun 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://www.bleathem.ca/tags/talk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spoke on Polyglot Widgets at JAXConf 2013</title>
+      <link>http://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</link>
+      <pubDate>Fri, 07 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/spoke-on-polyglot-widgets-at-jaxconf-2013/</guid>
+      <description>This week I attended the JAXConf 2013 conference for a third year in a row. This year JAXConf was held in Santa Clara, the heart of silicon valley. The conference once again had a fantastic line up of speakers, with well recognized industry leaders speaking on a variety of current and exciting topics. Unfortunately, JAX continued this year to be one of the best kept secrets of the tech industry on the West coast, with attendance not being as strong as many would have liked.</description>
+    </item>
+    
+    <item>
+      <title>JAXConf-2012: JSF - Components &amp; Mobile</title>
+      <link>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</link>
+      <pubDate>Fri, 13 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/jaxconf-2012-jsf---components--mobile/</guid>
+      <description>JAX Conf 2012   RichFaces represented at the &amp;ldquo;2012 JAX conference&amp;rdquo;:http://jaxconf.com/2012/ in San Francisco this week. I presented three times on two JSF topics. The conference was overall a great success in my opinion - while not the most highly attended conference at which I&amp;rsquo;ve presented, those that attended were highly engaged and happy to have such direct access to the speakers.
+Indeed this was one of my preferred aspects to JAX conf.</description>
+    </item>
+    
+    <item>
+      <title>JBW-2012 and RichFaces Mobile</title>
+      <link>http://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</link>
+      <pubDate>Mon, 02 Jul 2012 00:00:00 +0000</pubDate>
+      
+      <guid>http://www.bleathem.ca/blog/jbw-2012-and-richfaces-mobile/</guid>
+      <description>I just returned from an excellent trip to the &amp;ldquo;Red Hat Summit/JBoss World&amp;rdquo;:http://www.redhat.com/summit/ in Boston. The event was fantastic, kicking off with a great &amp;ldquo;keynote&amp;rdquo;:http://www.redhat.com/summit/sessions/keynotes-sessions.html#12345 demoing &amp;ldquo;Drools&amp;rdquo;:http://www.jboss.org/drools/ in a Mobile scenario. Following the keynote were a number of great sessions, including one I presented on the topic of &amp;ldquo;Mobile RichFaces Applications&amp;rdquo;:http://www.redhat.com/summit/sessions/jboss.html#187.
+The session was well received, with some good discussion afterwards. In the session I motivated mobile web applications as a must-have in today&amp;rsquo;s market - users&amp;rsquo; will want and expect a functional web application even if your native application is better.</description>
+    </item>
+    
+  </channel>
+</rss>

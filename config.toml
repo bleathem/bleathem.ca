@@ -46,7 +46,7 @@ metaDataFormat = "yaml"
     # customCSS            = ["default", "/path/to/file"]
     # customJS             = ["default", "/path/to/file"]
 
-    customCSS            = ["default"]
+    customCSS            = ["default", "/css/style.css"]
     customJS             = ["default"]
 
 # Disqus will take priority over staticman due to its ease of use. Feel free to check out both and decide.

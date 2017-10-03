@@ -1,0 +1,26 @@
+---
+  title: "And Now Hugo"
+  date: 2017-10-03
+  author: Brian Leathem
+  categories: [""]
+  description:
+  linktitle:
+  featured:
+  featuredpath:
+  featuredalt:
+  type: post
+  disqus_identifier: and-now-hugo
+  disqus_title: and-now-hugo
+  disqus_url: https://www.bleathem.ca/blog/and-now-hugo/
+---
+
+It seems like just yesterday that I found myself http://www.bleathem.ca/blog/2012/05/im-awestruct.html[awestruck with awestruct], and yet here I am today reviving my blog with a new site building tool called https://gohugo.io/[Hugo].  The motivation for this was two-fold.
+
+1. My awestruct/Asciidoctor gem configuration had fallen out of date, and needed some TLC to get working again.
+2. I wanted to learn http://golang.org[Go].
+
+While I've successfully migrated my blog/site to hugo, I have not managed to realize goal 2 and learn about Go in the process!  If anything this speaks well of the Hugo project, and the degree to which they've abstracted away the site building aspects when working with the tool.
+
+The mirgration process was fairly straightforward.  The most time consuming part was converting some older https://en.wikipedia.org/wiki/Textile_(markup_language)[textile] formatted posts into markdown.  I was able to use my more recent https://en.wikipedia.org/wiki/AsciiDoc[Asciidoc] posts quite easily taking advantage of the Hugo / http://asciidoctor.org/[Asciidoctor] integration.  All I had to do was prepend appropriate YAML frontmatter to my asciidoc files.
+
+If you are looking for a site building tool yourself, I can highly recommend Hugo.  It is indeed https://github.com/bep/hugo-benchmark[incredibly fast], has a rich and expressive https://gohugo.io/templates/[templating mechanism], and a rich ecosystem of https://themes.gohugo.io/[themes available].  I chose the https://github.com/jpescador/hugo-future-imperfect[hugo-future-imperfect], which I plan to fiddle with and customize over the coming months.

@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-11-29-polyglot-widgets
+  disqus_title: polyglot-widgets
+  disqus_url: http://blog.bleathem.ca/2012/11/polyglot-widgets.html
   aliases:
     - /blog/2012/11/polyglot-widgets.html
 ---

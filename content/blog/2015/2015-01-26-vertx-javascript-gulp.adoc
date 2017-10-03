@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2015-01-26-vertx-javascript-gulp
+  disqus_title: vertx-javascript-gulp
+  disqus_url: http://blog.bleathem.ca/2015/01/vertx-javascript-gulp.html
   aliases:
     - /blog/2015/01/vertx-javascript-gulp.html
 ---

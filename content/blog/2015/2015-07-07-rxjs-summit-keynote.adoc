@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2015-07-07-rxjs-summit-keynote
+  disqus_title: rxjs-summit-keynote
+  disqus_url: http://blog.bleathem.ca/2015/07/rxjs-summit-keynote.html
   aliases:
     - /blog/2015/07/rxjs-summit-keynote.html
 ---

@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-09-28-jsf-testing-at-java-one
+  disqus_title: jsf-testing-at-java-one
+  disqus_url: http://blog.bleathem.ca/2012/09/jsf-testing-at-java-one.html
   aliases:
     - /blog/2012/09/jsf-testing-at-java-one.html
 ---

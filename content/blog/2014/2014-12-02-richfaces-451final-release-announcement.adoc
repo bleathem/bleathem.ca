@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2014-12-02-richfaces-451final-release-announcement
+  disqus_title: richfaces-451final-release-announcement
+  disqus_url: http://blog.bleathem.ca/2014/12/richfaces-451final-release-announcement.html
   aliases:
     - /blog/2014/12/richfaces-451final-release-announcement.html
 ---

@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-09-10-richfaces-4-cdk-hello-world
+  disqus_title: richfaces-4-cdk-hello-world
+  disqus_url: http://blog.bleathem.ca/2011/09/richfaces-4-cdk-hello-world.html
   aliases:
     - /blog/2011/richfaces-4-cdk-hello-world.html
 ---

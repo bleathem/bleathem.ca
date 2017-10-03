@@ -11,6 +11,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: a-mosaic-of-selfies
+  disqus_title: a-mosaic-of-selfies
+  disqus_url: https://www.bleathem.ca/blog/a-mosaic-of-selfies/
 ---
 # A mosaic of selfies
 

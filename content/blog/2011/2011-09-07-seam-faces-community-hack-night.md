@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-09-07-seam-faces-community-hack-night
+  disqus_title: seam-faces-community-hack-night
+  disqus_url: http://blog.bleathem.ca/2011/09/seam-faces-community-hack-night.html
   aliases:
     - /blog/2011/09/seam-faces-community-hack-night.html
 ---

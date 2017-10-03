@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2014-02-04-presentation-tier-survey
+  disqus_title: presentation-tier-survey
+  disqus_url: http://blog.bleathem.ca/2014/02/presentation-tier-survey.html
   aliases:
     - /blog/2014/02/presentation-tier-survey.html
 ---

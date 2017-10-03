@@ -9,6 +9,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2013-06-10-richfaces-moves-to-asciidoc
+  disqus_title: richfaces-moves-to-asciidoc
+  disqus_url: http://blog.bleathem.ca/2013/06/richfaces-moves-to-asciidoc.html
   aliases:
     - /blog/2013/06/richfaces-moves-to-asciidoc.html
 ---

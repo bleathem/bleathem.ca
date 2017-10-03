@@ -9,6 +9,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2009-11-14-in-beginning
+  disqus_title: in-beginning
+  disqus_url: http://blog.bleathem.ca/2009/11/in-beginning.html
   aliases:
     - /blog/2009/11/in-beginning.html
 ---

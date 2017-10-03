@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2013-01-22-whats-new-with-the-richfaces-extendeddatatable
+  disqus_title: whats-new-with-the-richfaces-extendeddatatable
+  disqus_url: http://blog.bleathem.ca/2013/01/whats-new-with-the-richfaces-extendeddatatable.html
   aliases:
     - /blog/2013/01/whats-new-with-the-richfaces-extendeddatatable.html
 ---

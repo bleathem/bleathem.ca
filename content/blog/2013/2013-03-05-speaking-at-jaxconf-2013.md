@@ -9,6 +9,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2013-03-05-speaking-at-jaxconf-2013
+  disqus_title: speaking-at-jaxconf-2013
+  disqus_url: http://blog.bleathem.ca/2013/03/speaking-at-jaxconf-2013.html
   aliases:
     - /blog/2013/03/speaking-at-jaxconf-2013.html
 ---

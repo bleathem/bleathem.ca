@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2010-12-17-viewaccessscope-why-its-useful
+  disqus_title: viewaccessscope-why-its-useful
+  disqus_url: http://blog.bleathem.ca/2010/12/viewaccessscope-why-its-useful.html
   aliases:
     - /blog/2010/12/viewaccessscope-why-its-useful.html
 ---

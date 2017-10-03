@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2013-01-28-dynamic-panels-with-a4jrepeat
+  disqus_title: dynamic-panels-with-a4jrepeat
+  disqus_url: http://blog.bleathem.ca/2013/01/dynamic-panels-with-a4jrepeat.html
   aliases:
     - /blog/2013/01/dynamic-panels-with-a4jrepeat.html
 ---

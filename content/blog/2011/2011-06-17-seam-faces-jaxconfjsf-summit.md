@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-06-17-seam-faces-jaxconfjsf-summit
+  disqus_title: seam-faces-jaxconfjsf-summit
+  disqus_url: http://blog.bleathem.ca/2011/06/seam-faces-jaxconfjsf-summit.html
   aliases:
     - /blog/2011/06/seam-faces-jaxconfjsf-summit.html
 ---

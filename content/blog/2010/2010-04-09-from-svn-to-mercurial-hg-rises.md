@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2010-04-09-from-svn-to-mercurial-hg-rises
+  disqus_title: from-svn-to-mercurial-hg-rises
+  disqus_url: http://blog.bleathem.ca/2010/04/from-svn-to-mercurial-hg-rises.html
   aliases:
     - /blog/2010/04/from-svn-to-mercurial-hg-rises.html
 ---

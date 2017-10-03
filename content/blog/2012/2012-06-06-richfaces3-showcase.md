@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-06-06-richfaces3-showcase
+  disqus_title: richfaces3-showcase
+  disqus_url: http://blog.bleathem.ca/2012/06/richfaces3-showcase.html
   aliases:
     - /blog/2012/06/richfaces3-showcase.html
 ---

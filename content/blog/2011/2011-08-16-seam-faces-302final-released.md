@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-08-16-seam-faces-302final-released
+  disqus_title: seam-faces-302final-released
+  disqus_url: http://blog.bleathem.ca/2011/08/seam-faces-302final-released.html
   aliases:
     - /blog/2011/08/seam-faces-302final-released.html
 ---

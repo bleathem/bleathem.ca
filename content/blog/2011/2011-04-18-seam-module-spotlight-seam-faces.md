@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-04-18-seam-module-spotlight-seam-faces
+  disqus_title: seam-module-spotlight-seam-faces
+  disqus_url: http://blog.bleathem.ca/2011/04/seam-module-spotlight-seam-faces.html
   aliases:
     - /blog/2011/04/seam-module-spotlight-seam-faces.html
 ---

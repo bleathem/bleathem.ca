@@ -9,6 +9,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-02-16-updating-weld-in-glassfish-31
+  disqus_title: updating-weld-in-glassfish-31
+  disqus_url: http://blog.bleathem.ca/2011/02/updating-weld-in-glassfish-31.html
   aliases:
     - /blog/2011/02/updating-weld-in-glassfish-31.html
 ---

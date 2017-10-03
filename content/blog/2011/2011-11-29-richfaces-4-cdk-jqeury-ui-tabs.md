@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-11-29-richfaces-4-cdk-jqeury-ui-tabs
+  disqus_title: richfaces-4-cdk-jqeury-ui-tabs
+  disqus_url: http://blog.bleathem.ca/2011/11/richfaces-4-cdk-jqeury-ui-tabs.html
   aliases:
     - /blog/2011/11/richfaces-4-cdk-jqeury-ui-tabs.html
 ---

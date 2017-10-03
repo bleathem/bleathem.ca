@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2010-01-20-glassfish-v2-and-v3-on-same-host-behind
+  disqus_title: glassfish-v2-and-v3-on-same-host-behind
+  disqus_url: http://blog.bleathem.ca/2010/01/glassfish-v2-and-v3-on-same-host-behind.html
   aliases:
     - /blog/2010/01/glassfish-v2-and-v3-on-same-host-behind.html
 ---

@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2015-10-19-error-handling-with-the-mediator-pattern
+  disqus_title: error-handling-with-the-mediator-pattern
+  disqus_url: http://blog.bleathem.ca/2015/10/error-handling-with-the-mediator-pattern.html
   aliases:
     - /blog/2015/10/error-handling-with-the-mediator-pattern.html
 ---

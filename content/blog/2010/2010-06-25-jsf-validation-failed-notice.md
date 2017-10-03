@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2010-06-25-jsf-validation-failed-notice
+  disqus_title: jsf-validation-failed-notice
+  disqus_url: http://blog.bleathem.ca/2010/06/jsf-validation-failed-notice.html
   aliases:
     - /blog/2010/06/jsf-validation-failed-notice.html
 ---

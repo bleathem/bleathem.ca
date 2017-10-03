@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-01-29-restful-urls-with-jsf-2
+  disqus_title: restful-urls-with-jsf-2
+  disqus_url: http://blog.bleathem.ca/2011/01/restful-urls-with-jsf-2.html
   aliases:
     - /blog/2011/01/restful-urls-with-jsf-2.html
 ---

@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2010-11-20-cdi-does-events-too
+  disqus_title: cdi-does-events-too
+  disqus_url: http://blog.bleathem.ca/2010/11/cdi-does-events-too.html
   aliases:
     - /blog/2010/11/cdi-does-events-too.html
 ---

@@ -9,6 +9,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-10-05-testing-as7-web-apps-over-ssl
+  disqus_title: testing-as7-web-apps-over-ssl
+  disqus_url: http://blog.bleathem.ca/2011/10/testing-as7-web-apps-over-ssl.html
   aliases:
     - /blog/2011/2011-10-05-testing-as7-web-apps-over-ssl.html
 ---

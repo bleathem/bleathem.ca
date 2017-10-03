@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-12-09-state-of-richfaces
+  disqus_title: state-of-richfaces
+  disqus_url: http://blog.bleathem.ca/2011/12/state-of-richfaces.html
   aliases:
     - /blog/2011/12/state-of-richfaces.html
 ---

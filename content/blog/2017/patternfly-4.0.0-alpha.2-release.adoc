@@ -9,6 +9,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: patternfly-4.0.0-alpha.2-release
+  disqus_title: patternfly-4.0.0-alpha.2-release
+  disqus_url: https://www.bleathem.ca/blog/patternfly-4.0.0-alpha.2-release/
 ---
 ## Patteryfly 4.0.0 Alpha.2 Release
 

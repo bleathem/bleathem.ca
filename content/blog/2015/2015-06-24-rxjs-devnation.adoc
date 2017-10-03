@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2015-06-24-rxjs-devnation
+  disqus_title: rxjs-devnation
+  disqus_url: http://blog.bleathem.ca/2015/06/rxjs-devnation.html
   aliases:
     - /blog/2015/06/rxjs-devnation.html
 ---

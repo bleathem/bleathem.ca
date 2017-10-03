@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-10-12-richfaces-bootstrap-quickstart
+  disqus_title: richfaces-bootstrap-quickstart
+  disqus_url: http://blog.bleathem.ca/2012/10/richfaces-bootstrap-quickstart.html
   aliases:
     - /blog/2012.html
 ---

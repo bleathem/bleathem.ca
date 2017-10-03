@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-05-15-im-awestruct
+  disqus_title: im-awestruct
+  disqus_url: http://blog.bleathem.ca/2012/05/im-awestruct.html
   aliases:
     - /blog/2012/05/im-awestruct.html
 ---

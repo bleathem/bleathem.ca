@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-02-23-richfaces-420final-release-announcement
+  disqus_title: richfaces-420final-release-announcement
+  disqus_url: http://blog.bleathem.ca/2012/02/richfaces-420final-release-announcement.html
   aliases:
     - /blog/2012/02/richfaces-420final-release-announcement.html
 ---

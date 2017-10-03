@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-12-20-richfaces-430m3-release-announcement
+  disqus_title: richfaces-430m3-release-announcement
+  disqus_url: http://blog.bleathem.ca/2012/12/richfaces-430m3-release-announcement.html
   aliases:
     - /blog/2012/12/richfaces-430m3-release-announcement.html
 ---

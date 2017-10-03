@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-08-31-richfaces-4-cdk-introduction
+  disqus_title: richfaces-4-cdk-introduction
+  disqus_url: http://blog.bleathem.ca/2011/08/richfaces-4-cdk-introduction.html
   aliases:
     - /blog/2011/08/richfaces-4-cdk-introduction.html
 ---

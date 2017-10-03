@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-09-21-richfaces-4-cdk-input-component
+  disqus_title: richfaces-4-cdk-input-component
+  disqus_url: http://blog.bleathem.ca/2011/09/richfaces-4-cdk-input-component.html
   aliases:
     - /blog/2011/09/richfaces-4-cdk-input-component.html
 ---

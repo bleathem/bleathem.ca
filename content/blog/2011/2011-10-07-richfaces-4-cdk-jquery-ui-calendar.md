@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-10-07-richfaces-4-cdk-jquery-ui-calendar
+  disqus_title: richfaces-4-cdk-jquery-ui-calendar
+  disqus_url: http://blog.bleathem.ca/2011/10/richfaces-4-cdk-jquery-ui-calendar.html
   aliases:
     - /blog/2011/07/richfaces-4-cdk-jquery-ui-calendar.html
 ---

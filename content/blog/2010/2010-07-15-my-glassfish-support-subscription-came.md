@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2010-07-15-my-glassfish-support-subscription-came
+  disqus_title: my-glassfish-support-subscription-came
+  disqus_url: http://blog.bleathem.ca/2010/07/my-glassfish-support-subscription-came.html
   aliases:
     - /blog/2010/07/my-glssfish-support-subscription-came.html
 ---

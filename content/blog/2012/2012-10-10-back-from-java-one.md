@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-10-10-back-from-java-one
+  disqus_title: back-from-java-one
+  disqus_url: http://blog.bleathem.ca/2012/10/back-from-java-one.html
   aliases:
     - /blog/2012/10/back-from-java-one.html
 ---

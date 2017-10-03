@@ -9,6 +9,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2013-03-07-richfaces-431final-release-announcement
+  disqus_title: richfaces-431final-release-announcement
+  disqus_url: http://blog.bleathem.ca/2013/03/richfaces-431final-release-announcement.html
   aliases:
     - /blog/2013/03/richfaces-431final-release-announcement.html
 ---

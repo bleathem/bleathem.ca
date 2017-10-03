@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-04-03-richfaces-plugin-for-seam-forge
+  disqus_title: richfaces-plugin-for-seam-forge
+  disqus_url: http://blog.bleathem.ca/2011/04/richfaces-plugin-for-seam-forge.html
   aliases:
     - /blog/2011/04/richfaces-plugin-for-seam-forge.html
 ---

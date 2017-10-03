@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-12-06-richfaces-410cr2-release-announcement
+  disqus_title: richfaces-410cr2-release-announcement
+  disqus_url: http://blog.bleathem.ca/2011/12/richfaces-410cr2-release-announcement.html
   aliases:
     - /blog/2011/12/richfaces-410cr2-release-announcement.html
 ---

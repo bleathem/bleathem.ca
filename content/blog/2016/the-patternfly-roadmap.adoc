@@ -9,6 +9,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: the-patternfly-roadmap
+  disqus_title: the-patternfly-roadmap
+  disqus_url: https://www.bleathem.ca/blog/the-patternfly-roadmap/
 ---
 ## The Patternfly Roadmap
 

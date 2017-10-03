@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2015-02-05-cordova-oauth-google-services
+  disqus_title: cordova-oauth-google-services
+  disqus_url: http://blog.bleathem.ca/2015/02/cordova-oauth-google-services.html
   aliases:
     - /blog/2015/02/cordova-oauth-google-services.html
 ---

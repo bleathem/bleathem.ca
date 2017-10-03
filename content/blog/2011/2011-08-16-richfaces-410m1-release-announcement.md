@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-08-16-richfaces-410m1-release-announcement
+  disqus_title: richfaces-410m1-release-announcement
+  disqus_url: http://blog.bleathem.ca/2011/08/richfaces-410m1-release-announcement.html
   aliases:
     - /blog/2011/08/richfaces-410m1-release-announcement.html
 ---

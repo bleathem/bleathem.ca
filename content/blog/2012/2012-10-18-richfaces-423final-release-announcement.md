@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2012-10-18-richfaces-423final-release-announcement
+  disqus_title: richfaces-423final-release-announcement
+  disqus_url: http://blog.bleathem.ca/2012/10/richfaces-423final-release-announcement.html
   aliases:
     - /blog/2012/10/richfaces-423final-release-announcement.html
 ---

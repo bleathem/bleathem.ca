@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2011-03-27-view-configuration-with-seam-3-faces
+  disqus_title: view-configuration-with-seam-3-faces
+  disqus_url: http://blog.bleathem.ca/2011/03/view-configuration-with-seam-3-faces.html
   aliases:
     - /blog/2011/03/view-configuration-with-seam-3-faces.html
 ---

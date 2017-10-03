@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2013-12-11-richfaces-500alpha2-release-announcement
+  disqus_title: richfaces-500alpha2-release-announcement
+  disqus_url: http://blog.bleathem.ca/2013/12/richfaces-500alpha2-release-announcement.html
   aliases:
     - /blog/2013/12/richfaces-500alpha2-release-announcement.html
 ---

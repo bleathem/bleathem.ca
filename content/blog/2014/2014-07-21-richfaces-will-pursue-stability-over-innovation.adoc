@@ -10,6 +10,9 @@
   featuredpath:
   featuredalt:
   type: post
+  disqus_identifier: 2014-07-21-richfaces-will-pursue-stability-over-innovation
+  disqus_title: richfaces-will-pursue-stability-over-innovation
+  disqus_url: http://blog.bleathem.ca/2014/07/richfaces-will-pursue-stability-over-innovation.html
   aliases:
     - /blog/2014/07/richfaces-will-pursue-stability-over-innovation.html
 ---

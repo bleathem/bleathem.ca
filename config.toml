@@ -5,7 +5,7 @@ theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "bleathem-java"
-googleAnalytics = ""
+googleAnalytics = "UA-56918202-3"
 pluralizeListTitles = false
 metaDataFormat = "yaml"
 

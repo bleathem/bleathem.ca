@@ -1,4 +1,4 @@
-baseurl = "https://new.bleathem.ca/"
+baseurl = "https://www.bleathem.ca/"
 languageCode = "en-us"
 title = "Experiences of a developer"
 theme = "hugo-future-imperfect"

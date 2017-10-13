@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "Experiences of a developer"
 theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
-paginate = 3
+paginate = 10
 disqusShortname = "bleathem-java"
 googleAnalytics = "UA-56918202-3"
 pluralizeListTitles = false
@@ -102,6 +102,12 @@ metaDataFormat = "yaml"
     url = "/blog/"
     identifier = "fa fa-newspaper-o"
     weight = 3
+
+[[menu.main]]
+    name = "Talks"
+    url = "/talk-list/"
+    identifier = "fa fa-list"
+    weight = 4
 
 [[menu.main]]
     name = "Categories"

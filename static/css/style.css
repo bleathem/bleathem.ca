@@ -5,3 +5,10 @@ ol li {
 ul li {
   padding-left: 0;
 }
+
+.post header .meta .bl-talks__header-link,
+.itemized header .meta .bl-talks__header-link {
+  display: block;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}

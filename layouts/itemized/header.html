@@ -1,0 +1,30 @@
+<header>
+    <div class="title">
+        {{ if $.Scratch.Get "h1" }}
+            {{ .Params.conference }}
+            <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
+            {{ $.Scratch.Set "h1" false }}
+        {{ else }}
+          {{ .Params.conference }}
+            <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        {{ end }}
+        {{ with .Description }}
+            <p>{{ . }}</p>
+        {{ end }}
+    </div>
+    <div class="meta">
+
+      <span class="author">{{ .Params.author }}</span>
+      <span class="bl-talks__header-link">
+      {{ if isset .Params "slides" }}
+        <a href="{{ .Params.slides }}">Slides</a>
+      {{ end }}
+    </span>
+      <span class="bl-talks__header-link">
+      {{ if isset .Params "video" }}
+        <a href="{{ .Params.video }}">Video</a>
+      {{ end }}
+    </span>
+        <!--<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>-->
+    </div>
+</header>

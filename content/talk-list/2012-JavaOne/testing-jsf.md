@@ -10,6 +10,7 @@ featuredalt:
 categories: []
 conference: 2012-JavaOne
 slides: http://www.bleathem.ca/talks/2012-JavaOne/testing-jsf.html
+pdf: http://www.bleathem.ca/talks/2012-JavaOne/testing-jsf.pdf
 video: https://www.youtube.com/watch?v=pfoJAshalx4
 ---
 

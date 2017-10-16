@@ -10,4 +10,5 @@ featuredalt:
 categories: []
 conference: 2011-JAXconf
 slides: http://www.bleathem.ca/talks/2011-JAXConf-SeamFaces.odp
+pdf: http://www.bleathem.ca/talks/2011-JAXConf-SeamFaces.pdf
 ---

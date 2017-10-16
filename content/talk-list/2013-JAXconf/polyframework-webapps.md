@@ -10,6 +10,7 @@ featuredalt:
 categories: []
 conference: 2013-JAXconf
 slides: http://www.bleathem.ca/talks/2013-JAX/polyframework-webapps.html
+pdf: http://www.bleathem.ca/talks/2013-JAX/polyframework-webapps.pdf
 video: https://www.youtube.com/watch?v=x7P6CTqSOis
 ---
 

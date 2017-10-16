@@ -10,4 +10,5 @@ featuredalt:
 categories: []
 conference: 2011-JUDcon
 slides: http://www.bleathem.ca/talks/2011-JUDCon-SeamFaces.odp
+pdf: http://www.bleathem.ca/talks/2011-JUDCon-SeamFaces.pdf
 ---

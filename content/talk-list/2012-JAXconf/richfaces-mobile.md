@@ -10,6 +10,7 @@ featuredalt:
 categories: []
 conference: 2012-JAXconf
 slides: http://www.bleathem.ca/talks/2012-JAX/richfaces-mobile.html
+pdf: http://www.bleathem.ca/talks/2012-JAX/richfaces-mobile.pdf
 ---
 
 The mobile web is a hot topic; many developers are curious about how they can tap into this market whilst leveraging their existing skillset and technology investments. The good news is that as a JSF developer, you can make your application mobile by taking advantage of the mobile compatible components and other framework improvements introduced in RichFaces 4.1.

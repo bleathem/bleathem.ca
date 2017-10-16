@@ -9,8 +9,9 @@ featuredpath:
 featuredalt:
 categories: []
 conference: 2014-DevNation
-slides: http://www.bleathem.ca/2014-DevNation/jquery-ui-widgets.html
-video:
+slides: http://www.bleathem.ca/talks/2014-DevNation/jquery-ui-widgets.html
+pdf: http://www.bleathem.ca/talks/2014-DevNation/jquery-ui-widgets.pdf
+video: https://www.youtube.com/watch?v=Ezhu_qwIouk
 ---
 The jQuery UI widget factory provides a mechanism to develop stateful jQuery plug-ins. Defining a plug-in lifecycle allows the removal of excessive boilerplate code.
 

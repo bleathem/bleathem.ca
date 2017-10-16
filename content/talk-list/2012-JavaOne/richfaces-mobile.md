@@ -10,6 +10,7 @@ featuredalt:
 categories: []
 conference: 2012-JavaOne
 slides: http://www.bleathem.ca/talks/2012-JavaOne/richfaces-mobile.html
+pdf: http://www.bleathem.ca/talks/2012-JavaOne/richfaces-mobile.pdf
 video: https://www.youtube.com/watch?v=iPNTb_vEgs0
 ---
 

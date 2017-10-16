@@ -15,16 +15,21 @@
     <div class="meta">
 
       <span class="author">{{ .Params.author }}</span>
-      <span class="bl-talks__header-link">
       {{ if isset .Params "slides" }}
-        <a href="{{ .Params.slides }}">Slides</a>
-      {{ end }}
-    </span>
       <span class="bl-talks__header-link">
-      {{ if isset .Params "video" }}
-        <a href="{{ .Params.video }}">Video</a>
+        <a href="{{ .Params.slides }}">Slides</a>
+      </span>
       {{ end }}
-    </span>
+      {{ if isset .Params "pdf" }}
+      <span class="bl-talks__header-link">
+        <a href="{{ .Params.pdf }}">PDF</a>
+      </span>
+      {{ end }}
+      {{ if isset .Params "video" }}
+      <span class="bl-talks__header-link">
+        <a href="{{ .Params.video }}">Video</a>
+      </span>
+      {{ end }}
         <!--<a href="#" class="author"><span class="name">Jane Doe</span><img src="images/avatar.jpg" alt="" /></a>-->
     </div>
 </header>

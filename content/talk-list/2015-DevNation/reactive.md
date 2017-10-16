@@ -10,6 +10,7 @@ featuredalt:
 categories: []
 conference: 2015-DevNation
 slides: http://www.bleathem.ca/talks/2015-DevNation/reactive.html
+pdf: http://www.bleathem.ca/talks/2015-DevNation/reactive.pdf
 video: https://www.youtube.com/watch?v=dfy1pGlU8Jk
 ---
 Reactive programming is poised to be a breakthrough on the scale of object-oriented programming. Once you learn reactive techniques, you will combine streams of events in exciting new ways and wonder how you ever lived without this technique.

@@ -10,6 +10,7 @@ featuredalt:
 categories: []
 conference: 2012-JavaOne
 slides: http://www.bleathem.ca/talks/2012-JavaOne/jsf-components.html
+pdf: http://www.bleathem.ca/talks/2012-JavaOne/jsf-components.pdf
 video: https://www.youtube.com/watch?v=ubxFMm0h4ws
 ---
 

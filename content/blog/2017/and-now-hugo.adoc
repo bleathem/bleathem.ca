@@ -2,7 +2,8 @@
   title: "And Now Hugo"
   date: 2017-10-03
   author: Brian Leathem
-  categories: [""]
+  categories: [Tools]
+  tags: [ Hugo, go ]
   description:
   linktitle:
   featured:
